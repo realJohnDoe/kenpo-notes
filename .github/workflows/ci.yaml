@@ -20,9 +20,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -67,13 +66,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
           path: "."
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
