@@ -1,7 +1,7 @@
 # Yellow Belt 🟡
 
 1. [[delayed-sword]]
-2. [[alternating-maces]]
+2. [[Alternating Maces 🔄✊]]
 3. [[sword-of-destruction]]
 4. [[deflecting-hammer]]
 5. -
