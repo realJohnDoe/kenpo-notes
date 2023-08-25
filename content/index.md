@@ -4,6 +4,7 @@ These are my kenpo notes, written in markdown and rendered to this website
 using [Quartz].
 
 [[belts]]
+[[techniques]]
 
 If you like them, drop me a star on [GitHub] or even better, contribute some
 improvements.
