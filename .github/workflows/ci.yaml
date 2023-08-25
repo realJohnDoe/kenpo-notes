@@ -12,53 +12,7 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-test:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: [ubuntu-latest]
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: node-${{ hashFiles('**/package-lock.json') }}
-
-      - run: npm ci
-
-      - name: Check types and style
-        run: npm run check
-
-      - name: Test
-        run: npm test
-
-      - name: Ensure Quartz builds
-        run: npx quartz build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: ./public
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-
-  deploy:
+  build-test-deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
