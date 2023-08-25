@@ -72,6 +72,32 @@ jobs:
         with:
           node-version: 18
 
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+
+      - run: npm ci
+
+      - name: Check types and style
+        run: npm run check
+
+      - name: Test
+        run: npm test
+
+      - name: Ensure Quartz builds
+        run: npx quartz build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: ./public
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
