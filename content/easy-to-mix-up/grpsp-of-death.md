@@ -8,9 +8,9 @@ When performing the lock in [[grasp-of-death]], our body looks a bit like an
 ## [[grasp-of-death]]
 
 - Lock the arm
-- [[1-yellow]]
+- [[1. Yellow Belt 🟡]]
 
 ## [[grip-of-death]]
 
 - Double hammerfist
-- [[2-orange]]
+- [[2. Orange Belt 🟠]]

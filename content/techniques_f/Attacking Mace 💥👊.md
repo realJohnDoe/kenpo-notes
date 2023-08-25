@@ -1,5 +1,3 @@
-# Attacking Mace 💥👊
-
 ## Video
 
 ![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=104&end=123)
