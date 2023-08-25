@@ -1,20 +1,13 @@
 name: Build and Test
 
 on:
-  pull_request:
-    branches:
-      - v4
   push:
     branches:
-      - v4
+      - main
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'jackyzha0/quartz' }}
-    strategy:
-      matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: [ubuntu-latest]
     permissions:
       contents: write
     steps:
@@ -31,9 +24,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          key: node-${{ hashFiles('**/package-lock.json') }}
 
       - run: npm ci
 
@@ -45,3 +36,13 @@ jobs:
 
       - name: Ensure Quartz builds
         run: npx quartz build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: ./public
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
