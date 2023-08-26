@@ -1,3 +1,4 @@
 - [[1. Yellow Belt 🟡]]
 - [[2. Orange Belt 🟠]]
 - [[3. Purple Belt 🟣]]
+- [[4. Blue Belt 🔵]]
