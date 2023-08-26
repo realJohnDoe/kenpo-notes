@@ -1,5 +1,3 @@
-# Delayed Sword ⏰⚔️
-
 Defense against Right Hand to Left Shoulder Grab
 [[1-grabs-and-tackles]]
 

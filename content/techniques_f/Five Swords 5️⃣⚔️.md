@@ -1,5 +1,3 @@
-# Five Swords 5️⃣⚔️
-
 Defense against right roundhouse punch
 [[3-punches]]
 
