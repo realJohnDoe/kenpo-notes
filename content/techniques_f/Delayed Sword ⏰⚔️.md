@@ -1,5 +1,12 @@
-Defense against Right Hand to Left Shoulder Grab
-[[1-grabs-and-tackles]]
+## Video
+
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=46&end=62" width="100%" height="400"></iframe>
+
+## Defense against
+
+Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
+
+## Steps
 
 1.  - [[Right Neutral Bow ➡️0️⃣🦶]]
     - [[Right Inward Block ➡️✊⬅️🛡️]]
@@ -8,7 +15,3 @@ Defense against Right Hand to Left Shoulder Grab
 4.  - [[Right Neutral Bow ➡️0️⃣🦶]]
     - Outward [[Right Handsword ⬅️✋]]
 5.  - [[Cover Right before Left 🦶🔄]]
-
-## Video
-
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=46&end=62)
