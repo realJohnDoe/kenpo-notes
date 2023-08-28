@@ -4,7 +4,9 @@
 ## Defense against
 
 Two Hand Push ([[Web of Knowledge. Pushes ✋|blubb]])
+
 ## Steps
+
 1.  - [[right-neutral-bow]]
     - [[right-inward-block]]
 2.  - [[right-forward-bow]]
