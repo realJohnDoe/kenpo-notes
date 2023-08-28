@@ -1,1 +1,0 @@
-# Right Front Kick ➡️🦶⬆️

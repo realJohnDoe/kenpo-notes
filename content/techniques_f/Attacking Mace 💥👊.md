@@ -4,16 +4,16 @@
 
 ## Defense against
 
-[[right-straight-punch]] ([[3-punches|Web of Knowledge: Punches 👊]])
+[[Right Straight Punch ➡️👊]] ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
-1.  - Step back into [[left-neutral-bow]] facing 1200 🕛
-    - [[left-inward-block]]
-2.  - [[left-forward-bow]]
-    - [[right-straight-punch]]
+1.  - Step back into [[Left Neutral Bow ⬅️0️⃣🦶]] facing 1200 🕛
+    - [[Left Inward Block ⬅️✊➡️]]
+2.  - [[Left Forward Bow ⬅️⬆️🦶]]
+    - [[Right Straight Punch ➡️👊]]
 3.  - Grab right arm
-    - [[right-front-kick]]
-4.  - Put foot down in [[Right Neutral Bow ➡️🦶0️⃣]]
+    - [[Right Front Kick ➡️🦶⬆️]]
+4.  - Put foot down in [[Right Neutral Bow ➡️0️⃣🦶]]
     - Left uppercut punch
 5.  - [[Cover Right before Left 🦶🔄]]

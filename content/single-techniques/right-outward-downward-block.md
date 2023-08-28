@@ -1,1 +1,0 @@
-# Right Outward Downward Block 🤛↘️

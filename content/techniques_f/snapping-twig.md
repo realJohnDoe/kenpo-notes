@@ -3,7 +3,7 @@
 Defense against left push
 [[2-pushes]]
 
-1. - [[Right Neutral Bow ➡️🦶0️⃣]] facing 1200 🕛
+1. - [[Right Neutral Bow ➡️0️⃣🦶]] facing 1200 🕛
    - Pin left hand to chest
    - Right inward hooking heel palm strike to elbow
 2. - Hook over left arme

@@ -1,1 +1,0 @@
-# Left Forward Bow ⬅️⬆️🦶

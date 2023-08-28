@@ -7,8 +7,8 @@
 Defense against right-front-kick
 [[4-kicks]]
 
-1.  - [[Right Neutral Bow ➡️🦶0️⃣]]
-    - [[right-outward-downward-block]]
+1.  - [[Right Neutral Bow ➡️0️⃣🦶]]
+    - [[Right Outward Downward Block 🤛↘️🛡️]]
 2.  - Forward Shuffle
     - Left Heel Palm to Opponent's right upper arm
 3.  - Right Elbow Strike

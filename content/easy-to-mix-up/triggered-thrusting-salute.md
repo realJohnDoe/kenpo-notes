@@ -13,7 +13,7 @@ A water gun is getting triggered and it is played with hands, not with feet.
 
 ## [[thrusting-salute]]
 
-- Against [[right-front-kick]]
+- Against [[Right Front Kick ➡️🦶⬆️]]
 - Involves a kick after a left downward block with the heel palm at the end
 
 ## [[glancing-salute]]

@@ -1,10 +1,10 @@
 # Reversing Mace ✊🔄
 
-Defense against [[left-straight-punch]]
+Defense against [[Left Straight Punch ⬅️👊]]
 
 [[3-punches]]
 
-1. - [[Right Neutral Bow ➡️🦶0️⃣]] facing 1030 🕥
+1. - [[Right Neutral Bow ➡️0️⃣🦶]] facing 1030 🕥
    - Right inwward parry to left elbow
 2. - Left outward parry to left elbow
 3. - Outward [[Right Back Knuckle ➡️✊]]
