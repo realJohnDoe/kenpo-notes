@@ -1,19 +1,19 @@
 Defense against right roundhouse punch
 [[3-punches]]
 
-1.  - Step forward into [[right-neutral-bow]] toward 1200
-    - [[right-inward-block]]
+1.  - Step forward into [[Right Neutral Bow ➡️🦶0️⃣]] toward 1200
+    - [[Right Inward Block ➡️✊⬅️]]
     - Left extended outward block
 2.  - Outward [[right-handsword]]
-3.  - [[right-forward-bow]]
+3.  - [[Right Forward Bow ➡️⬆️🦶]]
     - Left Five-finger thrust
-4.  - Back into [[right-neutral-bow]]
+4.  - Back into [[Right Neutral Bow ➡️🦶0️⃣]]
     - Snapping [[right-uppercut-punch]]
-5.  - Slide left foot back into [[right-forward-bow]] towards 1030
+5.  - Slide left foot back into [[Right Forward Bow ➡️⬆️🦶]] towards 1030
     - Left outward downward diagonal handsword strike
-6.  - Pivot back into [[right-neutral-bow]]
+6.  - Pivot back into [[Right Neutral Bow ➡️🦶0️⃣]]
     - Inward downward overhead [[right-handsword]]
-7.  - [[cover-right-before-left]] facing 1030
+7.  - [[Cover Right before Left 🦶🔄]] facing 1030
 
 ## Video
 

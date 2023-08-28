@@ -9,12 +9,12 @@
 1. Blocks and 3-
    1. Facing 1200, inward blocks
       1. - [[horse-stance]]
-      2. - Left foot back into [[right-neutral-bow]]
-         - [[right-inward-block]]
+      2. - Left foot back into [[Right Neutral Bow ➡️🦶0️⃣]]
+         - [[Right Inward Block ➡️✊⬅️]]
       3. - Right forward Bow
          - [[left-straight-punch]]
       4. - [[right-cat]]
-         - [[right-inward-block]]
+         - [[Right Inward Block ➡️✊⬅️]]
       5. - Right foot back into [[left-neutral-bow]]
          - [[left-inward-block]]
       6. - [[left-forward-bow]]
@@ -24,7 +24,7 @@
          - Left outward block
       2. - [[left-forward-bow]]
          - [[right-straight-punch]]
-      3. - Left foot back into [[right-neutral-bow]]
+      3. - Left foot back into [[Right Neutral Bow ➡️🦶0️⃣]]
          - [[right-outward-block]]
       4. - Right forward bow
          - [[left-straight-punch]]
@@ -34,12 +34,12 @@
       2. - Left upward block
       3. - [[left-forward-bow]]
          - [[right-straight-punch]]
-      4. - Move left foot back into [[right-neutral-bow]]
+      4. - Move left foot back into [[Right Neutral Bow ➡️🦶0️⃣]]
          - Right upward block
       5. - Right forward bow
          - [[left-straight-punch]]
    1. Facing 600, downward blocks
-      1. - Move right foot to the right into [[right-neutral-bow]] facing 600
+      1. - Move right foot to the right into [[Right Neutral Bow ➡️🦶0️⃣]] facing 600
          - [[right-outward-downward-block]]
       2. - Right forward bow
          - [[left-straight-punch]]

@@ -10,8 +10,8 @@ Always moving backward
 
 To 1200:
 
-1.  - [[right-neutral-bow]]
-    - [[right-inward-block]]
+1.  - [[Right Neutral Bow ➡️🦶0️⃣]]
+    - [[Right Inward Block ➡️✊⬅️]]
 2.  - [[left-neutral-bow]]
     - [[left-inward-block]]
 
@@ -19,19 +19,19 @@ To 900:
 
 3.  - [[left-neutral-bow]]
     - Left Outward Block
-4.  - [[right-neutral-bow]]
+4.  - [[Right Neutral Bow ➡️🦶0️⃣]]
     - [[right-outward-block]]
 
 To 300:
 
 5.  - [[left-neutral-bow]]
     - Left Upward Block
-6.  - [[right-neutral-bow]]
+6.  - [[Right Neutral Bow ➡️🦶0️⃣]]
     - Right Upward Block
 
 To 600:
 
-7.  - [[right-neutral-bow]]
+7.  - [[Right Neutral Bow ➡️🦶0️⃣]]
     - [[right-outward-downward-block]]
 8.  - [[left-neutral-bow]]
     - Left Outward Downward Block

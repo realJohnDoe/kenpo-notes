@@ -5,11 +5,11 @@ Defense against Left Roundhouse Punch
 
 ## Steps
 
-1.  - [[right-neutral-bow]]
+1.  - [[Right Neutral Bow ➡️🦶0️⃣]]
     - [[right-outward-block]]
 2.  - [[right-front-kick]]
 3.  - Inward [[right-handsword]]
-4.  - [[cover-right-before-left]]
+4.  - [[Cover Right before Left 🦶🔄]]
 
 ## Video
 

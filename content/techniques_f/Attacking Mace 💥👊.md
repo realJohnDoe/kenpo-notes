@@ -2,7 +2,7 @@
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=104&end=123" width="100%" height="400"></iframe>
 
-Defense against [[right-straight-punch]] ⇒ [[3-punches]]
+Defense against [[right-straight-punch]] ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
@@ -12,6 +12,6 @@ Defense against [[right-straight-punch]] ⇒ [[3-punches]]
     - [[right-straight-punch]]
 3.  - Grab right arm
     - [[right-front-kick]]
-4.  - Put foot down in [[right-neutral-bow]]
+4.  - Put foot down in [[Right Neutral Bow ➡️🦶0️⃣]]
     - Left uppercut punch
-5.  - [[cover-right-before-left]]
+5.  - [[Cover Right before Left 🦶🔄]]

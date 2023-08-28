@@ -7,11 +7,11 @@ Defense against left hand grab
 ## Steps
 
 1. - Pin opponent's left arm
-   - Step back into [[right-neutral-bow]] facing 1200 🕛
+   - Step back into [[Right Neutral Bow ➡️🦶0️⃣]] facing 1200 🕛
    - [[right-upward-forearm-strike]]
 2. - [[right-inward-diagonal-forearm-strike]]
 3. - Upward outward diagonal snapping [[right-handsword]]
-4. - [[cover-right-before-left]] facing 130 🕜
+4. - [[Cover Right before Left 🦶🔄]] facing 130 🕜
 
 ## Video
 
