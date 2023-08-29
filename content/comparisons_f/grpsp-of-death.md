@@ -2,10 +2,10 @@
 
 ## Mnemonic
 
-When performing the lock in [[grasp-of-death]], our body looks a bit like an
+When performing the lock in [[Grasp of Death 🔒💀]], our body looks a bit like an
 'A'.
 
-## [[grasp-of-death]]
+## [[Grasp of Death 🔒💀]]
 
 - Lock the arm
 - [[1. Yellow Belt 🟡]]

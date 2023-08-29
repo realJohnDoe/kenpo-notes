@@ -1,6 +1,6 @@
 # Obscure Sword and Hammer 🌑⚔️🔨
 
-## [[sword-and-hammer]]
+## [[Sword and Hammer ⚔️🔨]]
 
 - When in front of a wall
 - [[1. Yellow Belt 🟡]]
