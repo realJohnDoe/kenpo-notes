@@ -5,4 +5,4 @@
 
 ## Sets
 
-1. [[2-1-stance-set-1|Stance Set 1]]
+1. [[2-2-stance-set-1|Stance Set 1]]

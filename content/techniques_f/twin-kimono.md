@@ -9,5 +9,5 @@ Defense against double lapel grab
 2. - Left foot back into [[Right Neutral Bow ➡️0️⃣🦶]] facing 1030
    - Outward horizontal [[Right Back Knuckle ➡️✊]]
 3. - [[Right Inward Diagonal Forearm Strike ➡️✊↙️]]
-4. - Snapping outward [[Right Handsword ⬅️✋]]
+4. - Snapping outward [[Right Handsword ➡️✋]]
 5. - [[Cover Right before Left 🦶🔄]] toward 1030
