@@ -5,7 +5,6 @@
 ## Defense against
 
 Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
-
 ## Steps
 
 1.  - [[Right Neutral Bow ➡️0️⃣🦶]]

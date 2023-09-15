@@ -6,12 +6,12 @@ The salutes all involve a right heel palm strike
 
 A water gun is getting triggered and it is played with hands, not with feet.
 
-## [[triggered-salute]]
+## [[Triggered Salute 🔫🫡]]
 
 - Against push with right hand to left shoulder
 - Only arm techniques starting with right heel palm strike
 
-## [[thrusting-salute]]
+## [[Thrusting Salute 🗡️🫡]]
 
 - Against [[Right Front Kick ➡️🦶⬆️]]
 - Involves a kick after a left downward block with the heel palm at the end

@@ -1,9 +1,10 @@
-# Lone Kimono 1️⃣👘
+## Video
 
-Defense against left hand grab
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=123&end=138" width="100%" height="400"></iframe>
 
-[[1-grabs-and-tackles]]
+## Defense against
 
+Left hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
 ## Steps
 
 1. - Pin opponent's left arm
@@ -13,6 +14,3 @@ Defense against left hand grab
 3. - Upward outward diagonal snapping [[Right Handsword ➡️✋]]
 4. - [[Cover Right before Left 🦶🔄]] facing 130 🕜
 
-## Video
-
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=123&end=138)
