@@ -1,23 +1,20 @@
+Defense against right roundhouse punch
+[[3-punches]]
+
+1.  - Step forward into [[right-neutral-bow]] toward 1200
+    - [[right-inward-block]]
+    - Left extended outward block
+2.  - Outward [[right-handsword]]
+3.  - [[right-forward-bow]]
+    - Left Five-finger thrust
+4.  - Back into [[right-neutral-bow]]
+    - Snapping [[right-uppercut-punch]]
+5.  - Slide left foot back into [[right-forward-bow]] towards 1030
+    - Left outward downward diagonal handsword strike
+6.  - Pivot back into [[right-neutral-bow]]
+    - Inward downward overhead [[right-handsword]]
+7.  - [[cover-right-before-left]] facing 1030
+
 ## Video
 
-<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=288&end=305" width="100%" height="400"></iframe>
-
-## Defense against
-
-Right Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]])
-
-## Steps
-
-1. - Step forward into [[Right Neutral Bow ➡️0️⃣🦶]] toward 1200
-   - [[Right Inward Block ➡️✊⬅️🛡️]]
-   - Left extended outward block
-2. - Outward [[Right Handsword ➡️✋]]
-3. - [[Right Forward Bow ➡️⬆️🦶]]
-   - Left Five-finger thrust
-4. - Back into [[Right Neutral Bow ➡️0️⃣🦶]]
-   - Snapping [[Right Uppercut Punch ➡️⬇️✊]]
-5. - Slide left foot back into [[Right Forward Bow ➡️⬆️🦶]] towards 1030
-   - Left outward downward diagonal handsword strike
-6. - Pivot back into [[Right Neutral Bow ➡️0️⃣🦶]]
-   - Inward downward overhead [[Right Handsword ➡️✋]]
-7. - [[Cover Right before Left 🦶🔄]] facing 1030
+![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=288&end=305)
