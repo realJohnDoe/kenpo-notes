@@ -16,7 +16,7 @@ A water gun is getting triggered and it is played with hands, not with feet.
 - Against [[Right Front Kick ➡️🦶⬆️]]
 - Involves a kick after a left downward block with the heel palm at the end
 
-## [[glancing-salute]]
+## [[Glancing Salute 👀🫡]]
 
 - Against push with right hand to right shoulder
 - Heel palm strike comes after blocking in reverse bow

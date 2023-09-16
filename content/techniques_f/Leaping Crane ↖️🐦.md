@@ -1,7 +1,11 @@
-# Leaping Crane ↖️🐦
+## Video
 
-Defense against Right straight punch
-[[3-punches]]
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=385&end=224" width="100%" height="400"></iframe>
+## Defense against
+
+Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]])
+
+## Steps
 
 1. - Leap to the left 900-1000 forming a left one-leg stance
    - Left inward parry
@@ -12,7 +16,3 @@ Defense against Right straight punch
 4. - Right inward horizontal elbow strike
    - Left inward hooking heel palm strike
 5. - [[Cover Right before Left 🦶🔄]]
-
-## Video
-
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=385&end=224)
