@@ -2,7 +2,9 @@ The salutes all involve a right heel palm strike
 
 ## Mnemonic
 
-A water gun is getting triggered and it is played with hands, not with feet.
+- Glancing means we stand sideways to our opponent (after blocking)
+- Triggered means the opponent gets the salute in their face right after pushing us
+- 
 
 ## [[Glancing Salute 👀🫡]]
 
@@ -17,4 +19,5 @@ A water gun is getting triggered and it is played with hands, not with feet.
 ## [[Thrusting Salute 🗡️🫡]]
 
 - Against [[Right Front Kick ➡️🦶⬆️]]
-- Involves a kick after a left downward block with the heel palm at the end
+- Involves a kick after a left downward block 
+- heel palm at the end
