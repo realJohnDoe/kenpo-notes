@@ -16,7 +16,7 @@
 9. [[Triggered Salute 🔫🫡]]
 10. [[Glancing Salute 👀🫡]]
 11. [[Thrusting Salute 🗡️🫡]]
-12. [[Gift of Destruction 🎁💥]]
+12. [[Gift of Destruction 🎁💥]] ⭐
 13. [[twisted-twig]]
 14. [[Buckling Branch ⤴️🌳]]
 15. [[Five Swords 5️⃣⚔️]]
