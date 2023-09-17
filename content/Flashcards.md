@@ -2,60 +2,42 @@
 
 [[Sword and Hammer ⚔️🔨]]
 ?
-1. Check
-2. Handsword
-3. Hammerfist
+![[Sword and Hammer ⚔️🔨#Steps]]
 <!--SR:!2023-09-20,3,250-->
 
 [[Sword of Destruction ⚔️💥]]
 ?
-1. Block
-2. Kick
-3. Handsword
+![[Sword of Destruction ⚔️💥#Easy]]
 <!--SR:!2023-09-20,3,250-->
 
 [[Delayed Sword ⏰⚔️]]
 ?
-1. Block
-2. Kick
-3. Handsword
+![[Delayed Sword ⏰⚔️#Easy]]
 <!--SR:!2023-09-20,3,250-->
 
 [[Grasp of Death 🔒💀]]
 ?
-1. Grip
-2. Lock arm
-3. Punch
+![[Grasp of Death 🔒💀#Steps]]
 <!--SR:!2023-09-18,1,230-->
 
 [[Alternating Maces 🔄✊]]
 ?
-1. Block
-2. Punch
-3. Back Knuckle
+![[Alternating Maces 🔄✊#Easy]]
 <!--SR:!2023-09-20,3,268-->
 
 [[Deflecting Hammer 💥🔨]]
 ?
-1. Back and block
-2. Inward elbow
+![[Deflecting Hammer 💥🔨#Easy]]
 <!--SR:!2023-09-19,2,248-->
 
 [[Lone Kimono 1️⃣👘]]
 ?
-1. Check
-2. Upward
-3. Inward
-4. Outward
+![[Lone Kimono 1️⃣👘#Easy]]
 <!--SR:!2023-09-20,3,251-->
 
 [[Triggered Salute 🔫🫡]]
 ?
-1. Heelpalm
-2. Inward Elbow
-3. Outward Elbow
-4. Back Knuckle
-5. Vertical Back Knuckle
+![[Triggered Salute 🔫🫡#Steps]]
 <!--SR:!2023-09-19,2,248-->
 
 [[Glancing Salute 👀🫡]]
