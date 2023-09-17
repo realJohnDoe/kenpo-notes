@@ -7,6 +7,15 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
+### Easy
+
+1. Inward
+2. Kick
+3. Back Knuckle
+4. Elbow
+
+### Intermediate
+
 1.  - Leap to the left 900-1000 forming a left one-leg stance
     - Left inward parry
     - Right inward horizontal raking middle knuckle fist strike

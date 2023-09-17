@@ -60,24 +60,17 @@
 
 [[Glancing Salute 👀🫡]]
 ?
-1. Reverse Bow
-2. Heel Palm
-3. Knee
-4. Elbow
+![[Glancing Salute 👀🫡#Steps]]
 <!--SR:!2023-09-19,2,248-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
-1. Block
-2. Check
-3. Kick
-4. Heel palm
+![[Thrusting Salute 🗡️🫡#Steps]]
 <!--SR:!2023-09-19,2,248-->
 
 [[Gift of Destruction 🎁💥]]
 ?
-1. Knee
-2. Elbow
+![[Gift of Destruction 🎁💥#Steps]]
 <!--SR:!2023-09-20,3,268-->
 
 
@@ -85,3 +78,11 @@
 ?
 ![[Five Swords 5️⃣⚔️#Easy]]
 <!--SR:!2023-09-20,3,268-->
+
+[[Raining Claw 🌧️🐯]]
+?
+![[Raining Claw 🌧️🐯#Easy]]
+
+[[Leaping Crane ↖️🐦]]
+?
+![[Leaping Crane ↖️🐦#Easy]]
