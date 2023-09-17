@@ -4,7 +4,7 @@ The salutes all involve a right heel palm strike
 
 - Glancing means we stand sideways to our opponent (after blocking)
 - Triggered means the opponent gets the salute in their face right after pushing us
-- 
+-
 
 ## [[Glancing Salute 👀🫡]]
 
@@ -19,5 +19,5 @@ The salutes all involve a right heel palm strike
 ## [[Thrusting Salute 🗡️🫡]]
 
 - Against [[Right Front Kick ➡️🦶⬆️]]
-- Involves a kick after a left downward block 
+- Involves a kick after a left downward block
 - heel palm at the end

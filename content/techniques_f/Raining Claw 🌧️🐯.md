@@ -21,4 +21,4 @@
 5.  - Left overhead claw
 6.  - Shuffle forward
     - Vertical [[Right Back Knuckle ➡️✊]]
-7. [[Cover Right before Left 🦶🔄]] towards 130
+7.  [[Cover Right before Left 🦶🔄]] towards 130
