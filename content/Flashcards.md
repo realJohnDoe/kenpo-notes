@@ -33,11 +33,13 @@
 1. Block
 2. Punch
 3. Back Knuckle
+<!--SR:!2023-09-20,3,268-->
 
 [[Deflecting Hammer 💥🔨]]
 ?
 1. Back and block
 2. Inward elbow
+<!--SR:!2023-09-19,2,248-->
 
 [[Lone Kimono 1️⃣👘]]
 ?
@@ -45,6 +47,7 @@
 2. Upward
 3. Inward
 4. Outward
+<!--SR:!2023-09-20,3,251-->
 
 [[Triggered Salute 🔫🫡]]
 ?
@@ -53,6 +56,7 @@
 3. Outward Elbow
 4. Back Knuckle
 5. Vertical Back Knuckle
+<!--SR:!2023-09-19,2,248-->
 
 [[Glancing Salute 👀🫡]]
 ?
@@ -60,6 +64,7 @@
 2. Heel Palm
 3. Knee
 4. Elbow
+<!--SR:!2023-09-19,2,248-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
@@ -67,13 +72,16 @@
 2. Check
 3. Kick
 4. Heel palm
+<!--SR:!2023-09-19,2,248-->
 
 [[Gift of Destruction 🎁💥]]
 ?
 1. Knee
 2. Elbow
+<!--SR:!2023-09-20,3,268-->
 
 
 [[Five Swords 5️⃣⚔️]]
 ?
 ![[Five Swords 5️⃣⚔️#Easy]]
+<!--SR:!2023-09-20,3,268-->
