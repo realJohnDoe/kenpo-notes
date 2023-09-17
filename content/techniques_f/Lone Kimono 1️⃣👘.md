@@ -8,6 +8,15 @@ Left hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]]
 
 ## Steps
 
+### Easy
+
+1. Check
+2. Upward
+3. Inward
+4. Outward
+
+### Intermediate
+
 1. - Pin opponent's left arm
    - Step back into [[Right Neutral Bow ➡️0️⃣🦶]] facing 1200 🕛
    - [[Right Upward Forearm Strike ➡️✊⬆️]]

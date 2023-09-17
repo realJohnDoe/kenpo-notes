@@ -8,6 +8,17 @@ Right Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
+### Easy
+
+1. Block
+2. Handsword
+3. Heel Palm
+4. Uppercut
+5. Handsword
+6. Handsword
+
+### Intermediate
+
 1. - Step forward into [[Right Neutral Bow ➡️0️⃣🦶]] toward 1200
    - [[Right Inward Block ➡️✊⬅️🛡️]]
    - Left extended outward block
