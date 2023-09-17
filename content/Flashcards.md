@@ -82,7 +82,9 @@
 [[Raining Claw 🌧️🐯]]
 ?
 ![[Raining Claw 🌧️🐯#Easy]]
+<!--SR:!2023-09-20,3,251-->
 
 [[Leaping Crane ↖️🐦]]
 ?
 ![[Leaping Crane ↖️🐦#Easy]]
+<!--SR:!2023-09-20,3,251-->
