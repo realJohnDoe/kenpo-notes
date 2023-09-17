@@ -1,1 +1,4 @@
-# Web of Knowledge: Kicks 🦶
+---
+aliases:
+  - "# Web of Knowledge: Kicks 🦶"
+---

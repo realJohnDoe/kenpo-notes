@@ -1,1 +1,3 @@
-# Web of Knowledge: Pushes ✋
+---
+alias: "Web of Knowledge: Pushes ✋"
+---

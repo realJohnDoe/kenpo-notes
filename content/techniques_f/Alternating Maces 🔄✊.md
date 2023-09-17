@@ -1,19 +1,25 @@
-# Alternating Maces 🔄✊
-
 ## Video
 
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=140&end=157)
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=140&end=157" width="100%" height="400"></iframe>
+
+## Defense against
+
+Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]])
 
 ## Steps
 
-Defense against Two Hand Push
+### Easy
 
-[[2-pushes]]
+1. Block
+2. Punch
+3. Back Knuckle
 
-1.  - [[right-neutral-bow]]
-    - [[right-inward-block]]
-2.  - [[right-forward-bow]]
+### Intermediate
+
+5.  -   [[Right Neutral Bow ➡️0️⃣🦶]]
+    - [[Right Inward Block ➡️✊⬅️🛡️]]
+6.  -   [[Right Forward Bow ➡️⬆️🦶]]
     - Left Vertical Punch
-3.  - [[right-neutral-bow]]
-    - Outward [[right-back-knuckle]]
-4.  - [[cover-right-before-left]]
+7.  -   [[Right Neutral Bow ➡️0️⃣🦶]]
+    - Outward [[Right Back Knuckle ➡️✊]]
+8.  -   [[Cover Right before Left 🦶🔄]]

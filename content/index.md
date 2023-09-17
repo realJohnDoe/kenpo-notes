@@ -11,6 +11,7 @@ Here are the different sections of this page:
 
 - [[Belts]]
 - [[Techniques]]
+- [[Forms and Sets]]
 
 If you like them, drop me a star on [GitHub] or even better, contribute some
 improvements.
