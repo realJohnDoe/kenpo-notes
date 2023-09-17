@@ -8,6 +8,14 @@ Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs 
 
 ## Steps
 
+### Easy
+
+1. Block
+2. Kick
+3. Handsword
+
+### Intermediate
+
 1.  - [[Right Neutral Bow ➡️0️⃣🦶]]
     - [[Right Inward Block ➡️✊⬅️🛡️]]
 2.  - [[Right Cat ➡️🐈🦶]]

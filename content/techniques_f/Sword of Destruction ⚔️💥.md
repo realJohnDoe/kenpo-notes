@@ -10,6 +10,14 @@ Left Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
+### Easy
+
+1. Block
+2. Kick
+3. Handsword
+
+### Intermediate
+
 1.  - [[Right Neutral Bow ➡️0️⃣🦶]]
     - [[Right Outward Block 🤛↗️🛡️]]
 2.  - [[Right Front Kick ➡️🦶⬆️]]
