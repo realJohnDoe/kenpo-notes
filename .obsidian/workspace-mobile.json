@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "3dc06308019d9044",
+    "id": "42cf3861ba3e3881",
     "type": "split",
     "children": [
       {
-        "id": "09e3c688da60fe7b",
+        "id": "55ba7ab42d4f82f1",
         "type": "tabs",
         "children": [
           {
-            "id": "0113d595d2408a3f",
+            "id": "42a49e916edf172c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/techniques_f/Mace of Agression 🔨↔️.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,11 +25,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0d12cb9732bbe908",
+    "id": "74add3c7176436d1",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "0b25a88c6d9eeb26",
+        "id": "f87fc10b28b4bf3b",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -39,7 +39,7 @@
         }
       },
       {
-        "id": "2caa95486da237c9",
+        "id": "edcaa54c7a4a9203",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "id": "1d35b132707bb59e",
+        "id": "97ed94ad57d82873",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -65,7 +65,7 @@
         }
       },
       {
-        "id": "9ff4e6ea8f2ec266",
+        "id": "debf8432adb44e2f",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -76,16 +76,16 @@
     "currentTab": 0
   },
   "right": {
-    "id": "d667ecadebff4e33",
+    "id": "95be0b5dc2b44878",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "33c5bb5893b0c23e",
+        "id": "a2465f219df58070",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "content/private/Flashcards.md",
+            "file": "content/techniques_f/Mace of Agression 🔨↔️.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,29 +97,29 @@
         }
       },
       {
-        "id": "364fe4738e00e92f",
+        "id": "5f22824d748be7f0",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "content/private/Flashcards.md",
+            "file": "content/techniques_f/Mace of Agression 🔨↔️.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
         }
       },
       {
-        "id": "93fec45c24ade11c",
+        "id": "1a429c5cc89822e0",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "content/private/Flashcards.md"
+            "file": "content/techniques_f/Mace of Agression 🔨↔️.md"
           }
         }
       },
       {
-        "id": "18ad4e39f59275a9",
+        "id": "63d5f774bc52ca02",
         "type": "leaf",
         "state": {
           "type": "review-queue-list-view",
@@ -131,53 +131,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-spaced-repetition:Review flashcards": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "0113d595d2408a3f",
+  "active": "f87fc10b28b4bf3b",
   "lastOpenFiles": [
-    "content/techniques_f/Raining Claw 🌧️🐯.md",
-    "content/private/Flashcards.md",
-    "content/techniques_f/Lone Kimono 1️⃣👘.md",
-    "node_modules/queue-microtask/README.md",
-    "node_modules/queue-microtask/LICENSE",
-    "node_modules/queue-microtask",
-    "node_modules/querystringify/package.json",
-    "node_modules/querystringify/index.js",
-    "node_modules/querystringify/README.md",
-    "node_modules/querystringify/LICENSE",
-    "node_modules/querystringify",
-    "node_modules/punycode/punycode.js",
-    "node_modules/punycode/package.json",
-    "node_modules/punycode/README.md",
-    "node_modules/punycode/LICENSE-MIT.txt",
-    "node_modules/punycode",
-    "node_modules/psl/browserstack-logo.svg",
-    "node_modules/psl/README.md",
-    "node_modules/property-information/readme.md",
-    "node_modules/pretty-time/README.md",
-    "node_modules/pretty-format/README.md",
-    "node_modules/pretty-format/LICENSE.md",
-    "node_modules/pretty-bytes/readme.md",
-    "node_modules/prettier/README.md",
-    "node_modules/preact/README.md",
-    "node_modules/preact-render-to-string/README.md",
-    "node_modules/plausible-tracker/README.md",
-    "node_modules/plausible-tracker/CHANGELOG.md",
-    "node_modules/picomatch/README.md",
-    "node_modules/picomatch/CHANGELOG.md",
-    "node_modules/picocolors/README.md",
-    "node_modules/path-type/readme.md",
-    "node_modules/path-to-regexp/Readme.md",
-    "node_modules/path-to-regexp/History.md",
-    "node_modules/path-scurry/README.md",
-    "node_modules/path-scurry/LICENSE.md",
-    "node_modules/path-parse/README.md"
+    "content/techniques_f/Attacking Mace 💥👊.md",
+    "content/private/Flashcards.md"
   ]
 }

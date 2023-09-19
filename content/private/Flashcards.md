@@ -1,5 +1,9 @@
 #flashcards
 
+## [[Einsteigertechniken]]
+
+### [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
+
 [[Sword and Hammer ⚔️🔨]]
 ?
 ![[Sword and Hammer ⚔️🔨#Steps]]
@@ -20,6 +24,18 @@
 ![[Grasp of Death 🔒💀#Steps]]
 <!--SR:!2023-09-20,2,230-->
 
+
+
+[[Mace of Agression 🔨↔️]]
+?
+![[Mace of Agression 🔨↔️#Steps]]
+<!--SR:!2023-09-20,1,231-->
+
+[[Attacking Mace 💥👊]]
+?
+![[Attacking Mace 💥👊#Short]]
+<!--SR:!2023-09-20,1,231-->
+
 [[Alternating Maces 🔄✊]]
 ?
 ![[Alternating Maces 🔄✊#Easy]]
@@ -28,7 +44,9 @@
 [[Deflecting Hammer 💥🔨]]
 ?
 ![[Deflecting Hammer 💥🔨#Easy]]
-<!--SR:!2023-09-19,2,248-->
+<!--SR:!2023-09-23,4,248-->
+
+### [[2. Orange Belt 🟠|Orange Belt 🟠]]
 
 [[Lone Kimono 1️⃣👘]]
 ?
@@ -38,23 +56,22 @@
 [[Triggered Salute 🔫🫡]]
 ?
 ![[Triggered Salute 🔫🫡#Steps]]
-<!--SR:!2023-09-19,2,248-->
+<!--SR:!2023-09-24,5,248-->
 
 [[Glancing Salute 👀🫡]]
 ?
 ![[Glancing Salute 👀🫡#Steps]]
-<!--SR:!2023-09-19,2,248-->
+<!--SR:!2023-09-24,5,248-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
 ![[Thrusting Salute 🗡️🫡#Steps]]
-<!--SR:!2023-09-19,2,248-->
+<!--SR:!2023-09-25,6,248-->
 
 [[Gift of Destruction 🎁💥]]
 ?
 ![[Gift of Destruction 🎁💥#Steps]]
 <!--SR:!2023-09-20,3,268-->
-
 
 [[Five Swords 5️⃣⚔️]]
 ?
