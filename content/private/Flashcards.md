@@ -7,83 +7,89 @@
 [[Sword and Hammer ⚔️🔨]]
 ?
 ![[Sword and Hammer ⚔️🔨#Steps]]
-<!--SR:!2023-10-01,10,250-->
+<!--SR:!2023-11-24,41,250-->
 
 [[Sword of Destruction ⚔️💥]]
 ?
 ![[Sword of Destruction ⚔️💥#Easy]]
-<!--SR:!2023-10-05,14,270-->
+<!--SR:!2024-01-09,87,290-->
 
 [[Delayed Sword ⏰⚔️]]
 ?
 ![[Delayed Sword ⏰⚔️#Easy]]
-<!--SR:!2023-10-03,12,270-->
+<!--SR:!2023-12-21,72,290-->
 
 [[Grasp of Death 🔒💀]]
 ?
 ![[Grasp of Death 🔒💀#Steps]]
-<!--SR:!2023-10-13,15,230-->
+<!--SR:!2023-11-19,36,230-->
 
 
 
 [[Mace of Agression 🔨↔️]]
 ?
 ![[Mace of Agression 🔨↔️#Steps]]
-<!--SR:!2023-10-02,7,231-->
+<!--SR:!2023-11-04,13,211-->
 
 [[Attacking Mace 💥👊]]
 ?
 ![[Attacking Mace 💥👊#Short]]
-<!--SR:!2023-10-03,8,231-->
+<!--SR:!2023-11-06,27,231-->
 
 [[Alternating Maces 🔄✊]]
 ?
 ![[Alternating Maces 🔄✊#Easy]]
-<!--SR:!2023-10-04,13,288-->
+<!--SR:!2024-01-14,92,308-->
 
 [[Deflecting Hammer 💥🔨]]
 ?
 ![[Deflecting Hammer 💥🔨#Easy]]
-<!--SR:!2023-10-02,9,248-->
+<!--SR:!2023-11-11,32,248-->
 
 ### [[2. Orange Belt 🟠|Orange Belt 🟠]]
 
 [[Lone Kimono 1️⃣👘]]
 ?
 ![[Lone Kimono 1️⃣👘#Easy]]
-<!--SR:!2023-10-19,20,251-->
+<!--SR:!2023-12-13,53,251-->
 
 [[Triggered Salute 🔫🫡]]
 ?
 ![[Triggered Salute 🔫🫡#Steps]]
-<!--SR:!2023-10-09,14,248-->
+<!--SR:!2023-11-25,42,248-->
 
 [[Glancing Salute 👀🫡]]
 ?
 ![[Glancing Salute 👀🫡#Steps]]
-<!--SR:!2023-10-08,13,248-->
+<!--SR:!2023-11-23,40,248-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
 ![[Thrusting Salute 🗡️🫡#Steps]]
-<!--SR:!2023-10-10,15,248-->
+<!--SR:!2023-11-05,9,208-->
 
 [[Gift of Destruction 🎁💥]]
 ?
 ![[Gift of Destruction 🎁💥#Steps]]
-<!--SR:!2023-10-06,15,288-->
+<!--SR:!2023-12-25,76,308-->
 
 [[Five Swords 5️⃣⚔️]]
 ?
 ![[Five Swords 5️⃣⚔️#Easy]]
-<!--SR:!2023-10-07,16,288-->
+<!--SR:!2023-12-09,56,288-->
+
+[[Twisted Twig 🔀🌳]]
+?
+![[Twisted Twig 🔀🌳#Short]]
 
 [[Raining Claw 🌧️🐯]]
 ?
 ![[Raining Claw 🌧️🐯#Easy]]
-<!--SR:!2023-10-16,18,251-->
+<!--SR:!2023-12-23,67,271-->
+
+## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
 [[Leaping Crane ↖️🐦]]
 ?
 ![[Leaping Crane ↖️🐦#Easy]]
-<!--SR:!2023-09-30,9,251-->
+<!--SR:!2023-12-20,58,251-->
