@@ -8,7 +8,7 @@
 
 ## Steps
 
-### Easy
+### Short
 
 1. Block
 2. Claw

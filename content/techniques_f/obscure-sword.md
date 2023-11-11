@@ -1,1 +1,0 @@
-# Obscure Sword 🌑⚔️

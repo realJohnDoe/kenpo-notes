@@ -7,7 +7,7 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
-### Easy
+### Short
 
 1. Inward
 2. Kick

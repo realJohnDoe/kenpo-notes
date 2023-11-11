@@ -14,7 +14,7 @@
 ## [[2. Orange Belt 🟠|Orange Belt 🟠]]
 
 7. [[Lone Kimono 1️⃣👘]]
-8. [[obscure-wing]]
+8. [[Obscure Wing 🌑🐦]]
 9. [[Triggered Salute 🔫🫡]]
 10. [[Glancing Salute 👀🫡]]
 11. [[Thrusting Salute 🗡️🫡]]

@@ -10,7 +10,8 @@ Wrist Lock (Web of Knowledge: Locks & Chokes)
 
 ### Short
 
+- Check
 - Upward
 - Inward
 - Outward
-- Hammerfist
+- Reverse Bow

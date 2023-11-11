@@ -11,7 +11,7 @@
 
 [[Sword of Destruction ⚔️💥]]
 ?
-![[Sword of Destruction ⚔️💥#Easy]]
+![[Sword of Destruction ⚔️💥#Short]]
 <!--SR:!2024-01-09,87,290-->
 
 [[Delayed Sword ⏰⚔️]]
@@ -29,12 +29,12 @@
 [[Mace of Agression 🔨↔️]]
 ?
 ![[Mace of Agression 🔨↔️#Steps]]
-<!--SR:!2023-11-04,13,211-->
+<!--SR:!2023-11-14,7,191-->
 
 [[Attacking Mace 💥👊]]
 ?
 ![[Attacking Mace 💥👊#Short]]
-<!--SR:!2023-11-06,27,231-->
+<!--SR:!2023-11-21,14,211-->
 
 [[Alternating Maces 🔄✊]]
 ?
@@ -66,7 +66,7 @@
 [[Thrusting Salute 🗡️🫡]]
 ?
 ![[Thrusting Salute 🗡️🫡#Steps]]
-<!--SR:!2023-11-05,9,208-->
+<!--SR:!2023-11-28,21,208-->
 
 [[Gift of Destruction 🎁💥]]
 ?
@@ -78,9 +78,18 @@
 ![[Five Swords 5️⃣⚔️#Easy]]
 <!--SR:!2023-12-09,56,288-->
 
+[[Obscure Wing 🌑🐦]]
+?
+![[Obscure Wing 🌑🐦#Short]]
+
 [[Twisted Twig 🔀🌳]]
 ?
 ![[Twisted Twig 🔀🌳#Short]]
+<!--SR:!2023-11-09,2,256-->
+
+[[Obscure Sword 🌑⚔️]]
+?
+![[Obscure Sword 🌑⚔️#Short]]
 
 [[Raining Claw 🌧️🐯]]
 ?

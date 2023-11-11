@@ -8,7 +8,7 @@ Left Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]])
 
 ## Steps
 
-### Easy
+### Short
 
 1. Block
 2. Kick
