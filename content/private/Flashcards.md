@@ -29,7 +29,7 @@
 [[Mace of Agression 🔨↔️]]
 ?
 ![[Mace of Agression 🔨↔️#Steps]]
-<!--SR:!2023-11-14,7,191-->
+<!--SR:!2023-11-18,4,171-->
 
 [[Attacking Mace 💥👊]]
 ?
@@ -44,7 +44,7 @@
 [[Deflecting Hammer 💥🔨]]
 ?
 ![[Deflecting Hammer 💥🔨#Easy]]
-<!--SR:!2023-11-11,32,248-->
+<!--SR:!2024-01-29,79,248-->
 
 ### [[2. Orange Belt 🟠|Orange Belt 🟠]]
 
@@ -81,24 +81,30 @@
 [[Obscure Wing 🌑🐦]]
 ?
 ![[Obscure Wing 🌑🐦#Short]]
+<!--SR:!2023-11-15,4,274-->
 
 [[Twisted Twig 🔀🌳]]
 ?
 ![[Twisted Twig 🔀🌳#Short]]
-<!--SR:!2023-11-09,2,256-->
+<!--SR:!2023-11-18,7,256-->
 
 [[Obscure Sword 🌑⚔️]]
 ?
 ![[Obscure Sword 🌑⚔️#Short]]
+<!--SR:!2023-11-15,4,274-->
 
 [[Raining Claw 🌧️🐯]]
 ?
-![[Raining Claw 🌧️🐯#Easy]]
+![[Raining Claw 🌧️🐯#Short]]
 <!--SR:!2023-12-23,67,271-->
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
 [[Leaping Crane ↖️🐦]]
 ?
-![[Leaping Crane ↖️🐦#Easy]]
+![[Leaping Crane ↖️🐦#Short]]
 <!--SR:!2023-12-20,58,251-->
+
+[[Parting Wings 🥳🪽]]
+?
+![[Parting Wings 🥳🪽#Short]]

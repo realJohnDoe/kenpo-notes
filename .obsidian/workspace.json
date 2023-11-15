@@ -25,7 +25,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "numbers_f/1.md",
+                "file": "content/belts_f/3. Purple Belt 🟣.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68cc033929ec3908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/Flashcards.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -33,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "numbers_f/1.md",
+                "file": "content/private/Flashcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "numbers_f/1.md",
+                "file": "content/private/Flashcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "numbers_f/1.md"
+                "file": "content/private/Flashcards.md"
               }
             }
           },
@@ -169,16 +182,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b411891cd769d192",
+  "active": "68cc033929ec3908",
   "lastOpenFiles": [
+    "content/techniques_f/Leaping Crane ↖️🐦.md",
+    "content/private/Flashcards.md",
+    "content/techniques_f/Parting Wings 🥳🪽.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "numbers_f/9.md",
+    "numbers_f/1.md",
     "numbers_f/22.md",
     "numbers_f/18.md",
-    "numbers_f/1.md",
-    "content/private/Flashcards.md",
     "content/techniques_f/Obscure Sword 🌑⚔️.md",
     "content/belts_f/2. Orange Belt 🟠.md",
     "content/techniques_f/Sword of Destruction ⚔️💥.md",
-    "content/techniques_f/Leaping Crane ↖️🐦.md",
     "content/techniques_f/Raining Claw 🌧️🐯.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
     "content/techniques_f/Obscure Wing 🌑🐦.md",
