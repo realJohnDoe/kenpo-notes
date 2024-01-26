@@ -1,4 +1,3 @@
-⭐ means I know this technique actively
 
 ## [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
@@ -6,7 +5,7 @@
 2. [[Sword of Destruction ⚔️💥]]
 3. [[Delayed Sword ⏰⚔️]]
 4. [[Grasp of Death 🔒💀]]
-5. [[Mace of Agression 🔨↔️]]
+5. [[Mace of Aggression 🔨↔️]]
 6. [[Attacking Mace 💥👊]]
 7. [[Alternating Maces 🔄✊]]
 8. [[Deflecting Hammer 💥🔨]]
@@ -22,9 +21,9 @@
 13. [[Twisted Twig 🔀🌳]]
 14. [[Buckling Branch ⤴️🌳]]
 15. [[Five Swords 5️⃣⚔️]]
-16. [[reversing-mace]]
-17. [[repeating-mace]]
-18. [[thrusting-prongs]]
+16. [[Reversing Mace ✊🔄]]
+17. [[Repeating Mace ↔️👊]]
+18. [[Thrusting Prongs 🗡️ 🍴]]
 19. [[Raining Claw 🌧️🐯]]
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]

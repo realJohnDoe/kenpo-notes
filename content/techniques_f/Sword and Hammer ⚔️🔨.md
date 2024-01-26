@@ -5,5 +5,7 @@
 ## Steps
 
 1. Check
-2. Handsword
+2. 
+  - Right foot back
+  - Hand Sword
 3. Hammerfist

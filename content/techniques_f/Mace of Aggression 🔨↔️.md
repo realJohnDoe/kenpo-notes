@@ -9,6 +9,8 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
 ## Steps
 
 1. Check
-2. Hammerfist
+2. 
+  - Right foot forward
+  - Hammerfist
 3. Inward Elbow
 4. Outward Elbow
