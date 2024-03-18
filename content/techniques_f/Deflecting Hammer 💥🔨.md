@@ -14,7 +14,7 @@ The right hand (hammer) deflects the incoming kick
 
 ### Easy
 
-1. Back and block
+1. Left foot Back and block
 2. Inward elbow
 
 ### Intermediate

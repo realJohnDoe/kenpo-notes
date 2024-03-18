@@ -7,12 +7,12 @@
 [[Sword and Hammer ⚔️🔨]]
 ?
 ![[Sword and Hammer ⚔️🔨#Steps]]
-<!--SR:!2024-01-30,27,210-->
+<!--SR:!2024-03-27,18,170-->
 
 [[Sword of Destruction ⚔️💥]]
 ?
 ![[Sword of Destruction ⚔️💥#Short]]
-<!--SR:!2024-02-23,43,270-->
+<!--SR:!2024-05-12,55,250-->
 
 [[Delayed Sword ⏰⚔️]]
 ?
@@ -22,19 +22,22 @@
 [[Grasp of Death 🔒💀]]
 ?
 ![[Grasp of Death 🔒💀#Steps]]
-<!--SR:!2024-02-10,83,230-->
+<!--SR:!2024-08-23,193,230-->
 
-
+[[Captured Twigs 🕸️🌿]]
+?
+![[Captured Twigs 🕸️🌿#Medium]]
+<!--SR:!2024-03-31,22,255-->
 
 [[Mace of Aggression 🔨↔️]]
 ?
 ![[Mace of Aggression 🔨↔️#Steps]]
-<!--SR:!2024-01-31,8,131-->
+<!--SR:!2024-03-24,15,130-->
 
 [[Attacking Mace 💥👊]]
 ?
 ![[Attacking Mace 💥👊#Short]]
-<!--SR:!2024-02-27,66,211-->
+<!--SR:!2024-04-11,33,191-->
 
 [[Alternating Maces 🔄✊]]
 ?
@@ -44,8 +47,9 @@
 [[Deflecting Hammer 💥🔨]]
 ?
 ![[Deflecting Hammer 💥🔨#Easy]]
-<!--SR:!2024-01-29,79,248-->
-### [[2. Orange Belt 🟠|Orange Belt 🟠]]
+<!--SR:!2024-04-02,24,179-->
+
+### [[2. Orange Belt 🟠|Orange Belt 🟠]]<!--SR:!2024-03-12,39,228-->
 
 [[Lone Kimono 1️⃣👘]]
 ?
@@ -55,21 +59,22 @@
 [[Triggered Salute 🔫🫡]]
 ?
 ![[Triggered Salute 🔫🫡#Steps]]
-<!--SR:!2024-03-13,107,248-->
+<!--SR:!2024-12-06,267,248-->
 
 [[Glancing Salute 👀🫡]]
 ?
 ![[Glancing Salute 👀🫡#Steps]]
-<!--SR:!2024-02-06,14,188-->
+<!--SR:!2024-04-18,31,168-->
 
 [[Repeating Mace ↔️👊]]
 ?
 ![[Repeating Mace ↔️👊#Short]]
+<!--SR:!2024-03-26,17,183-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
 ![[Thrusting Salute 🗡️🫡#Steps]]
-<!--SR:!2024-01-25,51,208-->
+<!--SR:!2024-04-01,23,168-->
 
 [[Gift of Destruction 🎁💥]]
 ?
@@ -84,21 +89,22 @@
 [[Obscure Wing 🌑🐦]]
 ?
 ![[Obscure Wing 🌑🐦#Short]]
-<!--SR:!2024-02-24,52,254-->
+<!--SR:!2024-07-05,132,254-->
 
 [[Reversing Mace ✊🔄]]
 ?
 ![[Reversing Mace ✊🔄#Short]]
+<!--SR:!2024-03-23,28,223-->
 
-[[Twisted Twig 🔀🌳]]
+[[Twisted Twig 🔀🌿]]
 ?
-![[Twisted Twig 🔀🌳#Short]]
-<!--SR:!2024-02-09,29,216-->
+![[Twisted Twig 🔀🌿#Short]]
+<!--SR:!2024-04-12,63,216-->
 
 [[Obscure Sword 🌑⚔️]]
 ?
 ![[Obscure Sword 🌑⚔️#Short]]
-<!--SR:!2024-01-28,4,134-->
+<!--SR:!2024-03-22,13,130-->
 
 [[Raining Claw 🌧️🐯]]
 ?
@@ -115,9 +121,14 @@
 [[Parting Wings 🥳🪽]]
 ?
 ![[Parting Wings 🥳🪽#Short]]
-<!--SR:!2024-01-28,17,255-->
+<!--SR:!2024-03-18,47,255-->
 
 [[Obstructing the Storm 🚧🌀]]
 ?
 ![[Obstructing the Storm 🚧🌀#Short]]
-<!--SR:!2024-02-18,32,247-->
+<!--SR:!2024-05-20,86,247-->
+
+[[Spiralling Twig 🌀🌿]]
+?
+![[Spiralling Twig 🌀🌿#Medium]]
+<!--SR:!2024-03-30,21,255-->
