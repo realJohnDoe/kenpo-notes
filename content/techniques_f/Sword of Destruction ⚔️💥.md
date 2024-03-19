@@ -4,7 +4,7 @@
 
 ## Defense against
 
-Left Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]])
+Left Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 
 ## Steps
 

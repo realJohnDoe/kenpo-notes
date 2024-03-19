@@ -51,20 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/numbers_f/2.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "efabb798129debdf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/belts_f/1. Yellow Belt 🟡.md",
+                "file": "content/techniques_f/Grasp of Death 🔒💀.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -72,7 +59,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/belts_f/1. Yellow Belt 🟡.md",
+                "file": "content/techniques_f/Grasp of Death 🔒💀.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/belts_f/1. Yellow Belt 🟡.md",
+                "file": "content/techniques_f/Grasp of Death 🔒💀.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/belts_f/1. Yellow Belt 🟡.md"
+                "file": "content/techniques_f/Grasp of Death 🔒💀.md"
               }
             }
           },
@@ -208,14 +195,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "efabb798129debdf",
+  "active": "0103ce128b57028c",
   "lastOpenFiles": [
-    "content/numbers_f/1.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
-    "content/techniques_f/Delayed Sword ⏰⚔️.md",
     "content/techniques_f/Captured Twigs 🕸️🌿.md",
-    "content/numbers_f/11.md",
+    "content/techniques_f/Alternating Maces 🔄✊.md",
     "content/belts_f/2. Orange Belt 🟠.md",
+    "content/numbers_f/2.md",
+    "content/web-of-knowledge/4-kicks.md",
+    "content/web-of-knowledge/2-pushes.md",
+    "content/web-of-knowledge/5-holds-and-hugs.md",
+    "content/techniques_f/Deflecting Hammer 💥🔨.md",
+    "content/techniques_f/Sword of Destruction ⚔️💥.md",
+    "content/techniques_f/Delayed Sword ⏰⚔️.md",
+    "content/numbers_f/1.md",
+    "content/numbers_f/11.md",
     "content/forms-and-sets/1-1-short-form-1.md",
     "content/numbers_f/21.md",
     "content/numbers_f/20.md",
@@ -228,13 +222,6 @@
     "content/numbers_f/6.md",
     "content/numbers_f/4.md",
     "content/numbers_f/3.md",
-    "content/numbers_f/2.md",
-    "content/index.md",
-    "content/techniques_f/Raining Claw 🌧️🐯.md",
-    "content/techniques_f/Twin Kimono 2️⃣👘.md",
-    "content/techniques_f/Snapping Twig 🔄🌳.md",
-    "content/techniques_f/Scraping Hoof ⬇️🐎.md",
-    "content/techniques_f/Shielding Hammer 🛡️🔨.md",
-    "content/techniques_f/Grip of Death ⚒️💀.md"
+    "content/index.md"
   ]
 }

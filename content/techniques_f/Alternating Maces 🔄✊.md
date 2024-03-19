@@ -4,7 +4,7 @@
 
 ## Defense against
 
-Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]])
+Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 ## Steps
 

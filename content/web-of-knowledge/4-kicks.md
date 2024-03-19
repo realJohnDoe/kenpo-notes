@@ -1,4 +1,4 @@
 ---
 aliases:
-  - "# Web of Knowledge: Kicks 🦶"
+  - "Web of Knowledge: Kicks 🦶"
 ---
