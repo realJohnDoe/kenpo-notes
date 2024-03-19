@@ -1,5 +1,3 @@
-# Grpsp of Death 🔒⚒️💀
-
 ## Mnemonic
 
 When performing the lock in [[Grasp of Death 🔒💀]], our body looks a bit like an
@@ -10,7 +8,7 @@ When performing the lock in [[Grasp of Death 🔒💀]], our body looks a bit li
 - Lock the arm
 - [[1. Yellow Belt 🟡]]
 
-## [[grip-of-death]]
+## [[Grip of Death ⚒️💀]]
 
 - Double hammerfist
 - [[2. Orange Belt 🟠]]

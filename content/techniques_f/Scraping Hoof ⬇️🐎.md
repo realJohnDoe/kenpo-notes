@@ -1,4 +1,3 @@
-# Scraping Hoof ⬇️🐎
 
 Defense against attempted full nelson
 

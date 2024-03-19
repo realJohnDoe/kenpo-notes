@@ -1,5 +1,3 @@
-# Shielding Hammer 🛡️🔨
-
 Defense against [[Left Straight Punch ⬅️👊]]
 
 [[3-punches]]

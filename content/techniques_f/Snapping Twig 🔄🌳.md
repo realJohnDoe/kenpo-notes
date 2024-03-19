@@ -1,4 +1,3 @@
-# Snapping Twig 🔄🌳
 
 Defense against left push
 [[2-pushes]]

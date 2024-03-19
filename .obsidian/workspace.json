@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/techniques_f/Twin Kimono 2️⃣👘.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/techniques_f/Twin Kimono 2️⃣👘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/techniques_f/Twin Kimono 2️⃣👘.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md"
+                "file": "content/techniques_f/Twin Kimono 2️⃣👘.md"
               }
             }
           },
@@ -197,15 +197,23 @@
   },
   "active": "0103ce128b57028c",
   "lastOpenFiles": [
+    "content/techniques_f/Snapping Twig 🔄🌳.md",
+    "content/techniques_f/Scraping Hoof ⬇️🐎.md",
+    "content/techniques_f/Shielding Hammer 🛡️🔨.md",
+    "content/techniques_f/Grip of Death ⚒️💀.md",
+    "content/index.md",
+    "content/comparisons_f/Thrusting Kick Arm.md",
+    "content/comparisons_f/Throwing over the Right Leg.md",
+    "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
+    "content/comparisons_f/Grpsp of Death 🔒⚒️💀.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
     "content/Forms and Sets.md",
     "content/forms-and-sets/2-1-blocking-set.md",
     "content/forms-and-sets/2-2-stance-set-1.md",
-    "content/index.md",
     "content/Techniques.md",
     "content/Belts.md",
     "content/private/Flashcards.md",
-    "content/belts_f/2. Orange Belt 🟠.md",
     "numbers_f/17.md",
     "numbers_f/13.md",
     "content/techniques_f/Repeating Mace ↔️👊.md",
@@ -214,14 +222,6 @@
     "content/techniques_f/Leaping Crane ↖️🐦.md",
     "content/techniques_f/Parting Wings 🥳🪽.md",
     "content/belts_f/3. Purple Belt 🟣.md",
-    "numbers_f/9.md",
-    "numbers_f/1.md",
-    "numbers_f/22.md",
-    "numbers_f/18.md",
-    "content/techniques_f/Obscure Sword 🌑⚔️.md",
-    "content/techniques_f/Sword of Destruction ⚔️💥.md",
-    "content/techniques_f/Obscure Wing 🌑🐦.md",
-    "content/techniques_f/Triggered Salute 🔫🫡.md",
-    "content/Einsteigertechniken.md"
+    "numbers_f/9.md"
   ]
 }

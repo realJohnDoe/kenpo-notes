@@ -1,5 +1,3 @@
-# Twin Kimono 2️⃣👘
-
 Defense against double lapel grab
 [[1-grabs-and-tackles]]
 
