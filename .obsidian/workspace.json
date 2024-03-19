@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/techniques_f/Raining Claw 🌧️🐯.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/techniques_f/Raining Claw 🌧️🐯.md",
+                "file": "content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/techniques_f/Raining Claw 🌧️🐯.md",
+                "file": "content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/techniques_f/Raining Claw 🌧️🐯.md"
+                "file": "content/index.md"
               }
             }
           },
@@ -197,8 +197,8 @@
   },
   "active": "0103ce128b57028c",
   "lastOpenFiles": [
-    "content/index.md",
     "content/techniques_f/Raining Claw 🌧️🐯.md",
+    "content/index.md",
     "content/techniques_f/Twin Kimono 2️⃣👘.md",
     "content/techniques_f/Snapping Twig 🔄🌳.md",
     "content/techniques_f/Scraping Hoof ⬇️🐎.md",
