@@ -4,7 +4,7 @@
 
 ## Defense against
 
-Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
+Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1]])
 
 ## Steps
 
