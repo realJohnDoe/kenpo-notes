@@ -20,5 +20,5 @@
     - Downward [[Right Inward Block ➡️✊⬅️🛡️]]
 1.  - Left overhead claw
 1.  - Shuffle forward
-   - Vertical [[Right Back Knuckle ➡️✊]]
+    - Vertical [[Right Back Knuckle ➡️✊]]
 1.  - [[Cover Right before Left 🦶🔄]] towards 130

@@ -12,7 +12,7 @@ Here are the different sections of this page:
 - [[Belts]]
 - [[Forms and Sets]]
 
-If you like them, drop me a star on [GitHub] or even better, contribute some
+If you like them, drop me a star on [GitHub] or even contribute some ideas for
 improvements.
 
 [Quartz]: https://quartz.jzhao.xyz/
