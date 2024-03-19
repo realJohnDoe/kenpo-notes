@@ -22,7 +22,7 @@ Main Kudos for introducing me to Kenpo go to my [Dojo in Esslingen].
 
 [Dojo in Esslingen]: https://bushido-esslingen.de/
 
-And here are some Kenpo websites I used for refe:
+And here are some Kenpo websites I used for reference:
 
 - [https://www.kenpotech.net/](https://www.kenpotech.net/)
 - [http://www.bakerfamily4.net/kenpo/](http://www.bakerfamily4.net/kenpo/)
