@@ -6,5 +6,5 @@
 
 1. Check
 2.   - Right foot back
-  - Hand Sword
+    - Hand Sword
 3. Hammerfist
