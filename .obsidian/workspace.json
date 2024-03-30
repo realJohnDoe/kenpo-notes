@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/techniques_f/Captured Twigs 🕸️🌿.md",
+                "file": "content/private/Flashcards.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/techniques_f/Captured Twigs 🕸️🌿.md",
+                "file": "content/private/Flashcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/techniques_f/Captured Twigs 🕸️🌿.md",
+                "file": "content/private/Flashcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/techniques_f/Captured Twigs 🕸️🌿.md"
+                "file": "content/private/Flashcards.md"
               }
             }
           },
@@ -197,18 +197,19 @@
   },
   "active": "0103ce128b57028c",
   "lastOpenFiles": [
-    "content/techniques_f/Buckling Branch ⤴️🌳.md",
+    "content/techniques_f/Checking the Storm ✔️🌀.md",
+    "content/web-of-knowledge/7-weapons.md",
     "content/techniques_f/Captured Twigs 🕸️🌿.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
+    "content/techniques_f/Grasp of Death 🔒💀.md",
+    "content/techniques_f/Buckling Branch ⤴️🌳.md",
     "content/techniques_f/Five Swords 5️⃣⚔️.md",
     "content/web-of-knowledge/2-pushes.md",
     "content/web-of-knowledge/3-punches.md",
     "content/web-of-knowledge/4-kicks.md",
     "content/web-of-knowledge/5-holds-and-hugs.md",
     "content/web-of-knowledge/6-locks-and-chokes.md",
-    "content/web-of-knowledge/7-weapons.md",
     "content/techniques_f/Grip of Death ⚒️💀.md",
-    "content/techniques_f/Grasp of Death 🔒💀.md",
     "content/techniques_f/Glancing Salute 👀🫡.md",
     "content/techniques_f/Gift of Destruction 🎁💥.md",
     "content/techniques_f/Deflecting Hammer 💥🔨.md",
@@ -221,7 +222,6 @@
     "content/index.md",
     "content/Beginner's Techniques.md",
     "content/numbers_f/2.md",
-    "content/numbers_f/1.md",
-    "content/numbers_f/11.md"
+    "content/numbers_f/1.md"
   ]
 }

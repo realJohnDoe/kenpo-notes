@@ -49,6 +49,9 @@
 ![[Deflecting Hammer 💥🔨#Easy]]
 <!--SR:!2024-04-02,24,179-->
 
+[[Checking the Storm ✔️🌀]]
+?
+![[Checking the Storm ✔️🌀#Short]]
 ### [[2. Orange Belt 🟠|Orange Belt 🟠]]<!--SR:!2024-03-12,39,228-->
 
 [[Lone Kimono 1️⃣👘]]
