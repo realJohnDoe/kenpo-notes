@@ -12,7 +12,7 @@ Here are the different sections of this page:
 - [[Belts]]
 - [[Forms and Sets]]
 
-There is also the first two parts of the focus techniques in our Dojo:
+There are also the first two parts of the focus techniques in our Dojo:
 
 - [[Beginner's Techniques]]
 - [[Intermediate Techniques]]
@@ -23,9 +23,10 @@ improvement.
 [Quartz]: https://quartz.jzhao.xyz/
 [GitHub]: https://github.com/realJohnDoe/kenpo-quartz
 
-Main Kudos for introducing me to Kenpo go to my [Dojo in Esslingen].
+Main Kudos for introducing me to Kenpo go to my [Dojo in Esslingen] 🙏.
 
-[Dojo in Esslingen]: https://bushido-esslingen.de/
+[Dojo in Esslingen]:  https://karate-esslingen.de/
+[Alternative]: https://bushido-esslingen.de/
 
 And here are some Kenpo websites I used for reference:
 
