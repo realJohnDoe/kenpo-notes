@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Belts.md",
+                "file": "content/belts_f/3. Purple Belt 🟣.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Belts.md",
+                "file": "content/belts_f/3. Purple Belt 🟣.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Belts.md",
+                "file": "content/belts_f/3. Purple Belt 🟣.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Belts.md"
+                "file": "content/belts_f/3. Purple Belt 🟣.md"
               }
             }
           },
@@ -223,12 +223,22 @@
   },
   "active": "72928286921f649a",
   "lastOpenFiles": [
+    "content/web-of-knowledge/1-grabs-and-tackles.md",
+    "content/web-of-knowledge/2-pushes.md",
+    "content/web-of-knowledge/3-punches.md",
+    "content/web-of-knowledge/4-kicks.md",
+    "content/web-of-knowledge/5-holds-and-hugs.md",
+    "content/web-of-knowledge/6-locks-and-chokes.md",
+    "content/belts_f/4. Blue Belt 🔵.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/belts_f/1. Yellow Belt 🟡.md",
+    "content/Belts.md",
+    "content/belts_f/7. 2nd Brown Belt 🟤2️⃣.md",
     "content/Intermediate Techniques.md",
     "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
     "content/techniques_f/Spiraling Twig 🌀🌿.md",
-    "content/belts_f/2. Orange Belt 🟠.md",
     "content/techniques_f/Scraping Hoof ⬇️🐎.md",
-    "content/belts_f/7. 2nd Brown Belt 🟤2️⃣.md",
     "content/belts_f/6. 3rd Brown Belt 🟤3️⃣.md",
     "content/Beginner's Techniques.md",
     "content/techniques_f/Locked Wing 🔒🪽.md",
@@ -238,16 +248,6 @@
     "content/index.md",
     "content/techniques_f/Parting Wings 🥳🪽.md",
     "content/techniques_f/Crossing Talon 🔀🦅.md",
-    "content/belts_f/1. Yellow Belt 🟡.md",
-    "content/techniques_f/Thrusting Salute 🗡️🫡.md",
-    "content/techniques_f/Repeating Mace ↔️👊.md",
-    "content/techniques_f/Raining Claw 🌧️🐯.md",
-    "content/numbers_f/24.md",
-    "content/numbers_f/23.md",
-    "content/techniques_f/Obscure Wing 🌑🐦.md",
-    "content/techniques_f/Gift of Destruction 🎁💥.md",
-    "content/techniques_f/Obscure Sword 🌑⚔️.md",
-    "content/techniques_f/Lone Kimono 1️⃣👘.md",
-    "content/techniques_f/Leaping Crane ↖️🐦.md"
+    "content/techniques_f/Thrusting Salute 🗡️🫡.md"
   ]
 }
