@@ -4,7 +4,7 @@ title: Welcome to my Kenpo Notes
 
 # Overview
 
-These are my kenpo notes, written in markdown and rendered to this website
+These are my Kenpo notes, written in markdown and rendered to this website
 using [Quartz].
 
 Here are the different sections of this page:
