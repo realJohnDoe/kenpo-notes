@@ -12,11 +12,12 @@ Here are the different sections of this page:
 - [[Belts]]
 - [[Forms and Sets]]
 
-There is also the first part of the focus techniques in our Dojo:
+There is also the first two parts of the focus techniques in our Dojo:
 
 - [[Beginner's Techniques]]
+- [[Intermediate Techniques]]
 
-If you like them, feel free to drop me a star on [GitHub] or even contribute some ideas for
+If you like this site, feel free to drop me a star on [GitHub] or even contribute some ideas for
 improvement.
 
 [Quartz]: https://quartz.jzhao.xyz/

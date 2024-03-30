@@ -1,8 +1,6 @@
 ## Video
 
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=322&end=338)
-
-
+<iframe src="https://www.youtube.com/embed/3mcbjGkhCto" width="100%" height="400"></iframe>
 ## Defense against
 
 left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]])
@@ -24,3 +22,7 @@ left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]])
 3. - Right inward diagonal roundhouse kick to left knee
 4. - [[Cover Right before Left 🦶🔄]] facing 1030 🕥
 
+
+## Further Videos
+
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=322&end=338" width="100%" height="400"></iframe>

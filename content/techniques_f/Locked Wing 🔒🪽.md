@@ -4,4 +4,4 @@
 
 ## Defense Against
 
-Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]])
+Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]])
