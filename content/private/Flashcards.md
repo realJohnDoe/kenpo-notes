@@ -1,13 +1,13 @@
 #flashcards
 
-## [[Einsteigertechniken]]
+## [[Beginner's Techniques]]
 
 ### [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
 [[Sword and Hammer ⚔️🔨]]
 ?
 ![[Sword and Hammer ⚔️🔨#Steps]]
-<!--SR:!2024-03-27,18,170-->
+<!--SR:!2024-04-28,31,170-->
 
 [[Sword of Destruction ⚔️💥]]
 ?
@@ -32,7 +32,7 @@
 [[Mace of Aggression 🔨↔️]]
 ?
 ![[Mace of Aggression 🔨↔️#Steps]]
-<!--SR:!2024-03-24,15,130-->
+<!--SR:!2024-04-13,20,130-->
 
 [[Attacking Mace 💥👊]]
 ?
@@ -69,7 +69,7 @@
 [[Repeating Mace ↔️👊]]
 ?
 ![[Repeating Mace ↔️👊#Short]]
-<!--SR:!2024-03-26,17,183-->
+<!--SR:!2024-04-26,31,183-->
 
 [[Thrusting Salute 🗡️🫡]]
 ?
@@ -94,7 +94,7 @@
 [[Reversing Mace ✊🔄]]
 ?
 ![[Reversing Mace ✊🔄#Short]]
-<!--SR:!2024-03-23,28,223-->
+<!--SR:!2024-05-27,64,223-->
 
 [[Twisted Twig 🔀🌿]]
 ?
@@ -104,7 +104,7 @@
 [[Obscure Sword 🌑⚔️]]
 ?
 ![[Obscure Sword 🌑⚔️#Short]]
-<!--SR:!2024-03-22,13,130-->
+<!--SR:!2024-04-08,17,130-->
 
 [[Raining Claw 🌧️🐯]]
 ?
@@ -120,8 +120,9 @@
 
 [[Parting Wings 🥳🪽]]
 ?
+![[Parting Wings 🥳🪽#Video]]
 ![[Parting Wings 🥳🪽#Short]]
-<!--SR:!2024-03-18,47,255-->
+<!--SR:!2024-04-15,24,235-->
 
 [[Obstructing the Storm 🚧🌀]]
 ?

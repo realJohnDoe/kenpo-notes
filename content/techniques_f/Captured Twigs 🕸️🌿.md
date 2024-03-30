@@ -1,3 +1,6 @@
+## Video
+
+<iframe src="https://www.youtube.com/embed/UVCWYqMgxPQ?start=38&end=123" width="100%" height="400"></iframe>
 ## Defense Against
 
 [[5-holds-and-hugs|Web of Knowledge: Holds and Hugs]], [[5]]

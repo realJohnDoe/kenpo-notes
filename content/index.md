@@ -12,6 +12,10 @@ Here are the different sections of this page:
 - [[Belts]]
 - [[Forms and Sets]]
 
+There is also the first part of the focus techniques in our Dojo:
+
+- [[Beginner's Techniques]]
+
 If you like them, feel free to drop me a star on [GitHub] or even contribute some ideas for
 improvement.
 
