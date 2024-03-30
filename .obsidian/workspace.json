@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
+                "file": "content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
+                "file": "content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md"
+                "file": "content/index.md"
               }
             }
           },
@@ -223,6 +223,11 @@
   },
   "active": "72928286921f649a",
   "lastOpenFiles": [
+    "content/Belts.md",
+    "content/Forms and Sets.md",
+    "content/comparisons_f/Thrusting Kick Arm.md",
+    "content/comparisons_f/Throwing over the Right Leg.md",
+    "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
     "content/comparisons_f/Grpsp of Death 🔒⚒️💀.md",
     "content/belts_f/2. Orange Belt 🟠.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
@@ -234,7 +239,6 @@
     "content/web-of-knowledge/5-holds-and-hugs.md",
     "content/web-of-knowledge/6-locks-and-chokes.md",
     "content/belts_f/4. Blue Belt 🔵.md",
-    "content/Belts.md",
     "content/belts_f/7. 2nd Brown Belt 🟤2️⃣.md",
     "content/Intermediate Techniques.md",
     "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
@@ -244,10 +248,6 @@
     "content/Beginner's Techniques.md",
     "content/techniques_f/Locked Wing 🔒🪽.md",
     "content/techniques_f/Untitled.md",
-    "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
-    "content/techniques_f/Dominating Circles 💪⭕.md",
-    "content/index.md",
-    "content/techniques_f/Parting Wings 🥳🪽.md",
-    "content/techniques_f/Crossing Talon 🔀🦅.md"
+    "content/techniques_f/Striking Serpent's Head 🎳🐍.md"
   ]
 }
