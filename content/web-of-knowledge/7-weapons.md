@@ -1,4 +1,4 @@
 ---
 aliases:
-  - "Web of Knowledge: Weapons"
+  - "Web of Knowledge: Weapons 🗡️"
 ---

@@ -5,6 +5,7 @@
 ## Defense Against
 
 Right Overhead Club ([[7-weapons|Web of Knowledge: Weapons]], [[7]])
+
 ## Steps
 
 ### Short

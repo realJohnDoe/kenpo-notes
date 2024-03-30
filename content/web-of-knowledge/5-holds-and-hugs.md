@@ -1,4 +1,4 @@
 ---
 aliases:
-  - "Web of Knowledge: Holds and Hugs"
+  - "Web of Knowledge: Holds and Hugs 🫂"
 ---
