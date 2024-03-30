@@ -8,7 +8,7 @@ The right hand (hammer) deflects the incoming kick
 
 ## Defense against
 
-[[Right Front Kick ➡️🦶⬆️]] ([[4-kicks|# Web of Knowledge: Kicks 🦶]], [[4]])
+[[Right Front Kick ➡️🦶⬆️]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
 ## Steps
 

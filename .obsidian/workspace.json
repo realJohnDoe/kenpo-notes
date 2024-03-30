@@ -51,15 +51,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
+                "file": "content/belts_f/1. Yellow Belt 🟡.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "f855ed9ef628b4a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/techniques_f/Sword and Hammer ⚔️🔨.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -125,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
+                "file": "content/techniques_f/Sword and Hammer ⚔️🔨.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
+                "file": "content/techniques_f/Sword and Hammer ⚔️🔨.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md"
+                "file": "content/techniques_f/Sword and Hammer ⚔️🔨.md"
               }
             }
           },
@@ -195,33 +207,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0103ce128b57028c",
+  "active": "f855ed9ef628b4a0",
   "lastOpenFiles": [
-    "content/techniques_f/Sword and Hammer ⚔️🔨.md",
-    "content/private/Flashcards.md",
+    "content/belts_f/1. Yellow Belt 🟡.md",
+    "content/techniques_f/Attacking Mace 💥👊.md",
     "content/techniques_f/Mace of Aggression 🔨↔️.md",
     "content/techniques_f/Checking the Storm ✔️🌀.md",
-    "content/web-of-knowledge/7-weapons.md",
-    "content/techniques_f/Captured Twigs 🕸️🌿.md",
-    "content/belts_f/1. Yellow Belt 🟡.md",
     "content/techniques_f/Grasp of Death 🔒💀.md",
+    "content/techniques_f/Grip of Death ⚒️💀.md",
+    "content/techniques_f/Captured Twigs 🕸️🌿.md",
+    "content/techniques_f/Deflecting Hammer 💥🔨.md",
+    "content/web-of-knowledge/4-kicks.md",
+    "content/techniques_f/Sword of Destruction ⚔️💥.md",
+    "content/techniques_f/Alternating Maces 🔄✊.md",
+    "content/techniques_f/Delayed Sword ⏰⚔️.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/techniques_f/Sword and Hammer ⚔️🔨.md",
+    "content/private/Flashcards.md",
+    "content/web-of-knowledge/7-weapons.md",
     "content/techniques_f/Buckling Branch ⤴️🌳.md",
     "content/techniques_f/Five Swords 5️⃣⚔️.md",
     "content/web-of-knowledge/2-pushes.md",
     "content/web-of-knowledge/3-punches.md",
-    "content/web-of-knowledge/4-kicks.md",
     "content/web-of-knowledge/5-holds-and-hugs.md",
     "content/web-of-knowledge/6-locks-and-chokes.md",
-    "content/techniques_f/Grip of Death ⚒️💀.md",
     "content/techniques_f/Glancing Salute 👀🫡.md",
     "content/techniques_f/Gift of Destruction 🎁💥.md",
-    "content/techniques_f/Deflecting Hammer 💥🔨.md",
-    "content/techniques_f/Sword of Destruction ⚔️💥.md",
-    "content/techniques_f/Alternating Maces 🔄✊.md",
-    "content/techniques_f/Delayed Sword ⏰⚔️.md",
     "content/techniques_f/Crossing Talon 🔀🦅.md",
-    "content/belts_f/2. Orange Belt 🟠.md",
-    "content/Belts.md",
-    "content/index.md"
+    "content/Belts.md"
   ]
 }

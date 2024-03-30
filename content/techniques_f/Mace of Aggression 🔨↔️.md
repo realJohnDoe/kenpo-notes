@@ -4,7 +4,7 @@
 
 ## Defense against
 
-Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]])
+Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[8]])
 
 ## Steps
 
