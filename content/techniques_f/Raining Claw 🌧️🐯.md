@@ -1,7 +1,6 @@
 ## Video
 
-![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=355&end=368)
-
+<iframe src="https://www.youtube.com/embed/afOKudWeld8" width="100%" height="400"></iframe>
 ## Defense against
 
 [[Right Uppercut Punch ➡️⬇️✊]] ([[3-punches|Web of Knowledge: Punches 👊]])
@@ -22,3 +21,7 @@
 1.  - Shuffle forward
     - Vertical [[Right Back Knuckle ➡️✊]]
 1.  - [[Cover Right before Left 🦶🔄]] towards 130
+
+## Further Videos
+
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=355&end=368" width="100%" height="400"></iframe>
