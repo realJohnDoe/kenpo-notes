@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/Flashcards.md"
+                "file": "content/techniques_f/Mace of Aggression 🔨↔️.md"
               }
             }
           },
@@ -197,6 +197,7 @@
   },
   "active": "0103ce128b57028c",
   "lastOpenFiles": [
+    "content/private/Flashcards.md",
     "content/techniques_f/Checking the Storm ✔️🌀.md",
     "content/web-of-knowledge/7-weapons.md",
     "content/techniques_f/Captured Twigs 🕸️🌿.md",
@@ -221,7 +222,6 @@
     "content/Belts.md",
     "content/index.md",
     "content/Beginner's Techniques.md",
-    "content/numbers_f/2.md",
-    "content/numbers_f/1.md"
+    "content/numbers_f/2.md"
   ]
 }
