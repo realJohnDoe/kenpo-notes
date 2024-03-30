@@ -24,7 +24,7 @@
 - Crossed Twigs
 - [[Hugging Pendulum 🤗🕰️]]
 
-[[5. Green Belt 🟢|Green Belt 🟢]]
+## [[5. Green Belt 🟢|Green Belt 🟢]]
 
 - Conquering Shield
 - Raking Mace

@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Intermediate Techniques.md",
+                "file": "content/Belts.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Intermediate Techniques.md",
+                "file": "content/Belts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Intermediate Techniques.md",
+                "file": "content/Belts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Intermediate Techniques.md"
+                "file": "content/Belts.md"
               }
             }
           },
@@ -223,8 +223,8 @@
   },
   "active": "72928286921f649a",
   "lastOpenFiles": [
-    "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
     "content/Intermediate Techniques.md",
+    "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
     "content/techniques_f/Spiraling Twig 🌀🌿.md",
     "content/belts_f/2. Orange Belt 🟠.md",
     "content/techniques_f/Scraping Hoof ⬇️🐎.md",
