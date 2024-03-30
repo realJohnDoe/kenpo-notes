@@ -5,10 +5,16 @@
 - [[Striking Serpent's Head 🎳🐍]]
 - [[Locked Wing 🔒🪽]]
 - [[Grip of Death ⚒️💀]]
+- [[Scraping Hoof ⬇️🐎]]
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
 - [[Parting Wings 🥳🪽]]
+- Circling Wing
+- Twirling Wings
+- Hooking Wings
+- [[Spiraling Twig 🌀🌿]]
+- Shield and Sword
 ## [[4. Blue Belt 🔵|Blue Belt 🔵]]
 
 - Repeated Devastation
@@ -16,10 +22,12 @@
 - Thrusting Wedge
 - Destructive Twins
 - Crossed Twigs
+- [[Hugging Pendulum 🤗🕰️]]
 
 [[5. Green Belt 🟢|Green Belt 🟢]]
 
 - Conquering Shield
+- Raking Mace
 ## [[6. 3rd Brown Belt 🟤3️⃣|3rd Brown Belt 🟤3️⃣]]
 
 - Desperate Falcons

@@ -132,7 +132,7 @@
 ![[Obstructing the Storm 🚧🌀#Short]]
 <!--SR:!2024-05-20,86,247-->
 
-[[Spiralling Twig 🌀🌿]]
+[[Spiraling Twig 🌀🌿]]
 ?
-![[Spiralling Twig 🌀🌿#Medium]]
+![[Spiraling Twig 🌀🌿#Medium]]
 <!--SR:!2024-03-30,21,255-->
