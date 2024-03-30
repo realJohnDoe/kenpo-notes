@@ -8,6 +8,6 @@ Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles ðŸ
 ## Steps
 
 1. Check
-2.   - Right foot back
+2.  - Right foot back
     - Hand Sword
 3. Hammerfist
