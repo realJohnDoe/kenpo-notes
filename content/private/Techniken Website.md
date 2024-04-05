@@ -27,7 +27,7 @@ https://karate-esslingen.de/techniken/
 25. o5: [[Gift of Destruction 🎁💥]]
 26. o8: [[Glancing Salute 👀🫡]]
 27. g7
-28. o12
+28. o12: [[Grip of Death ⚒️💀]]
 29. l20
 30. l15
 31. bl4
