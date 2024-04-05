@@ -90,7 +90,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/Techniken Website.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "mode": "source",
                 "source": false
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/Techniken Website.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/Techniken Website.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/Techniken Website.md"
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
               }
             }
           },
@@ -235,8 +235,11 @@
   },
   "active": "5789b2bb5942e29f",
   "lastOpenFiles": [
-    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/techniques_f/Grip of Death ⚒️💀.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
     "content/private/Techniken Website.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
     "content/techniques_f/Thrusting Prongs 🗡️ 🍴.md",
     "content/techniques_f/Thrusting Salute 🗡️🫡.md",
     "content/comparisons_f/Thrusting Kick Arm.md",
@@ -255,11 +258,8 @@
     "content/techniques_f/Glancing Salute 👀🫡.md",
     "content/techniques_f/Gift of Destruction 🎁💥.md",
     "content/techniques_f/Five Swords 5️⃣⚔️.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/techniques_f/Scraping Hoof ⬇️🐎.md",
     "content/belts_f/3. Purple Belt 🟣.md",
-    "content/belts_f/5. Green Belt 🟢.md",
-    "content/belts_f/4. Blue Belt 🔵.md",
-    "content/techniques_f/Circles of Protection.md"
+    "content/belts_f/5. Green Belt 🟢.md"
   ]
 }
