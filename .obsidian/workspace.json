@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/private/1. Yellow Belt 🟡 - Flashcards.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/Flashcards.md",
+                "file": "content/private/1. Yellow Belt 🟡 - Flashcards.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -64,6 +64,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/private/Techniken Website.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3b7a94aa192e115",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "content/belts_f/2. Orange Belt 🟠.md",
                 "mode": "source",
                 "backlinks": true,
@@ -72,20 +85,19 @@
             }
           },
           {
-            "id": "72928286921f649a",
+            "id": "5789b2bb5942e29f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/index.md",
+                "file": "content/private/Techniken Website.md",
                 "mode": "source",
-                "backlinks": true,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -151,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/index.md",
+                "file": "content/private/Techniken Website.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/index.md",
+                "file": "content/private/Techniken Website.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/index.md"
+                "file": "content/private/Techniken Website.md"
               }
             }
           },
@@ -221,33 +233,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72928286921f649a",
+  "active": "5789b2bb5942e29f",
   "lastOpenFiles": [
-    "content/belts_f/3. Purple Belt 🟣.md",
     "content/belts_f/2. Orange Belt 🟠.md",
-    "content/index.md",
-    "content/Belts.md",
-    "content/Forms and Sets.md",
+    "content/private/Techniken Website.md",
+    "content/techniques_f/Thrusting Prongs 🗡️ 🍴.md",
+    "content/techniques_f/Thrusting Salute 🗡️🫡.md",
     "content/comparisons_f/Thrusting Kick Arm.md",
-    "content/comparisons_f/Throwing over the Right Leg.md",
-    "content/comparisons_f/Obscure Sword and Hammer 🌑⚔️🔨.md",
-    "content/comparisons_f/Grpsp of Death 🔒⚒️💀.md",
-    "content/belts_f/1. Yellow Belt 🟡.md",
-    "content/web-of-knowledge/1-grabs-and-tackles.md",
-    "content/web-of-knowledge/2-pushes.md",
+    "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
+    "content/techniques_f/Alternating Maces 🔄✊.md",
+    "content/forms-and-sets/Kicking Set.md",
     "content/web-of-knowledge/3-punches.md",
-    "content/web-of-knowledge/4-kicks.md",
-    "content/web-of-knowledge/5-holds-and-hugs.md",
-    "content/web-of-knowledge/6-locks-and-chokes.md",
-    "content/belts_f/4. Blue Belt 🔵.md",
-    "content/belts_f/7. 2nd Brown Belt 🟤2️⃣.md",
-    "content/Intermediate Techniques.md",
-    "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
-    "content/techniques_f/Spiraling Twig 🌀🌿.md",
-    "content/techniques_f/Scraping Hoof ⬇️🐎.md",
-    "content/belts_f/6. 3rd Brown Belt 🟤3️⃣.md",
-    "content/Beginner's Techniques.md",
+    "content/techniques_f/Shielding Hammer 🛡️🔨.md",
+    "content/techniques_f/Reversing Mace ✊🔄.md",
     "content/techniques_f/Locked Wing 🔒🪽.md",
-    "content/techniques_f/Untitled.md"
+    "content/techniques_f/Repeating Mace ↔️👊.md",
+    "content/techniques_f/Crossing Talon 🔀🦅.md",
+    "content/techniques_f/Raining Claw 🌧️🐯.md",
+    "content/techniques_f/Obscure Wing 🌑🐦.md",
+    "content/techniques_f/Lone Kimono 1️⃣👘.md",
+    "content/techniques_f/Glancing Salute 👀🫡.md",
+    "content/techniques_f/Gift of Destruction 🎁💥.md",
+    "content/techniques_f/Five Swords 5️⃣⚔️.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/techniques_f/Scraping Hoof ⬇️🐎.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/belts_f/5. Green Belt 🟢.md",
+    "content/belts_f/4. Blue Belt 🔵.md",
+    "content/techniques_f/Circles of Protection.md"
   ]
 }

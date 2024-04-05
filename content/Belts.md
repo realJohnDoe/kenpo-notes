@@ -1,5 +1,5 @@
-- [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
-- [[2. Orange Belt 🟠|Orange Belt 🟠]]
+- [[content/belts_f/1. Yellow Belt 🟡|Yellow Belt 🟡]]
+- [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 - [[3. Purple Belt 🟣|Purple Belt 🟣]]
 - [[4. Blue Belt 🔵|Blue Belt 🔵]]
 - [[5. Green Belt 🟢|Green Belt 🟢]]

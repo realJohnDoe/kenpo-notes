@@ -1,9 +1,9 @@
 ## [[Sword and Hammer ⚔️🔨]]
 
 - When in front of a wall
-- [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
+- [[content/belts_f/1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
 ## [[Obscure Sword 🌑⚔️]]
 
 - Step forward first
-- [[2. Orange Belt 🟠|Orange Belt 🟠]]
+- [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]

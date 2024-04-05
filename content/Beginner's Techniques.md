@@ -1,4 +1,4 @@
-## [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
+## [[content/belts_f/1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
 1. [[Sword and Hammer ⚔️🔨]]
 2. [[Sword of Destruction ⚔️💥]]
@@ -9,7 +9,7 @@
 7. [[Alternating Maces 🔄✊]]
 8. [[Deflecting Hammer 💥🔨]]
 
-## [[2. Orange Belt 🟠|Orange Belt 🟠]]
+## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
 7. [[Lone Kimono 1️⃣👘]]
 8. [[Obscure Wing 🌑🐦]]

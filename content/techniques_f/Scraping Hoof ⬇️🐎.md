@@ -1,3 +1,17 @@
+## Video
+## Steps
+
+### Short
+
+1. - Arms down
+    - Rear head butt
+2. - Pin arms
+    - Right heel kick
+3. Right knife edge kick
+4. Left heel kick
+5. Left knife edge kick
+
+### Medium
 
 Defense against attempted full nelson
 
