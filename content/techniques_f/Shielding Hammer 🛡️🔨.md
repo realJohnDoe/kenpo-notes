@@ -13,4 +13,4 @@
 2. - Inward downward [[Right Back Knuckle ➡️✊]]
 3. - Shuffle forward
    - Right outward thrusting elbow strike
-4. [[Cover Right before Left 🦶🔄]] towards 130
+4. [[Cover Right before Left 🦶🔄]] towards 730

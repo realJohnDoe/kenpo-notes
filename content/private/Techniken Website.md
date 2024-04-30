@@ -47,7 +47,7 @@ https://karate-esslingen.de/techniken/
 45. o19: [[Reversing Mace ✊🔄]]
 46. o11: [[Scraping Hoof ⬇️🐎]]
 47. bl10
-48. l16
+48. l16: [[Shield and Sword 🛡️⚔️]]
 49. l2
 50. o15: [[Shielding Hammer 🛡️🔨]]
 51. o16: [[Striking Serpent's Head 🎳🐍]]

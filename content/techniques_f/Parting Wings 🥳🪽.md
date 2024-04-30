@@ -10,6 +10,6 @@ Two-handed push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
 
 1. - Outward Block with both arms
 - Step back with right leg
-3. Right Handsword
+3. Right Herlpalm
 4. Left Handsword
 5. Punch

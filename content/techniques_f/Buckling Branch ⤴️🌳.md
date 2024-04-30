@@ -8,9 +8,9 @@ Left Front Kick ([[4-kicks|# Web of Knowledge: Kicks 🦶]])
 
 ## Steps
 
-1. Block
-2. Front Kick
-3. Side Kick
+1. Downward Block
+2. Right Front Kick into groin 
+3. Left Side Kick against right knee
 
 ## Further Videos
 
