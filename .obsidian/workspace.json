@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/Belts.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/Belts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/Belts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md"
+                "file": "content/Belts.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "7e525e7095814b2c",
   "lastOpenFiles": [
-    "content/belts_f/3. Purple Belt 🟣.md",
     "content/belts_f/2. Orange Belt 🟠.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
     "content/belts_f/4. Blue Belt 🔵.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
     "content/private/2. Orange Belt 🟠- Flashcards.md",
