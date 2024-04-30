@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/belts_f/2. Orange Belt 🟠.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/belts_f/2. Orange Belt 🟠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/belts_f/2. Orange Belt 🟠.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
+                "file": "content/belts_f/2. Orange Belt 🟠.md"
               }
             }
           },
@@ -158,12 +158,14 @@
   },
   "active": "7e525e7095814b2c",
   "lastOpenFiles": [
+    "content/belts_f/4. Blue Belt 🔵.md",
     "content/belts_f/2. Orange Belt 🟠.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/belts_f/1. Yellow Belt 🟡.md",
     "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/Intermediate Techniques.md",
     "content/Beginner's Techniques.md",
     "content/private/3. Purple Belt 🟣- Flashcards.md",
-    "content/belts_f/3. Purple Belt 🟣.md",
     "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
     "content/techniques_f/Scraping Hoof ⬇️🐎.md",
     "content/techniques_f/Reversing Mace ✊🔄.md",
@@ -181,8 +183,6 @@
     "content/web-of-knowledge/3-punches.md",
     "content/techniques_f/Locked Wing 🔒🪽.md",
     "content/techniques_f/Repeating Mace ↔️👊.md",
-    "content/techniques_f/Crossing Talon 🔀🦅.md",
-    "content/techniques_f/Raining Claw 🌧️🐯.md",
-    "content/techniques_f/Obscure Wing 🌑🐦.md"
+    "content/techniques_f/Crossing Talon 🔀🦅.md"
   ]
 }
