@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Right hand grabs right writs ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[13]])
+Right hand grabs right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[13]])
 
 ## Steps
 

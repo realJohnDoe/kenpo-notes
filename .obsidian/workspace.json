@@ -19,8 +19,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b2d66ae282aac05e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
+                "file": "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md"
+                "file": "content/techniques_f/Striking Serpent's Head 🎳🐍.md"
               }
             }
           },
@@ -156,10 +169,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e525e7095814b2c",
+  "active": "b2d66ae282aac05e",
   "lastOpenFiles": [
-    "content/Belts.md",
     "content/belts_f/2. Orange Belt 🟠.md",
+    "content/Belts.md",
     "content/belts_f/3. Purple Belt 🟣.md",
     "content/belts_f/4. Blue Belt 🔵.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
