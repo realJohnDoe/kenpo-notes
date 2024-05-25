@@ -40,7 +40,7 @@ https://karate-esslingen.de/techniken/
 38. 2br19
 39. bl8
 40. 3br10
-41. bl19: Repeated Devastation
+41. bl19: Repeated Devastation (eig bl5)
 42. bl8
 43. o23: [[Raining Claw 🌧️🐯]]
 44. o14: [[Repeating Mace ↔️👊]]
@@ -68,4 +68,4 @@ https://karate-esslingen.de/techniken/
 66. 2br15
 67. o20: [[Thrusting Prongs 🗡️🍴]] (again)
 68. 2br17
-69. bl19
+69. bl19: Wings of Silk
