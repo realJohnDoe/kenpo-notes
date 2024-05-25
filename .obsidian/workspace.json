@@ -26,15 +26,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/belts_f/2. Orange Belt 🟠.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "58356663536ed62d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md"
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
               }
             }
           },
@@ -170,14 +182,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2d66ae282aac05e",
+  "active": "58356663536ed62d",
   "lastOpenFiles": [
+    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/techniques_f/Gift in Return 🎁🔄_Pixel 7a_May-25-1904-2024_1.md",
+    "content/forms-and-sets/Kicking Set.md",
+    "content/belts_f/1. Yellow Belt 🟡.md",
+    "content/private/3. Purple Belt 🟣- Flashcards.md",
     "content/techniques_f/Bow of Compulsion 🙇‍♂️🔗.md",
     "content/private/Techniken Website.md",
     "content/techniques_f/Gift in Return 🎁🔄.md",
     "content/techniques_f/Gift of Destruction 🎁💥.md",
-    "content/belts_f/3. Purple Belt 🟣.md",
-    "content/private/3. Purple Belt 🟣- Flashcards.md",
     "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/private/1. Yellow Belt 🟡 - Flashcards.md",
     "content/private/2. Orange Belt 🟠- Flashcards_DESKTOP-BU1APS5_May-17-173233-2024_Conflict.md",
@@ -192,11 +208,7 @@
     "content/techniques_f/Leaping Crane ↖️🐦.md",
     "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
     "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
-    "content/belts_f/2. Orange Belt 🟠.md",
     "content/Belts.md",
-    "content/belts_f/4. Blue Belt 🔵.md",
-    "content/belts_f/1. Yellow Belt 🟡.md",
-    "content/Intermediate Techniques.md",
-    "content/Beginner's Techniques.md"
+    "content/belts_f/4. Blue Belt 🔵.md"
   ]
 }
