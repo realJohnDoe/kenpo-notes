@@ -4,7 +4,7 @@
 - Kick
 - Heelpalm
 
-[[Thrusting Prongs 🗡️ 🍴]]
+[[Thrusting Prongs 🗡️🍴]]
 
 - Thumbs
 - Knee

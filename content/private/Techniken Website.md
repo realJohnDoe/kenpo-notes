@@ -28,10 +28,10 @@ https://karate-esslingen.de/techniken/
 26. o8: [[Glancing Salute 👀🫡]]
 27. g7
 28. o12: [[Grip of Death ⚒️💀]]
-29. l20
-30. l15
+29. l20: Gripping Talon (eigentlich bl20)
+30. l15: [[Hooking Wings 🪝🪽]]
 31. bl4
-32. l3
+32. l3: [[Leaping Crane ↖️🐦]]
 33. o17: [[Locked Wing 🔒🪽]]
 34. o7: [[Lone Kimono 1️⃣👘]]
 35. g8
@@ -58,7 +58,7 @@ https://karate-esslingen.de/techniken/
 56. l10
 57. o4: [[Thrusting Salute 🗡️🫡]]
 58. 3br2
-59. o20: [[Thrusting Prongs 🗡️ 🍴]]
+59. o20: [[Thrusting Prongs 🗡️🍴]]
 60. bl2: Thrusting Wedge
 61. o2: [[Triggered Salute 🔫🫡]]
 62. bl12
@@ -66,6 +66,6 @@ https://karate-esslingen.de/techniken/
 64. l1
 65. o21: [[Twisted Twig 🔀🌿]]
 66. 2br15
-67. o20: [[Thrusting Prongs 🗡️ 🍴]] (again)
+67. o20: [[Thrusting Prongs 🗡️🍴]] (again)
 68. 2br17
 69. bl19

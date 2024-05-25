@@ -12,7 +12,7 @@
 - [[Parting Wings 🥳🪽]]
 - Circling Wing
 - Twirling Wings
-- [[Hooking Wings]]
+- [[Hooking Wings 🪝🪽]]
 - [[Spiraling Twig 🌀🌿]]
 - [[Shield and Sword 🛡️⚔️]]
 ## [[4. Blue Belt 🔵|Blue Belt 🔵]]

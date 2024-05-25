@@ -22,7 +22,7 @@
 15. [[Five Swords 5️⃣⚔️]]
 16. [[Reversing Mace ✊🔄]]
 17. [[Repeating Mace ↔️👊]]
-18. [[Thrusting Prongs 🗡️ 🍴]]
+18. [[Thrusting Prongs 🗡️🍴]]
 19. [[Raining Claw 🌧️🐯]]
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]

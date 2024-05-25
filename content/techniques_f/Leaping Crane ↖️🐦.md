@@ -1,9 +1,9 @@
 ## Video
 
-<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=385&end=224" width="100%" height="400"></iframe>
+<iframe src="https://www.youtube.com/embed/B47cFpcRjbE" width="100%" height="400"></iframe>
 ## Defense against
 
-Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]])
+Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 
 ## Steps
 
