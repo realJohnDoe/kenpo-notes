@@ -12,7 +12,7 @@ Right Overhead Club ([[7-weapons|Web of Knowledge: Weapons]], [[7]])
 
 1. - Inward Parry
     - Right foot right into [[Horse Stance 🏇🧍‍♂️]]
-2. Left [[Cat 🐈]]
-3. Left Front Kick
-4. Right Side Kick
+2. Left [[Cat Stance 🐈]]
+3. Left [[Front Kick ⬆️🦵]]
+4. Right [[Side Kick ➡️🦵]]
 5. Right [[Back Knuckle 🔙✊]]

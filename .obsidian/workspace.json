@@ -102,9 +102,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/techniques_f/Deflecting Hammer 💥🔨.md",
+                "file": "content/techniques_f/Delayed Sword ⏰⚔️.md",
                 "mode": "source",
                 "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fadc6362fadd2577",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cat Stance 🐈.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -115,7 +127,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cat 🐈.md",
+                "file": "Cat Stance 🐈.md",
                 "mode": "source",
                 "source": false
               }
@@ -188,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/techniques_f/Deflecting Hammer 💥🔨.md",
+                "file": "content/techniques_f/Delayed Sword ⏰⚔️.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/techniques_f/Deflecting Hammer 💥🔨.md",
+                "file": "content/techniques_f/Delayed Sword ⏰⚔️.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/techniques_f/Deflecting Hammer 💥🔨.md"
+                "file": "content/techniques_f/Delayed Sword ⏰⚔️.md"
               }
             }
           },
@@ -260,13 +272,25 @@
   },
   "active": "19632589ab0063a1",
   "lastOpenFiles": [
+    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
+    "content/techniques_f/Delayed Sword ⏰⚔️.md",
+    "content/techniques_f/Deflecting Hammer 💥🔨.md",
+    "content/techniques_f/Crossing Talon 🔀🦅.md",
+    "content/techniques_f/Circles of Protection.md",
+    "content/techniques_f/Checking the Storm ✔️⛈️.md",
+    "content/techniques_f/Captured Twigs 🕸️🌿.md",
+    "Cat Stance 🐈.md",
+    "content/techniques_f/Calming the Storm 🧘‍♀️⛈️.md",
+    "content/techniques_f/Buckling Branch ⤴️🌳.md",
+    "content/techniques_f/Bow of Compulsion 🙇‍♂️🔗.md",
+    "content/techniques_f/Attacking Mace 💥👊.md",
+    "content/techniques_f/Alternating Maces 🔄✊.md",
+    "content/single-techniques/attacks/punches/Hammerfist 🔨✊.md",
+    "content/single-techniques/attacks/punches/Uppercut Punch 🔝✊.md",
+    "content/comparisons_f/Alternating Maces Pattern.md",
     "content/single-techniques/attacks/punches/Handsword ✋⚔️.md",
     "content/single-techniques/attacks/punches/Heel Palm ✋🌴.md",
-    "content/techniques_f/Deflecting Hammer 💥🔨.md",
-    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
-    "content/techniques_f/Attacking Mace 💥👊.md",
     "Straight Punch ➡️👊.md",
-    "content/techniques_f/Alternating Maces 🔄✊.md",
     "content/single-techniques/Cover Right before Left 🦶🔄.md",
     "content/single-techniques/attacks/kicks/Roundhouse Kick 🔄🦵.md",
     "content/single-techniques/attacks/kicks/Side Kick ➡️🦵.md",
@@ -276,18 +300,6 @@
     "content/single-techniques/attacks/punches",
     "content/single-techniques/attacks/Right Inward Diagonal Forearm Strike ➡️✊↙️.md",
     "content/single-techniques/attacks/punches/Back Knuckle 🔙✊.md",
-    "content/single-techniques/attacks/punches/Straight Punch ↕️👊.md",
-    "content/techniques_f/Raining Claw 🌧️🐯.md",
-    "content/single-techniques/attacks/punches/Uppercut Punch 🔝✊.md",
-    "content/techniques_f/Five Swords 5️⃣⚔️.md",
-    "content/single-techniques/attacks/Right Straight Punch ➡️👊.md",
-    "content/single-techniques/attacks/Front Bear Hug 🐻.md",
-    "content/single-techniques/stances/Neutral Bow 0️⃣🧍‍♂️.md",
-    "content/forms-and-sets/1-1-short-form-1.md",
-    "Neutral Bow  0️⃣🦶.md",
-    "Neutral Bow 0️⃣�‍♂️.md",
-    "content/single-techniques/stances/Forward Bow ⬆️🧍‍♂️.md",
-    "content/forms-and-sets/1-2-long-form-1.md",
     "content/single-techniques/blocks",
     "content/single-techniques/attacks"
   ]

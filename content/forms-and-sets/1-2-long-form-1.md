@@ -15,17 +15,17 @@ alias: "Long Form 1"
          - Right [[Inward Block 🔽🛡️]]
       3. - Right forward Bow
          - Left [[Straight Punch ↕️👊]]
-      4. - Right [[Cat 🐈]]
+      4. - Right [[Cat Stance 🐈]]
          - Right [[Inward Block 🔽🛡️]]
       5. - Right foot back into Left [[Neutral Bow 0️⃣🧍‍♂️]]
          - Left [[Inward Block 🔽🛡️]]
       6. - Left [[Forward Bow ⬆️🧍‍♂️]]
-         - Right [[Straight Punch ➡️👊]]
+         - Right [[Straight Punch ↕️👊]]
    1. Facing 900, outward blocks
       1. - Right foot back into Left [[Neutral Bow 0️⃣🧍‍♂️]] facing 900
          - Left [[Outward Block 🔼🛡️]]
       2. - Left [[Forward Bow ⬆️🧍‍♂️]]
-         - Right [[Straight Punch ➡️👊]]
+         - Right [[Straight Punch ↕️👊]]
       3. - Left foot back into Right [[Neutral Bow 0️⃣🧍‍♂️]]
          - [[Outward Block 🔼🛡️]]
       4. - Right [[Forward Bow ⬆️🧍‍♂️]]
@@ -35,7 +35,7 @@ alias: "Long Form 1"
          - Left horizontal elbow strike
       2. - Left [[Upward Block ⬆️🛡️]]
       3. - Left [[Forward Bow ⬆️🧍‍♂️]]
-         - Right [[Straight Punch ➡️👊]]
+         - Right [[Straight Punch ↕️👊]]
       4. - Move left foot back into Right [[Neutral Bow 0️⃣🧍‍♂️]]
          - Right upward block
       5. - Right forward bow
@@ -48,7 +48,7 @@ alias: "Long Form 1"
       3. - Right foot back into Left [[Neutral Bow 0️⃣🧍‍♂️]]
          - Left Outward Downward Block
       4. - Left [[Forward Bow ⬆️🧍‍♂️]]
-         - Right [[Straight Punch ➡️👊]]
+         - Right [[Straight Punch ↕️👊]]
 2. Triple Blocks x2
    1. Facing 600, inward blocks, starting left
    2. Facing 900, outward blocks, starting right
