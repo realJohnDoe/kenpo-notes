@@ -5,7 +5,7 @@ Defense against left push
 1. - [[Right Neutral Bow ➡️0️⃣🦶]] facing 1200 🕛
    - Pin left hand to chest
    - Right inward hooking heel palm strike to elbow
-2. - Hook over left arme
+2. - Hook over left arm
    - Shuffle forward
    - Left thrusting handsword
 3. - Right inward downward diagonal raking hammerfist

@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Front Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]])
+[[Front Bear Hug 🐻]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[16]])
 
 ## Steps
 
