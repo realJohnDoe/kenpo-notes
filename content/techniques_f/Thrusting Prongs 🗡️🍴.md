@@ -8,7 +8,7 @@
 
 ## Steps
 
-1. - Right foot back into [[Right Forward Bow ➡️⬆️🦶]]
+1. - Right foot back into Right [[Forward Bow ⬆️🧍‍♂️]]
     - Push Thumbs into opponent's lower zone
 2. Right Knee
 3. Right Inward Elbow

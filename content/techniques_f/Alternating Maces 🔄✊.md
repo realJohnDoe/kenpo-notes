@@ -8,18 +8,10 @@ Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 ## Steps
 
-### Easy
-
-1. Block
-2. Punch
-3. Back Knuckle
-
-### Intermediate
-
-5.  - Right [[Neutral Bow  0️⃣🦶]]
-    - [[Right Inward Block ➡️✊⬅️🛡️]]
-6.  - [[Right Forward Bow ➡️⬆️🦶]]
-    - Left Vertical Punch
-7.  - Right [[Neutral Bow  0️⃣🦶]]
-    - Outward [[Right Back Knuckle ➡️✊]]
-8.  - [[Cover Right before Left 🦶🔄]]
+1.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
+    - Right [[Inward Block 🔽🛡️]]
+2.  - Right [[Forward Bow ⬆️🧍‍♂️]]
+    - Left [[Straight Punch ↕️👊]]
+3.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
+    - Outward Right [[Back Knuckle 🔙✊]]
+4.  - [[Cover Right before Left 🦶🔄]]

@@ -11,7 +11,7 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 
 1. Inward
 2. Kick
-3. Back Knuckle
+3. [[Back Knuckle 🔙✊]]
 4. Elbow
 
 ### Intermediate
@@ -20,8 +20,8 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
     - Left inward parry
     - Right inward horizontal raking middle knuckle fist strike
 2.  - Right snapping knife edge kick
-3.  - Right foot toward 130, inside opponent's right leg, forming Right [[Neutral Bow  0️⃣🦶]]
-    - Outward downward diagonal [[Right Back Knuckle ➡️✊]] to the left kidney
+3.  - Right foot toward 130, inside opponent's right leg, forming Right [[Neutral Bow 0️⃣🧍‍♂️]]
+    - Outward downward diagonal Right [[Back Knuckle 🔙✊]] to the left kidney
 4.  - Right inward horizontal elbow strike
     - Left inward hooking heel palm strike
 5.  - [[Cover Right before Left 🦶🔄]]

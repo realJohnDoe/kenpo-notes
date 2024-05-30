@@ -18,6 +18,6 @@ The salutes all involve a right heel palm strike
 
 ## [[Thrusting Salute 🗡️🫡]]
 
-- Against [[Right Front Kick ➡️🦶⬆️]]
+- Against Right [[Front Kick ⬆️🦵]]
 - Involves a kick after a left downward block
 - heel palm at the end

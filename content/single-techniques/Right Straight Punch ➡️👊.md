@@ -1,1 +1,0 @@
-# Right Straight Punch ➡️👊

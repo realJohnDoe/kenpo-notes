@@ -4,26 +4,16 @@
 
 ## Defense against
 
-[[Right Straight Punch ➡️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[9]])
+Right [[Straight Punch ➡️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[9]])
 
 ## Steps
 
-### Short
-
-1. Inward Block
-2. Punch
-3. Grab
-4. Kick
-5. Upper Cut
-
-### Medium
-
-1.  -   Step back into Left [[Neutral Bow  0️⃣🦶]] facing 1200 🕛
-    - [[Left Inward Block ⬅️✊➡️]]
-2.  -   [[Left Forward Bow ⬅️⬆️🦶]]
-    - [[Right Straight Punch ➡️👊]]
+1.  -   Step back into Left [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200 🕛
+    - Left [[Inward Block 🔽🛡️]]
+2.  -   Left [[Forward Bow ⬆️🧍‍♂️]]
+    - Right [[Straight Punch ↕️👊]]
 3.  -   Grab right arm
-    - [[Right Front Kick ➡️🦶⬆️]]
-4.  -   Put foot down in Right [[Neutral Bow  0️⃣🦶]]
-    - Left uppercut punch
+    - Right [[Front Kick ⬆️🦵]]
+4.  -   Put foot down in Right [[Neutral Bow 0️⃣🧍‍♂️]]
+    - Left [[Uppercut Punch 🔝✊]]
 5.  -   [[Cover Right before Left 🦶🔄]]

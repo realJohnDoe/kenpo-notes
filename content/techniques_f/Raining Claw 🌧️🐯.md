@@ -3,7 +3,7 @@
 <iframe src="https://www.youtube.com/embed/afOKudWeld8" width="100%" height="400"></iframe>
 ## Defense against
 
-[[Right Uppercut Punch ➡️⬇️✊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[23]])
+Right [[Uppercut Punch 🔝✊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[23]])
 
 ## Steps
 
@@ -11,15 +11,15 @@
 
 1. Block
 2. Claw
-3. Back Knuckle
+3. [[Back Knuckle 🔙✊]]
 
 ### Intermediate
 
-1.  - Step back into a Right [[Neutral Bow  0️⃣🦶]] facing 1200
-    - Downward [[Right Inward Block ➡️✊⬅️🛡️]]
+1.  - Step back into a Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200
+    - Downward Right [[Inward Block 🔽🛡️]]
 1.  - Left overhead claw
 1.  - Shuffle forward
-    - Vertical [[Right Back Knuckle ➡️✊]]
+    - Vertical Right [[Back Knuckle 🔙✊]]
 1.  - [[Cover Right before Left 🦶🔄]] towards 130
 
 ## Further Videos

@@ -4,7 +4,7 @@
 
 ## Defense against
 
-[[Right Front Kick ➡️🦶⬆️]]
+Right [[Front Kick ⬆️🦵]]
 
 ## Steps
 

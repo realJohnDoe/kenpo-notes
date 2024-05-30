@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-[[Left Straight Punch ⬅️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[16]])
+Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[16]])
 ## Steps
 
 1. - Right foot forward
