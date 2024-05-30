@@ -19,5 +19,5 @@ Left Roundhouse Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 1.  -   Right [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Outward Block 🔼🛡️]]
 2.  -   Right [[Front Kick ⬆️🦵]]
-3.  -   Inward Right [[Handsword ✋]]
+3.  -   Inward Right [[Handsword ✋⚔️]]
 4.  -   [[Cover Right before Left 🦶🔄]]

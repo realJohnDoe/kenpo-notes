@@ -15,6 +15,6 @@ Right [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]]
 1.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
     - Right Outward [[Downward Block ⬇️🛡️]]
 2.  - Forward Shuffle
-    - Left Heel Palm to Opponent's right upper arm
+    - Left [[Heel Palm ✋🌴]] to Opponent's right upper arm
 3.  - Right Elbow Strike
 4.  - [[Cover Right before Left 🦶🔄]]
