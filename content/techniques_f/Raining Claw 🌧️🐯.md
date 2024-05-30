@@ -15,7 +15,7 @@
 
 ### Intermediate
 
-1.  - Step back into a [[Right Neutral Bow ➡️0️⃣🦶]] facing 1200
+1.  - Step back into a Right [[Neutral Bow  0️⃣🦶]] facing 1200
     - Downward [[Right Inward Block ➡️✊⬅️🛡️]]
 1.  - Left overhead claw
 1.  - Shuffle forward

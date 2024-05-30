@@ -8,7 +8,7 @@ Low Two-handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[15]])
 
 ## Steps
 
-1. - Left foot back into [[Left Neutral Bow ⬅️0️⃣🦶]]
+1. - Left foot back into Left [[Neutral Bow  0️⃣🦶]]
     - Left and Right hand defend downward in a hook shape
 2. [[Right Front Kick ➡️🦶⬆️]]
 3. Right Inward Hammerfist

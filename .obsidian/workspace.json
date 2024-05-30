@@ -76,8 +76,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "Neutral Bow  0️⃣🦶.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -112,7 +113,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "neutral bow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -149,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "Neutral Bow  0️⃣🦶.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "Neutral Bow  0️⃣🦶.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
+                "file": "Neutral Bow  0️⃣🦶.md"
               }
             }
           },
@@ -219,13 +220,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfb33373c93e9cde",
+  "active": "7a5ada81c5f7f1f5",
   "lastOpenFiles": [
+    "content/techniques_f/Alternating Maces 🔄✊.md",
+    "Neutral Bow  0️⃣🦶.md",
+    "content/single-techniques/stances/Left Forward Bow ⬅️⬆️🦶.md",
+    "content/single-techniques/Left Neutral Bow ⬅️0️⃣🦶.md",
+    "content/single-techniques/stances/Neutral Bow 0️⃣🦶.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/single-techniques/Untitled",
     "content/techniques_f/Locked Wing 🔒🪽.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/techniques_f/Thrusting Prongs 🗡️🍴.md",
-    "content/techniques_f/Alternating Maces 🔄✊.md",
     "content/belts_f/2. Orange Belt 🟠.md",
     "content/private/Techniken Website.md",
     "content/techniques_f/Striking Serpent's Head 🎳🐍.md",
@@ -243,9 +248,6 @@
     "content/belts_f/3. Purple Belt 🟣.md",
     "content/belts_f/1. Yellow Belt 🟡.md",
     "content/techniques_f/Obstructing the Storm 🚧🌀.md",
-    "content/techniques_f/Leaping Crane ↖️🐦.md",
-    "content/techniques_f/Gift in Return 🎁🔄.md",
-    "content/techniques_f/Gift in Return 🎁🔄_Pixel 7a_May-25-1904-2024_1.md",
-    "content/comparisons_f/Thrusting Kick Arm.md"
+    "content/techniques_f/Leaping Crane ↖️🐦.md"
   ]
 }

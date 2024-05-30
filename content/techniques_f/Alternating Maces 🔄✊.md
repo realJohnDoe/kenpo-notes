@@ -16,10 +16,10 @@ Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 ### Intermediate
 
-5.  - [[Right Neutral Bow ➡️0️⃣🦶]]
+5.  - Right [[Neutral Bow  0️⃣🦶]]
     - [[Right Inward Block ➡️✊⬅️🛡️]]
 6.  - [[Right Forward Bow ➡️⬆️🦶]]
     - Left Vertical Punch
-7.  - [[Right Neutral Bow ➡️0️⃣🦶]]
+7.  - Right [[Neutral Bow  0️⃣🦶]]
     - Outward [[Right Back Knuckle ➡️✊]]
 8.  - [[Cover Right before Left 🦶🔄]]

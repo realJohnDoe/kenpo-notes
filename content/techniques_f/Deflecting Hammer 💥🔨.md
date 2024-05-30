@@ -19,7 +19,7 @@ The right hand (hammer) deflects the incoming kick
 
 ### Intermediate
 
-4.  - [[Right Neutral Bow ➡️0️⃣🦶]]
+4.  - Right [[Neutral Bow  0️⃣🦶]]
     - [[Right Outward Downward Block 🤛↘️🛡️]]
 5.  - Forward Shuffle
     - Left Heel Palm to Opponent's right upper arm

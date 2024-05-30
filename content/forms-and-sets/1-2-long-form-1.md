@@ -11,41 +11,41 @@ alias: "Long Form 1"
 1. Blocks and 3-
    1. Facing 1200, inward blocks
       1. - [[Horse Stance 🏇🦶]]
-      2. - Left foot back into [[Right Neutral Bow ➡️0️⃣🦶]]
+      2. - Left foot back into Right [[Neutral Bow  0️⃣🦶]]
          - [[Right Inward Block ➡️✊⬅️🛡️]]
       3. - Right forward Bow
          - [[Left Straight Punch ⬅️👊]]
       4. - [[Right Cat ➡️🐈🦶]]
          - [[Right Inward Block ➡️✊⬅️🛡️]]
-      5. - Right foot back into [[Left Neutral Bow ⬅️0️⃣🦶]]
+      5. - Right foot back into Left [[Neutral Bow  0️⃣🦶]]
          - [[Left Inward Block ⬅️✊➡️]]
       6. - [[Left Forward Bow ⬅️⬆️🦶]]
          - [[Right Straight Punch ➡️👊]]
    1. Facing 900, outward blocks
-      1. - Right foot back into [[Left Neutral Bow ⬅️0️⃣🦶]] facing 900
+      1. - Right foot back into Left [[Neutral Bow  0️⃣🦶]] facing 900
          - Left outward block
       2. - [[Left Forward Bow ⬅️⬆️🦶]]
          - [[Right Straight Punch ➡️👊]]
-      3. - Left foot back into [[Right Neutral Bow ➡️0️⃣🦶]]
+      3. - Left foot back into Right [[Neutral Bow  0️⃣🦶]]
          - [[Right Outward Block 🤛↗️🛡️]]
       4. - Right forward bow
          - [[Left Straight Punch ⬅️👊]]
    1. Facing 300, upward blocks
-      1. - Right foot to the left, turning counterclockwise into [[Left Neutral Bow ⬅️0️⃣🦶]] facing 300
+      1. - Right foot to the left, turning counterclockwise into Left [[Neutral Bow  0️⃣🦶]] facing 300
          - Left horizontal elbow strike
       2. - Left upward block
       3. - [[Left Forward Bow ⬅️⬆️🦶]]
          - [[Right Straight Punch ➡️👊]]
-      4. - Move left foot back into [[Right Neutral Bow ➡️0️⃣🦶]]
+      4. - Move left foot back into Right [[Neutral Bow  0️⃣🦶]]
          - Right upward block
       5. - Right forward bow
          - [[Left Straight Punch ⬅️👊]]
    1. Facing 600, downward blocks
-      1. - Move right foot to the right into [[Right Neutral Bow ➡️0️⃣🦶]] facing 600
+      1. - Move right foot to the right into Right [[Neutral Bow  0️⃣🦶]] facing 600
          - [[Right Outward Downward Block 🤛↘️🛡️]]
       2. - Right forward bow
          - [[Left Straight Punch ⬅️👊]]
-      3. - Right foot back into [[Left Neutral Bow ⬅️0️⃣🦶]]
+      3. - Right foot back into Left [[Neutral Bow  0️⃣🦶]]
          - Left Outward Downward Block
       4. - [[Left Forward Bow ⬅️⬆️🦶]]
          - [[Right Straight Punch ➡️👊]]

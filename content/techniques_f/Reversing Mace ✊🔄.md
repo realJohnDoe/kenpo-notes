@@ -13,7 +13,7 @@
 4. Roundhouse kick
 ### Medium
 
-1. - [[Right Neutral Bow ➡️0️⃣🦶]] facing 1030 🕥
+1. - Right [[Neutral Bow  0️⃣🦶]] facing 1030 🕥
    - Right inward parry to left elbow
 2. - Left outward parry to left elbow
 3. - Outward [[Right Back Knuckle ➡️✊]]

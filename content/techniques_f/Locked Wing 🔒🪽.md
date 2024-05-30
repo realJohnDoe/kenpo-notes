@@ -8,7 +8,7 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
 
 ## Steps
 
-1. - Left foot back into [[Left Neutral Bow ⬅️0️⃣🦶]]
+1. - Left foot back into Left [[Neutral Bow  0️⃣🦶]]
     - Left Outward Elbow to the upper zone
 2. - [[Right Forward Bow ➡️⬆️🦶]]
     - Lock opponent's right elbow
