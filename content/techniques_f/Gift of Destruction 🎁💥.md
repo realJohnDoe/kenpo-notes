@@ -4,8 +4,10 @@
 
 ## Steps
 
-1. Knee
-2. Elbow
+1. - Knee
+    - Left hand strike right elbow
+2. - Left hand pushes right arm down
+    - Right Inward Elbow
 
 ## Further Videos
 

@@ -12,7 +12,7 @@ Left Hand Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]]
 1. Check
 2. Upward
 3. Inward
-4. Outward
+4. Outward [[Handsword ✋⚔️]]
 
 ### Intermediate
 

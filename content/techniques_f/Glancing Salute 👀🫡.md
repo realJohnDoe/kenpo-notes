@@ -5,7 +5,7 @@
 ## Steps
 
 1. Reverse Bow
-2. Heel Palm
+2. Right [[Heel Palm ✋🌴]]
 3. Knee
 4. Elbow
 

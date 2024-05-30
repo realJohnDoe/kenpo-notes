@@ -9,9 +9,9 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 
 ### Short
 
-1. Inward
-2. Kick
-3. [[Back Knuckle 🔙✊]]
+1. Right Inward [[Hammerfist 🔨✊]]
+2. Right [[Side Kick ➡️🦵]]
+3. Right [[Back Knuckle 🔙✊]]
 4. Elbow
 
 ### Intermediate
