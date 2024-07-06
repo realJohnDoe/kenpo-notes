@@ -10,8 +10,9 @@
 
 1. - Right foot back into Right [[Forward Bow ⬆️🧍‍♂️]]
     - Push Thumbs into opponent's lower zone
-2. Right Knee
-3. Right Inward Elbow
+2. Left hand twists around their right arm
+3. Right Knee
+4. Right Inward Elbow
 ## Alternative Video
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=338&end=355" width="100%" height="400"></iframe>

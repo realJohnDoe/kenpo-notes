@@ -9,5 +9,5 @@ Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles �
 
 1. Check
 2.  - Right foot back
-    - Hand Sword
-3. Hammerfist
+    - Right [[Handsword ✋⚔️]]
+3. Right [[Hammerfist 🔨✊]]

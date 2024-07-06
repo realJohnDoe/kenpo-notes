@@ -4,14 +4,15 @@
 
 ## Defense Against
 
-Wrist Lock (Web of Knowledge: Locks & Chokes)
+Wrist Lock (Web of Knowledge: Locks & Chokes, [[21]])
 
 ## Steps
 
 ### Short
 
-- Check
-- Upward
-- Inward
-- Outward
-- Reverse Bow
+1. Check
+2. Upward
+3. [[Inward Block 🔽🛡️]]
+4. Outward Elbow
+5. - Reverse Bow
+    - [[Hammerfist 🔨✊]] to the groin

@@ -15,5 +15,5 @@ Right Front Handshake ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]
 2. - Right foot towards 1030 into a Left [[Neutral Bow 0️⃣🧍‍♂️]]
     - Grab opponent's right wrist with the left hand between their legs
     - Check their hip with the right hand
-3. Right Snapping Knife Edge Kick to their left knee
+3. Right Snapping Knife Edge [[Side Kick ➡️🦵]] to their left knee
 4. Left Knee Strike

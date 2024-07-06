@@ -8,10 +8,10 @@ Right [[Front Kick ⬆️🦵]]
 
 ## Steps
 
-1. Block
+1. Left [[Downward Block ⬇️🛡️]]
 2. Check
-3. Kick
-4. Heel palm
+3. Right [[Front Kick ⬆️🦵]]
+4. Right [[Heel Palm ✋🌴]]
 
 ## Further Video
 

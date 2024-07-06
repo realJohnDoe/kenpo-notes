@@ -9,7 +9,7 @@ Two Hand Lapel Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles �
 
 1. - Pin opponents arm
    - Left foot back into Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200
-   - horizontal Right Upward [[Forearm Strike 💪💥]]
+   - Horizontal Right Upward [[Forearm Strike 💪💥]]
 2. - Left foot back into Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1030
    - Outward horizontal Right [[Back Knuckle 🔙✊]]
 3. - Right Inward Diagonal [[Forearm Strike 💪💥]]

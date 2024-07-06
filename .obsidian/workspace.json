@@ -4,61 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e2cd3750c55f3807",
+        "id": "1885e00db5cb5148",
         "type": "tabs",
         "children": [
           {
-            "id": "7e525e7095814b2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b2d66ae282aac05e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/belts_f/2. Orange Belt 🟠.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58356663536ed62d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aab5b213e4cc4313",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc8f2e920c038635",
+            "id": "6d945a970f67cc7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,72 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "7a5ada81c5f7f1f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/forms-and-sets/1-2-long-form-1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "90266ae7b868cb90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/forms-and-sets/1-1-short-form-1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19632589ab0063a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fadc6362fadd2577",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cat Stance 🐈.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bfd6226f3bf596a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cat Stance 🐈.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md"
+                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
               }
             }
           },
@@ -270,34 +156,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19632589ab0063a1",
+  "active": "6d945a970f67cc7e",
   "lastOpenFiles": [
+    "content/techniques_f/Clutching Feathers 👐🪶.md",
+    "content/techniques_f/Bow of Compulsion 🙇‍♂️🔗.md",
+    "content/numbers_f/1.md",
+    "content/numbers_f/13.md",
+    "content/numbers_f/12.md",
+    "content/numbers_f/11.md",
+    "content/numbers_f/10.md",
+    "content/numbers_f/9.md",
+    "content/numbers_f/8.md",
+    "content/numbers_f/7.md",
+    "content/numbers_f/6.md",
+    "content/numbers_f/5.md",
+    "content/numbers_f/4.md",
+    "content/numbers_f/3.md",
+    "content/numbers_f/2.md",
+    "content/private/Techniken Website.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/techniques_f/Twirling Wings.md",
+    "Cat Stance 🐈.md",
+    "content/techniques_f/Obscure Sword 🌑⚔️.md",
     "content/techniques_f/Mace of Aggression 🔨↔️.md",
     "content/private/2. Orange Belt 🟠- Flashcards_Pixel 7a_May-30-1259-2024_1.md",
     "content/techniques_f/Lone Kimono 1️⃣👘.md",
     "content/private/1. Yellow Belt 🟡 - Flashcards_Pixel 7a_May-30-1259-2024_1.md",
     "content/techniques_f/Locked Wing 🔒🪽.md",
-    "content/techniques_f/Leaping Crane ↖️🐦.md",
-    "content/techniques_f/Hugging Pendulum 🤗🕰️.md",
-    "content/techniques_f/Hooking Wings 🪝🪽.md",
-    "content/techniques_f/Grip of Death ⚒️💀.md",
-    "content/techniques_f/Grasp of Death 🔒💀.md",
-    "content/techniques_f/Glancing Salute 👀🫡.md",
-    "content/techniques_f/Gift of Destruction 🎁💥.md",
-    "content/techniques_f/Gift in Return 🎁🔄.md",
-    "content/techniques_f/Five Swords 5️⃣⚔️.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
-    "content/techniques_f/Dominating Circles 💪⭕.md",
-    "content/techniques_f/Delayed Sword ⏰⚔️.md",
-    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
-    "content/techniques_f/Deflecting Hammer 💥🔨.md",
-    "content/techniques_f/Crossing Talon 🔀🦅.md",
-    "content/techniques_f/Circles of Protection.md",
-    "content/techniques_f/Checking the Storm ✔️⛈️.md",
-    "content/techniques_f/Captured Twigs 🕸️🌿.md",
-    "Cat Stance 🐈.md",
-    "content/techniques_f/Calming the Storm 🧘‍♀️⛈️.md",
-    "content/techniques_f/Buckling Branch ⤴️🌳.md",
     "content/single-techniques/attacks/kicks",
     "content/single-techniques/attacks/punches",
     "content/single-techniques/blocks",

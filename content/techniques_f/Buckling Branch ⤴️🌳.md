@@ -4,11 +4,11 @@
 
 ## Defense against
 
-Left Front Kick ([[4-kicks|# Web of Knowledge: Kicks 🦶]])
+Left [[Front Kick ⬆️🦵]] ([[4-kicks|# Web of Knowledge: Kicks 🦶]])
 
 ## Steps
 
-1. Downward Block
+1. Left [[Downward Block ⬇️🛡️]]
 2. Right [[Front Kick ⬆️🦵]] into groin 
 3. Left [[Side Kick ➡️🦵]] against right knee
 
