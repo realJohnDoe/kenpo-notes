@@ -9,7 +9,7 @@ Right Roundhouse Club Attack ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [
 ## Steps
 
 1. - Right foot forward into Right [[Neutral Bow 0️⃣🧍‍♂️]]
-    - Left Extended [[Inward 🔽]] Block
+    - Left Extended [[Inward 🔽]] [[Block 🛡️]]
     - Right [[Straight Punch ↕️👊]] to the upper zone
 2. Check opponent's right shoulder
 3. Left [[Straight Punch ↕️👊]] to the mid zone
