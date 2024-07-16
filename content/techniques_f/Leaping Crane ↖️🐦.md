@@ -21,7 +21,7 @@ Right Straight Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
     - Right [[Inward 🔽]] horizontal raking middle knuckle fist strike
 2.  - Right snapping knife edge kick
 3.  - Right foot toward 130, inside opponent's right leg, forming Right [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Inward 🔽]] [[Inward 🔽]] diagonal Right [[Back Knuckle 🔙✊]] to the left kidney
+    - [[Outward 🔼]] [[Downward ⬇️]] diagonal Right [[Back Knuckle 🔙✊]] to the left kidney
 4.  - Right [[Inward 🔽]] horizontal [[Elbow 💪]] strike
     - Left [[Inward 🔽]] hooking heel palm strike
 5.  - [[Cover Right before Left 🦶🔄]]

@@ -7,9 +7,9 @@
 ### Short
 
 1. Check
-2. Elbow
-3. Hammerfist
-4. Elbow
+2. [[Elbow 💪]]
+3. [[Hammerfist 🔨✊]]
+4. [[Elbow 💪]]
 
 ## Further Videos
 

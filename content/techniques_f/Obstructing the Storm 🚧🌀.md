@@ -7,7 +7,7 @@ Overhead Club Attack ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[19]])
 
 1. 
     - Step forward left
-    - [[Inward 🔽]] Block right over left
+    - [[Upward ⬆️]] Block right over left
 2. Grab wrist
 3. Left lower arm cuts into [[Elbow 💪]] into Lock
 4. 

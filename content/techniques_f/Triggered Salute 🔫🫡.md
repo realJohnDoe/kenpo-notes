@@ -5,7 +5,7 @@
 ## Steps
 
 1. Heel Palm
-2. [[Inward 🔽]] Elbow
-3. [[Inward 🔽]] Elbow
+2. [[Inward 🔽]] [[Elbow 💪]]
+3. [[Outward 🔼]] [[Elbow 💪]]
 4. Backknuckle
 5. Vertical Backknuckle

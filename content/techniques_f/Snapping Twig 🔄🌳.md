@@ -8,10 +8,10 @@ Defense against left push
 2. - Hook over left arm
    - Shuffle forward
    - Left thrusting handsword
-3. - Right [[Inward 🔽]] [[Inward 🔽]] diagonal raking hammerfist
+3. - Right [[Inward 🔽]] [[Downward ⬇️]] diagonal raking hammerfist
 4. - Shuffle forward
    - Right [[Inward 🔽]] horizontal [[Elbow 💪]] strike
-   - Left [[Inward 🔽]] horizontal heel palm strike
+   - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
 5. - [[Cover Right before Left 🦶🔄]] toward 730 🕢
 
 ## Video

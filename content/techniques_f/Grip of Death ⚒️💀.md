@@ -8,6 +8,6 @@ Right Arm Headlock ([[6-locks-and-chokes]], [[12]])
 ## Steps
 
 1. - Right foot forward
-    - Left [[Inward 🔽]] [[Hammerfist 🔨✊]]
-    - Right [[Inward 🔽]] strike
+    - Left [[Downward ⬇️]] [[Hammerfist 🔨✊]]
+    - Right [[Upward ⬆️]] strike
 2. Right Heel Palm

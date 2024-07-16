@@ -8,8 +8,8 @@ Two-handed push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
 
 ### Short
 
-1. - [[Inward 🔽]] Block with both arms
-- Step back with right leg
-3. Right Heelpalm
-4. Left Handsword
-5. Punch
+1. - [[Outward 🔼]] Block with both arms
+    - Step back with right leg
+1. Right Heelpalm
+2. Left Handsword
+3. Punch

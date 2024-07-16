@@ -4,7 +4,7 @@
 1. Knock on hands
 2. 
      - Right step to the right into [[Horse Stance 🏇🧍‍♂️]]
-     - Both elbows down
+     - Both [[Elbow 💪]]s down
 3. 
      - Pin opponent under right arm
      - Grab opponent's right hand

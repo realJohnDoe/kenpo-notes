@@ -13,5 +13,5 @@ Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs 
 2.  - Right [[Cat Stance 🐈]]
 3.  - Right [[Front Kick ⬆️🦵]]
 4.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Inward 🔽]] Right [[Handsword ✋⚔️]]
+    - Right [[Outward 🔼]] [[Handsword ✋⚔️]]
 5.  - [[Cover Right before Left 🦶🔄]]
