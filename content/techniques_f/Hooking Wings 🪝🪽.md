@@ -12,7 +12,7 @@ Low Two-handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[15]])
     - Left and Right hand defend [[Inward 🔽]] in a hook shape
 2. Right [[Front Kick ⬆️🦵]]
 3. Right [[Inward 🔽]] [[Hammerfist 🔨✊]]
-4. Right [[Inward 🔽]] [[Back Knuckle 🔙✊]]
+4. Right [[Outward 🔼]] [[Back Knuckle 🔙✊]]
 5. - Shuffle forward
-    - Right [[Inward 🔽]] Elbow
+    - Right [[Upward ⬆️]] Elbow
 7. Right [[Inward 🔽]] Heel Palm Claw
