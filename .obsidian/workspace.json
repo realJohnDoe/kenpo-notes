@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/single-techniques/attacks/punches/Elbow 💪.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "elbow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/single-techniques/attacks/punches/Elbow 💪.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md",
+                "file": "content/single-techniques/attacks/punches/Elbow 💪.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠- Flashcards.md"
+                "file": "content/single-techniques/attacks/punches/Elbow 💪.md"
               }
             }
           },
@@ -158,6 +158,20 @@
   },
   "active": "6d945a970f67cc7e",
   "lastOpenFiles": [
+    "content/forms-and-sets/1-2-long-form-1.md",
+    "content/single-techniques/blocks/Inward Block 🔽🛡️.md",
+    "content/single-techniques/blocks/Upward Block ⬆️🛡️.md",
+    "content/single-techniques/blocks/Downward Block ⬇️🛡️.md",
+    "content/forms-and-sets/1-1-short-form-1.md",
+    "content/single-techniques/blocks/Outward Block 🔼🛡️.md",
+    "content/single-techniques/Block 🛡️.md",
+    "content/single-techniques/attacks/punches/Back Knuckle 🔙✊.md",
+    "content/single-techniques/adjectives/Downward ⬇️.md",
+    "content/single-techniques/adjectives/Inward 🔽.md",
+    "content/single-techniques/adjectives/Outward 🔼.md",
+    "content/single-techniques/adjectives/Upward ⬆️.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/single-techniques/adjectives",
     "content/techniques_f/Crashing Wings 💥🪽.md",
     "content/numbers_f/24.md",
     "content/numbers_f/1.md",
@@ -165,26 +179,13 @@
     "content/belts_f/2. Orange Belt 🟠.md",
     "content/techniques_f/Attacking Mace 💥👊.md",
     "content/techniques_f/Hooking Wings 🪝🪽.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/techniques_f/Dance of Death 💃💀.md",
     "content/numbers_f/3.md",
     "content/techniques_f/Grasp of Death 🔒💀.md",
     "content/techniques_f/Locking Horns 🔒🦌.md",
     "content/single-techniques/stances/Wide Kneel ↔️🧎.md",
     "content/single-techniques/attacks/punches/Elbow 💪.md",
-    "content/forms-and-sets/1-2-long-form-1.md",
-    "content/single-techniques/attacks/elbows/Untitled.md",
     "content/single-techniques/attacks/elbows",
-    "content/numbers_f/6.md",
-    "content/techniques_f/Locked Wing 🔒🪽.md",
-    "content/techniques_f/Clutching Feathers 👐🪶.md",
-    "content/techniques_f/Bow of Compulsion 🙇‍♂️🔗.md",
-    "content/numbers_f/13.md",
-    "content/numbers_f/12.md",
-    "content/numbers_f/11.md",
-    "content/numbers_f/10.md",
-    "content/numbers_f/9.md",
-    "content/numbers_f/8.md",
     "content/single-techniques/attacks/kicks",
     "content/single-techniques/attacks/punches",
     "content/single-techniques/blocks",

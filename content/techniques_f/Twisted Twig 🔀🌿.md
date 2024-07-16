@@ -12,7 +12,7 @@ Wrist Lock (Web of Knowledge: Locks & Chokes, [[21]])
 
 1. Check
 2. Upward
-3. [[Inward Block 🔽🛡️]]
-4. Outward Elbow
+3. [[Inward 🔽]] [[Block 🛡️]]
+4. [[Inward 🔽]] Elbow
 5. - Reverse Bow
     - [[Hammerfist 🔨✊]] to the groin

@@ -9,8 +9,8 @@ Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]]
 ## Steps
 
 1. - Step back with left foot into Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200
-   - Right Extended [[Outward Block 🔼🛡️]]
-2. - Inward downward Right [[Back Knuckle 🔙✊]]
+   - Right Extended [[Outward 🔼]] [[Block 🛡️]]
+2. - [[Inward 🔽]] [[Inward 🔽]] Right [[Back Knuckle 🔙✊]]
 3. - Shuffle forward
-   - Right outward thrusting elbow strike
+   - Right [[Inward 🔽]] thrusting [[Elbow 💪]] strike
 4. [[Cover Right before Left 🦶🔄]] towards 730

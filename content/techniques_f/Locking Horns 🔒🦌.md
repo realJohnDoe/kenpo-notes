@@ -12,6 +12,6 @@ Front Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[
 2. - Right foot forward into right [[Wide Kneel ↔️🧎]]
     - Right inner [[Handsword ✋⚔️]] into opponent's groin
 3. - Right [[Horse Stance 🏇🧍‍♂️]]
-    - Right upward [[Elbow 💪]] to their chin
+    - Right [[Inward 🔽]] [[Elbow 💪]] to their chin
 4. - Shuffle forward
-    - Right Inward [[Elbow 💪]]
+    - Right [[Inward 🔽]] [[Elbow 💪]]

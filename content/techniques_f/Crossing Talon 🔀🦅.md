@@ -9,9 +9,9 @@ Right hand grabs right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs and 
 ## Steps
 
 1. - Left Foot forward
-    - Left [[Inward Block 🔽🛡️]] into Arm lock
+    - Left [[Inward 🔽]] [[Block 🛡️]] into Arm lock
 2. Left Elbow
 3. Tilt head
-4. Ram left elbow down the spine
-5. Left elbow downward strike
+4. Ram left [[Elbow 💪]] down the spine
+5. Left [[Elbow 💪]] [[Inward 🔽]] strike
 6. Right knee

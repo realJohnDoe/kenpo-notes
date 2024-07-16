@@ -7,7 +7,7 @@
 1. - Knee
     - Left hand strike right elbow
 2. - Left hand pushes right arm down
-    - Right Inward Elbow
+    - Right [[Inward 🔽]] Elbow
 
 ## Further Videos
 
