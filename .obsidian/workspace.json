@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/forms-and-sets/1-2-long-form-1.md",
+                "file": "content/forms-and-sets/1.3 Short Form 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/forms-and-sets/1-2-long-form-1.md",
+                "file": "content/forms-and-sets/1.3 Short Form 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/forms-and-sets/1-2-long-form-1.md",
+                "file": "content/forms-and-sets/1.3 Short Form 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/forms-and-sets/1-2-long-form-1.md"
+                "file": "content/forms-and-sets/1.3 Short Form 1.md"
               }
             }
           },
@@ -158,11 +158,12 @@
   },
   "active": "6d945a970f67cc7e",
   "lastOpenFiles": [
+    "content/forms-and-sets/2.3 Stance Set 1.md",
+    "content/forms-and-sets/1.3 Short Form 1.md",
+    "content/forms-and-sets/2.2 Kicking Set 1.md",
     "content/forms-and-sets/2.1 Blocking Set 1.md",
-    "content/forms-and-sets/2.2 Stance Set 1.md",
-    "content/forms-and-sets/Kicking Set 1.md",
-    "content/forms-and-sets/1-2-long-form-1.md",
-    "content/forms-and-sets/1-1-short-form-1.md",
+    "content/forms-and-sets/1.2 Long Form 1.md",
+    "content/forms-and-sets/1.1 Short Form 1.md",
     "content/techniques_f/Attacking Mace 💥✊.md",
     "content/private/3. Purple Belt 🟣- Flashcards.md",
     "content/private/2. Orange Belt 🟠- Flashcards.md",
@@ -183,7 +184,6 @@
     "content/techniques_f/Darting Mace 🎯✊.md",
     "content/techniques_f/Reversing Mace ✊🔄.md",
     "content/techniques_f/Repeating Mace ↔️✊.md",
-    "content/techniques_f/Charging Ram ⚡🐏.md",
     "content/private/ai_prompts",
     "content/single-techniques/adjectives",
     "content/single-techniques/attacks/elbows",
