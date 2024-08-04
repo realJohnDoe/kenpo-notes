@@ -35,7 +35,7 @@ https://karate-esslingen.de/techniken/
 33. o17: [[Locked Wing 🔒🪽]]
 34. o7: [[Lone Kimono 1️⃣👘]]
 35. g8
-36. o18: [[Obscure Wing 🌑🐦]]
+36. o18: [[Obscure Wing 🌑🪽]]
 37. l9: [[Parting Wings 🥳🪽]]
 38. 2br19
 39. bl8
@@ -43,7 +43,7 @@ https://karate-esslingen.de/techniken/
 41. bl19: Repeated Devastation (eig bl5)
 42. bl8
 43. o23: [[Raining Claw 🌧️🐯]]
-44. o14: [[Repeating Mace ↔️👊]]
+44. o14: [[Repeating Mace ↔️✊]]
 45. o19: [[Reversing Mace ✊🔄]]
 46. o11: [[Scraping Hoof ⬇️🐎]]
 47. bl10

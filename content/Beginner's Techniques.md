@@ -4,15 +4,15 @@
 2. [[Sword of Destruction ⚔️💥]]
 3. [[Delayed Sword ⏰⚔️]]
 4. [[Grasp of Death 🔒💀]]
-5. [[Mace of Aggression 🔨↔️]]
-6. [[Attacking Mace 💥👊]]
+5. [[Mace of Aggression ✊↔️]]
+6. [[Attacking Mace 💥✊]]
 7. [[Alternating Maces 🔄✊]]
 8. [[Deflecting Hammer 🤺🔨]]
 
 ## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
 7. [[Lone Kimono 1️⃣👘]]
-8. [[Obscure Wing 🌑🐦]]
+8. [[Obscure Wing 🌑🪽]]
 9. [[Triggered Salute 🔫🫡]]
 10. [[Glancing Salute 👀🫡]]
 11. [[Thrusting Salute 🗡️🫡]]
@@ -21,7 +21,7 @@
 14. [[Buckling Branch ⤴️🌳]]
 15. [[Five Swords 5️⃣⚔️]]
 16. [[Reversing Mace ✊🔄]]
-17. [[Repeating Mace ↔️👊]]
+17. [[Repeating Mace ↔️✊]]
 18. [[Thrusting Prongs 🗡️🍴]]
 19. [[Raining Claw 🌧️🐯]]
 

@@ -1,3 +1,3 @@
-- [[Mace of Aggression 🔨↔️]]
+- [[Mace of Aggression ✊↔️]]
 - [[Twisted Twig 🔀🌿]]
 - [[Triggered Salute 🔫🫡]]
