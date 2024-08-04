@@ -1,4 +1,5 @@
 https://karate-esslingen.de/techniken/
+https://karate-esslingen.de/formen-und-sets/
 
 1. g9
 2. g2
