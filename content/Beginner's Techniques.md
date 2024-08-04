@@ -27,7 +27,7 @@
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
-1. [[Snapping Twig 🔄🌳]]
+1. [[Snapping Twig 🔄🌿]]
 2. [[Leaping Crane ↖️🐦]]
 
 ## Video

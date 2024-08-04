@@ -1,6 +1,6 @@
 ## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
-- [[Crossing Talon 🔀🦅]]
+- [[Crossing Talon ❌🦅]]
 - Crashing Wings
 - [[Striking Serpent's Head 🎳🐍]]
 - [[Locked Wing 🔒🪽]]
