@@ -1,6 +1,11 @@
+## Video
 
-Defense against left push
-[[2-pushes]]
+<iframe src="https://www.youtube.com/embed/Y_ZwHln0gpg" width="100%" height="400"></iframe>
+
+## Defense Against
+
+left push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
+## Steps
 
 1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200 🕛
    - Pin left hand to chest
@@ -14,6 +19,6 @@ Defense against left push
    - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
 5. - [[Cover Right before Left 🦶🔄]] toward 730 🕢
 
-## Video
+## Other Video
 
 ![type:video](https://www.youtube.com/embed/IXZ6kr4VHQw?start=368&end=385)

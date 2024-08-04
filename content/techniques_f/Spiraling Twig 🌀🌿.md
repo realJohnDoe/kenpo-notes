@@ -1,6 +1,12 @@
+## Video
+
+<iframe src="https://www.youtube.com/embed/cnRhl0SoOaM" width="100%" height="400"></iframe>
+
+## Defense Against
+
+Rear Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]])
 ## Steps
 
-### Medium
 1. Knock on hands
 2. 
      - Right step to the right into [[Horse Stance 🏇🧍‍♂️]]

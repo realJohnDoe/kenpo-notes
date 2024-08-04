@@ -2,6 +2,9 @@
 
 <iframe src="https://www.youtube.com/embed/8JiIVtpQTpE" width="100%" height="400"></iframe>
 
+## Defense Against
+
+Unfriendly Right Handshake ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[5]])
 ## Steps
 
 1. - Knee

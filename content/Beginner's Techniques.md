@@ -7,7 +7,7 @@
 5. [[Mace of Aggression 🔨↔️]]
 6. [[Attacking Mace 💥👊]]
 7. [[Alternating Maces 🔄✊]]
-8. [[Deflecting Hammer 💥🔨]]
+8. [[Deflecting Hammer 🤺🔨]]
 
 ## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
