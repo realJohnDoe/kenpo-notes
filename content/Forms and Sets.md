@@ -5,6 +5,6 @@
 
 ## Sets
 
-1. [[2-1-blocking-set|Blocking Set 1]]
-1. [[2-2-stance-set-1|Stance Set 1]]
-1. [[Kicking Set]]
+1. [[2.1 Blocking Set 1|Blocking Set 1]]
+1. [[2.2 Stance Set 1|Stance Set 1]]
+1. [[Kicking Set 1]]

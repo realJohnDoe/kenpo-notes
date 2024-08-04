@@ -1,10 +1,10 @@
 ---
 alias: "Long Form 1"
 ---
-
 ## Video
 
-![type:video](https://www.youtube.com/embed/ZtmvWpdK84E)
+<iframe src="https://www.youtube.com/embed/Kfz8FRR9-IE" width="100%" height="400"></iframe>
+
 
 ## Steps
 
@@ -64,3 +64,7 @@ alias: "Long Form 1"
    3. Roundhouse, starting right
    4. [[Uppercut Punch 🔝✊]], starting right
    5. [[Horse Stance 🏇🧍‍♂️]] & Greeting
+
+## Alternative Video
+
+<iframe src="https://www.youtube.com/embed/ZtmvWpdK84E" width="100%" height="400"></iframe>
