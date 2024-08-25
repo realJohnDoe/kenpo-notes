@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-left push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
+Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps
 
 1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200 🕛
@@ -12,8 +12,8 @@ left push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
    - Right [[Inward 🔽]] hooking heel palm strike to elbow
 2. - Hook over left arm
    - Shuffle forward
-   - Left thrusting handsword
-3. - Right [[Inward 🔽]] [[Downward ⬇️]] diagonal raking hammerfist
+   - Left thrusting [[Handsword ✋⚔️]]
+3. - Right [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊]]
 4. - Shuffle forward
    - Right [[Inward 🔽]] horizontal [[Elbow 💪]] strike
    - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
