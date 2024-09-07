@@ -13,43 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Forms and Sets.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e18f160a00291327",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7d0dc77def7345c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/techniques_f/Snapping Twig 🔄🌿.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b37f46b52fdbf22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
                 "mode": "source",
                 "backlinks": true,
@@ -57,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "wait",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,8 +156,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b37f46b52fdbf22",
+  "active": "6d945a970f67cc7e",
   "lastOpenFiles": [
+    "content/techniques_f/Thundering Hammers 🌩️🔨.md",
+    "content/techniques_f/Shield and Sword 🛡️⚔️.md",
+    "content/single-techniques/Waiter Check 🧑‍🍳.md",
+    "content/Forms and Sets.md",
+    "content/private/3. Purple Belt 🟣- Flashcards.md",
+    "content/techniques_f/Snapping Twig 🔄🌿.md",
+    "content/web-of-knowledge/3-punches.md",
     "content/techniques_f/Sleeper 💤.md",
     "content/numbers_f/21.md",
     "content/numbers_f/14.md",
@@ -207,10 +176,7 @@
     "content/numbers_f/20.md",
     "content/Intermediate Techniques.md",
     "content/private/Techniken Website.md",
-    "content/private/3. Purple Belt 🟣- Flashcards.md",
     "content/techniques_f/Darting Mace 🎯✊.md",
-    "content/techniques_f/Thundering Hammers 🌩️🔨.md",
-    "content/techniques_f/Snapping Twig 🔄🌿.md",
     "content/numbers_f/13.md",
     "content/Beginner's Techniques.md",
     "content/belts_f/3. Purple Belt 🟣.md",
@@ -218,10 +184,6 @@
     "content/private/1. Yellow Belt 🟡 - Flashcards.md",
     "content/private/1. Yellow Belt 🟡 - Flashcards_Pixel 7a_Aug-27-1809-2024_1.md",
     "content/techniques_f/Checking the Storm ✔️⛈️.md",
-    "content/techniques_f/Charging Ram ⚡🐏.md",
-    "content/techniques_f/Captured Twigs 🕸️🌿.md",
-    "content/Forms and Sets.md",
-    "content/forms-and-sets/2.2 Kicking Set 1.md",
     "content/private/ai_prompts",
     "content/single-techniques/adjectives",
     "content/single-techniques/attacks/elbows",
