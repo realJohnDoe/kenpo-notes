@@ -1,7 +1,7 @@
 ## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
 - [[Crossing Talon ❌🦅]]
-- Crashing Wings
+- [[Crashing Wings 💥🪽]]
 - [[Striking Serpent's Head 🎳🐍]]
 - [[Locked Wing 🔒🪽]]
 - [[Grip of Death ⚒️💀]]
@@ -10,8 +10,8 @@
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
 - [[Parting Wings 🥳🪽]]
-- Circling Wing
-- Twirling Wings
+- [[Circling Wing 🔵🪽]]
+- [[Twirling Wings 🌀🪽]]
 - [[Hooking Wings 🪝🪽]]
 - [[Spiraling Twig 🌀🌿]]
 - [[Shield and Sword 🛡️⚔️]]

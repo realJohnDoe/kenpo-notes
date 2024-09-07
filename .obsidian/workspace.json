@@ -33,19 +33,7 @@
             }
           },
           {
-            "id": "bd0aeb4ed9fd8753",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/techniques_f/Thundering Hammers 🌩️🔨.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e030dfa889728dc",
+            "id": "d7d0dc77def7345c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -55,9 +43,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2b37f46b52fdbf22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -193,34 +194,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e18f160a00291327",
+  "active": "2b37f46b52fdbf22",
   "lastOpenFiles": [
     "content/techniques_f/Sleeper 💤.md",
+    "content/numbers_f/21.md",
+    "content/numbers_f/14.md",
+    "content/numbers_f/15.md",
+    "content/numbers_f/16.md",
+    "content/numbers_f/17.md",
+    "content/numbers_f/18.md",
+    "content/numbers_f/19.md",
+    "content/numbers_f/20.md",
+    "content/Intermediate Techniques.md",
+    "content/private/Techniken Website.md",
     "content/private/3. Purple Belt 🟣- Flashcards.md",
+    "content/techniques_f/Darting Mace 🎯✊.md",
     "content/techniques_f/Thundering Hammers 🌩️🔨.md",
     "content/techniques_f/Snapping Twig 🔄🌿.md",
+    "content/numbers_f/13.md",
+    "content/Beginner's Techniques.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
+    "content/private/1. Yellow Belt 🟡 - Flashcards_Pixel 7a_Aug-27-1809-2024_1.md",
+    "content/techniques_f/Checking the Storm ✔️⛈️.md",
     "content/techniques_f/Charging Ram ⚡🐏.md",
     "content/techniques_f/Captured Twigs 🕸️🌿.md",
-    "content/private/Techniken Website.md",
-    "content/belts_f/3. Purple Belt 🟣.md",
     "content/Forms and Sets.md",
     "content/forms-and-sets/2.2 Kicking Set 1.md",
-    "content/forms-and-sets/1.3 Short Form 2.md",
-    "content/forms-and-sets/1.2 Long Form 1.md",
-    "content/forms-and-sets/2.3 Stance Set 1.md",
-    "content/forms-and-sets/2.1 Blocking Set 1.md",
-    "content/forms-and-sets/1.1 Short Form 1.md",
-    "content/techniques_f/Attacking Mace 💥✊.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
-    "content/techniques_f/Obscure Wing 🌑🪽.md",
-    "content/belts_f/2. Orange Belt 🟠.md",
-    "content/techniques_f/Locked Wing 🔒🪽.md",
-    "content/comparisons_f/Upward Elbow to Opponent's Chin.md",
-    "content/belts_f/1. Yellow Belt 🟡.md",
-    "content/web-of-knowledge/5-holds-and-hugs.md",
-    "content/techniques_f/Crushing Hammer 💥🔨.md",
-    "content/techniques_f/Crashing Wings 💥🪽.md",
-    "content/techniques_f/Swinging Pendulum 🏌🕰️.md",
     "content/private/ai_prompts",
     "content/single-techniques/adjectives",
     "content/single-techniques/attacks/elbows",
