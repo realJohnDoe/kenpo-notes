@@ -19,8 +19,48 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "25848cde0dbdef5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/techniques_f/Captured Leaves 🕸️🍃.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18bff8dfd60e7af8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8adddfc14cb4b29b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/techniques_f/Squeezing the Peach 🤲🍑.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -156,13 +196,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d945a970f67cc7e",
+  "active": "18bff8dfd60e7af8",
   "lastOpenFiles": [
+    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
+    "content/private/2. Orange Belt 🟠- Flashcards.md",
+    "content/forms-and-sets/1.2 Long Form 1.md",
+    "content/Forms and Sets.md",
+    "content/private/3. Purple Belt 🟣- Flashcards.md",
+    "content/techniques_f/Captured Leaves 🕸️🍃.md",
+    "content/single-techniques/stances/Forward Bow ⬆️🧍‍♂️.md",
+    "content/numbers_f/6.md",
+    "content/belts_f/2. Orange Belt 🟠.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
+    "content/techniques_f/Squeezing the Peach 🤲🍑.md",
+    "content/numbers_f/11.md",
+    "content/numbers_f/1.md",
+    "content/forms-and-sets/1.3 Short Form 2.md",
+    "content/private/Techniken Website.md",
+    "content/techniques_f/Alternating Maces 🔄✊.md",
     "content/techniques_f/Thundering Hammers 🌩️🔨.md",
     "content/techniques_f/Shield and Sword 🛡️⚔️.md",
     "content/single-techniques/Waiter Check 🧑‍🍳.md",
-    "content/Forms and Sets.md",
-    "content/private/3. Purple Belt 🟣- Flashcards.md",
     "content/techniques_f/Snapping Twig 🔄🌿.md",
     "content/web-of-knowledge/3-punches.md",
     "content/techniques_f/Sleeper 💤.md",
@@ -170,20 +224,6 @@
     "content/numbers_f/14.md",
     "content/numbers_f/15.md",
     "content/numbers_f/16.md",
-    "content/numbers_f/17.md",
-    "content/numbers_f/18.md",
-    "content/numbers_f/19.md",
-    "content/numbers_f/20.md",
-    "content/Intermediate Techniques.md",
-    "content/private/Techniken Website.md",
-    "content/techniques_f/Darting Mace 🎯✊.md",
-    "content/numbers_f/13.md",
-    "content/Beginner's Techniques.md",
-    "content/belts_f/3. Purple Belt 🟣.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
-    "content/private/1. Yellow Belt 🟡 - Flashcards.md",
-    "content/private/1. Yellow Belt 🟡 - Flashcards_Pixel 7a_Aug-27-1809-2024_1.md",
-    "content/techniques_f/Checking the Storm ✔️⛈️.md",
     "content/private/ai_prompts",
     "content/single-techniques/adjectives",
     "content/single-techniques/attacks/elbows",

@@ -9,7 +9,7 @@ Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200 🕛
    - Pin left hand to chest
-   - Right [[Inward 🔽]] hooking heel palm strike to elbow
+   - Right [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike to elbow
 2. - Hook over left arm
    - Shuffle forward
    - Left thrusting [[Handsword ✋⚔️]]
