@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Rear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[24]])
+[[Rear Bear Hug ⬆️🐻]], arms free ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[24]])
 
 ## Steps
 
