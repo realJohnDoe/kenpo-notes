@@ -12,7 +12,7 @@ Right Front Handshake ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]
 1. - Left foot forward into Left [[Neutral Bow 0️⃣🧍‍♂️]]
     - Left Push Down Block
     - Drive opponent's right hand into their groin
-2. - Right foot towards 1030 into a Left [[Neutral Bow 0️⃣🧍‍♂️]]
+2. - Right foot [[clockwise 🔃]] [[facing 430 ↘️]] into a Left [[Neutral Bow 0️⃣🧍‍♂️]]
     - Grab opponent's right wrist with the left hand between their legs
     - Check their hip with the right hand
 3. Right Snapping Knife Edge [[Side Kick ➡️🦵]] to their left knee

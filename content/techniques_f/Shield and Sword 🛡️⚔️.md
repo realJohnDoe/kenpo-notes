@@ -12,7 +12,7 @@ Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]]
 2. Left Check and Right Up
 3. Right [[Handsword ✋⚔️]] to the neck
 4. Left [[Inward 🔽]] Elbow
-5. - Left foot towards 430 into right twist stance
+5. - Left foot [[counter-clockwise 🔄]] into right twist stance [[facing 1030 ↖️]] 
     - Left hand checks with [[Waiter Check 🧑‍🍳]]
 6. Right [[Hammerfist 🔨✊]] Strike
 7. Right [[Roundhouse Kick 🔄🦵]]

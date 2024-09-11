@@ -12,7 +12,7 @@ Rear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[24]])
     - Twin [[Downward ⬇️]] [[Elbow 💪]] to opponents forearms
 3. Left [[Cat Stance 🐈]]
 4. Left foot back behind opponent's leg into right [[Forward Bow ⬆️🧍‍♂️]] 
-5. - Left [[Neutral Bow 0️⃣🧍‍♂️]] towards 730
+5. - Left [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 730 ↙️]]
     - Left [[Outward 🔼]] [[Elbow 💪]] to opponents' top zone
-6. - Left [[Forward Bow ⬆️🧍‍♂️]] towards 730
+6. - Left [[Forward Bow ⬆️🧍‍♂️]] [[facing 730 ↙️]]
     - Right [[Downward ⬇️]] [[Hammerfist 🔨✊]]
