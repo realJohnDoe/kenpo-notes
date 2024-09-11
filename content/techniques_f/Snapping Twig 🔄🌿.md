@@ -7,7 +7,7 @@
 Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps
 
-1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1200 🕛
+1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 1200 ⬆️]]
    - Pin left hand to chest
    - Right [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike to elbow
 2. - Hook over left arm
@@ -17,7 +17,7 @@ Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 4. - Shuffle forward
    - Right [[Inward 🔽]] horizontal [[Elbow 💪]] strike
    - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
-5. - [[Cover Right before Left 🦶🔄]] toward 730 🕢
+5. - [[Cover Right before Left 🦶🔄]] [[facing 730 ↙️]]
 
 ## Other Video
 

@@ -29,5 +29,5 @@
    - Left [[Downward ⬇️]] foot stomp on the opponents left instep
 6. - Continue pinning the left arm
    - Step to 1100 with the right foot
-7. - Left [[Neutral Bow 0️⃣🧍‍♂️]] facing 600
-8. - Cover left before right facing 600
+7. - Left [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 600 ⬇️]]
+8. - Cover left before right [[facing 600 ⬇️]]

@@ -14,13 +14,13 @@ left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]])
 
 ### Medium
 
-1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1030 🕥
+1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 1030 ↖️]]
    - Left [[Outward 🔼]] hooking parry to left elbow
    - Right [[Inward 🔽]] hammerfist strike to left kidney
 2. - [[Outward 🔼]] Right [[Back Knuckle 🔙✊]] to
      left rib cage
 3. - Right [[Inward 🔽]] diagonal roundhouse kick to left knee
-4. - [[Cover Right before Left 🦶🔄]] facing 1030 🕥
+4. - [[Cover Right before Left 🦶🔄]] [[facing 1030 ↖️]]
 
 
 ## Further Videos

@@ -13,12 +13,12 @@ Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]]
 4. Roundhouse kick
 ### Medium
 
-1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing 1030 🕥
+1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 1030 ↖️]]
    - Right [[Inward 🔽]] parry to left elbow
 2. - Left [[Outward 🔼]] parry to left elbow
 3. - Right [[Outward 🔼]] [[Back Knuckle 🔙✊]]
 4. - Right [[Downward ⬇️]] looping roundhouse kick to the left knee
-5. - [[Cover Right before Left 🦶🔄]] facing 1030 🕥
+5. - [[Cover Right before Left 🦶🔄]] [[facing 1030 ↖️]]
 
 ## Further Videos
 
