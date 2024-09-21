@@ -8,7 +8,7 @@ Front Tackle ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], 
 
 ## Steps
 
-1. - Step back with left foot [[facing 300 ➡️]] into a right twist stance
+1. - Step back with left foot [[counter-clockwise 🔄]] [[facing 900 ⬅️]] into a right twist stance
     - Right [[Downward ⬇️]] Palm [[Block 🛡️]]
     - Left [[Outward 🔼]] [[Handsword ✋⚔️]] to the opponent's neck
 2. - Turn into right [[Neutral Bow 0️⃣🧍‍♂️]]

@@ -7,7 +7,7 @@
 Right Arm Headlock ([[6-locks-and-chokes]], [[12]])
 ## Steps
 
-1. - Right foot forward
+1. - Right foot forward into right [[Forward Bow ⬆️🧍‍♂️]]
     - Left [[Downward ⬇️]] [[Hammerfist 🔨✊]]
-    - Right [[Upward ⬆️]] strike
-2. Right Heel Palm
+    - Right [[Upward ⬆️]] [[Hammerfist 🔨✊]] strike
+2. Right [[Heel Palm ✋🌴]]
