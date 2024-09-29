@@ -4,12 +4,16 @@
 
 ## Defense Against
 
-Two Hand Choke from the back ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[12]])
+[[Two Hand Choke from the Back]] ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[12]])
 
 ## Steps
 
-1. Left foot forward into left [[Forward Bow ⬆️🧍‍♂️]] [[facing 130 ↗️]]
-2. - Turn around into right [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 730 ↙️]]
-    - Finger thrust to opponent's eyes
-3. - Shuffle forward
+1. Left foot forward into left [[Forward Bow ⬆️🧍‍♂️]] facing [[130 ↗️]]
+2. - Turn around into right [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
+    - Turn right arm [[clockwise 🔃]] from top over opponent's arms
+    - Finger thrust to their eyes
+4. [[Downward ⬇️]] check with left arm
+5. - Shuffle forward
     - [[Upward ⬆️]] [[Elbow 💪]]
+6. - Reverse Bow
+    - Right [[Hammerfist 🔨✊]] to their groin

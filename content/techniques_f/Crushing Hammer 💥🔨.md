@@ -14,5 +14,5 @@
 3. - Right foot back into left [[Forward Bow ⬆️🧍‍♂️]]
     - Right [[Heel Palm ✋🌴]] to the groin
 4. Right [[Elbow 💪]] to their chin
-5. - Turn right into right [[Forward Bow ⬆️🧍‍♂️]] [[facing 430 ↘️]]
+5. - Turn right into right [[Forward Bow ⬆️🧍‍♂️]] facing [[430 ↘️]]
     - Left [[Heel Palm ✋🌴]] to their mid zone

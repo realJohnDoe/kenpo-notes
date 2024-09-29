@@ -9,7 +9,7 @@ Left Hand Finger Lock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes �
 ## Steps
 
 1. - Pin opponent's attacking hand with left hand
-    - Right foot steps forward into [[Horse Stance 🏇🧍‍♂️]] [[facing 900 ⬅️]]
+    - Right foot steps forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
 3. Left backward [[Elbow 💪]]
 4. - Take arm with left hand over right shoulder
     - Right backward [[Elbow 💪]]

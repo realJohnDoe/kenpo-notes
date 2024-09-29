@@ -8,13 +8,14 @@
 
 ### Short
 
-1. - Arms down
+1. - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
+    - Arms down
     - Rear head butt
-2. - Pin arms
+3. - Pin arms
     - Right heel kick
-3. Right knife edge kick
-4. Left heel kick
-5. Left knife edge kick
+4. Right knife edge kick
+5. Left heel kick
+6. Left knife edge kick
 
 ### Medium
 
@@ -28,6 +29,6 @@
 5. - Left knife edge kick to the left knee
    - Left [[Downward ⬇️]] foot stomp on the opponents left instep
 6. - Continue pinning the left arm
-   - Step to 1100 with the right foot
-7. - Left [[Neutral Bow 0️⃣🧍‍♂️]] [[facing 600 ⬇️]]
-8. - Cover left before right [[facing 600 ⬇️]]
+   - Step towards [[1030]] with the right foot
+7. - Left [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
+8. - Cover left before right facing [[600 ⬇️]]
