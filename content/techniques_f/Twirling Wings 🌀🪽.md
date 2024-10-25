@@ -9,7 +9,7 @@
 ## Steps
 
 1. Left foot back towards [[430 ↘️]]
-2. - Turn around into [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
+2. - Turn around into left [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
     - Left extended [[Outward 🔼]] [[Block 🛡️]]
 3. Right [[Inward 🔽]] [[Elbow 💪]]
 4. Left [[Inward 🔽]] [[Elbow 💪]]

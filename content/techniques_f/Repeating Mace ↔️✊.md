@@ -9,7 +9,7 @@ left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]])
 ## Steps
 
 1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]]
-   - Left [[Outward 🔼]] hooking parry to left elbow
+   - Left [[Waiter Check 🧑‍🍳]] to opponent's left elbow
    - Right [[Inward 🔽]] [[Hammerfist 🔨✊]] strike to left kidney
 2. - [[Outward 🔼]] Right [[Back Knuckle 🔙✊]] to
      left rib cage

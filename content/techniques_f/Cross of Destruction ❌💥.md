@@ -10,9 +10,10 @@
 1. - Tuck chin into chest
     - Pin opponent's wrists with both hands
     - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
-2. - Right foot back towards 730 into left [[Neutral Bow 0️⃣🧍‍♂️]]
+2. Right foot back towards [[730 ↙️]]
+3. - Turn around into right [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
     - Cross their arms over our your head
-3. Right [[Front Kick ⬆️🦵]]
-4. - Step down with right foot
+4. Right [[Front Kick ⬆️🦵]]
+5. - Step down with right foot
     - Pull with left arm and push with right arm to bring them down or dislocate their elbows
-5. [[Cover Right before Left 🦶🔄]]
+6. [[Cover Right before Left 🦶🔄]]

@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Unfriendly Right Handshake ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[5]])
+Unfriendly Right Handshake ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[5]])
 ## Steps
 
 1. - Knee

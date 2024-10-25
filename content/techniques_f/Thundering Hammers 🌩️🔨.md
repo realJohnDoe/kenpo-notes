@@ -18,4 +18,5 @@ Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]
     - Left [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊]] to their left kidney
 4. - Check their right shoulder with left hand
     - Right [[Downward ⬇️]] [[Hammerfist 🔨✊]] to their neck
-5. to be continued
+5. Left foot back towards [[730 ↙️]]
+6. [[Cover Right before Left 🦶🔄]]

@@ -13,7 +13,7 @@ Two-handed push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
     - Step back with right leg into left [[Neutral Bow 0️⃣🧍‍♂️]]
 1. Right [[Heel Palm ✋🌴]]
 2. Left [[Handsword ✋⚔️]]
-3. [[Straight Punch ↕️👊]]
+3. Right middle knuckle [[Straight Punch ↕️👊]]
 
 ## Other Video
 

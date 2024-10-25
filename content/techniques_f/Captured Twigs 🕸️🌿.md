@@ -9,7 +9,7 @@ Rear Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs]], [[5]])
 
 1.  
     - Left step left into [[Horse Stance 🏇🧍‍♂️]]
-    - Right Elbow
+    - Right [[Elbow 💪]]
 2. Right [[Hammerfist 🔨✊]]
 3. Right [[Cat Stance🐈🧍‍♂️]]
 4. Right [[Side Kick ➡️🦵]]

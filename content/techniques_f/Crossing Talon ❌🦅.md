@@ -14,4 +14,4 @@ Right hand grabs right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs and 
 3. Tilt their head
 4. Ram left [[Elbow 💪]] down the spine
 5. Left [[Downward ⬇️]] [[Elbow 💪]] strike
-6. Right knee
+6. Right [[Knee 🦵]]

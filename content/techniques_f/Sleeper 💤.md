@@ -12,9 +12,9 @@ Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]
     - Left [[Inward 🔽]] [[Block 🛡️]]
 2. - Left [[Forward Bow ⬆️🧍‍♂️]]
     - Right inside [[Handsword ✋⚔️]] to the neck
-3. Grab right wrist with left hand
-4. - Right step forward behind their right calf into and push it away under them
-    - Bring opponent close by bending elbows
-5. Left foot right and bring them down
+3. Grab your right wrist with left hand
+4. - Right step forward behind their right calf than push it away under them
+    - Bring opponent close by bending your elbows
+5. Left foot towards [[430 ↘️]] and bring them down
 6. Check with left hand
 7. Right [[Downward ⬇️]] Punch

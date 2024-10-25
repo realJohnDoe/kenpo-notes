@@ -11,7 +11,7 @@ Right [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]]
 
 ## Steps
 
-1.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
+1.  - Left foot back into right [[Neutral Bow 0️⃣🧍‍♂️]]
     - Right [[Outward 🔼]] [[Downward ⬇️]] [[Block 🛡️]]
 2.  - Forward Shuffle
     - Left hand checks opponent's right upper arm

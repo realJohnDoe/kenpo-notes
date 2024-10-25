@@ -4,20 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "1885e00db5cb5148",
+        "id": "d463f23107a5ec78",
         "type": "tabs",
         "children": [
           {
-            "id": "6d945a970f67cc7e",
+            "id": "1e405d172c357b71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Obscure Sword 🌑⚔️"
+            }
+          },
+          {
+            "id": "ab819198cd6ce5bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/2. Orange Belt 🟠 - Flashcards.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Orange Belt 🟠 - Flashcards"
             }
           }
         ]
@@ -40,7 +57,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -49,13 +68,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "right stra",
+                "query": "cover right ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -86,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +117,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Obscure Sword 🌑⚔️"
             }
           },
           {
@@ -103,10 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md",
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Obscure Sword 🌑⚔️"
             }
           },
           {
@@ -117,7 +144,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,8 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/private/3. Purple Belt 🟣- Flashcards.md"
-              }
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Obscure Sword 🌑⚔️"
             }
           },
           {
@@ -135,10 +166,23 @@
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "689cb86f8db6878e",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -156,34 +200,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d945a970f67cc7e",
+  "active": "1e405d172c357b71",
   "lastOpenFiles": [
+    "content/numbers_f/22.md",
+    "content/techniques_f/Spiraling Twig 🌀🌿.md",
+    "content/techniques_f/Twisted Twig 🔀🌿.md",
+    "content/numbers_f/1.md",
+    "content/techniques_f/Obscure Sword 🌑⚔️.md",
+    "content/techniques_f/Thundering Hammers 🌩️🔨.md",
+    "content/private/2. Orange Belt 🟠 - Flashcards.md",
+    "content/techniques_f/Obscure Wing 🌑🪽.md",
+    "content/private/3. Purple Belt 🟣- Flashcards.md",
+    "content/techniques_f/Flight to Freedom 🛫🌈.md",
+    "content/single-techniques/Cover Left before Right 🦶🔃.md",
+    "content/single-techniques/directions/clockwise 🔃.md",
+    "content/single-techniques/Cover Right before Left 🦶🔄.md",
+    "content/techniques_f/Attacking Mace 💥✊.md",
+    "content/numbers_f/24.md",
+    "content/private/Techniken Website.md",
+    "content/belts_f/3. Purple Belt 🟣.md",
     "content/techniques_f/Twin Kimono 2️⃣👘.md",
     "content/single-techniques/directions/facing 1200 ⬆️.md",
     "content/techniques_f/Shielding Hammer 🛡️🔨.md",
-    "content/techniques_f/Attacking Mace 💥✊.md",
     "content/forms-and-sets/2.3 Stance Set 1.md",
     "content/single-techniques/directions/facing 1030 ↖️.md",
     "content/techniques_f/Shield and Sword 🛡️⚔️.md",
     "content/private/2. Orange Belt 🟠- Flashcards.md",
     "content/techniques_f/Reversing Mace ✊🔄.md",
     "content/single-techniques/attacks/punches/Hammerfist 🔨✊.md",
-    "content/private/3. Purple Belt 🟣- Flashcards.md",
-    "content/techniques_f/Repeating Mace ↔️✊.md",
-    "content/techniques_f/Five Swords 5️⃣⚔️.md",
-    "content/techniques_f/Charging Ram ⚡🐏.md",
-    "content/single-techniques/directions/facing 900 ⬅️.md",
-    "content/techniques_f/Captured Leaves 🕸️🍃.md",
-    "content/single-techniques/directions/facing 730 ↙️.md",
-    "content/techniques_f/Swinging Pendulum 🏌🕰️.md",
-    "content/techniques_f/Snapping Twig 🔄🌿.md",
-    "content/techniques_f/Crashing Wings 💥🪽.md",
-    "content/techniques_f/Circling Wing 🔵🪽.md",
-    "content/single-techniques/directions/730 ↙️.md",
-    "content/techniques_f/Twirling Wings 🌀🪽.md",
-    "content/single-techniques/directions/facing 600 ⬇️.md",
-    "content/single-techniques/directions/1030 ↖️.md",
-    "content/techniques_f/Scraping Hoof ⬇️🐎.md",
     "content/single-techniques/directions",
     "content/private/ai_prompts",
     "content/single-techniques/adjectives",
