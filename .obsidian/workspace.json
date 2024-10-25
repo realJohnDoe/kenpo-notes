@@ -162,17 +162,7 @@
             }
           },
           {
-            "id": "cf319941182b6bb2",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "689cb86f8db6878e",
+            "id": "adc0a44735426173",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -182,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -200,7 +190,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e405d172c357b71",
+  "active": "adc0a44735426173",
   "lastOpenFiles": [
     "content/numbers_f/22.md",
     "content/techniques_f/Spiraling Twig 🌀🌿.md",
