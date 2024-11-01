@@ -38,11 +38,11 @@ Ich kann aber i.d. Regel nicht Verantwortung für sämtliche Teile übernehmen, 
 Wie bei normalen Repositories sind auch bei einem Fork die jeweiligen Beiträge aller Personen in der Historie nachvollziehbar. 
 Falls Inhalte rechtlich zu beanstanden sind, bin ich für einen entsprechenden Hinweis dankbar.
 
-GitHub Artikel über Forks: https://help.github.com/en/articles/fork-a-repo
+[GitHub Artikel über Forks](https://help.github.com/en/articles/fork-a-repo)
 
 ## Externe Links
 
-Ein externer Link ist daran zu erkennen, dass er auf eine Webadresse außerhalb [github.com/realJohnDoe/...][realJohnDoe] verweist.
+Ein externer Link ist daran zu erkennen, dass er auf eine Webadresse außerhalb `github.com/realJohnDoe/...` verweist.
 
 Je nach Kontext stellt ein externer Link eine Quellenangabe, Empfehlung oder weiterführende Information dar. 
 Außer dem Setzen des Links habe ich keinen Einfluss auf das inhaltliche Erscheinungsbild (z.B. durch nachträgliche Veränderungen) solcher Seiten, es sei denn die Zielseite wird von mir verwaltet.
