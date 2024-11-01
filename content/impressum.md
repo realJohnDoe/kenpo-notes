@@ -6,9 +6,9 @@ Impressum für die GitHub Seite https://github.com/realJohnDoe
 
 Verantwortlich für Inhalte unter dem GitHub-Benutzerkonto [realJohnDoe]:
 
-Johannes Döllinger
-Katharinenstr. 29
-73728 Esslingen
+Johannes Döllinger\
+Katharinenstr. 29\
+73728 Esslingen\
 (Germany)
 
 E-Mail: johannes.doellinger @ gmail.com
