@@ -1,3 +1,0 @@
----
-title: Web of Knowledge
----

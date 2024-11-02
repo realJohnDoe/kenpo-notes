@@ -1,9 +1,3 @@
----
-title: Beginner's Techniques
-aliases:
-  - Beginner's Techniques
----
-
 ## [[content/belts_f/1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
 1. [[Sword and Hammer ⚔️🔨]]

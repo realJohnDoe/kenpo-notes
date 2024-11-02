@@ -1,5 +1,0 @@
----
-title: Belts
-aliases:
-  - Belts
----
