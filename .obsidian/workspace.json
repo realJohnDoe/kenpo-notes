@@ -21,24 +21,8 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "e103b2f52433961c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/1-techniques/Grasp of Death 🔒💀.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Grasp of Death 🔒💀"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,45 +176,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e103b2f52433961c",
+  "active": "ab819198cd6ce5bf",
   "lastOpenFiles": [
-    "content/single-techniques/index.md",
-    "content/single-techniques/attacks/punches/Uppercut Punch 🔝✊.md",
-    "content/single-techniques/attacks/punches/Straight Punch ↕️👊.md",
-    "content/single-techniques/attacks/punches/Heel Palm ✋🌴.md",
-    "content/single-techniques/attacks/punches/Handsword ✋⚔️.md",
-    "content/single-techniques/attacks/punches/Hammerfist 🔨✊.md",
-    "content/single-techniques/attacks/punches/Elbow 💪.md",
-    "content/single-techniques/attacks/punches/Back Knuckle 🔙✊.md",
-    "content/single-techniques/attacks/kicks/Side Kick ➡️🦵.md",
-    "content/single-techniques/attacks/kicks/Roundhouse Kick 🔄🦵.md",
-    "content/single-techniques/attacks/kicks/Front Kick ⬆️🦵.md",
-    "content/single-techniques/attacks/kicks/Knee 🦵.md",
-    "content/single-techniques/stances/Wide Kneel ↔️🧎.md",
-    "content/single-techniques/stances/Neutral Bow 0️⃣🧍‍♂️.md",
-    "content/single-techniques/stances/Horse Stance 🏇🧍‍♂️.md",
-    "content/single-techniques/stances/Forward Bow ⬆️🧍‍♂️.md",
-    "content/single-techniques/stances/Cat Stance🐈🧍‍♂️.md",
-    "content/single-techniques/directions/counter-clockwise 🔄.md",
-    "content/single-techniques/directions/clockwise 🔃.md",
-    "content/single-techniques/directions/900 ⬅️.md",
-    "content/single-techniques/directions/600 ⬇️.md",
-    "content/single-techniques/directions/730 ↙️.md",
-    "content/single-techniques/directions/430 ↘️.md",
-    "content/single-techniques/directions/300 ➡️.md",
-    "content/single-techniques/directions/130 ↗️.md",
-    "content/single-techniques/directions/1200 ⬆️.md",
-    "content/single-techniques/attacks/punches",
-    "content/single-techniques/attacks/kicks",
-    "content/single-techniques/stances",
-    "content/single-techniques/directions",
-    "content/single-techniques/attacks",
-    "content/single-techniques/adjectives",
-    "content/single-techniques",
     "public/404.html",
+    "public/static/giscus/light.css",
+    "public/static/giscus/dark.css",
     "public/static/og-image.png",
     "public/static/icon.png",
-    "public/static/giscus/dark.css",
-    "public/static/contentIndex.json"
+    "public/static/giscus",
+    "public/static/contentIndex.json",
+    "public/static",
+    "public/index.xml",
+    "public/sitemap.xml",
+    "public/tags/index.html",
+    "public/tags",
+    "public/web-of-knowledge/index.html",
+    "content/5-comparisons/Upward Elbow to Opponent's Chin.md",
+    "content/5-comparisons/Thrusting Kick Arm.md",
+    "content/5-comparisons/Throwing over the Right Leg.md",
+    "content/5-comparisons/Right Roundhouse Kick - Uppercut Punch.md",
+    "content/5-comparisons/Right Arm Lock over Knees.md",
+    "content/5-comparisons/Obscure Sword and Hammer 🌑⚔️🔨.md",
+    "content/5-comparisons/index.md",
+    "content/5-comparisons/Inward Elbow - Outward Elbow.md",
+    "content/5-comparisons/Handsword to the groin.md",
+    "content/5-comparisons/Grpsp of Death 🔒⚒️💀.md",
+    "content/5-comparisons/Glancing vs. Triggered vs. Thrusting Salute 👀🔫🗡️🫡.md",
+    "content/5-comparisons/Front Kick - Side Kick.md",
+    "content/5-comparisons/Ending with Hammerfist to the groin.md",
+    "content/5-comparisons/Ending with Back Knuckle.md",
+    "content/5-comparisons/Alternating Maces Pattern.md",
+    "content/1-techniques/Twisted Twig 🔀🌿.md",
+    "content/1-techniques/Twirling Wings 🌀🪽.md",
+    "content/1-techniques/Tripping Arrow 🏹.md",
+    "content/1-techniques/Twin Kimono 2️⃣👘.md",
+    "content/1-techniques/Triggered Salute 🔫🫡.md",
+    "content/1-techniques/Thundering Hammers 🌩️🔨.md",
+    "content/1-techniques/Thrusting Salute 🗡️🫡.md",
+    "content/1-techniques/Thrusting Prongs 🗡️🍴.md",
+    "content/1-techniques/Sword of Destruction ⚔️💥.md",
+    "content/1-techniques/Sword and Hammer ⚔️🔨.md"
   ]
 }

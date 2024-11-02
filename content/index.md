@@ -12,9 +12,9 @@ using [Quartz].
 
 Here are the different sections of this page:
 
-- [[content/2-belts/index|Belts]]
-- [[content/3-forms/index|Forms]]
-- [[content/4-sets/index|Sets]]
+- [[2-belts/index|Belts]]
+- [[3-forms/index|Forms]]
+- [[4-sets/index|Sets]]
 
 There are also the first two parts of the focus techniques in our Dojo:
 
