@@ -4,7 +4,7 @@ aliases:
   - Intermediate Techniques
 ---
 
-## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
+## [[2-belts/2. Orange Belt 🟠|Orange Belt 🟠]]
 
 - [[Crossing Talon ❌🦅]]
 - [[Crashing Wings 💥🪽]]
