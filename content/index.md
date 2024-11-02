@@ -12,6 +12,7 @@ using [Quartz].
 
 Here are the different sections of this page:
 
+- [[1-techniques/index|Techniques]]
 - [[2-belts/index|Belts]]
 - [[3-forms/index|Forms]]
 - [[4-sets/index|Sets]]
