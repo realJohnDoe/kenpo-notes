@@ -1,3 +1,9 @@
+---
+title: Intermediate Techniques
+aliases:
+  - Intermediate Techniques
+---
+
 ## [[content/belts_f/2. Orange Belt 🟠|Orange Belt 🟠]]
 
 - [[Crossing Talon ❌🦅]]
@@ -15,6 +21,7 @@
 - [[Hooking Wings 🪝🪽]]
 - [[Spiraling Twig 🌀🌿]]
 - [[Shield and Sword 🛡️⚔️]]
+
 ## [[4. Blue Belt 🔵|Blue Belt 🔵]]
 
 - Repeated Devastation
@@ -28,6 +35,7 @@
 
 - Conquering Shield
 - Raking Mace
+
 ## [[6. 3rd Brown Belt 🟤3️⃣|3rd Brown Belt 🟤3️⃣]]
 
 - Desperate Falcons
