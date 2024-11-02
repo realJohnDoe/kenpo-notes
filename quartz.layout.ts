@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/realJohnDoe/kenpo-notes",
-      Contact: "https://realjohndoe.github.io/kenpo-notes/impressum",
+      Impressum: "https://realjohndoe.github.io/kenpo-notes/3-impressum",
     },
   }),
 }
@@ -30,7 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer({
       filterFn: (node) => {
         // set containing names of everything you want to filter out
-        const omit = new Set(["Numbers", "single-techniques", "web-of-knowledge"])
+        const omit = new Set(["Numbers", "single-techniques", "web-of-knowledge", "3-impressum"])
         return !omit.has(node.name)
       },
       sortFn: (a, b) => {
