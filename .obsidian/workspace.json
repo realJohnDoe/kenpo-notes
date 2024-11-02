@@ -8,36 +8,37 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e405d172c357b71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Obscure Sword 🌑⚔️"
-            }
-          },
-          {
             "id": "ab819198cd6ce5bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/private/2. Orange Belt 🟠 - Flashcards.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Orange Belt 🟠 - Flashcards"
+              "title": "index"
+            }
+          },
+          {
+            "id": "e103b2f52433961c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/1-techniques/Grasp of Death 🔒💀.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grasp of Death 🔒💀"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,6 +182,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -190,41 +192,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "adc0a44735426173",
+  "active": "e103b2f52433961c",
   "lastOpenFiles": [
-    "content/numbers_f/22.md",
-    "content/techniques_f/Spiraling Twig 🌀🌿.md",
-    "content/techniques_f/Twisted Twig 🔀🌿.md",
-    "content/numbers_f/1.md",
-    "content/techniques_f/Obscure Sword 🌑⚔️.md",
-    "content/techniques_f/Thundering Hammers 🌩️🔨.md",
-    "content/private/2. Orange Belt 🟠 - Flashcards.md",
-    "content/techniques_f/Obscure Wing 🌑🪽.md",
-    "content/private/3. Purple Belt 🟣- Flashcards.md",
-    "content/techniques_f/Flight to Freedom 🛫🌈.md",
-    "content/single-techniques/Cover Left before Right 🦶🔃.md",
-    "content/single-techniques/directions/clockwise 🔃.md",
-    "content/single-techniques/Cover Right before Left 🦶🔄.md",
-    "content/techniques_f/Attacking Mace 💥✊.md",
-    "content/numbers_f/24.md",
-    "content/private/Techniken Website.md",
-    "content/belts_f/3. Purple Belt 🟣.md",
-    "content/techniques_f/Twin Kimono 2️⃣👘.md",
-    "content/single-techniques/directions/facing 1200 ⬆️.md",
-    "content/techniques_f/Shielding Hammer 🛡️🔨.md",
-    "content/forms-and-sets/2.3 Stance Set 1.md",
-    "content/single-techniques/directions/facing 1030 ↖️.md",
-    "content/techniques_f/Shield and Sword 🛡️⚔️.md",
-    "content/private/2. Orange Belt 🟠- Flashcards.md",
-    "content/techniques_f/Reversing Mace ✊🔄.md",
+    "content/single-techniques/index.md",
+    "content/single-techniques/attacks/punches/Uppercut Punch 🔝✊.md",
+    "content/single-techniques/attacks/punches/Straight Punch ↕️👊.md",
+    "content/single-techniques/attacks/punches/Heel Palm ✋🌴.md",
+    "content/single-techniques/attacks/punches/Handsword ✋⚔️.md",
     "content/single-techniques/attacks/punches/Hammerfist 🔨✊.md",
-    "content/single-techniques/directions",
-    "content/private/ai_prompts",
-    "content/single-techniques/adjectives",
-    "content/single-techniques/attacks/elbows",
-    "content/single-techniques/attacks/kicks",
+    "content/single-techniques/attacks/punches/Elbow 💪.md",
+    "content/single-techniques/attacks/punches/Back Knuckle 🔙✊.md",
+    "content/single-techniques/attacks/kicks/Side Kick ➡️🦵.md",
+    "content/single-techniques/attacks/kicks/Roundhouse Kick 🔄🦵.md",
+    "content/single-techniques/attacks/kicks/Front Kick ⬆️🦵.md",
+    "content/single-techniques/attacks/kicks/Knee 🦵.md",
+    "content/single-techniques/stances/Wide Kneel ↔️🧎.md",
+    "content/single-techniques/stances/Neutral Bow 0️⃣🧍‍♂️.md",
+    "content/single-techniques/stances/Horse Stance 🏇🧍‍♂️.md",
+    "content/single-techniques/stances/Forward Bow ⬆️🧍‍♂️.md",
+    "content/single-techniques/stances/Cat Stance🐈🧍‍♂️.md",
+    "content/single-techniques/directions/counter-clockwise 🔄.md",
+    "content/single-techniques/directions/clockwise 🔃.md",
+    "content/single-techniques/directions/900 ⬅️.md",
+    "content/single-techniques/directions/600 ⬇️.md",
+    "content/single-techniques/directions/730 ↙️.md",
+    "content/single-techniques/directions/430 ↘️.md",
+    "content/single-techniques/directions/300 ➡️.md",
+    "content/single-techniques/directions/130 ↗️.md",
+    "content/single-techniques/directions/1200 ⬆️.md",
     "content/single-techniques/attacks/punches",
-    "content/single-techniques/blocks",
-    "content/single-techniques/attacks"
+    "content/single-techniques/attacks/kicks",
+    "content/single-techniques/stances",
+    "content/single-techniques/directions",
+    "content/single-techniques/attacks",
+    "content/single-techniques/adjectives",
+    "content/single-techniques",
+    "public/404.html",
+    "public/static/og-image.png",
+    "public/static/icon.png",
+    "public/static/giscus/dark.css",
+    "public/static/contentIndex.json"
   ]
 }

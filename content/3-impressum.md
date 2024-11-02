@@ -1,3 +1,7 @@
+---
+title: Impressum
+---
+
 Impressum für die GitHub Seite https://github.com/realJohnDoe
 
 ## Verantwortlichkeit

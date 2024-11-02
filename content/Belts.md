@@ -1,7 +1,0 @@
-- [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
-- [[2. Orange Belt 🟠|Orange Belt 🟠]]
-- [[3. Purple Belt 🟣|Purple Belt 🟣]]
-- [[4. Blue Belt 🔵|Blue Belt 🔵]]
-- [[5. Green Belt 🟢|Green Belt 🟢]]
-- [[6. 3rd Brown Belt 🟤3️⃣|3rd Brown Belt 🟤3️⃣]]
-- [[7. 2nd Brown Belt 🟤2️⃣|2nd Brown Belt 🟤2️⃣]]
