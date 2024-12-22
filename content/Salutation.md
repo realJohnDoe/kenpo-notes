@@ -4,25 +4,27 @@
 
 ## Steps
 
-1. - > The scholar and the warrior united go forward...[]()
-    - Right foot forward
-    - Left hand wraps around right fist above right shoulder
-3. - "...into battle..." 
+> The scholar and the warrior united go forward...
+
+   - Right foot forward
+   - Left hand wraps around right fist above right shoulder
+   
+1. - "...into battle..." 
     - Left [[Cat Stance 🐈]]
     - Bring hands in front of chest
-5. - "...back to back..."
+2. - "...back to back..."
     - Left foot goes back
     - Pull hands back with the palms facing [[Outward 🔼]]
-7. - "...to pull their countries together." 
+3. - "...to pull their countries together." 
     - Right foot back as well
     - "Roll" hands to the hips
-9. - "They present no arms or weapons..." 
+4. - "They present no arms or weapons..." 
     - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
     - Wave the hands in two circles [[Inward 🔽]] down into a triangle above your head
-11. - "...but hold sacret the teachings of their ancestors and their art..."
+5. - "...but hold sacret the teachings of their ancestors and their art..."
     - Left hand wraps the right fist again
-13. - "...and pray for forgiveness if they ever are forced to use their art in the eyes of god."
+6. - "...and pray for forgiveness if they ever are forced to use their art in the eyes of god."
     - Praying pose
-1. - Pull left foot close again
+7. - Pull left foot close again
     - Hands make a circle [[Outward 🔼]] and clap against the legs
     
