@@ -9,6 +9,13 @@ using [Quartz].
 
 [Obsidian]: https://obsidian.md/
 [Quartz]: https://quartz.jzhao.xyz/
+In our Dojo, we focus on the five values:
+
+- Respect
+- Attentiveness
+- Discipline 
+- Control
+- Courage
 
 Here are the different sections of this page:
 
@@ -21,6 +28,8 @@ There are also the first two parts of the focus techniques in our Dojo:
 
 - [[1-beginners-techniques|Beginner's Techniques]]
 - [[2-intermediate-techniques|Intermediate Techniques]]
+
+And finally, the Kenpo [[Salutation]].
 
 If you like this site, feel free to drop me a star on [GitHub] or even contribute some ideas for
 improvement.

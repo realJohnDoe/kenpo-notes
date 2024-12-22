@@ -9,7 +9,7 @@ Left hand grabbing right shoulder from the back ([[1-grabs-and-tackles|Web of Kn
 ## Steps
 
 1. Check
-2. Left foot forward towards [[130 ↗️]]
+2. Left foot forward towards [[1200 ⬆️]]
 3. Right [[Handsword ✋⚔️]]
 4. Left [[Front Kick ⬆️🦵]]
 5. Pull left foot back, drag right foot
