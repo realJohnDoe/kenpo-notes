@@ -4,7 +4,7 @@
 
 ## Steps
 
-1. - "The scholar and the warrior united go forward..."
+1. - > The scholar and the warrior united go forward...[]()
     - Right foot forward
     - Left hand wraps around right fist above right shoulder
 3. - "...into battle..." 
