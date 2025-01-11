@@ -22,10 +22,10 @@
 1. - Drive both arms [[Downward ⬇️]] toward the ground
    - Deliver a rear head butt to the face
 2. - Pin opponents arms
-   - Right rear scooping heel kick to the left knee
+   - Right rear heel [[Scoop Kick 🥄🦵]] to the left knee
 3. - Right knife edge kick to the right knee
    - Right [[Downward ⬇️]] foot stomp on the opponents right instep
-4. - Left rear scooping heel kick to thee right knee
+4. - Left rear heel [[Scoop Kick 🥄🦵]] to thee right knee
 5. - Left knife edge kick to the left knee
    - Left [[Downward ⬇️]] foot stomp on the opponents left instep
 6. - Continue pinning the left arm

@@ -10,7 +10,7 @@
 
 1. - Right foot right into [[Horse Stance 🏇🧍‍♂️]]
     - Twin [[Downward ⬇️]] [[Elbow 💪]] to opponents forearms
-3. Left [[Cat Stance 🐈]]
+3. Left [[Cat Stance🐈🧍‍♂️]]
 4. Left foot back behind opponent's leg into right [[Forward Bow ⬆️🧍‍♂️]] 
 5. - Left [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
     - Left [[Outward 🔼]] [[Elbow 💪]] to opponents' top zone

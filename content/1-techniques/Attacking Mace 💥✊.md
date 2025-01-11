@@ -1,7 +1,6 @@
 ## Video
 
-<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=104&end=123" width="100%" height="400"></iframe>
-
+<iframe src="https://www.youtube.com/embed/uOmPtBR3jMg" width="100%" height="400"></iframe>
 ## Defense against
 
 Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[9]])
@@ -17,3 +16,7 @@ Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]
 4.  -   Put foot down in Right [[Neutral Bow 0️⃣🧍‍♂️]]
     - Left [[Uppercut Punch 🔝✊]]
 5.  -   [[Cover Right before Left 🦶🔄]]
+
+## Alternative Video
+
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=104&end=123" width="100%" height="400"></iframe>

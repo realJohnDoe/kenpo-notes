@@ -11,7 +11,7 @@
    
 > ...into battle...
 
-   - Left [[Cat Stance 🐈]]
+   - Left [[Cat Stance🐈🧍‍♂️]]
    - Bring hands in front of chest
    
 > ...back to back...
@@ -28,7 +28,7 @@
    - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
    - Wave the hands in two circles [[Inward 🔽]] down into a triangle above your head
 
-> ...but hold sacret the teachings of their ancestors and their art...
+> ...but hold sacred the teachings of their ancestors and their art...
 
    - Left hand wraps the right fist again
    

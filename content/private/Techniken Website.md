@@ -1,8 +1,9 @@
 https://karate-esslingen.de/techniken/
 https://karate-esslingen.de/formen-und-sets/
+cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-american-kenpo-techniques-24/)
 
-1. g9
-2. g2
+1. g9: [[Attacking Mace 💥✊]]
+2. g2: [[Alternating Maces 🔄✊]]
 3. gr24
 4. 3br21
 5. 2br10
@@ -11,20 +12,20 @@ https://karate-esslingen.de/formen-und-sets/
 8. l12: [[Circling Wing 🔵🪽]]
 9. l8: [[Charging Ram ⚡🐏]]
 10. gr15
-11. bl16
+11. bl16: Twist of Fate
 12. o13: [[Crossing Talon ❌🦅]]
 13. l23: [[Cross of Destruction ❌💥]]
 14. 2br4
-15. 2br5: darting leaves
+15. 2br5: Darting Leaves
 16. 2br3
-17. l4: [[Deflecting Hammer 🤺🔨]] (eigentlich y4)
+17. l4: [[Deflecting Hammer 🤺🔨]] (eigentlich g4)
 18. g1
 19. 3br8
 20. 2br9
 21. 2br1
 22. o9: [[Five Swords 5️⃣⚔️]]
-23. bl3
-24. bl21
+23. bl3: Flashing Wings
+24. bl21: [[Gathering Clouds ☁️🌩️]]
 25. o5: [[Gift of Destruction 🎁💥]]
 26. o8: [[Glancing Salute 👀🫡]]
 27. g7
@@ -39,15 +40,15 @@ https://karate-esslingen.de/formen-und-sets/
 36. o18: [[Obscure Wing 🌑🪽]]
 37. l9: [[Parting Wings 🥳🪽]]
 38. 2br19
-39. bl8
+39. bl8: Raking Mace
 40. 3br10
 41. bl19: Repeated Devastation (eig bl5)
-42. bl8
+42. bl8: Raking Mace (again?)
 43. o23: [[Raining Claw 🌧️🐯]]
 44. o14: [[Repeating Mace ↔️✊]]
 45. o19: [[Reversing Mace ✊🔄]]
 46. o11: [[Scraping Hoof ⬇️🐎]]
-47. bl10
+47. bl10: Shield and Mace
 48. l16: [[Shield and Sword 🛡️⚔️]]
 49. l2: [[Snapping Twig 🔄🌿]]
 50. o15: [[Shielding Hammer 🛡️🔨]]
@@ -62,7 +63,7 @@ https://karate-esslingen.de/formen-und-sets/
 59. o20: [[Thrusting Prongs 🗡️🍴]]
 60. bl2: Thrusting Wedge
 61. o2: [[Triggered Salute 🔫🫡]]
-62. bl12
+62. bl12: [[Tripping Arrow 🏹]]
 63. 2br2
 64. l1: [[Twirling Wings 🌀🪽]]
 65. o21: [[Twisted Twig 🔀🌿]]
@@ -70,3 +71,4 @@ https://karate-esslingen.de/formen-und-sets/
 67. o20: [[Thrusting Prongs 🗡️🍴]] (again)
 68. 2br17
 69. bl19: Wings of Silk
+
