@@ -19,7 +19,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 15. 2br5: Darting Leaves
 16. 2br3
 17. l4: [[Deflecting Hammer 🤺🔨]] (eigentlich g4)
-18. g1
+18. g1: [[Delayed Sword ⏰⚔️]]
 19. 3br8
 20. 2br9
 21. 2br1
@@ -28,7 +28,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 24. bl21: [[Gathering Clouds ☁️🌩️]]
 25. o5: [[Gift of Destruction 🎁💥]]
 26. o8: [[Glancing Salute 👀🫡]]
-27. g7
+27. g7: [[Grasp of Death 🔒💀]]
 28. o12: [[Grip of Death ⚒️💀]]
 29. l20: Gripping Talon (eigentlich bl20)
 30. l15: [[Hooking Wings 🪝🪽]]
@@ -36,7 +36,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 32. l3: [[Leaping Crane ↖️🐦]]
 33. o17: [[Locked Wing 🔒🪽]]
 34. o7: [[Lone Kimono 1️⃣👘]]
-35. g8
+35. g8: [[Mace of Aggression ✊↔️]]
 36. o18: [[Obscure Wing 🌑🪽]]
 37. l9: [[Parting Wings 🥳🪽]]
 38. 2br19
@@ -56,7 +56,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 52. l22: [[Spiraling Twig 🌀🌿]]
 53. l4: [[Swinging Pendulum 🏌🕰️]]
 54. g10
-55. g3
+55. g3: [[Sword of Destruction ⚔️💥]]
 56. l10: [[Thundering Hammers 🌩️🔨]]
 57. o4: [[Thrusting Salute 🗡️🫡]]
 58. 3br2
