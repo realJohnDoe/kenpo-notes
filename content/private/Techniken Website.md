@@ -40,7 +40,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 36. o18: [[Obscure Wing 🌑🪽]]
 37. l9: [[Parting Wings 🥳🪽]]
 38. 2br19
-39. bl8: Raking Mace
+39. bl8: [[Raking Mace 🧹✊]]
 40. 3br10
 41. bl19: Repeated Devastation (eig bl5)
 42. bl8: Raking Mace (again?)

@@ -4,7 +4,7 @@
 
 ## Defense against
 
-Left [[Front Kick ⬆️🦵]] ([[4-kicks|# Web of Knowledge: Kicks 🦶]])
+Left [[Front Kick ⬆️🦵]] ([[4-kicks|# Web of Knowledge: Kicks 🦶]], [[10]])
 
 ## Steps
 

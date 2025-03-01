@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]])
+Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[19]])
 
 ## Steps
 

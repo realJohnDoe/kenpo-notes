@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]])
+left hand step through push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[14]])
 
 ## Steps
 

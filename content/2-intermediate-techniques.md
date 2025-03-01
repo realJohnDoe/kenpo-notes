@@ -30,11 +30,11 @@ aliases:
 - Destructive Twins
 - Crossed Twigs
 - [[Hugging Pendulum 🤗🕰️]]
+- [[Raking Mace 🧹✊]]
 
 ## [[5. Green Belt 🟢|Green Belt 🟢]]
 
 - Conquering Shield
-- Raking Mace
 
 ## [[6. 3rd Brown Belt 🟤3️⃣|3rd Brown Belt 🟤3️⃣]]
 
