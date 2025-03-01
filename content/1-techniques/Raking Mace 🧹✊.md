@@ -1,7 +1,6 @@
 ## Video
 
-
-<iframe src="https://www.youtube.com/embed/geYVnDSBnJ0" width="100%" height="400"></iframe>
+<iframe src="https://www.youtube.com/embed/Kf6F0-Q9ZoA" width="100%" height="400"></iframe>
 
 ## Defense Against
 
@@ -18,3 +17,7 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]],
 5. Right hand down again to remove their grip
 6. Right sandwich [[Elbow 💪]]
 7. [[Cover Right before Left 🦶🔄]]
+
+## Alternative Video
+
+<iframe src="https://www.youtube.com/embed/geYVnDSBnJ0" width="100%" height="400"></iframe>

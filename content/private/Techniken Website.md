@@ -43,7 +43,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 39. bl8: [[Raking Mace 🧹✊]]
 40. 3br10
 41. bl19: Repeated Devastation (eig bl5)
-42. bl8: Raking Mace (again?)
+42. bl8: [[Raking Mace 🧹✊]] (again)
 43. o23: [[Raining Claw 🌧️🐯]]
 44. o14: [[Repeating Mace ↔️✊]]
 45. o19: [[Reversing Mace ✊🔄]]
