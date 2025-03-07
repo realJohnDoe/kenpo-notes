@@ -37,7 +37,7 @@ Transformers **map** over content, taking a Markdown file and outputting modifie
 ```ts
 export type QuartzTransformerPluginInstance = {
   name: string
-  textTransform?: (ctx: BuildCtx, src: string | Buffer) => string | Buffer
+  textTransform?: (ctx: BuildCtx, src: string) => string
   markdownPlugins?: (ctx: BuildCtx) => PluggableList
   htmlPlugins?: (ctx: BuildCtx) => PluggableList
   externalResources?: (ctx: BuildCtx) => Partial<StaticResources>
@@ -99,8 +99,6 @@ export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {
             },
           ],
         }
-      } else {
-        return {}
       }
     },
   }
@@ -274,7 +272,7 @@ export const ContentPage: QuartzEmitterPlugin = () => {
       const allFiles = content.map((c) => c[1].data)
       for (const [tree, file] of content) {
         const slug = canonicalizeServer(file.data.slug!)
-        const externalResources = pageResources(slug, resources)
+        const externalResources = pageResources(slug, file.data, resources)
         const componentData: QuartzComponentProps = {
           fileData: file.data,
           externalResources,
