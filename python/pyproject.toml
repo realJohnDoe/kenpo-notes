@@ -8,4 +8,5 @@ dependencies = [
     "imageio>=2.37.0",
     "matplotlib>=3.10.1",
     "numpy>=2.2.3",
+    "pyyaml>=6.0.2",
 ]
