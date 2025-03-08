@@ -18,7 +18,7 @@ waypoints = np.array(
 )
 
 # Interpolation settings
-frames_per_segment = 20  # Smoothness (higher = smoother)
+frames_per_segment = 40  # Smoothness (higher = smoother)
 positions = []
 
 # Generate interpolated positions
@@ -37,8 +37,11 @@ ax.set_xticks([])
 ax.set_yticks([])
 ax.axis("off")
 
-# Plot initial point
-(point,) = ax.plot([], [], "ro", markersize=10)
+# Add fixed black dot at (0,0)
+ax.scatter(0, 0, color="black", s=20, zorder=2)
+
+# Plot moving red point
+(point,) = ax.plot([], [], "ro", markersize=10, zorder=3)
 
 
 # Update function for animation
@@ -50,9 +53,9 @@ def update(frame):
 
 # Create animation
 ani = animation.FuncAnimation(
-    fig, update, frames=len(positions), interval=50, blit=True
+    fig, update, frames=len(positions), interval=20, blit=True
 )
 
 # Save animation as GIF
-ani.save("tracing_path.gif", writer="pillow", fps=20)
+ani.save("tracing_path_with_black_dot.gif", writer="pillow", fps=20)
 plt.show()
