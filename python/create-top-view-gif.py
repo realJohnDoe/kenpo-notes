@@ -3,29 +3,36 @@ import matplotlib.pyplot as plt
 import imageio.v3 as iio
 import matplotlib.animation as animation
 
-# Define grid size and movement pattern
-grid_size = 10
-steps = [(1, 1), (1, -1), (-1, -1), (-1, 1)]  # 45-degree movements
+# Define grid size
+grid_size = 3
 
-# Starting position
-x, y = 5, 5
-frames = 40  # More frames for smooth animation
+# Define waypoints (path the point follows)
+waypoints = np.array(
+    [
+        [0, 0],  # Start
+        [1, 1],  # Move diagonally up-right
+        [2, 0],  # Move right-down
+        [1, -1],  # Move diagonally down-left
+        [0, 0],  # Back to start (loop)
+    ]
+)
 
-# Generate interpolated path
+# Interpolation settings
+frames_per_segment = 20  # Smoothness (higher = smoother)
 positions = []
-for i in range(frames):
-    step_index = (i // 10) % 4  # Change direction every 10 frames
-    progress = (i % 10) / 10  # Progress within the step (0 to 1)
 
-    # Compute interpolated position
-    new_x = x + steps[step_index][0] * progress
-    new_y = y + steps[step_index][1] * progress
-    positions.append((new_x, new_y))
+# Generate interpolated positions
+for i in range(len(waypoints) - 1):
+    start = waypoints[i]
+    end = waypoints[i + 1]
+    for t in np.linspace(0, 1, frames_per_segment):
+        interp_pos = (1 - t) * start + t * end  # Linear interpolation
+        positions.append(interp_pos)
 
 # Create figure
 fig, ax = plt.subplots(figsize=(5, 5))
-ax.set_xlim(0, grid_size)
-ax.set_ylim(0, grid_size)
+ax.set_xlim(-1, grid_size + 1)
+ax.set_ylim(-2, grid_size)
 ax.set_xticks([])
 ax.set_yticks([])
 ax.axis("off")
@@ -37,7 +44,7 @@ ax.axis("off")
 # Update function for animation
 def update(frame):
     new_x, new_y = positions[frame]  # Unpack x, y values
-    point.set_data([new_x], [new_y])  # Fix: Pass x and y as lists
+    point.set_data([new_x], [new_y])  # Update point position
     return (point,)
 
 
@@ -47,5 +54,5 @@ ani = animation.FuncAnimation(
 )
 
 # Save animation as GIF
-ani.save("smooth_moving_point.gif", writer="pillow", fps=20)
+ani.save("tracing_path.gif", writer="pillow", fps=20)
 plt.show()
