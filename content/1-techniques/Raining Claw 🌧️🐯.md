@@ -17,10 +17,10 @@ Right [[Uppercut Punch 🔝✊]] ([[3-punches|Web of Knowledge: Punches 👊]], 
 
 1.  - Step back into a Right [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]]
     - Right [[Downward ⬇️]] [[Inward 🔽]] [[Block 🛡️]]
-1.  - Left overhead claw
-1.  - Shuffle forward
+2.  - Left overhead [[Claw 🐯]]
+3.  - Shuffle forward
     - Vertical Right [[Back Knuckle 🔙✊]]
-1.  - [[Cover Right before Left 🦶🔄]] facing [[130 ↗️]]
+4.  - [[Cover Right before Left 🦶🔄]] facing [[130 ↗️]]
 
 ## Further Videos
 

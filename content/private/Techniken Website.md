@@ -24,7 +24,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 20. 2br9
 21. 2br1
 22. o9: [[Five Swords 5️⃣⚔️]]
-23. bl3: Flashing Wings
+23. bl3: [[Flashing Wings]]
 24. bl21: [[Gathering Clouds ☁️🌩️]]
 25. o5: [[Gift of Destruction 🎁💥]]
 26. o8: [[Glancing Salute 👀🫡]]
@@ -61,7 +61,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 57. o4: [[Thrusting Salute 🗡️🫡]]
 58. 3br2
 59. o20: [[Thrusting Prongs 🗡️🍴]]
-60. bl2: Thrusting Wedge
+60. bl2: [[Thrusting Wedge 🗡️🔼]]
 61. o2: [[Triggered Salute 🔫🫡]]
 62. bl12: [[Tripping Arrow 🏹]]
 63. 2br2
@@ -70,5 +70,5 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 66. 2br15
 67. o20: [[Thrusting Prongs 🗡️🍴]] (again)
 68. 2br17
-69. bl19: Wings of Silk
+69. bl19: [[Wings of Silk]]
 
