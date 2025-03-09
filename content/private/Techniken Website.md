@@ -24,7 +24,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 20. 2br9
 21. 2br1
 22. o9: [[Five Swords 5️⃣⚔️]]
-23. bl3: [[Flashing Wings]]
+23. bl3: [[Flashing Wings ⚡🪽]]
 24. bl21: [[Gathering Clouds ☁️🌩️]]
 25. o5: [[Gift of Destruction 🎁💥]]
 26. o8: [[Glancing Salute 👀🫡]]
