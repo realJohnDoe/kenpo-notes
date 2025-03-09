@@ -3,7 +3,7 @@
 <iframe src="https://www.youtube.com/embed/Qki2sFWdqHA" width="100%" height="400"></iframe>
 ## Defense Against
 
- Attempted Full Nelson ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[11]])
+ Attempted [[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[11]])
 ## Steps
 
 ### Short
