@@ -4,7 +4,7 @@
 
 ## Defense Against
 
-Right Roundhouse Club Attack ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[13]])
+Right Roundhouse [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[13]])
 
 ## Steps
 

@@ -1,3 +1,3 @@
 - [[Grasp of Death 🔒💀]]
-- [[Obstructing the Storm 🚧⛈️]]
+- [[Obstructing the Storm 🙅‍♂️⛈️]]
 - [[Crossing Talon ❌🦅]]
