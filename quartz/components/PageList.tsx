@@ -1,4 +1,4 @@
-import { FullSlug, resolveRelative } from "../util/path"
+import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
@@ -31,7 +31,7 @@ type Props = {
 } & QuartzComponentProps
 
 export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort }: Props) => {
-  const sorter = sort ?? byDateAndAlphabetical(cfg)
+  const sorter = sort ?? byDateAndAlphabeticalFolderFirst(cfg)
   let list = allFiles.sort(sorter)
   if (limit) {
     list = list.slice(0, limit)
