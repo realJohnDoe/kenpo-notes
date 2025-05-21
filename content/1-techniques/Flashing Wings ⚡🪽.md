@@ -19,4 +19,4 @@ Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]
 6. - Left hand checks their right upper arm
     - Turn back into left [[Wide Kneel ↔️🧎]] facing [[1200 ⬆️]]
     - Right [[Upward ⬆️]] [[Heel Palm ✋🌴]] to their chin
-7. [[Cover Left before Right 🦶🔃]]
+7. - [[Cover Left before Right 🦶🔃]]
