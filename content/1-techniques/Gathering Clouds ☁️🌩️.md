@@ -9,7 +9,7 @@ Right [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]
 
 ## Steps
 
-1. - Left foot left into left [[Forward Bow ⬆️🧍‍♂️]] towards [[1030 ↖️]]
+1. - Left foot towards [[1030 ↖️]] into [[Forward Bow ⬆️🧍‍♂️]] 
     - Left [[Parry 🤺]]
     - Right [[Inward 🔽]] [[Hammerfist 🔨✊]]
 2. - Turn into left [[Neutral Bow 0️⃣🧍‍♂️]]

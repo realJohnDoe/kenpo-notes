@@ -15,4 +15,4 @@ Low Two-handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[15]])
 4. Right [[Outward 🔼]] [[Back Knuckle 🔙✊]]
 5. - Shuffle forward
     - Right [[Upward ⬆️]] [[Elbow 💪]]
-7. Right [[Downward ⬇️]] [[Heel Palm ✋🌴]] Claw
+6. Right [[Downward ⬇️]] [[Heel Palm ✋🌴]] [[Claw 🐯]]

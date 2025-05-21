@@ -12,6 +12,6 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
     - Left [[Outward 🔼]] [[Elbow 💪]] to the upper zone
 2. - Right [[Forward Bow ⬆️🧍‍♂️]]
     - Lock opponent's right elbow
-3. - Step back with right foot into Left [[Forward Bow ⬆️🧍‍♂️]] [[1030]]
+3. - Step back with right foot towards [[430 ↘️]] into Left [[Forward Bow ⬆️🧍‍♂️]]
     - Turn opponent with you
 4. Right knee to the chest

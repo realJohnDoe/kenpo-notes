@@ -17,4 +17,5 @@ Rear Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[22]
      - Turn further [[clockwise 🔃]] and put right foot towards [[130 ↗️]]
 6. Check their right arm with your left hand 
 7. Right [[Front Kick ⬆️🦵]]
-8. [[Cover Left before Right 🦶🔃]]
+8. Right lifting [[Back Knuckle 🔙✊]] to their face
+9. [[Cover Right before Left 🦶🔄]]

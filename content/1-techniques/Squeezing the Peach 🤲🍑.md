@@ -13,5 +13,5 @@
 2. - Step forward with left foot into half left [[Neutral Bow 0️⃣🧍‍♂️]]
     - Pull groin protection with us
     - Right heel [[Scoop Kick 🥄🦵]]
-3. - Put right foot down at 600
+3. - Put right foot down at [[600 ⬇️]]
     - Right [[Outward 🔼]] [[Elbow 💪]] to their face

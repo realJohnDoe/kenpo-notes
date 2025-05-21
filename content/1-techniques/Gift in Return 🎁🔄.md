@@ -17,4 +17,4 @@ Right unfriendly Handshake ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 
     - Check their hip with the right hand
 3. Right Snapping Knife Edge [[Side Kick ➡️🦵]] to their left knee
 4. Left [[Knee 🦵]] Strike
-5. [[Cover Right before Left 🦶🔄]]
+5. [[Cover Left before Right 🦶🔃]]
