@@ -16,12 +16,9 @@
 
 .popover {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   overflow: visible;
   padding: 1rem;
-  left: 0;
-  top: 0;
-  will-change: transform;
 
   & > .popover-inner {
     position: relative;
@@ -38,10 +35,7 @@
     border-radius: 5px;
     box-shadow: 6px 6px 36px 0 rgba(0, 0, 0, 0.25);
     overflow: auto;
-    overscroll-behavior: contain;
     white-space: normal;
-    user-select: none;
-    cursor: default;
   }
 
   & > .popover-inner[data-content-type] {
@@ -81,7 +75,7 @@
   }
 }
 
-.active-popover,
+a:hover .popover,
 .popover:hover {
   animation: dropin 0.3s ease;
   animation-fill-mode: forwards;

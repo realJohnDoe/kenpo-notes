@@ -65,21 +65,6 @@ ul,
   }
 }
 
-article {
-  > mjx-container.MathJax,
-  blockquote > div > mjx-container.MathJax {
-    display: flex;
-    > svg {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  blockquote > div > mjx-container.MathJax > svg {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
 strong {
   font-weight: $semiBoldWeight;
 }
@@ -238,7 +223,6 @@ a {
         padding: 0;
         & > * {
           flex: 1;
-          max-height: 24rem;
         }
         & > .toc {
           display: none;
@@ -366,10 +350,6 @@ h6 {
 
   &[id]:hover > a {
     opacity: 1;
-  }
-
-  &:not([id]) > a[role="anchor"] {
-    display: none;
   }
 }
 
@@ -558,33 +538,39 @@ video {
 }
 
 .spacer {
-  flex: 2 1 auto;
+  flex: 1 1 auto;
 }
 
 div:has(> .overflow) {
+  display: flex;
+  overflow-y: auto;
   max-height: 100%;
-  overflow-y: hidden;
 }
 
 ul.overflow,
 ol.overflow {
   max-height: 100%;
   overflow-y: auto;
-  width: 100%;
-  margin-bottom: 0;
 
   // clearfix
   content: "";
   clear: both;
 
-  & > li.overflow-end {
-    height: 0.5rem;
-    margin: 0;
+  & > li:last-of-type {
+    margin-bottom: 30px;
   }
-
-  &.gradient-active {
-    mask-image: linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);
-  }
+  /*&:after {
+    pointer-events: none;
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    background: linear-gradient(transparent 0px, var(--light));
+  }*/
 }
 
 .transclude {

@@ -26,11 +26,8 @@ export default {
       noBacklinksFound: "Keine Backlinks gefunden",
     },
     themeToggle: {
-      lightMode: "Heller Modus",
-      darkMode: "Dunkler Modus",
-    },
-    readerMode: {
-      title: "Lesemodus",
+      lightMode: "Light Mode",
+      darkMode: "Dark Mode",
     },
     explorer: {
       title: "Explorer",

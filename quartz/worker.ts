@@ -1,8 +1,8 @@
 import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import cfg from "../quartz.config"
-import { BuildCtx, WorkerSerializableBuildCtx } from "./util/ctx"
-import { FilePath } from "./util/path"
+import { Argv, BuildCtx } from "./util/ctx"
+import { FilePath, FullSlug } from "./util/path"
 import {
   createFileParser,
   createHtmlProcessor,
@@ -14,24 +14,35 @@ import { MarkdownContent, ProcessedContent } from "./plugins/vfile"
 
 // only called from worker thread
 export async function parseMarkdown(
-  partialCtx: WorkerSerializableBuildCtx,
+  buildId: string,
+  argv: Argv,
   fps: FilePath[],
-): Promise<MarkdownContent[]> {
+): Promise<[MarkdownContent[], FullSlug[]]> {
+  // this is a hack
+  // we assume markdown parsers can add to `allSlugs`,
+  // but don't actually use them
+  const allSlugs: FullSlug[] = []
   const ctx: BuildCtx = {
-    ...partialCtx,
+    buildId,
     cfg,
+    argv,
+    allSlugs,
   }
-  return await createFileParser(ctx, fps)(createMdProcessor(ctx))
+  return [await createFileParser(ctx, fps)(createMdProcessor(ctx)), allSlugs]
 }
 
 // only called from worker thread
 export function processHtml(
-  partialCtx: WorkerSerializableBuildCtx,
+  buildId: string,
+  argv: Argv,
   mds: MarkdownContent[],
+  allSlugs: FullSlug[],
 ): Promise<ProcessedContent[]> {
   const ctx: BuildCtx = {
-    ...partialCtx,
+    buildId,
     cfg,
+    argv,
+    allSlugs,
   }
   return createMarkdownParser(ctx, mds)(createHtmlProcessor(ctx))
 }

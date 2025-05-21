@@ -7,13 +7,12 @@ import { Root as HTMLRoot } from "hast"
 import { MarkdownContent, ProcessedContent } from "../plugins/vfile"
 import { PerfTimer } from "../util/perf"
 import { read } from "to-vfile"
-import { FilePath, QUARTZ, slugifyFilePath } from "../util/path"
+import { FilePath, FullSlug, QUARTZ, slugifyFilePath } from "../util/path"
 import path from "path"
 import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
-import { BuildCtx, WorkerSerializableBuildCtx } from "../util/ctx"
-import chalk from "chalk"
+import { BuildCtx } from "../util/ctx"
 
 export type QuartzMdProcessor = Processor<MDRoot, MDRoot, MDRoot>
 export type QuartzHtmlProcessor = Processor<undefined, MDRoot, HTMLRoot>
@@ -172,46 +171,25 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       workerType: "thread",
     })
     const errorHandler = (err: any) => {
-      console.error(err)
+      console.error(`${err}`.replace(/^error:\s*/i, ""))
       process.exit(1)
     }
 
-    const serializableCtx: WorkerSerializableBuildCtx = {
-      buildId: ctx.buildId,
-      argv: ctx.argv,
-      allSlugs: ctx.allSlugs,
-      allFiles: ctx.allFiles,
-      incremental: ctx.incremental,
-    }
-
-    const textToMarkdownPromises: WorkerPromise<MarkdownContent[]>[] = []
-    let processedFiles = 0
+    const mdPromises: WorkerPromise<[MarkdownContent[], FullSlug[]]>[] = []
     for (const chunk of chunks(fps, CHUNK_SIZE)) {
-      textToMarkdownPromises.push(pool.exec("parseMarkdown", [serializableCtx, chunk]))
+      mdPromises.push(pool.exec("parseMarkdown", [ctx.buildId, argv, chunk]))
     }
+    const mdResults: [MarkdownContent[], FullSlug[]][] =
+      await WorkerPromise.all(mdPromises).catch(errorHandler)
 
-    const mdResults: Array<MarkdownContent[]> = await Promise.all(
-      textToMarkdownPromises.map(async (promise) => {
-        const result = await promise
-        processedFiles += result.length
-        log.updateText(`text->markdown ${chalk.gray(`${processedFiles}/${fps.length}`)}`)
-        return result
-      }),
-    ).catch(errorHandler)
-
-    const markdownToHtmlPromises: WorkerPromise<ProcessedContent[]>[] = []
-    processedFiles = 0
-    for (const mdChunk of mdResults) {
-      markdownToHtmlPromises.push(pool.exec("processHtml", [serializableCtx, mdChunk]))
+    const childPromises: WorkerPromise<ProcessedContent[]>[] = []
+    for (const [_, extraSlugs] of mdResults) {
+      ctx.allSlugs.push(...extraSlugs)
     }
-    const results: ProcessedContent[][] = await Promise.all(
-      markdownToHtmlPromises.map(async (promise) => {
-        const result = await promise
-        processedFiles += result.length
-        log.updateText(`markdown->html ${chalk.gray(`${processedFiles}/${fps.length}`)}`)
-        return result
-      }),
-    ).catch(errorHandler)
+    for (const [mdChunk, _] of mdResults) {
+      childPromises.push(pool.exec("processHtml", [ctx.buildId, argv, mdChunk, ctx.allSlugs]))
+    }
+    const results: ProcessedContent[][] = await WorkerPromise.all(childPromises).catch(errorHandler)
 
     res = results.flat()
     await pool.terminate()

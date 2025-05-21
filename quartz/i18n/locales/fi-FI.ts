@@ -29,9 +29,6 @@ export default {
       lightMode: "Vaalea tila",
       darkMode: "Tumma tila",
     },
-    readerMode: {
-      title: "Lukijatila",
-    },
     explorer: {
       title: "Selain",
     },

@@ -29,9 +29,6 @@ export default {
       lightMode: "Tema claro",
       darkMode: "Tema escuro",
     },
-    readerMode: {
-      title: "Modo leitor",
-    },
     explorer: {
       title: "Explorador",
     },

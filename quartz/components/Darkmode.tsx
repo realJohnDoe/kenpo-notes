@@ -1,4 +1,6 @@
-// @ts-ignore
+// @ts-ignore: this is safe, we don't want to actually make darkmode.inline.ts a module as
+// modules are automatically deferred and we don't want that to happen for critical beforeDOMLoads
+// see: https://v8.dev/features/modules#defer
 import darkmodeScript from "./scripts/darkmode.inline"
 import styles from "./styles/darkmode.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -7,12 +9,12 @@ import { classNames } from "../util/lang"
 
 const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
   return (
-    <button class={classNames(displayClass, "darkmode")}>
+    <button class={classNames(displayClass, "darkmode")} id="darkmode">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
-        class="dayIcon"
+        id="dayIcon"
         x="0px"
         y="0px"
         viewBox="0 0 35 35"
@@ -27,7 +29,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
-        class="nightIcon"
+        id="nightIcon"
         x="0px"
         y="0px"
         viewBox="0 0 100 100"

@@ -29,9 +29,6 @@ export default {
       lightMode: "라이트 모드",
       darkMode: "다크 모드",
     },
-    readerMode: {
-      title: "리더 모드",
-    },
     explorer: {
       title: "탐색기",
     },

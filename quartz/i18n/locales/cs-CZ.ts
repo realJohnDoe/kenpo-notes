@@ -29,9 +29,6 @@ export default {
       lightMode: "Světlý režim",
       darkMode: "Tmavý režim",
     },
-    readerMode: {
-      title: "Režim čtečky",
-    },
     explorer: {
       title: "Procházet",
     },

@@ -1,6 +1,8 @@
 import { slug as slugAnchor } from "github-slugger"
 import type { Element as HastElement } from "hast"
-import { clone } from "./clone"
+import rfdc from "rfdc"
+
+export const clone = rfdc()
 
 // this file must be isomorphic so it can't use node libs (e.g. path)
 
@@ -37,16 +39,7 @@ export type RelativeURL = SlugLike<"relative">
 export function isRelativeURL(s: string): s is RelativeURL {
   const validStart = /^\.{1,2}/.test(s)
   const validEnding = !endsWith(s, "index")
-  return validStart && validEnding && ![".md", ".html"].includes(getFileExtension(s) ?? "")
-}
-
-export function isAbsoluteURL(s: string): boolean {
-  try {
-    new URL(s)
-  } catch {
-    return false
-  }
-  return true
+  return validStart && validEnding && ![".md", ".html"].includes(_getFileExtension(s) ?? "")
 }
 
 export function getFullSlug(window: Window): FullSlug {
@@ -71,7 +64,7 @@ function sluggify(s: string): string {
 
 export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
   fp = stripSlashes(fp) as FilePath
-  let ext = getFileExtension(fp)
+  let ext = _getFileExtension(fp)
   const withoutFileExt = fp.replace(new RegExp(ext + "$"), "")
   if (excludeExt || [".md", ".html", undefined].includes(ext)) {
     ext = ""
@@ -257,7 +250,7 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
 }
 
 // path helpers
-export function isFolderPath(fplike: string): boolean {
+function isFolderPath(fplike: string): boolean {
   return (
     fplike.endsWith("/") ||
     endsWith(fplike, "index") ||
@@ -270,7 +263,7 @@ export function endsWith(s: string, suffix: string): boolean {
   return s === suffix || s.endsWith("/" + suffix)
 }
 
-export function trimSuffix(s: string, suffix: string): string {
+function trimSuffix(s: string, suffix: string): string {
   if (endsWith(s, suffix)) {
     s = s.slice(0, -suffix.length)
   }
@@ -282,10 +275,10 @@ function containsForbiddenCharacters(s: string): boolean {
 }
 
 function _hasFileExtension(s: string): boolean {
-  return getFileExtension(s) !== undefined
+  return _getFileExtension(s) !== undefined
 }
 
-export function getFileExtension(s: string): string | undefined {
+function _getFileExtension(s: string): string | undefined {
   return s.match(/\.[A-Za-z0-9]+$/)?.[0]
 }
 

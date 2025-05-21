@@ -29,9 +29,6 @@ export default {
       lightMode: "Світлий режим",
       darkMode: "Темний режим",
     },
-    readerMode: {
-      title: "Режим читання",
-    },
     explorer: {
       title: "Провідник",
     },

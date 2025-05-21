@@ -15,7 +15,7 @@ interface Colors {
   darkMode: ColorScheme
 }
 
-export type FontSpecification =
+type FontSpecification =
   | string
   | {
       name: string
@@ -25,7 +25,6 @@ export type FontSpecification =
 
 export interface Theme {
   typography: {
-    title?: FontSpecification
     header: FontSpecification
     body: FontSpecification
     code: FontSpecification
@@ -49,10 +48,7 @@ export function getFontSpecificationName(spec: FontSpecification): string {
   return spec.name
 }
 
-function formatFontSpecification(
-  type: "title" | "header" | "body" | "code",
-  spec: FontSpecification,
-) {
+function formatFontSpecification(type: "header" | "body" | "code", spec: FontSpecification) {
   if (typeof spec === "string") {
     spec = { name: spec }
   }
@@ -86,58 +82,12 @@ function formatFontSpecification(
 }
 
 export function googleFontHref(theme: Theme) {
-  const { header, body, code } = theme.typography
+  const { code, header, body } = theme.typography
   const headerFont = formatFontSpecification("header", header)
   const bodyFont = formatFontSpecification("body", body)
   const codeFont = formatFontSpecification("code", code)
 
-  return `https://fonts.googleapis.com/css2?family=${headerFont}&family=${bodyFont}&family=${codeFont}&display=swap`
-}
-
-export function googleFontSubsetHref(theme: Theme, text: string) {
-  const title = theme.typography.title || theme.typography.header
-  const titleFont = formatFontSpecification("title", title)
-
-  return `https://fonts.googleapis.com/css2?family=${titleFont}&text=${encodeURIComponent(text)}&display=swap`
-}
-
-export interface GoogleFontFile {
-  url: string
-  filename: string
-  extension: string
-}
-
-const fontMimeMap: Record<string, string> = {
-  truetype: "ttf",
-  woff: "woff",
-  woff2: "woff2",
-  opentype: "otf",
-}
-
-export async function processGoogleFonts(
-  stylesheet: string,
-  baseUrl: string,
-): Promise<{
-  processedStylesheet: string
-  fontFiles: GoogleFontFile[]
-}> {
-  const fontSourceRegex =
-    /url\((https:\/\/fonts.gstatic.com\/.+(?:\/|(?:kit=))(.+?)[.&].+?)\)\sformat\('(\w+?)'\);/g
-  const fontFiles: GoogleFontFile[] = []
-  let processedStylesheet = stylesheet
-
-  let match
-  while ((match = fontSourceRegex.exec(stylesheet)) !== null) {
-    const url = match[1]
-    const filename = match[2]
-    const extension = fontMimeMap[match[3].toLowerCase()]
-    const staticUrl = `https://${baseUrl}/static/fonts/${filename}.${extension}`
-
-    processedStylesheet = processedStylesheet.replace(url, staticUrl)
-    fontFiles.push({ url, filename, extension })
-  }
-
-  return { processedStylesheet, fontFiles }
+  return `https://fonts.googleapis.com/css2?family=${bodyFont}&family=${headerFont}&family=${codeFont}&display=swap`
 }
 
 export function joinStyles(theme: Theme, ...stylesheet: string[]) {
@@ -155,10 +105,9 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
 
-  --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
-  --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
-  --bodyFont: "${getFontSpecificationName(theme.typography.body)}", ${DEFAULT_SANS_SERIF};
-  --codeFont: "${getFontSpecificationName(theme.typography.code)}", ${DEFAULT_MONO};
+  --headerFont: "${theme.typography.header}", ${DEFAULT_SANS_SERIF};
+  --bodyFont: "${theme.typography.body}", ${DEFAULT_SANS_SERIF};
+  --codeFont: "${theme.typography.code}", ${DEFAULT_MONO};
 }
 
 :root[saved-theme="dark"] {

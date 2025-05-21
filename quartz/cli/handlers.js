@@ -225,10 +225,6 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
  * @param {*} argv arguments for `build`
  */
 export async function handleBuild(argv) {
-  if (argv.serve) {
-    argv.watch = true
-  }
-
   console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   const ctx = await esbuild.context({
     entryPoints: [fp],
@@ -335,10 +331,9 @@ export async function handleBuild(argv) {
     clientRefresh()
   }
 
-  let clientRefresh = () => {}
   if (argv.serve) {
     const connections = []
-    clientRefresh = () => connections.forEach((conn) => conn.send("rebuild"))
+    const clientRefresh = () => connections.forEach((conn) => conn.send("rebuild"))
 
     if (argv.baseDir !== "" && !argv.baseDir.startsWith("/")) {
       argv.baseDir = "/" + argv.baseDir
@@ -438,7 +433,6 @@ export async function handleBuild(argv) {
 
       return serve()
     })
-
     server.listen(argv.port)
     const wss = new WebSocketServer({ port: argv.wsPort })
     wss.on("connection", (ws) => connections.push(ws))
@@ -447,27 +441,16 @@ export async function handleBuild(argv) {
         `Started a Quartz server listening at http://localhost:${argv.port}${argv.baseDir}`,
       ),
     )
-  } else {
-    await build(clientRefresh)
-    ctx.dispose()
-  }
-
-  if (argv.watch) {
-    const paths = await globby([
-      "**/*.ts",
-      "quartz/cli/*.js",
-      "quartz/static/**/*",
-      "**/*.tsx",
-      "**/*.scss",
-      "package.json",
-    ])
+    console.log("hint: exit with ctrl+c")
+    const paths = await globby(["**/*.ts", "**/*.tsx", "**/*.scss", "package.json"])
     chokidar
       .watch(paths, { ignoreInitial: true })
       .on("add", () => build(clientRefresh))
       .on("change", () => build(clientRefresh))
       .on("unlink", () => build(clientRefresh))
-
-    console.log(chalk.grey("hint: exit with ctrl+c"))
+  } else {
+    await build(() => {})
+    ctx.dispose()
   }
 }
 
@@ -589,8 +572,7 @@ export async function handleSync(argv) {
   await popContentFolder(contentFolder)
   if (argv.push) {
     console.log("Pushing your changes")
-    const currentBranch = execSync("git rev-parse --abbrev-ref HEAD").toString().trim()
-    const res = spawnSync("git", ["push", "-uf", ORIGIN_NAME, currentBranch], {
+    const res = spawnSync("git", ["push", "-uf", ORIGIN_NAME, QUARTZ_SOURCE_BRANCH], {
       stdio: "inherit",
     })
     if (res.status !== 0) {

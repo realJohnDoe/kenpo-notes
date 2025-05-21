@@ -29,9 +29,6 @@ export default {
       lightMode: "حالت روشن",
       darkMode: "حالت تاریک",
     },
-    readerMode: {
-      title: "حالت خواندن",
-    },
     explorer: {
       title: "مطالب",
     },

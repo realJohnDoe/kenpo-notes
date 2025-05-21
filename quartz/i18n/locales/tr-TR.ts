@@ -29,9 +29,6 @@ export default {
       lightMode: "Açık mod",
       darkMode: "Koyu mod",
     },
-    readerMode: {
-      title: "Okuma modu",
-    },
     explorer: {
       title: "Gezgin",
     },

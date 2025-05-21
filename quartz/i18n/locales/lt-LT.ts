@@ -29,9 +29,6 @@ export default {
       lightMode: "Šviesus Režimas",
       darkMode: "Tamsus Režimas",
     },
-    readerMode: {
-      title: "Modalità lettore",
-    },
     explorer: {
       title: "Naršyklė",
     },

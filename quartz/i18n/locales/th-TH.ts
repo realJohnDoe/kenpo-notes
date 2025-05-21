@@ -29,9 +29,6 @@ export default {
       lightMode: "โหมดสว่าง",
       darkMode: "โหมดมืด",
     },
-    readerMode: {
-      title: "โหมดอ่าน",
-    },
     explorer: {
       title: "รายการหน้า",
     },
