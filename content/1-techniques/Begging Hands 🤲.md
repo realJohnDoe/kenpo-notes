@@ -15,4 +15,4 @@ Both our hands are grabbed at their wrists ([[1-grabs-and-tackles|Web of Knowled
 4. - Left [[Chicken Kick 🐔🦵]] to their upper zone
 5. - Land in left [[Forward Bow ⬆️🧍‍♂️]]
    - Twin [[Heel Palm ✋🌴]] to their ribs
-6. [[Cover Left before Right 🦶🔃]] towards [[430 ↘️]]
+6. - [[Cover Left before Right 🦶🔃]] towards [[430 ↘️]]
