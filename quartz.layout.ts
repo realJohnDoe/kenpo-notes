@@ -14,6 +14,33 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+const defaultExplorer = Component.Explorer({
+  filterFn: (node) => {
+    console.log(node.slug)
+    // set containing names of everything you want to filter out
+    const omit = new Set(["Numbers/index", "single-techniques/index", "web-of-knowledge/index", "impressum"])
+    return !omit.has(node.slug)
+  },
+  sortFn: (a, b) => {
+    // if (!a.isFolder && a.slug && !b.isFolder && b.slug) {
+    //   return a.slug.localeCompare(b.slug)
+    // }
+    // if (  !a.file && !b.file) {
+    //   return a.name.localeCompare(b.name)
+    // }
+
+    // Sort order: folders first, then files. Sort folders and files alphabetically
+    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+      return a.slug.localeCompare(b.slug)
+    }
+
+    if (!a.isFolder && b.isFolder) {
+      return 1
+    } else {
+      return -1
+    }
+  }})
+  
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -38,7 +65,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    defaultExplorer,
   ],
   right: [
     Component.Graph(),
@@ -62,7 +89,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    defaultExplorer,
   ],
   right: [],
 }
