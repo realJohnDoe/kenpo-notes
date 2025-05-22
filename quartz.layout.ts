@@ -16,7 +16,6 @@ export const sharedPageComponents: SharedLayout = {
 
 const defaultExplorer = Component.Explorer({
   filterFn: (node) => {
-    console.log(node.slug)
     // set containing names of everything you want to filter out
     const omit = new Set(["Numbers/index", "single-techniques/index", "web-of-knowledge/index", "impressum"])
     return !omit.has(node.slug)
