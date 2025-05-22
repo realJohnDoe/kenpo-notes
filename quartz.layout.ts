@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/realJohnDoe/kenpo-notes",
-      Impressum: "https://realjohndoe.github.io/kenpo-notes/3-impressum",
+      Impressum: "https://realjohndoe.github.io/kenpo-notes/impressum",
     },
   }),
 }
