@@ -4,8 +4,5 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
 .quartz-cache
-private/
-.replit
-replit.nix
+workspace.json
