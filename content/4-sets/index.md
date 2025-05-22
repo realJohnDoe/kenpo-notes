@@ -1,5 +1,0 @@
----
-title: Sets
-aliases:
-  - Sets
----

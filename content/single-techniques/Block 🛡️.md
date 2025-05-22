@@ -1,1 +1,0 @@
-> Force Against Force Against a Weapon in Motion

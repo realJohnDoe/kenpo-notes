@@ -8,47 +8,19 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/realJohnDoe/kenpo-notes",
-      Impressum: "https://realjohndoe.github.io/kenpo-notes/3-impressum",
+      GitHub: "https://github.com/jackyzha0/quartz",
+      "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
 }
 
-const defaultExplorer = Component.Explorer({
-  filterFn: (node) => {
-    // set containing names of everything you want to filter out
-    const omit = new Set(["Numbers", "single-techniques", "web-of-knowledge", "3-impressum"])
-    return !omit.has(node.name)
-  },
-  sortFn: (a, b) => {
-    if (a.file && a.file.slug && b.file && b.file.slug) {
-      return a.file.slug.localeCompare(b.file.slug)
-    }
-    if (!a.file && !b.file) {
-      return a.name.localeCompare(b.name)
-    }
-
-    // Sort order: folders first, then files. Sort folders and files alphabetically
-    if ((!a.file && !b.file) || (a.file && b.file)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
-      return a.displayName.localeCompare(b.displayName, undefined, {
-        numeric: true,
-        sensitivity: "base",
-      })
-    }
-
-    if (a.file && !b.file) {
-      return 1
-    } else {
-      return -1
-    }
-  }})
-
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
+    Component.ConditionalRender({
+      component: Component.Breadcrumbs(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
@@ -56,9 +28,17 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(defaultExplorer),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+      ],
+    }),
+    Component.Explorer(),
   ],
   right: [
     Component.Graph(),
@@ -73,9 +53,16 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(defaultExplorer),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    }),
+    Component.Explorer(),
   ],
   right: [],
 }
