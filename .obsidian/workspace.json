@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "6d4e7bf5806ce01c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d463f23107a5ec78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab819198cd6ce5bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/private/3. Purple Belt 🟣 - Flashcards.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Purple Belt 🟣 - Flashcards"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f3d76849fceaaea9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f597c09e21e0b15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfb33373c93e9cde",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0d2d8eb171dc9663",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cover right ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "64acdbdb36bb671a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c20b63522e6a069a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec1fbfee8d2265bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "401d7e4d01056ecd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Obscure Sword 🌑⚔️"
+            }
+          },
+          {
+            "id": "612b116c9f4c7aaa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Obscure Sword 🌑⚔️"
+            }
+          },
+          {
+            "id": "08ef351eecb4219b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0591b8874b8455a5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/techniques_f/Obscure Sword 🌑⚔️.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Obscure Sword 🌑⚔️"
+            }
+          },
+          {
+            "id": "adc0a44735426173",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ab819198cd6ce5bf",
+  "lastOpenFiles": [
+    "content/index.md",
+    "public/single-techniques/Cover-Right-before-Left-🦶🔄.html",
+    "public/single-techniques/Cover-Left-before-Right-🦶🔃.html",
+    "public/single-techniques/Block-🛡️.html",
+    "public/index.html",
+    "public/Numbers/index.html",
+    "public/Numbers/9.html",
+    "public/Numbers/8.html",
+    "public/Numbers/7.html",
+    "public/Numbers/6.html",
+    "public/Numbers/5.html",
+    "public/static/og-image.png",
+    "public/static/icon.png",
+    "content/5-comparisons/Upward Elbow to Opponent's Chin.md",
+    "content/5-comparisons/Thrusting Kick Arm.md",
+    "content/5-comparisons/Throwing over the Right Leg.md",
+    "content/5-comparisons/Right Roundhouse Kick - Uppercut Punch.md",
+    "content/5-comparisons/Right Arm Lock over Knees.md",
+    "content/5-comparisons/Obscure Sword and Hammer 🌑⚔️🔨.md",
+    "content/5-comparisons/index.md",
+    "content/5-comparisons/Inward Elbow - Outward Elbow.md",
+    "content/5-comparisons/Handsword to the groin.md",
+    "content/5-comparisons/Grpsp of Death 🔒⚒️💀.md",
+    "content/5-comparisons/Glancing vs. Triggered vs. Thrusting Salute 👀🔫🗡️🫡.md",
+    "content/5-comparisons/Front Kick - Side Kick.md",
+    "content/5-comparisons/Ending with Hammerfist to the groin.md",
+    "content/5-comparisons/Ending with Back Knuckle.md",
+    "content/5-comparisons/Alternating Maces Pattern.md",
+    "content/1-techniques/Twisted Twig 🔀🌿.md",
+    "content/1-techniques/Twirling Wings 🌀🪽.md",
+    "content/1-techniques/Tripping Arrow 🏹.md",
+    "content/1-techniques/Twin Kimono 2️⃣👘.md",
+    "content/1-techniques/Triggered Salute 🔫🫡.md",
+    "content/1-techniques/Thundering Hammers 🌩️🔨.md",
+    "content/1-techniques/Thrusting Salute 🗡️🫡.md",
+    "content/1-techniques/Thrusting Prongs 🗡️🍴.md",
+    "content/1-techniques/Sword of Destruction ⚔️💥.md",
+    "content/1-techniques/Sword and Hammer ⚔️🔨.md"
+  ]
+}
