@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. Left foot forward into left [[Forward Bow ⬆️🧍‍♂️]] facing [[130 ↗️]]
+1. - Left foot forward into left [[Forward Bow ⬆️🧍‍♂️]] facing [[130 ↗️]]
 2. - Turn around into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
     - Turn right arm [[clockwise 🔃]] from top over opponent's arms
     - Finger thrust to their eyes
