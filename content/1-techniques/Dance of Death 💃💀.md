@@ -15,5 +15,5 @@
 3. - Slide down with left hand and pick their right knee
 4. - Right foot forward
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]] to take them down
-5. [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]] to their knee
-6. [[Right ➡️]] Slicing Chop to their groin
+5. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]] to their knee
+6. - [[Right ➡️]] Slicing Chop to their groin
