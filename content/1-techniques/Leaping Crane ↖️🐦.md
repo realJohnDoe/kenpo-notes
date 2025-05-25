@@ -8,12 +8,12 @@
 
 ## Steps 👣
 
-1.  - Leap to the left 900-1000 forming a left one-leg stance
+1.  - Leap towards [[1030 ↖️]] forming a left one-leg stance
     - Left [[Inward 🔽]] parry
     - [[Right ➡️]] [[Inward 🔽]] horizontal raking middle knuckle fist strike
 2.  - [[Right ➡️]] snapping knife edge kick
 3.  - [[Right ➡️]] foot inside opponent's right leg, forming [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Outward 🔼]] [[Downward ⬇️]] diagonal [[Right ➡️]] [[Back Knuckle 🔙✊]] to the left kidney
 4.  - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪]] strike
-      - Left [[Inward 🔽]] hooking heel palm strike
+    - Left [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike
 5.  - [[Cover Right before Left 🦶🔄]]
