@@ -17,6 +17,6 @@
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] so our left knee checks their right knee
     - Left [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊]] to their left kidney
 4. - Check their right shoulder with left hand
-     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] to their neck
+    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] to their neck
 5. - Left foot back towards [[730 ↙️]]
 6. - [[Cover Right before Left 🦶🔄]]
