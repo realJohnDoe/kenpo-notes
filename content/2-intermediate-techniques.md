@@ -25,7 +25,7 @@ aliases:
 ## [[4. Blue Belt 🔵|Blue Belt 🔵]]
 
 - [[Repeated Devastation ↔️💥]]
-- [[Wings of Silk]]
+- [[Wings of Silk 🪽🧵]]
 - [[Thrusting Wedge 🗡️🔼]]
 - Destructive Twins
 - Crossed Twigs

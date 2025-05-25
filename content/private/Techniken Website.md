@@ -70,5 +70,5 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 66. 2br15
 67. o20: [[Thrusting Prongs 🗡️🍴]] (again)
 68. 2br17
-69. bl19: [[Wings of Silk]]
+69. bl19: [[Wings of Silk 🪽🧵]]
 
