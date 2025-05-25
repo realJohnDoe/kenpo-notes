@@ -11,5 +11,5 @@
 1. - Left foot back towards [[430 ↘️]]
 2. - Turn around into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
     - [[Left ⬅️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
-3. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
-4. - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪]]
+3. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
+4. - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪💥]]

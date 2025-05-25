@@ -11,8 +11,8 @@
 1. - Right foot back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Push Thumbs [[To 🎯|Into 🎯]] opponent's lower zone
 2. - Left hand twists around [[To 🎯|🎯]] their right arm
-3. - [[Right ➡️]] [[Knee 🦵]]
-4. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
+3. - [[Right ➡️]] [[Knee 🦵💥]]
+4. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 
 ## Alternative Video
 

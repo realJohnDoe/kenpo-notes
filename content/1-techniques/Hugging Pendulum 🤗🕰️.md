@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Side Kick ➡️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Side Kick ➡️🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
 ## Alternative Video
 

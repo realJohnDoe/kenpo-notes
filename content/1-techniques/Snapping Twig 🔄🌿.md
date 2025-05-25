@@ -10,14 +10,14 @@ Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 1. - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - Pin [[To 🎯|🎯]] left hand to chest 
-    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike [[To 🎯|🎯]] elbow
+    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴💥]] strike [[To 🎯|🎯]] elbow
 2. - Hook over [[To 🎯|🎯]] left arm
     - Shuffle forward
-    - [[Left ⬅️]] thrusting [[Handsword ✋⚔️]]
-3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊]]
+    - [[Left ⬅️]] thrusting [[Handsword ✋⚔️💥]]
+3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊💥]]
 4. - Shuffle forward
-    - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪]] strike
-    - [[Left ⬅️]] [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
+    - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪💥]] strike
+    - [[Left ⬅️]] [[Inward 🔽]] horizontal [[Heel Palm ✋🌴💥]] strike
 5. - [[Cover Right before Left 🦶🔄]] facing [[730 ↙️]]
 
 ## Alternative Video

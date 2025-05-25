@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Roundhouse 🔄]] [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[13]])
+[[Right ➡️]] [[Roundhouse 🔄]] [[Club Attack 🪄💥]] ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[13]])
 
 ## Steps 👣
 
 1. - [[Right ➡️]] foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Left ⬅️]] Extended [[Outward 🔼]] [[Block 🛡️]] 
-    - [[Right ➡️]] [[Straight Punch ↕️👊]] [[To 🎯]] the upper zone
+    - [[Right ➡️]] [[Straight Punch ↕️👊💥]] [[To 🎯]] the upper zone
 2. - Check [[🎯]] opponent's right shoulder
-3. - [[Left ⬅️]] [[Straight Punch ↕️👊]] [[To 🎯]] the mid zone
-4. - [[Right ➡️]] [[Back Knuckle 🔙✊]]
+3. - [[Left ⬅️]] [[Straight Punch ↕️👊💥]] [[To 🎯]] the mid zone
+4. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]]

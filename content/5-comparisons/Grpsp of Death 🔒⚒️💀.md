@@ -10,5 +10,5 @@ When performing the lock in [[Grasp of Death 🔒💀]], our body looks a bit li
 
 ## [[Grip of Death ⚒️💀]]
 
-- Double [[Hammerfist 🔨✊]]
+- Double [[Hammerfist 🔨✊💥]]
 - [[2. Orange Belt 🟠|Orange Belt 🟠]]

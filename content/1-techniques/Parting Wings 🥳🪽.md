@@ -10,9 +10,9 @@ Two-handed push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
 
 1. - [[Outward 🔼]] Block with both arms
     - Step back with right leg into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-2. - [[Right ➡️]] [[Heel Palm ✋🌴]]
-3. - [[Left ⬅️]] [[Handsword ✋⚔️]]
-4. - [[Right ➡️]] middle knuckle [[Straight Punch ↕️👊]]
+2. - [[Right ➡️]] [[Heel Palm ✋🌴💥]]
+3. - [[Left ⬅️]] [[Handsword ✋⚔️💥]]
+4. - [[Right ➡️]] middle knuckle [[Straight Punch ↕️👊💥]]
 
 ## Alternative Video
 

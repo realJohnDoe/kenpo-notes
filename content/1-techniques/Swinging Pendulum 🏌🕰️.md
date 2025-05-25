@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Roundhouse Kick 🔄🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Right ➡️]] [[Roundhouse Kick 🔄🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
 ## Steps 👣
 
 1. - Step right with the left foot into a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]]
     - [[Block 🛡️]] the opponent's kick with a universal [[Block 🛡️]]
 2. - Shuffle forward
-    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] [[To 🎯]] their groin
+    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin
 3. - Slide left foot further counter-clockwise into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
-    - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] [[To 🎯]] the opponent's chin
+    - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] the opponent's chin

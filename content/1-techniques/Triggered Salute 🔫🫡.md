@@ -7,8 +7,8 @@
 Right hand pushes [[🎯]] left shoulder ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps 👣
 
-1. [[Right ➡️]] [[Heel Palm ✋🌴]]
-2. [[Inward 🔽]] [[Elbow 💪]]
-3. [[Outward 🔼]] [[Elbow 💪]]
-4. [[Back Knuckle 🔙✊]]
-5. Vertical [[Back Knuckle 🔙✊]]
+1. [[Right ➡️]] [[Heel Palm ✋🌴💥]]
+2. [[Inward 🔽]] [[Elbow 💪💥]]
+3. [[Outward 🔼]] [[Elbow 💪💥]]
+4. [[Back Knuckle 🔙✊💥]]
+5. Vertical [[Back Knuckle 🔙✊💥]]

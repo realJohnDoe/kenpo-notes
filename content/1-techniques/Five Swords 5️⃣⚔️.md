@@ -11,15 +11,15 @@
 1. - Step forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]] 
     - [[Left ⬅️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
-2. - [[Right ➡️]] [[Outward 🔼]] [[Handsword ✋⚔️]]
+2. - [[Right ➡️]] [[Outward 🔼]] [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Left ⬅️]] Five-finger thrust
 4. - Back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
-    - [[Snapping 💨]] [[Right ➡️]] [[Uppercut Punch 🔝✊]]
+    - [[Snapping 💨]] [[Right ➡️]] [[Uppercut Punch 🔝✊💥]]
 5. - Slide left foot back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[1030 ↖️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Downward ⬇️]] diagonal [[Handsword ✋⚔️]]
+    - [[Left ⬅️]] [[Outward 🔼]] [[Downward ⬇️]] diagonal [[Handsword ✋⚔️💥]]
 6. - Pivot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
-    - [[Inward 🔽]] [[Downward ⬇️]] overhead [[Right ➡️]] [[Handsword ✋⚔️]]
+    - [[Inward 🔽]] [[Downward ⬇️]] overhead [[Right ➡️]] [[Handsword ✋⚔️💥]]
 7. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

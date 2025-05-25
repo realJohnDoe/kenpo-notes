@@ -14,8 +14,8 @@
     - Pin [[To 🎯|🎯]] opponent's arms with ours
     - Head hits back
 3. - Left foot towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their arms pinned
-    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] their face
+    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their face
 4. - Back to starting positions with [[To 🎯|🎯]] both arms pinned
 5. - Right foot towards [[1030 ↖️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] their face
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their face
 6. - [[Cover Left before Right 🦶🔃]] towards [[1200 ⬆️]]

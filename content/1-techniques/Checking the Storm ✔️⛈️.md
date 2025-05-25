@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] Overhead [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons]], [[7]])
+[[Right ➡️]] Overhead [[Club Attack 🪄💥]] ([[7-weapons|Web of Knowledge: Weapons]], [[7]])
 
 ## Steps 👣
 
@@ -12,6 +12,6 @@
     - Right foot right into [[Horse Stance 🏇🧍‍♂️]]
 2. - [[Left ⬅️]] [[Cat Stance🐈🧍‍♂️]]
     - Left hand checks potential punch
-3. - [[Left ⬅️]] [[Front Kick ⬆️🦵]]
-4. - [[Right ➡️]] [[Side Kick ➡️🦵]]
-5. - [[Right ➡️]] [[Back Knuckle 🔙✊]]
+3. - [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
+4. - [[Right ➡️]] [[Side Kick ➡️🦶💥]]
+5. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]]

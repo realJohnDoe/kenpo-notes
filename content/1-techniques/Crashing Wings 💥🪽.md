@@ -9,10 +9,10 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] foot right into [[Horse Stance 🏇🧍‍♂️]]
-    - Twin [[Downward ⬇️]] [[Elbow 💪]] [[To 🎯]] opponent's forearms
+    - Twin [[Downward ⬇️]] [[Elbow 💪💥]] [[To 🎯]] opponent's forearms
 2. - [[Left ⬅️]] [[Cat Stance🐈🧍‍♂️]]
 3. - Left foot back behind opponent's leg into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
 4. - [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] opponents' top zone
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] opponents' top zone
 5. - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[730 ↙️]]
-    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]]
+    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]]

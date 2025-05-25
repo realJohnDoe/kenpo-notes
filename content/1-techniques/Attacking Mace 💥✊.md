@@ -4,18 +4,18 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[9]])
+[[Right ➡️]] [[Straight Punch ↕️👊💥]] ([[3-punches|Web of Knowledge: Punches 👊]], [[9]])
 
 ## Steps 👣
 
 1.  - Step back with right foot into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]]
 	- [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - Left [[Forward Bow ⬆️🧍‍♂️]]
-    - [[Right ➡️]] [[Straight Punch ↕️👊]]
+    - [[Right ➡️]] [[Straight Punch ↕️👊💥]]
 3.  - Grab [[🎯]] left arm
-    - [[Right ➡️]] [[Roundhouse Kick 🔄🦵]]
+    - [[Right ➡️]] [[Roundhouse Kick 🔄🦶💥]]
 4.  - Put foot down in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-	- [[Left ⬅️]] [[Uppercut Punch 🔝✊]]
+	- [[Left ⬅️]] [[Uppercut Punch 🔝✊💥]]
 5.  - [[Cover Right before Left 🦶🔄]]
 
 ## Alternative Video

@@ -8,7 +8,7 @@ The right hand (hammer) deflects the incoming kick
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Right ➡️]] [[Front Kick ⬆️🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
 ## Steps 👣
 
@@ -16,7 +16,7 @@ The right hand (hammer) deflects the incoming kick
     - [[Right ➡️]] [[Outward 🔼]] [[Downward ⬇️]] [[Block 🛡️]]
 2.  - Forward Shuffle
     - Left hand checks [[🎯]] opponent's right upper arm
-3.  - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
+3.  - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 4.  - [[Cover Right before Left 🦶🔄]]
 
 ## Other Video

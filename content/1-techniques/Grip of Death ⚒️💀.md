@@ -9,6 +9,6 @@ Right Arm Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]]
 ## Steps 👣
 
 1. - Right foot forward into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] 
-    - [[Left ⬅️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] 
-    - [[Right ➡️]] [[Upward ⬆️]] [[Hammerfist 🔨✊]] strike
-2. - [[Right ➡️]] [[Heel Palm ✋🌴]]
+    - [[Left ⬅️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] 
+    - [[Right ➡️]] [[Upward ⬆️]] [[Hammerfist 🔨✊💥]] strike
+2. - [[Right ➡️]] [[Heel Palm ✋🌴💥]]

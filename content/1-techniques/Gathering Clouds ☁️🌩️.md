@@ -4,16 +4,16 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[21]])
+[[Right ➡️]] [[Straight Punch ↕️👊💥]] ([[3-punches|Web of Knowledge: Punches 👊]], [[21]])
 
 ## Steps 👣
 
 1. - Left foot towards [[1030 ↖️]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Left ⬅️]] [[Parry 🤺]]
-    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊]]
+    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]]
 2. - Turn into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]]
+    - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
 3. - Right foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
-    - Collapse [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
-4. - [[Right ➡️]] [[Scoop Kick 🥄🦵]]
+    - Collapse [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
+4. - [[Right ➡️]] [[Scoop Kick 🥄🦶💥]]
 5. - [[Cover Left before Right 🦶🔃]]

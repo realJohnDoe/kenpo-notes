@@ -8,9 +8,9 @@ Right hand pushes [[To 🎯|Against 🎯]] our right shoulder ([[2-pushes|Web of
 ## Steps 👣
 
 1. Reverse Bow
-2. [[Right ➡️]] [[Heel Palm ✋🌴]]
-3. [[Right ➡️]] [[Knee 🦵]]
-4. [[Right ➡️]] [[Elbow 💪]]
+2. [[Right ➡️]] [[Heel Palm ✋🌴💥]]
+3. [[Right ➡️]] [[Knee 🦵💥]]
+4. [[Right ➡️]] [[Elbow 💪💥]]
 
 ## Further Videos
 

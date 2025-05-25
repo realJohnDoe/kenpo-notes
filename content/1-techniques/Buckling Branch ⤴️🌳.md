@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
- [[Left ⬅️]] [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[10]])
+ [[Left ⬅️]] [[Front Kick ⬆️🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[10]])
 
 ## Steps 👣
 
 1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]]
-2. [[Right ➡️]] [[Front Kick ⬆️🦵]] [[To 🎯|Into 🎯]] groin
-3. [[Left ⬅️]] [[Side Kick ➡️🦵]] [[To 🎯|Against 🎯]] right knee
+2. [[Right ➡️]] [[Front Kick ⬆️🦶💥]] [[To 🎯|Into 🎯]] groin
+3. [[Left ⬅️]] [[Side Kick ➡️🦶💥]] [[To 🎯|Against 🎯]] right knee
 
 ## Further Videos
 

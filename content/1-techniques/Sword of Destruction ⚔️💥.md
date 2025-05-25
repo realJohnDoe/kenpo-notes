@@ -10,8 +10,8 @@
 
 1.  - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
-2.  - [[Right ➡️]] [[Front Kick ⬆️🦵]]
-3.  - [[Right ➡️]] [[Inward 🔽]] [[Handsword ✋⚔️]]
+2.  - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+3.  - [[Right ➡️]] [[Inward 🔽]] [[Handsword ✋⚔️💥]]
 4.  - [[Cover Right before Left 🦶🔄]]
 
 ## Alternative Video

@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Uppercut Punch 🔝✊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[23]])
+[[Right ➡️]] [[Uppercut Punch 🔝✊💥]] ([[3-punches|Web of Knowledge: Punches 👊]], [[23]])
 
 ## Steps 👣
 
@@ -12,7 +12,7 @@
     - [[Right ➡️]] [[Downward ⬇️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - [[Left ⬅️]] overhead [[Claw 🐯]]
 3.  - Shuffle forward
-    - Vertical [[Right ➡️]] [[Back Knuckle 🔙✊]]
+    - Vertical [[Right ➡️]] [[Back Knuckle 🔙✊💥]]
 4.  - [[Cover Right before Left 🦶🔄]] facing [[130 ↗️]]
 
 ## Further Videos

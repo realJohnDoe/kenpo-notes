@@ -10,9 +10,9 @@ Push with the Left Hand ([[2-pushes|Web of Knowledge: Pushes ✋]], [[14]])
 
 1. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]] 
     - [[Left ⬅️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] opponent's left elbow 
-    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊]] strike [[To 🎯]] left kidney
-2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊]] [[To 🎯]] left rib cage
-3. - [[Right ➡️]] [[Inward 🔽]] diagonal [[Roundhouse Kick 🔄🦵]] [[To 🎯]] left knee
+    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] strike [[To 🎯]] left kidney
+2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] left rib cage
+3. - [[Right ➡️]] [[Inward 🔽]] diagonal [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] left knee
 4. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

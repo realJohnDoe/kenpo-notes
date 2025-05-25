@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[10]])
+[[Right ➡️]] [[Straight Punch ↕️👊💥]] ([[3-punches|Web of Knowledge: Punches 👊]], [[10]])
 
 ## Steps 👣
 
@@ -15,8 +15,8 @@
     - Left fist raises up
 3. - Right hand up into [[Waiter Check 🧑‍🍳]]
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] so our left knee checks [[🎯]] their right knee
-    - [[Left ⬅️]] [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊]] [[To 🎯]] their left kidney
+    - [[Left ⬅️]] [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their left kidney
 4. - Check [[🎯]] their right shoulder with left hand
-    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] [[To 🎯]] their neck
+    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their neck
 5. - Left foot back towards [[730 ↙️]]
 6. - [[Cover Right before Left 🦶🔄]]

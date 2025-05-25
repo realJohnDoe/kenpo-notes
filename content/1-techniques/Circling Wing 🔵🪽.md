@@ -14,6 +14,6 @@
     - [[Left ⬅️]] Finger thrust [[To 🎯]] their eyes
 3. - [[Downward ⬇️]] check with left arm
 4. - Shuffle forward
-    - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]]
+    - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]]
 5. - Reverse Bow
-    - [[Right ➡️]] [[Hammerfist 🔨✊]] [[To 🎯]] their groin
+    - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin

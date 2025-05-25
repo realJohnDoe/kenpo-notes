@@ -9,9 +9,9 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
 ## Steps 👣
 
 1. - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] the upper zone
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] the upper zone
 2. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Lock [[To 🎯|🎯]] opponent's right elbow
 3. - Step back with right foot towards [[430 ↘️]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Turn [[🎯]] opponent with you
-4. - [[Right ➡️]] [[Knee 🦵]] [[To 🎯]] the chest
+4. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] the chest

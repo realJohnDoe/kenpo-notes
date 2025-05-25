@@ -10,10 +10,10 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]],
 
 1. - Check
 2. - Right foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
-    - [[Right ➡️]] [[Hammerfist 🔨✊]]
+    - [[Right ➡️]] [[Hammerfist 🔨✊💥]]
 3. - Right hand to the hip to pull [[To 🎯|🎯]] them down
-4. - [[Inward 🔽]] [[Elbow 💪]]
-5. - [[Outward 🔼]] [[Elbow 💪]]
+4. - [[Inward 🔽]] [[Elbow 💪💥]]
+5. - [[Outward 🔼]] [[Elbow 💪💥]]
 
 ## Alternative Video
 

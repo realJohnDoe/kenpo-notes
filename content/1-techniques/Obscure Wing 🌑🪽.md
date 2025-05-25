@@ -9,9 +9,9 @@ Close [[To 🎯|🎯]] Left Hand Shoulder Grab ([[1-grabs-and-tackles|Web of Kno
 ## Steps 👣
 
 1. Check [[To 🎯|🎯]] their hand with our left hand
-2. [[Right ➡️]] [[Elbow 💪]]
-3. [[Right ➡️]] [[Hammerfist 🔨✊]] [[To 🎯]] their groin
-4. [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] [[To 🎯]] their chin
+2. [[Right ➡️]] [[Elbow 💪💥]]
+3. [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin
+4. [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] their chin
 
 ## Alternative Video
 
