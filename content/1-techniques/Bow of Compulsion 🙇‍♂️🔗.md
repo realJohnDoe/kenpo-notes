@@ -15,3 +15,7 @@ Front Wrist Lock Pinned Against the Chest ([[6-locks-and-chokes|Web of Knowledge
 3. - [[Right ➡️]] inside [[Handsword ✋⚔️]] [[To 🎯]] opponent's groin
 4. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]] [[To 🎯]] their left knee
 5. - [[Right ➡️]] Hooking Punch [[To 🎯]] their right knee
+
+## Alternative Video
+
+<iframe src="https://www.youtube.com/embed/tvS7L85fcqA?start=264" width="100%" height="400"></iframe>
