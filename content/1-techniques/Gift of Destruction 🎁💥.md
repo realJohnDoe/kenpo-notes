@@ -8,10 +8,10 @@
 
 ## Steps 👣
 
-1. - Knee
+1. - [[Right ➡️]] [[Knee 🦵]]
     - Left hand strike right elbow
 2. - Left hand pushes right arm down 
-    - [[Right ➡️]] [[Inward 🔽]] Elbow
+    - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
 
 ## Alternative Video
 
