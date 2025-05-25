@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Right Arm Headlock ([[6-locks-and-chokes]], [[12]])
+Right Arm Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[12]])
 
 ## Steps 👣
 
