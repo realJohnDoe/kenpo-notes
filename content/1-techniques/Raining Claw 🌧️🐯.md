@@ -1,6 +1,7 @@
 ## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/afOKudWeld8" width="100%" height="400"></iframe>
+
 ## Defense Against 🤺
 
 [[Right ➡️]] [[Uppercut Punch 🔝✊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[23]])
