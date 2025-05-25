@@ -14,5 +14,5 @@ Two Hand Lapel Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles �
 2. - Left foot back towards [[430 ↘️]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Outward 🔼]] horizontal [[Back Knuckle 🔙✊]]
 3. - [[Right ➡️]] [[Inward 🔽]] Diagonal [[Forearm Strike 💪💥]]
-4. - [[Right ➡️]] Snapping [[Outward 🔼]] [[Handsword ✋⚔️]]
+4. - [[Right ➡️]] [[Snapping 💨]] [[Outward 🔼]] [[Handsword ✋⚔️]]
 5. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]

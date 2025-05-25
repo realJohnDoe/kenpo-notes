@@ -14,6 +14,6 @@
 2. - Right foot [[clockwise 🔃]] facing [[430 ↘️]] into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Grab [[To 🎯|🎯]] opponent's right wrist with the left hand between their legs
     - Check [[To 🎯|🎯]] their hip with the right hand
-3. - [[Right ➡️]] Snapping Knife Edge [[Side Kick ➡️🦵]] [[To 🎯]] their left knee
+3. - [[Right ➡️]] [[Snapping 💨]] Knife Edge [[Side Kick ➡️🦵]] [[To 🎯]] their left knee
 4. - [[Left ⬅️]] [[Knee 🦵]] Strike
 5. - [[Cover Left before Right 🦶🔃]]

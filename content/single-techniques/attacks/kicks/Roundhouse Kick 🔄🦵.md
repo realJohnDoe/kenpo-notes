@@ -1,1 +1,1 @@
-[[Roundhouse 🔄]] [[Kick 🦵]]
+[[Roundhouse 🔄]] [[Kick 🦶💥]]
