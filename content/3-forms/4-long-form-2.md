@@ -22,7 +22,7 @@ title: Long Form 2
 	4. Left punch to the left and left [[Side Kick ➡️🦵]] at the same time
 4. Same with right toward [[300 ➡️]]
 5. Left toward [[600 ⬇️]]
-	   1. Left Universal [[Block 🛡️]]: Left [[Downward ⬇️]] block and [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]] at the same time
+	1. Left Universal [[Block 🛡️]]: Left [[Downward ⬇️]] block and [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]] at the same time
 	2. [[Right ➡️]] [[Downward ⬇️]] [[Block 🛡️]] and Left [[Upward ⬆️]] [[Block 🛡️]] with open hand
 	3. Left [[Claw 🐯]]
 	4. [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]]
