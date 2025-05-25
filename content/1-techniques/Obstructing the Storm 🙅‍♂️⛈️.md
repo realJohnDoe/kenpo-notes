@@ -14,6 +14,6 @@ Overhead [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons 🗡️]], 
 3. - Turn hip into left [[Neutral Bow 0️⃣🧍‍♂️]]
     - Left lower arm cuts into [[Elbow 💪]] into Lock
 4. - Turn hip and hit with [[Right ➡️]] [[Knee 🦵]]
-     - Grab Bo with right hand
+    - Grab Bo with right hand
 5. - Hit with Bo
 6. - [[Cover Left before Right 🦶🔃]]
