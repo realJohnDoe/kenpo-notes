@@ -12,11 +12,11 @@ Front Arm Lock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[
     - Right foot forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
 2. - Left Backward [[Elbow 💪]]
 3. - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪]]
-4. - Right foot back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
+4. - Right foot back towards [[300 ➡️]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] to their groin
 5. - Right hand grabs the back of their head
 6. - [[Right ➡️]] [[Knee 🦵]] to their face
 7. - Left [[Knee 🦵]] to their face
 8. - Right foot back again into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
-9. - Turn their arm so the elbow faces downward
-10. - [[Right ➡️]] [[Knee 🦵]] to their elbow
+    - Turn their arm so the elbow faces downward
+9. - [[Right ➡️]] [[Knee 🦵]] to their elbow
