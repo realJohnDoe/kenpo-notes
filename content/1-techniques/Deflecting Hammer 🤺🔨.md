@@ -1,6 +1,7 @@
 ## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/jqyzeSnC9fw" width="100%" height="400"></iframe>
+
 ## Mnemonic
 
 The right hand (hammer) deflects the incoming kick
