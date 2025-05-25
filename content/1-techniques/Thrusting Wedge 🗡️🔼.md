@@ -9,8 +9,8 @@ Two-Hand Push or Choke ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps 👣
 
 1. - Right foot forward into [[Forward Bow ⬆️🧍‍♂️]]
-    - Block oppoent's attack with twin [[Upward ⬆️]] [[Block 🛡️]] forming a wedge shape
-    - Push your thumbs into their eyes
+    - Block [[To 🎯|🎯]] opponent's attack with twin [[Upward ⬆️]] [[Block 🛡️]] forming a wedge shape
+    - Push your thumbs [[To 🎯|Into 🎯]] their eyes
 2. - Turn into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]]
 3. - [[Right ➡️]] [[Downward ⬇️]] [[Claw 🐯]]

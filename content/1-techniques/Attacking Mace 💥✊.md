@@ -12,7 +12,7 @@
 	- [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - Left [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊]]
-3.  - Grab left arm
+3.  - Grab [[🎯]] left arm
     - [[Right ➡️]] [[Roundhouse Kick 🔄🦵]]
 4.  - Put foot down in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 	- [[Left ⬅️]] [[Uppercut Punch 🔝✊]]

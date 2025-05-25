@@ -9,7 +9,7 @@
 ## Steps 👣
 
 1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]]
-2. Left hand check potential right punch
+2. Left hand check [[To 🎯|🎯]] potential right punch
 3. [[Right ➡️]] [[Front Kick ⬆️🦵]]
 4. [[Right ➡️]] [[Heel Palm ✋🌴]]
 

@@ -14,4 +14,4 @@ Wrist Lock (Web of Knowledge: Locks & Chokes, [[21]])
 3. - [[Inward 🔽]] [[Hammerfist 🔨✊]]
 4. - [[Outward 🔼]] [[Elbow 💪]]
 5. - Reverse Bow
-    - [[Hammerfist 🔨✊]] to the groin
+    - [[Hammerfist 🔨✊]] [[To 🎯]] the groin

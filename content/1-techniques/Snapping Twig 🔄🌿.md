@@ -9,9 +9,9 @@ Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps 👣
 
 1. - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
-    - Pin left hand to chest 
-    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike to elbow
-2. - Hook over left arm
+    - Pin [[To 🎯|🎯]] left hand to chest 
+    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴]] strike [[To 🎯|🎯]] elbow
+2. - Hook over [[To 🎯|🎯]] left arm
     - Shuffle forward
     - [[Left ⬅️]] thrusting [[Handsword ✋⚔️]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊]]

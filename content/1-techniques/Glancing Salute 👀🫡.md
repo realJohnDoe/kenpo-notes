@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Right hand pushes against our right shoulder ([[2-pushes|Web of Knowledge: Pushes ✋]], [[10]])
+Right hand pushes [[To 🎯|Against 🎯]] our right shoulder ([[2-pushes|Web of Knowledge: Pushes ✋]], [[10]])
 ## Steps 👣
 
 1. Reverse Bow

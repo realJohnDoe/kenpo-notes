@@ -8,10 +8,10 @@ Front Wrist Lock Pinned Against the Chest ([[6-locks-and-chokes|Web of Knowledge
 
 ## Steps 👣
 
-1. - Pin opponent's hands with left hand 
+1. - Pin [[🎯]] opponent's hands with left hand 
     - [[Right ➡️]] foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] Vertical [[Elbow 💪]] Strike
 2. - Pull [[Right ➡️]] hand out of the lock
-3. - [[Right ➡️]] inside [[Handsword ✋⚔️]] to opponent's groin
-4. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]] to their left knee
-5. - [[Right ➡️]] Hooking Punch to their right knee
+3. - [[Right ➡️]] inside [[Handsword ✋⚔️]] [[To 🎯]] opponent's groin
+4. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]] [[To 🎯]] their left knee
+5. - [[Right ➡️]] Hooking Punch [[To 🎯]] their right knee

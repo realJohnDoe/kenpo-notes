@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Right hand pushes left shoulder ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
+Right hand pushes [[🎯]] left shoulder ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 ## Steps 👣
 
 1. [[Right ➡️]] [[Heel Palm ✋🌴]]

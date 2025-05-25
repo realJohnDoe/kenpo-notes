@@ -11,11 +11,11 @@
 1. - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
     - Both hands hit behind your head
 2. - Left foot back to normal stance
-    - Pin opponent's arms with ours
+    - Pin [[To 🎯|🎯]] opponent's arms with ours
     - Head hits back
-3. - Left foot towards [[130 ↗️]] while keeping their arms pinned
-    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪]] to their face
-4. - Back to starting positions with both arms pinned
+3. - Left foot towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their arms pinned
+    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] their face
+4. - Back to starting positions with [[To 🎯|🎯]] both arms pinned
 5. - Right foot towards [[1030 ↖️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] to their face
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] [[To 🎯]] their face
 6. - [[Cover Left before Right 🦶🔃]] towards [[1200 ⬆️]]

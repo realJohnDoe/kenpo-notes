@@ -10,7 +10,7 @@
 
 1. - [[Right ➡️]] foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Left ⬅️]] Extended [[Outward 🔼]] [[Block 🛡️]] 
-    - [[Right ➡️]] [[Straight Punch ↕️👊]] to the upper zone
-2. - Check opponent's right shoulder
-3. - [[Left ⬅️]] [[Straight Punch ↕️👊]] to the mid zone
+    - [[Right ➡️]] [[Straight Punch ↕️👊]] [[To 🎯]] the upper zone
+2. - Check [[🎯]] opponent's right shoulder
+3. - [[Left ⬅️]] [[Straight Punch ↕️👊]] [[To 🎯]] the mid zone
 4. - [[Right ➡️]] [[Back Knuckle 🔙✊]]

@@ -9,8 +9,8 @@
 ## Steps 👣
 
 1. - Right foot back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - Push Thumbs into opponent's lower zone
-2. - Left hand twists around their right arm
+    - Push Thumbs [[To 🎯|Into 🎯]] opponent's lower zone
+2. - Left hand twists around [[To 🎯|🎯]] their right arm
 3. - [[Right ➡️]] [[Knee 🦵]]
 4. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
 

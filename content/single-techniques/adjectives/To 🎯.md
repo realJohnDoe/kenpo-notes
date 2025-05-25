@@ -1,0 +1,7 @@
+---
+aliases:
+  - Into 🎯
+  - Against 🎯
+  - Through 🎯
+  - 🎯
+---

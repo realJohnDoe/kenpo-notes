@@ -10,10 +10,10 @@
 
 1. - Left foot forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Left ⬅️]] Push Down [[Block 🛡️]]
-    - Drive opponent's right hand into their groin
+    - Drive [[🎯]] opponent's right hand into their groin
 2. - Right foot [[clockwise 🔃]] facing [[430 ↘️]] into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-    - Grab opponent's right wrist with the left hand between their legs
-    - Check their hip with the right hand
-3. - [[Right ➡️]] Snapping Knife Edge [[Side Kick ➡️🦵]] to their left knee
+    - Grab [[To 🎯|🎯]] opponent's right wrist with the left hand between their legs
+    - Check [[To 🎯|🎯]] their hip with the right hand
+3. - [[Right ➡️]] Snapping Knife Edge [[Side Kick ➡️🦵]] [[To 🎯]] their left knee
 4. - [[Left ⬅️]] [[Knee 🦵]] Strike
 5. - [[Cover Left before Right 🦶🔃]]

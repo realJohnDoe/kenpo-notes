@@ -11,13 +11,13 @@
 1. - Left foot forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]]
     - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2. - Drop into [[Left ⬅️]] [[Wide Kneel ↔️🧎]]
-    - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪]] to their ribs
-3. - Push both [[Elbow 💪]]s outward, ram your [[Right ➡️]] [[Elbow 💪]] into their spine
-4. - [[Right ➡️]] [[Handsword ✋⚔️]] to their neck
-5. - [[Right ➡️]] [[Waiter Check 🧑‍🍳]] to their right upper arm 
+    - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪]] [[To 🎯]] their ribs
+3. - Push both [[Elbow 💪]]s outward, ram your [[Right ➡️]] [[Elbow 💪]] [[To 🎯|Into 🎯]] their spine
+4. - [[Right ➡️]] [[Handsword ✋⚔️]] [[To 🎯]] their neck
+5. - [[Right ➡️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] their right upper arm 
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] facing [[430 ↘️]] 
-    - [[Left ⬅️]] [[Handsword ✋⚔️]] to their neck
-6. - Left hand checks their right upper arm
+    - [[Left ⬅️]] [[Handsword ✋⚔️]] [[To 🎯]] their neck
+6. - Left hand checks [[🎯]] their right upper arm
     - Turn back into [[Left ⬅️]] [[Wide Kneel ↔️🧎]] facing [[1200 ⬆️]]
-    - [[Right ➡️]] [[Upward ⬆️]] [[Heel Palm ✋🌴]] to their chin
+    - [[Right ➡️]] [[Upward ⬆️]] [[Heel Palm ✋🌴]] [[To 🎯]] their chin
 7. - [[Cover Left before Right 🦶🔃]]

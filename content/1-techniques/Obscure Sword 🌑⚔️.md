@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Left hand grabbing right shoulder from the back ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[22]])
+Left hand grabbing [[🎯]] right shoulder from the back ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[22]])
 
 ## Steps 👣
 

@@ -8,9 +8,9 @@
 
 ## Steps 👣
 
-1. - Pin opponent's attacking hand with left hand
+1. - Pin 🎯opponent's attacking hand with left hand
     - [[Right ➡️]] foot steps forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
 2. - [[Left ⬅️]] backward [[Elbow 💪]]
-3. - Take arm with left hand over right shoulder
+3. - Take [[🎯]] arm with left hand over right shoulder
     - [[Right ➡️]] backward [[Elbow 💪]]
 4. - [[Cover Right before Left 🦶🔄]]
