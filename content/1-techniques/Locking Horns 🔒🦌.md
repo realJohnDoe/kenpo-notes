@@ -8,9 +8,9 @@ Front Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[
 
 ## Steps 👣
 
-1. - Check with left hand
-2. - Right foot forward into [[Right ➡️]] [[Wide Kneel ↔️🧎]] 
-    - [[Right ➡️]] Inside [[Handsword ✋⚔️💥]] [[To 🎯|Into 🎯]] opponent's groin
+1. - Check with [[Left ⬅️]] [[Hand ✋]]
+2. - [[Right ➡️]] [[Foot 🦶]] forward into [[Right ➡️]] [[Wide Kneel ↔️🧎]] 
+    - [[Right ➡️]] Inside [[Handsword ✋⚔️💥]] [[To 🎯|Into 🎯]] opponent's [[Groin 🩲]]
 3. - [[Right ➡️]] [[Horse Stance 🏇🧍‍♂️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] their chin
 4. - Shuffle forward

@@ -9,8 +9,8 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Knee 🦵💥]]
-    - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their right elbow
-2. - Left hand pushes [[To 🎯|🎯]] right arm down 
+    - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] [[Their Right ⬅️]] elbow
+2. - [[Left ⬅️]] [[Hand ✋]] pushes [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]] down 
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 
 ## Alternative Video

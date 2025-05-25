@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. - Left foot back towards [[430 ↘️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] back towards [[430 ↘️]]
 2. - Turn around into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
     - [[Left ⬅️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]

@@ -12,10 +12,10 @@ The right hand (hammer) deflects the incoming kick
 
 ## Steps 👣
 
-1.  - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1.  - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Outward 🔼]] [[Downward ⬇️]] [[Block 🛡️]]
 2.  - Forward Shuffle
-    - Left hand checks [[🎯]] opponent's right upper arm
+    - [[Left ⬅️]] [[Hand ✋]] checks [[🎯]] [[Their Right ⬅️]] upper [[Arm 💪]]
 3.  - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 4.  - [[Cover Right before Left 🦶🔄]]
 

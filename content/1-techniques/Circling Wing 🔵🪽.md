@@ -8,12 +8,12 @@
 
 ## Steps 👣
 
-1. - Left foot forward into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[130 ↗️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] forward into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[130 ↗️]]
 2. - Turn around into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
-    - Turn right arm [[clockwise 🔃]] from top over opponent's arms
+    - Turn [[Right ➡️]] [[Arm 💪]] [[clockwise 🔃]] from top over opponent's [[Arm 💪]]s
     - [[Left ⬅️]] Finger thrust [[To 🎯]] their eyes
-3. - [[Downward ⬇️]] check with left arm
+3. - [[Downward ⬇️]] check with [[Left ⬅️]] [[Arm 💪]]
 4. - Shuffle forward
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]]
 5. - Reverse Bow
-    - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin
+    - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Groin 🩲]]

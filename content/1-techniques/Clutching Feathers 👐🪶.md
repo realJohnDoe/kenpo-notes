@@ -8,12 +8,12 @@ Hair Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1
 
 ## Steps 👣
 
-1. - Pin hand to head with left hand
-2. - Load right hand to hip
-   - Left foot back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
+1. - Pin [[Hand ✋]] to head with [[Left ⬅️]] [[Hand ✋]]
+2. - Load [[Right ➡️]] [[Hand ✋]] to hip
+   - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
 1. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] vertical [[Straight Punch ↕️👊💥]] [[To 🎯|Into 🎯]] ribs
 2. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]] 
-    - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the opponent's face
-3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯|Through 🎯]] opponent's face
+    - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the opponent's [[Face 😐]]
+3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯|Through 🎯]] opponent's [[Face 😐]]

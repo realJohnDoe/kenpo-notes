@@ -9,8 +9,8 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
-    - [[Left ⬅️]] Extended [[Outward 🔼]] [[Block 🛡️]] 
+    - [[Left ⬅️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]] 
     - [[Right ➡️]] [[Straight Punch ↕️👊💥]] [[To 🎯]] the upper zone
-2. - Check [[🎯]] opponent's right shoulder
+2. - Check [[🎯]] [[Their Right ⬅️]] shoulder
 3. - [[Left ⬅️]] [[Straight Punch ↕️👊💥]] [[To 🎯]] the mid zone
 4. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]]

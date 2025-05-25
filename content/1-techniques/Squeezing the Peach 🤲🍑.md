@@ -8,11 +8,11 @@
 
 ## Steps 👣
 
-1. - Pin [[To 🎯|🎯]] opponents hands with right hand
-    - Step back with left foot into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - Pin [[To 🎯|🎯]] opponents [[Hand ✋]]s with [[Right ➡️]] [[Hand ✋]]
+    - Step back with [[Left ⬅️]] [[Foot 🦶]] into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Grab [[To 🎯|🎯]] opponent's groin protection
-2. - Step forward with left foot into [[Left ⬅️]] half [[Neutral Bow 0️⃣🧍‍♂️]]
+2. - Step forward with [[Left ⬅️]] [[Foot 🦶]] into [[Left ⬅️]] half [[Neutral Bow 0️⃣🧍‍♂️]]
     - Pull [[To 🎯|🎯]] groin protection with us
     - [[Right ➡️]] heel [[Scoop Kick 🥄🦶💥]]
-3. - Put right foot down at [[600 ⬇️]]
-    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their face
+3. - Put [[Right ➡️]] [[Foot 🦶]] down at [[600 ⬇️]]
+    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]

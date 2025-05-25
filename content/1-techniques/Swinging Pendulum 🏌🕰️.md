@@ -8,9 +8,9 @@
 
 ## Steps 👣
 
-1. - Step right with the left foot into a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]]
-    - [[Block 🛡️]] the opponent's kick with a universal [[Block 🛡️]]
+1. - Step [[counter-clockwise 🔄]] with the [[Left ⬅️]] [[Foot 🦶]] into a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]]
+    - [[Block 🛡️]] the opponent's [[Kick 🦶💥]] with a universal [[Block 🛡️]]
 2. - Shuffle forward
-    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin
-3. - Slide left foot further counter-clockwise into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
+    - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Groin 🩲]]
+3. - Slide [[Left ⬅️]] [[Foot 🦶]] further [[counter-clockwise 🔄]] into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] the opponent's chin

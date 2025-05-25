@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. - Right foot steps back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - [[Right ➡️]] [[Foot 🦶]] steps back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Left ⬅️]] [[Inward 🔽]] Reverse [[Hammerfist 🔨✊💥]] Strike [[To 🎯]] the skull
 2. - Pull on [[To 🎯|🎯]] hair or push skull
 3. - [[Right ➡️]] Half Fist Strike [[To 🎯]] the throat

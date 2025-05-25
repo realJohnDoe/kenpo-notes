@@ -4,4 +4,4 @@
 
 ## Defense Against 🤺
 
-Rear double arm bar ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[19]])
+Rear double [[Arm 💪]] bar ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[19]])

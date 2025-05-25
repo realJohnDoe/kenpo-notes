@@ -4,11 +4,11 @@
 
 ## Defense Against 🤺
 
-Right Hand to Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1]])
+[[Their Right ⬅️]] [[Hand ✋]] to [[Left ⬅️]] Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1]])
 
 ## Steps 👣
 
-1.  - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1.  - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
 3.  - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]

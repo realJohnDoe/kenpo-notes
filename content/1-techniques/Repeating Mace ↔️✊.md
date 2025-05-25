@@ -4,15 +4,15 @@
 
 ## Defense Against 🤺
 
-Push with the Left Hand ([[2-pushes|Web of Knowledge: Pushes ✋]], [[14]])
+Push with the [[Their Left ➡️]] [[Hand ✋]] ([[2-pushes|Web of Knowledge: Pushes ✋]], [[14]])
 
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]] 
-    - [[Left ⬅️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] opponent's left elbow 
-    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] strike [[To 🎯]] left kidney
-2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] left rib cage
-3. - [[Right ➡️]] [[Inward 🔽]] diagonal [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] left knee
+    - [[Left ⬅️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]] 
+    - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] strike [[To 🎯]] [[Their Left ➡️]] kidney
+2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] [[Their Left ➡️]] rib cage
+3. - [[Right ➡️]] [[Inward 🔽]] diagonal [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
 4. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

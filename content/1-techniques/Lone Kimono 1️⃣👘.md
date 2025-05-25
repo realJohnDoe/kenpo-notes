@@ -4,11 +4,11 @@
 
 ## Defense Against 🤺
 
-Left Hand Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[7]])
+[[Their Left ➡️]] [[Hand ✋]] Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[7]])
 
 ## Steps 👣
 
-1. - Pin opponent's left arm 
+1. - Pin [[Their Left ➡️]] [[Hand ✋]] 
     - Step back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]]
 2. - [[Right ➡️]] [[Inward 🔽]] Diagonal [[Forearm Strike 💪💥]]

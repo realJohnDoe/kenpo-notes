@@ -4,11 +4,11 @@
 
 ## Defense Against 🤺
 
-Left Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[10]])
+[[Left ⬅️]] Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[10]])
 
 ## Steps 👣
 
 1. - Check
-2. - Right foot back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+2. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]]

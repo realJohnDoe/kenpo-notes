@@ -4,15 +4,15 @@
 
 ## Defense Against 🤺
 
-Right Arm Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes]], [[6]])
+[[Right ➡️]] [[Arm 💪]] Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes]], [[6]])
 
 ## Steps 👣
 
-1. - Step forward with right foot into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - Squeeze [[🎯]] opponent's right thigh
-2. - Step with left foot in front of their right foot
-    - Lock [[To 🎯|🎯]] their right arm over our knees
-3. - Punch [[To 🎯]] their face
+1. - Step forward with [[Right ➡️]] [[Foot 🦶]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
+    - Squeeze [[🎯]] [[Their Right ⬅️]] thigh
+2. - Step with [[Left ⬅️]] [[Foot 🦶]] in front of their [[Right ➡️]] [[Foot 🦶]]
+    - Lock [[To 🎯|🎯]] their [[Right ➡️]] [[Arm 💪]] over our [[Knee 🦵]]s
+3. - Punch [[To 🎯]] their [[Face 😐]]
 
 ## Alternative Video
 

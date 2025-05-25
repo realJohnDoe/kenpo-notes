@@ -8,14 +8,14 @@
 
 ## Steps 👣
 
-1. - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
-    - Both hands hit behind your head
-2. - Left foot back to normal stance
-    - Pin [[To 🎯|🎯]] opponent's arms with ours
+1. - [[Left ⬅️]] [[Foot 🦶]] [[Left ⬅️]] into [[Horse Stance 🏇🧍‍♂️]]
+    - Both [[Hand ✋]]s hit behind your head
+2. - [[Left ⬅️]] [[Foot 🦶]] back to normal stance
+    - Pin [[To 🎯|🎯]] opponent's [[Arm 💪]]s with ours
     - Head hits back
-3. - Left foot towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their arms pinned
-    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their face
-4. - Back to starting positions with [[To 🎯|🎯]] both arms pinned
-5. - Right foot towards [[1030 ↖️]]
-    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their face
+3. - [[Left ⬅️]] [[Foot 🦶]] towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their [[Arm 💪]]s pinned
+    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
+4. - Back to starting positions with [[To 🎯|🎯]] both [[Arm 💪]]s pinned
+5. - [[Right ➡️]] [[Foot 🦶]] towards [[1030 ↖️]]
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
 6. - [[Cover Left before Right 🦶🔃]] towards [[1200 ⬆️]]

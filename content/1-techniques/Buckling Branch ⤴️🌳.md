@@ -9,8 +9,8 @@
 ## Steps 👣
 
 1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]]
-2. [[Right ➡️]] [[Front Kick ⬆️🦶💥]] [[To 🎯|Into 🎯]] groin
-3. [[Left ⬅️]] [[Side Kick ➡️🦶💥]] [[To 🎯|Against 🎯]] right knee
+2. [[Right ➡️]] [[Front Kick ⬆️🦶💥]] [[To 🎯|Into 🎯]] [[Groin 🩲]]
+3. [[Left ⬅️]] [[Side Kick ➡️🦶💥]] [[To 🎯|Against 🎯]] [[Their Right ⬅️]] [[Knee 🦵]]
 
 ## Further Videos
 

@@ -4,17 +4,17 @@
 
 ## Defense Against 🤺
 
-Both hands grabbing right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[14]])
+Both [[Hand ✋]]s grabbing [[Right ➡️]] wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[14]])
 
 ## Steps 👣
 
-1. - Turn right hand upward and grab [[🎯]] right wrist
-2. - Left food forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Left ⬅️]] [[Downward ⬇️]] check with lower arm into vertical [[Straight Punch ↕️👊💥]] [[To 🎯]] the face
-3. - Left hand checks [[To 🎯|🎯]] opponent's arms down
+1. - Turn [[Right ➡️]] [[Hand ✋]] [[Upward ⬆️]] and grab [[🎯]] [[Their Right ⬅️]] wrist
+2. - [[Left ⬅️]] [[Foot 🦶]] forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+    - [[Left ⬅️]] [[Downward ⬇️]] check with lower [[Arm 💪]] into vertical [[Straight Punch ↕️👊💥]] [[To 🎯]] the [[Face 😐]]
+3. - [[Left ⬅️]] [[Hand ✋]] checks [[To 🎯|🎯]] opponent's [[Arm 💪]]s down
     - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊💥]]
 4. - [[Left ⬅️]] [[Handsword ✋⚔️💥]] [[To 🎯]] the neck
     - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] the mid zone
-5. - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the face
+5. - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the [[Face 😐]]
 6. - [[Cover Right before Left 🦶🔄]]

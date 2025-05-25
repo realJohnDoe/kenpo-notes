@@ -4,19 +4,19 @@
 
 ## Defense Against 🤺
 
-Rear Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[22]])
+[[Rear Bear Hug ⬆️🐻]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[22]])
 
 ## Steps 👣
 
-1. - Knock on [[To 🎯|🎯]] hands
-2. - Right step to the right into [[Horse Stance 🏇🧍‍♂️]]
+1. - Knock on [[To 🎯|🎯]] [[Hand ✋]]s
+2. - [[Right ➡️]] [[Foot 🦶]] [[Right ➡️]] into [[Horse Stance 🏇🧍‍♂️]]
     - Both [[Elbow 💪💥]]s down
-3. - Pin [[To 🎯|🎯]] opponent under right arm
-    - Grab [[To 🎯|🎯]] opponent's right hand
-4. - Left foot towards [[130 ↗️]]
-5. - Lock [[To 🎯|🎯]] their hand
-    - Turn further [[clockwise 🔃]] and put right foot towards [[130 ↗️]]
-6. - Check [[To 🎯|🎯]] their right arm with your left hand
+3. - Pin [[To 🎯|🎯]] opponent under [[Right ➡️]] [[Arm 💪]]
+    - Grab [[To 🎯|🎯]] opponent's [[Right ➡️]] [[Hand ✋]]
+4. - [[Left ⬅️]] [[Foot 🦶]] towards [[130 ↗️]]
+5. - Lock [[To 🎯|🎯]] their [[Hand ✋]]
+    - Turn further [[clockwise 🔃]] and put [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
+6. - Check [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]] with your [[Left ⬅️]] [[Hand ✋]]
 7. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
-8. - [[Right ➡️]] lifting [[Back Knuckle 🔙✊💥]] [[To 🎯]] their face
+8. - [[Right ➡️]] lifting [[Back Knuckle 🔙✊💥]] [[To 🎯]] their [[Face 😐]]
 9. - [[Cover Right before Left 🦶🔄]]

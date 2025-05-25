@@ -9,10 +9,10 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]] 
-    - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] [[To 🎯]] left elbow
-2. - [[Left ⬅️]] [[Outward 🔼]] [[Parry 🤺]] [[To 🎯]] left elbow
+    - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
+2. - [[Left ⬅️]] [[Outward 🔼]] [[Parry 🤺]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 3. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
-4. - [[Right ➡️]] [[Downward ⬇️]] looping [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] the left knee
+4. - [[Right ➡️]] [[Downward ⬇️]] looping [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
 5. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

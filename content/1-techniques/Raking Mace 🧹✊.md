@@ -8,13 +8,13 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]],
 
 ## Steps 👣
 
-1. - Pin [[To 🎯|🎯]] opponent's hands with left hand 
-    - Right foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1. - Pin [[To 🎯|🎯]] opponent's [[Hand ✋]]s with [[Left ⬅️]] [[Hand ✋]] 
+    - [[Right ➡️]] [[Foot 🦶]] forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Uppercut Punch 🔝✊💥]]
-2. - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their face
-3. - Right hand to the hip to pull them down
+2. - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Face 😐]]
+3. - [[Right ➡️]] [[Hand ✋]] to the hip to pull them down
 4. - [[Right ➡️]] [[Handsword ✋⚔️💥]] [[To 🎯]] their neck
-5. - Right hand down again to remove [[To 🎯|🎯]] their grip
+5. - [[Right ➡️]] [[Hand ✋]] down again to remove [[To 🎯|🎯]] their grip
 6. - [[Right ➡️]] Sandwich [[Elbow 💪💥]]
 7. - [[Cover Right before Left 🦶🔄]]
 

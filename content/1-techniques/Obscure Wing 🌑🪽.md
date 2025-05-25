@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
-Close [[To 🎯|🎯]] Left Hand Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[18]])
+Close [[Left ⬅️]] [[Hand ✋]] Shoulder Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[18]])
 
 ## Steps 👣
 
-1. Check [[To 🎯|🎯]] their hand with our left hand
+1. Check [[To 🎯|🎯]] their [[Hand ✋]] with our [[Left ⬅️]] [[Hand ✋]]
 2. [[Right ➡️]] [[Elbow 💪💥]]
-3. [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their groin
+3. [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Groin 🩲]]
 4. [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] their chin
 
 ## Alternative Video

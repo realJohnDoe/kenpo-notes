@@ -4,12 +4,12 @@
 
 ## Defense Against 🤺
 
-Left hand grabbing [[🎯]] right shoulder from the back ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[22]])
+[[Left ⬅️]] [[Hand ✋]] grabbing [[🎯]] [[Right ➡️]] shoulder from the back ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[22]])
 
 ## Steps 👣
 
 1. Check
-2. Left foot forward towards [[1200 ⬆️]]
+2. [[Left ⬅️]] [[Foot 🦶]] forward towards [[1200 ⬆️]]
 3. [[Right ➡️]] [[Handsword ✋⚔️💥]]
 4. [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
-5. Pull left foot back, drag right foot
+5. Pull [[Left ⬅️]] [[Foot 🦶]] back, drag [[Right ➡️]] [[Foot 🦶]]

@@ -4,14 +4,14 @@
 
 ## Defense Against 🤺
 
-Rear Bear Hug ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs]], [[5]])
+[[Rear Bear Hug ⬆️🐻]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs]], [[5]])
 
 ## Steps 👣
 
-1.  - Left step left into [[Horse Stance 🏇🧍‍♂️]]
+1.  - [[Left ⬅️]] [[Foot 🦶]] step [[Left ⬅️]] into [[Horse Stance 🏇🧍‍♂️]]
     - [[Right ➡️]] [[Elbow 💪💥]]
 2.  - [[Right ➡️]] [[Hammerfist 🔨✊💥]]
 3.  - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
 4.  - [[Right ➡️]] [[Side Kick ➡️🦶💥]]
-5.  - Right foot into [[Horse Stance 🏇🧍‍♂️]]
+5.  - [[Right ➡️]] [[Foot 🦶]] into [[Horse Stance 🏇🧍‍♂️]]
 6.  - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]]

@@ -4,15 +4,15 @@
 
 ## Defense Against 🤺
 
-[[Rear Bear Hug ⬆️🐻]], Arms pinned ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[5]])
+[[Rear Bear Hug ⬆️🐻]], [[Arm 💪]]s pinned ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[5]])
 
 ## Steps 👣
 
-1. - Left foot left into [[Horse Stance 🏇🧍‍♂️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] [[Left ⬅️]] into [[Horse Stance 🏇🧍‍♂️]]
     - [[Right ➡️]] backward [[Elbow 💪💥]]
-2. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] the opponent's groin
-3. - Right foot back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the groin
+2. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] the opponent's [[Groin 🩲]]
+3. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
+    - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the [[Groin 🩲]]
 4. - [[Right ➡️]] [[Elbow 💪💥]] [[To 🎯]] their chin
-5. - Turn right into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[430 ↘️]]
+5. - Turn [[clockwise 🔃]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[430 ↘️]]
     - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their mid zone

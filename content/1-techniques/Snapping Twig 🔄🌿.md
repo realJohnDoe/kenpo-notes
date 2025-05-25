@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
-Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
+[[Left ⬅️]] Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
 ## Steps 👣
 
-1. - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
-    - Pin [[To 🎯|🎯]] left hand to chest 
-    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴💥]] strike [[To 🎯|🎯]] elbow
+1. - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
+    - Pin [[To 🎯|🎯]] [[Their Left ➡️]] [[Hand ✋]] to chest 
+    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴💥]] strike [[To 🎯|🎯]] [[Elbow 💪]]
 2. - Hook over [[To 🎯|🎯]] left arm
     - Shuffle forward
     - [[Left ⬅️]] thrusting [[Handsword ✋⚔️💥]]

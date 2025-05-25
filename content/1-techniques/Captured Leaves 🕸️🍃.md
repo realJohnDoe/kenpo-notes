@@ -4,13 +4,13 @@
 
 ## Defense Against 🤺
 
-[[Left ⬅️]] Hand Finger Lock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[6]])
+[[Left ⬅️]] [[Hand ✋]] Finger Lock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[6]])
 
 ## Steps 👣
 
-1. - Pin 🎯opponent's attacking hand with left hand
+1. - Pin 🎯opponent's attacking hand with [[Left ⬅️]] [[Hand ✋]]
     - [[Right ➡️]] foot steps forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
 2. - [[Left ⬅️]] backward [[Elbow 💪💥]]
-3. - Take [[🎯]] arm with left hand over right shoulder
+3. - Take [[🎯]] [[Arm 💪]] with [[Left ⬅️]] [[Hand ✋]] over [[Right ➡️]] shoulder
     - [[Right ➡️]] backward [[Elbow 💪💥]]
 4. - [[Cover Right before Left 🦶🔄]]

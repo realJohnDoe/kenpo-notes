@@ -9,9 +9,9 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] 
-    - Right foot right into [[Horse Stance 🏇🧍‍♂️]]
+    - [[Right ➡️]] [[Foot 🦶]] [[Right ➡️]] into [[Horse Stance 🏇🧍‍♂️]]
 2. - [[Left ⬅️]] [[Cat Stance🐈🧍‍♂️]]
-    - Left hand checks potential punch
+    - [[Left ⬅️]] [[Hand ✋]] checks potential [[Punch 👊💥]]
 3. - [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
 4. - [[Right ➡️]] [[Side Kick ➡️🦶💥]]
 5. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]]

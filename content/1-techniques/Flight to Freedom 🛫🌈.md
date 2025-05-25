@@ -8,14 +8,14 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[24]]
 
 ## Steps 👣
 
-1. - Grab [[🎯]] opponent's hand behind your back with your right hand
-    - Left foot back into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - Grab [[🎯]] opponent's [[Hand ✋]] behind your back with your [[Right ➡️]] [[Hand ✋]]
+    - [[Left ⬅️]] [[Foot 🦶]] back into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Try [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]], but it gets checked
-2. - Left foot forward towards [[130 ↗️]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-3. - [[Right ➡️]] back kick
-4. - Land with right foot at [[730 ↙️]] in a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-	- Hit [[To 🎯|🎯]] their elbow with a [[Left ⬅️]] [[Heel Palm ✋🌴💥]]
-5. - Left [[Front Kick ⬆️🦶💥]]
-6. - Land with left foot at [[1030 ↖️]] in twist stance left before right
-7. - Push left fist [[To 🎯|Into 🎯]] their elbow to bring them down
+2. - [[Left ⬅️]] [[Foot 🦶]] forward towards [[130 ↗️]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+3. - [[Right ➡️]] back [[Kick 🦶💥]]
+4. - Land with [[Right ➡️]] [[Foot 🦶]] at [[730 ↙️]] in a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+	- Hit [[To 🎯|🎯]] their [[Elbow 💪]] with a [[Left ⬅️]] [[Heel Palm ✋🌴💥]]
+5. - [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
+6. - Land with [[Left ⬅️]] [[Foot 🦶]] at [[1030 ↖️]] in twist stance left before right
+7. - Push [[Left ⬅️]] fist [[To 🎯|Into 🎯]] their [[Elbow 💪]] to bring them down
 8. - [[Cover Left before Right 🦶🔃]]

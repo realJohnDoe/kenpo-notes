@@ -4,11 +4,11 @@
 
 ## Defense Against 🤺
 
-[[Left ⬅️]] [[Roundhouse 🔄]] Punch ([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
+[[Left ⬅️]] [[Roundhouse 🔄]] [[Punch 👊💥]]([[3-punches|Web of Knowledge: Punches 👊]], [[3]])
 
 ## Steps 👣
 
-1.  - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1.  - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 2.  - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
 3.  - [[Right ➡️]] [[Inward 🔽]] [[Handsword ✋⚔️💥]]

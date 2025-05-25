@@ -8,12 +8,12 @@
 
 ## Steps 👣
 
-1. - Step forward with left leg into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - Step forward with [[Left ⬅️]] leg into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2. - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - [[Right ➡️]] Inside [[Handsword ✋⚔️💥]] [[To 🎯]] opponent's groin
-3. - Slide down with left hand and pick [[🎯]] their right knee
-4. - Right foot forward
+    - [[Right ➡️]] Inside [[Handsword ✋⚔️💥]] [[To 🎯]] opponent's [[Groin 🩲]]
+3. - Slide down with [[Left ⬅️]] [[Hand ✋]] and pick [[🎯]] [[Their Right ⬅️]] [[Knee 🦵]]
+4. - [[Right ➡️]] [[Foot 🦶]] forward
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]] to take them down
-5. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] their knee
-6. - [[Right ➡️]] Slicing Chop [[To 🎯]] their groin
+5. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
+6. - [[Right ➡️]] Slicing Chop [[To 🎯]] their [[Groin 🩲]]
