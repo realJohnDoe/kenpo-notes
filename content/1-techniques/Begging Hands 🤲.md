@@ -9,10 +9,10 @@ Both our hands are grabbed at their wrists ([[1-grabs-and-tackles|Web of Knowled
 ## Steps 👣
 
 1. - Left foot back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-   - Turn hands with their palms upwards into a begging position
-1. - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
-2. - [[Right ➡️]] [[Front Kick ⬆️🦵]] to their groin
-3. - Left [[Chicken Kick 🐔🦵]] to their upper zone
-4. - Land in left [[Forward Bow ⬆️🧍‍♂️]]
-   - Twin [[Heel Palm ✋🌴]] to their ribs
-6. [[Cover Left before Right 🦶🔃]] towards [[430 ↘️]]
+    - Turn hands with their palms upwards into a begging position
+2. - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
+3. - [[Right ➡️]] [[Front Kick ⬆️🦵]] to their groin
+4. - Left [[Chicken Kick 🐔🦵]] to their upper zone
+5. - Land in left [[Forward Bow ⬆️🧍‍♂️]]
+    - Twin [[Heel Palm ✋🌴]] to their ribs
+6. -  [[Cover Left before Right 🦶🔃]] towards [[430 ↘️]]
