@@ -32,7 +32,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 28. o12: [[Grip of Death ⚒️💀]]
 29. l20: Gripping Talon (eigentlich bl20)
 30. l15: [[Hooking Wings 🪝🪽]]
-31. bl4
+31. bl4: [[Hugging Pendulum 🤗🕰️]]
 32. l3: [[Leaping Crane ↖️🐦]]
 33. o17: [[Locked Wing 🔒🪽]]
 34. o7: [[Lone Kimono 1️⃣👘]]
