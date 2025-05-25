@@ -12,5 +12,5 @@ Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]]
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 2. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] [[Back Knuckle 🔙✊]]
 3. - Shuffle forward
-     - [[Right ➡️]] [[Outward 🔼]] thrusting [[Elbow 💪]] strike
+    - [[Right ➡️]] [[Outward 🔼]] thrusting [[Elbow 💪]] strike
 4. - [[Cover Right before Left 🦶🔄]] facing [[730 ↙️]]
