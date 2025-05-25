@@ -16,5 +16,5 @@ Both hands grabbing right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs a
     - [[Right ➡️]] [[Straight Punch ↕️👊]]
 4. - Left [[Handsword ✋⚔️]] to the neck
     - [[Right ➡️]] [[Knee 🦵]] to the mid zone
-5. [[Right ➡️]] [[Heel Palm ✋🌴]] to the face
-6. [[Cover Right before Left 🦶🔄]]
+5. - [[Right ➡️]] [[Heel Palm ✋🌴]] to the face
+6. - [[Cover Right before Left 🦶🔄]]
