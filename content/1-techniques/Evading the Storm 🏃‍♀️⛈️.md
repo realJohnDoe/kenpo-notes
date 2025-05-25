@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Front Overhead Club Strike ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[7]])
+Front Overhead [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons 🗡️]], [[7]])
 
 ## Steps 👣
 
