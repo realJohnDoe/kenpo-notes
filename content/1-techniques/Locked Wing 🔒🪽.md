@@ -14,4 +14,4 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
     - Lock opponent's right elbow
 3. - Step back with right foot towards [[430 ↘️]] into Left [[Forward Bow ⬆️🧍‍♂️]]
     - Turn opponent with you
-4. [[Right ➡️]] [[Knee 🦵]] to the chest
+4. - [[Right ➡️]] [[Knee 🦵]] to the chest
