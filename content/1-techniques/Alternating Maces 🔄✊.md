@@ -11,7 +11,7 @@ Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 1.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - Left [[Straight Punch ↕️👊]]
+    - [[Left ⬅️]] [[Straight Punch ↕️👊]]
 3.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊]]
 4.  - [[Cover Right before Left 🦶🔄]]

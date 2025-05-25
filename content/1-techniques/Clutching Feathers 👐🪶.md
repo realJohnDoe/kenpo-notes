@@ -15,5 +15,5 @@ Hair Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1
     - [[Right ➡️]] vertical [[Straight Punch ↕️👊]] into ribs
 2. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]] 
-    - Left [[Heel Palm ✋🌴]] to the opponent's face
+    - [[Left ⬅️]] [[Heel Palm ✋🌴]] to the opponent's face
 3. - [[Right ➡️]] [[Hammerfist 🔨✊]] through opponent's face

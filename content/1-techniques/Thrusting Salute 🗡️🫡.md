@@ -8,11 +8,11 @@
 
 ## Steps 👣
 
-1. Left [[Downward ⬇️]] [[Block 🛡️]]
-2. Check
+1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]]
+2. Left hand check potential right punch
 3. [[Right ➡️]] [[Front Kick ⬆️🦵]]
 4. [[Right ➡️]] [[Heel Palm ✋🌴]]
 
-## Further Video
+## Alternative Video
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=226&end=241" width="100%" height="400"></iframe>

@@ -17,5 +17,5 @@
     - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪]] to their face
 4. - Back to starting positions with both arms pinned
 5. - Right foot towards [[1030 ↖️]]
-    - Left [[Outward 🔼]] [[Elbow 💪]] to their face
+    - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪]] to their face
 6. - [[Cover Left before Right 🦶🔃]] towards [[1200 ⬆️]]

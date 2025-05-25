@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[16]])
+[[Left ⬅️]] [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[16]])
 
 ## Steps 👣
 
@@ -12,7 +12,7 @@ Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]]
     - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]]
 2. - Left Check and Right Up
 3. - [[Right ➡️]] [[Handsword ✋⚔️]] to the neck
-4. - Left [[Inward 🔽]] Elbow
+4. - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪]]
 5. - Left foot [[counter-clockwise 🔄]] towards [[430 ↘️]]
     - Left hand checks with [[Waiter Check 🧑‍🍳]]
 6. - [[Right ➡️]] [[Hammerfist 🔨✊]] Strike

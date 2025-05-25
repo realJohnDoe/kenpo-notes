@@ -10,8 +10,8 @@
 
 1. - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] 
     - Right foot right into [[Horse Stance 🏇🧍‍♂️]]
-2. - Left [[Cat Stance🐈🧍‍♂️]]
+2. - [[Left ⬅️]] [[Cat Stance🐈🧍‍♂️]]
     - Left hand checks potential punch
-3. - Left [[Front Kick ⬆️🦵]]
+3. - [[Left ⬅️]] [[Front Kick ⬆️🦵]]
 4. - [[Right ➡️]] [[Side Kick ➡️🦵]]
 5. - [[Right ➡️]] [[Back Knuckle 🔙✊]]

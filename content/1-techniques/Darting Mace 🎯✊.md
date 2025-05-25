@@ -10,11 +10,11 @@ Both hands grabbing right wrist ([[1-grabs-and-tackles|Web of Knowledge: Grabs a
 
 1. - Turn right hand upward and grab right wrist
 2. - Left food forward into left [[Neutral Bow 0️⃣🧍‍♂️]]
-    - Left [[Downward ⬇️]] check with lower arm into vertical [[Straight Punch ↕️👊]] to the face
+    - [[Left ⬅️]] [[Downward ⬇️]] check with lower arm into vertical [[Straight Punch ↕️👊]] to the face
 3. - Left hand checks opponent's arms down
-    - Left [[Forward Bow ⬆️🧍‍♂️]]
+    - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊]]
-4. - Left [[Handsword ✋⚔️]] to the neck
+4. - [[Left ⬅️]] [[Handsword ✋⚔️]] to the neck
     - [[Right ➡️]] [[Knee 🦵]] to the mid zone
 5. - [[Right ➡️]] [[Heel Palm ✋🌴]] to the face
 6. - [[Cover Right before Left 🦶🔄]]

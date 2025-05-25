@@ -12,5 +12,5 @@
     - [[Block 🛡️]] the opponent's kick with a universal [[Block 🛡️]]
 2. - Shuffle forward
     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊]] to their groin
-3. - Slide left foot further counter-clockwise into a [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
+3. - Slide left foot further counter-clockwise into a [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[730 ↙️]]
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] to the opponent's chin

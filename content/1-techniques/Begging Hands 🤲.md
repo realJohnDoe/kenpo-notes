@@ -12,7 +12,7 @@ Both our hands are grabbed at their wrists ([[1-grabs-and-tackles|Web of Knowled
     - Turn hands with their palms upwards into a begging position
 2. - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
 3. - [[Right ➡️]] [[Front Kick ⬆️🦵]] to their groin
-4. - Left [[Chicken Kick 🐔🦵]] to their upper zone
-5. - Land in left [[Forward Bow ⬆️🧍‍♂️]]
+4. - [[Left ⬅️]] [[Chicken Kick 🐔🦵]] to their upper zone
+5. - Land in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Twin [[Heel Palm ✋🌴]] to their ribs
 6. -  [[Cover Left before Right 🦶🔃]] towards [[430 ↘️]]

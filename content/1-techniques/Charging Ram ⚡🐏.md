@@ -14,4 +14,4 @@ Front Tackle ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], 
 2. - Turn into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Handsword ✋⚔️]] to their neck
 3. - [[Right ➡️]] [[Front Kick ⬆️🦵]] to their upper zone
-4. - Before fully landing, deliver a left [[Roundhouse Kick 🔄🦵]]
+4. - Before fully landing, deliver a [[Left ⬅️]] [[Roundhouse Kick 🔄🦵]]

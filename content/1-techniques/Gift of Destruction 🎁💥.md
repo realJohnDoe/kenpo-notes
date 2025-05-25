@@ -9,7 +9,7 @@
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Knee 🦵]]
-    - Left hand strikes their right elbow
+    - [[Left ⬅️]] [[Heel Palm ✋🌴]] to their right elbow
 2. - Left hand pushes right arm down 
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
 

@@ -10,7 +10,7 @@
 
 1.  - Step back into a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Downward ⬇️]] [[Inward 🔽]] [[Block 🛡️]]
-2.  - Left overhead [[Claw 🐯]]
+2.  - [[Left ⬅️]] overhead [[Claw 🐯]]
 3.  - Shuffle forward
     - Vertical [[Right ➡️]] [[Back Knuckle 🔙✊]]
 4.  - [[Cover Right before Left 🦶🔄]] facing [[130 ↗️]]
