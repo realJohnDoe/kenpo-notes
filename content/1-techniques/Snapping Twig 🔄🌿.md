@@ -16,8 +16,8 @@ Left Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
     - Left thrusting [[Handsword ✋⚔️]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊]]
 4. - Shuffle forward
-     - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪]] strike
-     - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
+    - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪]] strike
+    - Left [[Inward 🔽]] horizontal [[Heel Palm ✋🌴]] strike
 5. - [[Cover Right before Left 🦶🔄]] facing [[730 ↙️]]
 
 ## Alternative Video
