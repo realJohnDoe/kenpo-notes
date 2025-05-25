@@ -1,15 +1,15 @@
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/Ks7n7LfrHkw" width="100%" height="400"></iframe>
 
-## Defense against
+## Defense Against 🤺
 
 Left [[Front Kick ⬆️🦵]] ([[4-kicks|# Web of Knowledge: Kicks 🦶]], [[10]])
 
-## Steps
+## Steps 👣
 
 1. Left [[Downward ⬇️]] [[Block 🛡️]]
-2. Right [[Front Kick ⬆️🦵]] into groin 
+2. [[Right ➡️]] [[Front Kick ⬆️🦵]] into groin
 3. Left [[Side Kick ➡️🦵]] against right knee
 
 ## Further Videos

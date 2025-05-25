@@ -1,17 +1,17 @@
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/ZGfyL70STUs" width="100%" height="400"></iframe>
 
-## Defense against
+## Defense Against 🤺
 
-Right [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Right ➡️]] [[Front Kick ⬆️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
-## Steps
+## Steps 👣
 
 1. Left [[Downward ⬇️]] [[Block 🛡️]]
 2. Check
-3. Right [[Front Kick ⬆️🦵]]
-4. Right [[Heel Palm ✋🌴]]
+3. [[Right ➡️]] [[Front Kick ⬆️🦵]]
+4. [[Right ➡️]] [[Heel Palm ✋🌴]]
 
 ## Further Video
 

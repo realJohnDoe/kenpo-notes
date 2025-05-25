@@ -1,20 +1,20 @@
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/Bu0pCwklaS0" width="100%" height="400"></iframe>
 
-## Defense Against
+## Defense Against 🤺
 
 Left [[Straight Punch ↕️👊]] ([[3-punches|Web of Knowledge: Punches 👊]], [[19]])
 
-## Steps
+## Steps 👣
 
-1. - Right [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]]
-   - Right [[Inward 🔽]] parry to left elbow
-2. - Left [[Outward 🔼]] parry to left elbow
-3. - Right [[Outward 🔼]] [[Back Knuckle 🔙✊]]
-4. - Right [[Downward ⬇️]] looping [[Roundhouse Kick 🔄🦵]] to the left knee
+1. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1030 ↖️]] 
+    - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] to left elbow
+2. - Left [[Outward 🔼]] [[Parry 🤺]] to left elbow
+3. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊]]
+4. - [[Right ➡️]] [[Downward ⬇️]] looping [[Roundhouse Kick 🔄🦵]] to the left knee
 5. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
-## Further Videos
+## Alternative Video
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=306&end=322" width="100%" height="400"></iframe>

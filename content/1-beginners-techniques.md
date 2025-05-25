@@ -36,6 +36,6 @@ aliases:
 1. [[Snapping Twig 🔄🌿]]
 2. [[Leaping Crane ↖️🐦]]
 
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw" width="100%" height="400"></iframe>

@@ -1,7 +1,8 @@
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/IBxrzv2vB94" width="100%" height="400"></iframe>
-## Defense Against
+
+## Defense Against 🤺
 
 [[Side Kick ➡️🦵]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 

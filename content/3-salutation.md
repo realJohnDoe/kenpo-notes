@@ -3,15 +3,16 @@ title: Salutation
 alias: Salutation
 ---
 
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/vlEzft4ztiw" width="100%" height="400"></iframe>
 
-## Steps
+## Steps 👣
 
 > The scholar and the warrior united go forward...
 
-- Right foot forward
+- [[Right ➡️]]
+  foot forward
 - Left hand wraps around right fist above right shoulder
 
 > ...into battle...
@@ -26,7 +27,8 @@ alias: Salutation
 
 > ...to pull their countries together.
 
-- Right foot back as well
+- [[Right ➡️]]
+  foot back as well
 - "Roll" hands to the hips
 
   > They present no arms or weapons...

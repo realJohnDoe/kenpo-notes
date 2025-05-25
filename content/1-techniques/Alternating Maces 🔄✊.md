@@ -1,19 +1,19 @@
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/3-LSfEA5uGw" width="100%" height="400"></iframe>
 
-## Defense against
+## Defense Against 🤺
 
 Two Hand Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[2]])
 
-## Steps
+## Steps 👣
 
-1.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
-    - Right [[Inward 🔽]] [[Block 🛡️]]
-2.  - Right [[Forward Bow ⬆️🧍‍♂️]]
+1.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+    - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]]
+2.  - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Left [[Straight Punch ↕️👊]]
-3.  - Right [[Neutral Bow 0️⃣🧍‍♂️]]
-    - [[Outward 🔼]] Right [[Back Knuckle 🔙✊]]
+3.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+    - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊]]
 4.  - [[Cover Right before Left 🦶🔄]]
 
 ## Alternative Video

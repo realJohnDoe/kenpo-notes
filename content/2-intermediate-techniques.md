@@ -47,6 +47,6 @@ aliases:
 
 - Fatal Cross
 
-## Video
+## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/qSijhi8u3as" width="100%" height="400"></iframe>

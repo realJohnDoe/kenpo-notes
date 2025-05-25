@@ -5,7 +5,7 @@ Steps:
 - Block
 - Check
 - Kick
-- Heelpalm
+- [[Heel Palm ✋🌴]]
 
 [[Thrusting Prongs 🗡️🍴]]
 
@@ -13,5 +13,5 @@ Closer distance
 Steps:
 - Thumbs
 - Grab
-- Knee
-- Elbow
+- [[Knee 🦵]]
+- [[Elbow 💪]]
