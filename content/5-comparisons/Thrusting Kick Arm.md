@@ -2,7 +2,7 @@
 
 Higher distance
 Steps: 
-- Block
+- [[Block 🛡️]]
 - Check
 - Kick
 - [[Heel Palm ✋🌴]]

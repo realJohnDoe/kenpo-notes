@@ -1,2 +1,2 @@
 - [[Alternating Maces 🔄✊]]
-- [[Calming the Storm 🧘‍♀️⛈️]], after the first Block
+- [[Calming the Storm 🧘‍♀️⛈️]], after the first [[Block 🛡️]]
