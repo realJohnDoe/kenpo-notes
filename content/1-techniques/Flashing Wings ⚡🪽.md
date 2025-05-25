@@ -18,6 +18,6 @@
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] facing [[430 ↘️]] 
     - Left [[Handsword ✋⚔️]] to their neck
 6. - Left hand checks their right upper arm
-     - Turn back into left [[Wide Kneel ↔️🧎]] facing [[1200 ⬆️]]
-     - [[Right ➡️]] [[Upward ⬆️]] [[Heel Palm ✋🌴]] to their chin
+    - Turn back into left [[Wide Kneel ↔️🧎]] facing [[1200 ⬆️]]
+    - [[Right ➡️]] [[Upward ⬆️]] [[Heel Palm ✋🌴]] to their chin
 7. - [[Cover Left before Right 🦶🔃]]

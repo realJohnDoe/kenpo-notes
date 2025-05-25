@@ -22,6 +22,6 @@
     - [[Inward 🔽]] [[Downward ⬇️]] overhead [[Right ➡️]] [[Handsword ✋⚔️]]
 7. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
-## Further Videos
+## Alternative Video
 
 <iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=288&end=305" width="100%" height="400"></iframe>

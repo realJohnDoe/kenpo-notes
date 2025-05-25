@@ -15,4 +15,4 @@ Front Overhead [[Club Attack 🪄]] ([[7-weapons|Web of Knowledge: Weapons 🗡�
     - Left [[Uppercut Punch 🔝✊]]
 4. - Left [[Knee 🦵]]
 5. - Left [[Wide Kneel ↔️🧎]] on top of opponent's calf
-     - [[Right ➡️]] [[Hammerfist 🔨✊]] to their left kidney
+    - [[Right ➡️]] [[Hammerfist 🔨✊]] to their left kidney
