@@ -15,3 +15,4 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
 3. - Step back with [[Right ➡️]] [[Foot 🦶]] towards [[430 ↘️]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Turn [[🎯]] opponent with you
 4. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] the chest
+5. - [[Cover Right before Left 🦶🔄]] towards [[430 ↘️]]

@@ -8,11 +8,12 @@ Front Overhead [[Club Attack 🪄💥]] ([[7-weapons|Web of Knowledge: Weapons �
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] [[Foot 🦶]] forward into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] forward towards [[1030 ↖️]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 2. - [[Right ➡️]] [[Roundhouse Kick 🔄🦶💥]]
 3. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - [[Left ⬅️]] [[Uppercut Punch 🔝✊💥]]
+    - [[Left ⬅️]] [[Straight Punch ↕️👊💥]]
 4. - [[Left ⬅️]] [[Knee 🦵💥]]
-5. - [[Left ⬅️]] [[Wide Kneel ↔️🧎]] on top of [[🎯]] opponent's calf
+5. - [[Left ⬅️]] [[Wide Kneel ↔️🧎]] on top of [[To 🎯|🎯]] opponent's calf
     - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their left kidney
+ 

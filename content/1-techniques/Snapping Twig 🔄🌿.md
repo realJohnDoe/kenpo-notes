@@ -10,14 +10,13 @@
 
 1. - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - Pin [[To 🎯|🎯]] [[Their Left ➡️]] [[Hand ✋]] to chest 
-    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴💥]] strike [[To 🎯|🎯]] [[Elbow 💪]]
+    - [[Right ➡️]] [[Inward 🔽]] hooking [[Heel Palm ✋🌴💥]] strike [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 2. - Hook over [[To 🎯|🎯]] left arm
     - Shuffle forward
     - [[Left ⬅️]] thrusting [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] diagonal raking [[Hammerfist 🔨✊💥]]
 4. - Shuffle forward
-    - [[Right ➡️]] [[Inward 🔽]] horizontal [[Elbow 💪💥]] strike
-    - [[Left ⬅️]] [[Inward 🔽]] horizontal [[Heel Palm ✋🌴💥]] strike
+    - [[Right ➡️]] [[Sandwich 🥪 Elbow 💪💥]]
 5. - [[Cover Right before Left 🦶🔄]] facing [[730 ↙️]]
 
 ## Alternative Video

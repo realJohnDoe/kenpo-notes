@@ -1,6 +1,6 @@
 ## Video 🎥
 
-<iframe src="https://www.youtube.com/embed/nSGbhR43Z5g?start=244&end=344" width="100%" height="400"></iframe>
+<iframe src="https://www.youtube.com/embed/nSGbhR43Z5g?start=252&end=344" width="100%" height="400"></iframe>
 
 ## Defense Against 🤺
 
@@ -15,4 +15,4 @@ Two-Hand Lapel Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles �
     - [[Right ➡️]] [[Outward 🔼]] horizontal [[Back Knuckle 🔙✊💥]]
 3. - [[Right ➡️]] [[Inward 🔽]] Diagonal [[Forearm Strike 💪💥]]
 4. - [[Right ➡️]] [[Snapping 💨]] [[Outward 🔼]] [[Handsword ✋⚔️💥]]
-5. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
+5. - [[Cover Right before Left 🦶🔄]] towards [[600 ⬇️]]

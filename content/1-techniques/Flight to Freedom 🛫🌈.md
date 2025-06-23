@@ -11,7 +11,7 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[24]]
 1. - Grab [[🎯]] opponent's [[Hand ✋]] behind your back with your [[Right ➡️]] [[Hand ✋]]
     - [[Left ⬅️]] [[Foot 🦶]] back into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Try [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]], but it gets checked
-2. - [[Left ⬅️]] [[Foot 🦶]] forward towards [[130 ↗️]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+2. - [[Left ⬅️]] [[Foot 🦶]] forward towards [[1200 ⬆️]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 3. - [[Right ➡️]] back [[Kick 🦶💥]]
 4. - Land with [[Right ➡️]] [[Foot 🦶]] at [[730 ↙️]] in a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 	- Hit [[To 🎯|🎯]] their [[Elbow 💪]] with a [[Left ⬅️]] [[Heel Palm ✋🌴💥]]

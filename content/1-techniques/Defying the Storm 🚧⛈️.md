@@ -21,4 +21,4 @@
 5. - [[Left ⬅️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
     - [[Right ➡️]] [[Hand ✋]] circles downwards [[counter-clockwise 🔄]]
 6. - [[Right ➡️]] [[Downward ⬇️]] [[Elbow 💪💥]] [[To 🎯]] their spine
-7. - [[Cover Left before Right 🦶🔃]]
+7. - [[Cover Right before Left 🦶🔄]]
