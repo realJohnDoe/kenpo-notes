@@ -8,7 +8,7 @@ When performing the lock in [[Grasp of Death 🔒💀]], our body looks a bit li
 - Lock [[To 🎯|🎯]] the arm
 - [[1. Yellow Belt 🟡|Yellow Belt 🟡]]
 
-## [[Grip of Death ⚒️💀]]
+## [[Grip of Death 🧤💀]]
 
 - Double [[Hammerfist 🔨✊💥]]
 - [[2. Orange Belt 🟠|Orange Belt 🟠]]

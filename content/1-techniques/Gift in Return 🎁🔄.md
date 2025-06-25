@@ -17,3 +17,7 @@
 3. - [[Right ➡️]] [[Snapping 💨]] Knife Edge [[Side Kick ➡️🦶💥]] [[To 🎯]] their [[Left ⬅️]] [[Knee 🦵]]
 4. - [[Left ⬅️]] [[Knee 🦵💥]] Strike
 5. - [[Cover Left before Right 🦶🔃]]
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/vkfTVep_QzM?start=207" width="100%" height="400"></iframe>

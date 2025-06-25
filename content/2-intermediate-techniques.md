@@ -10,7 +10,7 @@ aliases:
 - [[Crashing Wings 💥🪽]]
 - [[Striking Serpent's Head 🎳🐍]]
 - [[Locked Wing 🔒🪽]]
-- [[Grip of Death ⚒️💀]]
+- [[Grip of Death 🧤💀]]
 - [[Scraping Hoof ⬇️🐎]]
 
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]

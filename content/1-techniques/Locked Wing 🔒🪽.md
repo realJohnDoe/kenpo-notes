@@ -16,3 +16,7 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[17]]
     - Turn [[🎯]] opponent with you
 4. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] the chest
 5. - [[Cover Right before Left 🦶🔄]] towards [[430 ↘️]]
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/vkfTVep_QzM?start=24" width="100%" height="400"></iframe>

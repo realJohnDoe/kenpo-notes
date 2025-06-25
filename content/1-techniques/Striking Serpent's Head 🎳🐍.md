@@ -12,3 +12,7 @@
     - [[Left ⬅️]] [[Inward 🔽]] Reverse [[Hammerfist 🔨✊💥]] Strike [[To 🎯]] the skull
 2. - Pull on [[To 🎯|🎯]] hair or push skull
 3. - [[Right ➡️]] Half Fist Strike [[To 🎯]] the throat
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/u_2jNuEG3yc" width="100%" height="400"></iframe>

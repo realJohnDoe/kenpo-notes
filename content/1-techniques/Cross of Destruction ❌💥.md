@@ -18,3 +18,7 @@
 5. - Step down with [[Right ➡️]] [[Foot 🦶]]
     - Pull with [[Left ⬅️]] [[Arm 💪]] and push with [[Right ➡️]] [[Arm 💪]] to bring them down or dislocate their [[Elbow 💪]]s
 6. - [[Cover Right before Left 🦶🔄]]
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/4Bi7OLLs0Z8?start=320" width="100%" height="400"></iframe>
