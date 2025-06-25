@@ -17,7 +17,7 @@ Attempted [[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Web of Knowle
 4. - [[Left ⬅️]] rear heel [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Right ➡️]] [[Knee 🦵]]
 5. - [[Left ⬅️]] knife edge kick [[To 🎯]] the [[Left ⬅️]] [[Knee 🦵]]
     - [[Left ⬅️]] [[Downward ⬇️]] foot stomp on [[To 🎯|🎯]] the opponent's [[Left ⬅️]] instep
-6. - Continue pinning [[To 🎯|🎯]] the [[Left ⬅️]] [[Arm 💪]]
+6. - Continue [[Pin 📌|Pinning 📌]] [[To 🎯|🎯]] the [[Left ⬅️]] [[Arm 💪]]
     - Step towards [[1030 ↖️]] with the [[Right ➡️]] [[Foot 🦶]]
 7. - [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[600 ⬇️]]
 8. - [[Cover Left before Right 🦶🔃]] facing [[600 ⬇️]]

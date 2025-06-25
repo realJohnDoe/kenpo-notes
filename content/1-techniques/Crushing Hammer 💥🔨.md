@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Rear Bear Hug ⬆️🐻]], [[Arm 💪]]s pinned ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[5]])
+[[Rear Bear Hug ⬆️🐻]], [[Arm 💪]]s [[Pin 📌|Pinned 📌]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[5]])
 
 ## Steps 👣
 

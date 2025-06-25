@@ -13,9 +13,9 @@
 2. - [[Left ⬅️]] [[Foot 🦶]] back to normal stance
     - Pin [[To 🎯|🎯]] opponent's [[Arm 💪]]s with ours
     - Head hits back
-3. - [[Left ⬅️]] [[Foot 🦶]] towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their [[Arm 💪]]s pinned
+3. - [[Left ⬅️]] [[Foot 🦶]] towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their [[Arm 💪]]s [[Pin 📌|Pinned 📌]]
     - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
-4. - Back to starting positions with [[To 🎯|🎯]] both [[Arm 💪]]s pinned
+4. - Back to starting positions with [[To 🎯|🎯]] both [[Arm 💪]]s [[Pin 📌|Pinned 📌]]
 5. - [[Right ➡️]] [[Foot 🦶]] towards [[1030 ↖️]]
     - [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
 6. - [[Cover Left before Right 🦶🔃]] towards [[1200 ⬆️]]
