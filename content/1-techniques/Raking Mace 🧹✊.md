@@ -18,6 +18,6 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]],
 6. - [[Right ➡️]] Sandwich [[Elbow 💪💥]]
 7. - [[Cover Right before Left 🦶🔄]]
 
-## Alternative Video
+## Alternative Video 🎥
 
 <iframe src="https://www.youtube.com/embed/geYVnDSBnJ0" width="100%" height="400"></iframe>
