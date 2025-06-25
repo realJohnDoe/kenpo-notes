@@ -4,6 +4,6 @@
 
 ## Defense Against 🤺
 
-([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[16]])
+Two-Hand Push from the front ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[16]])
 
 ## Steps 👣
