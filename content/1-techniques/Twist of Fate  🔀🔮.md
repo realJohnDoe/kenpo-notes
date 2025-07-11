@@ -7,3 +7,11 @@
 Two-Hand Push from the front ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[16]])
 
 ## Steps 👣
+
+1. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+    - Twist both hands up and grab [[To 🎯|🎯]] opponent's [[Hand ✋]]s
+2. - [[Right ➡️]] slicing knife-edge [[Kick 🦶💥]] [[To 🎯]] their liver
+    - Stretch [[Their Right ⬅️]] [[Arm 💪]] and lock it with [[Their Left ➡️]] [[Arm 💪]] underneath
+3. - Continue turning [[counter-clockwise 🔄]] until you land in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[300 ➡️]]
+4. - [[Knee 🦵]] [[To 🎯]] the back of their head
+5. - Land back in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]

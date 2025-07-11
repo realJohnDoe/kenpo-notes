@@ -4,6 +4,6 @@
 
 ## Defense Against 🤺
 
-[[Their Right ⬅️]] [[Hand ✋]] holds [[To 🎯|🎯]] your [[Left ⬅️]] [[Hand ✋]] ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[20]])
+[[Their Left ➡️]] [[Hand ✋]] holds [[To 🎯|🎯]] your [[Right ➡️]] [[Hand ✋]] ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[20]])
 
 ## Steps 👣
