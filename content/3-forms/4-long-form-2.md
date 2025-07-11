@@ -35,3 +35,10 @@ title: Long Form 2
 	3. [[Left ⬅️]] [[Straight Punch ↕️👊💥]] and [[Right ➡️]] [[Front Kick ⬆️🦶💥]] at the same time
 	4. Land with [[Right ➡️]] [[Uppercut Punch 🔝✊💥]]
 8. Same with right toward [[730 ↙️]]
+9. Towards [[130 ↗️]]
+	1.  [[Left ⬅️]] [[Foot 🦶]] crosses in front into [[Left ⬅️]] Twist Stance
+    2. [[Right ➡️]] Fist knocks on [[To 🎯|🎯]] their nose
+	3. Unwind the twist by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
+	4. [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]] [[To 🎯]] their chin
+10. Same towards [[1030 ↖️]] starting with the [[Right ➡️]] [[Foot 🦶]]
+11. 
