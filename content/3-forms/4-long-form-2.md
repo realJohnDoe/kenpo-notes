@@ -42,9 +42,9 @@ title: Long Form 2
 	        - [[Right ➡️]] Fist knocks on [[To 🎯|🎯]] their nose
 		2. Unwind the twist by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
 	        - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]] [[To 🎯]] their chin
-		3. [[Left ⬅️]] poke [[To 🎯]] their eye
-		4. [[Right ➡️]] poke [[To 🎯]] their eye
-		5. [[Left ⬅️]] poke [[To 🎯]] their eye
+		3. - [[Left ⬅️]] poke [[To 🎯]] their eye
+		4. - [[Right ➡️]] poke [[To 🎯]] their eye
+		5. - [[Left ⬅️]] poke [[To 🎯]] their eye
 	2. Same towards [[1030 ↖️]] starting with the [[Right ➡️]] [[Foot 🦶]]
 	3. Left towards [[430 ↘️]]
 		1. - [[Left ⬅️]] [[Foot 🦶]] crosses behind [[Right ➡️]] into [[Right ➡️]] Twist Stance
