@@ -11,7 +11,7 @@
 1. - Pin [[To 🎯|🎯]] [[Their Left ➡️]] [[Hand ✋]] to chest
     - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Heel Palm ✋🌴💥]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
-2. - Hook over [[To 🎯|🎯]] left arm
+2. - Hook over [[To 🎯|🎯]] [[Their Left ➡️]] arm
     - Shuffle forward
     - [[Left ⬅️]] thrusting [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]]

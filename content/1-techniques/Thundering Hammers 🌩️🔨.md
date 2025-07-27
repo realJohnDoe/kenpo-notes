@@ -16,7 +16,10 @@
 3. - [[Right ➡️]] [[Hand ✋]] up into [[Waiter Check 🧑‍🍳]]
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] so our [[Left ⬅️]] [[Knee 🦵]] checks [[🎯]] [[Their Right ⬅️]] [[Knee 🦵]]
     - [[Left ⬅️]] [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Left ⬅️]] kidney
-4. - Check [[🎯]] their [[Right ➡️]] shoulder with [[Left ⬅️]] [[Hand ✋]]
+4. - Check [[To 🎯|🎯]] their [[Right ➡️]] shoulder with [[Left ⬅️]] [[Hand ✋]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their neck
 5. - [[Left ⬅️]] [[Foot 🦶]] back towards [[730 ↙️]]
-6. - [[Cover Right before Left 🦶🔄]]
+    - Turn [[To 🎯|🎯]] their head towards us
+6. - [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their head
+7. - [[Upward ⬆️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their face
+8. - [[Cover Right before Left 🦶🔄]]

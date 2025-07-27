@@ -12,7 +12,7 @@
     - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2. - Drop into [[Left ⬅️]] [[Wide Kneel ↔️🧎]]
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]] [[To 🎯]] their ribs
-3. - Push both [[Elbow 💪💥]]s outward, ram your [[Right ➡️]] [[Elbow 💪💥]] [[To 🎯|Into 🎯]] their spine
+3. - Push both [[Elbow 💪]]s outward, ram your [[Right ➡️]] [[Elbow 💪💥]] [[To 🎯|Into 🎯]] their spine
 4. - [[Right ➡️]] [[Handsword ✋⚔️💥]] [[To 🎯]] their neck
 5. - [[Right ➡️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] [[Their Right ⬅️]] upper arm 
     - Turn into [[Right ➡️]] [[Wide Kneel ↔️🧎]] facing [[430 ↘️]] 

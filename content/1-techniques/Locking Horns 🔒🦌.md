@@ -14,4 +14,4 @@ Front Headlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[
 3. - [[Right ➡️]] [[Horse Stance 🏇🧍‍♂️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]] [[To 🎯]] their chin
 4. - Shuffle forward
-    - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
+    - [[Right ➡️]] [[Sandwich 🥪 Elbow 💪💥]]

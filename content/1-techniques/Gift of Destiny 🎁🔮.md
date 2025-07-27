@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. - Grab [[Their Right ⬅️]] [[Hand ✋]] with your [[Left ⬅️]] [[Hand ✋]] in between thumb and indes finger
+1. - Grab [[Their Right ⬅️]] [[Hand ✋]] with your [[Left ⬅️]] [[Hand ✋]] in between thumb and indexc finger
 2. - [[Right ➡️]] [[Foot 🦶]] forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
 3. - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] [[To 🎯]] their chin

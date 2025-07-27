@@ -19,4 +19,4 @@
 6. - Check [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]] with your [[Left ⬅️]] [[Hand ✋]]
 7. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
 8. - [[Right ➡️]] lifting [[Back Knuckle 🔙✊💥]] [[To 🎯]] their [[Face 😐]]
-9. - [[Cover Right before Left 🦶🔄]]
+9. - [[Cover Right before Left 🦶🔄]] towards [[300 ➡️]]

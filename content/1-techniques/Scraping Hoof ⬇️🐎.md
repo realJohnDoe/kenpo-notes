@@ -10,7 +10,7 @@ Attempted [[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Web of Knowle
 
 1. - Drive both arms [[Downward ⬇️]] toward the ground
     - Deliver a rear head butt [[To 🎯]] the [[Face 😐]]
-2. - Pin [[To 🎯|🎯]] opponents [[Arm 💪]]s
+2. - [[Pin 📌]] [[To 🎯|🎯]] opponents [[Arm 💪]]s
     - [[Right ➡️]] rear heel [[Scoop Kick 🥄🦶💥]] [[To 🎯]] the [[Left ⬅️]] [[Knee 🦵]]
 3. - [[Right ➡️]] knife edge kick [[To 🎯]] the [[Right ➡️]] [[Knee 🦵]] 
     - [[Right ➡️]] [[Downward ⬇️]] foot stomp on [[To 🎯|🎯]] the opponent's [[Right ➡️]] instep

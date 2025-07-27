@@ -15,7 +15,7 @@ Two-hand grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]],
 3. - [[Right ➡️]] [[Hand ✋]] to the hip to pull them down
 4. - [[Right ➡️]] [[Handsword ✋⚔️💥]] [[To 🎯]] their neck
 5. - [[Right ➡️]] [[Hand ✋]] down again to remove [[To 🎯|🎯]] their grip
-6. - [[Right ➡️]] Sandwich [[Elbow 💪💥]]
+6. - [[Right ➡️]] [[Sandwich 🥪 Elbow 💪💥]]
 7. - [[Cover Right before Left 🦶🔄]]
 
 ## Alternative Video 🎥
