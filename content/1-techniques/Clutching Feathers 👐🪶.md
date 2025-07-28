@@ -17,3 +17,4 @@ Hair Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]] 
     - [[Left ⬅️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the opponent's [[Face 😐]]
 3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯|Through 🎯]] opponent's [[Face 😐]]
+4. [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]

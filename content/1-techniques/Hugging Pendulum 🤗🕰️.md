@@ -11,14 +11,14 @@
 1. - Shuffle back in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Block 🛡️]]
 2. - [[Left ⬅️]] [[Foot 🦶]] crosses into Twist Stance
-    - [[Right ➡️]] [[Hand ✋]] towards [[Left ⬅️]] hip to prepare, hugging ourselves, thus the name
+    - [[Right ➡️]] [[Hand ✋]] towards [[Left ⬅️]] hip to load , hugging ourselves, thus the name
     - [[Left ⬅️]] [[Hand ✋]] checks their [[Right ➡️]] shoulder
 3. - [[Right ➡️]] [[Side Kick ➡️🦶💥]] [[To 🎯]] their [[Left ⬅️]] [[Knee 🦵]]
 4. - Land in [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] their left kidney
 5. - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their face
-6. [[Cover Left before Right 🦶🔃]] towards [[730 ↙️]]
+6. - [[Cover Left before Right 🦶🔃]] towards [[730 ↙️]]
 
 ## Alternative Video 🎥
 
