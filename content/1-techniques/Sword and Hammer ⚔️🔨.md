@@ -1,6 +1,6 @@
 ## Video 🎥
 
-<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=14&end=27" width="100%" height="400"></iframe>
+<iframe src="https://www.youtube.com/embed/Rehq34H632w" width="100%" height="400"></iframe>
 
 ## Defense Against 🤺
 
@@ -12,3 +12,8 @@
 2. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]]
+4. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/IXZ6kr4VHQw?start=14&end=27" width="100%" height="400"></iframe>
