@@ -16,6 +16,6 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[24]]
 4. - Land with [[Right ➡️]] [[Foot 🦶]] at [[730 ↙️]] in a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 	- Hit [[To 🎯|🎯]] their [[Elbow 💪]] with a [[Left ⬅️]] [[Heel Palm ✋🌴💥]]
 5. - [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
-6. - Land with [[Left ⬅️]] [[Foot 🦶]] at [[1030 ↖️]] in twist stance left before right
+6. - Land with [[Left ⬅️]] [[Foot 🦶]] at [[1030 ↖️]] in [[Twist Stance 🔄🧍‍♂️]] left before right
 7. - Push [[Left ⬅️]] fist [[To 🎯|Into 🎯]] their [[Elbow 💪]] to bring them down
 8. - [[Cover Left before Right 🦶🔃]]

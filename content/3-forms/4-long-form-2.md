@@ -40,7 +40,7 @@ title: Long Form 2
 	1. Towards [[130 ↗️]]
 		1. - [[Left ⬅️]] [[Foot 🦶]] crosses in front into [[Left ⬅️]] Twist Stance
 	        - [[Right ➡️]] Fist knocks on [[To 🎯|🎯]] their nose
-		2. Unwind the twist by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
+		2. Unwind the [[Twist Stance 🔄🧍‍♂️]] by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
 	        - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]] [[To 🎯]] their chin
 		3. - [[Left ⬅️]] poke [[To 🎯]] their eye
 		4. - [[Right ➡️]] poke [[To 🎯]] their eye
