@@ -8,8 +8,8 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 4. 3br21
 5. 2br10
 6. o10: [[Buckling Branch ⤴️🌳]]
-7. gr10: [[Circles of Protection 🔵🛡️]]
-8. l12: [[Circling Wing 🔵🪽]]
+7. gr10: [[Circles of Protection ⭕🛡️]]
+8. l12: [[Circling Wing ⭕🪽]]
 9. l8: [[Charging Ram ⚡🐏]]
 10. gr15
 11. bl15: [[Crossed Twigs ❌🌿]]

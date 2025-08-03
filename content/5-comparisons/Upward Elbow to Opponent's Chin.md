@@ -1,4 +1,4 @@
 - [[Captured Twigs 🕸️🌿]]
 - [[Crushing Hammer 💥🔨]]
 - [[Swinging Pendulum 🏌🕰️]]
-- [[Circling Wing 🔵🪽]]
+- [[Circling Wing ⭕🪽]]

@@ -16,7 +16,7 @@ aliases:
 ## [[3. Purple Belt 🟣|Purple Belt 🟣]]
 
 - [[Parting Wings 🥳🪽]]
-- [[Circling Wing 🔵🪽]]
+- [[Circling Wing ⭕🪽]]
 - [[Twirling Wings 🌀🪽]]
 - [[Hooking Wings 🪝🪽]]
 - [[Spiraling Twig 🌀🌿]]
@@ -27,7 +27,7 @@ aliases:
 - [[Repeated Devastation ↔️💥]]
 - [[Wings of Silk 🪽🧵]]
 - [[Thrusting Wedge 🗡️🔼]]
-- Destructive Twins
+- [[Destructive Twins 💥👯‍♂️]]
 - Crossed Twigs
 - [[Hugging Pendulum 🤗🕰️]]
 - [[Raking Mace 🧹✊]]
