@@ -63,7 +63,7 @@ cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-am
 59. o20: [[Thrusting Prongs 🗡️🍴]]
 60. bl2: [[Thrusting Wedge 🗡️🔼]]
 61. o2: [[Triggered Salute 🔫🫡]]
-62. bl12: [[Tripping Arrow 🏹]]
+62. bl12: [[Tripping Arrow 🪤🏹]]
 63. 2br2
 64. l1: [[Twirling Wings 🌀🪽]]
 65. o21: [[Twisted Twig 🔀🌿]]

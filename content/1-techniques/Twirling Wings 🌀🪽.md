@@ -13,3 +13,4 @@
     - [[Left ⬅️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 4. - [[Left ⬅️]] [[Inward 🔽]] [[Elbow 💪💥]]
+5. - [[Cover Left before Right 🦶🔃]] towards [[1030 ↖️]]
