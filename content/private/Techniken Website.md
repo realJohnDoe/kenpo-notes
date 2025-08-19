@@ -1,6 +1,7 @@
 https://karate-esslingen.de/techniken/
 https://karate-esslingen.de/formen-und-sets/
-cf. [this list](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-american-kenpo-techniques-24/)
+cf. [Ironjourney-Kenpo](https://www.ironjourney-kenpo.com/kenpo-techniques/ed-parkers-american-kenpo-techniques-24/)
+cf. [Fresno Kenpo Karate](https://fresnokenpokarate.com/training-video/)
 
 1. g9: [[Attacking Mace 💥✊]]
 2. g2: [[Alternating Maces 🔄✊]]
