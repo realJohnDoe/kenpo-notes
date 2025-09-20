@@ -24,7 +24,7 @@ Here are the different sections of this page:
 - [[2-belts/index|Belts]]
 - [[3-forms/index|Forms]]
 - [[4-sets/index|Sets]]
-- [[5-comparisons/index|Comparisons]]
+- [[6-comparisons/index|Comparisons]]
 
 There are also the focus techniques in our Dojo:
 
