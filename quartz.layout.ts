@@ -17,7 +17,7 @@ export const sharedPageComponents: SharedLayout = {
 const defaultExplorer = Component.Explorer({
   filterFn: (node) => {
     // set containing names of everything you want to filter out
-    const omit = new Set(["Numbers/index", "single-techniques/index", "web-of-knowledge/index", "impressum"])
+    const omit = new Set(["numbers/index", "single-techniques/index", "web-of-knowledge/index", "drills/index", "impressum"])
     return !omit.has(node.slug)
   },
   sortFn: (a, b) => {
@@ -38,8 +38,9 @@ const defaultExplorer = Component.Explorer({
     } else {
       return -1
     }
-  }})
-  
+  }
+})
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
