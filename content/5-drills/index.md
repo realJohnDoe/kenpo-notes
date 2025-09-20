@@ -1,3 +1,5 @@
 ---
 title: Drills
+aliases:
+  - Drills
 ---
