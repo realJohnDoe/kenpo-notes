@@ -15,3 +15,7 @@
 4. - Ram [[Left ⬅️]] [[Elbow 💪💥]] down [[To 🎯|🎯]] the spine
 5. - [[Left ⬅️]] [[Downward ⬇️]] [[Elbow 💪💥]] strike
 6. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/1qt9F2ogbMA?start=25" width="100%" height="400"></iframe>

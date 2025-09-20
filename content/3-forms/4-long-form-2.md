@@ -17,7 +17,7 @@ title: Long Form 2
 		3. [[Right ➡️]] [[Uppercut Punch 🔝✊💥]] but with [[Handsword ✋⚔️💥]]
 	2. Same with left toward [[1200 ⬆️]]
 	3. Left toward [[900 ⬅️]]
-		1. [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]] and [[Left ⬅️]] [[Outward 🔼]] [[Block 🛡️]] at the same time
+		1. [[Right ➡️]] Punch to the [[Left ⬅️]] and [[Left ⬅️]] [[Outward 🔼]] [[Block 🛡️]] at the same time
 		2. [[Left ⬅️]] [[Punch 👊💥]] to the [[Left ⬅️]]
 		3. [[Right ➡️]] [[Punch 👊💥]] to the [[Left ⬅️]]
 		4. [[Left ⬅️]] [[Punch 👊💥]] to the [[Left ⬅️]] and [[Left ⬅️]][[Side Kick ➡️🦶💥]] at the same time

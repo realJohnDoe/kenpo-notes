@@ -12,7 +12,7 @@
 2. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]]
-4. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
+4. - [[Cover Right before Left 🦶🔄]] towards [[1030 ↖️]]
 
 ## Alternative Video 🎥
 

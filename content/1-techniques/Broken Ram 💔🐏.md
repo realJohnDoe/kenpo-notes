@@ -15,6 +15,6 @@ Tackle with [[Their Left ➡️]] [[Arm 💪]] around our back ([[1-grabs-and-ta
 3. - [[Right ➡️]] [[Uppercut Punch 🔝✊💥]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 4. - [[Right ➡️]] [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Groin 🩲]]
     - [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] their [[Face 😐]]
-5. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] 
+5. - Buckle: [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]] 
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their [[Face 😐]]
 6. - [[Cover Right before Left 🦶🔄]] towards [[430 ↘️]]
