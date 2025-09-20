@@ -28,7 +28,7 @@ aliases:
 - [[Wings of Silk 🪽🧵]]
 - [[Thrusting Wedge 🗡️🔼]]
 - [[Destructive Twins 💥👯‍♂️]]
-- Crossed Twigs
+- [[Crossed Twigs ❌🌿]]
 - [[Hugging Pendulum 🤗🕰️]]
 - [[Raking Mace 🧹✊]]
 

@@ -26,11 +26,11 @@ Here are the different sections of this page:
 - [[4-sets/index|Sets]]
 - [[5-comparisons/index|Comparisons]]
 
-There are also the focus techniques in our Dojo:
+There are also the first two parts of the focus techniques in our Dojo:
 
 - [[1-beginners-techniques|Beginner's Techniques]]
 - [[2-intermediate-techniques|Intermediate Techniques]]
-- [[3-advanced-techniques|Advanced Techniques]]
+- [[3-advanced-techniques]]
 
 And finally, the Kenpo [[4-salutation|Salutation]].
 
@@ -39,7 +39,7 @@ improvement.
 
 [GitHub]: https://github.com/realJohnDoe/kenpo-quartz
 
-Main Kudos for teaching me Kenpo go to my [Dojo in Esslingen] 🙏.
+Main Kudos for introducing me to Kenpo go to my [Dojo in Esslingen] 🙏.
 
 [Dojo in Esslingen]: https://karate-esslingen.de/
 [Alternative]: https://bushido-esslingen.de/
