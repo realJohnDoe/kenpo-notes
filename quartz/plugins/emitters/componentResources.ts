@@ -159,6 +159,9 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       posthog.init('${cfg.analytics.apiKey}', {
         api_host: '${cfg.analytics.host ?? "https://app.posthog.com"}',
         capture_pageview: false,
+      });
+      document.addEventListener('nav', () => {
+        posthog.capture('$pageview', { path: location.pathname });
       })\`
       posthogScript.onload = () => {
         posthog.capture('$pageview', { path: location.pathname });
@@ -200,6 +203,46 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "${cfg.analytics.projectId}");\`
       document.head.appendChild(clarityScript)
+    `)
+  } else if (cfg.analytics?.provider === "matomo") {
+    componentResources.afterDOMLoaded.push(`
+      const matomoScript = document.createElement("script");
+      matomoScript.innerHTML = \`
+      let _paq = window._paq = window._paq || [];
+
+      // Track SPA navigation
+      // https://developer.matomo.org/guides/spa-tracking
+      document.addEventListener("nav", () => {
+        _paq.push(['setCustomUrl', location.pathname]);
+        _paq.push(['setDocumentTitle', document.title]);
+        _paq.push(['trackPageView']);
+      });
+
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        const u="//${cfg.analytics.host}/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', ${cfg.analytics.siteId}]);
+        const d=document, g=d.createElement('script'), s=d.getElementsByTagName
+('script')[0];
+        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+      \`
+      document.head.appendChild(matomoScript);
+    `)
+  } else if (cfg.analytics?.provider === "vercel") {
+    /**
+     * script from {@link https://vercel.com/docs/analytics/quickstart?framework=html#add-the-script-tag-to-your-site|Vercel Docs}
+     */
+    componentResources.beforeDOMLoaded.push(`
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    `)
+    componentResources.afterDOMLoaded.push(`
+      const vercelInsightsScript = document.createElement("script")
+      vercelInsightsScript.src = "/_vercel/insights/script.js"
+      vercelInsightsScript.defer = true
+      document.head.appendChild(vercelInsightsScript)
     `)
   }
 

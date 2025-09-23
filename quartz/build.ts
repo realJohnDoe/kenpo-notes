@@ -2,9 +2,9 @@ import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
-import { rimraf } from "rimraf"
+import { rm } from "fs/promises"
 import { GlobbyFilterFunction, isGitIgnored } from "globby"
-import chalk from "chalk"
+import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
@@ -67,7 +67,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   const release = await mut.acquire()
   perf.addEvent("clean")
-  await rimraf(path.join(output, "*"), { glob: true })
+  await rm(output, { recursive: true, force: true })
   console.log(`Cleaned output directory \`${output}\` in ${perf.timeSince("clean")}`)
 
   perf.addEvent("glob")

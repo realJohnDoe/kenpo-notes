@@ -1,4 +1,3 @@
-import { FilePath, joinSegments } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 import fs from "fs"
 import chalk from "chalk"
@@ -15,8 +14,7 @@ export const CNAME: QuartzEmitterPlugin = () => ({
       console.warn(chalk.yellow("CNAME emitter requires `baseUrl` to be set in your configuration"))
       return []
     }
-    const path = joinSegments(argv.output, "CNAME")
-    const content = extractDomainFromBaseUrl(cfg.configuration.baseUrl)
+    const content = extractDomainFromBaseUrl(ctx.cfg.configuration.baseUrl)
     if (!content) {
       return []
     }
