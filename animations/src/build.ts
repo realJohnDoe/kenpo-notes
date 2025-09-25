@@ -256,5 +256,5 @@ writeFileSync(outPath, htmlContent);
 console.log(`✅ Generated ${outPath}`);
 
 // Copy Anime.js (minified) into the same folder so the HTML is self‑contained
-const animeSrc = resolve(__dirname, "../node_modules/animejs/lib/anime.esm.js");
-copyFileSync(animeSrc, resolve(distDir, "anime.esm.js"));
+const animeSrc = resolve(__dirname, "../node_modules/animejs/lib/anime.js");
+copyFileSync(animeSrc, resolve(distDir, "anime.js"));

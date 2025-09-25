@@ -25,9 +25,8 @@
     <!-- SVG placeholder – the generator will inject shapes/text here -->
     {{SVG_CONTENT}}
 
-    <script type="module">
-      import * as anime from './anime.esm.js';
-
+    <script src="./anime.js"></script>
+    <script>
       // Timeline data is injected by the generator
       const timelineData = {{TIMELINE_JSON}};
 
