@@ -131,7 +131,7 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
 
 
 
-function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, toPos: {cx: number, cy: number}) {
+function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }) {
     return {
         targets: targetId,
         cx: [fromPos.cx, toPos.cx],
@@ -141,7 +141,7 @@ function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, t
     };
 }
 
-function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rotate: number}, toPos: {x: number, y: number, rotate: number}) {
+function createPointerAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
@@ -157,23 +157,28 @@ function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rot
 }
 
 function generateGrid(canvasWidth: number, canvasHeight: number, gridSize: number): string {
-    const xOffset = 0.5 * gridSize;
     const gridColor = "#e0e0e0";
     const centerX = canvasWidth / 2;
     const centerY = canvasHeight / 2;
     let gridElems = "";
 
+    // Vertical lines
     for (let i = 0; i <= Math.ceil(centerX / gridSize); i++) {
-        let xPos = centerX + (i * gridSize) + xOffset;
+        // Positive side from center
+        let xPos = centerX + (i * gridSize);
         if (xPos < canvasWidth) {
             gridElems += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
         }
-        let xNeg = centerX - (i * gridSize) - xOffset;
-        if (xNeg > 0) {
-            gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+        // Negative side from center (don't redraw center line)
+        if (i > 0) {
+            let xNeg = centerX - (i * gridSize);
+            if (xNeg > 0) {
+                gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+            }
         }
     }
 
+    // Horizontal lines
     for (let i = 0; i <= Math.ceil(centerY / gridSize); i++) {
         if (i === 0) {
             gridElems += `<line x1="0" y1="${centerY}" x2="${canvasWidth}" y2="${centerY}" stroke="${gridColor}" stroke-width="1" />`;
@@ -208,7 +213,7 @@ function generateCenterMarker(canvasWidth: number, canvasHeight: number): string
     return `<circle cx="${centerX}" cy="${centerY}" r="5" fill="gray" />`;
 }
 
-function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, gridSize: number): any[] {
+function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): any[] {
     const timelineData = [];
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
@@ -216,7 +221,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
         if (lastConfig.offsetY === undefined) lastConfig.offsetY = 0;
 
         for (let i = 0; i < cfg.steps.length - 1; i++) {
-            const fromCoords = getPersonShapeCoordinates(lastConfig, canvasWidth, canvasHeight, gridSize);
+            const fromCoords = getPersonShapeCoordinates(lastConfig, canvasWidth, canvasHeight, unitSize);
 
             const toStep = cfg.steps[i + 1];
             const pivot = toStep.pivot;
@@ -232,7 +237,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
 
                 const centerX = canvasWidth / 2;
                 const centerY = canvasHeight / 2;
-                const unit = gridSize;
+                const unit = unitSize;
 
                 const toOffsetX = (fromPivotCoords.cx - centerX) / unit - toPivotMath.x;
                 const toOffsetY = (centerY - fromPivotCoords.cy) / unit - toPivotMath.y;
@@ -241,7 +246,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
                 nextConfig.offsetY = toOffsetY;
             }
             
-            const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, gridSize);
+            const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, unitSize);
             
             const stepAnims = [];
 
@@ -285,14 +290,15 @@ const cfg = yaml.parse(rawYaml);
 cfg.canvas.width = 600;
 cfg.canvas.height = 600;
 
-// Grid parameters
-const gridSize = 60;
+// Unit and grid parameters
+const unitSize = 60; // 1 unit = 60 pixels
+const visualGridSize = 30; // Draw a grid line every 30 pixels
 
 // Generate SVG parts
-const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, gridSize);
+const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, visualGridSize);
 const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
 const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
-const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, gridSize);
+const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
 const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir
@@ -302,7 +308,7 @@ if (!existsSync(distDir)) {
 }
 
 // Generate animation data
-const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, gridSize);
+const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
 
 // Build and write the final HTML
 buildAndWriteHtml(cfg, svgContent, timelineData, distDir, yamlPath);
@@ -310,4 +316,3 @@ buildAndWriteHtml(cfg, svgContent, timelineData, distDir, yamlPath);
 // Copy Anime.js
 const animeSrc = resolve(__dirname, "../node_modules/animejs/lib/anime.js");
 copyFileSync(animeSrc, resolve(distDir, "anime.js"));
-
