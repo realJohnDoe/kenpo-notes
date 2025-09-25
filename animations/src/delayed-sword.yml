@@ -12,6 +12,7 @@ steps:
   - stance: "right_cat"
     direction: 1200
     pivot: "left"
+    duration: 0.5
   - stance: "right_neutral"
     direction: 1200
     pivot: "left"

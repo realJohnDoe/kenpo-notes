@@ -131,17 +131,17 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
 
 
 
-function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }) {
+function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, toPos: {cx: number, cy: number}, duration: number) {
     return {
         targets: targetId,
         cx: [fromPos.cx, toPos.cx],
         cy: [fromPos.cy, toPos.cy],
-        duration: 1000,
+        duration: duration,
         easing: 'easeInOutSine'
     };
 }
 
-function createPointerAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }) {
+function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rotate: number}, toPos: {x: number, y: number, rotate: number}, duration: number) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
@@ -151,7 +151,7 @@ function createPointerAnim(targetId: string, fromPos: { x: number, y: number, ro
         translateX: [fromPos.x, toPos.x],
         translateY: [fromPos.y, toPos.y],
         rotate: `+=${diff}`,
-        duration: 1000,
+        duration: duration,
         easing: 'easeInOutSine'
     };
 }
@@ -217,7 +217,7 @@ function generateVignette(canvasWidth: number, canvasHeight: number): string {
     return `
         <defs>
             <radialGradient id="vignetteGradient" cx="50%" cy="50%" r="50%">
-                <stop offset="50%" stop-color="white" stop-opacity="0" />
+                <stop offset="30%" stop-color="white" stop-opacity="0" />
                 <stop offset="100%" stop-color="white" stop-opacity="1" />
             </radialGradient>
         </defs>
@@ -226,6 +226,7 @@ function generateVignette(canvasWidth: number, canvasHeight: number): string {
 }
 
 function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): any[] {
+    const baseAnimationDuration = 1000; // Define base duration here
     const timelineData = [];
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
@@ -241,6 +242,9 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
             let nextConfig = { ...toStep };
             nextConfig.offsetX = lastConfig.offsetX;
             nextConfig.offsetY = lastConfig.offsetY;
+
+            // Calculate actual duration for this step
+            const stepAnimationDuration = baseAnimationDuration * (toStep.duration !== undefined ? toStep.duration : 1);
 
             if (pivot === 'left' || pivot === 'right') {
                 const fromPivotCoords = (pivot === 'left') ? fromCoords.leftFootCircle : fromCoords.rightFootCircle;
@@ -262,13 +266,13 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
             
             const stepAnims = [];
 
-            stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
-            stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle));
-            stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog));
+            stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle, stepAnimationDuration));
+            stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle, stepAnimationDuration));
+            stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog, stepAnimationDuration));
 
-            stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer));
-            stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer));
-            stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
+            stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer, stepAnimationDuration));
+            stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer, stepAnimationDuration));
+            stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
 
             let labelInfo = null;
             if (toStep.labels && Array.isArray(toStep.labels)) {
@@ -278,7 +282,8 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
                 const bottomY = canvasHeight - 40;
                 labelInfo = {
                     texts: toStep.labels,
-                    y: cogY > canvasCenterY ? topY : bottomY
+                    y: cogY > canvasCenterY ? topY : bottomY,
+                    duration: stepAnimationDuration
                 };
             }
 
