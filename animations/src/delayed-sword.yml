@@ -1,0 +1,15 @@
+title: "Delayed Sword"
+canvas:
+  width: 600
+  height: 600
+steps:
+  - person:
+      stance: "attention"
+      direction: 1200
+      offsetX: 0
+      offsetY: 0
+  - person:
+      stance: "rightNeutralBow"
+      direction: 1200
+      offsetX: 0
+      offsetY: 0
