@@ -8,7 +8,7 @@ steps:
   - stance: "right_neutral"
     direction: 1200
     pivot: "right"
-    labels: ["Right Inward Block"]
+    labels: ["Right Inward Block ➡️🔽🛡️"]
   - stance: "right_cat"
     direction: 1200
     pivot: "left"
@@ -16,4 +16,5 @@ steps:
   - stance: "right_neutral"
     direction: 1200
     pivot: "left"
-    labels: ["Right Front Kick", "Right Outward Handsword"]
+    labels: ["Right Front Kick ➡️⬆️🦶💥", "Right Outward Handsword ➡️🔼✋⚔️💥"]
+    duration: 1.5
