@@ -12,30 +12,34 @@ const directionToDegrees = (dir: number) => {
     }
 };
 
-const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, footRotation: number } } = {
+const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } } = {
     "attention": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: 0 },
-        footRotation: 0
+        leftFootRotation: 0,
+        rightFootRotation: 0
     },
     "right_neutral_bow": {
         leftFoot: { x: -0.5, y: -1 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: -0.5 },
-        footRotation: -45
+        leftFootRotation: -45,
+        rightFootRotation: -45
     },
     "left_neutral_bow": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: -1 },
         cog: { x: 0, y: -0.5 },
-        footRotation: 45
+        leftFootRotation: 45,
+        rightFootRotation: 45
     },
     "right_cat": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0, y: 0.5 },
         cog: { x: -0.25, y: 0.25 },
-        footRotation: 0
+        leftFootRotation: -45,
+        rightFootRotation: 0
     }
 };
 
@@ -50,7 +54,8 @@ function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeig
     const rotationDegrees = directionToDegrees(direction);
 
     const currentStance = stances[stance] || stances["attention"]; // Default to attention
-    const footRotationDegrees = currentStance.footRotation; // Retrieve from stance definition
+    const leftFootRotationDegrees = currentStance.leftFootRotation; // Retrieve from stance definition
+    const rightFootRotationDegrees = currentStance.rightFootRotation;
 
     // Define base positions in mathematical units (relative to (0,0))
     let leftFootMathX = currentStance.leftFoot.x;
@@ -71,7 +76,7 @@ function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeig
     // Left Foot Pointer (relative to leftFootSvgX, leftFootSvgY)
     // Points are defined relative to the circle's center for rotation
     const leftPointerPoints = `-4,-5 4,-5 0,-15`; // Relative to circle center
-    shapesSvg += `<polygon id="leftFootPointer" points="${leftPointerPoints}" fill="blue" transform="translate(${leftFootSvgX}, ${leftFootSvgY}) rotate(${rotationDegrees + footRotationDegrees})" />`;
+    shapesSvg += `<polygon id="leftFootPointer" points="${leftPointerPoints}" fill="blue" transform="translate(${leftFootSvgX}, ${leftFootSvgY}) rotate(${rotationDegrees + leftFootRotationDegrees})" />`;
 
 
     // Right Foot
@@ -80,7 +85,7 @@ function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeig
     shapesSvg += `<circle id="rightFootCircle" cx="${rightFootSvgX}" cy="${rightFootSvgY}" r="5" fill="blue" />`;
     // Right Foot Pointer
     const rightPointerPoints = `-4,-5 4,-5 0,-15`; // Relative to circle center
-    shapesSvg += `<polygon id="rightFootPointer" points="${rightPointerPoints}" fill="blue" transform="translate(${rightFootSvgX}, ${rightFootSvgY}) rotate(${rotationDegrees + footRotationDegrees})" />`;
+    shapesSvg += `<polygon id="rightFootPointer" points="${rightPointerPoints}" fill="blue" transform="translate(${rightFootSvgX}, ${rightFootSvgY}) rotate(${rotationDegrees + rightFootRotationDegrees})" />`;
 
     // Center of Gravity
     const cogSvgX = toSvgX(cogMathX);
@@ -103,7 +108,8 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
     const rotationDegrees = directionToDegrees(direction);
 
     const currentStance = stances[stance] || stances["attention"];
-    const footRotationDegrees = currentStance.footRotation;
+    const leftFootRotationDegrees = currentStance.leftFootRotation;
+    const rightFootRotationDegrees = currentStance.rightFootRotation;
 
     const toSvgX = (mathX: number) => (mathX + offsetX) * unit + centerX;
     const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit); // Flipped Y
@@ -117,9 +123,9 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
 
     return {
         leftFootCircle: { cx: leftFootSvgX, cy: leftFootSvgY },
-        leftFootPointer: { x: leftFootSvgX, y: leftFootSvgY, rotate: rotationDegrees + footRotationDegrees },
+        leftFootPointer: { x: leftFootSvgX, y: leftFootSvgY, rotate: rotationDegrees + leftFootRotationDegrees },
         rightFootCircle: { cx: rightFootSvgX, cy: rightFootSvgY },
-        rightFootPointer: { x: rightFootSvgX, y: rightFootSvgY, rotate: rotationDegrees + footRotationDegrees },
+        rightFootPointer: { x: rightFootSvgX, y: rightFootSvgY, rotate: rotationDegrees + rightFootRotationDegrees },
         cog: { cx: cogSvgX, cy: cogSvgY },
         cogPointer: { x: cogSvgX, y: cogSvgY, rotate: rotationDegrees }
     };
