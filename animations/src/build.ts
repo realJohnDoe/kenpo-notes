@@ -194,51 +194,48 @@ if (cfg.steps.length > 1) {
     for (let i = 0; i < cfg.steps.length - 1; i++) {
         const toStep = cfg.steps[i+1];
         const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
+        const stepAnims = [];
 
-        timelineData.push({
+        stepAnims.push({
             targets: '#leftFootCircle',
             cx: toCoords.leftFootCircle.cx,
             cy: toCoords.leftFootCircle.cy,
             duration: 1000,
             easing: 'easeInOutSine'
         });
-        timelineData.push({
+        stepAnims.push({
             targets: '#rightFootCircle',
             cx: toCoords.rightFootCircle.cx,
             cy: toCoords.rightFootCircle.cy,
             duration: 1000,
-            easing: 'easeInOutSine',
-            offset: 0
+            easing: 'easeInOutSine'
         });
-        timelineData.push({
+        stepAnims.push({
             targets: '#cog',
             cx: toCoords.cog.cx,
             cy: toCoords.cog.cy,
             duration: 1000,
-            easing: 'easeInOutSine',
-            offset: 0
+            easing: 'easeInOutSine'
         });
-        timelineData.push({
+        stepAnims.push({
             targets: '#leftFootPointer',
             transform: `translate(${toCoords.leftFootPointer.x}, ${toCoords.leftFootPointer.y}) rotate(${toCoords.leftFootPointer.rotate})`,
             duration: 1000,
-            easing: 'easeInOutSine',
-            offset: 0
+            easing: 'easeInOutSine'
         });
-        timelineData.push({
+        stepAnims.push({
             targets: '#rightFootPointer',
             transform: `translate(${toCoords.rightFootPointer.x}, ${toCoords.rightFootPointer.y}) rotate(${toCoords.rightFootPointer.rotate})`,
             duration: 1000,
-            easing: 'easeInOutSine',
-            offset: 0
+            easing: 'easeInOutSine'
         });
-        timelineData.push({
+        stepAnims.push({
             targets: '#cogPointer',
             transform: `translate(${toCoords.cogPointer.x}, ${toCoords.cogPointer.y}) rotate(${toCoords.cogPointer.rotate})`,
             duration: 1000,
-            easing: 'easeInOutSine',
-            offset: 0
+            easing: 'easeInOutSine'
         });
+        timelineData.push(stepAnims);
     }
 }
 

@@ -36,9 +36,15 @@
 
       const tl = anime.timeline({autoplay:true, loop:false});
       console.log("Timeline object:", tl);
-      timelineData.forEach(step => {
-        console.log("Adding step:", step);
-        tl.add(step);
+      timelineData.forEach(stepAnims => {
+        if (stepAnims.length > 0) {
+          const firstAnimation = stepAnims[0];
+          tl.add(firstAnimation);
+          // Add subsequent animations for this step at the same time as the first
+          for (let i = 1; i < stepAnims.length; i++) {
+            tl.add(stepAnims[i], `-=${firstAnimation.duration}`);
+          }
+        }
       });
       console.log("Timeline object after add:", tl);
     </script>
