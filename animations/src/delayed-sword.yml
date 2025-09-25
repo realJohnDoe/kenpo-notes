@@ -6,15 +6,15 @@ steps:
   - person:
       stance: "attention"
       direction: 1200
-      offsetX: 0
-      offsetY: 0
   - person:
       stance: "right_neutral_bow"
       direction: 1200
-      offsetX: 0
-      offsetY: 0
+      pivot: "right"
   - person:
       stance: "right_cat"
       direction: 1200
-      offsetX: 0
-      offsetY: 0
+      pivot: "left"
+  - person:
+      stance: "right_neutral_bow"
+      direction: 1200
+      pivot: "left"

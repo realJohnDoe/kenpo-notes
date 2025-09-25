@@ -205,11 +205,38 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
 function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, gridSize: number): any[] {
     const timelineData = [];
     if (cfg.steps.length > 1) {
+        let lastConfig = { ...cfg.steps[0].person };
+        if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
+        if (lastConfig.offsetY === undefined) lastConfig.offsetY = 0;
+
         for (let i = 0; i < cfg.steps.length - 1; i++) {
-            const fromStep = cfg.steps[i];
+            const fromCoords = getPersonShapeCoordinates(lastConfig, canvasWidth, canvasHeight, gridSize);
+
             const toStep = cfg.steps[i + 1];
-            const fromCoords = getPersonShapeCoordinates(fromStep.person, canvasWidth, canvasHeight, gridSize);
-            const toCoords = getPersonShapeCoordinates(toStep.person, canvasWidth, canvasHeight, gridSize);
+            const pivot = toStep.person.pivot;
+            
+            let nextConfig = { ...toStep.person };
+            nextConfig.offsetX = lastConfig.offsetX;
+            nextConfig.offsetY = lastConfig.offsetY;
+
+            if (pivot === 'left' || pivot === 'right') {
+                const fromPivotCoords = (pivot === 'left') ? fromCoords.leftFootCircle : fromCoords.rightFootCircle;
+                const toStance = stances[toStep.person.stance];
+                const toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
+
+                const centerX = canvasWidth / 2;
+                const centerY = canvasHeight / 2;
+                const unit = gridSize;
+
+                const toOffsetX = (fromPivotCoords.cx - centerX) / unit - toPivotMath.x;
+                const toOffsetY = (centerY - fromPivotCoords.cy) / unit - toPivotMath.y;
+
+                nextConfig.offsetX = toOffsetX;
+                nextConfig.offsetY = toOffsetY;
+            }
+            
+            const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, gridSize);
+            
             const stepAnims = [];
 
             stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
@@ -221,6 +248,8 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
             stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
 
             timelineData.push(stepAnims);
+
+            lastConfig = nextConfig;
         }
     }
     return timelineData;
