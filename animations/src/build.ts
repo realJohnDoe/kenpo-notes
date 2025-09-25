@@ -3,13 +3,11 @@ import { resolve, parse } from "path";
 import * as yaml from "yaml";
 
 const directionToDegrees = (dir: number) => {
-    switch (dir) {
-        case 1200: return 0;   // Up
-        case 300: return 90;  // Right
-        case 600: return 180; // Down
-        case 900: return 270; // Left
-        default: return 0;   // Default to up
-    }
+    const hours = Math.floor(dir / 100);
+    const minutes = dir % 100;
+    const decimalHours = hours + (minutes / 60);
+    const normalizedHours = decimalHours === 12 ? 0 : decimalHours;
+    return (normalizedHours / 12) * 360;
 };
 
 const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } } = {
@@ -24,22 +22,22 @@ const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot:
         leftFoot: { x: -0.5, y: -1 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: -0.5 },
-        leftFootRotation: -45,
-        rightFootRotation: -45
+        leftFootRotation: 1030,
+        rightFootRotation: 1030
     },
     "left_neutral_bow": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: -1 },
         cog: { x: 0, y: -0.5 },
-        leftFootRotation: 45,
-        rightFootRotation: 45
+        leftFootRotation: 130,
+        rightFootRotation: 130
     },
     "right_cat": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0, y: 0.5 },
         cog: { x: -0.25, y: 0.25 },
-        leftFootRotation: -45,
-        rightFootRotation: 0
+        leftFootRotation: 1030,
+        rightFootRotation: 1200
     }
 };
 
@@ -54,8 +52,8 @@ function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeig
     const rotationDegrees = directionToDegrees(direction);
 
     const currentStance = stances[stance] || stances["attention"]; // Default to attention
-    const leftFootRotationDegrees = currentStance.leftFootRotation; // Retrieve from stance definition
-    const rightFootRotationDegrees = currentStance.rightFootRotation;
+    const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation); // Retrieve from stance definition
+    const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
 
     // Define base positions in mathematical units (relative to (0,0))
     let leftFootMathX = currentStance.leftFoot.x;
@@ -108,8 +106,8 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
     const rotationDegrees = directionToDegrees(direction);
 
     const currentStance = stances[stance] || stances["attention"];
-    const leftFootRotationDegrees = currentStance.leftFootRotation;
-    const rightFootRotationDegrees = currentStance.rightFootRotation;
+    const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation);
+    const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
 
     const toSvgX = (mathX: number) => (mathX + offsetX) * unit + centerX;
     const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit); // Flipped Y
