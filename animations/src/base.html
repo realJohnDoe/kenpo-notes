@@ -122,6 +122,19 @@
 
 
       // Control functions
+      function getStepIndexFromTime(time) {
+        for (let i = 0; i < stepStartTimes.length - 1; i++) {
+            if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
+                return i;
+            }
+        }
+        // If at the very end or past the last step
+        if (time >= stepStartTimes[stepStartTimes.length - 1]) {
+            return stepStartTimes.length - 2; // Last actual step index
+        }
+        return 0; // Default to first step
+      }
+
       function goToStep(index) {
         const currentPlayTime = mainTl.currentTime;
         let targetTime;
@@ -169,11 +182,19 @@
       });
 
       prevBtn.addEventListener('click', () => {
-        goToStep(currentStepIndex - 1);
+        const currentIdx = getStepIndexFromTime(mainTl.currentTime);
+        if (mainTl.currentTime === stepStartTimes[currentIdx]) {
+            // If at the start of a step, go to the previous one
+            goToStep(currentIdx - 1);
+        } else {
+            // If within a step, go to the start of the current step
+            goToStep(currentIdx);
+        }
       });
 
       nextBtn.addEventListener('click', () => {
-        goToStep(currentStepIndex + 1);
+        const currentIdx = getStepIndexFromTime(mainTl.currentTime);
+        goToStep(currentIdx + 1);
       });
 
       // Initial state
