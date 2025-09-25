@@ -129,74 +129,7 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
     };
 }
 
-// Load YAML
-const yamlPath = resolve(__dirname, "../src/delayed-sword.yml");
-const rawYaml = readFileSync(yamlPath, "utf8");
-const cfg = yaml.parse(rawYaml);
 
-// Set canvas to 600x600
-cfg.canvas.width = 600;
-cfg.canvas.height = 600;
-
-// Grid parameters
-const gridSize = 60; // 1 unit = 60 pixels
-const xOffset = 0.5 * gridSize; // 0.5 unit offset for X lines = 30 pixels
-const gridColor = "#e0e0e0"; // Light gray
-const centerX = cfg.canvas.width / 2;
-const centerY = cfg.canvas.height / 2;
-
-// Generate grid lines
-let gridElems = "";
-
-// Vertical lines (with 0.5 offset, relative to center)
-for (let i = 0; i <= Math.ceil(centerX / gridSize); i++) {
-    // Positive side
-    let xPos = centerX + (i * gridSize) + xOffset;
-    if (xPos < cfg.canvas.width) {
-        gridElems += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${cfg.canvas.height}" stroke="${gridColor}" stroke-width="1" />`;
-    }
-    // Negative side
-    let xNeg = centerX - (i * gridSize) - xOffset;
-    if (xNeg > 0) {
-        gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${cfg.canvas.height}" stroke="${gridColor}" stroke-width="1" />`;
-    }
-}
-
-// Horizontal lines (no offset, relative to center)
-for (let i = 0; i <= Math.ceil(centerY / gridSize); i++) {
-    // Center line (y=0 in math coords)
-    if (i === 0) {
-        gridElems += `<line x1="0" y1="${centerY}" x2="${cfg.canvas.width}" y2="${centerY}" stroke="${gridColor}" stroke-width="1" />`;
-        continue;
-    }
-    // Positive side (y > 0 in math coords)
-    let yPos = centerY - (i * gridSize);
-    if (yPos > 0) {
-        gridElems += `<line x1="0" y1="${yPos}" x2="${cfg.canvas.width}" y2="${yPos}" stroke="${gridColor}" stroke-width="1" />`;
-    }
-    // Negative side (y < 0 in math coords)
-    let yNeg = centerY + (i * gridSize);
-    if (yNeg < cfg.canvas.height) {
-        gridElems += `<line x1="0" y1="${yNeg}" x2="${cfg.canvas.width}" y2="${yNeg}" stroke="${gridColor}" stroke-width="1" />`;
-    }
-}
-
-// Build SVG content
-let svgElems = gridElems; // Start with grid elements
-
-// Add direction labels
-svgElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200</text>`; // Up
-svgElems += `<text x="${cfg.canvas.width - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300</text>`; // Right
-svgElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">900</text>`; // Left
-svgElems += `<text x="${centerX}" y="${cfg.canvas.height - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600</text>`; // Down
-
-svgElems += generatePersonShapes(cfg.steps[0].person, cfg.canvas.width, cfg.canvas.height, gridSize);
-const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${svgElems}</svg>`;
-
-const distDir = resolve(__dirname, "../dist");
-if (!existsSync(distDir)) {
-    mkdirSync(distDir, { recursive: true });
-}
 
 function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, toPos: {cx: number, cy: number}) {
     return {
@@ -223,41 +156,122 @@ function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rot
     };
 }
 
-// --- Timeline generation ---
-const timelineData = [];
-if (cfg.steps.length > 1) {
-    for (let i = 0; i < cfg.steps.length - 1; i++) {
-        const fromStep = cfg.steps[i];
-        const toStep = cfg.steps[i + 1];
-        const fromCoords = getPersonShapeCoordinates(fromStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
-        const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
-        const stepAnims = [];
+function generateGrid(canvasWidth: number, canvasHeight: number, gridSize: number): string {
+    const xOffset = 0.5 * gridSize;
+    const gridColor = "#e0e0e0";
+    const centerX = canvasWidth / 2;
+    const centerY = canvasHeight / 2;
+    let gridElems = "";
 
-        stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
-        stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle));
-        stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog));
-
-        stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer));
-        stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer));
-        stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
-
-        timelineData.push(stepAnims);
+    for (let i = 0; i <= Math.ceil(centerX / gridSize); i++) {
+        let xPos = centerX + (i * gridSize) + xOffset;
+        if (xPos < canvasWidth) {
+            gridElems += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+        }
+        let xNeg = centerX - (i * gridSize) - xOffset;
+        if (xNeg > 0) {
+            gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+        }
     }
+
+    for (let i = 0; i <= Math.ceil(centerY / gridSize); i++) {
+        if (i === 0) {
+            gridElems += `<line x1="0" y1="${centerY}" x2="${canvasWidth}" y2="${centerY}" stroke="${gridColor}" stroke-width="1" />`;
+            continue;
+        }
+        let yPos = centerY - (i * gridSize);
+        if (yPos > 0) {
+            gridElems += `<line x1="0" y1="${yPos}" x2="${canvasWidth}" y2="${yPos}" stroke="${gridColor}" stroke-width="1" />`;
+        }
+        let yNeg = centerY + (i * gridSize);
+        if (yNeg < canvasHeight) {
+            gridElems += `<line x1="0" y1="${yNeg}" x2="${canvasWidth}" y2="${yNeg}" stroke="${gridColor}" stroke-width="1" />`;
+        }
+    }
+    return gridElems;
 }
 
-// --- HTML Generation ---
-const baseHtmlPath = resolve(__dirname, "../src/base.html");
-let htmlContent = readFileSync(baseHtmlPath, "utf8");
+function generateLabels(canvasWidth: number, canvasHeight: number): string {
+    const centerX = canvasWidth / 2;
+    const centerY = canvasHeight / 2;
+    let labelElems = "";
+    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200</text>`;
+    labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300</text>`;
+    labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">900</text>`;
+    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600</text>`;
+    return labelElems;
+}
 
-htmlContent = htmlContent.replace("{{TITLE}}", cfg.title);
-htmlContent = htmlContent.replace("{{SVG_CONTENT}}", svgContent);
-htmlContent = htmlContent.replace("{{TIMELINE_JSON}}", JSON.stringify(timelineData, null, 2));
+function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, gridSize: number): any[] {
+    const timelineData = [];
+    if (cfg.steps.length > 1) {
+        for (let i = 0; i < cfg.steps.length - 1; i++) {
+            const fromStep = cfg.steps[i];
+            const toStep = cfg.steps[i + 1];
+            const fromCoords = getPersonShapeCoordinates(fromStep.person, canvasWidth, canvasHeight, gridSize);
+            const toCoords = getPersonShapeCoordinates(toStep.person, canvasWidth, canvasHeight, gridSize);
+            const stepAnims = [];
 
+            stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
+            stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle));
+            stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog));
 
-const outPath = resolve(distDir, `${parse(yamlPath).name}.html`);
-writeFileSync(outPath, htmlContent);
-console.log(`✅ Generated ${outPath}`);
+            stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer));
+            stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer));
+            stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
 
-// Copy Anime.js (minified) into the same folder so the HTML is self‑contained
+            timelineData.push(stepAnims);
+        }
+    }
+    return timelineData;
+}
+
+function buildAndWriteHtml(cfg: any, svgContent: string, timelineData: any[], distDir: string, yamlPath: string) {
+    const baseHtmlPath = resolve(__dirname, "../src/base.html");
+    let htmlContent = readFileSync(baseHtmlPath, "utf8");
+
+    htmlContent = htmlContent.replace("{{TITLE}}", cfg.title);
+    htmlContent = htmlContent.replace("{{SVG_CONTENT}}", svgContent);
+    htmlContent = htmlContent.replace("{{TIMELINE_JSON}}", JSON.stringify(timelineData, null, 2));
+
+    const outPath = resolve(distDir, `${parse(yamlPath).name}.html`);
+    writeFileSync(outPath, htmlContent);
+    console.log(`✅ Generated ${outPath}`);
+}
+
+// --- Main script ---
+
+// Load YAML
+const yamlPath = resolve(__dirname, "../src/delayed-sword.yml");
+const rawYaml = readFileSync(yamlPath, "utf8");
+const cfg = yaml.parse(rawYaml);
+
+// Set canvas size
+cfg.canvas.width = 600;
+cfg.canvas.height = 600;
+
+// Grid parameters
+const gridSize = 60;
+
+// Generate SVG parts
+const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, gridSize);
+const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
+const initialPersonShapes = generatePersonShapes(cfg.steps[0].person, cfg.canvas.width, cfg.canvas.height, gridSize);
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${labelElems}${initialPersonShapes}</svg>`;
+
+// Create dist dir
+const distDir = resolve(__dirname, "../dist");
+if (!existsSync(distDir)) {
+    mkdirSync(distDir, { recursive: true });
+}
+
+// Generate animation data
+const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, gridSize);
+
+// Build and write the final HTML
+buildAndWriteHtml(cfg, svgContent, timelineData, distDir, yamlPath);
+
+// Copy Anime.js
 const animeSrc = resolve(__dirname, "../node_modules/animejs/lib/anime.js");
 copyFileSync(animeSrc, resolve(distDir, "anime.js"));
+
