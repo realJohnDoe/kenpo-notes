@@ -213,6 +213,18 @@ function generateCenterMarker(canvasWidth: number, canvasHeight: number): string
     return `<circle cx="${centerX}" cy="${centerY}" r="5" fill="gray" />`;
 }
 
+function generateVignette(canvasWidth: number, canvasHeight: number): string {
+    return `
+        <defs>
+            <radialGradient id="vignetteGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="50%" stop-color="white" stop-opacity="0" />
+                <stop offset="100%" stop-color="white" stop-opacity="1" />
+            </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="${canvasWidth}" height="${canvasHeight}" fill="url(#vignetteGradient)" />
+    `;
+}
+
 function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): any[] {
     const timelineData = [];
     if (cfg.steps.length > 1) {
@@ -225,7 +237,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
 
             const toStep = cfg.steps[i + 1];
             const pivot = toStep.pivot;
-            
+
             let nextConfig = { ...toStep };
             nextConfig.offsetX = lastConfig.offsetX;
             nextConfig.offsetY = lastConfig.offsetY;
@@ -245,9 +257,9 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
                 nextConfig.offsetX = toOffsetX;
                 nextConfig.offsetY = toOffsetY;
             }
-            
+
             const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, unitSize);
-            
+
             const stepAnims = [];
 
             stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
@@ -298,8 +310,9 @@ const visualGridSize = 30; // Draw a grid line every 30 pixels
 const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, visualGridSize);
 const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
 const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
+const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
 const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
-const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${labelElems}${initialPersonShapes}</svg>`;
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir
 const distDir = resolve(__dirname, "../dist");
