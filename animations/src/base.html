@@ -123,19 +123,35 @@
 
       // Control functions
       function goToStep(index) {
+        const currentPlayTime = mainTl.currentTime;
+        let targetTime;
+
         if (index >= 0 && index < stepStartTimes.length - 1) {
-          currentStepIndex = index;
-          mainTl.seek(stepStartTimes[currentStepIndex]);
-          if (!mainTl.paused) {
-            mainTl.pause(); // Pause when jumping to a step
-            playPauseBtn.textContent = 'Play';
-          }
+          targetTime = stepStartTimes[index];
         } else if (index === stepStartTimes.length - 1) { // Handle going to the very end
-            currentStepIndex = index;
-            mainTl.seek(mainTl.duration);
-            mainTl.pause();
-            playPauseBtn.textContent = 'Play';
+            targetTime = mainTl.duration;
+        } else {
+            return; // Invalid index
         }
+
+        const duration = Math.abs(targetTime - currentPlayTime);
+
+        anime({
+            targets: mainTl,
+            currentTime: targetTime,
+            duration: duration * 0.1, // A fast animation, 10% of the actual time difference
+            easing: 'linear',
+            update: () => {
+              mainTl.seek(mainTl.currentTime);
+            },
+            complete: () => {
+              currentStepIndex = index;
+              if (!mainTl.paused) {
+                mainTl.pause();
+                playPauseBtn.textContent = 'Play';
+              }
+            }
+        });
       }
 
       const prevBtn = document.getElementById('prevBtn');
