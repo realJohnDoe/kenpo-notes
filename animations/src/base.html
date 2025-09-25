@@ -37,6 +37,7 @@
     </div>
 
     <script src="./anime.js"></script>
+    <script src="../src/controls.js"></script>
     <script>
       // Timeline data is injected by the generator
       const timelineData = {{TIMELINE_JSON}};
@@ -45,7 +46,6 @@
       const mainTl = anime.timeline({autoplay:true, loop:false});
 
       let stepStartTimes = []; // To store the start time of each step
-      let currentStepIndex = 0;
       let currentTimelineCursor = 0; // Tracks the end of the previous step's animations
 
       timelineData.forEach((step, index) => {
@@ -120,87 +120,10 @@
       // Add the end time of the last step
       stepStartTimes.push(currentTimelineCursor);
 
-
-      // Control functions
-      function getStepIndexFromTime(time) {
-        for (let i = 0; i < stepStartTimes.length - 1; i++) {
-            if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
-                return i;
-            }
-        }
-        // If at the very end or past the last step
-        if (time >= stepStartTimes[stepStartTimes.length - 1]) {
-            return stepStartTimes.length - 2; // Last actual step index
-        }
-        return 0; // Default to first step
-      }
-
-      function goToStep(index) {
-        const currentPlayTime = mainTl.currentTime;
-        let targetTime;
-
-        if (index >= 0 && index < stepStartTimes.length - 1) {
-          targetTime = stepStartTimes[index];
-        } else if (index === stepStartTimes.length - 1) { // Handle going to the very end
-            targetTime = mainTl.duration;
-        } else {
-            return; // Invalid index
-        }
-
-        const duration = Math.abs(targetTime - currentPlayTime);
-
-        anime({
-            targets: mainTl,
-            currentTime: targetTime,
-            duration: duration * 0.1, // A fast animation, 10% of the actual time difference
-            easing: 'linear',
-            update: () => {
-              mainTl.seek(mainTl.currentTime);
-            },
-            complete: () => {
-              currentStepIndex = index;
-              if (!mainTl.paused) {
-                mainTl.pause();
-                playPauseBtn.textContent = 'Play';
-              }
-            }
-        });
-      }
-
-      const prevBtn = document.getElementById('prevBtn');
-      const playPauseBtn = document.getElementById('playPauseBtn');
-      const nextBtn = document.getElementById('nextBtn');
-
-      playPauseBtn.addEventListener('click', () => {
-        if (mainTl.paused) {
-          mainTl.play();
-          playPauseBtn.textContent = 'Pause';
-        } else {
-          mainTl.pause();
-          playPauseBtn.textContent = 'Play';
-        }
+      // Initialize controls
+      window.addEventListener('DOMContentLoaded', () => {
+        initControls(mainTl, stepStartTimes, 0, labelEl);
       });
-
-      prevBtn.addEventListener('click', () => {
-        const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-        if (mainTl.currentTime === stepStartTimes[currentIdx]) {
-            // If at the start of a step, go to the previous one
-            goToStep(currentIdx - 1);
-        } else {
-            // If within a step, go to the start of the current step
-            goToStep(currentIdx);
-        }
-      });
-
-      nextBtn.addEventListener('click', () => {
-        const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-        goToStep(currentIdx + 1);
-      });
-
-      // Initial state
-      mainTl.pause(); // Start paused
-      playPauseBtn.textContent = 'Play';
-      goToStep(0); // Go to the first step
     </script>
   </body>
 </html>
