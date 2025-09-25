@@ -202,6 +202,12 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
     return labelElems;
 }
 
+function generateCenterMarker(canvasWidth: number, canvasHeight: number): string {
+    const centerX = canvasWidth / 2;
+    const centerY = canvasHeight / 2;
+    return `<circle cx="${centerX}" cy="${centerY}" r="5" fill="gray" />`;
+}
+
 function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, gridSize: number): any[] {
     const timelineData = [];
     if (cfg.steps.length > 1) {
@@ -285,8 +291,9 @@ const gridSize = 60;
 // Generate SVG parts
 const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, gridSize);
 const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
+const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
 const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, gridSize);
-const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${labelElems}${initialPersonShapes}</svg>`;
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir
 const distDir = resolve(__dirname, "../dist");
