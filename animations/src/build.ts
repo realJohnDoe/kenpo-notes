@@ -200,10 +200,10 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
     const centerX = canvasWidth / 2;
     const centerY = canvasHeight / 2;
     let labelElems = "";
-    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200 ⬆️</text>`;
+    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">⬆️ 1200</text>`;
     labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300 ➡️</text>`;
-    labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">900 ⬅️</text>`;
-    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600 ⬇️</text>`;
+    labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">⬅️ 900</text>`;
+    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">⬇️ 600</text>`;
     return labelElems;
 }
 
@@ -328,7 +328,7 @@ const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
 const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
 const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
 const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
-const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" class="txt" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir
 const distDir = resolve(__dirname, "../dist");
