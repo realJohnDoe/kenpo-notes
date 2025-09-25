@@ -202,46 +202,74 @@ if (!existsSync(distDir)) {
 const timelineData = [];
 if (cfg.steps.length > 1) {
     for (let i = 0; i < cfg.steps.length - 1; i++) {
+        const fromStep = cfg.steps[i];
         const toStep = cfg.steps[i + 1];
+        const fromCoords = getPersonShapeCoordinates(fromStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
         const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
         const stepAnims = [];
 
         stepAnims.push({
             targets: '#leftFootCircle',
-            cx: toCoords.leftFootCircle.cx,
-            cy: toCoords.leftFootCircle.cy,
+            cx: [fromCoords.leftFootCircle.cx, toCoords.leftFootCircle.cx],
+            cy: [fromCoords.leftFootCircle.cy, toCoords.leftFootCircle.cy],
             duration: 1000,
             easing: 'easeInOutSine'
         });
         stepAnims.push({
             targets: '#rightFootCircle',
-            cx: toCoords.rightFootCircle.cx,
-            cy: toCoords.rightFootCircle.cy,
+            cx: [fromCoords.rightFootCircle.cx, toCoords.rightFootCircle.cx],
+            cy: [fromCoords.rightFootCircle.cy, toCoords.rightFootCircle.cy],
             duration: 1000,
             easing: 'easeInOutSine'
         });
         stepAnims.push({
             targets: '#cog',
-            cx: toCoords.cog.cx,
-            cy: toCoords.cog.cy,
+            cx: [fromCoords.cog.cx, toCoords.cog.cx],
+            cy: [fromCoords.cog.cy, toCoords.cog.cy],
             duration: 1000,
             easing: 'easeInOutSine'
         });
+        const fromRotationL = fromCoords.leftFootPointer.rotate;
+        const toRotationL = toCoords.leftFootPointer.rotate;
+        let diffL = toRotationL - fromRotationL;
+        if (diffL > 180) { diffL -= 360; }
+        else if (diffL < -180) { diffL += 360; }
+
         stepAnims.push({
             targets: '#leftFootPointer',
-            transform: `translate(${toCoords.leftFootPointer.x}, ${toCoords.leftFootPointer.y}) rotate(${toCoords.leftFootPointer.rotate})`,
+            translateX: [fromCoords.leftFootPointer.x, toCoords.leftFootPointer.x],
+            translateY: [fromCoords.leftFootPointer.y, toCoords.leftFootPointer.y],
+            rotate: `+=${diffL}`,
             duration: 1000,
             easing: 'easeInOutSine'
         });
+
+        const fromRotationR = fromCoords.rightFootPointer.rotate;
+        const toRotationR = toCoords.rightFootPointer.rotate;
+        let diffR = toRotationR - fromRotationR;
+        if (diffR > 180) { diffR -= 360; }
+        else if (diffR < -180) { diffR += 360; }
+
         stepAnims.push({
             targets: '#rightFootPointer',
-            transform: `translate(${toCoords.rightFootPointer.x}, ${toCoords.rightFootPointer.y}) rotate(${toCoords.rightFootPointer.rotate})`,
+            translateX: [fromCoords.rightFootPointer.x, toCoords.rightFootPointer.x],
+            translateY: [fromCoords.rightFootPointer.y, toCoords.rightFootPointer.y],
+            rotate: `+=${diffR}`,
             duration: 1000,
             easing: 'easeInOutSine'
         });
+
+        const fromRotationC = fromCoords.cogPointer.rotate;
+        const toRotationC = toCoords.cogPointer.rotate;
+        let diffC = toRotationC - fromRotationC;
+        if (diffC > 180) { diffC -= 360; }
+        else if (diffC < -180) { diffC += 360; }
+        
         stepAnims.push({
             targets: '#cogPointer',
-            transform: `translate(${toCoords.cogPointer.x}, ${toCoords.cogPointer.y}) rotate(${toCoords.cogPointer.rotate})`,
+            translateX: [fromCoords.cogPointer.x, toCoords.cogPointer.x],
+            translateY: [fromCoords.cogPointer.y, toCoords.cogPointer.y],
+            rotate: `+=${diffC}`,
             duration: 1000,
             easing: 'easeInOutSine'
         });
