@@ -131,7 +131,7 @@ function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canva
 
 
 
-function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, toPos: {cx: number, cy: number}, duration: number) {
+function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
     return {
         targets: targetId,
         cx: [fromPos.cx, toPos.cx],
@@ -141,7 +141,7 @@ function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, t
     };
 }
 
-function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rotate: number}, toPos: {x: number, y: number, rotate: number}, duration: number) {
+function createPointerAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
@@ -200,10 +200,10 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
     const centerX = canvasWidth / 2;
     const centerY = canvasHeight / 2;
     let labelElems = "";
-    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200</text>`;
-    labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300</text>`;
-    labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">900</text>`;
-    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600</text>`;
+    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200 ⬆️</text>`;
+    labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300 ➡️</text>`;
+    labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">900 ⬅️</text>`;
+    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600 ⬇️</text>`;
     return labelElems;
 }
 
@@ -238,7 +238,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
 
             const toStep = cfg.steps[i + 1];
             const pivot = toStep.pivot;
-            
+
             let nextConfig = { ...toStep };
             nextConfig.offsetX = lastConfig.offsetX;
             nextConfig.offsetY = lastConfig.offsetY;
@@ -261,9 +261,9 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
                 nextConfig.offsetX = toOffsetX;
                 nextConfig.offsetY = toOffsetY;
             }
-            
+
             const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, unitSize);
-            
+
             const stepAnims = [];
 
             stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle, stepAnimationDuration));
