@@ -30,6 +30,12 @@
     <!-- SVG placeholder – the generator will inject shapes/text here -->
     {{SVG_CONTENT}}
 
+    <div id="controls" style="position: fixed; bottom: 20px; right: 20px;">
+      <button id="prevBtn">Prev</button>
+      <button id="playPauseBtn">Pause</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
     <script src="./anime.js"></script>
     <script>
       // Timeline data is injected by the generator
@@ -38,9 +44,13 @@
 
       const mainTl = anime.timeline({autoplay:true, loop:false});
 
+      let stepStartTimes = []; // To store the start time of each step
+      let currentStepIndex = 0;
       let currentTimelineCursor = 0; // Tracks the end of the previous step's animations
 
-      timelineData.forEach(step => {
+      timelineData.forEach((step, index) => {
+        stepStartTimes.push(currentTimelineCursor); // Store start time of this step
+
         let stepDuration = 1000; // Default duration for person animations
 
         // Add person animations to the main timeline
@@ -107,6 +117,53 @@
 
         currentTimelineCursor += stepDuration; // Advance the timeline for the next step
       });
+      // Add the end time of the last step
+      stepStartTimes.push(currentTimelineCursor);
+
+
+      // Control functions
+      function goToStep(index) {
+        if (index >= 0 && index < stepStartTimes.length - 1) {
+          currentStepIndex = index;
+          mainTl.seek(stepStartTimes[currentStepIndex]);
+          if (!mainTl.paused) {
+            mainTl.pause(); // Pause when jumping to a step
+            playPauseBtn.textContent = 'Play';
+          }
+        } else if (index === stepStartTimes.length - 1) { // Handle going to the very end
+            currentStepIndex = index;
+            mainTl.seek(mainTl.duration);
+            mainTl.pause();
+            playPauseBtn.textContent = 'Play';
+        }
+      }
+
+      const prevBtn = document.getElementById('prevBtn');
+      const playPauseBtn = document.getElementById('playPauseBtn');
+      const nextBtn = document.getElementById('nextBtn');
+
+      playPauseBtn.addEventListener('click', () => {
+        if (mainTl.paused) {
+          mainTl.play();
+          playPauseBtn.textContent = 'Pause';
+        } else {
+          mainTl.pause();
+          playPauseBtn.textContent = 'Play';
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        goToStep(currentStepIndex - 1);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        goToStep(currentStepIndex + 1);
+      });
+
+      // Initial state
+      mainTl.pause(); // Start paused
+      playPauseBtn.textContent = 'Play';
+      goToStep(0); // Go to the first step
     </script>
   </body>
 </html>
