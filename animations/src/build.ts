@@ -181,10 +181,78 @@ svgElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="
 svgElems += `<text x="${centerX}" y="${cfg.canvas.height - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600</text>`; // Down
 
 svgElems += generatePersonShapes(cfg.steps[0].person, cfg.canvas.width, cfg.canvas.height, gridSize);
-const svg = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${svgElems}</svg>`;
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${svgElems}</svg>`;
+
+const distDir = resolve(__dirname, "../dist");
+if (!existsSync(distDir)) {
+    mkdirSync(distDir, { recursive: true });
+}
+
+// --- Timeline generation ---
+const timelineData = [];
+if (cfg.steps.length > 1) {
+    for (let i = 0; i < cfg.steps.length - 1; i++) {
+        const toStep = cfg.steps[i+1];
+        const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
+
+        timelineData.push({
+            targets: '#leftFootCircle',
+            cx: toCoords.leftFootCircle.cx,
+            cy: toCoords.leftFootCircle.cy,
+            duration: 1000,
+            easing: 'easeInOutSine'
+        });
+        timelineData.push({
+            targets: '#rightFootCircle',
+            cx: toCoords.rightFootCircle.cx,
+            cy: toCoords.rightFootCircle.cy,
+            duration: 1000,
+            easing: 'easeInOutSine',
+            offset: 0
+        });
+        timelineData.push({
+            targets: '#cog',
+            cx: toCoords.cog.cx,
+            cy: toCoords.cog.cy,
+            duration: 1000,
+            easing: 'easeInOutSine',
+            offset: 0
+        });
+        timelineData.push({
+            targets: '#leftFootPointer',
+            transform: `translate(${toCoords.leftFootPointer.x}, ${toCoords.leftFootPointer.y}) rotate(${toCoords.leftFootPointer.rotate})`,
+            duration: 1000,
+            easing: 'easeInOutSine',
+            offset: 0
+        });
+        timelineData.push({
+            targets: '#rightFootPointer',
+            transform: `translate(${toCoords.rightFootPointer.x}, ${toCoords.rightFootPointer.y}) rotate(${toCoords.rightFootPointer.rotate})`,
+            duration: 1000,
+            easing: 'easeInOutSine',
+            offset: 0
+        });
+        timelineData.push({
+            targets: '#cogPointer',
+            transform: `translate(${toCoords.cogPointer.x}, ${toCoords.cogPointer.y}) rotate(${toCoords.cogPointer.rotate})`,
+            duration: 1000,
+            easing: 'easeInOutSine',
+            offset: 0
+        });
+    }
+}
+
+// --- HTML Generation ---
+const baseHtmlPath = resolve(__dirname, "../src/base.html");
+let htmlContent = readFileSync(baseHtmlPath, "utf8");
+
+htmlContent = htmlContent.replace("{{TITLE}}", cfg.title);
+htmlContent = htmlContent.replace("{{SVG_CONTENT}}", svgContent);
+htmlContent = htmlContent.replace("{{TIMELINE_JSON}}", JSON.stringify(timelineData, null, 2));
+
 
 const outPath = resolve(distDir, `${parse(yamlPath).name}.html`);
-writeFileSync(outPath, "Hello World!");
+writeFileSync(outPath, htmlContent);
 console.log(`✅ Generated ${outPath}`);
 
 // Copy Anime.js (minified) into the same folder so the HTML is self‑contained

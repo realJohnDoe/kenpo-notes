@@ -1,0 +1,21 @@
+{
+  "name": "kenpo-quartz-animations",
+  "version": "1.0.0",
+  "description": "Animations for Kenpo Quartz",
+  "main": "index.js",
+  "scripts": {
+    "build": "ts-node src/build.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "yaml": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "@types/yaml": "^1.9.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}
