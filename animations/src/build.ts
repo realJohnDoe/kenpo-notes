@@ -200,10 +200,10 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
     const centerX = canvasWidth / 2;
     const centerY = canvasHeight / 2;
     let labelElems = "";
-    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">⬆️ 1200</text>`;
+    labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200 ⬆️</text>`;
     labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300 ➡️</text>`;
     labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">⬅️ 900</text>`;
-    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">⬇️ 600</text>`;
+    labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600 ⬇️</text>`;
     return labelElems;
 }
 
