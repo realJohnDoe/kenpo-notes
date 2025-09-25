@@ -18,14 +18,14 @@ const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot:
         leftFootRotation: 0,
         rightFootRotation: 0
     },
-    "right_neutral_bow": {
+    "right_neutral": {
         leftFoot: { x: -0.5, y: -1 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: -0.5 },
         leftFootRotation: 1030,
         rightFootRotation: 1030
     },
-    "left_neutral_bow": {
+    "left_neutral": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: -1 },
         cog: { x: 0, y: -0.5 },
@@ -205,7 +205,7 @@ function generateLabels(canvasWidth: number, canvasHeight: number): string {
 function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, gridSize: number): any[] {
     const timelineData = [];
     if (cfg.steps.length > 1) {
-        let lastConfig = { ...cfg.steps[0].person };
+        let lastConfig = { ...cfg.steps[0] };
         if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
         if (lastConfig.offsetY === undefined) lastConfig.offsetY = 0;
 
@@ -213,15 +213,15 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
             const fromCoords = getPersonShapeCoordinates(lastConfig, canvasWidth, canvasHeight, gridSize);
 
             const toStep = cfg.steps[i + 1];
-            const pivot = toStep.person.pivot;
+            const pivot = toStep.pivot;
             
-            let nextConfig = { ...toStep.person };
+            let nextConfig = { ...toStep };
             nextConfig.offsetX = lastConfig.offsetX;
             nextConfig.offsetY = lastConfig.offsetY;
 
             if (pivot === 'left' || pivot === 'right') {
                 const fromPivotCoords = (pivot === 'left') ? fromCoords.leftFootCircle : fromCoords.rightFootCircle;
-                const toStance = stances[toStep.person.stance];
+                const toStance = stances[toStep.stance];
                 const toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
 
                 const centerX = canvasWidth / 2;
@@ -285,7 +285,7 @@ const gridSize = 60;
 // Generate SVG parts
 const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, gridSize);
 const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
-const initialPersonShapes = generatePersonShapes(cfg.steps[0].person, cfg.canvas.width, cfg.canvas.height, gridSize);
+const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, gridSize);
 const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir

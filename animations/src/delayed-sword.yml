@@ -3,18 +3,14 @@ canvas:
   width: 600
   height: 600
 steps:
-  - person:
-      stance: "attention"
-      direction: 1200
-  - person:
-      stance: "right_neutral_bow"
-      direction: 1200
-      pivot: "right"
-  - person:
-      stance: "right_cat"
-      direction: 1200
-      pivot: "left"
-  - person:
-      stance: "right_neutral_bow"
-      direction: 1200
-      pivot: "left"
+  - stance: "attention"
+    direction: 1200
+  - stance: "right_neutral"
+    direction: 1200
+    pivot: "right"
+  - stance: "right_cat"
+    direction: 1200
+    pivot: "left"
+  - stance: "right_neutral"
+    direction: 1200
+    pivot: "left"
