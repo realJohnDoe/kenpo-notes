@@ -5,10 +5,10 @@ import * as yaml from "yaml";
 const directionToDegrees = (dir: number) => {
     switch (dir) {
         case 1200: return 0;   // Up
-        case 300:  return 90;  // Right
-        case 600:  return 180; // Down
-        case 900:  return 270; // Left
-        default:   return 0;   // Default to up
+        case 300: return 90;  // Right
+        case 600: return 180; // Down
+        case 900: return 270; // Left
+        default: return 0;   // Default to up
     }
 };
 
@@ -30,6 +30,12 @@ const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot:
         rightFoot: { x: 0.5, y: -1 },
         cog: { x: 0, y: -0.5 },
         footRotation: 45
+    },
+    "rightCat": {
+        leftFoot: { x: -0.5, y: 0 },
+        rightFoot: { x: 0, y: 0.5 },
+        cog: { x: -0.25, y: 0.25 },
+        footRotation: 0
     }
 };
 
@@ -192,7 +198,7 @@ if (!existsSync(distDir)) {
 const timelineData = [];
 if (cfg.steps.length > 1) {
     for (let i = 0; i < cfg.steps.length - 1; i++) {
-        const toStep = cfg.steps[i+1];
+        const toStep = cfg.steps[i + 1];
         const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
         const stepAnims = [];
 

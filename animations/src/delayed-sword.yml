@@ -13,3 +13,8 @@ steps:
       direction: 1200
       offsetX: 0
       offsetY: 0
+  - person:
+      stance: "rightCat"
+      direction: 1200
+      offsetX: 0
+      offsetY: 0
