@@ -198,6 +198,31 @@ if (!existsSync(distDir)) {
     mkdirSync(distDir, { recursive: true });
 }
 
+function createCircleAnim(targetId: string, fromPos: {cx: number, cy: number}, toPos: {cx: number, cy: number}) {
+    return {
+        targets: targetId,
+        cx: [fromPos.cx, toPos.cx],
+        cy: [fromPos.cy, toPos.cy],
+        duration: 1000,
+        easing: 'easeInOutSine'
+    };
+}
+
+function createPointerAnim(targetId: string, fromPos: {x: number, y: number, rotate: number}, toPos: {x: number, y: number, rotate: number}) {
+    let diff = toPos.rotate - fromPos.rotate;
+    if (diff > 180) { diff -= 360; }
+    else if (diff < -180) { diff += 360; }
+
+    return {
+        targets: targetId,
+        translateX: [fromPos.x, toPos.x],
+        translateY: [fromPos.y, toPos.y],
+        rotate: `+=${diff}`,
+        duration: 1000,
+        easing: 'easeInOutSine'
+    };
+}
+
 // --- Timeline generation ---
 const timelineData = [];
 if (cfg.steps.length > 1) {
@@ -208,71 +233,14 @@ if (cfg.steps.length > 1) {
         const toCoords = getPersonShapeCoordinates(toStep.person, cfg.canvas.width, cfg.canvas.height, gridSize);
         const stepAnims = [];
 
-        stepAnims.push({
-            targets: '#leftFootCircle',
-            cx: [fromCoords.leftFootCircle.cx, toCoords.leftFootCircle.cx],
-            cy: [fromCoords.leftFootCircle.cy, toCoords.leftFootCircle.cy],
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
-        stepAnims.push({
-            targets: '#rightFootCircle',
-            cx: [fromCoords.rightFootCircle.cx, toCoords.rightFootCircle.cx],
-            cy: [fromCoords.rightFootCircle.cy, toCoords.rightFootCircle.cy],
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
-        stepAnims.push({
-            targets: '#cog',
-            cx: [fromCoords.cog.cx, toCoords.cog.cx],
-            cy: [fromCoords.cog.cy, toCoords.cog.cy],
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
-        const fromRotationL = fromCoords.leftFootPointer.rotate;
-        const toRotationL = toCoords.leftFootPointer.rotate;
-        let diffL = toRotationL - fromRotationL;
-        if (diffL > 180) { diffL -= 360; }
-        else if (diffL < -180) { diffL += 360; }
+        stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
+        stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle));
+        stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog));
 
-        stepAnims.push({
-            targets: '#leftFootPointer',
-            translateX: [fromCoords.leftFootPointer.x, toCoords.leftFootPointer.x],
-            translateY: [fromCoords.leftFootPointer.y, toCoords.leftFootPointer.y],
-            rotate: `+=${diffL}`,
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
+        stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer));
+        stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer));
+        stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
 
-        const fromRotationR = fromCoords.rightFootPointer.rotate;
-        const toRotationR = toCoords.rightFootPointer.rotate;
-        let diffR = toRotationR - fromRotationR;
-        if (diffR > 180) { diffR -= 360; }
-        else if (diffR < -180) { diffR += 360; }
-
-        stepAnims.push({
-            targets: '#rightFootPointer',
-            translateX: [fromCoords.rightFootPointer.x, toCoords.rightFootPointer.x],
-            translateY: [fromCoords.rightFootPointer.y, toCoords.rightFootPointer.y],
-            rotate: `+=${diffR}`,
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
-
-        const fromRotationC = fromCoords.cogPointer.rotate;
-        const toRotationC = toCoords.cogPointer.rotate;
-        let diffC = toRotationC - fromRotationC;
-        if (diffC > 180) { diffC -= 360; }
-        else if (diffC < -180) { diffC += 360; }
-        
-        stepAnims.push({
-            targets: '#cogPointer',
-            translateX: [fromCoords.cogPointer.x, toCoords.cogPointer.x],
-            translateY: [fromCoords.cogPointer.y, toCoords.cogPointer.y],
-            rotate: `+=${diffC}`,
-            duration: 1000,
-            easing: 'easeInOutSine'
-        });
         timelineData.push(stepAnims);
     }
 }
