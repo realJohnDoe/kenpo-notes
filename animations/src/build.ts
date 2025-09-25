@@ -19,19 +19,19 @@ const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot:
         cog: { x: 0, y: 0 },
         footRotation: 0
     },
-    "rightNeutralBow": {
+    "right_neutral_bow": {
         leftFoot: { x: -0.5, y: -1 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: -0.5 },
         footRotation: -45
     },
-    "leftNeutralBow": {
+    "left_neutral_bow": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: -1 },
         cog: { x: 0, y: -0.5 },
         footRotation: 45
     },
-    "rightCat": {
+    "right_cat": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0, y: 0.5 },
         cog: { x: -0.25, y: 0.25 },
