@@ -31,56 +31,76 @@
       const timelineData = {{TIMELINE_JSON}};
       const labelEl = document.getElementById('stepLabel');
 
-      const tl = anime.timeline({autoplay:true, loop:false});
+      const mainTl = anime.timeline({autoplay:true, loop:false});
+
+      let currentTimelineCursor = 0; // Tracks the end of the previous step's animations
 
       timelineData.forEach(step => {
-        // Add person animations for this step
+        let stepDuration = 1000; // Default duration for person animations
+
+        // Add person animations to the main timeline
         if (step.anims && step.anims.length > 0) {
           const firstAnimation = step.anims[0];
-          tl.add(firstAnimation);
+          stepDuration = firstAnimation.duration;
+          mainTl.add(firstAnimation, currentTimelineCursor);
           for (let i = 1; i < step.anims.length; i++) {
-            tl.add(step.anims[i], `-=${firstAnimation.duration}`);
+            mainTl.add(step.anims[i], currentTimelineCursor);
           }
         }
 
-        // Add label animations for this step
+        // Add label animations to the main timeline
         if (step.label && step.label.texts && step.label.texts.length > 0) {
-          // Set position for all labels in this step
-          tl.add({
+          const timePerLabel = stepDuration / step.label.texts.length;
+          const fadeDuration = 200;
+
+          // Set position and text, then fade in for the first label
+          mainTl.add({
             targets: labelEl,
             translateY: step.label.y,
-            duration: 1 // Set instantly
-          });
+            duration: 1,
+            begin: () => { labelEl.textContent = step.label.texts[0]; }
+          }, currentTimelineCursor);
 
-          // Loop through the labels for the current step
-          step.label.texts.forEach(labelText => {
-            // Fade out previous text (if any), then set new text
-            tl.add({
+          mainTl.add({
+            targets: labelEl,
+            opacity: 1,
+            duration: fadeDuration,
+            easing: 'linear'
+          }, currentTimelineCursor);
+
+          // Loop through subsequent labels for the current step
+          for (let i = 1; i < step.label.texts.length; i++) {
+            const labelText = step.label.texts[i];
+            const prevLabelStartTime = currentTimelineCursor + (i * timePerLabel);
+
+            // Fade out previous label
+            mainTl.add({
               targets: labelEl,
               opacity: 0,
-              duration: 200,
+              duration: fadeDuration,
               easing: 'linear',
-              complete: () => {
-                labelEl.textContent = labelText;
-              }
-            });
-            // Fade in new text and hold
-            tl.add({
+              complete: () => { labelEl.textContent = labelText; }
+            }, prevLabelStartTime - fadeDuration);
+
+            // Fade in new label
+            mainTl.add({
               targets: labelEl,
               opacity: 1,
-              duration: 800,
+              duration: fadeDuration,
               easing: 'linear'
-            });
-          });
+            }, prevLabelStartTime);
+          }
         }
 
         // After all animations for a step, fade out the last label
-        tl.add({
+        mainTl.add({
             targets: labelEl,
             opacity: 0,
             duration: 200,
             easing: 'linear'
-        });
+        }, currentTimelineCursor + stepDuration - 200);
+
+        currentTimelineCursor += stepDuration; // Advance the timeline for the next step
       });
     </script>
   </body>
