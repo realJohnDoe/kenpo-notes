@@ -29,24 +29,59 @@
     <script>
       // Timeline data is injected by the generator
       const timelineData = {{TIMELINE_JSON}};
-
-      console.log("Type of anime:", typeof anime);
-      console.log("anime object:", anime);
-      console.log("Timeline data:", timelineData);
+      const labelEl = document.getElementById('stepLabel');
 
       const tl = anime.timeline({autoplay:true, loop:false});
-      console.log("Timeline object:", tl);
-      timelineData.forEach(stepAnims => {
-        if (stepAnims.length > 0) {
-          const firstAnimation = stepAnims[0];
+
+      timelineData.forEach(step => {
+        // Add person animations for this step
+        if (step.anims && step.anims.length > 0) {
+          const firstAnimation = step.anims[0];
           tl.add(firstAnimation);
-          // Add subsequent animations for this step at the same time as the first
-          for (let i = 1; i < stepAnims.length; i++) {
-            tl.add(stepAnims[i], `-=${firstAnimation.duration}`);
+          for (let i = 1; i < step.anims.length; i++) {
+            tl.add(step.anims[i], `-=${firstAnimation.duration}`);
           }
         }
+
+        // Add label animations for this step
+        if (step.label && step.label.texts && step.label.texts.length > 0) {
+          // Set position for all labels in this step
+          tl.add({
+            targets: labelEl,
+            translateY: step.label.y,
+            duration: 1 // Set instantly
+          });
+
+          // Loop through the labels for the current step
+          step.label.texts.forEach(labelText => {
+            // Fade out previous text (if any), then set new text
+            tl.add({
+              targets: labelEl,
+              opacity: 0,
+              duration: 200,
+              easing: 'linear',
+              complete: () => {
+                labelEl.textContent = labelText;
+              }
+            });
+            // Fade in new text and hold
+            tl.add({
+              targets: labelEl,
+              opacity: 1,
+              duration: 800,
+              easing: 'linear'
+            });
+          });
+        }
+
+        // After all animations for a step, fade out the last label
+        tl.add({
+            targets: labelEl,
+            opacity: 0,
+            duration: 200,
+            easing: 'linear'
+        });
       });
-      console.log("Timeline object after add:", tl);
     </script>
   </body>
 </html>

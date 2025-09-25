@@ -237,7 +237,7 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
 
             const toStep = cfg.steps[i + 1];
             const pivot = toStep.pivot;
-
+            
             let nextConfig = { ...toStep };
             nextConfig.offsetX = lastConfig.offsetX;
             nextConfig.offsetY = lastConfig.offsetY;
@@ -257,9 +257,9 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
                 nextConfig.offsetX = toOffsetX;
                 nextConfig.offsetY = toOffsetY;
             }
-
+            
             const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, unitSize);
-
+            
             const stepAnims = [];
 
             stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle));
@@ -270,14 +270,25 @@ function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: 
             stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer));
             stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer));
 
-            timelineData.push(stepAnims);
+            let labelInfo = null;
+            if (toStep.labels && Array.isArray(toStep.labels)) {
+                const cogY = toCoords.cog.cy;
+                const canvasCenterY = canvasHeight / 2;
+                const topY = 50;
+                const bottomY = canvasHeight - 40;
+                labelInfo = {
+                    texts: toStep.labels,
+                    y: cogY > canvasCenterY ? topY : bottomY
+                };
+            }
+
+            timelineData.push({ anims: stepAnims, label: labelInfo });
 
             lastConfig = nextConfig;
         }
     }
     return timelineData;
 }
-
 function buildAndWriteHtml(cfg: any, svgContent: string, timelineData: any[], distDir: string, yamlPath: string) {
     const baseHtmlPath = resolve(__dirname, "../src/base.html");
     let htmlContent = readFileSync(baseHtmlPath, "utf8");
@@ -312,7 +323,7 @@ const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
 const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
 const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
 const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
-const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}${labelElems}${initialPersonShapes}</svg>`;
+const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" class="txt" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
 
 // Create dist dir
 const distDir = resolve(__dirname, "../dist");
