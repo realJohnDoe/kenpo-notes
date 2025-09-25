@@ -55,10 +55,10 @@ function initControls(timeline, startTimes, initialStepIndex, labelElement) {
     playPauseBtn.addEventListener('click', () => {
         if (mainTl.paused) {
             mainTl.play();
-            playPauseBtn.textContent = 'Pause';
+            playPauseBtn.textContent = '\u23F8'; // Pause symbol
         } else {
             mainTl.pause();
-            playPauseBtn.textContent = 'Play';
+            playPauseBtn.textContent = '\u25B6'; // Play symbol
         }
     });
 
@@ -78,7 +78,7 @@ function initControls(timeline, startTimes, initialStepIndex, labelElement) {
 
     // Initial state
     mainTl.pause(); // Start paused
-    playPauseBtn.textContent = 'Play';
+    playPauseBtn.textContent = '\u25B6'; // Play symbol
     goToStep(0); // Go to the first step
 }
 
