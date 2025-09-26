@@ -23,6 +23,15 @@
       releaseEase: createSpring({ stiffness: 200 })
     });
 
+    // Animate the new circle
+    animate('#my-circle', {
+      translateX: 200,
+      duration: 1500,
+      loop: true,
+      direction: 'alternate',
+      easing: 'easeInOutSine'
+    });
+
     // Animate logo rotation on click
     const rotateLogo = () => {
       rotations++;
@@ -47,6 +56,11 @@
   </fieldset>
 </div>
 
+<!-- Add a new SVG for the moving circle -->
+<svg id="circle-svg" width="300" height="100">
+  <circle id="my-circle" cx="50" cy="50" r="20" fill="blue" />
+</svg>
+
 <style>
     .logo {
         width: 100px;
@@ -60,6 +74,7 @@
         font-size: 1rem;
         padding: 10px 20px;
     }
-    /* These styles were on the body, we'll apply them to a wrapper div if needed,
-       but for now the component will just sit on the page. */
+    #circle-svg {
+        border: 1px solid #ccc;
+    }
 </style>

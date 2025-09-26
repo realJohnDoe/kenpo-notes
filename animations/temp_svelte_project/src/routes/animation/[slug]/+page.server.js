@@ -1,0 +1,46 @@
+
+import { readFileSync } from 'fs';
+import * as yaml from 'yaml';
+import { error } from '@sveltejs/kit';
+import { resolve } from 'path';
+import {
+  generateGrid,
+  generateLabels,
+  generateCenterMarker,
+  generateVignette,
+  generatePersonShapes,
+  generateAnimationTimeline
+} from '$lib/animation-builder.ts';
+
+export function load({ params }) {
+  try {
+    const yamlPath = resolve(`../src/${params.slug}.yml`);
+    const rawYaml = readFileSync(yamlPath, 'utf8');
+    const cfg = yaml.parse(rawYaml);
+
+    // This logic is copied from the old build.ts
+    cfg.canvas = { width: 600, height: 600 };
+    const unitSize = 60;
+    const visualGridSize = 30;
+
+    const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, visualGridSize);
+    const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
+    const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
+    const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
+    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
+    
+    const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
+
+    const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
+
+    return {
+      title: cfg.title,
+      svgContent,
+      timelineData
+    };
+
+  } catch (e) {
+    console.error(e); // Log the error for debugging
+    throw error(404, `Animation '${params.slug}' not found`);
+  }
+}

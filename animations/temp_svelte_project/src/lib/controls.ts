@@ -63,7 +63,7 @@ export function initControls(timeline: any, startTimes: number[], initialStepInd
     if (playPauseBtn) {
         playPauseBtn.addEventListener('click', () => {
             if (mainTl.paused) {
-                mainTl.play();
+                mainTl.resume();
                 playPauseBtn.textContent = 'Pause';
             } else {
                 mainTl.pause();

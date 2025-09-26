@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
+  import { createTimeline } from 'animejs';
   import { initControls } from './controls'; // Omit .ts extension
 
   // Define interfaces for better type safety
@@ -23,7 +24,7 @@
     // Find the label element within the component's DOM
     labelEl = document.getElementById('stepLabel');
 
-    mainTl = anime.timeline({autoplay:true, loop:false});
+    mainTl = createTimeline({autoplay:true, loop:false});
 
     let currentTimelineCursor = 0; // Tracks the end of the previous step's animations
 
