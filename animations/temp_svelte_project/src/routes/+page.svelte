@@ -27,8 +27,8 @@
       releaseEase: createSpring({ stiffness: 200 })
     });
 
-    // Circle animation
-    animate('#my-circle', {
+    // Animate the Center of Gravity element
+    animate('#cog', {
       translateX: 200,
       duration: 1500,
       loop: true,
@@ -69,8 +69,8 @@
   {@html data.gridSvg}
   {@html data.labelsSvg}
 
-  <!-- Circle, now starting in the center -->
-  <circle id="my-circle" cx={data.canvas.width / 2} cy={data.canvas.height / 2} r="20" fill="blue" />
+  <!-- Render person shapes (feet, CoG) -->
+  {@html data.personSvg}
 </svg>
 
 <style>
