@@ -1,0 +1,23 @@
+/* Global styles */
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #fafafa;
+}
+.txt {
+  font-family: sans-serif;
+  font-size: 1rem; /* Decreased font size for clock labels */
+  fill: black;
+}
+#stepLabel {
+  font-family: sans-serif;
+  font-size: 1.5rem; /* Original size for YAML labels */
+  fill: black;
+}
+
+/* Specific styles for SVG icons within control buttons */
+.control-btn svg {
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  display: block;
+}
