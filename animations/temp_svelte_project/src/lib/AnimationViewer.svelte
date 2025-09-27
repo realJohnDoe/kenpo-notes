@@ -90,7 +90,7 @@
           opacity: 0,
           duration: 200,
           easing: 'linear'
-      }, currentTimelineCursor + stepDuration - 200);
+      }, currentTimelineCursor + stepDuration);
 
       currentTimelineCursor += stepDuration;
     });
@@ -140,6 +140,17 @@
       complete: () => {
         if (!mainTl.paused) {
           mainTl.pause();
+        }
+        if (index > 0) {
+          const step = timelineData[index - 1];
+          if (labelEl && step && step.label && step.label.texts) {
+            labelEl.textContent = step.label.texts[step.label.texts.length - 1];
+            anime({ targets: labelEl, opacity: 1, duration: 50, easing: 'linear' });
+          } else if (labelEl) {
+            anime({ targets: labelEl, opacity: 0, duration: 50, easing: 'linear' });
+          }
+        } else if (labelEl) { // index is 0
+          anime({ targets: labelEl, opacity: 0, duration: 50, easing: 'linear' });
         }
       }
     });
