@@ -141,6 +141,7 @@
         if (!mainTl.paused) {
           mainTl.pause();
         }
+        paused = true; // Explicitly set paused to true
         if (index > 0) {
           const step = timelineData[index - 1];
           if (labelEl && step && step.label && step.label.texts) {
