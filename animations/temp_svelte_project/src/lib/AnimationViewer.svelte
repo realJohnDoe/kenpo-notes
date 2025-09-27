@@ -1,7 +1,7 @@
 <script lang="ts">
   import anime from 'animejs';
   import { onMount, onDestroy } from 'svelte';
-  import { Play, Pause, SkipBack, SkipForward } from 'lucide-svelte';
+  import { Play, Pause, SkipBack, SkipForward, RotateCcw } from 'lucide-svelte';
 
   // Define interfaces for better type safety
   interface AnimationStep {
@@ -20,6 +20,7 @@
   let stepStartTimes: number[] = [];
   let labelEl: HTMLElement | null;
   let paused = true;
+  let isAtEnd = false;
 
   onMount(() => {
     labelEl = document.getElementById('stepLabel');
@@ -28,6 +29,10 @@
       loop: false,
       update: () => {
         paused = mainTl.paused;
+        isAtEnd = mainTl.currentTime >= mainTl.duration;
+      },
+      complete: () => {
+        isAtEnd = true; // Ensure isAtEnd is true when animation completes
       }
     });
 
@@ -101,7 +106,7 @@
     }
   });
 
-  function getStepIndexFromTime(time: number): number {
+  const getStepIndexFromTime = (time: number): number => {
     for (let i = 0; i < stepStartTimes.length - 1; i++) {
       if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
         return i;
@@ -111,9 +116,9 @@
       return stepStartTimes.length - 2;
     }
     return 0;
-  }
+  };
 
-  function goToStep(index: number) {
+  const goToStep = (index: number) => {
     let targetTime: number;
     if (index >= 0 && index < stepStartTimes.length - 1) {
       targetTime = stepStartTimes[index];
@@ -149,30 +154,36 @@
         }
       }
     });
-  }
+  };
 
-  function togglePlayPause() {
-    if (mainTl.paused) {
+  const togglePlayPause = () => {
+    if (isAtEnd) {
+      mainTl.restart();
+      isAtEnd = false; // Reset isAtEnd when restarting
+      paused = false; // Immediately set paused to false
+    } else if (mainTl.paused) {
       mainTl.play();
+      paused = false; // Immediately set paused to false
     } else {
       mainTl.pause();
+      paused = true; // Immediately set paused to true
     }
-    paused = mainTl.paused;
-  }
+  };
 
-  function goToPrevStep() {
+  const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     if (mainTl.currentTime === stepStartTimes[currentIdx]) {
       goToStep(currentIdx - 1);
-    } else {
+    }
+    else {
       goToStep(currentIdx);
     }
-  }
+  };
 
-  function goToNextStep() {
+  const goToNextStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     goToStep(currentIdx + 1);
-  }
+  };
 </script>
 
 <div class="animation-container">
@@ -183,7 +194,9 @@
       <SkipBack />
     </button>
     <button class="control-btn" on:click={togglePlayPause}>
-      {#if paused}
+      {#if isAtEnd}
+        <RotateCcw />
+      {:else if paused}
         <Play />
       {:else}
         <Pause />
