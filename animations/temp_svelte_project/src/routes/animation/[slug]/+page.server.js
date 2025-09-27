@@ -36,7 +36,7 @@ export function load({ params }) {
     const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
     const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
     
-    const svgContent = `<svg viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
+    const svgContent = `<svg width="${cfg.canvas.width}" height="${cfg.canvas.height}" viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
 
     const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
 

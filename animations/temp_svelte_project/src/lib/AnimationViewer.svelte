@@ -22,8 +22,40 @@
   let paused = true;
   let isAtEnd = false;
 
+  let viewportWidth: number = 0; // Initialize with a default value
+  let viewportHeight: number = 0; // Initialize with a default value
+  let scale: number = 1;
+
+  const intrinsicCanvasSize = 600; // The hardcoded width and height from +page.server.js
+
+  function calculateScale() {
+    if (viewportWidth > 0 && viewportHeight > 0) { // Add check to prevent division by zero
+      scale = Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize);
+    } else {
+      scale = 1; // Default to 1 if viewport dimensions are not yet available
+    }
+    console.log('calculateScale - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
+  }
+
+  function handleResize() {
+    viewportWidth = window.innerWidth;
+    viewportHeight = window.innerHeight;
+    calculateScale();
+    console.log('handleResize - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
+  }
+
   onMount(() => {
     labelEl = document.getElementById('stepLabel');
+    
+    // Initialize viewport dimensions and scale ONLY on the client
+    viewportWidth = window.innerWidth;
+    viewportHeight = window.innerHeight;
+    calculateScale(); // Call calculateScale immediately after setting dimensions
+    console.log('onMount - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
+
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
+
     mainTl = anime.timeline({ 
       autoplay: false, 
       loop: false,
@@ -89,12 +121,8 @@
           }, prevLabelStartTime);
         }
       }
-
-
-
       currentTimelineCursor += stepDuration;
     });
-
     stepStartTimes.push(currentTimelineCursor);
     goToStep(0);
   });
@@ -103,6 +131,9 @@
     if (mainTl) {
       mainTl.pause();
       mainTl.seek(0);
+    }
+    if (typeof window !== 'undefined') { // Add check for window
+      window.removeEventListener('resize', handleResize);
     }
   });
 
@@ -187,8 +218,25 @@
   };
 </script>
 
+<style>
+  .animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Hide any overflow from scaling */
+  }
+  .scaled-svg-wrapper {
+    /* The SVG itself has viewBox, so it will scale within this wrapper */
+    /* We apply the transform here */
+  }
+</style>
+
 <div class="animation-container">
-  {@html svgContent}
+  <div class="scaled-svg-wrapper" style="transform: scale({scale}); transform-origin: center center;">
+    {@html svgContent}
+  </div>
 
   <div id="controls" style="position: fixed; bottom: 20px; right: 20px;">
     <button class="control-btn" on:click={goToPrevStep}>
