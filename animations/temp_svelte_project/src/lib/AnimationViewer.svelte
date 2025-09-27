@@ -1,4 +1,5 @@
 <script lang="ts">
+  import anime from 'animejs';
   import { onMount, onDestroy } from 'svelte';
   
   import { initControls } from './controls'; // Omit .ts extension

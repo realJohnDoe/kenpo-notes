@@ -1,3 +1,4 @@
+import anime from 'animejs';
 let mainTl: any;
 let stepStartTimes: number[];
 let currentStepIndex: number;
