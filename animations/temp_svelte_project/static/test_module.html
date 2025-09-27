@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime.js v4 Module Test</title>
+    <title>Anime.js v3 Module Test</title>
     <style>
         body {
             font-family: sans-serif;
@@ -40,36 +40,31 @@
     </div>
 
     <script type="module">
-        // Import from the v4 ESM CDN link
-        import { animate, utils, createDraggable, createSpring } from './anime.esm.min.js';
+        import anime from './anime.esm.min.js';
 
-        const [ $logo ] = utils.$('.logo.js');
-        const [ $button ] = utils.$('button');
+        const $logo = document.querySelector('.logo.js');
+        const $button = document.querySelector('button');
         let rotations = 0;
 
         // Created a bounce animation loop
-        animate('.logo.js', {
+        anime({
+          targets: '.logo.js',
           scale: [
-            { to: 1.25, ease: 'inOut(3)', duration: 200 },
-            { to: 1, ease: createSpring({ stiffness: 300 }) }
+            { value: 1.25, easing: 'easeOutSine', duration: 200 },
+            { value: 1, easing: 'easeInOutQuad', duration: 500 }
           ],
           loop: true,
-          loopDelay: 250,
-        });
-
-        // Make the logo draggable around its center
-        createDraggable('.logo.js', {
-          container: [0, 0, 0, 0],
-          releaseEase: createSpring({ stiffness: 200 })
+          delay: anime.stagger(250, {start: 500}),
         });
 
         // Animate logo rotation on click
         const rotateLogo = () => {
           rotations++;
           $button.innerText = `rotations: ${rotations}`;
-          animate($logo, {
+          anime({
+            targets: $logo,
             rotate: rotations * 360,
-            ease: 'out(4)',
+            easing: 'easeOutExpo',
             duration: 1500,
           });
         }

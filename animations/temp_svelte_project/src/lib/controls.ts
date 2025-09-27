@@ -40,34 +40,22 @@ export function initControls(timeline: any, startTimes: number[], initialStepInd
             return; // Invalid index
         }
 
-        const duration = Math.abs(targetTime - currentPlayTime);
-
-        anime({
-            targets: mainTl,
-            currentTime: targetTime,
-            duration: duration * 0.1, // A fast animation, 10% of the actual time difference
-            easing: 'linear',
-            update: () => {
-                mainTl.seek(mainTl.currentTime);
-            },
-            complete: () => {
-                currentStepIndex = index;
-                if (!mainTl.paused) {
-                    mainTl.pause();
-                    if (playPauseBtn) playPauseBtn.textContent = 'Play';
-                }
-            }
-        });
+        mainTl.seek(targetTime);
+        currentStepIndex = index;
+        if (!mainTl.paused) {
+            mainTl.pause();
+            if (playPauseBtn) playPauseBtn.innerHTML = PLAY_SVG;
+        }
     }
 
     if (playPauseBtn) {
         playPauseBtn.addEventListener('click', () => {
             if (mainTl.paused) {
-                mainTl.resume();
-                playPauseBtn.textContent = 'Pause';
+                mainTl.play();
+                playPauseBtn.innerHTML = PAUSE_SVG;
             } else {
                 mainTl.pause();
-                playPauseBtn.textContent = 'Play';
+                playPauseBtn.innerHTML = PLAY_SVG;
             }
         });
     }
@@ -93,7 +81,7 @@ export function initControls(timeline: any, startTimes: number[], initialStepInd
 
     // Initial state
     mainTl.pause(); // Start paused
-    if (playPauseBtn) playPauseBtn.textContent = 'Play';
+    if (playPauseBtn) playPauseBtn.innerHTML = PLAY_SVG;
     goToStep(0); // Go to the first step
 }
 
