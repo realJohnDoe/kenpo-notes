@@ -7,13 +7,53 @@ export const directionToDegrees = (dir: number) => {
     return (normalizedHours / 12) * 360;
 };
 
-export const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } } = {
+// Helper function to mirror rotation values
+const mirrorRotation = (dir: number): number => {
+    const hours = Math.floor(dir / 100);
+    const minutes = dir % 100;
+    const decimalHours = hours + (minutes / 60);
+
+    // Normalize to 0-12 range, where 12 becomes 0
+    const normalizedDecimalHours = decimalHours === 12 ? 0 : decimalHours;
+
+    // Mirror across the 12/6 axis (Y-axis)
+    let mirroredNormalizedDecimalHours = (12 - normalizedDecimalHours);
+    if (mirroredNormalizedDecimalHours === 12) {
+        mirroredNormalizedDecimalHours = 0; // Handle 12 becoming 0
+    } else if (mirroredNormalizedDecimalHours < 0) {
+        mirroredNormalizedDecimalHours += 12; // Handle negative results for 0
+    }
+
+    const mirroredHours = Math.floor(mirroredNormalizedDecimalHours);
+    const mirroredMinutes = Math.round((mirroredNormalizedDecimalHours - mirroredHours) * 60);
+
+    // Special handling for 0 hours to be 1200
+    if (mirroredHours === 0 && mirroredMinutes === 0) {
+        return 1200;
+    }
+
+    return mirroredHours * 100 + mirroredMinutes;
+};
+
+// Helper function to mirror a stance definition
+const mirrorStance = (rightStance: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number }): { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } => {
+    return {
+        leftFoot: { x: -rightStance.rightFoot.x, y: rightStance.rightFoot.y },
+        rightFoot: { x: -rightStance.leftFoot.x, y: rightStance.leftFoot.y },
+        cog: { x: -rightStance.cog.x, y: rightStance.cog.y },
+        leftFootRotation: mirrorRotation(rightStance.rightFootRotation),
+        rightFootRotation: mirrorRotation(rightStance.leftFootRotation)
+    };
+};
+
+// Explicitly define right-sided stances and symmetrical stances
+const explicitStances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } } = {
     "attention": {
         leftFoot: { x: -0.5, y: 0 },
         rightFoot: { x: 0.5, y: 0 },
         cog: { x: 0, y: 0 },
-        leftFootRotation: 0,
-        rightFootRotation: 0
+        leftFootRotation: 1200,
+        rightFootRotation: 1200
     },
     "right_neutral": {
         leftFoot: { x: -0.5, y: -1 },
@@ -21,13 +61,6 @@ export const stances: { [key: string]: { leftFoot: { x: number, y: number }, rig
         cog: { x: 0, y: -0.5 },
         leftFootRotation: 1030,
         rightFootRotation: 1030
-    },
-    "left_neutral": {
-        leftFoot: { x: -0.5, y: 0 },
-        rightFoot: { x: 0.5, y: -1 },
-        cog: { x: 0, y: -0.5 },
-        leftFootRotation: 130,
-        rightFootRotation: 130
     },
     "right_cat": {
         leftFoot: { x: -0.5, y: 0 },
@@ -37,6 +70,16 @@ export const stances: { [key: string]: { leftFoot: { x: number, y: number }, rig
         rightFootRotation: 1200
     }
 };
+
+// Generate left-sided stances by mirroring the right-sided ones
+export const stances: { [key: string]: { leftFoot: { x: number, y: number }, rightFoot: { x: number, y: number }, cog: { x: number, y: number }, leftFootRotation: number, rightFootRotation: number } } = { ...explicitStances };
+
+for (const key in explicitStances) {
+    if (key.startsWith("right_")) {
+        const leftKey = key.replace("right_", "left_");
+        stances[leftKey] = mirrorStance(explicitStances[key]);
+    }
+}
 
 export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number): string {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
