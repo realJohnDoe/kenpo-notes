@@ -130,8 +130,9 @@ export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: nu
     return {
         targets: targetId,
         cx: [fromPos.cx, toPos.cx],
+        cy: [fromPos.cy, toPos.cy],
         duration: duration,
-        ease: 'inOutSine'
+        easing: 'easeInOutSine'
     };
 }
 
@@ -146,7 +147,7 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
         translateY: [fromPos.y, toPos.y],
         rotate: `+=${diff}`,
         duration: duration,
-        ease: 'inOutSine'
+        easing: 'easeInOutSine'
     };
 }
 
