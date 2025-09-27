@@ -127,14 +127,30 @@
     } else {
       return;
     }
-    mainTl.seek(targetTime);
-    if (!mainTl.paused) {
-      mainTl.pause();
-    }
+
+    const seekProgress = { value: mainTl.currentTime };
+    anime({
+      targets: seekProgress,
+      value: targetTime,
+      duration: Math.abs(targetTime - mainTl.currentTime) * 0.1,
+      easing: 'linear',
+      update: () => {
+        mainTl.seek(seekProgress.value);
+      },
+      complete: () => {
+        if (!mainTl.paused) {
+          mainTl.pause();
+        }
+      }
+    });
   }
 
   function togglePlayPause() {
-    mainTl.play();
+    if (mainTl.paused) {
+      mainTl.play();
+    } else {
+      mainTl.pause();
+    }
     paused = mainTl.paused;
   }
 
