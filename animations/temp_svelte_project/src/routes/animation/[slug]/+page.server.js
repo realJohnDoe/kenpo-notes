@@ -1,4 +1,6 @@
 
+export const prerender = true;
+
 import { readFileSync } from 'fs';
 import * as yaml from 'yaml';
 import { error } from '@sveltejs/kit';
@@ -11,6 +13,12 @@ import {
   generatePersonShapes,
   generateAnimationTimeline
 } from '$lib/animation-builder.ts';
+
+export function entries() {
+    return [
+        { slug: 'delayed-sword' }
+    ];
+}
 
 export function load({ params }) {
   try {
