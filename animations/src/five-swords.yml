@@ -1,0 +1,38 @@
+title: "Five Swords"
+canvas:
+  width: 600
+  height: 600
+steps:
+  - stance: "attention"
+    direction: 1200
+  - stance: "right_neutral"
+    direction: 1200
+    pivot: "left"
+    duration: 0.5
+    labels: ["Right Inward Block ➡️🔽🛡️"]
+  - stance: "right_neutral"
+    direction: 1200
+    duration: 0.5
+    labels: ["Right Outward Handsword ➡️🔼✋⚔️💥"]
+  - stance: right_forward
+    direction: 1200
+    labels: ["Left Heel Palm ⬅️✋🌴💥"]
+  - stance: "right_neutral"
+    direction: 1030
+    duratin: 0.5
+    labels: ["Right Uppercut ➡️🔝✊💥"]
+  # - stance: "attention"
+  #   direction: 1200
+  # - stance: "right_neutral"
+  #   direction: 1200
+  #   pivot: "right"
+  #   labels: ["Right Inward Block ➡️🔽🛡️"]
+  # - stance: "right_cat"
+  #   direction: 1200
+  #   pivot: "left"
+  #   duration: 0.5
+  # - stance: "right_neutral"
+  #   direction: 1200
+  #   pivot: "left"
+  #   labels: ["Right Front Kick ➡️⬆️🦶💥", "Right Outward Handsword ➡️🔼✋⚔️💥"]
+  #   duration: 1.5
