@@ -68,6 +68,13 @@ const explicitStances: { [key: string]: { leftFoot: { x: number, y: number }, ri
         cog: { x: -0.25, y: 0.25 },
         leftFootRotation: 1030,
         rightFootRotation: 1200
+    },
+    "right_forward": {
+        leftFoot: { x: -0.5, y: -1 },
+        rightFoot: { x: 0.5, y: 0 },
+        cog: { x: 0, y: -0.5 },
+        leftFootRotation: 1200,
+        rightFootRotation: 1030
     }
 };
 
