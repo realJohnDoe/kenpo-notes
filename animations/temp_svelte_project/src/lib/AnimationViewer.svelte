@@ -85,12 +85,7 @@
         }
       }
 
-      mainTl.add({
-          targets: labelEl,
-          opacity: 0,
-          duration: 200,
-          easing: 'linear'
-      }, currentTimelineCursor + stepDuration);
+
 
       currentTimelineCursor += stepDuration;
     });
