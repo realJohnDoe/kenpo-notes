@@ -4,20 +4,53 @@ body {
   overflow: hidden;
   background: #fafafa;
 }
+
 .txt {
   font-family: sans-serif;
-  font-size: 1rem; /* Decreased font size for clock labels */
-  fill: black;
-}
-#stepLabel {
-  font-family: sans-serif;
-  font-size: 1.5rem; /* Original size for YAML labels */
+  font-size: 1rem;
   fill: black;
 }
 
-/* Specific styles for SVG icons within control buttons */
+#stepLabel {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  fill: black;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.control-btn:active {
+  background-color: #eee;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
 .control-btn svg {
-  width: 24px; /* Adjust as needed */
-  height: 24px; /* Adjust as needed */
-  display: block;
+  width: 24px;
+  height: 24px;
 }
