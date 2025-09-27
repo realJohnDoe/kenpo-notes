@@ -273,8 +273,8 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             if (toStep.labels && Array.isArray(toStep.labels)) {
                 const cogY = toCoords.cog.cy;
                 const canvasCenterY = canvasHeight / 2;
-                const topY = 50;
-                const bottomY = canvasHeight - 40;
+                const topY = 150;
+                const bottomY = 450;
                 labelInfo = {
                     texts: toStep.labels,
                     y: cogY > canvasCenterY ? topY : bottomY,

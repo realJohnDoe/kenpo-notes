@@ -1,10 +1,9 @@
-
 export const prerender = true;
 
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import * as yaml from 'yaml';
 import { error } from '@sveltejs/kit';
-import { resolve } from 'path';
+import { resolve, parse } from 'path';
 import {
   generateGrid,
   generateLabels,
@@ -15,14 +14,14 @@ import {
 } from '$lib/animation-builder.ts';
 
 export function entries() {
-    return [
-        { slug: 'delayed-sword' }
-    ];
+    const ymlDir = resolve(process.cwd(), '../src');
+    const files = readdirSync(ymlDir).filter(file => file.endsWith('.yml'));
+    return files.map(file => ({ slug: parse(file).name }));
 }
 
 export function load({ params }) {
   try {
-    const yamlPath = resolve(`../src/${params.slug}.yml`);
+    const yamlPath = resolve(process.cwd(), '../src', `${params.slug}.yml`);
     const rawYaml = readFileSync(yamlPath, 'utf8');
     const cfg = yaml.parse(rawYaml);
 

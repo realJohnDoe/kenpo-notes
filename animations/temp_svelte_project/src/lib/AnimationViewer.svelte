@@ -52,7 +52,7 @@
 
         mainTl.add({
           targets: labelEl,
-          translateY: step.label.y,
+          y: step.label.y,
           duration: 1,
           begin: () => { if (labelEl && step.label) labelEl.textContent = step.label.texts[0]; }
         }, currentTimelineCursor);
