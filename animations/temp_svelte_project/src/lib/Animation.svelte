@@ -5,6 +5,7 @@
   // Props
   export let timelineData: any[]; // Using any[] for simplicity as structure is complex
   export let svgContent: string;
+  export let onComplete: () => void = () => {};
 
   // State
   let mainTl: any; // anime.timeline instance
@@ -44,11 +45,10 @@
     mainTl = anime.timeline({ 
       autoplay: false, 
       loop: false,
-      update: (anim) => {
-        // @ts-ignore
-        if (anim.completed) {
-          playerState = 'finished';
-        }
+      complete: () => {
+        playerState = 'finished';
+        onComplete();
+        console.log('Animation: mainTl completed, playerState:', playerState);
       }
     });
 
@@ -102,6 +102,7 @@
     });
     stepStartTimes.push(currentTimelineCursor);
     goToStep(0);
+    console.log('Animation: onMount finished, playerState:', playerState);
   });
 
   onDestroy(() => {
@@ -129,60 +130,76 @@
   export const getPlayerState = () => playerState;
 
   export const goToStep = (index: number) => {
-    let targetTime: number;
-    if (index >= 0 && index < stepStartTimes.length - 1) {
-      targetTime = stepStartTimes[index];
-    } else if (index === stepStartTimes.length - 1) {
-      targetTime = mainTl.duration;
-    } else {
-      return;
-    }
+    console.log('Animation: goToStep called, index:', index, 'playerState:', playerState, 'mainTl.completed:', mainTl.completed);
+    return new Promise<'playing' | 'paused' | 'finished'>((resolve) => {
+        let targetTime: number;
+        if (index >= 0 && index < stepStartTimes.length - 1) {
+          targetTime = stepStartTimes[index];
+        } else if (index === stepStartTimes.length - 1) {
+          targetTime = mainTl.duration;
+        } else {
+          resolve(playerState);
+          return;
+        }
 
-    if (playerState === 'playing') {
-        mainTl.pause();
-    }
+        if (playerState === 'playing') {
+            mainTl.pause();
+        }
 
-    const proxy = { currentTime: mainTl.currentTime };
-    anime({
-        targets: proxy,
-        currentTime: targetTime,
-        duration: 300, // 300ms for a smooth transition
-        easing: 'easeInOutSine',
-        update: () => {
-            mainTl.seek(proxy.currentTime);
-        },
-        complete: () => {
-            if (targetTime >= mainTl.duration) {
-                playerState = 'finished';
-            } else {
-                playerState = 'paused';
+        const proxy = { currentTime: mainTl.currentTime };
+        anime({
+            targets: proxy,
+            currentTime: targetTime,
+            duration: 300, // 300ms for a smooth transition
+            easing: 'easeInOutSine',
+            update: () => {
+                mainTl.seek(proxy.currentTime);
+                // Explicitly reset completed status after seeking
+                if (mainTl.completed) {
+                    mainTl.completed = false;
+                }
+            },
+            complete: () => {
+                if (targetTime >= mainTl.duration) {
+                    playerState = 'finished';
+                } else {
+                    playerState = 'paused';
+                }
+                console.log('Animation: goToStep complete, playerState:', playerState, 'mainTl.completed:', mainTl.completed);
+                resolve(playerState);
             }
+        });
+
+        if (index > 0) {
+          const step = timelineData[index - 1];
+          if (labelEl && step && step.label && step.label.texts) {
+            labelEl.textContent = step.label.texts[step.label.texts.length - 1];
+            anime.set(labelEl, { opacity: 1 });
+          } else if (labelEl) {
+            anime.set(labelEl, { opacity: 0 });
+          }
+        } else if (labelEl) { // index is 0
+          anime.set(labelEl, { opacity: 0 });
         }
     });
-
-    if (index > 0) {
-      const step = timelineData[index - 1];
-      if (labelEl && step && step.label && step.label.texts) {
-        labelEl.textContent = step.label.texts[step.label.texts.length - 1];
-        anime.set(labelEl, { opacity: 1 });
-      } else if (labelEl) {
-        anime.set(labelEl, { opacity: 0 });
-      }
-    } else if (labelEl) { // index is 0
-      anime.set(labelEl, { opacity: 0 });
-    }
   };
 
   export const togglePlayPause = () => {
-    if (playerState === 'paused') {
-      mainTl.play();
-      playerState = 'playing';
-    } else if (playerState === 'playing') {
+    console.log('Animation: togglePlayPause called, playerState:', playerState, 'mainTl.completed:', mainTl.completed);
+    if (playerState === 'playing') {
       mainTl.pause();
       playerState = 'paused';
-    } else if (playerState === 'finished') {
-      mainTl.restart();
+      console.log('Animation: togglePlayPause -> paused, playerState:', playerState);
+    } else { // paused or finished
+      if (mainTl.completed) {
+        mainTl.restart();
+        console.log('Animation: togglePlayPause -> restart, playerState:', playerState);
+      } else {
+        mainTl.play();
+        console.log('Animation: togglePlayPause -> play, playerState:', playerState);
+      }
       playerState = 'playing';
+      console.log('Animation: togglePlayPause -> playing, playerState:', playerState);
     }
     return playerState;
   };
@@ -190,16 +207,16 @@
   export const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     if (playerState === 'finished' || mainTl.currentTime === stepStartTimes[currentIdx]) {
-      goToStep(currentIdx - 1);
+      return goToStep(currentIdx - 1);
     }
     else {
-      goToStep(currentIdx);
+      return goToStep(currentIdx);
     }
   };
 
   export const goToNextStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    goToStep(currentIdx + 1);
+    return goToStep(currentIdx + 1);
   };
 </script>
 

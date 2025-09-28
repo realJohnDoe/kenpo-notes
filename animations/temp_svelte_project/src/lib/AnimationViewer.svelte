@@ -14,20 +14,22 @@
     }
   }
 
-  function handlePrev() {
+  async function handlePrev() {
     if (animation) {
-      animation.goToPrevStep();
-      playerState = animation.getPlayerState();
+      playerState = await animation.goToPrevStep();
     }
   }
 
-  function handleNext() {
+  async function handleNext() {
     if (animation) {
-      animation.goToNextStep();
-      playerState = animation.getPlayerState();
+      playerState = await animation.goToNextStep();
     }
+  }
+
+  function handleComplete() {
+    playerState = 'finished';
   }
 </script>
 
-<Animation bind:this={animation} {timelineData} {svgContent} />
+<Animation bind:this={animation} {timelineData} {svgContent} onComplete={handleComplete} />
 <Controls {playerState} on:togglePlayPause={handleTogglePlayPause} on:prev={handlePrev} on:next={handleNext} />
