@@ -18,10 +18,15 @@ steps:
     direction: 1200
     labels: ["Left Heel Palm ⬅️✋🌴💥"]
   - stance: "right_neutral"
-    direction: 1030
+    direction: 1200
     duratin: 0.5
     pivot: right
     labels: ["Right Uppercut ➡️🔝✊💥"]
+  - stance: "right_forward"
+    direction: 900
+    duration: 0.5
+    pivot: right
+    labels: ["Left Outward Handsword ⬅️🔼✋⚔️💥"]
   # - stance: "attention"
   #   direction: 1200
   # - stance: "right_neutral"
