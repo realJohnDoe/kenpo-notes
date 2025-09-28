@@ -125,59 +125,53 @@
     return 0;
   };
 
-  export const getPlayerState = () => playerState;
-
   export const goToStep = (index: number) => {
-    return new Promise<'playing' | 'paused' | 'finished'>((resolve) => {
-        let targetTime: number;
-        if (index >= 0 && index < stepStartTimes.length - 1) {
-          targetTime = stepStartTimes[index];
-        } else if (index === stepStartTimes.length - 1) {
-          targetTime = mainTl.duration;
-        } else {
-          resolve(playerState);
-          return;
-        }
+    let targetTime: number;
+    if (index >= 0 && index < stepStartTimes.length - 1) {
+      targetTime = stepStartTimes[index];
+    } else if (index === stepStartTimes.length - 1) {
+      targetTime = mainTl.duration;
+    } else {
+      return;
+    }
 
-        if (playerState === 'playing') {
-            mainTl.pause();
-        }
+    if (playerState === 'playing') {
+        mainTl.pause();
+    }
 
-        const proxy = { currentTime: mainTl.currentTime };
-        anime({
-            targets: proxy,
-            currentTime: targetTime,
-            duration: 300, // 300ms for a smooth transition
-            easing: 'easeInOutSine',
-            update: () => {
-                mainTl.seek(proxy.currentTime);
-                // Explicitly reset completed status after seeking
-                if (mainTl.completed) {
-                    mainTl.completed = false;
-                }
-            },
-            complete: () => {
-                if (targetTime >= mainTl.duration) {
-                    playerState = 'finished';
-                } else {
-                    playerState = 'paused';
-                }
-                resolve(playerState);
+    const proxy = { currentTime: mainTl.currentTime };
+    anime({
+        targets: proxy,
+        currentTime: targetTime,
+        duration: 300, // 300ms for a smooth transition
+        easing: 'easeInOutSine',
+        update: () => {
+            mainTl.seek(proxy.currentTime);
+            // Explicitly reset completed status after seeking
+            if (mainTl.completed) {
+                mainTl.completed = false;
             }
-        });
-
-        if (index > 0) {
-          const step = timelineData[index - 1];
-          if (labelEl && step && step.label && step.label.texts) {
-            labelEl.textContent = step.label.texts[step.label.texts.length - 1];
-            anime.set(labelEl, { opacity: 1 });
-          } else if (labelEl) {
-            anime.set(labelEl, { opacity: 0 });
-          }
-        } else if (labelEl) { // index is 0
-          anime.set(labelEl, { opacity: 0 });
+        },
+        complete: () => {
+            if (targetTime >= mainTl.duration) {
+                playerState = 'finished';
+            } else {
+                playerState = 'paused';
+            }
         }
     });
+
+    if (index > 0) {
+      const step = timelineData[index - 1];
+      if (labelEl && step && step.label && step.label.texts) {
+        labelEl.textContent = step.label.texts[step.label.texts.length - 1];
+        anime.set(labelEl, { opacity: 1 });
+      } else if (labelEl) {
+        anime.set(labelEl, { opacity: 0 });
+      }
+    } else if (labelEl) { // index is 0
+      anime.set(labelEl, { opacity: 0 });
+    }
   };
 
   export const togglePlayPause = () => {
@@ -198,16 +192,16 @@
   export const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     if (playerState === 'finished' || mainTl.currentTime === stepStartTimes[currentIdx]) {
-      return goToStep(currentIdx - 1);
+      goToStep(currentIdx - 1);
     }
     else {
-      return goToStep(currentIdx);
+      goToStep(currentIdx);
     }
   };
 
   export const goToNextStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    return goToStep(currentIdx + 1);
+    goToStep(currentIdx + 1);
   };
 </script>
 
