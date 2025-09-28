@@ -24,10 +24,8 @@ export function entries() {
 export function load({ params }) {
   try {
     const yamlPath = resolve(process.cwd(), '../src', `${params.slug}.yml`);
-    console.log('Loading YAML from:', yamlPath);
     const rawYaml = readFileSync(yamlPath, 'utf8');
     const cfg = yaml.parse(rawYaml);
-    console.log('cfg.steps.length:', cfg.steps.length);
 
     // This logic is copied from the old build.ts
     cfg.canvas = { width: 600, height: 600 };

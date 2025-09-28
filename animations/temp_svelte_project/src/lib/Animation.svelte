@@ -25,7 +25,6 @@
     : 1;
 
   onMount(() => {
-    console.log('Animation.svelte: timelineData:', timelineData, 'timelineData.length:', timelineData ? timelineData.length : 'undefined');
     labelEl = document.getElementById('stepLabel');
     
     viewportWidth = window.innerWidth;
@@ -107,25 +106,20 @@
 
   // --- Control Functions ---
   const getStepIndexFromTime = (time: number): number => {
-    console.log('getStepIndexFromTime called with time:', time, 'stepStartTimes:', stepStartTimes, 'mainTl.duration:', mainTl.duration);
     // Handle case where time is exactly at the end of the timeline
     if (time >= mainTl.duration) {
-      console.log('getStepIndexFromTime: time >= mainTl.duration, returning:', totalSteps - 1);
       return totalSteps - 1; // Return the index of the last step
     }
 
     for (let i = 0; i < stepStartTimes.length - 1; i++) {
       if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
-        console.log('getStepIndexFromTime: time in range, returning:', i);
         return i;
       }
     }
-    console.log('getStepIndexFromTime: returning 0 (default)');
     return 0; // Should not be reached for valid times within the timeline
   };
 
   export const goToStep = (index: number) => {
-    console.log('goToStep called with index:', index);
     let targetTime: number;
     if (index >= 0 && index < stepStartTimes.length - 1) {
       targetTime = stepStartTimes[index];
@@ -199,7 +193,6 @@
   export const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx;
-    console.log('goToPrevStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
 
     if (playerState === 'finished') {
       targetStepIdx = totalSteps - 2; // Go to the second to last step
@@ -211,20 +204,17 @@
     if (targetStepIdx < 0) {
       targetStepIdx = 0;
     }
-    console.log('goToPrevStep: calling goToStep with targetStepIdx:', targetStepIdx);
     goToStep(targetStepIdx);
   };
 
   export const goToNextStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx + 1;
-    console.log('goToNextStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
 
     // Ensure targetStepIdx does not exceed the last step
     if (targetStepIdx >= totalSteps) {
       targetStepIdx = totalSteps - 1;
     }
-    console.log('goToNextStep: calling goToStep with targetStepIdx:', targetStepIdx);
     goToStep(targetStepIdx);
   };
 </script>
