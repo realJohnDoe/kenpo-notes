@@ -87,7 +87,7 @@ for (const key in explicitStances) {
 }
 
 function rotatePoint(point: { x: number, y: number }, angle: number): { x: number, y: number } {
-    const radians = (angle * Math.PI) / 180;
+    const radians = (-angle * Math.PI) / 180;
     const cos = Math.cos(radians);
     const sin = Math.sin(radians);
     const { x, y } = point;
