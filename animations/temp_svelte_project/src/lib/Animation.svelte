@@ -13,34 +13,27 @@
   let labelEl: HTMLElement | null;
   let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
+  $: totalSteps = timelineData.length + 1; // Compute totalSteps internally
+
   // --- Resize and Scale Logic ---
   let viewportWidth: number = 0;
   let viewportHeight: number = 0;
-  let scale: number = 1;
   const intrinsicCanvasSize = 600;
 
-  function calculateScale() {
-    if (viewportWidth > 0 && viewportHeight > 0) {
-      scale = Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize);
-    } else {
-      scale = 1;
-    }
-  }
+  $: scale = (viewportWidth > 0 && viewportHeight > 0)
+    ? Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize)
+    : 1;
 
-  function handleResize() {
-    viewportWidth = window.innerWidth;
-    viewportHeight = window.innerHeight;
-    calculateScale();
-  }
-
-  // --- Lifecycle ---
   onMount(() => {
+    console.log('Animation.svelte: timelineData:', timelineData, 'timelineData.length:', timelineData ? timelineData.length : 'undefined');
     labelEl = document.getElementById('stepLabel');
     
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
-    calculateScale();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', () => {
+      viewportWidth = window.innerWidth;
+      viewportHeight = window.innerHeight;
+    });
 
     mainTl = anime.timeline({ 
       autoplay: false, 
@@ -114,11 +107,11 @@
 
   // --- Control Functions ---
   const getStepIndexFromTime = (time: number): number => {
-    console.log('getStepIndexFromTime called with time:', time);
+    console.log('getStepIndexFromTime called with time:', time, 'stepStartTimes:', stepStartTimes, 'mainTl.duration:', mainTl.duration);
     // Handle case where time is exactly at the end of the timeline
     if (time >= mainTl.duration) {
-      console.log('getStepIndexFromTime: time >= mainTl.duration, returning:', timelineData.length - 1);
-      return timelineData.length - 1; // Return the index of the last step
+      console.log('getStepIndexFromTime: time >= mainTl.duration, returning:', totalSteps - 1);
+      return totalSteps - 1; // Return the index of the last step
     }
 
     for (let i = 0; i < stepStartTimes.length - 1; i++) {
@@ -177,7 +170,8 @@
       } else if (labelEl) {
         anime.set(labelEl, { opacity: 0 });
       }
-    } else if (labelEl) { // index is 0
+    }
+    else if (labelEl) { // index is 0
       anime.set(labelEl, { opacity: 0 });
     }
   };
@@ -208,7 +202,7 @@
     console.log('goToPrevStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
 
     if (playerState === 'finished') {
-      targetStepIdx = timelineData.length - 2; // Go to the second to last step
+      targetStepIdx = totalSteps - 2; // Go to the second to last step
     } else {
       targetStepIdx = currentIdx - 1;
     }
@@ -227,8 +221,8 @@
     console.log('goToNextStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
 
     // Ensure targetStepIdx does not exceed the last step
-    if (targetStepIdx >= timelineData.length) {
-      targetStepIdx = timelineData.length - 1;
+    if (targetStepIdx >= totalSteps) {
+      targetStepIdx = totalSteps - 1;
     }
     console.log('goToNextStep: calling goToStep with targetStepIdx:', targetStepIdx);
     goToStep(targetStepIdx);
