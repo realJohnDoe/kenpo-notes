@@ -167,11 +167,6 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     return shapesSvg;
 }
 
-// Helper to get shape coordinates for animation
-export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
-    return calculateShapeTransforms(personConfig, canvasWidth, canvasHeight, unit);
-}
-
 export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
     return {
         targets: targetId,
@@ -275,7 +270,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
         if (lastConfig.offsetY === undefined) lastConfig.offsetY = 0;
 
         for (let i = 0; i < cfg.steps.length - 1; i++) {
-            const fromCoords = getPersonShapeCoordinates(lastConfig, canvasWidth, canvasHeight, unitSize);
+            const fromCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
 
             const toStep = cfg.steps[i + 1];
             const pivot = toStep.pivot;
@@ -309,7 +304,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                 nextConfig.offsetY = toOffsetY;
             }
 
-            const toCoords = getPersonShapeCoordinates(nextConfig, canvasWidth, canvasHeight, unitSize);
+            const toCoords = calculateShapeTransforms(nextConfig, canvasWidth, canvasHeight, unitSize);
 
             const stepAnims = [];
 
