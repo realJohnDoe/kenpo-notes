@@ -8,10 +8,12 @@ import {
   generateGrid,
   generateLabels,
   generateCenterMarker,
-  generateVignette,
+  generateVignette
+} from '$lib/background-graphics';
+import {
   generatePersonShapes,
   generateAnimationTimeline
-} from '$lib/animation-builder.ts';
+} from '$lib/animation';
 
 export function entries() {
     const ymlDir = resolve(process.cwd(), '../src');
