@@ -48,7 +48,6 @@
       complete: () => {
         playerState = 'finished';
         onComplete();
-        console.log('Animation: mainTl completed, playerState:', playerState);
       }
     });
 
@@ -102,7 +101,6 @@
     });
     stepStartTimes.push(currentTimelineCursor);
     goToStep(0);
-    console.log('Animation: onMount finished, playerState:', playerState);
   });
 
   onDestroy(() => {
@@ -130,7 +128,6 @@
   export const getPlayerState = () => playerState;
 
   export const goToStep = (index: number) => {
-    console.log('Animation: goToStep called, index:', index, 'playerState:', playerState, 'mainTl.completed:', mainTl.completed);
     return new Promise<'playing' | 'paused' | 'finished'>((resolve) => {
         let targetTime: number;
         if (index >= 0 && index < stepStartTimes.length - 1) {
@@ -165,7 +162,6 @@
                 } else {
                     playerState = 'paused';
                 }
-                console.log('Animation: goToStep complete, playerState:', playerState, 'mainTl.completed:', mainTl.completed);
                 resolve(playerState);
             }
         });
@@ -185,21 +181,16 @@
   };
 
   export const togglePlayPause = () => {
-    console.log('Animation: togglePlayPause called, playerState:', playerState, 'mainTl.completed:', mainTl.completed);
     if (playerState === 'playing') {
       mainTl.pause();
       playerState = 'paused';
-      console.log('Animation: togglePlayPause -> paused, playerState:', playerState);
     } else { // paused or finished
       if (mainTl.completed) {
         mainTl.restart();
-        console.log('Animation: togglePlayPause -> restart, playerState:', playerState);
       } else {
         mainTl.play();
-        console.log('Animation: togglePlayPause -> play, playerState:', playerState);
       }
       playerState = 'playing';
-      console.log('Animation: togglePlayPause -> playing, playerState:', playerState);
     }
     return playerState;
   };
