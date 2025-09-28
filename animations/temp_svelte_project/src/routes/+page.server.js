@@ -1,11 +1,8 @@
 
 export const prerender = true;
 
-import {
-  generateGrid,
-  generateLabels,
-  generatePersonShapes,
-} from '$lib/animation-builder.ts';
+import { generateGrid, generateLabels } from '$lib/background-graphics.ts';
+import { generatePersonShapes } from '$lib/animation.ts';
 import { readFileSync } from 'fs';
 import * as yaml from 'yaml';
 import { resolve } from 'path';

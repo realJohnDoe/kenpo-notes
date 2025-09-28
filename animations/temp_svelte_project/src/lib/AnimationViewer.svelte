@@ -3,77 +3,58 @@
   import { onMount, onDestroy } from 'svelte';
   import { Play, Pause, SkipBack, SkipForward, RotateCcw } from 'lucide-svelte';
 
-  // Define interfaces for better type safety
-  interface AnimationStep {
-    anims?: any[];
-    label?: {
-      texts: string[];
-      y: number;
-      duration?: number;
-    };
-  }
-
-  export let timelineData: AnimationStep[];
+  // Props
+  export let timelineData: any[]; // Using any[] for simplicity as structure is complex
   export let svgContent: string;
 
+  // State
   let mainTl: any; // anime.timeline instance
   let stepStartTimes: number[] = [];
   let labelEl: HTMLElement | null;
-  let paused = true;
-  let isAtEnd = false;
+  let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
-  let viewportWidth: number = 0; // Initialize with a default value
-  let viewportHeight: number = 0; // Initialize with a default value
+  // --- Resize and Scale Logic (unchanged) ---
+  let viewportWidth: number = 0;
+  let viewportHeight: number = 0;
   let scale: number = 1;
-
-  const intrinsicCanvasSize = 600; // The hardcoded width and height from +page.server.js
+  const intrinsicCanvasSize = 600;
 
   function calculateScale() {
-    if (viewportWidth > 0 && viewportHeight > 0) { // Add check to prevent division by zero
+    if (viewportWidth > 0 && viewportHeight > 0) {
       scale = Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize);
     } else {
-      scale = 1; // Default to 1 if viewport dimensions are not yet available
+      scale = 1;
     }
-    console.log('calculateScale - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
   }
 
   function handleResize() {
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
     calculateScale();
-    console.log('handleResize - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
   }
 
+  // --- Lifecycle ---
   onMount(() => {
     labelEl = document.getElementById('stepLabel');
     
-    // Initialize viewport dimensions and scale ONLY on the client
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
-    calculateScale(); // Call calculateScale immediately after setting dimensions
-    console.log('onMount - viewportWidth:', viewportWidth, 'viewportHeight:', viewportHeight, 'scale:', scale);
-
-    // Add resize listener
+    calculateScale();
     window.addEventListener('resize', handleResize);
 
     mainTl = anime.timeline({ 
       autoplay: false, 
       loop: false,
-      update: () => {
-        paused = mainTl.paused;
-        isAtEnd = mainTl.currentTime >= mainTl.duration;
-      },
       complete: () => {
-        isAtEnd = true; // Ensure isAtEnd is true when animation completes
+        playerState = 'finished';
       }
     });
 
+    // --- Timeline Building Logic (unchanged) ---
     let currentTimelineCursor = 0;
-
-    timelineData.forEach((step: AnimationStep) => {
+    timelineData.forEach((step: any) => {
       stepStartTimes.push(currentTimelineCursor);
       let stepDuration = 1000;
-
       if (step.anims && step.anims.length > 0) {
         const firstAnimation = step.anims[0];
         stepDuration = firstAnimation.duration;
@@ -82,29 +63,24 @@
           mainTl.add(step.anims[i], currentTimelineCursor);
         }
       }
-
       if (step.label && step.label.texts && step.label.texts.length > 0) {
         const timePerLabel = stepDuration / step.label.texts.length;
         const fadeDuration = 200;
-
         mainTl.add({
           targets: labelEl,
           y: step.label.y,
           duration: 1,
           begin: () => { if (labelEl && step.label) labelEl.textContent = step.label.texts[0]; }
         }, currentTimelineCursor);
-
         mainTl.add({
           targets: labelEl,
           opacity: 1,
           duration: fadeDuration,
           easing: 'linear'
         }, currentTimelineCursor);
-
         for (let i = 1; i < step.label.texts.length; i++) {
           const labelText = step.label.texts[i];
           const prevLabelStartTime = currentTimelineCursor + (i * timePerLabel);
-
           mainTl.add({
             targets: labelEl,
             opacity: 0,
@@ -112,7 +88,6 @@
             easing: 'linear',
             complete: () => { if (labelEl) labelEl.textContent = labelText; }
           }, prevLabelStartTime - fadeDuration);
-
           mainTl.add({
             targets: labelEl,
             opacity: 1,
@@ -130,13 +105,13 @@
   onDestroy(() => {
     if (mainTl) {
       mainTl.pause();
-      mainTl.seek(0);
     }
-    if (typeof window !== 'undefined') { // Add check for window
+    if (typeof window !== 'undefined') {
       window.removeEventListener('resize', handleResize);
     }
   });
 
+  // --- Control Functions ---
   const getStepIndexFromTime = (time: number): number => {
     for (let i = 0; i < stepStartTimes.length - 1; i++) {
       if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
@@ -159,52 +134,49 @@
       return;
     }
 
-    const seekProgress = { value: mainTl.currentTime };
-    anime({
-      targets: seekProgress,
-      value: targetTime,
-      duration: Math.abs(targetTime - mainTl.currentTime) * 0.1,
-      easing: 'linear',
-      update: () => {
-        mainTl.seek(seekProgress.value);
-      },
-      complete: () => {
-        if (!mainTl.paused) {
-          mainTl.pause();
-        }
-        paused = true; // Explicitly set paused to true
-        if (index > 0) {
-          const step = timelineData[index - 1];
-          if (labelEl && step && step.label && step.label.texts) {
-            labelEl.textContent = step.label.texts[step.label.texts.length - 1];
-            anime({ targets: labelEl, opacity: 1, duration: 50, easing: 'linear' });
-          } else if (labelEl) {
-            anime({ targets: labelEl, opacity: 0, duration: 50, easing: 'linear' });
-          }
-        } else if (labelEl) { // index is 0
-          anime({ targets: labelEl, opacity: 0, duration: 50, easing: 'linear' });
-        }
+    // Pause the timeline if it's playing before we seek.
+    if (playerState === 'playing') {
+        mainTl.pause();
+    }
+
+    // Directly seek and update the state.
+    mainTl.seek(targetTime);
+    if (targetTime >= mainTl.duration) {
+        playerState = 'finished';
+    } else {
+        playerState = 'paused';
+    }
+
+    // Logic to handle label visibility when stepping
+    if (index > 0) {
+      const step = timelineData[index - 1];
+      if (labelEl && step && step.label && step.label.texts) {
+        labelEl.textContent = step.label.texts[step.label.texts.length - 1];
+        anime.set(labelEl, { opacity: 1 });
+      } else if (labelEl) {
+        anime.set(labelEl, { opacity: 0 });
       }
-    });
+    } else if (labelEl) { // index is 0
+      anime.set(labelEl, { opacity: 0 });
+    }
   };
 
   const togglePlayPause = () => {
-    if (isAtEnd) {
-      mainTl.restart();
-      isAtEnd = false; // Reset isAtEnd when restarting
-      paused = false; // Immediately set paused to false
-    } else if (mainTl.paused) {
+    if (playerState === 'paused') {
       mainTl.play();
-      paused = false; // Immediately set paused to false
-    } else {
+      playerState = 'playing';
+    } else if (playerState === 'playing') {
       mainTl.pause();
-      paused = true; // Immediately set paused to true
+      playerState = 'paused';
+    } else if (playerState === 'finished') {
+      mainTl.restart();
+      playerState = 'playing';
     }
   };
 
   const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    if (mainTl.currentTime === stepStartTimes[currentIdx]) {
+    if (playerState === 'finished' || mainTl.currentTime === stepStartTimes[currentIdx]) {
       goToStep(currentIdx - 1);
     }
     else {
@@ -243,9 +215,9 @@
       <SkipBack />
     </button>
     <button class="control-btn" on:click={togglePlayPause}>
-      {#if isAtEnd}
+      {#if playerState === 'finished'}
         <RotateCcw />
-      {:else if paused}
+      {:else if playerState === 'paused'}
         <Play />
       {:else}
         <Pause />
