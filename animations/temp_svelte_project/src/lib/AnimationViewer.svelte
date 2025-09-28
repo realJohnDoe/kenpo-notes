@@ -14,15 +14,15 @@
     }
   }
 
-  function handlePrev() {
+  async function handlePrev() {
     if (animation) {
-      animation.goToPrevStep();
+      playerState = await animation.goToPrevStep();
     }
   }
 
-  function handleNext() {
+  async function handleNext() {
     if (animation) {
-      animation.goToNextStep();
+      playerState = await animation.goToNextStep();
     }
   }
 
