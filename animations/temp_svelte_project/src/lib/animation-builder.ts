@@ -96,65 +96,7 @@ function rotatePoint(point: { x: number, y: number }, angle: number): { x: numbe
     return { x: newX, y: newY };
 }
 
-export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number): string {
-    const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
-
-    const centerX = canvasWidth / 2;
-    const centerY = canvasHeight / 2;
-
-    let shapesSvg = "";
-
-    const rotationDegrees = directionToDegrees(direction);
-
-    const currentStance = stances[stance] || stances["attention"];
-
-    let leftFoot = currentStance.leftFoot;
-    let rightFoot = currentStance.rightFoot;
-    let cog = currentStance.cog;
-
-    if (rotationDegrees !== 0) {
-        leftFoot = rotatePoint(leftFoot, rotationDegrees);
-        rightFoot = rotatePoint(rightFoot, rotationDegrees);
-        cog = rotatePoint(cog, rotationDegrees);
-    }
-
-    const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation);
-    const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
-
-    const toSvgX = (mathX: number) => (mathX + offsetX) * unit + centerX;
-    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit);
-
-    const leftFootSvgX = toSvgX(leftFoot.x);
-    const leftFootSvgY = toSvgY(leftFoot.y);
-    const rightFootSvgX = toSvgX(rightFoot.x);
-    const rightFootSvgY = toSvgY(rightFoot.y);
-
-    // Left Foot Group
-    shapesSvg += `<g id="leftFootGroup" transform="translate(${leftFootSvgX}, ${leftFootSvgY}) rotate(${rotationDegrees + leftFootRotationDegrees})">
-        <circle cx="0" cy="0" r="5" fill="blue" />
-        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">L</text>
-    </g>`;
-
-    // Right Foot Group
-    shapesSvg += `<g id="rightFootGroup" transform="translate(${rightFootSvgX}, ${rightFootSvgY}) rotate(${rotationDegrees + rightFootRotationDegrees})">
-        <circle cx="0" cy="0" r="5" fill="blue" />
-        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">R</text>
-    </g>`;
-
-    // Center of Gravity
-    const cogSvgX = toSvgX(cog.x);
-    const cogSvgY = toSvgY(cog.y);
-    shapesSvg += `<circle id="cog" cx="${cogSvgX}" cy="${cogSvgY}" r="10" fill="red" />`;
-    const cogPointerPoints = `-8,-10 8,-10 0,-30`;
-    shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${cogSvgX}, ${cogSvgY}) rotate(${rotationDegrees})" />`;
-
-    return shapesSvg;
-}
-
-// Helper to get shape coordinates for animation
-export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
+function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
 
     const centerX = canvasWidth / 2;
@@ -196,6 +138,38 @@ export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number
         cog: { cx: cogSvgX, cy: cogSvgY },
         cogPointer: { x: cogSvgX, y: cogSvgY, rotate: rotationDegrees }
     };
+}
+
+export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number): string {
+    const transforms = calculateShapeTransforms(personConfig, canvasWidth, canvasHeight, unit);
+
+    let shapesSvg = "";
+
+    // Left Foot Group
+    shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
+        <circle cx="0" cy="0" r="5" fill="blue" />
+        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">L</text>
+    </g>`;
+
+    // Right Foot Group
+    shapesSvg += `<g id="rightFootGroup" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
+        <circle cx="0" cy="0" r="5" fill="blue" />
+        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">R</text>
+    </g>`;
+
+    // Center of Gravity
+    shapesSvg += `<circle id="cog" cx="${transforms.cog.cx}" cy="${transforms.cog.cy}" r="10" fill="red" />`;
+    const cogPointerPoints = `-8,-10 8,-10 0,-30`;
+    shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})" />`;
+
+    return shapesSvg;
+}
+
+// Helper to get shape coordinates for animation
+export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
+    return calculateShapeTransforms(personConfig, canvasWidth, canvasHeight, unit);
 }
 
 export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
