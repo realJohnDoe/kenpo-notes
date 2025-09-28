@@ -1,11 +1,9 @@
-
-export const directionToDegrees = (dir: number) => {
-    const hours = Math.floor(dir / 100);
-    const minutes = dir % 100;
-    const decimalHours = hours + (minutes / 60);
-    const normalizedHours = decimalHours === 12 ? 0 : decimalHours;
-    return (normalizedHours / 12) * 360;
-};
+function directionToDegrees(direction: number): number {
+    const hour = Math.floor(direction / 100);
+    const minute = direction % 100;
+    const degrees = (hour * 30 + minute / 2) % 360;
+    return degrees;
+}
 
 // Helper function to mirror rotation values
 const mirrorRotation = (dir: number): number => {
@@ -88,6 +86,16 @@ for (const key in explicitStances) {
     }
 }
 
+function rotatePoint(point: { x: number, y: number }, angle: number): { x: number, y: number } {
+    const radians = (angle * Math.PI) / 180;
+    const cos = Math.cos(radians);
+    const sin = Math.sin(radians);
+    const { x, y } = point;
+    const newX = x * cos - y * sin;
+    const newY = x * sin + y * cos;
+    return { x: newX, y: newY };
+}
+
 export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number): string {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
 
@@ -98,46 +106,48 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
 
     const rotationDegrees = directionToDegrees(direction);
 
-    const currentStance = stances[stance] || stances["attention"]; // Default to attention
-    const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation); // Retrieve from stance definition
+    const currentStance = stances[stance] || stances["attention"];
+
+    let leftFoot = currentStance.leftFoot;
+    let rightFoot = currentStance.rightFoot;
+    let cog = currentStance.cog;
+
+    if (rotationDegrees !== 0) {
+        leftFoot = rotatePoint(leftFoot, rotationDegrees);
+        rightFoot = rotatePoint(rightFoot, rotationDegrees);
+        cog = rotatePoint(cog, rotationDegrees);
+    }
+
+    const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation);
     const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
 
-    // Define base positions in mathematical units (relative to (0,0))
-    let leftFootMathX = currentStance.leftFoot.x;
-    let leftFootMathY = currentStance.leftFoot.y;
-    let rightFootMathX = currentStance.rightFoot.x;
-    let rightFootMathY = currentStance.rightFoot.y;
-    let cogMathX = currentStance.cog.x;
-    let cogMathY = currentStance.cog.y;
-
-    // Convert mathematical coordinates to SVG pixel coordinates
     const toSvgX = (mathX: number) => (mathX + offsetX) * unit + centerX;
-    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit); // Flipped Y
+    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit);
 
-    // Left Foot
-    const leftFootSvgX = toSvgX(leftFootMathX);
-    const leftFootSvgY = toSvgY(leftFootMathY);
-    shapesSvg += `<circle id="leftFootCircle" cx="${leftFootSvgX}" cy="${leftFootSvgY}" r="5" fill="blue" />`;
-    // Left Foot Pointer (relative to leftFootSvgX, leftFootSvgY)
-    // Points are defined relative to the circle's center for rotation
-    const leftPointerPoints = `-4,-5 4,-5 0,-15`; // Relative to circle center
-    shapesSvg += `<polygon id="leftFootPointer" points="${leftPointerPoints}" fill="blue" transform="translate(${leftFootSvgX}, ${leftFootSvgY}) rotate(${rotationDegrees + leftFootRotationDegrees})" />`;
+    const leftFootSvgX = toSvgX(leftFoot.x);
+    const leftFootSvgY = toSvgY(leftFoot.y);
+    const rightFootSvgX = toSvgX(rightFoot.x);
+    const rightFootSvgY = toSvgY(rightFoot.y);
 
+    // Left Foot Group
+    shapesSvg += `<g id="leftFootGroup" transform="translate(${leftFootSvgX}, ${leftFootSvgY}) rotate(${rotationDegrees + leftFootRotationDegrees})">
+        <circle cx="0" cy="0" r="5" fill="blue" />
+        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">L</text>
+    </g>`;
 
-    // Right Foot
-    const rightFootSvgX = toSvgX(rightFootMathX);
-    const rightFootSvgY = toSvgY(rightFootMathY);
-    shapesSvg += `<circle id="rightFootCircle" cx="${rightFootSvgX}" cy="${rightFootSvgY}" r="5" fill="blue" />`;
-    // Right Foot Pointer
-    const rightPointerPoints = `-4,-5 4,-5 0,-15`; // Relative to circle center
-    shapesSvg += `<polygon id="rightFootPointer" points="${rightPointerPoints}" fill="blue" transform="translate(${rightFootSvgX}, ${rightFootSvgY}) rotate(${rotationDegrees + rightFootRotationDegrees})" />`;
+    // Right Foot Group
+    shapesSvg += `<g id="rightFootGroup" transform="translate(${rightFootSvgX}, ${rightFootSvgY}) rotate(${rotationDegrees + rightFootRotationDegrees})">
+        <circle cx="0" cy="0" r="5" fill="blue" />
+        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">R</text>
+    </g>`;
 
     // Center of Gravity
-    const cogSvgX = toSvgX(cogMathX);
-    const cogSvgY = toSvgY(cogMathY);
+    const cogSvgX = toSvgX(cog.x);
+    const cogSvgY = toSvgY(cog.y);
     shapesSvg += `<circle id="cog" cx="${cogSvgX}" cy="${cogSvgY}" r="10" fill="red" />`;
-    // CoG Pointer
-    const cogPointerPoints = `-8,-10 8,-10 0,-30`; // Relative to circle center
+    const cogPointerPoints = `-8,-10 8,-10 0,-30`;
     shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${cogSvgX}, ${cogSvgY}) rotate(${rotationDegrees})" />`;
 
     return shapesSvg;
@@ -153,24 +163,33 @@ export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number
     const rotationDegrees = directionToDegrees(direction);
 
     const currentStance = stances[stance] || stances["attention"];
+
+    let leftFoot = currentStance.leftFoot;
+    let rightFoot = currentStance.rightFoot;
+    let cog = currentStance.cog;
+
+    if (rotationDegrees !== 0) {
+        leftFoot = rotatePoint(leftFoot, rotationDegrees);
+        rightFoot = rotatePoint(rightFoot, rotationDegrees);
+        cog = rotatePoint(cog, rotationDegrees);
+    }
+
     const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation);
     const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
 
     const toSvgX = (mathX: number) => (mathX + offsetX) * unit + centerX;
-    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit); // Flipped Y
+    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * unit);
 
-    const leftFootSvgX = toSvgX(currentStance.leftFoot.x);
-    const leftFootSvgY = toSvgY(currentStance.leftFoot.y);
-    const rightFootSvgX = toSvgX(currentStance.rightFoot.x);
-    const rightFootSvgY = toSvgY(currentStance.rightFoot.y);
-    const cogSvgX = toSvgX(currentStance.cog.x);
-    const cogSvgY = toSvgY(currentStance.cog.y);
+    const leftFootSvgX = toSvgX(leftFoot.x);
+    const leftFootSvgY = toSvgY(leftFoot.y);
+    const rightFootSvgX = toSvgX(rightFoot.x);
+    const rightFootSvgY = toSvgY(rightFoot.y);
+    const cogSvgX = toSvgX(cog.x);
+    const cogSvgY = toSvgY(cog.y);
 
     return {
-        leftFootCircle: { cx: leftFootSvgX, cy: leftFootSvgY },
-        leftFootPointer: { x: leftFootSvgX, y: leftFootSvgY, rotate: rotationDegrees + leftFootRotationDegrees },
-        rightFootCircle: { cx: rightFootSvgX, cy: rightFootSvgY },
-        rightFootPointer: { x: rightFootSvgX, y: rightFootSvgY, rotate: rotationDegrees + rightFootRotationDegrees },
+        leftFootGroup: { x: leftFootSvgX, y: leftFootSvgY, rotate: rotationDegrees + leftFootRotationDegrees },
+        rightFootGroup: { x: rightFootSvgX, y: rightFootSvgY, rotate: rotationDegrees + rightFootRotationDegrees },
         cog: { cx: cogSvgX, cy: cogSvgY },
         cogPointer: { x: cogSvgX, y: cogSvgY, rotate: rotationDegrees }
     };
@@ -292,9 +311,15 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             const stepAnimationDuration = baseAnimationDuration * (toStep.duration !== undefined ? toStep.duration : 1);
 
             if (pivot === 'left' || pivot === 'right') {
-                const fromPivotCoords = (pivot === 'left') ? fromCoords.leftFootCircle : fromCoords.rightFootCircle;
+                const fromPivotCoords = (pivot === 'left') ? { cx: fromCoords.leftFootGroup.x, cy: fromCoords.leftFootGroup.y } : { cx: fromCoords.rightFootGroup.x, cy: fromCoords.rightFootGroup.y };
                 const toStance = stances[toStep.stance];
-                const toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
+                
+                let toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
+
+                const rotationDegrees = directionToDegrees(toStep.direction);
+                if (rotationDegrees !== 0) {
+                    toPivotMath = rotatePoint(toPivotMath, rotationDegrees);
+                }
 
                 const centerX = canvasWidth / 2;
                 const centerY = canvasHeight / 2;
@@ -311,12 +336,9 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             const stepAnims = [];
 
-            stepAnims.push(createCircleAnim('#leftFootCircle', fromCoords.leftFootCircle, toCoords.leftFootCircle, stepAnimationDuration));
-            stepAnims.push(createCircleAnim('#rightFootCircle', fromCoords.rightFootCircle, toCoords.rightFootCircle, stepAnimationDuration));
+            stepAnims.push(createPointerAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
+            stepAnims.push(createPointerAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
             stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog, stepAnimationDuration));
-
-            stepAnims.push(createPointerAnim('#leftFootPointer', fromCoords.leftFootPointer, toCoords.leftFootPointer, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#rightFootPointer', fromCoords.rightFootPointer, toCoords.rightFootPointer, stepAnimationDuration));
             stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
 
             let labelInfo = null;

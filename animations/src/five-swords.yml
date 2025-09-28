@@ -20,6 +20,7 @@ steps:
   - stance: "right_neutral"
     direction: 1030
     duratin: 0.5
+    pivot: right
     labels: ["Right Uppercut ➡️🔝✊💥"]
   # - stance: "attention"
   #   direction: 1200
