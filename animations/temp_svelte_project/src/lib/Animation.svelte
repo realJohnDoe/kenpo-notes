@@ -114,70 +114,72 @@
 
   // --- Control Functions ---
   const getStepIndexFromTime = (time: number): number => {
+    console.log('getStepIndexFromTime called with time:', time);
+    // Handle case where time is exactly at the end of the timeline
+    if (time >= mainTl.duration) {
+      console.log('getStepIndexFromTime: time >= mainTl.duration, returning:', timelineData.length - 1);
+      return timelineData.length - 1; // Return the index of the last step
+    }
+
     for (let i = 0; i < stepStartTimes.length - 1; i++) {
       if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
+        console.log('getStepIndexFromTime: time in range, returning:', i);
         return i;
       }
     }
-    if (time >= stepStartTimes[stepStartTimes.length - 1]) {
-      return stepStartTimes.length - 2;
-    }
-    return 0;
+    console.log('getStepIndexFromTime: returning 0 (default)');
+    return 0; // Should not be reached for valid times within the timeline
   };
 
-  export const getPlayerState = () => playerState;
-
   export const goToStep = (index: number) => {
-    return new Promise<'playing' | 'paused' | 'finished'>((resolve) => {
-        let targetTime: number;
-        if (index >= 0 && index < stepStartTimes.length - 1) {
-          targetTime = stepStartTimes[index];
-        } else if (index === stepStartTimes.length - 1) {
-          targetTime = mainTl.duration;
-        } else {
-          resolve(playerState);
-          return;
-        }
+    console.log('goToStep called with index:', index);
+    let targetTime: number;
+    if (index >= 0 && index < stepStartTimes.length - 1) {
+      targetTime = stepStartTimes[index];
+    } else if (index === stepStartTimes.length - 1) {
+      targetTime = mainTl.duration;
+    } else {
+      return;
+    }
 
-        if (playerState === 'playing') {
-            mainTl.pause();
-        }
+    if (playerState === 'playing') {
+        mainTl.pause();
+    }
 
-        const proxy = { currentTime: mainTl.currentTime };
-        anime({
-            targets: proxy,
-            currentTime: targetTime,
-            duration: 300, // 300ms for a smooth transition
-            easing: 'easeInOutSine',
-            update: () => {
-                mainTl.seek(proxy.currentTime);
-                // Explicitly reset completed status after seeking
-                if (mainTl.completed) {
-                    mainTl.completed = false;
-                }
-            },
-            complete: () => {
-                if (targetTime >= mainTl.duration) {
-                    playerState = 'finished';
-                } else {
-                    playerState = 'paused';
-                }
-                resolve(playerState);
+    const proxy = { currentTime: mainTl.currentTime };
+    anime({
+        targets: proxy,
+        currentTime: targetTime,
+        duration: 300, // 300ms for a smooth transition
+        easing: 'easeInOutSine',
+        update: () => {
+            mainTl.seek(proxy.currentTime);
+            // Explicitly reset completed status after seeking
+            if (mainTl.completed) {
+                mainTl.completed = false;
             }
-        });
-
-        if (index > 0) {
-          const step = timelineData[index - 1];
-          if (labelEl && step && step.label && step.label.texts) {
-            labelEl.textContent = step.label.texts[step.label.texts.length - 1];
-            anime.set(labelEl, { opacity: 1 });
-          } else if (labelEl) {
-            anime.set(labelEl, { opacity: 0 });
-          }
-        } else if (labelEl) { // index is 0
-          anime.set(labelEl, { opacity: 0 });
+        },
+        complete: () => {
+            if (targetTime >= mainTl.duration) {
+                playerState = 'finished';
+            } else {
+                playerState = 'paused';
+            }
         }
     });
+
+    if (index > 0) {
+      const step = timelineData[index - 1];
+      if (labelEl && step && step.label && step.label.texts) {
+        labelEl.textContent = step.label.texts[step.label.texts.length - 1];
+        // Ensure opacity is reset so timeline animations can fade it in
+        anime.set(labelEl, { opacity: 0 }); // Changed to 0
+      } else if (labelEl) {
+        anime.set(labelEl, { opacity: 0 });
+      }
+    } else if (labelEl) { // index is 0
+      anime.set(labelEl, { opacity: 0 });
+    }
   };
 
   export const togglePlayPause = () => {
@@ -187,6 +189,11 @@
     } else { // paused or finished
       if (mainTl.completed) {
         mainTl.restart();
+        // Explicitly reset label state when restarting from a completed animation
+        if (labelEl) {
+          labelEl.textContent = '';
+          anime.set(labelEl, { opacity: 0 });
+        }
       } else {
         mainTl.play();
       }
@@ -197,17 +204,34 @@
 
   export const goToPrevStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    if (playerState === 'finished' || mainTl.currentTime === stepStartTimes[currentIdx]) {
-      return goToStep(currentIdx - 1);
+    let targetStepIdx = currentIdx;
+    console.log('goToPrevStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
+
+    if (playerState === 'finished') {
+      targetStepIdx = timelineData.length - 2; // Go to the second to last step
+    } else {
+      targetStepIdx = currentIdx - 1;
     }
-    else {
-      return goToStep(currentIdx);
+    
+    // Ensure targetStepIdx is not less than 0
+    if (targetStepIdx < 0) {
+      targetStepIdx = 0;
     }
+    console.log('goToPrevStep: calling goToStep with targetStepIdx:', targetStepIdx);
+    goToStep(targetStepIdx);
   };
 
   export const goToNextStep = () => {
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    return goToStep(currentIdx + 1);
+    let targetStepIdx = currentIdx + 1;
+    console.log('goToNextStep: currentIdx:', currentIdx, 'mainTl.currentTime:', mainTl.currentTime, 'timelineData.length:', timelineData.length);
+
+    // Ensure targetStepIdx does not exceed the last step
+    if (targetStepIdx >= timelineData.length) {
+      targetStepIdx = timelineData.length - 1;
+    }
+    console.log('goToNextStep: calling goToStep with targetStepIdx:', targetStepIdx);
+    goToStep(targetStepIdx);
   };
 </script>
 
