@@ -187,9 +187,12 @@ export function getPersonShapeCoordinates(personConfig: any, canvasWidth: number
     const cogSvgX = toSvgX(cog.x);
     const cogSvgY = toSvgY(cog.y);
 
+    const leftFootTotalRotation = (rotationDegrees + leftFootRotationDegrees) % 360;
+    const rightFootTotalRotation = (rotationDegrees + rightFootRotationDegrees) % 360;
+
     return {
-        leftFootGroup: { x: leftFootSvgX, y: leftFootSvgY, rotate: rotationDegrees + leftFootRotationDegrees },
-        rightFootGroup: { x: rightFootSvgX, y: rightFootSvgY, rotate: rotationDegrees + rightFootRotationDegrees },
+        leftFootGroup: { x: leftFootSvgX, y: leftFootSvgY, rotate: leftFootTotalRotation },
+        rightFootGroup: { x: rightFootSvgX, y: rightFootSvgY, rotate: rightFootTotalRotation },
         cog: { cx: cogSvgX, cy: cogSvgY },
         cogPointer: { x: cogSvgX, y: cogSvgY, rotate: rotationDegrees }
     };
