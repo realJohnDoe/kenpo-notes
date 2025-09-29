@@ -148,20 +148,36 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog, stepAnimationDuration));
             stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
 
-            let labelInfo = null;
-            if (toStep.labels && Array.isArray(toStep.labels)) {
-                const cogY = toCoords.cog.cy;
-                const canvasCenterY = canvasHeight / 2;
-                const topY = 150;
-                const bottomY = 450;
-                labelInfo = {
-                    texts: toStep.labels,
-                    y: cogY > canvasCenterY ? topY : bottomY,
-                    duration: stepAnimationDuration
-                };
-            }
+            const cogY = toCoords.cog.cy;
+            const canvasCenterY = canvasHeight / 2;
+            const topY = 150;
+            const bottomY = 450;
+            const labelY = cogY > canvasCenterY ? topY : bottomY;
 
-            timelineData.push({ anims: stepAnims, label: labelInfo });
+            if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
+                const durationPerLabel = stepAnimationDuration / toStep.labels.length;
+                toStep.labels.forEach((labelText: string) => {
+                    // Create new animations with adjusted duration for each label
+                    const animsForLabel = stepAnims.map((anim: any) => ({
+                        ...anim,
+                        duration: durationPerLabel
+                    }));
+                    timelineData.push({
+                        anims: animsForLabel,
+                        label: {
+                            texts: [labelText], // Each entry has a single label
+                            y: labelY,
+                            duration: durationPerLabel
+                        }
+                    });
+                });
+            } else {
+                // No labels, or empty labels array, push a single step with the full duration
+                timelineData.push({
+                    anims: stepAnims,
+                    label: null // No label for this step
+                });
+            }
 
             lastConfig = nextConfig;
         }

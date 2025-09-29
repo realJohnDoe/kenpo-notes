@@ -27,6 +27,10 @@
   onMount(() => {
     labelEl = document.getElementById('stepLabel');
     
+    if (labelEl) {
+      anime.set(labelEl, { opacity: 0, y: -9999 }); // Hide and move off-screen initially
+    }
+    
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
     window.addEventListener('resize', () => {
@@ -45,25 +49,29 @@
 
     // --- Timeline Building Logic ---
     let currentTimelineCursor = 0;
+    const fadeDuration = 200; // Define fadeDuration once
     timelineData.forEach((step: any) => {
       stepStartTimes.push(currentTimelineCursor);
-      let stepDuration = 1000;
+      let stepDuration = 0; // Initialize stepDuration to 0
+
       if (step.anims && step.anims.length > 0) {
-        const firstAnimation = step.anims[0];
-        stepDuration = firstAnimation.duration;
-        mainTl.add(firstAnimation, currentTimelineCursor);
-        for (let i = 1; i < step.anims.length; i++) {
-          mainTl.add(step.anims[i], currentTimelineCursor);
-        }
+        // All animations in a step now have the same duration
+        stepDuration = step.anims[0].duration;
+        step.anims.forEach((anim: any) => {
+          mainTl.add(anim, currentTimelineCursor);
+        });
       }
+
       if (step.label && step.label.texts && step.label.texts.length > 0) {
-        const timePerLabel = stepDuration / step.label.texts.length;
-        const fadeDuration = 200;
+        const labelText = step.label.texts[0]; // Only one label per step now
+        const labelDuration = step.label.duration; // Use the duration from the label object
+
+        // Add label animation
         mainTl.add({
           targets: labelEl,
           y: step.label.y,
-          duration: 1,
-          begin: () => { if (labelEl && step.label) labelEl.textContent = step.label.texts[0]; }
+          duration: 1, // Instantaneous position change
+          begin: () => { if (labelEl) labelEl.textContent = labelText; }
         }, currentTimelineCursor);
         mainTl.add({
           targets: labelEl,
@@ -71,25 +79,8 @@
           duration: fadeDuration,
           easing: 'linear'
         }, currentTimelineCursor);
-        for (let i = 1; i < step.label.texts.length; i++) {
-          const labelText = step.label.texts[i];
-          const prevLabelStartTime = currentTimelineCursor + (i * timePerLabel);
-          mainTl.add({
-            targets: labelEl,
-            opacity: 0,
-            duration: fadeDuration,
-            easing: 'linear',
-            complete: () => { if (labelEl) labelEl.textContent = labelText; }
-          }, prevLabelStartTime - fadeDuration);
-          mainTl.add({
-            targets: labelEl,
-            opacity: 1,
-            duration: fadeDuration,
-            easing: 'linear'
-          }, prevLabelStartTime);
-        }
       }
-      currentTimelineCursor += stepDuration;
+      currentTimelineCursor += stepDuration; // Use the actual stepDuration
     });
     stepStartTimes.push(currentTimelineCursor);
     goToStep(0);
@@ -121,9 +112,9 @@
 
   export const goToStep = (index: number) => {
     let targetTime: number;
-    if (index >= 0 && index < stepStartTimes.length - 1) {
+    if (index >= 0 && index < stepStartTimes.length) {
       targetTime = stepStartTimes[index];
-    } else if (index === stepStartTimes.length - 1) {
+    } else if (index === stepStartTimes.length) {
       targetTime = mainTl.duration;
     } else {
       return;
@@ -131,6 +122,12 @@
 
     if (playerState === 'playing') {
         mainTl.pause();
+    }
+
+    // Clear label immediately
+    if (labelEl) {
+      labelEl.textContent = '';
+      anime.set(labelEl, { opacity: 0 });
     }
 
     const proxy = { currentTime: mainTl.currentTime };
@@ -152,22 +149,18 @@
             } else {
                 playerState = 'paused';
             }
+            // After seeking, if the target step has a label, display it.
+            // The timeline's label animation should handle the fade in/out.
+            if (index < timelineData.length) { // Ensure index is within bounds of timelineData
+                const step = timelineData[index];
+                if (labelEl && step && step.label && step.label.texts && step.label.texts.length > 0) {
+                    labelEl.textContent = step.label.texts[0];
+                    // Ensure opacity is 1 when stepping to a labeled frame
+                    anime.set(labelEl, { opacity: 1 });
+                }
+            }
         }
     });
-
-    if (index > 0) {
-      const step = timelineData[index - 1];
-      if (labelEl && step && step.label && step.label.texts) {
-        labelEl.textContent = step.label.texts[step.label.texts.length - 1];
-        // Ensure opacity is reset so timeline animations can fade it in
-        anime.set(labelEl, { opacity: 0 }); // Changed to 0
-      } else if (labelEl) {
-        anime.set(labelEl, { opacity: 0 });
-      }
-    }
-    else if (labelEl) { // index is 0
-      anime.set(labelEl, { opacity: 0 });
-    }
   };
 
   export const togglePlayPause = () => {
@@ -211,9 +204,9 @@
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx + 1;
 
-    // Ensure targetStepIdx does not exceed the last step
-    if (targetStepIdx >= totalSteps) {
-      targetStepIdx = totalSteps - 1;
+    // Allow going one step beyond the last animation to represent the 'finished' state
+    if (targetStepIdx > totalSteps) { // Changed condition
+      targetStepIdx = totalSteps; // Changed to totalSteps
     }
     goToStep(targetStepIdx);
   };
