@@ -66,9 +66,6 @@
     if (mainTl) {
       mainTl.pause();
     }
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('resize', handleResize);
-    }
   });
 
   // --- Control Functions ---
@@ -150,9 +147,7 @@
   export const goToPrevStep = () => {
     console.log(`goToPrevStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`);
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
-    let targetStepIdx = currentIdx;
-
-    targetStepIdx = currentIdx - 1;
+    let targetStepIdx = currentIdx - 1;
     
     // Ensure targetStepIdx is not less than 0
     if (targetStepIdx < 0) {
