@@ -35,6 +35,7 @@
       autoplay: false, 
       loop: false,
       complete: () => {
+        console.log('Timeline complete: setting playerState to finished');
         playerState = 'finished';
         onComplete();
       }
@@ -75,8 +76,8 @@
       return totalSteps - 1; // Return the index of the last step
     }
 
-    for (let i = 0; i < stepStartTimes.length - 1; i++) {
-      if (time >= stepStartTimes[i] && time < stepStartTimes[i+1]) {
+    for (let i = 0; i < stepStartTimes.length; i++) {
+      if (time >= stepStartTimes[i] && (i === stepStartTimes.length - 1 || time < stepStartTimes[i+1])) {
         return i;
       }
     }
@@ -84,14 +85,17 @@
   };
 
   export const goToStep = (index: number) => {
+    console.log(`goToStep called with index: ${index}`);
     let targetTime: number;
     if (index >= 0 && index < stepStartTimes.length) {
       targetTime = stepStartTimes[index];
     } else if (index === stepStartTimes.length) {
       targetTime = mainTl.duration;
     } else {
+      console.log('goToStep returned early: invalid index');
       return;
     }
+    console.log(`goToStep targetTime: ${targetTime}`);
 
     if (playerState === 'playing') {
         mainTl.pause();
@@ -111,35 +115,42 @@
             }
         },
         complete: () => {
+            const oldState = playerState;
             if (targetTime >= mainTl.duration) {
                 playerState = 'finished';
             } else {
                 playerState = 'paused';
             }
+            console.log(`goToStep complete. playerState changed from '${oldState}' to '${playerState}'`);
         }
     });
   };
 
   export const togglePlayPause = () => {
+    console.log(`togglePlayPause called. Current state: ${playerState}, timeline completed: ${mainTl.completed}`);
     if (playerState === 'playing') {
       mainTl.pause();
       playerState = 'paused';
     } else { // paused or finished
       if (mainTl.completed) {
+        console.log('Timeline was complete, restarting.');
         mainTl.restart();
       } else {
         mainTl.play();
       }
       playerState = 'playing';
     }
+    console.log(`togglePlayPause finished. New state: ${playerState}`);
     return playerState;
   };
 
   export const goToPrevStep = () => {
+    console.log(`goToPrevStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`);
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx;
 
     if (playerState === 'finished') {
+      console.log('goToPrevStep: player was finished, going to second to last step.');
       targetStepIdx = totalSteps - 2; // Go to the second to last step
     } else {
       targetStepIdx = currentIdx - 1;
@@ -149,10 +160,16 @@
     if (targetStepIdx < 0) {
       targetStepIdx = 0;
     }
+    console.log(`goToPrevStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`);
     goToStep(targetStepIdx);
   };
 
   export const goToNextStep = () => {
+    console.log(`goToNextStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`);
+    if (playerState === 'finished') {
+      console.log('goToNextStep: player is finished, doing nothing.');
+      return;
+    }
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx + 1;
 
@@ -160,6 +177,7 @@
     if (targetStepIdx > totalSteps) { // Changed condition
       targetStepIdx = totalSteps; // Changed to totalSteps
     }
+    console.log(`goToNextStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`);
     goToStep(targetStepIdx);
   };
 </script>
