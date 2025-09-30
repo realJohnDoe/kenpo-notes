@@ -158,13 +158,8 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
                 const durationPerLabel = stepAnimationDuration / toStep.labels.length;
-                toStep.labels.forEach((labelText: string, labelIndex: number) => {
-                    // Create new animations with adjusted duration for each label
-                    const animsForLabel = stepAnims.map((anim: any) => ({
-                        ...anim,
-                        duration: durationPerLabel
-                    }));
 
+                toStep.labels.forEach((labelText: string, labelIndex: number) => {
                     const labelId = toStep.labels.length === 1
                         ? `step-${i + 1}-label`
                         : `step-${i + 1}-label-${labelIndex}`;
@@ -175,19 +170,23 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         y: labelY
                     });
 
-                    animsForLabel.push({
+                    const labelDelay = labelIndex * durationPerLabel;
+                    const holdDuration = Math.max(0, durationPerLabel - (2 * fadeDuration));
+
+                    stepAnims.push({
                         targets: `#${labelId}`,
+                        delay: labelDelay,
                         opacity: [
                             { value: 1, duration: fadeDuration, easing: 'linear' },
-                            { value: 1, duration: Math.max(0, durationPerLabel - (2 * fadeDuration)) },
+                            { value: 1, duration: holdDuration },
                             { value: 0, duration: fadeDuration, easing: 'linear' }
                         ]
                     });
+                });
 
-                    timelineData.push({
-                        anims: animsForLabel,
-                        label: null
-                    });
+                timelineData.push({
+                    anims: stepAnims,
+                    label: null
                 });
             } else {
                 // No labels, or empty labels array, push a single step with the full duration
