@@ -10,7 +10,7 @@
 
   function handleTogglePlayPause() {
     if (animation) {
-      playerState = animation.togglePlayPause();
+      animation.togglePlayPause();
     }
   }
 
@@ -27,9 +27,9 @@
   }
 
   function handleComplete() {
-    playerState = 'finished';
+    // playerState is updated via bind:playerState in Animation component
   }
 </script>
 
-<Animation bind:this={animation} {timelineData} {svgContent} onComplete={handleComplete} />
+<Animation bind:this={animation} bind:playerState={playerState} {timelineData} {svgContent} onComplete={handleComplete} />
 <Controls {playerState} on:togglePlayPause={handleTogglePlayPause} on:prev={handlePrev} on:next={handleNext} />

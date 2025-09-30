@@ -10,7 +10,7 @@
   // State
   let mainTl: any; // anime.timeline instance
   let stepStartTimes: number[] = [];
-  let playerState: 'playing' | 'paused' | 'finished' = 'paused';
+  export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
   $: totalSteps = timelineData.length + 1; // Compute totalSteps internally
 
@@ -111,6 +111,7 @@
             mainTl.seek(proxy.currentTime);
             // Explicitly reset completed status after seeking
             if (mainTl.completed) {
+                console.log(`goToStep update: mainTl.completed was true, setting to false.`);
                 mainTl.completed = false;
             }
         },
