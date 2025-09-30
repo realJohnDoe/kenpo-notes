@@ -1,37 +1,40 @@
-title: "Long Form 2"
+title: 'Long Form 2'
 # canvas:
 #   width: 600
 #   height: 600
 steps:
-  - stance: "attention"
+  - stance: 'attention'
     direction: 1200
+  - stance: 'horse'
+    direction: 1200
+    pivot: right
   - stance: right_neutral
     direction: 1200
     pivot: left
-    labels: ["Right Inward Block ➡️🔽🛡️"]
+    labels: ['Right Inward Block ➡️🔽🛡️']
   - stance: right_neutral
     direction: 1200
-    labels: ["Right Outward Handsword ➡️🔼✋⚔️💥"]
+    labels: ['Right Outward Handsword ➡️🔼✋⚔️💥']
   - stance: right_forward
     direction: 1200
-    labels: ["Left Finger Thrust"]
+    labels: ['Left Finger Thrust']
   - stance: right_neutral
     direction: 1200
-    labels: ["Right Open-Handed Upppercut"]
+    labels: ['Right Open-Handed Upppercut']
   # The left hand side
   - stance: left_neutral
     direction: 1200
     pivot: right
-    labels: ["Left Inward Block ⬅️🔽🛡️"]
+    labels: ['Left Inward Block ⬅️🔽🛡️']
   - stance: left_neutral
     direction: 1200
-    labels: ["Left Outward Handsword ⬅️🔼✋⚔️💥"]
+    labels: ['Left Outward Handsword ⬅️🔼✋⚔️💥']
   - stance: left_forward
     direction: 1200
-    labels: ["Right Finger Thrust"]
+    labels: ['Right Finger Thrust']
   - stance: left_neutral
     direction: 1200
-    labels: ["Left Open-Handed Upppercut"]
+    labels: ['Left Open-Handed Upppercut']
   # Sideways
   - stance: left_cat
     direction: 1200
@@ -41,11 +44,11 @@ steps:
     direction: 1200
     pivot: right
     duration: 0.5
-    labels: ["Left Outward Block + Right Sideways Punch"]
+    labels: ['Left Outward Block + Right Sideways Punch']
   - stance: horse
     direction: 1200
     duration: 3
-    labels: ["Left Jab", "Right Cross", "Left Jab + Left Side Kick"]
+    labels: ['Left Jab', 'Right Cross', 'Left Jab + Left Side Kick']
   # The right side
   # Sideways
   - stance: right_cat
@@ -55,11 +58,11 @@ steps:
   - stance: horse
     direction: 1200
     pivot: left
-    labels: ["Right Outward Block + Left Sideways Punch"]
+    labels: ['Right Outward Block + Left Sideways Punch']
   - stance: horse
     direction: 1200
     duration: 3
-    labels: ["Right Jab", "Left Cross", "Right Jab + Right Side Kick"]
+    labels: ['Right Jab', 'Left Cross', 'Right Jab + Right Side Kick']
   # Backwards
   - stance: left_cat
     direction: 900
@@ -68,16 +71,20 @@ steps:
   - stance: left_neutral
     direction: 600
     pivot: right
-    labels: ["Left Universal Block"]
+    labels: ['Left Universal Block']
   - stance: left_neutral
     direction: 600
     duration: 2
-    labels: ["Right Downward Block + Left Upward Block", "Left Claw"]
+    labels: ['Right Downward Block + Left Upward Block', 'Left Claw']
   - stance: left_neutral
     direction: 600
     duration: 1.5
     labels:
-      ["Right Outward Back Knuckle", "Left Outward Back Knuckle", "Right Outward Back Knuckle"]
+      [
+        'Right Outward Back Knuckle',
+        'Left Outward Back Knuckle',
+        'Right Outward Back Knuckle'
+      ]
   # Forwards
   - stance: right_cat
     direction: 900
@@ -86,39 +93,44 @@ steps:
   - stance: right_neutral
     direction: 1200
     pivot: left
-    labels: ["Right Universal Block"]
+    labels: ['Right Universal Block']
   - stance: right_neutral
     direction: 1200
     duration: 2
-    labels: ["Left Downward Block + Right Upward Block", "Right Claw"]
+    labels: ['Left Downward Block + Right Upward Block', 'Right Claw']
   - stance: right_neutral
     direction: 1200
     duration: 1.5
-    labels: ["Left Outward Back Knuckle", "Right Outward Back Knuckle", "Left Outward Back Knuckle"]
+    labels:
+      [
+        'Left Outward Back Knuckle',
+        'Right Outward Back Knuckle',
+        'Left Outward Back Knuckle'
+      ]
     # Diagonal Backwards
   - stance: left_neutral
     direction: 430
     pivot: left
-    labels: ["Left Downward Block", "Left Overhead Back Knuckle"]
+    labels: ['Left Downward Block', 'Left Overhead Back Knuckle']
   - stance: left_forward
     direction: 430
-    labels: ["Right Straight Punch"]
+    labels: ['Right Straight Punch']
   - stance: right_neutral
     direction: 300
     pivot: left
-    labels: ["Left Straight Punch + Right Front Kick", "Right Uppercut"]
+    labels: ['Left Straight Punch + Right Front Kick', 'Right Uppercut']
     # Towards 730
   - stance: right_neutral
     direction: 730
     pivot: left
-    labels: ["Right Downward Block", "Right Overhead Back Knuckle"]
+    labels: ['Right Downward Block', 'Right Overhead Back Knuckle']
   - stance: right_forward
     direction: 730
-    labels: ["Left Straight Punch"]
+    labels: ['Left Straight Punch']
   - stance: left_neutral
     direction: 900
     pivot: right
-    labels: ["Right Straight Punch + Left Front Kick", "Left Uppercut"]
+    labels: ['Right Straight Punch + Left Front Kick', 'Left Uppercut']
 
   # - stance: "right_neutral"
   #   direction: 1200

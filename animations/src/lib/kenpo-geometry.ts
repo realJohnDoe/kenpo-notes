@@ -75,8 +75,8 @@ const explicitStances: { [key: string]: { leftFoot: { x: number, y: number }, ri
         rightFootRotation: 1030
     },
     "horse": {
-        leftFoot: { x: -0.75, y: 0 },
-        rightFoot: { x: 0.75, y: 0 },
+        leftFoot: { x: -0.707, y: 0 },
+        rightFoot: { x: 0.707, y: 0 },
         cog: { x: 0, y: 0 },
         leftFootRotation: 1200,
         rightFootRotation: 1200
