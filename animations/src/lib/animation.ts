@@ -44,24 +44,17 @@ function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvas
     };
 }
 
-export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number, rightFootSvgContent: string): string {
+export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number, rightFootSvgContent: string, headSvgContent: string): string {
     const transforms = calculateShapeTransforms(personConfig, canvasWidth, canvasHeight, unit);
 
     let shapesSvg = "";
 
-    // Determine scaling factor for the new SVG
-    const svgOriginalWidth = 26.458333; // From viewBox of right_foot.svg
-    const targetWidth = 10; // Desired width in our coordinate system (similar to original circle diameter)
-    const scaleFactor = targetWidth / svgOriginalWidth;
-
-    // Estimated visual center of the path within the SVG's viewBox (0-26.45)
-    // Based on path data: d="m 10.379675,4.2067143 c ... 16.7857, ... 20.36"
-    const svgVisualCenterX = 50;
-    const svgVisualCenterY = 50;
+    const svgSizeInPixels = 100
+    const scaleFactor = 0.4;
 
     // Adjust translation to map the visual center of the SVG to the foot's coordinate
-    const svgOffsetX = -svgVisualCenterX;
-    const svgOffsetY = -svgVisualCenterY;
+    const svgOffsetX = - svgSizeInPixels / 2;
+    const svgOffsetY = -svgSizeInPixels / 2;
 
     // Left Foot Group
     shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
@@ -77,10 +70,14 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
         </g>
     </g>`;
 
-    // Center of Gravity
-    shapesSvg += `<circle id="cog" cx="${transforms.cog.cx}" cy="${transforms.cog.cy}" r="10" fill="red" />`;
-    const cogPointerPoints = `-8,-10 8,-10 0,-30`;
-    shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})"></polygon>`;
+    const headScaleFactor = 0.6;
+
+    // Center of Gravity (new)
+    shapesSvg += `<g id="cog" transform="translate(${transforms.cog.cx}, ${transforms.cog.cy}) rotate(${transforms.cogPointer.rotate})">
+        <g transform="scale(${headScaleFactor}, ${headScaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
+            ${headSvgContent}
+        </g>
+    </g>`;
 
     return shapesSvg;
 }
@@ -161,8 +158,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             stepAnims.push(createPointerAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
             stepAnims.push(createPointerAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
-            stepAnims.push(createCircleAnim('#cog', fromCoords.cog, toCoords.cog, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#cogPointer', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
+            stepAnims.push(createPointerAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
 
             const cogY = toCoords.cog.cy;
             const canvasCenterY = canvasHeight / 2;

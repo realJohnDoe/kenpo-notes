@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="head.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="6.6813973"
+     inkscape:cx="-9.504"
+     inkscape:cy="86.583685"
+     inkscape:window-width="1918"
+     inkscape:window-height="2061"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="opacity:0.999;fill:#117238;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       id="path1"
+       cx="13.229167"
+       cy="13.229167"
+       rx="4.0886998"
+       ry="5.1380997" />
+    <ellipse
+       style="opacity:0.999;fill:#117238;stroke-width:0.987709;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       id="path1-8"
+       cx="13.229167"
+       cy="13.229167"
+       rx="4.0886998"
+       ry="5.4845996" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.999;fill:#117238;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       id="path2"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="2.6041329"
+       sodipodi:cy="2.1421094"
+       sodipodi:r1="1.1549529"
+       sodipodi:r2="0.57747644"
+       sodipodi:arg1="1.0366138"
+       sodipodi:arg2="2.0838113"
+       inkscape:rounded="1.06"
+       inkscape:randomized="0"
+       d="M 3.1921629,3.1361602 C 1.3671116,4.2157678 1.4716867,4.2746774 1.4492447,2.1543329 1.4268027,0.03398836 1.3234979,0.09509823 3.1709911,1.1358351 5.0184844,2.176572 5.0172141,2.0565525 3.1921629,3.1361602 Z"
+       inkscape:transform-center-x="-0.020871705"
+       inkscape:transform-center-y="-1.0725375"
+       transform="rotate(-88.506134,11.220052,-0.10487984)" />
+  </g>
+</svg>

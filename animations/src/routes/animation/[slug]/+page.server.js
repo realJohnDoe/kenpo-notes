@@ -41,7 +41,11 @@ export function load({ params }) {
     const rightFootSvgPath = resolve(process.cwd(), 'src', 'right_foot.svg');
     const rightFootSvgContent = readFileSync(rightFootSvgPath, 'utf8');
 
-    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize, rightFootSvgContent);
+    // Read the SVG content for the head
+    const headSvgPath = resolve(process.cwd(), 'src', 'head.svg');
+    const headSvgContent = readFileSync(headSvgPath, 'utf8');
+
+    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize, rightFootSvgContent, headSvgContent);
 
     const { timelineData, labelsData } = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
 
