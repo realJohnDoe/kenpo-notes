@@ -122,7 +122,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             if (pivot === 'left' || pivot === 'right') {
                 const fromPivotCoords = (pivot === 'left') ? { cx: fromCoords.leftFootGroup.x, cy: fromCoords.leftFootGroup.y } : { cx: fromCoords.rightFootGroup.x, cy: fromCoords.rightFootGroup.y };
                 const toStance = stances[toStep.stance];
-                
+
                 let toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
 
                 const rotationDegrees = directionToDegrees(toStep.direction);
@@ -171,7 +171,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     });
 
                     const labelDelay = labelIndex * durationPerLabel;
-                    const holdDuration = Math.max(0, durationPerLabel - (2 * fadeDuration));
+                    const holdDuration = Math.max(0, durationPerLabel - fadeDuration) + 1;
 
                     stepAnims.push({
                         targets: `#${labelId}`,
@@ -179,7 +179,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         opacity: [
                             { value: 1, duration: fadeDuration, easing: 'linear' },
                             { value: 1, duration: holdDuration },
-                            { value: 0, duration: fadeDuration, easing: 'linear' }
+                            { value: 0, duration: 0, easing: 'linear' }
                         ]
                     });
                 });
