@@ -96,9 +96,11 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
     };
 }
 
-export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): any[] {
+export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { timelineData: any[], labelsData: any[] } {
     const baseAnimationDuration = 1000; // Define base duration here
+    const fadeDuration = 200;
     const timelineData = [];
+    const labelsData = [];
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
         if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
@@ -156,19 +158,35 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
                 const durationPerLabel = stepAnimationDuration / toStep.labels.length;
-                toStep.labels.forEach((labelText: string) => {
+                toStep.labels.forEach((labelText: string, labelIndex: number) => {
                     // Create new animations with adjusted duration for each label
                     const animsForLabel = stepAnims.map((anim: any) => ({
                         ...anim,
                         duration: durationPerLabel
                     }));
+
+                    const labelId = toStep.labels.length === 1
+                        ? `step-${i + 1}-label`
+                        : `step-${i + 1}-label-${labelIndex}`;
+
+                    labelsData.push({
+                        id: labelId,
+                        text: labelText,
+                        y: labelY
+                    });
+
+                    animsForLabel.push({
+                        targets: `#${labelId}`,
+                        opacity: [
+                            { value: 1, duration: fadeDuration, easing: 'linear' },
+                            { value: 1, duration: Math.max(0, durationPerLabel - (2 * fadeDuration)) },
+                            { value: 0, duration: fadeDuration, easing: 'linear' }
+                        ]
+                    });
+
                     timelineData.push({
                         anims: animsForLabel,
-                        label: {
-                            texts: [labelText], // Each entry has a single label
-                            y: labelY,
-                            duration: durationPerLabel
-                        }
+                        label: null
                     });
                 });
             } else {
@@ -182,5 +200,5 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             lastConfig = nextConfig;
         }
     }
-    return timelineData;
+    return { timelineData, labelsData };
 }

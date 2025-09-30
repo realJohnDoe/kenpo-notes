@@ -37,10 +37,14 @@ export function load({ params }) {
     const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
     const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
     const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
-    
-    const svgContent = `<svg width="${cfg.canvas.width}" height="${cfg.canvas.height}" viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}<text id="stepLabel" x="50%" y="50" text-anchor="middle" opacity="0"></text>${labelElems}${initialPersonShapes}</svg>`;
 
-    const timelineData = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
+    const { timelineData, labelsData } = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
+
+    const labelElements = labelsData.map(label =>
+        `<text id="${label.id}" x="50%" y="${label.y}" text-anchor="middle" opacity="0" font-size="20" fill="#333">${label.text}</text>`
+    ).join('');
+
+    const svgContent = `<svg width="${cfg.canvas.width}" height="${cfg.canvas.height}" viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}${labelElems}${initialPersonShapes}${labelElements}</svg>`;
 
     return {
       title: cfg.title,

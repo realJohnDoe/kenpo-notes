@@ -10,7 +10,6 @@
   // State
   let mainTl: any; // anime.timeline instance
   let stepStartTimes: number[] = [];
-  let labelEl: HTMLElement | null;
   let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
   $: totalSteps = timelineData.length + 1; // Compute totalSteps internally
@@ -25,12 +24,6 @@
     : 1;
 
   onMount(() => {
-    labelEl = document.getElementById('stepLabel');
-    
-    if (labelEl) {
-      anime.set(labelEl, { opacity: 0, y: -9999 }); // Hide and move off-screen initially
-    }
-    
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
     window.addEventListener('resize', () => {
@@ -49,7 +42,6 @@
 
     // --- Timeline Building Logic ---
     let currentTimelineCursor = 0;
-    const fadeDuration = 200; // Define fadeDuration once
     timelineData.forEach((step: any) => {
       stepStartTimes.push(currentTimelineCursor);
       let stepDuration = 0; // Initialize stepDuration to 0
@@ -60,25 +52,6 @@
         step.anims.forEach((anim: any) => {
           mainTl.add(anim, currentTimelineCursor);
         });
-      }
-
-      if (step.label && step.label.texts && step.label.texts.length > 0) {
-        const labelText = step.label.texts[0]; // Only one label per step now
-        const labelDuration = step.label.duration; // Use the duration from the label object
-
-        // Add label animation
-        mainTl.add({
-          targets: labelEl,
-          y: step.label.y,
-          duration: 1, // Instantaneous position change
-          begin: () => { if (labelEl) labelEl.textContent = labelText; }
-        }, currentTimelineCursor);
-        mainTl.add({
-          targets: labelEl,
-          opacity: 1,
-          duration: fadeDuration,
-          easing: 'linear'
-        }, currentTimelineCursor);
       }
       currentTimelineCursor += stepDuration; // Use the actual stepDuration
     });
@@ -124,12 +97,6 @@
         mainTl.pause();
     }
 
-    // Clear label immediately
-    if (labelEl) {
-      labelEl.textContent = '';
-      anime.set(labelEl, { opacity: 0 });
-    }
-
     const proxy = { currentTime: mainTl.currentTime };
     anime({
         targets: proxy,
@@ -149,16 +116,6 @@
             } else {
                 playerState = 'paused';
             }
-            // After seeking, if the target step has a label, display it.
-            // The timeline's label animation should handle the fade in/out.
-            if (index < timelineData.length) { // Ensure index is within bounds of timelineData
-                const step = timelineData[index];
-                if (labelEl && step && step.label && step.label.texts && step.label.texts.length > 0) {
-                    labelEl.textContent = step.label.texts[0];
-                    // Ensure opacity is 1 when stepping to a labeled frame
-                    anime.set(labelEl, { opacity: 1 });
-                }
-            }
         }
     });
   };
@@ -170,11 +127,6 @@
     } else { // paused or finished
       if (mainTl.completed) {
         mainTl.restart();
-        // Explicitly reset label state when restarting from a completed animation
-        if (labelEl) {
-          labelEl.textContent = '';
-          anime.set(labelEl, { opacity: 0 });
-        }
       } else {
         mainTl.play();
       }
