@@ -41,7 +41,7 @@ export function load({ params }) {
     const { timelineData, labelsData } = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
 
     const labelElements = labelsData.map(label =>
-        `<text id="${label.id}" x="50%" y="${label.y}" text-anchor="middle" opacity="0" font-size="20" fill="#333">${label.text}</text>`
+        `<text id="${label.id}" x="50%" y="${label.y}" text-anchor="middle" opacity="0" class="txt" style="font-size: 20px;">${label.text}</text>`
     ).join('');
 
     const svgContent = `<svg width="${cfg.canvas.width}" height="${cfg.canvas.height}" viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}${labelElems}${initialPersonShapes}${labelElements}</svg>`;

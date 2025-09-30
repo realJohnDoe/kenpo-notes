@@ -53,14 +53,14 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
         <circle cx="0" cy="0" r="5" fill="blue" />
         <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">L</text>
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" class="txt" style="font-size: 10px;">L</text>
     </g>`;
 
     // Right Foot Group
     shapesSvg += `<g id="rightFootGroup" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
         <circle cx="0" cy="0" r="5" fill="blue" />
         <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" font-size="10" fill="black">R</text>
+        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" class="txt" style="font-size: 10px;">R</text>
     </g>`;
 
     // Center of Gravity
