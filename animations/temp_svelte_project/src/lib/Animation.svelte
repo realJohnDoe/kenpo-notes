@@ -12,6 +12,8 @@
   let stepStartTimes: number[] = [];
   export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
+  // We need 2 steps more: One for because there is one more still frames than animation steps and
+  // one more because we add a step in the end as the finished state.
   $: totalSteps = timelineData.length + 2; // Compute totalSteps internally
 
   // --- Resize and Scale Logic ---
