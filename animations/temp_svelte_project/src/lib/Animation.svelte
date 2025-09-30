@@ -12,7 +12,7 @@
   let stepStartTimes: number[] = [];
   export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
-  $: totalSteps = timelineData.length + 1; // Compute totalSteps internally
+  $: totalSteps = timelineData.length + 2; // Compute totalSteps internally
 
   // --- Resize and Scale Logic ---
   let viewportWidth: number = 0;
@@ -169,10 +169,6 @@
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx + 1;
 
-    // Allow going one step beyond the last animation to represent the 'finished' state
-    if (targetStepIdx > totalSteps) { // Changed condition
-      targetStepIdx = totalSteps; // Changed to totalSteps
-    }
     console.log(`goToNextStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`);
     goToStep(targetStepIdx);
   };
