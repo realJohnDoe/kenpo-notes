@@ -16,14 +16,14 @@ import {
 } from '$lib/animation';
 
 export function entries() {
-    const ymlDir = resolve(process.cwd(), '../src');
+    const ymlDir = resolve(process.cwd(), 'src');
     const files = readdirSync(ymlDir).filter(file => file.endsWith('.yml'));
     return files.map(file => ({ slug: parse(file).name }));
 }
 
 export function load({ params }) {
   try {
-    const yamlPath = resolve(process.cwd(), '../src', `${params.slug}.yml`);
+    const yamlPath = resolve(process.cwd(), 'src', `${params.slug}.yml`);
     const rawYaml = readFileSync(yamlPath, 'utf8');
     const cfg = yaml.parse(rawYaml);
 
