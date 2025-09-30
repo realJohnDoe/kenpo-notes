@@ -150,12 +150,7 @@
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx;
 
-    if (playerState === 'finished') {
-      console.log('goToPrevStep: player was finished, going to second to last step.');
-      targetStepIdx = totalSteps - 2; // Go to the second to last step
-    } else {
-      targetStepIdx = currentIdx - 1;
-    }
+    targetStepIdx = currentIdx - 1;
     
     // Ensure targetStepIdx is not less than 0
     if (targetStepIdx < 0) {
