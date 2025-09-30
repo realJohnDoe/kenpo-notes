@@ -100,7 +100,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
     const baseAnimationDuration = 1000; // Define base duration here
     const fadeDuration = 200;
     const timelineData = [];
-    const labelsData = [];
+    const labelsData: { id: string; text: string; y: number; }[] = [];
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
         if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
