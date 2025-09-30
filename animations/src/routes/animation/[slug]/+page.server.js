@@ -36,7 +36,12 @@ export function load({ params }) {
     const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
     const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
     const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
-    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize);
+
+    // Read the SVG content for the foot
+    const rightFootSvgPath = resolve(process.cwd(), 'src', 'right_foot.svg');
+    const rightFootSvgContent = readFileSync(rightFootSvgPath, 'utf8');
+
+    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize, rightFootSvgContent);
 
     const { timelineData, labelsData } = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
 

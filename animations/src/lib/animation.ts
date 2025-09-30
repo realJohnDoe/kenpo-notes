@@ -44,29 +44,43 @@ function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvas
     };
 }
 
-export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number): string {
+export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number, rightFootSvgContent: string): string {
     const transforms = calculateShapeTransforms(personConfig, canvasWidth, canvasHeight, unit);
 
     let shapesSvg = "";
 
+    // Determine scaling factor for the new SVG
+    const svgOriginalWidth = 26.458333; // From viewBox of right_foot.svg
+    const targetWidth = 10; // Desired width in our coordinate system (similar to original circle diameter)
+    const scaleFactor = targetWidth / svgOriginalWidth;
+
+    // Estimated visual center of the path within the SVG's viewBox (0-26.45)
+    // Based on path data: d="m 10.379675,4.2067143 c ... 16.7857, ... 20.36"
+    const svgVisualCenterX = 50;
+    const svgVisualCenterY = 50;
+
+    // Adjust translation to map the visual center of the SVG to the foot's coordinate
+    const svgOffsetX = -svgVisualCenterX;
+    const svgOffsetY = -svgVisualCenterY;
+
     // Left Foot Group
     shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
-        <circle cx="0" cy="0" r="5" fill="blue" />
-        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" class="txt" style="font-size: 10px;">L</text>
+        <g transform="scale(${scaleFactor}, ${scaleFactor}) scale(-1, 1) translate(${svgOffsetX}, ${svgOffsetY})"> <!-- Corrected order for mirroring -->
+            ${rightFootSvgContent}
+        </g>
     </g>`;
 
     // Right Foot Group
     shapesSvg += `<g id="rightFootGroup" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
-        <circle cx="0" cy="0" r="5" fill="blue" />
-        <polygon points="-4,-5 4,-5 0,-15" fill="blue" />
-        <text x="10" y="0" dominant-baseline="middle" text-anchor="start" class="txt" style="font-size: 10px;">R</text>
+        <g transform="scale(${scaleFactor}, ${scaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
+            ${rightFootSvgContent}
+        </g>
     </g>`;
 
     // Center of Gravity
     shapesSvg += `<circle id="cog" cx="${transforms.cog.cx}" cy="${transforms.cog.cy}" r="10" fill="red" />`;
     const cogPointerPoints = `-8,-10 8,-10 0,-30`;
-    shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})" />`;
+    shapesSvg += `<polygon id="cogPointer" points="${cogPointerPoints}" fill="red" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})"></polygon>`;
 
     return shapesSvg;
 }
