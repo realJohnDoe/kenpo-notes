@@ -195,12 +195,14 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                 });
 
                 timelineData.push({
+                    delay: toStep.delay || 0,
                     anims: stepAnims,
                     label: null
                 });
             } else {
                 // No labels, or empty labels array, push a single step with the full duration
                 timelineData.push({
+                    delay: toStep.delay || 0,
                     anims: stepAnims,
                     label: null // No label for this step
                 });

@@ -49,70 +49,30 @@
         mainTl.playbackRate = speed;
     
         // --- Timeline Building Logic ---
-        console.log("Original timelineData received:", JSON.parse(JSON.stringify(timelineData)));
-
-        // v4 Migration: The animation objects from YAML are in v3 format.
-        // We need to convert `value` to `to` for property and keyframe objects.
-        const migratedTimelineData = timelineData.map(step => {
-            if (!step.anims) {
-                return step;
-            }
-            const newAnims = step.anims.map(anim => {
-                const newAnim = { ...anim };
-                Object.keys(newAnim).forEach(key => {
-                    if (key === 'targets') return;
-
-                    const propValue = newAnim[key];
-
-                    // Handle keyframes array: [{ value: X, ... }, { value: Y, ... }]
-                    if (Array.isArray(propValue)) {
-                        newAnim[key] = propValue.map(frame => {
-                            if (frame.hasOwnProperty('value')) {
-                                frame.to = frame.value;
-                                delete frame.value;
-                            }
-                            return frame;
-                        });
-                    }
-                    // Handle single property object: { value: X, ... }
-                    else if (typeof propValue === 'object' && propValue !== null && !Array.isArray(propValue) && propValue.hasOwnProperty('value')) {
-                        propValue.to = propValue.value;
-                        delete propValue.value;
-                        newAnim[key] = propValue;
-                    }
-                });
-
-                // --- FORCED DEBUGGING ---
-                console.log(`Forcing fade-in on target: ${newAnim.targets}`);
-                newAnim.opacity = [0, 1];
-                newAnim.duration = 2000;
-                // --- END FORCED DEBUGGING ---
-
-                return newAnim;
-            });
-            return { ...step, anims: newAnims };
-        });
-
-        console.log("Data after migration:", JSON.parse(JSON.stringify(migratedTimelineData)));
+        console.log("TimelineData received:", JSON.parse(JSON.stringify(timelineData)));
 
         let currentTimelineCursor = 0;
-        migratedTimelineData.forEach((step: any) => {
-          stepStartTimes.push(currentTimelineCursor);
-          let stepDuration = 0; // Initialize stepDuration to 0
-    
-          if (step.anims && step.anims.length > 0) {
-            // All animations in a step now have the same duration
-            stepDuration = step.anims[0].duration;
-            step.anims.forEach((anim: any) => {
-              // --- DEBUGGING: Check if target exists ---
-              if (!document.querySelector(anim.targets)) {
-                  console.warn(`Animation target not found in DOM: "${anim.targets}"`);
-              }
-              // --- END DEBUGGING ---
-              mainTl.add(anim, currentTimelineCursor);
-            });
-          }
-          currentTimelineCursor += stepDuration; // Use the actual stepDuration
+        timelineData.forEach((step: any) => {
+            // 1. Add the delay for the current step, from the data generated in animation.ts
+            currentTimelineCursor += step.delay || 0;
+
+            stepStartTimes.push(currentTimelineCursor);
+            let stepDuration = 0;
+
+            if (step.anims && step.anims.length > 0) {
+                // 2. Add all animations at the new cursor position
+                step.anims.forEach((anim: any) => {
+                    if (!document.querySelector(anim.targets)) {
+                        console.warn(`Animation target not found in DOM: "${anim.targets}"`);
+                    }
+                    mainTl.add(anim, currentTimelineCursor);
+                });
+                // 3. Calculate the duration of this step (the longest animation)
+                stepDuration = Math.max(0, ...step.anims.map(a => a.duration || 0));
+            }
+
+            // 4. Advance the cursor by the duration of the step
+            currentTimelineCursor += stepDuration;
         });
         stepStartTimes.push(currentTimelineCursor);
 

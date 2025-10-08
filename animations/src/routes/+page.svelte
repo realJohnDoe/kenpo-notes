@@ -5,39 +5,54 @@
     let tl: AnimeTimelineInstance;
 
     onMount(() => {
-        console.log("Running test animation on / page.");
+        console.log("Running test animation on / page (FIXED stepped/cursor add with original signature).");
 
-        const line = svg.createDrawable('line');
+        const steps = [
+            {
+                delay: 0, // Delay before this step starts
+                anims: [
+                    { target: '#views', params: { opacity: [0, 1], duration: 500, ease: 'linear' } },
+                    { target: '#b', params: { x: [0, 0], width: [0, 900], duration: 2000, ease: 'inOut(3)' } },
+                    {
+                        target: '#count',
+                        params: {
+                            innerHTML: { from: 0 },
+                            modifier: (v: number) => utils.round(v, 0).toLocaleString(),
+                            duration: 2000,
+                            ease: 'inOut(3)'
+                        }
+                    }
+                ]
+            },
+            {
+                delay: 500, // The 500ms gap that was missing
+                anims: [
+                    { target: '#b', params: { x: 900, width: 0, duration: 1500, ease: 'inOut(3)' } },
+                    { target: '#views', params: { opacity: 0, duration: 1500, ease: 'linear' } }
+                ]
+            }
+        ];
 
         tl = createTimeline({
-          loop: true,
-          autoplay: false, // Changed from implicit true to false
-          defaults: {
-            ease: 'inOut(3)',
-            duration: 2000,
-          }
-        })
-        .add('#views', {
-          opacity: [0, 1],
-          duration: 500,
-        }, 0)
-        .add('#b', {
-          x: [0, 0],
-          width: [0, 900],
-        }, 0)
-        .add('#count', {
-          innerHTML: { from:  0 },
-          modifier: (v: number) => utils.round(v, 0).toLocaleString(),
-        }, '<<')
-        .add('#b', {
-          x: 900,
-          width: 0,
-          duration: 1500,
-        }, '+=500')
-        .add('#views', {
-          opacity: 0,
-          duration: 1500,
-        }, '<<');
+            loop: true,
+            autoplay: false,
+        });
+
+        let currentTimelineCursor = 0;
+        steps.forEach(step => {
+            currentTimelineCursor += step.delay || 0;
+
+            let stepDuration = 0;
+            if (step.anims && step.anims.length > 0) {
+                step.anims.forEach(anim => {
+                    // Using the original add(target, params, offset) signature
+                    tl.add(anim.target, anim.params, currentTimelineCursor);
+                });
+                stepDuration = Math.max(...step.anims.map(a => a.params.duration || 0));
+            }
+
+            currentTimelineCursor += stepDuration;
+        });
     });
 </script>
 
