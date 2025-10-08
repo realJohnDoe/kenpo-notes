@@ -2,6 +2,8 @@
     import { onMount } from 'svelte';
     import { svg, animate, createTimeline, stagger, utils, type AnimeTimelineInstance } from 'animejs';
 
+    export let data;
+
     let tl: AnimeTimelineInstance;
 
     onMount(() => {
@@ -20,6 +22,14 @@
                             modifier: (v: number) => utils.round(v, 0).toLocaleString(),
                             duration: 2000,
                             ease: 'inOut(3)'
+                        }
+                    },
+                    {
+                        target: '#layer1',
+                        params: {
+                            opacity: [0.2, 1],
+                            duration: 1000,
+                            loop: true
                         }
                     }
                 ]
@@ -87,3 +97,8 @@
     <line x1="0" y1="50" x2="1000" y2="50" stroke="black" stroke-width="2"/>
     <rect id="b" x="0" y="10" width="0" height="30" fill="cornflowerblue" />
 </svg>
+
+<div style="margin-top: 2rem;">
+    <h2>Loaded SVG Animation Test</h2>
+    {@html data.svgContent}
+</div>
