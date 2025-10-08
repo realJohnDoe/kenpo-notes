@@ -16,10 +16,7 @@ permissions:
   id-token: write
 
 jobs:
-  build-test-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  quartz-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -35,23 +32,90 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.npm
-          key: node-${{ hashFiles('**/package-lock.json') }}
+          key: node-quartz-${{ hashFiles('**/package-lock.json') }}
 
       - run: npm ci
 
       - name: Test
         run: npm test
 
-      - name: Ensure Quartz builds
+      - name: Build Quartz
         run: npx quartz build
+
+      - name: Upload Quartz artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-build
+          path: ./public
+
+  animations-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Cache animations dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: node-animations-${{ hashFiles('animations/package-lock.json') }}
+
+      - name: Install animations dependencies
+        run: |
+          cd animations
+          npm ci
+
+      - name: Build animations
+        run: |
+          cd animations
+          npm run build
+
+      - name: Upload animations artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: animations-build
+          path: ./animations/build
+
+  deploy:
+    needs: [quartz-build, animations-build]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Quartz artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: quartz-build
+          path: ./public
+
+      - name: Download animations artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: animations-build
+          path: ./animations-build
+
+      - name: Combine builds
+        run: |
+          # Copy animations build to the appropriate path in the main build
+          # Since animations has base path '/kenpo-notes' and routes like '/animation/*',
+          # we need to merge them into the main public directory
+          if [ -d "./animations-build" ]; then
+            cp -r ./animations-build/* ./public/
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload combined artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: ./public
 
       - name: Deploy to GitHub Pages
