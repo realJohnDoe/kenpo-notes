@@ -1,14 +1,17 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { svg, animate, createTimeline, stagger, utils } from 'animejs';
+    import { svg, animate, createTimeline, stagger, utils, type AnimeTimelineInstance } from 'animejs';
+
+    let tl: AnimeTimelineInstance;
 
     onMount(() => {
         console.log("Running test animation on / page.");
 
         const line = svg.createDrawable('line');
 
-        createTimeline({
+        tl = createTimeline({
           loop: true,
+          autoplay: false, // Changed from implicit true to false
           defaults: {
             ease: 'inOut(3)',
             duration: 2000,
@@ -50,9 +53,18 @@
     svg {
         margin-top: 20px;
     }
+    .controls {
+        margin-top: 1rem;
+    }
 </style>
 
 <h1>Animation Test Page (on root)</h1>
+
+<div class="controls">
+    <button on:click={() => tl.play()}>Play</button>
+    <button on:click={() => tl.pause()}>Pause</button>
+    <button on:click={() => tl.restart()}>Restart</button>
+</div>
 
 <div id="views">Views</div>
 <div id="count">0</div>
