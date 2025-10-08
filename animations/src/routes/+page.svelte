@@ -95,10 +95,6 @@
 
 <div id="views">Views</div>
 <div id="count">0</div>
-<svg width="1000" height="100">
-    <line x1="0" y1="50" x2="1000" y2="50" stroke="black" stroke-width="2"/>
-    <rect id="b" x="0" y="10" width="0" height="30" fill="cornflowerblue" />
-</svg>
 
 <div style="margin-top: 2rem;">
     <h2>Loaded SVG Animation Test</h2>
