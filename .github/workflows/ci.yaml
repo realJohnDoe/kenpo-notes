@@ -15,6 +15,12 @@ permissions:
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   quartz-build:
     runs-on: ubuntu-latest
@@ -31,8 +37,10 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.npm
+          path: node_modules
           key: node-quartz-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-quartz-
 
       - run: npm ci
 
@@ -47,6 +55,7 @@ jobs:
         with:
           name: quartz-build
           path: ./public
+          if-no-files-found: error
 
   animations-build:
     runs-on: ubuntu-latest
@@ -63,8 +72,10 @@ jobs:
       - name: Cache animations dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.npm
+          path: animations/node_modules
           key: node-animations-${{ hashFiles('animations/package-lock.json') }}
+          restore-keys: |
+            node-animations-
 
       - name: Install animations dependencies
         run: |
@@ -81,6 +92,7 @@ jobs:
         with:
           name: animations-build
           path: ./animations/build
+          if-no-files-found: error
 
   deploy:
     needs: [quartz-build, animations-build]
@@ -103,12 +115,24 @@ jobs:
 
       - name: Combine builds
         run: |
+          # Verify artifacts exist
+          ls -la ./public/
+          ls -la ./animations-build/ || echo "No animations build found"
+          
           # Copy animations build to the appropriate path in the main build
           # Since animations has base path '/kenpo-notes' and routes like '/animation/*',
           # we need to merge them into the main public directory
-          if [ -d "./animations-build" ]; then
+          if [ -d "./animations-build" ] && [ "$(ls -A ./animations-build)" ]; then
+            echo "Merging animations build into main build..."
             cp -r ./animations-build/* ./public/
+            echo "Merged successfully"
+          else
+            echo "No animations build to merge"
           fi
+          
+          # Show final structure
+          echo "Final build structure:"
+          find ./public -type f | head -20
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
