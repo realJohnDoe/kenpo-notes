@@ -29,6 +29,8 @@
                         params: {
                             opacity: [0.2, 1],
                             duration: 1000,
+                            ease: 'inOutSine',
+                            alternate: true, // Corrected per user feedback
                             loop: true
                         }
                     }
