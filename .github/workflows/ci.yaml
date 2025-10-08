@@ -142,12 +142,32 @@ jobs:
           ls -la ./animations-build/ || echo "No animations build found"
           
           # Copy animations build to the appropriate path in the main build
-          # Since animations has base path '/kenpo-notes' and routes like '/animation/*',
-          # we need to merge them into the main public directory
+          # We need to be selective to avoid overwriting the Quartz root page
           if [ -d "./animations-build" ] && [ "$(ls -A ./animations-build)" ]; then
             echo "Merging animations build into main build..."
-            cp -r ./animations-build/* ./public/
-            echo "Merged successfully"
+            
+            # Create animations directory in public if it doesn't exist
+            mkdir -p ./public/animation
+            
+            # Copy animation-specific files, avoiding root index.html collision
+            # Copy all files except the root index.html to preserve Quartz root page
+            find ./animations-build -type f | while read -r file; do
+              relative_path=${file#./animations-build/}
+              
+              # Skip root index.html to let Quartz root page take precedence
+              if [ "$relative_path" = "index.html" ]; then
+                echo "Skipping root index.html from animations to preserve Quartz root page"
+                continue
+              fi
+              
+              # Copy other files to maintain animations functionality
+              target_dir="./public/$(dirname "$relative_path")"
+              mkdir -p "$target_dir"
+              cp "$file" "./public/$relative_path"
+              echo "Copied: $relative_path"
+            done
+            
+            echo "Merged successfully - Quartz root page preserved"
           else
             echo "No animations build to merge"
           fi
