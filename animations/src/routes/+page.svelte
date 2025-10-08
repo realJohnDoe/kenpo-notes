@@ -14,7 +14,6 @@
                 delay: 0, // Delay before this step starts
                 anims: [
                     { target: '#views', params: { opacity: [0, 1], duration: 500, ease: 'linear' } },
-                    { target: '#b', params: { x: [0, 0], width: [0, 900], duration: 2000, ease: 'inOut(3)' } },
                     {
                         target: '#count',
                         params: {
@@ -40,7 +39,6 @@
             {
                 delay: 500, // The 500ms gap that was missing
                 anims: [
-                    { target: '#b', params: { x: 900, width: 0, duration: 1500, ease: 'inOut(3)' } },
                     { target: '#views', params: { opacity: 0, duration: 1500, ease: 'linear' } }
                 ]
             }
@@ -78,9 +76,7 @@
         font-family: monospace;
         font-size: 3em;
     }
-    svg {
-        margin-top: 20px;
-    }
+    
     .controls {
         margin-top: 1rem;
     }
