@@ -186,9 +186,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     });
 
                     const labelDelay = labelIndex * durationPerLabel;
-                    const holdDuration = Math.max(0, durationPerLabel - fadeDuration) + 1;
-
-                    console.log(labelId, fadeDuration, holdDuration)
+                    const holdDuration = Math.max(0, durationPerLabel - fadeDuration);
 
                     stepAnims.push({
                         targets: `#${labelId}`,
@@ -202,8 +200,6 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         }
                     });
                 });
-
-
             }
             timelineData.push({
                 anims: stepAnims,
