@@ -27,10 +27,11 @@
                     {
                         target: '#layer1',
                         params: {
-                            opacity: [0.2, 1],
-                            duration: 1000,
+                            translateX: [0, 20], // Move 20 units horizontally
+                            rotate: [0, 360],    // Rotate 360 degrees
+                            duration: 2000,      // Longer duration for more noticeable movement
                             ease: 'inOutSine',
-                            alternate: true, // Corrected per user feedback
+                            alternate: true,
                             loop: true
                         }
                     }
