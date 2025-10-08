@@ -1,14 +1,15 @@
 <script lang="ts">
-  import anime from 'animejs';
+  import { animate, createTimeline, type AnimeTimelineInstance } from 'animejs';
   import { onMount, onDestroy } from 'svelte';
 
   // Props
   export let timelineData: any[]; // Using any[] for simplicity as structure is complex
   export let svgContent: string;
   export let onComplete: () => void = () => {};
+  export let speed: number = 1; // New prop
 
   // State
-  let mainTl: any; // anime.timeline instance
+  let mainTl: AnimeTimelineInstance; // anime.timeline instance
   let stepStartTimes: number[] = [];
   export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
 
@@ -25,49 +26,110 @@
     ? Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize)
     : 1;
 
+  function handleResizeEvent() {
+    viewportWidth = window.innerWidth;
+    viewportHeight = window.innerHeight;
+  }
+
   onMount(() => {
     viewportWidth = window.innerWidth;
     viewportHeight = window.innerHeight;
-    window.addEventListener('resize', () => {
-      viewportWidth = window.innerWidth;
-      viewportHeight = window.innerHeight;
-    });
+    window.addEventListener('resize', handleResizeEvent);
 
-    mainTl = anime.timeline({ 
-      autoplay: false, 
-      loop: false,
-      complete: () => {
-        console.log('Timeline complete: setting playerState to finished');
-        playerState = 'finished';
-        onComplete();
-      }
-    });
-
-    // --- Timeline Building Logic ---
-    let currentTimelineCursor = 0;
-    timelineData.forEach((step: any) => {
-      stepStartTimes.push(currentTimelineCursor);
-      let stepDuration = 0; // Initialize stepDuration to 0
-
-      if (step.anims && step.anims.length > 0) {
-        // All animations in a step now have the same duration
-        stepDuration = step.anims[0].duration;
-        step.anims.forEach((anim: any) => {
-          mainTl.add(anim, currentTimelineCursor);
+        mainTl = createTimeline({
+          autoplay: false,
+          loop: false,
+          onComplete: () => {
+            console.log('Timeline complete: setting playerState to finished');
+            playerState = 'finished';
+            onComplete();
+          }
         });
-      }
-      currentTimelineCursor += stepDuration; // Use the actual stepDuration
-    });
-    stepStartTimes.push(currentTimelineCursor);
-    goToStep(0);
-  });
+        console.log(`Animation: Initializing mainTl. Setting playbackRate to ${speed}`);
+        mainTl.playbackRate = speed;
+    
+        // --- Timeline Building Logic ---
+        console.log("Original timelineData received:", JSON.parse(JSON.stringify(timelineData)));
 
-  onDestroy(() => {
-    if (mainTl) {
-      mainTl.pause();
-    }
-  });
+        // v4 Migration: The animation objects from YAML are in v3 format.
+        // We need to convert `value` to `to` for property and keyframe objects.
+        const migratedTimelineData = timelineData.map(step => {
+            if (!step.anims) {
+                return step;
+            }
+            const newAnims = step.anims.map(anim => {
+                const newAnim = { ...anim };
+                Object.keys(newAnim).forEach(key => {
+                    if (key === 'targets') return;
 
+                    const propValue = newAnim[key];
+
+                    // Handle keyframes array: [{ value: X, ... }, { value: Y, ... }]
+                    if (Array.isArray(propValue)) {
+                        newAnim[key] = propValue.map(frame => {
+                            if (frame.hasOwnProperty('value')) {
+                                frame.to = frame.value;
+                                delete frame.value;
+                            }
+                            return frame;
+                        });
+                    }
+                    // Handle single property object: { value: X, ... }
+                    else if (typeof propValue === 'object' && propValue !== null && !Array.isArray(propValue) && propValue.hasOwnProperty('value')) {
+                        propValue.to = propValue.value;
+                        delete propValue.value;
+                        newAnim[key] = propValue;
+                    }
+                });
+
+                // --- FORCED DEBUGGING ---
+                console.log(`Forcing fade-in on target: ${newAnim.targets}`);
+                newAnim.opacity = [0, 1];
+                newAnim.duration = 2000;
+                // --- END FORCED DEBUGGING ---
+
+                return newAnim;
+            });
+            return { ...step, anims: newAnims };
+        });
+
+        console.log("Data after migration:", JSON.parse(JSON.stringify(migratedTimelineData)));
+
+        let currentTimelineCursor = 0;
+        migratedTimelineData.forEach((step: any) => {
+          stepStartTimes.push(currentTimelineCursor);
+          let stepDuration = 0; // Initialize stepDuration to 0
+    
+          if (step.anims && step.anims.length > 0) {
+            // All animations in a step now have the same duration
+            stepDuration = step.anims[0].duration;
+            step.anims.forEach((anim: any) => {
+              // --- DEBUGGING: Check if target exists ---
+              if (!document.querySelector(anim.targets)) {
+                  console.warn(`Animation target not found in DOM: "${anim.targets}"`);
+              }
+              // --- END DEBUGGING ---
+              mainTl.add(anim, currentTimelineCursor);
+            });
+          }
+          currentTimelineCursor += stepDuration; // Use the actual stepDuration
+        });
+        stepStartTimes.push(currentTimelineCursor);
+
+        console.log("Timeline object after adding animations:", mainTl);
+
+        goToStep(0);
+      });
+    
+      onDestroy(() => {
+        if (mainTl) {
+          mainTl.pause();
+        }
+        if (typeof window !== 'undefined') {
+          window.removeEventListener('resize', handleResizeEvent);
+        }
+      });
+    
   // --- Control Functions ---
   const getStepIndexFromTime = (time: number): number => {
     // Handle case where time is exactly at the end of the timeline
@@ -101,12 +163,11 @@
     }
 
     const proxy = { currentTime: mainTl.currentTime };
-    anime({
-        targets: proxy,
+    animate(proxy, {
         currentTime: targetTime,
         duration: 300, // 300ms for a smooth transition
-        easing: 'easeInOutSine',
-        update: () => {
+        ease: 'inOutSine',
+        onUpdate: () => {
             mainTl.seek(proxy.currentTime);
             // Explicitly reset completed status after seeking
             if (mainTl.completed) {
@@ -114,7 +175,7 @@
                 mainTl.completed = false;
             }
         },
-        complete: () => {
+        onComplete: () => {
             const oldState = playerState;
             if (targetTime >= mainTl.duration) {
                 playerState = 'finished';
@@ -138,6 +199,7 @@
       } else {
         mainTl.play();
       }
+      console.log(`togglePlayPause: Animation started/restarted with playbackRate: ${mainTl.playbackRate}`);
       playerState = 'playing';
     }
     console.log(`togglePlayPause finished. New state: ${playerState}`);

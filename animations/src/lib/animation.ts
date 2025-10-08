@@ -88,7 +88,7 @@ export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: nu
         cx: [fromPos.cx, toPos.cx],
         cy: [fromPos.cy, toPos.cy],
         duration: duration,
-        easing: 'easeInOutSine'
+        ease: 'inOutSine'
     };
 }
 
@@ -103,7 +103,7 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
         translateY: [fromPos.y, toPos.y],
         rotate: `+=${diff}`,
         duration: duration,
-        easing: 'easeInOutSine'
+        ease: 'inOutSine'
     };
 }
 
@@ -187,9 +187,9 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         targets: `#${labelId}`,
                         delay: labelDelay,
                         opacity: [
-                            { value: 1, duration: fadeDuration, easing: 'linear' },
-                            { value: 1, duration: holdDuration },
-                            { value: 0, duration: 0, easing: 'linear' }
+                            { to: 1, duration: fadeDuration, ease: 'linear' },
+                            { to: 1, duration: holdDuration },
+                            { to: 0, duration: 0, ease: 'linear' }
                         ]
                     });
                 });
