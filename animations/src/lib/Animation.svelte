@@ -51,9 +51,16 @@
 
       if (step.anims && step.anims.length > 0) {
         // All animations in a step now have the same duration
-        stepDuration = step.anims[0].duration;
+        stepDuration = step.anims[0].options ? step.anims[0].options.duration : step.anims[0].duration;
         step.anims.forEach((anim: any) => {
-          mainTl.add(anim, currentTimelineCursor);
+          if (anim.targets && anim.options) {
+            // v4 API: targets as first param, options as second param
+            mainTl.add(anim.targets, anim.options, currentTimelineCursor);
+          } else {
+            // Fallback for any remaining v3 style animations
+            const { targets, ...options } = anim;
+            mainTl.add(targets, options, currentTimelineCursor);
+          }
         });
       }
       currentTimelineCursor += stepDuration; // Use the actual stepDuration

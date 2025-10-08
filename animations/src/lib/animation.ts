@@ -85,10 +85,12 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
 export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
     return {
         targets: targetId,
-        cx: [fromPos.cx, toPos.cx],
-        cy: [fromPos.cy, toPos.cy],
-        duration: duration,
-        easing: 'easeInOutSine'
+        options: {
+            cx: [fromPos.cx, toPos.cx],
+            cy: [fromPos.cy, toPos.cy],
+            duration: duration,
+            ease: 'easeInOutSine'
+        }
     };
 }
 
@@ -99,11 +101,13 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
 
     return {
         targets: targetId,
-        translateX: [fromPos.x, toPos.x],
-        translateY: [fromPos.y, toPos.y],
-        rotate: `+=${diff}`,
-        duration: duration,
-        easing: 'easeInOutSine'
+        options: {
+            translateX: [fromPos.x, toPos.x],
+            translateY: [fromPos.y, toPos.y],
+            rotate: `+=${diff}`,
+            duration: duration,
+            ease: 'easeInOutSine'
+        }
     };
 }
 
@@ -185,12 +189,14 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
                     stepAnims.push({
                         targets: `#${labelId}`,
-                        delay: labelDelay,
-                        opacity: [
-                            { value: 1, duration: fadeDuration, easing: 'linear' },
-                            { value: 1, duration: holdDuration },
-                            { value: 0, duration: 0, easing: 'linear' }
-                        ]
+                        options: {
+                            delay: labelDelay,
+                            opacity: [
+                                { value: 1, duration: fadeDuration, ease: 'linear' },
+                                { value: 1, duration: holdDuration },
+                                { value: 0, duration: 0, ease: 'linear' }
+                            ]
+                        }
                     });
                 });
 
