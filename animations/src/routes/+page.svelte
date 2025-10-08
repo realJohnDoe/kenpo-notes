@@ -30,8 +30,7 @@
                             rotate: [0, 360],    // Rotate 360 degrees
                             duration: 2000,      // Longer duration for more noticeable movement
                             ease: 'inOutSine',
-                            alternate: true,
-                            loop: true
+                            alternate: true
                         }
                     }
                 ]
@@ -45,8 +44,11 @@
         ];
 
         tl = createTimeline({
-            loop: true,
             autoplay: false,
+            loop: false, // Changed from true
+            onComplete: () => {
+                console.log('Timeline complete for +page.svelte');
+            }
         });
 
         let currentTimelineCursor = 0;
