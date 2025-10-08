@@ -161,30 +161,6 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             const stepAnims = [];
 
-            // Add cleanup animation to ensure all labels from previous steps are hidden
-            if (i > 0) {
-                // Reset all previous step labels to opacity 0 at the start of this step
-                for (let prevStep = 0; prevStep < i; prevStep++) {
-                    const prevStepData = cfg.steps[prevStep];
-                    if (prevStepData.labels && Array.isArray(prevStepData.labels)) {
-                        prevStepData.labels.forEach((_, labelIndex) => {
-                            const prevLabelId = prevStepData.labels.length === 1
-                                ? `step-${prevStep + 1}-label`
-                                : `step-${prevStep + 1}-label-${labelIndex}`;
-                            
-                            stepAnims.push({
-                                targets: `#${prevLabelId}`,
-                                options: {
-                                    delay: 0,
-                                    opacity: 0,
-                                    duration: 0
-                                }
-                            });
-                        });
-                    }
-                }
-            }
-
             stepAnims.push(createPointerAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
             stepAnims.push(createPointerAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
             stepAnims.push(createPointerAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
@@ -197,8 +173,6 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
                 const durationPerLabel = stepAnimationDuration / toStep.labels.length;
-                
-                console.log(`Step ${i + 1}: Duration=${stepAnimationDuration}ms, Labels=${toStep.labels.length}, DurationPerLabel=${durationPerLabel}ms`);
 
                 toStep.labels.forEach((labelText: string, labelIndex: number) => {
                     const labelId = toStep.labels.length === 1
@@ -216,8 +190,6 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     const totalLabelDuration = Math.min(durationPerLabel, stepAnimationDuration - labelDelay);
                     const holdDuration = Math.max(0, totalLabelDuration - 2 * fadeDuration);
                     const actualFadeDuration = Math.min(fadeDuration, totalLabelDuration / 2);
-
-                    console.log(`  Label ${labelIndex}: "${labelText}" - Delay=${labelDelay}ms, Hold=${holdDuration}ms, ActualFade=${actualFadeDuration}ms, Total=${labelDelay + 2 * actualFadeDuration + holdDuration}ms`);
 
                     stepAnims.push({
                         targets: `#${labelId}`,
