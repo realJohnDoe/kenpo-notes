@@ -192,9 +192,9 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         options: {
                             delay: labelDelay,
                             opacity: [
-                                { value: 1, duration: fadeDuration, ease: 'linear' },
-                                { value: 1, duration: holdDuration },
-                                { value: 0, duration: 0, ease: 'linear' }
+                                { to: 1, duration: fadeDuration, ease: 'linear' },
+                                { to: 1, duration: holdDuration },
+                                { to: 0, duration: 0, ease: 'linear' }
                             ]
                         }
                     });
