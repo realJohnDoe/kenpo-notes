@@ -26,7 +26,7 @@
                     {
                         target: '#layer1',
                         params: {
-                            translateX: [0, 20], // Move 20 units horizontally
+                            translateX: [-10, 10], // Move 20 units horizontally around center
                             rotate: [0, 360],    // Rotate 360 degrees
                             duration: 2000,      // Longer duration for more noticeable movement
                             ease: 'inOutSine',
@@ -82,6 +82,13 @@
     .controls {
         margin-top: 1rem;
     }
+    .centered-svg-wrapper {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;     /* Centers vertically */
+        width: 100%;             /* Take full width of parent */
+        height: 600px;           /* Or some appropriate height for the SVG */
+    }
 </style>
 
 <h1>Animation Test Page (on root)</h1>
@@ -95,7 +102,11 @@
 <div id="views">Views</div>
 <div id="count">0</div>
 
-<div style="margin-top: 2rem;">
-    <h2>Loaded SVG Animation Test</h2>
-    {@html data.svgContent}
-</div>
+    <div style="margin-top: 2rem;">
+        <h2>Loaded SVG Animation Test</h2>
+        <div class="centered-svg-wrapper">
+            {@html data.svgContent}
+        </div>
+    </div>
+
+
