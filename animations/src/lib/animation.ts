@@ -185,7 +185,9 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     });
 
                     const labelDelay = labelIndex * durationPerLabel;
-                    const holdDuration = Math.max(0, durationPerLabel - fadeDuration) + 1;
+                    // Ensure labels fade out before the next one appears
+                    const fadeOutStartTime = Math.max(0, durationPerLabel - fadeDuration);
+                    const holdDuration = Math.max(0, fadeOutStartTime - fadeDuration);
 
                     stepAnims.push({
                         targets: `#${labelId}`,
