@@ -189,14 +189,12 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
                     stepAnims.push({
                         targets: `#${labelId}`,
-                        options: {
-                            delay: labelDelay,
-                            opacity: [
-                                { value: 1, duration: fadeDuration, ease: 'linear' },
-                                { value: 1, duration: holdDuration },
-                                { value: 0, duration: 0, ease: 'linear' }
-                            ]
-                        }
+                        delay: labelDelay,
+                        opacity: [
+                            { value: 1, duration: fadeDuration, ease: 'linear' },
+                            { value: 1, duration: holdDuration },
+                            { value: 0, duration: fadeDuration, ease: 'linear' }
+                        ]
                     });
                 });
 
