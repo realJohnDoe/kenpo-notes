@@ -50,6 +50,28 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      - name: Sanitize filenames for artifact upload
+        run: |
+          # Find files with invalid characters for GitHub Actions artifacts and rename them
+          find ./public -name "*:*" -type f | while read -r file; do
+            # Replace colons with hyphens
+            newname=$(echo "$file" | sed 's/:/-/g')
+            echo "Renaming: $file -> $newname"
+            mv "$file" "$newname"
+          done
+          
+          # Also handle other invalid characters: ", <, >, |, *, ?
+          find ./public -type f | while read -r file; do
+            dir=$(dirname "$file")
+            filename=$(basename "$file")
+            # Replace problematic characters with safe alternatives
+            newfilename=$(echo "$filename" | sed 's/[:"<>|*?]/-/g')
+            if [ "$filename" != "$newfilename" ]; then
+              echo "Sanitizing: $file -> $dir/$newfilename"
+              mv "$file" "$dir/$newfilename"
+            fi
+          done
+
       - name: Upload Quartz artifact
         uses: actions/upload-artifact@v4
         with:
@@ -138,7 +160,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload combined artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
