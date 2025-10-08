@@ -40,6 +40,7 @@ steps:
     direction: 1200
     pivot: right
     duration: 0.5
+    labels: ['']
   - stance: horse
     direction: 1200
     pivot: right

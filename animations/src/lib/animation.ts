@@ -1,3 +1,4 @@
+import { log } from 'console';
 import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 
 function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
@@ -187,6 +188,8 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     const labelDelay = labelIndex * durationPerLabel;
                     const holdDuration = Math.max(0, durationPerLabel - fadeDuration) + 1;
 
+                    console.log(labelId, fadeDuration, holdDuration)
+
                     stepAnims.push({
                         targets: `#${labelId}`,
                         options: {
@@ -200,17 +203,12 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     });
                 });
 
-                timelineData.push({
-                    anims: stepAnims,
-                    label: null
-                });
-            } else {
-                // No labels, or empty labels array, push a single step with the full duration
-                timelineData.push({
-                    anims: stepAnims,
-                    label: null // No label for this step
-                });
+
             }
+            timelineData.push({
+                anims: stepAnims,
+                label: null
+            });
 
             lastConfig = nextConfig;
         }
