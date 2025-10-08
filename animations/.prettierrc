@@ -1,0 +1,14 @@
+{
+  "arrowParens": "always",
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "svelteSortOrder": "options-scripts-markup-styles",
+  "svelteStrictMode": false,
+  "svelteBracketNewLine": true,
+  "svelteIndentScriptAndStyle": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "useTabs": false,
+  "plugins": ["prettier-plugin-svelte"]
+}

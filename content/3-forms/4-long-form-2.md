@@ -30,7 +30,7 @@ title: Long Form 2
 		5. [[Left ⬅️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
 		6. [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
 	6. Same with right toward [[1200 ⬆️]]
-	7. Move [[Right ➡️]] [[Foot 🦶]] [[clockwise 🔃]] to face [[430 ↘️]]
+	7. Move [[Left ⬅️]] [[Foot 🦶]] [[counter-clockwise 🔄]] to face [[430 ↘️]]
 		1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]] into left overhead [[Back Knuckle 🔙✊💥]]
 		2. [[Right ➡️]] [[Straight Punch ↕️👊💥]]
 		3. [[Left ⬅️]] [[Straight Punch ↕️👊💥]] and [[Right ➡️]] [[Front Kick ⬆️🦶💥]] at the same time

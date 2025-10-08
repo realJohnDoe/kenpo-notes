@@ -4,5 +4,10 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
+.obsidian
 .quartz-cache
-workspace.json
+.replit
+replit.nix
+dist
+.svelte-kit
+build

@@ -18,5 +18,5 @@
 7. - Turn [[Right ➡️]] hand in place so fingers face upwards
 8. - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] to break their wrist
-9. [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
-10. Land back in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
+9. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+10. - Land back in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
