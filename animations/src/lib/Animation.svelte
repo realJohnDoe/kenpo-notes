@@ -49,6 +49,7 @@
         mainTl.playbackRate = speed;
     
         // --- Timeline Building Logic ---
+        console.log("FINAL ANIMATION DATA:", JSON.stringify(timelineData, null, 2));
         console.log("TimelineData received:", JSON.parse(JSON.stringify(timelineData)));
 
         let currentTimelineCursor = 0;

@@ -57,14 +57,14 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     const svgOffsetY = -svgSizeInPixels / 2;
 
     // Left Foot Group
-    shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
+    shapesSvg += `<g id="leftFootGroup" style="transform: translate(${transforms.leftFootGroup.x}px, ${transforms.leftFootGroup.y}px) rotate(${transforms.leftFootGroup.rotate}deg);">
         <g transform="scale(${scaleFactor}, ${scaleFactor}) scale(-1, 1) translate(${svgOffsetX}, ${svgOffsetY})"> <!-- Corrected order for mirroring -->
             ${rightFootSvgContent}
         </g>
     </g>`;
 
     // Right Foot Group
-    shapesSvg += `<g id="rightFootGroup" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
+    shapesSvg += `<g id="rightFootGroup" style="transform: translate(${transforms.rightFootGroup.x}px, ${transforms.rightFootGroup.y}px) rotate(${transforms.rightFootGroup.rotate}deg);">
         <g transform="scale(${scaleFactor}, ${scaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
             ${rightFootSvgContent}
         </g>
@@ -73,7 +73,7 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     const headScaleFactor = 0.6;
 
     // Center of Gravity (new)
-    shapesSvg += `<g id="cog" transform="translate(${transforms.cog.cx}, ${transforms.cog.cy}) rotate(${transforms.cogPointer.rotate})">
+    shapesSvg += `<g id="cog" style="transform: translate(${transforms.cog.cx}px, ${transforms.cog.cy}px) rotate(${transforms.cogPointer.rotate}deg);">
         <g transform="scale(${headScaleFactor}, ${headScaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
             ${headSvgContent}
         </g>
