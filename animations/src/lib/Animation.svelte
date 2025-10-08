@@ -1,5 +1,5 @@
 <script lang="ts">
-  import anime from 'animejs';
+  import { animate, createTimeline } from 'animejs';
   import { onMount, onDestroy } from 'svelte';
 
   // Props
@@ -33,10 +33,10 @@
       viewportHeight = window.innerHeight;
     });
 
-    mainTl = anime.timeline({ 
+    mainTl = createTimeline({ 
       autoplay: false, 
       loop: false,
-      complete: () => {
+      onComplete: () => {
         console.log('Timeline complete: setting playerState to finished');
         playerState = 'finished';
         onComplete();
@@ -101,12 +101,11 @@
     }
 
     const proxy = { currentTime: mainTl.currentTime };
-    anime({
-        targets: proxy,
+    animate(proxy, {
         currentTime: targetTime,
         duration: 300, // 300ms for a smooth transition
-        easing: 'easeInOutSine',
-        update: () => {
+        ease: 'easeInOutSine',
+        onUpdate: () => {
             mainTl.seek(proxy.currentTime);
             // Explicitly reset completed status after seeking
             if (mainTl.completed) {
@@ -114,7 +113,7 @@
                 mainTl.completed = false;
             }
         },
-        complete: () => {
+        onComplete: () => {
             const oldState = playerState;
             if (targetTime >= mainTl.duration) {
                 playerState = 'finished';

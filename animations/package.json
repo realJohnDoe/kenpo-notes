@@ -33,7 +33,7 @@
   },
   "type": "module",
   "dependencies": {
-    "animejs": "3.2.1",
+    "animejs": "^4.2.2",
     "lucide-svelte": "^0.544.0",
     "ts-node": "^10.9.2",
     "yaml": "^2.8.1"

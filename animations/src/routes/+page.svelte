@@ -1,27 +1,26 @@
 <script lang="ts">
-  import anime from 'animejs';
+  import { animate, createTimeline } from 'animejs';
   import { onMount } from 'svelte';
 
   onMount(() => {
-    const tl = anime.timeline({
-      easing: 'easeOutExpo',
-      duration: 750
+    const tl = createTimeline({
+      autoplay: true
     });
 
-    tl.add({
-      targets: '.card',
+    tl.add('.card', {
       x: '15rem',
       duration: 500,
+      ease: 'easeOutExpo'
     }, 0)
-    .add({
-      targets: '.card',
+    .add('.card', {
       rotate: '1turn',
       duration: 500,
+      ease: 'easeOutExpo'
     }, 500)
-    .add({
-      targets: '.card',
+    .add('.card', {
       filter: 'blur(15px)',
       duration: 500,
+      ease: 'easeOutExpo'
     }, 1000);
   });
 </script>
