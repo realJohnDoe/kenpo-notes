@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
-import { generateAnimationTimeline, computeAnimationData, AnimationData } from './animation';
+import { generateAnimationTimeline, computeAnimationData } from './animation';
 
 describe('computeAnimationData', () => {
   it('should compute animation data for delayed-sword', () => {
