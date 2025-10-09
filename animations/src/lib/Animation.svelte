@@ -11,6 +11,7 @@
   }
   export let svgContent: string;
   export let onComplete: () => void = () => {};
+  export let labelsData: any[] = []; // Accept labelsData prop
 
   // State
   let mainTl: any; // anime.timeline instance
@@ -19,24 +20,10 @@
 
   // We need 2 steps more: One for because there is one more still frames than animation steps and
   // one more because we add a step in the end as the finished state.
-  $: totalSteps = animationData.length + 2; // Compute totalSteps internally
-
-  // --- Resize and Scale Logic ---
-  let viewportWidth: number = 0;
-  let viewportHeight: number = 0;
-  const intrinsicCanvasSize = 600;
-
-  $: scale = (viewportWidth > 0 && viewportHeight > 0)
-    ? Math.min(viewportWidth / intrinsicCanvasSize, viewportHeight / intrinsicCanvasSize)
-    : 1;
+  $: totalSteps = stepStartTimes.length + 1;
 
   onMount(() => {
-    viewportWidth = window.innerWidth;
-    viewportHeight = window.innerHeight;
-    window.addEventListener('resize', () => {
-      viewportWidth = window.innerWidth;
-      viewportHeight = window.innerHeight;
-    });
+    console.log('onMount: animationData', animationData);
 
     mainTl = createTimeline({ 
       autoplay: false, 
@@ -178,21 +165,43 @@
 
 <style>
   .animation-container {
+    position: relative; /* NEW */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* Hide any overflow from scaling */
+    overflow: hidden;
   }
   .scaled-svg-wrapper {
-    /* The SVG itself has viewBox, so it will scale within this wrapper */
-    /* We apply the transform here */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Label styles moved from +page.svelte */
+  .label {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 80%;
   }
 </style>
 
 <div class="animation-container">
-  <div class="scaled-svg-wrapper" style="transform: scale({scale}); transform-origin: center center;">
+  <div class="scaled-svg-wrapper">
     {@html svgContent}
   </div>
+
+  {#if labelsData && labelsData.length > 0}
+    <div class="labels-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+      {#each labelsData as label}
+        <div id={label.id} class="label" style="position: absolute; top: {label.y}px; left: 50%; transform: translateX(-50%); opacity: 0;">
+          {label.text}
+        </div>
+      {/each}
+    </div>
+  {/if}
 </div>

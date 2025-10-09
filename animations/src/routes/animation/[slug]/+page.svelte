@@ -9,5 +9,5 @@
 </svelte:head>
 
 <div class="animation-slug-page">
-    <AnimationViewer animationData={data.animationData} svgContent={data.svgContent} />
+    <AnimationViewer animationData={data.animationData} svgContent={data.svgContent} labelsData={data.labelsData} />
 </div>
