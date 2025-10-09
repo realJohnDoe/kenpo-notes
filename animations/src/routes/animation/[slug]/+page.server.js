@@ -1,68 +1,72 @@
-export const prerender = true;
-
-import { readFileSync, readdirSync } from 'fs';
-import * as yaml from 'yaml';
 import { error } from '@sveltejs/kit';
-import { resolve, parse } from 'path';
-import {
-  generateGrid,
-  generateLabels,
-  generateCenterMarker,
-  generateVignette
-} from '$lib/background-graphics';
-import {
-  generatePersonShapes,
-  generateAnimationTimeline
-} from '$lib/animation';
+import { generateAnimationTimeline, generatePersonShapes, computeAnimationData } from '$lib/animation.ts';
+import { generateGrid, generateLabels, generateCenterMarker, generateVignette } from '$lib/background-graphics.ts';
+import { readFileSync } from 'fs';
+import { load } from 'js-yaml';
+import path from 'path';
 
-export function entries() {
-    const ymlDir = resolve(process.cwd(), 'src');
-    const files = readdirSync(ymlDir).filter(file => file.endsWith('.yml'));
-    return files.map(file => ({ slug: parse(file).name }));
+const animationDir = path.resolve('src');
+
+function readSvgContent(filename) {
+    const svgPath = path.join(animationDir, filename);
+    try {
+        return readFileSync(svgPath, 'utf-8');
+    } catch (e) {
+        console.error(`Error reading SVG file: ${svgPath}`, e);
+        return '';
+    }
 }
 
 export function load({ params }) {
-  try {
-    const yamlPath = resolve(process.cwd(), 'src', `${params.slug}.yml`);
-    const rawYaml = readFileSync(yamlPath, 'utf8');
-    const cfg = yaml.parse(rawYaml);
+    const { slug } = params;
+    const filePath = path.join(animationDir, `${slug}.yml`);
 
-    // This logic is copied from the old build.ts
-    cfg.canvas = { width: 600, height: 600 };
-    const unitSize = 60;
-    const visualGridSize = 30;
+    try {
+        const fileContents = readFileSync(filePath, 'utf-8');
+        const data = load(fileContents);
 
-    const gridElems = generateGrid(cfg.canvas.width, cfg.canvas.height, visualGridSize);
-    const labelElems = generateLabels(cfg.canvas.width, cfg.canvas.height);
-    const centerMarker = generateCenterMarker(cfg.canvas.width, cfg.canvas.height);
-    const vignette = generateVignette(cfg.canvas.width, cfg.canvas.height);
+        const rightFootSvg = readSvgContent('right_foot.svg');
+        const headSvg = readSvgContent('head.svg');
 
-    // Read the SVG content for the foot
-    const rightFootSvgPath = resolve(process.cwd(), 'src', 'right_foot.svg');
-    const rightFootSvgContent = readFileSync(rightFootSvgPath, 'utf8');
+        const canvasWidth = 600;
+        const canvasHeight = 600;
+        const gridUnitSize = 30;
+        const personUnitSize = 60;
 
-    // Read the SVG content for the head
-    const headSvgPath = resolve(process.cwd(), 'src', 'head.svg');
-    const headSvgContent = readFileSync(headSvgPath, 'utf8');
+        const personShapes = generatePersonShapes(data.steps[0], canvasWidth, canvasHeight, personUnitSize, rightFootSvg, headSvg);
+        const grid = generateGrid(canvasWidth, canvasHeight, gridUnitSize);
+        const labels = generateLabels(canvasWidth, canvasHeight);
+        const centerMarker = generateCenterMarker(canvasWidth, canvasHeight);
+        const vignette = generateVignette(canvasWidth, canvasHeight);
 
-    const initialPersonShapes = generatePersonShapes(cfg.steps[0], cfg.canvas.width, cfg.canvas.height, unitSize, rightFootSvgContent, headSvgContent);
+        const svgContent = `
+<svg width="100%" height="100%" viewBox="0 0 ${canvasWidth} ${canvasHeight}" style="background-color: white;">
+    <g id="grid">
+        ${grid}
+    </g>
+    <g id="center-marker">
+        ${centerMarker}
+    </g>
+    <g id="person">
+        ${personShapes}
+    </g>
+    ${vignette}
+    <g id="labels">
+        ${labels}
+    </g>
+</svg>`;
 
-    const { timelineData, labelsData } = generateAnimationTimeline(cfg, cfg.canvas.width, cfg.canvas.height, unitSize);
+        const { timelineData, labelsData } = generateAnimationTimeline(data, canvasWidth, canvasHeight, personUnitSize);
+        const animationData = computeAnimationData(timelineData);
 
-    const labelElements = labelsData.map(label =>
-        `<text id="${label.id}" x="50%" y="${label.y}" text-anchor="middle" opacity="0" class="txt" style="font-size: 20px;">${label.text}</text>`
-    ).join('');
-
-    const svgContent = `<svg width="${cfg.canvas.width}" height="${cfg.canvas.height}" viewBox="0 0 ${cfg.canvas.width} ${cfg.canvas.height}">${gridElems}${centerMarker}${vignette}${labelElems}${initialPersonShapes}${labelElements}</svg>`;
-
-    return {
-      title: cfg.title,
-      svgContent,
-      timelineData
-    };
-
-  } catch (e) {
-    console.error(e); // Log the error for debugging
-    throw error(404, `Animation '${params.slug}' not found`);
-  }
+        return {
+            slug,
+            animationData,
+            svgContent,
+            labelsData
+        };
+    } catch (e) {
+        console.error(e);
+        throw error(404, `Could not find animation for ${slug}`);
+    }
 }

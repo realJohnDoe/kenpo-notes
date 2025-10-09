@@ -1,9 +1,14 @@
 <script lang="ts">
   import { animate, createTimeline } from 'animejs';
   import { onMount, onDestroy } from 'svelte';
+  import type { AnimationData } from './animation';
 
   // Props
-  export let timelineData: any[]; // Using any[] for simplicity as structure is complex
+  export let animationData: AnimationData[] = [];
+  if (!animationData) {
+    console.log("animationData was undefined, setting to empty array");
+    animationData = [];
+  }
   export let svgContent: string;
   export let onComplete: () => void = () => {};
 
@@ -14,7 +19,7 @@
 
   // We need 2 steps more: One for because there is one more still frames than animation steps and
   // one more because we add a step in the end as the finished state.
-  $: totalSteps = timelineData.length + 2; // Compute totalSteps internally
+  $: totalSteps = animationData.length + 2; // Compute totalSteps internally
 
   // --- Resize and Scale Logic ---
   let viewportWidth: number = 0;
@@ -44,22 +49,22 @@
     });
 
     // --- Timeline Building Logic ---
-    let currentTimelineCursor = 0;
-    timelineData.forEach((step: any) => {
-      stepStartTimes.push(currentTimelineCursor);
-      let stepDuration = 0; // Initialize stepDuration to 0
-
-      if (step.anims && step.anims.length > 0) {
-        // All animations in a step now have the same duration
-        stepDuration = step.anims[0].options ? step.anims[0].options.duration : step.anims[0].duration;
-        step.anims.forEach((anim: any) => {
-          // v4 API: targets as first param, options as second param
-          mainTl.add(anim.targets, anim.options, currentTimelineCursor);
-        });
-      }
-      currentTimelineCursor += stepDuration; // Use the actual stepDuration
+    animationData.forEach((animData) => {
+      animData.targets.forEach((targetAnim) => {
+        mainTl.add(targetAnim.target, targetAnim.cfg, animData.startFrame);
+      });
     });
-    stepStartTimes.push(currentTimelineCursor);
+    console.log(`Timeline duration: ${mainTl.duration}`);
+
+    const stepFrames = [...new Set(
+        animationData
+            .filter(ad => ad.targets.some(t => t.target.startsWith('#') && !t.target.includes('label')))
+            .map(ad => ad.startFrame)
+    )].sort((a, b) => a - b);
+
+    stepStartTimes = [...stepFrames, mainTl.duration];
+    console.log('stepStartTimes', stepStartTimes);
+    
     goToStep(0);
   });
 
