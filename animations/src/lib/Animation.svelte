@@ -146,10 +146,10 @@
       mainTl.pause();
       playerState = 'paused';
     } else { // paused or finished
-      if (mainTl.completed) {
-        console.log('Timeline was complete, restarting.');
+      if (playerState === 'finished') { // If finished, always restart
+        console.log('Player state is finished, restarting.');
         mainTl.restart();
-      } else {
+      } else { // paused
         mainTl.play();
       }
       playerState = 'playing';
