@@ -195,7 +195,7 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-family: sans-serif;
-    font-size: 2vw; /* Scales with viewport width */
+    font-size: min(4vw, 4vh); /* Scales with viewport width */
     text-align: center;
     max-width: 80%;
   }
