@@ -55,12 +55,22 @@
     });
     console.log(`Timeline duration: ${mainTl.duration}`);
 
-    const stepFrames = [...new Set(
-        animationData
-            .map(ad => ad.startFrame)
-    )].sort((a, b) => a - b);
+    const allNavigablePoints = new Set<number>();
 
-    stepStartTimes = [...stepFrames, mainTl.duration];
+    // Add all startFrames
+    animationData.forEach(ad => allNavigablePoints.add(ad.startFrame));
+
+    // Add end of last animation
+    if (animationData.length > 0) {
+        const lastAnim = animationData[animationData.length - 1];
+        const endOfLastAnim = lastAnim.startFrame + lastAnim.durationToEndFrame;
+        allNavigablePoints.add(endOfLastAnim);
+    }
+
+    // Add mainTl.duration
+    allNavigablePoints.add(mainTl.duration);
+
+    stepStartTimes = [...allNavigablePoints].sort((a, b) => a - b);
     console.log('stepStartTimes', stepStartTimes);
     
     goToStep(0);
@@ -76,7 +86,7 @@
   const getStepIndexFromTime = (time: number): number => {
     // Handle case where time is exactly at the end of the timeline
     if (time >= mainTl.duration) {
-      return totalSteps - 1; // Return the index of the last step
+      return stepStartTimes.length - 1; // Return the index of the finished state
     }
 
     for (let i = 0; i < stepStartTimes.length; i++) {
@@ -103,6 +113,7 @@
     if (playerState === 'playing') {
         mainTl.pause();
     }
+    
 
     const proxy = { currentTime: mainTl.currentTime };
     animate(proxy, {
@@ -169,8 +180,18 @@
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx + 1;
 
-    console.log(`goToNextStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`);
+    // If targetStepIdx exceeds the last keyframe, go to the finished state
+    if (targetStepIdx > stepStartTimes.length) {
+        targetStepIdx = stepStartTimes.length; // Index of the finished state
+    }
+    
+    // ...
     goToStep(targetStepIdx);
+    // NEW: If playerState is finished, reset mainTl.completed before seeking
+    if (targetStepIdx == stepStartTimes.length - 1) {
+        console.log('goToStep: Resetting mainTl.completed to false before seeking from finished state.');
+        mainTl.completed = false;
+    }
   };
 </script>
 
