@@ -1,34 +1,34 @@
-title: "Five Swords"
+title: 'Five Swords'
 canvas:
   width: 600
   height: 600
 steps:
-  - stance: "attention"
+  - stance: 'attention'
     direction: 1200
-  - stance: "right_neutral"
+  - stance: 'right_neutral'
     direction: 1200
-    pivot: "left"
+    pivot: 'left'
     duration: 0.5
-    labels: ["Right Inward Block ➡️🔽🛡️"]
-  - stance: "right_neutral"
+    labels: ['Right Inward Block ➡️🔽🛡️']
+  - stance: 'right_neutral'
     direction: 1200
     duration: 0.5
-    labels: ["Right Outward Handsword ➡️🔼✋⚔️💥"]
+    labels: ['Right Outward Handsword ➡️🔼✋⚔️💥']
   - stance: right_forward
     direction: 1200
-    labels: ["Left Heel Palm ⬅️✋🌴💥"]
-  - stance: "right_neutral"
+    labels: ['Left Heel Palm ⬅️✋🌴💥']
+  - stance: 'right_neutral'
     direction: 1200
     duratin: 0.5
     pivot: right
-    labels: ["Right Uppercut ➡️🔝✊💥"]
-  - stance: "right_forward"
+    labels: ['Right Uppercut ➡️🔝✊💥']
+  - stance: 'right_forward'
     direction: 900
     duration: 0.5
     pivot: right
-    labels: ["Left Outward Handsword ⬅️🔼✋⚔️💥"]
+    labels: ['Left Outward Handsword ⬅️🔼✋⚔️💥']
   - stance: horse
     direction: 730
     duration: 0.5
     pivot: right
-    labels: ["Right Inward Downward Handsword ➡️🔽✋⚔️💥"]
+    labels: ['Right Inward Downward Handsword ➡️🔽✋⚔️💥']

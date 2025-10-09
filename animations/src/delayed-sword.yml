@@ -1,20 +1,20 @@
-title: "Delayed Sword"
+title: 'Delayed Sword'
 canvas:
   width: 600
   height: 600
 steps:
-  - stance: "attention"
+  - stance: 'attention'
     direction: 1200
-  - stance: "right_neutral"
+  - stance: 'right_neutral'
     direction: 1200
-    pivot: "right"
-    labels: ["Right Inward Block ➡️🔽🛡️"]
-  - stance: "right_cat"
+    pivot: 'right'
+    labels: ['Right Inward Block ➡️🔽🛡️']
+  - stance: 'right_cat'
     direction: 1200
-    pivot: "left"
+    pivot: 'left'
     duration: 0.5
-  - stance: "right_neutral"
+  - stance: 'right_neutral'
     direction: 1200
-    pivot: "left"
-    labels: ["Right Front Kick ➡️⬆️🦶💥", "Right Outward Handsword ➡️🔼✋⚔️💥"]
+    pivot: 'left'
+    labels: ['Right Front Kick ➡️⬆️🦶💥', 'Right Outward Handsword ➡️🔼✋⚔️💥']
     duration: 1.5

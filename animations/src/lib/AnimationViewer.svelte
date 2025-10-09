@@ -7,6 +7,7 @@
 
   let animation: Animation;
   let playerState: 'playing' | 'paused' | 'finished' = 'paused';
+  let playbackSpeed: number = 1;
 
   function handleTogglePlayPause() {
     if (animation) {
@@ -26,10 +27,32 @@
     }
   }
 
+  function handleSpeedChange(event: CustomEvent<number>) {
+    const speed = event.detail;
+    playbackSpeed = speed;
+    if (animation) {
+      animation.setPlaybackSpeed(speed);
+    }
+  }
+
   function handleComplete() {
     // playerState is updated via bind:playerState in Animation component
   }
 </script>
 
-<Animation bind:this={animation} bind:playerState={playerState} {timelineData} {svgContent} onComplete={handleComplete} />
-<Controls {playerState} on:togglePlayPause={handleTogglePlayPause} on:prev={handlePrev} on:next={handleNext} />
+<Animation
+  bind:this={animation}
+  bind:playerState
+  bind:playbackSpeed
+  {timelineData}
+  {svgContent}
+  onComplete={handleComplete}
+/>
+<Controls
+  {playerState}
+  {playbackSpeed}
+  on:togglePlayPause={handleTogglePlayPause}
+  on:prev={handlePrev}
+  on:next={handleNext}
+  on:speedChange={handleSpeedChange}
+/>

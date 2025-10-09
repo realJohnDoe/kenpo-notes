@@ -1,4 +1,3 @@
-
 <script lang="ts">
   import AnimationViewer from '$lib/AnimationViewer.svelte';
 
