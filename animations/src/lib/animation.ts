@@ -1,4 +1,3 @@
-import { log } from 'console';
 import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 
 function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {

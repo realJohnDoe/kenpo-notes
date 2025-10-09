@@ -1,6 +1,7 @@
 <script lang="ts">
   import { animate, createTimeline } from 'animejs';
   import { onMount, onDestroy } from 'svelte';
+  import { computeAnimationData, type AnimationData } from './animation';
 
   // Props
   export let timelineData: any[]; // Using any[] for simplicity as structure is complex
@@ -44,22 +45,29 @@
     });
 
     // --- Timeline Building Logic ---
+    // Use the new AnimationData structure while preserving original step semantics
+    const animationData = computeAnimationData(timelineData);
+    
+    // Build stepStartTimes by mapping original timelineData steps to animation start times
     let currentTimelineCursor = 0;
     timelineData.forEach((step: any) => {
       stepStartTimes.push(currentTimelineCursor);
-      let stepDuration = 0; // Initialize stepDuration to 0
+      let stepDuration = 0;
 
       if (step.anims && step.anims.length > 0) {
-        // All animations in a step now have the same duration
         stepDuration = step.anims[0].options ? step.anims[0].options.duration : step.anims[0].duration;
-        step.anims.forEach((anim: any) => {
-          // v4 API: targets as first param, options as second param
-          mainTl.add(anim.targets, anim.options, currentTimelineCursor);
-        });
       }
-      currentTimelineCursor += stepDuration; // Use the actual stepDuration
+      currentTimelineCursor += stepDuration;
     });
     stepStartTimes.push(currentTimelineCursor);
+    
+    // Add animations to timeline using AnimationData structure
+    animationData.forEach((anim: AnimationData) => {
+      anim.targets.forEach((target) => {
+        // v4 API: targets as first param, options as second param
+        mainTl.add(target.target, target.cfg, anim.startFrame);
+      });
+    });
     goToStep(0);
   });
 
