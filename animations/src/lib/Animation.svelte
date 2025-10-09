@@ -197,7 +197,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-family: sans-serif; /* NEW */
+    font-size: 3em; /* INCREASED */
     text-align: center;
     max-width: 80%;
   }
