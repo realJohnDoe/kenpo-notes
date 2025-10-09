@@ -6,13 +6,11 @@
   // Props
   export let animationData: AnimationData[] = [];
   if (!animationData) {
-    console.log("animationData was undefined, setting to empty array");
     animationData = [];
   }
   export let svgContent: string;
   export let onComplete: () => void = () => {};
   export let labelsData: any[] = []; // Accept labelsData prop
-  console.log('Animation.svelte script start, labelsData:', labelsData);
 
   // State
   let mainTl: any; // anime.timeline instance
@@ -32,7 +30,6 @@
   $: verticalOffset = (screenHeight - svgRenderedSize) / 2;
 
   onMount(() => {
-    console.log('onMount: labelsData', labelsData);
     screenWidth = window.innerWidth;
     screenHeight = window.innerHeight;
     window.addEventListener('resize', () => {

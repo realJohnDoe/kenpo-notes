@@ -70,12 +70,12 @@ describe('computeAnimationData', () => {
     expect(animationData[2].durationToEndFrame).toBe(1000);
     expect(animationData[2].durationAfterEndFrame).toBe(2);
 
-    // Check a label from a step with multiple labels (e.g., YAML step 12, first label)
-    // This is animationData[20] (body for step 12 is 19, then 3 labels)
-    const label12_1 = animationData.find(ad => ad.targets[0].target === '#step-12-label-0');
-    expect(label12_1).toBeDefined();
-    expect(label12_1.startFrame).toBe(10000);
-    expect(label12_1.durationToEndFrame).toBe(1000);
-    expect(label12_1.durationAfterEndFrame).toBe(2);
+    expect(animationData[21].targets).toHaveLength(1)
+    expect(animationData[22].targets).toHaveLength(1)
+    expect(animationData[23].targets).toHaveLength(1)
+    expect(animationData[21].startFrame).toBe(10000)
+    expect(animationData[23].startFrame).toBe(12000)
+    // We had a delay additional to the later start frame for the additional label
+    expect(animationData[23].targets[0].cfg.delay).toBe(0)
   });
 });

@@ -245,8 +245,10 @@ export function computeAnimationData(timelineData: any[]): AnimationData[] {
             const durationPerLabel = stepDuration / labelAnims.length;
             for (const labelAnim of labelAnims) {
                 const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+                const delay = labelAnim.options.delay
+                labelAnim.options.delay = 0
                 animationDataList.push({
-                    startFrame: currentTimelineCursor + labelAnim.options.delay,
+                    startFrame: currentTimelineCursor + delay,
                     durationToEndFrame: durationPerLabel,
                     durationAfterEndFrame: labelTotalDuration - durationPerLabel,
                     targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]

@@ -7,7 +7,6 @@
   export let svgContent: string;
 
   export let labelsData: any[]; // Add labelsData prop
-  console.log('AnimationViewer.svelte script start, labelsData received:', labelsData);
 
   let animation: Animation;
   let playerState: 'playing' | 'paused' | 'finished' = 'paused';
@@ -33,7 +32,6 @@
   function handleComplete() {
     // playerState is updated via bind:playerState in Animation component
   }
-  console.log('AnimationViewer.svelte: Passing labelsData to Animation:', labelsData);
 </script>
 
 <Animation bind:this={animation} bind:playerState={playerState} {animationData} {svgContent} {labelsData} onComplete={handleComplete} />
