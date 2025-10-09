@@ -12,6 +12,7 @@
   export let svgContent: string;
   export let onComplete: () => void = () => {};
   export let labelsData: any[] = []; // Accept labelsData prop
+  console.log('Animation.svelte script start, labelsData:', labelsData);
 
   // State
   let mainTl: any; // anime.timeline instance
@@ -22,8 +23,22 @@
   // one more because we add a step in the end as the finished state.
   $: totalSteps = stepStartTimes.length + 1;
 
+  const canvasHeight = 600; // Hardcoded, but used for calculations
+
+  let screenWidth: number;
+  let screenHeight: number;
+
+  $: svgRenderedSize = Math.min(screenWidth, screenHeight);
+  $: verticalOffset = (screenHeight - svgRenderedSize) / 2;
+
   onMount(() => {
-    console.log('onMount: animationData', animationData);
+    console.log('onMount: labelsData', labelsData);
+    screenWidth = window.innerWidth;
+    screenHeight = window.innerHeight;
+    window.addEventListener('resize', () => {
+      screenWidth = window.innerWidth;
+      screenHeight = window.innerHeight;
+    });
 
     mainTl = createTimeline({ 
       autoplay: false, 
@@ -165,13 +180,11 @@
 
 <style>
   .animation-container {
-    position: relative; /* NEW */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    /* background-color: rgba(255, 0, 0, 0.2); */
   }
   .scaled-svg-wrapper {
     width: 100%;
@@ -188,6 +201,16 @@
     text-align: center;
     max-width: 80%;
   }
+  .labels-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    /* background-color: rgba(0, 255, 0, 0.2); */
+  }
 </style>
 
 <div class="animation-container">
@@ -196,9 +219,9 @@
   </div>
 
   {#if labelsData && labelsData.length > 0}
-    <div class="labels-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+    <div class="labels-container">
       {#each labelsData as label}
-        <div id={label.id} class="label" style="position: absolute; top: {label.y}px; left: 50%; transform: translateX(-50%); opacity: 0;">
+        <div id={label.id} class="label" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight) + verticalOffset}px; left: 50%; transform: translateX(-50%); opacity: 0;">
           {label.text}
         </div>
       {/each}

@@ -113,6 +113,7 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
 }
 
 export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { timelineData: any[], labelsData: any[] } {
+    console.log('generateAnimationTimeline: cfg.steps.length', cfg.steps.length);
     const baseAnimationDuration = 1000; // Define base duration here
     const fadeDuration = 200;
     const timelineData = [];
@@ -126,6 +127,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             const fromCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
 
             const toStep = cfg.steps[i + 1];
+            console.log(`generateAnimationTimeline: Processing step ${i + 1}, toStep:`, toStep);
             const pivot = toStep.pivot;
 
             let nextConfig = { ...toStep };
@@ -172,6 +174,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             const labelY = cogY > canvasCenterY ? topY : bottomY;
 
             if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
+                console.log(`generateAnimationTimeline: Found labels for step ${i + 1}:`, toStep.labels);
                 const durationPerLabel = stepAnimationDuration / toStep.labels.length;
 
                 toStep.labels.forEach((labelText: string, labelIndex: number) => {
@@ -199,6 +202,8 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                         }
                     });
                 });
+            } else {
+                console.log(`generateAnimationTimeline: No labels found for step ${i + 1}`);
             }
             timelineData.push({
                 anims: stepAnims,
@@ -208,6 +213,7 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
             lastConfig = nextConfig;
         }
     }
+    console.log('generateAnimationTimeline: Final labelsData length:', labelsData.length);
     return { timelineData, labelsData };
 }
 
