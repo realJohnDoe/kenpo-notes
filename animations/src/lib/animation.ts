@@ -138,7 +138,7 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
 
             const labelDelay = labelIndex * durationPerLabel;
 
-            stepAnims.push({
+            stepAnims.push({ 
                 targets: `#${labelId}`,
                 options: {
                     delay: labelDelay,
@@ -189,18 +189,18 @@ export type AnimationData = {
     startFrame: number;
     durationToEndFrame: number;
     durationAfterEndFrame: number;
-    targets: {
+    targets: { 
         target: string;
         cfg: any;
     }[];
 };
 
 export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { animationData: AnimationData[], labelsData: any[] } {
-    // --- Logic from generateAnimationTimeline ---
     const baseAnimationDuration = 1000;
     const fadeDuration = 200;
-    const timelineData = [];
     const labelsData: { id: string; text: string; y: number; }[] = [];
+    const animationDataList: AnimationData[] = [];
+    let currentTimelineCursor = 0;
 
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
@@ -223,50 +223,39 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
             const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
             stepAnims = stepAnims.concat(createLabelAnimations(toStep, i, labelY, stepAnimationDuration, fadeDuration, labelsData));
 
-            timelineData.push({
-                anims: stepAnims,
-                label: null
-            });
+            const bodyPartAnims = stepAnims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
+            const labelAnims = stepAnims.filter((anim: any) => anim.targets.includes('label'));
+
+            let currentStepDuration = 0;
+            if (bodyPartAnims.length > 0) {
+                currentStepDuration = bodyPartAnims[0].options.duration;
+                animationDataList.push({
+                    startFrame: currentTimelineCursor,
+                    durationToEndFrame: currentStepDuration,
+                    durationAfterEndFrame: 0,
+                    targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
+                });
+            }
+
+            if (labelAnims.length > 0) {
+                const durationPerLabel = currentStepDuration / labelAnims.length;
+                for (const labelAnim of labelAnims) {
+                    const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+                    const delay = labelAnim.options.delay
+                    labelAnim.options.delay = 0
+                    animationDataList.push({
+                        startFrame: currentTimelineCursor + delay,
+                        durationToEndFrame: durationPerLabel,
+                        durationAfterEndFrame: labelTotalDuration - durationPerLabel,
+                        targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]
+                    });
+                }
+            }
+
+            currentTimelineCursor += currentStepDuration;
 
             lastConfig = nextConfig;
         }
-    }
-
-    // --- Logic from computeAnimationData ---
-    const animationDataList: AnimationData[] = [];
-    let currentTimelineCursor = 0;
-
-    for (const step of timelineData) {
-        const bodyPartAnims = step.anims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
-        const labelAnims = step.anims.filter((anim: any) => anim.targets.includes('label'));
-
-        let stepDuration = 0;
-        if (bodyPartAnims.length > 0) {
-            stepDuration = bodyPartAnims[0].options.duration;
-            animationDataList.push({
-                startFrame: currentTimelineCursor,
-                durationToEndFrame: stepDuration,
-                durationAfterEndFrame: 0,
-                targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
-            });
-        }
-
-        if (labelAnims.length > 0) {
-            const durationPerLabel = stepDuration / labelAnims.length;
-            for (const labelAnim of labelAnims) {
-                const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
-                const delay = labelAnim.options.delay
-                labelAnim.options.delay = 0
-                animationDataList.push({
-                    startFrame: currentTimelineCursor + delay,
-                    durationToEndFrame: durationPerLabel,
-                    durationAfterEndFrame: labelTotalDuration - durationPerLabel,
-                    targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]
-                });
-            }
-        }
-
-        currentTimelineCursor += stepDuration;
     }
 
     return { animationData: animationDataList, labelsData };
