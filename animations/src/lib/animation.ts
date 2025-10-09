@@ -149,9 +149,9 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
             const stepAnims = [];
 
-            stepAnims.push(createPointerAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
+            stepAnims.push(createBodyPartMovementAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
+            stepAnims.push(createBodyPartMovementAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
+            stepAnims.push(createBodyPartMovementAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
 
             const cogY = toCoords.cog.cy;
             const canvasCenterY = canvasHeight / 2;
