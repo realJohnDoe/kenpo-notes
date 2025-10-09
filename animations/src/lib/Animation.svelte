@@ -194,8 +194,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px 10px;
     border-radius: 5px;
-    font-family: sans-serif; /* NEW */
-    font-size: 3em; /* INCREASED */
+    font-family: sans-serif;
+    font-size: 2vw; /* Scales with viewport width */
     text-align: center;
     max-width: 80%;
   }
