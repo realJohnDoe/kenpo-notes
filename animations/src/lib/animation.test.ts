@@ -1,59 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
-import { generateAnimationTimeline } from './animation';
-
-// The user-defined data structure.
-type AnimationData = {
-  startFrame: number;
-  durationToEndFrame: number;
-  durationAfterEndFrame: number;
-  targets: {
-    target: string;
-    cfg: any;
-  }[];
-};
-
-function computeAnimationData(timelineData: any[]): AnimationData[] {
-  const animationDataList: AnimationData[] = [];
-  let currentTimelineCursor = 0;
-
-  for (const step of timelineData) {
-    let stepDuration = 0;
-    if (step.anims && step.anims.length > 0) {
-      // All animations in a step now have the same duration, except for labels
-      const bodyPartAnims = step.anims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
-      if (bodyPartAnims.length > 0) {
-        stepDuration = bodyPartAnims[0].options.duration;
-      }
-    }
-
-    const targets = step.anims.map((anim: any) => ({
-      target: anim.targets,
-      cfg: anim.options,
-    }));
-
-    let durationAfterEndFrame = 0;
-    const labelAnims = step.anims.filter((anim: any) => anim.targets.includes('label'));
-    if (labelAnims.length > 0) {
-        const lastOpacityKeyframe = labelAnims[0].options.opacity[labelAnims[0].options.opacity.length - 1];
-        if (lastOpacityKeyframe.to === 0) {
-            durationAfterEndFrame = lastOpacityKeyframe.duration;
-        }
-    }
-
-    animationDataList.push({
-      startFrame: currentTimelineCursor,
-      durationToEndFrame: stepDuration,
-      durationAfterEndFrame: durationAfterEndFrame,
-      targets: targets,
-    });
-
-    currentTimelineCursor += stepDuration;
-  }
-
-  return animationDataList;
-}
+import { generateAnimationTimeline, computeAnimationData, AnimationData } from './animation';
 
 describe('computeAnimationData', () => {
   it('should compute animation data for delayed-sword', () => {
@@ -65,21 +13,42 @@ describe('computeAnimationData', () => {
 
     console.log(JSON.stringify(animationData, null, 2));
 
-    expect(animationData).toHaveLength(3);
+    expect(animationData).toHaveLength(6);
 
+    // Step 1: Body: Right Neutral
     expect(animationData[0].startFrame).toBe(0);
     expect(animationData[0].durationToEndFrame).toBe(1000);
-    expect(animationData[0].durationAfterEndFrame).toBe(1);
-    expect(animationData[0].targets).toHaveLength(4);
+    expect(animationData[0].durationAfterEndFrame).toBe(0);
+    expect(animationData[0].targets).toHaveLength(3);
 
-    expect(animationData[1].startFrame).toBe(1000);
-    expect(animationData[1].durationToEndFrame).toBe(500);
-    expect(animationData[1].durationAfterEndFrame).toBe(0);
-    expect(animationData[1].targets).toHaveLength(3);
+    // Step 1: Label: Right Inward Block
+    expect(animationData[1].startFrame).toBe(0);
+    expect(animationData[1].durationToEndFrame).toBe(1000);
+    expect(animationData[1].durationAfterEndFrame).toBe(2);
+    expect(animationData[1].targets).toHaveLength(1);
 
-    expect(animationData[2].startFrame).toBe(1500);
-    expect(animationData[2].durationToEndFrame).toBe(1500);
-    expect(animationData[2].durationAfterEndFrame).toBe(1);
-    expect(animationData[2].targets).toHaveLength(5);
+    // Step 2: Body: Cat
+    expect(animationData[2].startFrame).toBe(1000);
+    expect(animationData[2].durationToEndFrame).toBe(500);
+    expect(animationData[2].durationAfterEndFrame).toBe(0);
+    expect(animationData[2].targets).toHaveLength(3);
+
+    // Step 3: Body: Right Neutral
+    expect(animationData[3].startFrame).toBe(1500);
+    expect(animationData[3].durationToEndFrame).toBe(1500);
+    expect(animationData[3].durationAfterEndFrame).toBe(0);
+    expect(animationData[3].targets).toHaveLength(3);
+
+    // Step 3: Label 1: Right Front Kick
+    expect(animationData[4].startFrame).toBe(1500);
+    expect(animationData[4].durationToEndFrame).toBe(750);
+    expect(animationData[4].durationAfterEndFrame).toBe(2);
+    expect(animationData[4].targets).toHaveLength(1);
+
+    // Step 3: Label 2: Right Outward Handsword
+    expect(animationData[5].startFrame).toBe(2250);
+    expect(animationData[5].durationToEndFrame).toBe(750);
+    expect(animationData[5].durationAfterEndFrame).toBe(2);
+    expect(animationData[5].targets).toHaveLength(1);
   });
 });

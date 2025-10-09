@@ -210,3 +210,52 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
     }
     return { timelineData, labelsData };
 }
+
+// The user-defined data structure.
+export type AnimationData = {
+  startFrame: number;
+  durationToEndFrame: number;
+  durationAfterEndFrame: number;
+  targets: {
+    target: string;
+    cfg: any;
+  }[];
+};
+
+export function computeAnimationData(timelineData: any[]): AnimationData[] {
+  const animationDataList: AnimationData[] = [];
+  let currentTimelineCursor = 0;
+
+  for (const step of timelineData) {
+    const bodyPartAnims = step.anims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
+    const labelAnims = step.anims.filter((anim: any) => anim.targets.includes('label'));
+
+    let stepDuration = 0;
+    if (bodyPartAnims.length > 0) {
+      stepDuration = bodyPartAnims[0].options.duration;
+      animationDataList.push({
+        startFrame: currentTimelineCursor,
+        durationToEndFrame: stepDuration,
+        durationAfterEndFrame: 0,
+        targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
+      });
+    }
+
+    if (labelAnims.length > 0) {
+      const durationPerLabel = stepDuration / labelAnims.length;
+      for (const labelAnim of labelAnims) {
+        const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+        animationDataList.push({
+          startFrame: currentTimelineCursor + labelAnim.options.delay,
+          durationToEndFrame: durationPerLabel,
+          durationAfterEndFrame: labelTotalDuration - durationPerLabel,
+          targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]
+        });
+      }
+    }
+
+    currentTimelineCursor += stepDuration;
+  }
+
+  return animationDataList;
+}
