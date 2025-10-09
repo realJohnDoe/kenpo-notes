@@ -51,4 +51,31 @@ describe('computeAnimationData', () => {
     expect(animationData[5].durationAfterEndFrame).toBe(2);
     expect(animationData[5].targets).toHaveLength(1);
   });
+
+  it('should compute animation data for long-form-2', () => {
+    const file = fs.readFileSync('src/long-form-2.yml', 'utf8');
+    const cfg = yaml.parse(file);
+
+    const { timelineData } = generateAnimationTimeline(cfg, 600, 600, 60); // Use personUnitSize = 60
+    const animationData = computeAnimationData(timelineData);
+
+    // console.log(JSON.stringify(animationData, null, 2)); // Uncomment to inspect
+
+    expect(animationData).toHaveLength(67);
+
+    // Check the first label entry (from YAML step 2)
+    // animationData[2] is the first label
+    expect(animationData[2].targets[0].target).toBe('#step-2-label');
+    expect(animationData[2].startFrame).toBe(1000);
+    expect(animationData[2].durationToEndFrame).toBe(1000);
+    expect(animationData[2].durationAfterEndFrame).toBe(2);
+
+    // Check a label from a step with multiple labels (e.g., YAML step 12, first label)
+    // This is animationData[20] (body for step 12 is 19, then 3 labels)
+    const label12_1 = animationData.find(ad => ad.targets[0].target === '#step-12-label-0');
+    expect(label12_1).toBeDefined();
+    expect(label12_1.startFrame).toBe(10000);
+    expect(label12_1.durationToEndFrame).toBe(1000);
+    expect(label12_1.durationAfterEndFrame).toBe(2);
+  });
 });
