@@ -15,11 +15,14 @@ permissions:
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-test-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  quartz-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -34,24 +37,151 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.npm
-          key: node-${{ hashFiles('**/package-lock.json') }}
+          path: node_modules
+          key: node-quartz-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-quartz-
 
       - run: npm ci
 
       - name: Test
         run: npm test
 
-      - name: Ensure Quartz builds
+      - name: Build Quartz
         run: npx quartz build
+
+      - name: Sanitize filenames for artifact upload
+        run: |
+          # Find files with invalid characters for GitHub Actions artifacts and rename them
+          find ./public -name "*:*" -type f | while read -r file; do
+            # Replace colons with hyphens
+            newname=$(echo "$file" | sed 's/:/-/g')
+            echo "Renaming: $file -> $newname"
+            mv "$file" "$newname"
+          done
+          
+          # Also handle other invalid characters: ", <, >, |, *, ?
+          find ./public -type f | while read -r file; do
+            dir=$(dirname "$file")
+            filename=$(basename "$file")
+            # Replace problematic characters with safe alternatives
+            newfilename=$(echo "$filename" | sed 's/[:"<>|*?]/-/g')
+            if [ "$filename" != "$newfilename" ]; then
+              echo "Sanitizing: $file -> $dir/$newfilename"
+              mv "$file" "$dir/$newfilename"
+            fi
+          done
+
+      - name: Upload Quartz artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-build
+          path: ./public
+          if-no-files-found: error
+
+  animations-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Cache animations dependencies
+        uses: actions/cache@v4
+        with:
+          path: animations/node_modules
+          key: node-animations-${{ hashFiles('animations/package-lock.json') }}
+          restore-keys: |
+            node-animations-
+
+      - name: Install animations dependencies
+        run: |
+          cd animations
+          npm ci
+
+      - name: Build animations
+        run: |
+          cd animations
+          npm run build
+
+      - name: Upload animations artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: animations-build
+          path: ./animations/build
+          if-no-files-found: error
+
+  deploy:
+    needs: [quartz-build, animations-build]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Quartz artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: quartz-build
+          path: ./public
+
+      - name: Download animations artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: animations-build
+          path: ./animations-build
+
+      - name: Combine builds
+        run: |
+          # Verify artifacts exist
+          ls -la ./public/
+          ls -la ./animations-build/ || echo "No animations build found"
+          
+          # Copy animations build to the appropriate path in the main build
+          # We need to be selective to avoid overwriting the Quartz root page
+          if [ -d "./animations-build" ] && [ "$(ls -A ./animations-build)" ]; then
+            echo "Merging animations build into main build..."
+            
+            # Create animations directory in public if it doesn't exist
+            mkdir -p ./public/animation
+            
+            # Copy animation-specific files, avoiding root index.html collision
+            # Copy all files except the root index.html to preserve Quartz root page
+            find ./animations-build -type f | while read -r file; do
+              relative_path=${file#./animations-build/}
+              
+              # Skip root index.html to let Quartz root page take precedence
+              if [ "$relative_path" = "index.html" ]; then
+                echo "Skipping root index.html from animations to preserve Quartz root page"
+                continue
+              fi
+              
+              # Copy other files to maintain animations functionality
+              target_dir="./public/$(dirname "$relative_path")"
+              mkdir -p "$target_dir"
+              cp "$file" "./public/$relative_path"
+              echo "Copied: $relative_path"
+            done
+            
+            echo "Merged successfully - Quartz root page preserved"
+          else
+            echo "No animations build to merge"
+          fi
+          
+          # Show final structure
+          echo "Final build structure:"
+          find ./public -type f | head -20
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload combined artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: ./public
 
       - name: Deploy to GitHub Pages
