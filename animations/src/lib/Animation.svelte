@@ -57,7 +57,6 @@
 
     const stepFrames = [...new Set(
         animationData
-            .filter(ad => ad.targets.some(t => t.target.startsWith('#') && !t.target.includes('label')))
             .map(ad => ad.startFrame)
     )].sort((a, b) => a - b);
 
