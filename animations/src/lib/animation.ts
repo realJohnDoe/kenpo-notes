@@ -186,19 +186,15 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
                     });
 
                     const labelDelay = labelIndex * durationPerLabel;
-                    // Ensure total animation time fits within the allocated time
-                    const totalLabelDuration = Math.min(durationPerLabel, stepAnimationDuration - labelDelay);
-                    const holdDuration = Math.max(0, totalLabelDuration - 2 * fadeDuration);
-                    const actualFadeDuration = Math.min(fadeDuration, totalLabelDuration / 2);
 
                     stepAnims.push({
                         targets: `#${labelId}`,
                         options: {
                             delay: labelDelay,
                             opacity: [
-                                { to: 1, duration: actualFadeDuration, ease: 'linear' },
-                                { to: 1, duration: holdDuration },
-                                { to: 0, duration: actualFadeDuration, ease: 'linear' }
+                                { to: 1, duration: fadeDuration, ease: 'linear' },
+                                { to: 1, duration: durationPerLabel - fadeDuration + 1 },
+                                { to: 0, duration: 1, ease: 'linear' }
                             ]
                         }
                     });
