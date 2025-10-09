@@ -1,15 +1,14 @@
 import { describe, it, expect } from 'vitest';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
-import { generateAnimationTimeline, computeAnimationData } from './animation';
+import { generateAndComputeAnimationData } from './animation';
 
 describe('computeAnimationData', () => {
   it('should compute animation data for delayed-sword', () => {
     const file = fs.readFileSync('src/delayed-sword.yml', 'utf8');
     const cfg = yaml.parse(file);
 
-    const { timelineData } = generateAnimationTimeline(cfg, 600, 600, 1);
-    const animationData = computeAnimationData(timelineData);
+    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, 600, 600, 1);
 
     console.log(JSON.stringify(animationData, null, 2));
 
@@ -56,8 +55,7 @@ describe('computeAnimationData', () => {
     const file = fs.readFileSync('src/long-form-2.yml', 'utf8');
     const cfg = yaml.parse(file);
 
-    const { timelineData } = generateAnimationTimeline(cfg, 600, 600, 60); // Use personUnitSize = 60
-    const animationData = computeAnimationData(timelineData);
+    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, 600, 600, 60); // Use personUnitSize = 60
 
     // console.log(JSON.stringify(animationData, null, 2)); // Uncomment to inspect
 

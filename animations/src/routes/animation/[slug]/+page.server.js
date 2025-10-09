@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { generateAnimationTimeline, generatePersonShapes, computeAnimationData } from '$lib/animation.ts';
+import { generateAndComputeAnimationData, generatePersonShapes } from '$lib/animation.ts';
 import { generateGrid, generateLabels, generateCenterMarker, generateVignette } from '$lib/background-graphics.ts';
 import { readFileSync } from 'fs';
 import { load } from 'js-yaml';
@@ -56,8 +56,7 @@ export function load({ params }) {
     </g>
 </svg>`;
 
-        const { timelineData, labelsData } = generateAnimationTimeline(data, canvasWidth, canvasHeight, personUnitSize);
-        const animationData = computeAnimationData(timelineData);
+        const { animationData, labelsData } = generateAndComputeAnimationData(data, canvasWidth, canvasHeight, personUnitSize);
 
         return {
             slug,
