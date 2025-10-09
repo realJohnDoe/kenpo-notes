@@ -82,19 +82,8 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     return shapesSvg;
 }
 
-export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
-    return {
-        targets: targetId,
-        options: {
-            cx: [fromPos.cx, toPos.cx],
-            cy: [fromPos.cy, toPos.cy],
-            duration: duration,
-            ease: 'easeInOutSine'
-        }
-    };
-}
 
-export function createPointerAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
+export function createBodyPartMovementAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
