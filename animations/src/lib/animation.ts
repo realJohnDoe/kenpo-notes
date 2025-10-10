@@ -154,6 +154,79 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
     return stepAnims;
 }
 
+// --- YAML Format Normalization Functions ---
+
+function normalizeStep(step: any): any {
+    // Handle new stance format: { type: 'attention', direction: 1200, pivot: 'left' }
+    if (step.stance && typeof step.stance === 'object') {
+        const normalizedStep = { ...step };
+        normalizedStep.stance = step.stance.type;
+        normalizedStep.direction = step.stance.direction;
+        if (step.stance.pivot) {
+            normalizedStep.pivot = step.stance.pivot;
+        }
+        return normalizedStep;
+    }
+    
+    // Handle label-only steps (no stance, stances, or body movement)
+    if (!step.stance && !step.stances && (step.labels || step.label)) {
+        // Convert single label to labels array
+        if (step.label && !step.labels) {
+            step.labels = [step.label];
+        }
+        // Create a "no-op" step that doesn't move the body but shows labels
+        return {
+            ...step,
+            stance: null, // Special marker for label-only steps
+            isLabelOnly: true
+        };
+    }
+
+    // Handle multiple stances in one step
+    if (step.stances && Array.isArray(step.stances)) {
+        // For now, we'll return the step as-is and handle this in the main loop
+        // We'll need to create multiple sub-steps from this
+        return {
+            ...step,
+            isMultiStance: true
+        };
+    }
+
+    // Handle single label field -> labels array conversion
+    if (step.label && !step.labels) {
+        step.labels = [step.label];
+        delete step.label;
+    }
+
+    // Return step as-is for old format compatibility
+    return step;
+}
+
+function expandMultiStanceStep(step: any, stepDuration: number): any[] {
+    if (!step.isMultiStance || !step.stances) {
+        return [step];
+    }
+    
+    const subSteps = [];
+    const durationPerStance = stepDuration / step.stances.length;
+    
+    step.stances.forEach((stance: any, index: number) => {
+        const subStep = {
+            stance: stance.type,
+            direction: stance.direction,
+            pivot: stance.pivot,
+            duration: durationPerStance / 1000, // Convert to seconds for internal format
+            // Only add labels to the first sub-step to span the whole duration
+            ...(index === 0 && (step.labels || step.label) ? {
+                labels: step.labels || [step.label]
+            } : {})
+        };
+        subSteps.push(subStep);
+    });
+    
+    return subSteps;
+}
+
 // --- Functions relevant to both (Or orchestrators) ---
 
 function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCoords: any, canvasWidth: number, canvasHeight: number, unitSize: number) {
@@ -202,31 +275,61 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
     const animationDataList: AnimationData[] = [];
     let currentTimelineCursor = 0;
 
-    if (cfg.steps.length > 1) {
-        let lastConfig = { ...cfg.steps[0] };
+    // First, normalize all steps to handle new YAML format
+    const normalizedSteps = cfg.steps.map(normalizeStep);
+    
+    // Expand multi-stance steps into multiple sub-steps
+    const expandedSteps = [];
+    for (let i = 0; i < normalizedSteps.length; i++) {
+        const step = normalizedSteps[i];
+        if (step.isMultiStance) {
+            const stepDuration = baseAnimationDuration * (step.duration !== undefined ? step.duration : 1);
+            const subSteps = expandMultiStanceStep(step, stepDuration);
+            expandedSteps.push(...subSteps);
+        } else {
+            expandedSteps.push(step);
+        }
+    }
+
+    if (expandedSteps.length > 1) {
+        let lastConfig = { ...expandedSteps[0] };
         if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
         if (lastConfig.offsetY === undefined) lastConfig.offsetY = 0;
 
-        for (let i = 0; i < cfg.steps.length - 1; i++) {
-            const fromCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
-            const toStep = cfg.steps[i + 1];
+        for (let i = 0; i < expandedSteps.length - 1; i++) {
+            const toStep = expandedSteps[i + 1];
             const stepAnimationDuration = baseAnimationDuration * (toStep.duration !== undefined ? toStep.duration : 1);
 
-            let nextConfig = { ...toStep };
-            nextConfig = applyPivotLogic(nextConfig, lastConfig, toStep.pivot, fromCoords, canvasWidth, canvasHeight, unitSize);
-
-            const toCoords = calculateShapeTransforms(nextConfig, canvasWidth, canvasHeight, unitSize);
-
             let stepAnims = [];
-            stepAnims = stepAnims.concat(createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration));
+            let nextConfig = { ...toStep };
+            let currentStepDuration = stepAnimationDuration;
 
-            const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
-            stepAnims = stepAnims.concat(createLabelAnimations(toStep, i, labelY, stepAnimationDuration, fadeDuration, labelsData));
+            // Handle label-only steps (no body movement)
+            if (toStep.isLabelOnly) {
+                // For label-only steps, we don't move the body, just show labels
+                // Use the last position for coordinates calculation
+                const labelCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
+                const labelY = calculateLabelYPosition(labelCoords.cog.cy, canvasHeight);
+                stepAnims = stepAnims.concat(createLabelAnimations(toStep, i, labelY, stepAnimationDuration, fadeDuration, labelsData));
+                // Don't update lastConfig for label-only steps
+            } else {
+                // Normal steps with body movement
+                const fromCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
+                nextConfig = applyPivotLogic(nextConfig, lastConfig, toStep.pivot, fromCoords, canvasWidth, canvasHeight, unitSize);
+                const toCoords = calculateShapeTransforms(nextConfig, canvasWidth, canvasHeight, unitSize);
+
+                stepAnims = stepAnims.concat(createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration));
+
+                const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
+                stepAnims = stepAnims.concat(createLabelAnimations(toStep, i, labelY, stepAnimationDuration, fadeDuration, labelsData));
+
+                // Update lastConfig for next iteration
+                lastConfig = nextConfig;
+            }
 
             const bodyPartAnims = stepAnims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
             const labelAnims = stepAnims.filter((anim: any) => anim.targets.includes('label'));
 
-            let currentStepDuration = 0;
             if (bodyPartAnims.length > 0) {
                 currentStepDuration = bodyPartAnims[0].options.duration;
                 animationDataList.push({
@@ -253,8 +356,6 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
             }
 
             currentTimelineCursor += currentStepDuration;
-
-            lastConfig = nextConfig;
         }
     }
 

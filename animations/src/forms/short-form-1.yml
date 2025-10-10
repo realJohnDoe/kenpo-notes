@@ -1,60 +1,74 @@
 title: 'Short Form 1'
 steps:
-  - stance: 'attention'
-    direction: 1200
-  - stance: 'horse'
-    direction: 1200
-    pivot: right
-  - stance: right_neutral
-    direction: 1200
-    pivot: right
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
     labels: ['Right Inward Block']
-  - stance: left_neutral
-    direction: 1200
-    pivot: left
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: left
     labels: ['Left Inward Block']
     duration: 1.5
-  - stance: left_neutral
-    direction: 900
-    pivot: left
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
     labels: ['Left Outward Block']
-  - stance: right_neutral
-    direction: 900
-    pivot: right
+  - stance:
+      type: right_neutral
+      direction: 900
+      pivot: right
     labels: ['Right Outward Block']
     duration: 1.5
-  - stance: right_cat
-    direction: 600
-    pivot: left
+  - stance:
+      type: right_cat
+      direction: 600
+      pivot: left
     duration: 0.5
-  - stance: left_neutral
-    direction: 300
-    pivot: left
+  - stance:
+      type: left_neutral
+      direction: 300
+      pivot: left
     duration: 0.5
     labels: ['Left Upward Block']
-  - stance: right_neutral
-    direction: 300
-    pivot: right
+  - stance:
+      type: right_neutral
+      direction: 300
+      pivot: right
     labels: ['Right Upward Block']
     duration: 1.5
-  - stance: right_neutral
-    direction: 600
-    pivot: right
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: right
     labels: ['Right Downward Block']
-  - stance: left_neutral
-    direction: 600
-    pivot: left
+  - stance:
+      type: left_neutral
+      direction: 600
+      pivot: left
     labels: ['Left Downward Block']
     duration: 1.5
-  - stance: left_cat
-    direction: 900
-    pivot: right
+  - stance:
+      type: left_cat
+      direction: 900
+      pivot: right
     duration: 0.5
-  - stance: horse
-    direction: 1200
-    pivot: right
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: right
     duration: 0.5
-  - stance: attention
-    direction: 1200
-    pivot: right
+  - stance:
+      type: attention
+      direction: 1200
+      pivot: right
     duration: 0.5

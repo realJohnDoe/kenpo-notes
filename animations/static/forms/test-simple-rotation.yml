@@ -1,4 +1,5 @@
 title: 'Test Simple Animation'
 steps:
-  - stance: 'attention'
-    direction: 430
+  - stance:
+      type: attention
+      direction: 430
