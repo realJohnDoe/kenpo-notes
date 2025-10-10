@@ -4,23 +4,25 @@ import { error } from '@sveltejs/kit';
 import {
   generateAndComputeAnimationData,
   generatePersonShapes
-} from '$lib/animation.ts';
+} from '$lib/animation';
 import {
   generateGrid,
   generateLabels,
   generateCenterMarker,
   generateVignette
-} from '$lib/background-graphics.ts';
+} from '$lib/background-graphics';
 import { readFileSync } from 'fs';
 import { parse } from 'yaml';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
+import { dev } from '$app/environment';
 
-const currentDir = dirname(fileURLToPath(import.meta.url));
-const animationDir = join(currentDir, '..', '..', '..', 'forms');
+// Use process.cwd() for consistent path resolution in both dev and build
+const baseDir = process.cwd();
+const animationDir = join(baseDir, dev ? 'src/forms' : 'static/forms');
+const assetsDir = join(baseDir, dev ? 'src' : 'static');
 
 function readSvgContent(filename: string) {
-  const svgPath = join(currentDir, '..', '..', '..', filename);
+  const svgPath = join(assetsDir, filename);
   try {
     return readFileSync(svgPath, 'utf-8');
   } catch (e) {
