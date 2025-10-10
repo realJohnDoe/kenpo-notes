@@ -13,12 +13,14 @@ import {
 } from '$lib/background-graphics.ts';
 import { readFileSync } from 'fs';
 import { parse } from 'yaml';
-import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-const animationDir = path.resolve('src/forms');
+const currentDir = dirname(fileURLToPath(import.meta.url));
+const animationDir = join(currentDir, '..', '..', '..', 'forms');
 
-function readSvgContent(filename) {
-  const svgPath = path.resolve('src', filename);
+function readSvgContent(filename: string) {
+  const svgPath = join(currentDir, '..', '..', '..', filename);
   try {
     return readFileSync(svgPath, 'utf-8');
   } catch (e) {
@@ -27,9 +29,9 @@ function readSvgContent(filename) {
   }
 }
 
-export function load({ params }) {
+export function load({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const filePath = path.join(animationDir, `${slug}.yml`);
+  const filePath = join(animationDir, `${slug}.yml`);
 
   try {
     const fileContents = readFileSync(filePath, 'utf-8');
