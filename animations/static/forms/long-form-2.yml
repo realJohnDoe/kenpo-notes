@@ -63,7 +63,83 @@ steps:
       direction: 1200
       pivot: left
     labels: ['Right Outward Block + Left Sideways Punch']
-  - stance: horse
+  - label: 'Right Jab'
+  - label: 'Left Cross'
+  - label: 'Right Jab + Right Side Kick'
+    # Backwards
+  - label: 'Left Universal Block'
+    stances:
+      - type: left_cat
+        direction: 900
+        pivot: right
+      - type: left_neutral
+        direction: 600
+        pivot: right
+  - stance: left_neutral
+    direction: 600
+    labels: ['Right Downward Block + Left Upward Block']
+  - label: 'Left Claw'
+  - label: 'Right Outward Back Knuckle'
+    duration: 0.5
+  - label: 'Left Outward Back Knuckle'
+    duration: 0.5
+  - label: 'Right Outward Back Knuckle'
+    duration: 0.5
+  # Forwards
+  - label: 'Right Universal Block'
+    stances:
+      - type: right_cat
+        direction: 900
+        pivot: left
+      - type: right_neutral
+        direction: 1200
+        pivot: left
+  - stance: right_neutral
     direction: 1200
-    duration: 3
-    labels: ['Right Jab', 'Left Cross', 'Right Jab + Right Side Kick']
+    duration: 2
+    labels: ['Left Downward Block + Right Upward Block']
+  - label: 'Right Claw'
+  - label: 'Left Outward Back Knuckle'
+    duration: 0.5
+  - label: 'Right Outward Back Knuckle'
+    duration: 0.5
+  - label: 'Left Outward Back Knuckle'
+    duration: 0.5
+  # Diagonal Backwards
+  - stance:
+      type: left_neutral
+      direction: 430
+      pivot: left
+    labels: ['Left Downward Block']
+  - label: 'Left Overhead Back Knuckle'
+  - stance:
+      type: left_forward
+      direction: 430
+    labels: ['Right Straight Punch']
+  - stance: right_forward
+    direction: 430
+    pivot: left
+    labels: ['Left Straight Punch + Right Front Kick']
+  - stance:
+      type: right_neutral
+      direction: 430
+    labels: ['Right Uppercut']
+  # Towards 730
+  - stance:
+      type: right_neutral
+      direction: 730
+      pivot: left
+    labels: ['Right Downward Block']
+  - label: 'Right Overhead Back Knuckle'
+  - stance:
+      type: right_forward
+      direction: 730
+    labels: ['Left Straight Punch']
+  - stance: left_forward
+    direction: 730
+    pivot: right
+    labels: ['Right Straight Punch + Left Front Kick']
+  - stance:
+      type: left_neutral
+      direction: 730
+    labels: ['Left Uppercut']
