@@ -61,9 +61,9 @@ body {
 }
 
 .speed-btn.active {
-  background-color: #00259f;
+  background-color: rgb(63, 63, 63);
   color: white;
-  border-color: #00259f;
+  border-color: rgb(63, 63, 63);
 }
 
 .control-btn:hover {
@@ -79,7 +79,7 @@ body {
 }
 
 .speed-btn.active:hover {
-  background-color: #001f80;
+  background-color: rgb(63, 63, 63);
   transform: translateY(-1px);
 }
 

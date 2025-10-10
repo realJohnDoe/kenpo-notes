@@ -12,10 +12,7 @@ steps:
       direction: 1200
       pivot: left
     labels: ['Right Inward Block ➡️🔽🛡️']
-  - stance:
-      type: right_neutral
-      direction: 1200
-    labels: ['Right Outward Handsword ➡️🔼✋⚔️💥']
+  - label: 'Right Outward Handsword ➡️🔼✋⚔️💥'
   - stance:
       type: right_forward
       direction: 1200
@@ -30,10 +27,7 @@ steps:
       direction: 1200
       pivot: right
     labels: ['Left Inward Block ⬅️🔽🛡️']
-  - stance:
-      type: left_neutral
-      direction: 1200
-    labels: ['Left Outward Handsword ⬅️🔼✋⚔️💥']
+  - label: 'Left Outward Handsword ⬅️🔼✋⚔️💥'
   - stance:
       type: left_forward
       direction: 1200
@@ -42,3 +36,34 @@ steps:
       type: left_neutral
       direction: 1200
     labels: ['Left Open-Handed Uppercut']
+  # Sideways
+  - stance:
+      type: left_cat
+      direction: 1200
+      pivot: right
+    duration: 0.5
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: right
+    duration: 0.5
+    labels: ['Left Outward Block + Right Sideways Punch']
+  - label: 'Left Jab'
+  - label: 'Right Cross'
+  - label: 'Left Jab + Left Side Kick'
+  # The right side
+  # Sideways
+  - stance:
+      type: right_cat
+      direction: 1200
+      pivot: left
+    duration: 0.5
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: left
+    labels: ['Right Outward Block + Left Sideways Punch']
+  - stance: horse
+    direction: 1200
+    duration: 3
+    labels: ['Right Jab', 'Left Cross', 'Right Jab + Right Side Kick']
