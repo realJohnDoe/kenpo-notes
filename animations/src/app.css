@@ -25,7 +25,7 @@ body {
 
 #speed-controls {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 
 .control-btn {
@@ -44,9 +44,9 @@ body {
 }
 
 .speed-btn {
-  min-width: 40px;
-  height: 36px;
-  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
   border: 1px solid #e0e0e0;
   background-color: white;
   color: #333;
@@ -58,13 +58,12 @@ body {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
-  padding: 0 8px;
 }
 
 .speed-btn.active {
-  background-color: #007acc;
+  background-color: #00259f;
   color: white;
-  border-color: #007acc;
+  border-color: #00259f;
 }
 
 .control-btn:hover {
@@ -80,7 +79,7 @@ body {
 }
 
 .speed-btn.active:hover {
-  background-color: #0066aa;
+  background-color: #001f80;
   transform: translateY(-1px);
 }
 
@@ -97,7 +96,7 @@ body {
 }
 
 .speed-btn.active:active {
-  background-color: #005588;
+  background-color: #001a66;
   transform: translateY(0);
 }
 
