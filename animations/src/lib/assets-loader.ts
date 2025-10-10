@@ -1,32 +1,35 @@
-// Central loader for all assets
-import headSvg from './assets/head.svg?raw';
-import rightFootSvg from './assets/right_foot.svg?raw';
+// Central loader for all assets using Vite's glob imports
+// This approach automatically includes all files without manual imports
 
-import delayedSwordYml from './data/delayed-sword.yml';
-import fiveSwordsYml from './data/five-swords.yml';
-import longForm2Yml from './data/long-form-2.yml';
-import shortForm1Yml from './data/short-form-1.yml';
-import testSimpleRotationYml from './data/test-simple-rotation.yml';
+// Import all SVG files as raw text using glob import
+const svgModules = import.meta.glob('./assets/*.svg', { 
+  query: '?raw',
+  eager: true 
+}) as Record<string, { default: string }>;
 
-// SVG assets
-export const svgAssets = {
-  'head.svg': headSvg,
-  'right_foot.svg': rightFootSvg
-};
+// Import all YAML files using glob import  
+const yamlModules = import.meta.glob('./data/*.yml', { 
+  eager: true 
+}) as Record<string, { default: any }>;
 
-// YAML data
-export const yamlData = {
-  'delayed-sword': delayedSwordYml,
-  'five-swords': fiveSwordsYml,
-  'long-form-2': longForm2Yml,
-  'short-form-1': shortForm1Yml,
-  'test-simple-rotation': testSimpleRotationYml
-};
+// Create SVG assets map from glob imports
+export const svgAssets: Record<string, string> = {};
+for (const [path, module] of Object.entries(svgModules)) {
+  const filename = path.split('/').pop()!; // Extract filename from path
+  svgAssets[filename] = module.default;
+}
+
+// Create YAML data map from glob imports
+export const yamlData: Record<string, any> = {};
+for (const [path, module] of Object.entries(yamlModules)) {
+  const filename = path.split('/').pop()!.replace('.yml', ''); // Extract slug from filename
+  yamlData[filename] = module.default;
+}
 
 export function getSvgContent(filename: string): string {
-  return svgAssets[filename as keyof typeof svgAssets] || '';
+  return svgAssets[filename] || '';
 }
 
 export function getYamlData(slug: string): any {
-  return yamlData[slug as keyof typeof yamlData];
+  return yamlData[slug];
 }
