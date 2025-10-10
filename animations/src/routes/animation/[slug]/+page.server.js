@@ -15,10 +15,10 @@ import { readFileSync } from 'fs';
 import { parse } from 'yaml';
 import path from 'path';
 
-const animationDir = path.resolve('src');
+const animationDir = path.resolve('src/forms');
 
 function readSvgContent(filename) {
-  const svgPath = path.join(animationDir, filename);
+  const svgPath = path.resolve('src', filename);
   try {
     return readFileSync(svgPath, 'utf-8');
   } catch (e) {
