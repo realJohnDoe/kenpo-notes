@@ -16,6 +16,7 @@
   let mainTl: any; // anime.timeline instance
   let stepStartTimes: number[] = [];
   export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
+  export let playbackSpeed: number = 1; // Default speed is 1x
 
   // We need 2 steps more: One for because there is one more still frames than animation steps and
   // one more because we add a step in the end as the finished state.
@@ -191,6 +192,20 @@
     if (targetStepIdx == stepStartTimes.length - 1) {
         console.log('goToStep: Resetting mainTl.completed to false before seeking from finished state.');
         mainTl.completed = false;
+    }
+  };
+
+  export const setPlaybackSpeed = (speed: number) => {
+    console.log(`setPlaybackSpeed called with speed: ${speed}`);
+    playbackSpeed = speed;
+    if (mainTl) {
+      // Store current progress as ratio
+      const currentProgress = mainTl.currentTime / mainTl.duration;
+      
+      // Update the timeline's speed
+      mainTl.speed = speed;
+      
+      console.log(`Playback speed changed to ${speed}x`);
     }
   };
 </script>
