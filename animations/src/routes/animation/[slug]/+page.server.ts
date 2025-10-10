@@ -14,12 +14,11 @@ import {
 import { readFileSync } from 'fs';
 import { parse } from 'yaml';
 import { join } from 'path';
-import { dev } from '$app/environment';
 
 // Use process.cwd() for consistent path resolution in both dev and build
 const baseDir = process.cwd();
-const animationDir = join(baseDir, dev ? 'src/forms' : 'static/forms');
-const assetsDir = join(baseDir, dev ? 'src' : 'static');
+const animationDir = join(baseDir, 'static/forms');
+const assetsDir = join(baseDir, 'static');
 
 function readSvgContent(filename: string) {
   const svgPath = join(assetsDir, filename);
