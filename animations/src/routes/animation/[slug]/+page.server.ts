@@ -3,8 +3,7 @@ export const prerender = true;
 import { error } from '@sveltejs/kit';
 import {
   generateAndComputeAnimationData,
-  generatePersonShapes,
-  normalizeStep
+  generatePersonShapes
 } from '$lib/animation';
 import {
   generateGrid,
@@ -47,8 +46,16 @@ export function load({ params }: { params: { slug: string } }) {
     const gridUnitSize = 30;
     const personUnitSize = 60;
 
+    const firstStep = data.steps[0];
+    const personConfig = {
+      stance: firstStep.stance?.type || firstStep.stance || 'attention',
+      direction: firstStep.stance?.direction || firstStep.direction || 1200,
+      offsetX: firstStep.offsetX || 0,
+      offsetY: firstStep.offsetY || 0
+    };
+
     const personShapes = generatePersonShapes(
-      normalizeStep(data.steps[0]),
+      personConfig,
       canvasWidth,
       canvasHeight,
       personUnitSize,
