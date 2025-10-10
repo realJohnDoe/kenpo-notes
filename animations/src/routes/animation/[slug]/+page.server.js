@@ -64,10 +64,10 @@ export function load({ params }) {
     <g id="center-marker">
         ${centerMarker}
     </g>
+    ${vignette}
     <g id="person">
         ${personShapes}
     </g>
-    ${vignette}
     <g id="labels">
         ${labels}
     </g>
