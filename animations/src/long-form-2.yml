@@ -1,7 +1,4 @@
 title: 'Long Form 2'
-# canvas:
-#   width: 600
-#   height: 600
 steps:
   - stance: 'attention'
     direction: 1200
@@ -20,7 +17,7 @@ steps:
     labels: ['Left Finger Thrust']
   - stance: right_neutral
     direction: 1200
-    labels: ['Right Open-Handed Upppercut']
+    labels: ['Right Open-Handed Uppercut']
   # The left hand side
   - stance: left_neutral
     direction: 1200
@@ -34,7 +31,7 @@ steps:
     labels: ['Right Finger Thrust']
   - stance: left_neutral
     direction: 1200
-    labels: ['Left Open-Handed Upppercut']
+    labels: ['Left Open-Handed Uppercut']
   # Sideways
   - stance: left_cat
     direction: 1200

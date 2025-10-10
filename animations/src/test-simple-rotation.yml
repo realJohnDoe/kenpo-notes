@@ -1,7 +1,4 @@
 title: 'Test Simple Animation'
-canvas:
-  width: 600
-  height: 600
 steps:
   - stance: 'attention'
     direction: 430

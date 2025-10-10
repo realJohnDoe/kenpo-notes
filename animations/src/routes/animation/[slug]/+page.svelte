@@ -6,10 +6,9 @@
 </script>
 
 <svelte:head>
-  <title>{data.title}</title>
+    <title>{data.slug}</title>
 </svelte:head>
 
-<AnimationViewer
-  svgContent={data.svgContent}
-  timelineData={data.timelineData}
-/>
+<div class="animation-slug-page">
+    <AnimationViewer animationData={data.animationData} svgContent={data.svgContent} labelsData={data.labelsData} />
+</div>

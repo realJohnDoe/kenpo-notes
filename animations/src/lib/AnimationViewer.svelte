@@ -1,9 +1,11 @@
 <script lang="ts">
   import Animation from './Animation.svelte';
   import Controls from './Controls.svelte';
+  import type { AnimationData } from './animation';
 
-  export let timelineData: any[];
+  export let animationData: AnimationData[];
   export let svgContent: string;
+  export let labelsData: any[]; // Add labelsData prop
 
   let animation: Animation;
   let playerState: 'playing' | 'paused' | 'finished' = 'paused';
@@ -44,8 +46,9 @@
   bind:this={animation}
   bind:playerState
   bind:playbackSpeed
-  {timelineData}
+  {animationData}
   {svgContent}
+  {labelsData}
   onComplete={handleComplete}
 />
 <Controls
