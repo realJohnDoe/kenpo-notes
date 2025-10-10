@@ -1,5 +1,6 @@
-import { log } from 'console';
 import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
+
+// --- General Utility Functions (Relevant to both body and labels, or core calculations) ---
 
 function calculateShapeTransforms(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number) {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
@@ -83,19 +84,7 @@ export function generatePersonShapes(personConfig: any, canvasWidth: number, can
     return shapesSvg;
 }
 
-export function createCircleAnim(targetId: string, fromPos: { cx: number, cy: number }, toPos: { cx: number, cy: number }, duration: number) {
-    return {
-        targets: targetId,
-        options: {
-            cx: [fromPos.cx, toPos.cx],
-            cy: [fromPos.cy, toPos.cy],
-            duration: duration,
-            ease: 'easeInOutSine'
-        }
-    };
-}
-
-export function createPointerAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
+export function createBodyPartMovementAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
@@ -112,11 +101,107 @@ export function createPointerAnim(targetId: string, fromPos: { x: number, y: num
     };
 }
 
-export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { timelineData: any[], labelsData: any[] } {
-    const baseAnimationDuration = 1000; // Define base duration here
+// --- Body Animation Specific Functions ---
+
+function createBodyPartAnimations(fromCoords: any, toCoords: any, stepAnimationDuration: number) {
+    const stepAnims = [];
+    stepAnims.push(createBodyPartMovementAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
+    stepAnims.push(createBodyPartMovementAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
+    stepAnims.push(createBodyPartMovementAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
+    return stepAnims;
+}
+
+// --- Label Animation Specific Functions ---
+
+function calculateLabelYPosition(cogY: number, canvasHeight: number): number {
+    const canvasCenterY = canvasHeight / 2;
+    const topY = canvasHeight / 4;
+    const bottomY = canvasHeight * 3 / 4;
+    return cogY > canvasCenterY ? topY : bottomY;
+}
+
+function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: { id: string; text: string; y: number; }[]) {
+    const stepAnims = [];
+    if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
+        const durationPerLabel = stepAnimationDuration / toStep.labels.length;
+
+        toStep.labels.forEach((labelText: string, labelIndex: number) => {
+            const labelId = toStep.labels.length === 1
+                ? `step-${stepIndex + 1}-label`
+                : `step-${stepIndex + 1}-label-${labelIndex}`;
+
+            labelsData.push({
+                id: labelId,
+                text: labelText,
+                y: labelY
+            });
+
+            const labelDelay = labelIndex * durationPerLabel;
+
+            stepAnims.push({ 
+                targets: `#${labelId}`,
+                options: {
+                    delay: labelDelay,
+                    opacity: [
+                        { to: 1, duration: fadeDuration, ease: 'linear' },
+                        { to: 1, duration: durationPerLabel - fadeDuration + 1 },
+                        { to: 0, duration: 1, ease: 'linear' }
+                    ]
+                }
+            });
+        });
+    }
+    return stepAnims;
+}
+
+// --- Functions relevant to both (Or orchestrators) ---
+
+function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCoords: any, canvasWidth: number, canvasHeight: number, unitSize: number) {
+    nextConfig.offsetX = lastConfig.offsetX;
+    nextConfig.offsetY = lastConfig.offsetY;
+
+    if (pivot === 'left' || pivot === 'right') {
+        const fromPivotCoords = (pivot === 'left') ? { cx: fromCoords.leftFootGroup.x, cy: fromCoords.leftFootGroup.y } : { cx: fromCoords.rightFootGroup.x, cy: fromCoords.rightFootGroup.y };
+        const toStance = stances[nextConfig.stance];
+
+        let toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
+
+        const rotationDegrees = directionToDegrees(nextConfig.direction);
+        if (rotationDegrees !== 0) {
+            toPivotMath = rotatePoint(toPivotMath, rotationDegrees);
+        }
+
+        const centerX = canvasWidth / 2;
+        const centerY = canvasHeight / 2;
+        const unit = unitSize;
+
+        const toOffsetX = (fromPivotCoords.cx - centerX) / unit - toPivotMath.x;
+        const toOffsetY = (centerY - fromPivotCoords.cy) / unit - toPivotMath.y;
+
+        nextConfig.offsetX = toOffsetX;
+        nextConfig.offsetY = toOffsetY;
+    }
+    return nextConfig;
+}
+
+// The user-defined data structure.
+export type AnimationData = {
+    startFrame: number;
+    durationToEndFrame: number;
+    durationAfterEndFrame: number;
+    targets: { 
+        target: string;
+        cfg: any;
+    }[];
+};
+
+export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { animationData: AnimationData[], labelsData: any[] } {
+    const baseAnimationDuration = 1000;
     const fadeDuration = 200;
-    const timelineData = [];
     const labelsData: { id: string; text: string; y: number; }[] = [];
+    const animationDataList: AnimationData[] = [];
+    let currentTimelineCursor = 0;
+
     if (cfg.steps.length > 1) {
         let lastConfig = { ...cfg.steps[0] };
         if (lastConfig.offsetX === undefined) lastConfig.offsetX = 0;
@@ -124,138 +209,54 @@ export function generateAnimationTimeline(cfg: any, canvasWidth: number, canvasH
 
         for (let i = 0; i < cfg.steps.length - 1; i++) {
             const fromCoords = calculateShapeTransforms(lastConfig, canvasWidth, canvasHeight, unitSize);
-
             const toStep = cfg.steps[i + 1];
-            const pivot = toStep.pivot;
-
-            let nextConfig = { ...toStep };
-            nextConfig.offsetX = lastConfig.offsetX;
-            nextConfig.offsetY = lastConfig.offsetY;
-
-            // Calculate actual duration for this step
             const stepAnimationDuration = baseAnimationDuration * (toStep.duration !== undefined ? toStep.duration : 1);
 
-            if (pivot === 'left' || pivot === 'right') {
-                const fromPivotCoords = (pivot === 'left') ? { cx: fromCoords.leftFootGroup.x, cy: fromCoords.leftFootGroup.y } : { cx: fromCoords.rightFootGroup.x, cy: fromCoords.rightFootGroup.y };
-                const toStance = stances[toStep.stance];
-
-                let toPivotMath = (pivot === 'left') ? toStance.leftFoot : toStance.rightFoot;
-
-                const rotationDegrees = directionToDegrees(toStep.direction);
-                if (rotationDegrees !== 0) {
-                    toPivotMath = rotatePoint(toPivotMath, rotationDegrees);
-                }
-
-                const centerX = canvasWidth / 2;
-                const centerY = canvasHeight / 2;
-                const unit = unitSize;
-
-                const toOffsetX = (fromPivotCoords.cx - centerX) / unit - toPivotMath.x;
-                const toOffsetY = (centerY - fromPivotCoords.cy) / unit - toPivotMath.y;
-
-                nextConfig.offsetX = toOffsetX;
-                nextConfig.offsetY = toOffsetY;
-            }
+            let nextConfig = { ...toStep };
+            nextConfig = applyPivotLogic(nextConfig, lastConfig, toStep.pivot, fromCoords, canvasWidth, canvasHeight, unitSize);
 
             const toCoords = calculateShapeTransforms(nextConfig, canvasWidth, canvasHeight, unitSize);
 
-            const stepAnims = [];
+            let stepAnims = [];
+            stepAnims = stepAnims.concat(createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration));
 
-            stepAnims.push(createPointerAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
-            stepAnims.push(createPointerAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
+            const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
+            stepAnims = stepAnims.concat(createLabelAnimations(toStep, i, labelY, stepAnimationDuration, fadeDuration, labelsData));
 
-            const cogY = toCoords.cog.cy;
-            const canvasCenterY = canvasHeight / 2;
-            const topY = 150;
-            const bottomY = 450;
-            const labelY = cogY > canvasCenterY ? topY : bottomY;
+            const bodyPartAnims = stepAnims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
+            const labelAnims = stepAnims.filter((anim: any) => anim.targets.includes('label'));
 
-            if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
-                const durationPerLabel = stepAnimationDuration / toStep.labels.length;
-
-                toStep.labels.forEach((labelText: string, labelIndex: number) => {
-                    const labelId = toStep.labels.length === 1
-                        ? `step-${i + 1}-label`
-                        : `step-${i + 1}-label-${labelIndex}`;
-
-                    labelsData.push({
-                        id: labelId,
-                        text: labelText,
-                        y: labelY
-                    });
-
-                    const labelDelay = labelIndex * durationPerLabel;
-
-                    stepAnims.push({
-                        targets: `#${labelId}`,
-                        options: {
-                            delay: labelDelay,
-                            opacity: [
-                                { to: 1, duration: fadeDuration, ease: 'linear' },
-                                { to: 1, duration: durationPerLabel - fadeDuration + 1 },
-                                { to: 0, duration: 1, ease: 'linear' }
-                            ]
-                        }
-                    });
+            let currentStepDuration = 0;
+            if (bodyPartAnims.length > 0) {
+                currentStepDuration = bodyPartAnims[0].options.duration;
+                animationDataList.push({
+                    startFrame: currentTimelineCursor,
+                    durationToEndFrame: currentStepDuration,
+                    durationAfterEndFrame: 0,
+                    targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
                 });
             }
-            timelineData.push({
-                anims: stepAnims,
-                label: null
-            });
+
+            if (labelAnims.length > 0) {
+                const durationPerLabel = currentStepDuration / labelAnims.length;
+                for (const labelAnim of labelAnims) {
+                    const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+                    const delay = labelAnim.options.delay
+                    labelAnim.options.delay = 0
+                    animationDataList.push({
+                        startFrame: currentTimelineCursor + delay,
+                        durationToEndFrame: durationPerLabel,
+                        durationAfterEndFrame: labelTotalDuration - durationPerLabel,
+                        targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]
+                    });
+                }
+            }
+
+            currentTimelineCursor += currentStepDuration;
 
             lastConfig = nextConfig;
         }
     }
-    return { timelineData, labelsData };
-}
 
-// The user-defined data structure.
-export type AnimationData = {
-  startFrame: number;
-  durationToEndFrame: number;
-  durationAfterEndFrame: number;
-  targets: {
-    target: string;
-    cfg: any;
-  }[];
-};
-
-export function computeAnimationData(timelineData: any[]): AnimationData[] {
-  const animationDataList: AnimationData[] = [];
-  let currentTimelineCursor = 0;
-
-  for (const step of timelineData) {
-    const bodyPartAnims = step.anims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
-    const labelAnims = step.anims.filter((anim: any) => anim.targets.includes('label'));
-
-    let stepDuration = 0;
-    if (bodyPartAnims.length > 0) {
-      stepDuration = bodyPartAnims[0].options.duration;
-      animationDataList.push({
-        startFrame: currentTimelineCursor,
-        durationToEndFrame: stepDuration,
-        durationAfterEndFrame: 0,
-        targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
-      });
-    }
-
-    if (labelAnims.length > 0) {
-      const durationPerLabel = stepDuration / labelAnims.length;
-      for (const labelAnim of labelAnims) {
-        const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
-        animationDataList.push({
-          startFrame: currentTimelineCursor + labelAnim.options.delay,
-          durationToEndFrame: durationPerLabel,
-          durationAfterEndFrame: labelTotalDuration - durationPerLabel,
-          targets: [{ target: labelAnim.targets, cfg: labelAnim.options }]
-        });
-      }
-    }
-
-    currentTimelineCursor += stepDuration;
-  }
-
-  return animationDataList;
+    return { animationData: animationDataList, labelsData };
 }
