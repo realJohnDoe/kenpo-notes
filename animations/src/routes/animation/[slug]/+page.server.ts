@@ -11,35 +11,19 @@ import {
   generateCenterMarker,
   generateVignette
 } from '$lib/background-graphics';
-import { readFileSync } from 'fs';
-import { parse } from 'yaml';
-import { join } from 'path';
-
-// Use process.cwd() for consistent path resolution in both dev and build
-const baseDir = process.cwd();
-const animationDir = join(baseDir, 'static/forms');
-const assetsDir = join(baseDir, 'static');
-
-function readSvgContent(filename: string) {
-  const svgPath = join(assetsDir, filename);
-  try {
-    return readFileSync(svgPath, 'utf-8');
-  } catch (e) {
-    console.error(`Error reading SVG file: ${svgPath}`, e);
-    return '';
-  }
-}
+import { getSvgContent, getYamlData } from '$lib/assets-loader';
 
 export function load({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const filePath = join(animationDir, `${slug}.yml`);
 
   try {
-    const fileContents = readFileSync(filePath, 'utf-8');
-    const data = parse(fileContents);
+    const data = getYamlData(slug);
+    if (!data) {
+      throw new Error(`Could not find animation data for ${slug}`);
+    }
 
-    const rightFootSvg = readSvgContent('right_foot.svg');
-    const headSvg = readSvgContent('head.svg');
+    const rightFootSvg = getSvgContent('right_foot.svg');
+    const headSvg = getSvgContent('head.svg');
 
     const canvasWidth = 600;
     const canvasHeight = 600;
