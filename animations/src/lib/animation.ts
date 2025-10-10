@@ -156,7 +156,7 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
 
 // --- YAML Format Normalization Functions ---
 
-function normalizeStep(step: any): any {
+export function normalizeStep(step: any): any {
     // Handle new stance format: { type: 'attention', direction: 1200, pivot: 'left' }
     if (step.stance && typeof step.stance === 'object') {
         const normalizedStep = { ...step };

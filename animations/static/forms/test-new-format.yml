@@ -1,0 +1,19 @@
+title: 'Test New Format'
+steps:
+  - stance: 
+      type: attention
+      direction: 1200
+  - stance: 
+      type: right_neutral
+      direction: 1200
+      pivot: 'left'
+    duration: 0.5
+    labels: ['Right Inward Block ➡️🔽🛡️']
+  - labels: ['Right Outward Handsword ➡️🔼✋⚔️💥']
+  - label: 'Left Heel Palm ⬅️✋🌴💥'
+    duration: 0.5
+    stances:
+    - type: right_forward
+      direction: 1200
+    - type: right_neutral
+      direction: 1200
