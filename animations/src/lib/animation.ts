@@ -441,7 +441,7 @@ function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCo
 export type Stance = {
     type: string; // e.g., 'right_neutral', 'left_neutral', 'right_forward', etc.
     direction: number; // e.g., 1200, 130, 300, 430, 600, etc.
-    pivot?: 'right' | 'left';
+    pivot: 'right' | 'left';
 };
 
 export type LabelOnlyStep = {
