@@ -14,7 +14,59 @@ type CanvasDims = {
     feetDistance: number
 }
 
-function calculateShapeTransforms(personConfig: any, canvasDims: CanvasDims) {
+// --- Data & Configuration Types ---
+
+type PersonConfig = {
+    stance: string;
+    direction: number;
+    offsetX?: number;
+    offsetY?: number;
+    pivot?: 'right' | 'left';
+};
+
+type BodyPartPosition = {
+    x: number;
+    y: number;
+    rotate: number;
+};
+
+type Point = {
+    cx: number;
+    cy: number;
+};
+
+type ShapeTransforms = {
+    leftFootGroup: BodyPartPosition;
+    rightFootGroup: BodyPartPosition;
+    cog: Point;
+    cogPointer: BodyPartPosition;
+};
+
+type LabelData = {
+    id: string;
+    text: string;
+    y: number;
+};
+
+type BodyAnimationResult = {
+    animationData: AnimationData[];
+    newConfig: PersonConfig;
+    toCoords: ShapeTransforms;
+};
+
+type ComputedAnimation = {
+    animationData: AnimationData[];
+    labelsData: LabelData[];
+};
+
+type AnimationContext = {
+    baseAnimationDuration: number;
+    fadeDuration: number;
+    canvasDims: CanvasDims;
+    labelsData: LabelData[];
+};
+
+function calculateShapeTransforms(personConfig: PersonConfig, canvasDims: CanvasDims): ShapeTransforms {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
 
     const centerX = canvasDims.width / 2;
@@ -58,7 +110,7 @@ function calculateShapeTransforms(personConfig: any, canvasDims: CanvasDims) {
     };
 }
 
-export function generatePersonShapes(personConfig: any, canvasDims: CanvasDims, rightFootSvgContent: string, headSvgContent: string): string {
+export function generatePersonShapes(personConfig: PersonConfig, canvasDims: CanvasDims, rightFootSvgContent: string, headSvgContent: string): string {
     const transforms = calculateShapeTransforms(personConfig, canvasDims);
 
     let shapesSvg = "";
@@ -96,7 +148,7 @@ export function generatePersonShapes(personConfig: any, canvasDims: CanvasDims, 
     return shapesSvg;
 }
 
-export function createBodyPartMovementAnim(targetId: string, fromPos: { x: number, y: number, rotate: number }, toPos: { x: number, y: number, rotate: number }, duration: number) {
+export function createBodyPartMovementAnim(targetId: string, fromPos: BodyPartPosition, toPos: BodyPartPosition, duration: number) {
     let diff = toPos.rotate - fromPos.rotate;
     if (diff > 180) { diff -= 360; }
     else if (diff < -180) { diff += 360; }
@@ -115,7 +167,7 @@ export function createBodyPartMovementAnim(targetId: string, fromPos: { x: numbe
 
 // --- Body Animation Specific Functions ---
 
-function createBodyPartAnimations(fromCoords: any, toCoords: any, stepAnimationDuration: number): BodyPartMovementAnimation[] {
+function createBodyPartAnimations(fromCoords: ShapeTransforms, toCoords: ShapeTransforms, stepAnimationDuration: number): BodyPartMovementAnimation[] {
     const stepAnims: BodyPartMovementAnimation[] = [];
     stepAnims.push(createBodyPartMovementAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
     stepAnims.push(createBodyPartMovementAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
@@ -132,7 +184,7 @@ function calculateLabelYPosition(cogY: number, canvasHeight: number): number {
     return cogY > canvasCenterY ? topY : bottomY;
 }
 
-function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: { id: string; text: string; y: number; }[]): LabelAnimation[] {
+function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: LabelData[]): LabelAnimation[] {
     const stepAnims: LabelAnimation[] = [];
     if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
         const durationPerLabel = stepAnimationDuration / toStep.labels.length;
@@ -168,17 +220,15 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
 
 // --- Step Conversion Functions ---
 
-// --- Step Conversion Functions ---
-
 function processBodyAnimationsToAnimationData(
     step: DefaultStep,
-    lastConfig: any,
+    lastConfig: PersonConfig,
     stepAnimationDuration: number,
     canvasDims: CanvasDims
-): { animationData: AnimationData[], newConfig: any, toCoords: any } {
+): BodyAnimationResult {
     const fromCoords = calculateShapeTransforms(lastConfig, canvasDims);
 
-    let nextConfig = {
+    let nextConfig: PersonConfig = {
         stance: step.stance.type,
         direction: step.stance.direction,
         pivot: step.stance.pivot,
@@ -186,11 +236,11 @@ function processBodyAnimationsToAnimationData(
         offsetY: lastConfig.offsetY
     };
     nextConfig = applyPivotLogic(nextConfig, lastConfig, step.stance.pivot, fromCoords, canvasDims);
-    
+
     const toCoords = calculateShapeTransforms(nextConfig, canvasDims);
 
     const bodyPartAnims = createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration);
-    
+
     const result: AnimationData[] = [];
     if (bodyPartAnims.length > 0) {
         const duration = bodyPartAnims[0].options.duration;
@@ -208,11 +258,11 @@ function processBodyAnimationsToAnimationData(
 function processLabelAnimationsToAnimationData(
     labels: string[] | undefined,
     stepIndex: number,
-    coords: any,
+    coords: ShapeTransforms,
     stepAnimationDuration: number,
     fadeDuration: number,
     canvasDims: CanvasDims,
-    labelsData: any[],
+    labelsData: LabelData[],
     labelCycleDuration: number
 ): AnimationData[] {
     if (!labels || labels.length === 0) return [];
@@ -241,41 +291,35 @@ function processLabelAnimationsToAnimationData(
 function convertLabelOnlyStepToAnimationData(
     step: LabelOnlyStep,
     stepIndex: number,
-    lastConfig: any,
-    baseAnimationDuration: number,
-    fadeDuration: number,
-    canvasDims: CanvasDims,
-    labelsData: { id: string; text: string; y: number; }[]
+    lastConfig: PersonConfig,
+    context: AnimationContext
 ): AnimationData[] {
-    const stepAnimationDuration = baseAnimationDuration * step.duration;
+    const stepAnimationDuration = context.baseAnimationDuration * step.duration;
 
-    const coords = calculateShapeTransforms(lastConfig, canvasDims);
+    const coords = calculateShapeTransforms(lastConfig, context.canvasDims);
     const labels = step.labels || (step.label ? [step.label] : []);
 
     return processLabelAnimationsToAnimationData(
-        labels, stepIndex, coords, stepAnimationDuration, fadeDuration, canvasDims, labelsData, stepAnimationDuration
+        labels, stepIndex, coords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
     );
 }
 
 function convertDefaultStepToAnimationData(
     step: DefaultStep,
     stepIndex: number,
-    lastConfig: any,
-    baseAnimationDuration: number,
-    fadeDuration: number,
-    canvasDims: CanvasDims,
-    labelsData: { id: string; text: string; y: number; }[]
-): { animationData: AnimationData[], newConfig: any } {
-    const stepAnimationDuration = baseAnimationDuration * step.duration;
+    lastConfig: PersonConfig,
+    context: AnimationContext
+): { animationData: AnimationData[], newConfig: PersonConfig } {
+    const stepAnimationDuration = context.baseAnimationDuration * step.duration;
 
     const { animationData: bodyAnimationData, newConfig, toCoords } = processBodyAnimationsToAnimationData(
-        step, lastConfig, stepAnimationDuration, canvasDims
+        step, lastConfig, stepAnimationDuration, context.canvasDims
     );
 
     const bodyDuration = bodyAnimationData.length > 0 ? bodyAnimationData[0].durationToEndFrame : stepAnimationDuration;
 
     const labelAnimationData = processLabelAnimationsToAnimationData(
-        step.labels, stepIndex, toCoords, stepAnimationDuration, fadeDuration, canvasDims, labelsData, bodyDuration
+        step.labels, stepIndex, toCoords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, bodyDuration
     );
 
     const animationData = [...bodyAnimationData, ...labelAnimationData];
@@ -286,35 +330,32 @@ function convertDefaultStepToAnimationData(
 function convertMultiStanceStepToAnimationData(
     step: MultiStanceStep,
     stepIndex: number,
-    lastConfig: any,
-    baseAnimationDuration: number,
-    fadeDuration: number,
-    canvasDims: CanvasDims,
-    labelsData: { id: string; text: string; y: number; }[]
-): { animationData: AnimationData[], newConfig: any } {
-    const stepAnimationDuration = baseAnimationDuration * step.duration;
-    
+    lastConfig: PersonConfig,
+    context: AnimationContext
+): { animationData: AnimationData[], newConfig: PersonConfig } {
+    const stepAnimationDuration = context.baseAnimationDuration * step.duration;
+
     const result: AnimationData[] = [];
-    let currentConfig = lastConfig;
+    let currentConfig: PersonConfig = lastConfig;
 
     // --- Handle Labels ---
     const labels = step.labels || (step.label ? [step.label] : []);
     if (labels.length > 0) {
         // We need to calculate `toCoords` of the first stance for label positioning
-        const fromCoords = calculateShapeTransforms(lastConfig, canvasDims);
+        const fromCoords = calculateShapeTransforms(lastConfig, context.canvasDims);
         const firstStance = step.stances[0];
-        let firstConfig = {
+        let firstConfig: PersonConfig = {
             stance: firstStance.type,
             direction: firstStance.direction,
             pivot: firstStance.pivot,
             offsetX: lastConfig.offsetX,
             offsetY: lastConfig.offsetY
         };
-        firstConfig = applyPivotLogic(firstConfig, lastConfig, firstStance.pivot, fromCoords, canvasDims);
-        const toCoords = calculateShapeTransforms(firstConfig, canvasDims);
+        firstConfig = applyPivotLogic(firstConfig, lastConfig, firstStance.pivot, fromCoords, context.canvasDims);
+        const toCoords = calculateShapeTransforms(firstConfig, context.canvasDims);
 
         const labelAnimationData = processLabelAnimationsToAnimationData(
-            labels, stepIndex, toCoords, stepAnimationDuration, fadeDuration, canvasDims, labelsData, stepAnimationDuration
+            labels, stepIndex, toCoords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
         );
         result.push(...labelAnimationData);
     }
@@ -325,14 +366,14 @@ function convertMultiStanceStepToAnimationData(
         const stance = step.stances[i];
         const subStep: DefaultStep = {
             stance: stance,
-            duration: durationPerStance / baseAnimationDuration,
+            duration: durationPerStance / context.baseAnimationDuration,
             labels: []
         };
 
         const { animationData: bodyAnimationData, newConfig } = processBodyAnimationsToAnimationData(
-            subStep, currentConfig, durationPerStance, canvasDims
+            subStep, currentConfig, durationPerStance, context.canvasDims
         );
-        
+
         result.push(...bodyAnimationData);
         currentConfig = newConfig;
     }
@@ -396,7 +437,7 @@ function parseStepFromYaml(rawStep: any): LabelOnlyStep | DefaultStep | MultiSta
 
 // --- Functions relevant to both (Or orchestrators) ---
 
-function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCoords: any, canvasDims: CanvasDims) {
+function applyPivotLogic(nextConfig: PersonConfig, lastConfig: PersonConfig, pivot: 'right' | 'left' | undefined, fromCoords: ShapeTransforms, canvasDims: CanvasDims) {
     nextConfig.offsetX = lastConfig.offsetX;
     nextConfig.offsetY = lastConfig.offsetY;
 
@@ -463,7 +504,7 @@ function isLabelAnim(anim: StepAnimation): anim is LabelAnimation {
 export type Stance = {
     type: string; // e.g., 'right_neutral', 'left_neutral', 'right_forward', etc.
     direction: number; // e.g., 1200, 130, 300, 430, 600, etc.
-    pivot: 'right' | 'left';
+    pivot?: 'right' | 'left';
 };
 
 export type LabelOnlyStep = {
@@ -496,10 +537,10 @@ export type AnimationData = {
     }[];
 };
 
-export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims): { animationData: AnimationData[], labelsData: any[] } {
+export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims): ComputedAnimation {
     const baseAnimationDuration = 1000;
     const fadeDuration = 200;
-    const labelsData: { id: string; text: string; y: number; }[] = [];
+    const labelsData: LabelData[] = [];
     const animationDataList: AnimationData[] = [];
     let currentTimelineCursor = 0;
 
@@ -507,11 +548,18 @@ export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims
     if (cfg.steps.length > 1) {
         // Parse first step to get initial configuration
         const firstStepRaw = cfg.steps[0];
-        let lastConfig = {
+        let lastConfig: PersonConfig = {
             stance: firstStepRaw.stance?.type || firstStepRaw.stance || 'attention',
             direction: firstStepRaw.stance?.direction || firstStepRaw.direction || 1200,
             offsetX: firstStepRaw.offsetX || 0,
             offsetY: firstStepRaw.offsetY || 0
+        };
+
+        const context: AnimationContext = {
+            baseAnimationDuration,
+            fadeDuration,
+            canvasDims,
+            labelsData
         };
 
         // Process each step after the first one
@@ -520,21 +568,19 @@ export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims
             const parsedStep = parseStepFromYaml(rawStep);
 
             let stepAnimationData: AnimationData[] = [];
-            let stepDuration = baseAnimationDuration * parsedStep.duration;
+            let stepDuration = context.baseAnimationDuration * parsedStep.duration;
 
             // Determine step type and convert accordingly
             if ('stances' in parsedStep) {
                 // Multi-stance step
                 const result = convertMultiStanceStepToAnimationData(
-                    parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasDims, labelsData
+                    parsedStep, i - 1, lastConfig, context
                 );
                 stepAnimationData = result.animationData;
                 lastConfig = result.newConfig;
 
                 // For multi-stance steps, we need to handle timing specially
                 // Expected order: first body, label, second body...
-                let bodyAnimCounter = 0;
                 const durationPerStance = stepDuration / parsedStep.stances.length;
 
                 // Separate body and label animations
@@ -568,8 +614,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims
             } else if ('stance' in parsedStep) {
                 // Default step with stance
                 const result = convertDefaultStepToAnimationData(
-                    parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasDims, labelsData
+                    parsedStep, i - 1, lastConfig, context
                 );
                 stepAnimationData = result.animationData;
                 lastConfig = result.newConfig;
@@ -583,8 +628,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims
             } else {
                 // Label-only step
                 stepAnimationData = convertLabelOnlyStepToAnimationData(
-                    parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasDims, labelsData
+                    parsedStep, i - 1, lastConfig, context
                 );
                 // Don't update lastConfig for label-only steps
 
