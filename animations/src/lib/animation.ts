@@ -169,17 +169,14 @@ function convertLabelOnlyStepToAnimationData(
     lastConfig: any,
     baseAnimationDuration: number,
     fadeDuration: number,
-    canvasWidth: number,
-    canvasHeight: number,
-    unitSize: number,
+    canvasDims: CanvasDims,
     labelsData: { id: string; text: string; y: number; }[]
 ): AnimationData[] {
     const stepAnimationDuration = baseAnimationDuration * step.duration;
 
-    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unitSize }
     // Use the last position for coordinates calculation since this is label-only
     const labelCoords = calculateShapeTransforms(lastConfig, canvasDims);
-    const labelY = calculateLabelYPosition(labelCoords.cog.cy, canvasHeight);
+    const labelY = calculateLabelYPosition(labelCoords.cog.cy, canvasDims.height);
 
     // Normalize labels
     const labels = step.labels || (step.label ? [step.label] : []);
@@ -561,7 +558,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
                 // Label-only step
                 stepAnimationData = convertLabelOnlyStepToAnimationData(
                     parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasWidth, canvasHeight, unitSize, labelsData
+                    canvasDims, labelsData
                 );
                 // Don't update lastConfig for label-only steps
 
