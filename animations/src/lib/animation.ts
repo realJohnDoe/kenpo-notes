@@ -5,13 +5,13 @@ import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 export const DEFAULT_CANVAS_DIMS: CanvasDims = {
     width: 600,
     height: 600,
-    unitSize: 60
+    feetDistance: 60
 }
 
 type CanvasDims = {
     width: number
     height: number
-    unitSize: number
+    feetDistance: number
 }
 
 function calculateShapeTransforms(personConfig: any, canvasDims: CanvasDims) {
@@ -37,8 +37,8 @@ function calculateShapeTransforms(personConfig: any, canvasDims: CanvasDims) {
     const leftFootRotationDegrees = directionToDegrees(currentStance.leftFootRotation);
     const rightFootRotationDegrees = directionToDegrees(currentStance.rightFootRotation);
 
-    const toSvgX = (mathX: number) => (mathX + offsetX) * canvasDims.unitSize + centerX;
-    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * canvasDims.unitSize);
+    const toSvgX = (mathX: number) => (mathX + offsetX) * canvasDims.feetDistance + centerX;
+    const toSvgY = (mathY: number) => centerY - ((mathY + offsetY) * canvasDims.feetDistance);
 
     const leftFootSvgX = toSvgX(leftFoot.x);
     const leftFootSvgY = toSvgY(leftFoot.y);
@@ -58,8 +58,7 @@ function calculateShapeTransforms(personConfig: any, canvasDims: CanvasDims) {
     };
 }
 
-export function generatePersonShapes(personConfig: any, canvasWidth: number, canvasHeight: number, unit: number, rightFootSvgContent: string, headSvgContent: string): string {
-    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unit }
+export function generatePersonShapes(personConfig: any, canvasDims: CanvasDims, rightFootSvgContent: string, headSvgContent: string): string {
     const transforms = calculateShapeTransforms(personConfig, canvasDims);
 
     let shapesSvg = "";
@@ -428,8 +427,8 @@ function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCo
         const centerX = canvasDims.width / 2;
         const centerY = canvasDims.height / 2;
 
-        const toOffsetX = (fromPivotCoords.cx - centerX) / canvasDims.unitSize - toPivotMath.x;
-        const toOffsetY = (centerY - fromPivotCoords.cy) / canvasDims.unitSize - toPivotMath.y;
+        const toOffsetX = (fromPivotCoords.cx - centerX) / canvasDims.feetDistance - toPivotMath.x;
+        const toOffsetY = (centerY - fromPivotCoords.cy) / canvasDims.feetDistance - toPivotMath.y;
 
         nextConfig.offsetX = toOffsetX;
         nextConfig.offsetY = toOffsetY;

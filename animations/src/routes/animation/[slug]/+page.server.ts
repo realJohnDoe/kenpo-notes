@@ -45,7 +45,6 @@ export function load({ params }: { params: { slug: string } }) {
     const canvasWidth = 600;
     const canvasHeight = 600;
     const gridUnitSize = 30;
-    const personUnitSize = 60;
 
     const firstStep = data.steps[0];
     const personConfig = {
@@ -57,9 +56,7 @@ export function load({ params }: { params: { slug: string } }) {
 
     const personShapes = generatePersonShapes(
       personConfig,
-      canvasWidth,
-      canvasHeight,
-      personUnitSize,
+      DEFAULT_CANVAS_DIMS,
       rightFootSvg,
       headSvg
     );
