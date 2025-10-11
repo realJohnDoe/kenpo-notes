@@ -2,6 +2,7 @@ export const prerender = true;
 
 import { error } from '@sveltejs/kit';
 import {
+  DEFAULT_CANVAS_DIMS,
   generateAndComputeAnimationData,
   generatePersonShapes
 } from '$lib/animation';
@@ -86,9 +87,7 @@ export function load({ params }: { params: { slug: string } }) {
 
     const { animationData, labelsData } = generateAndComputeAnimationData(
       data,
-      canvasWidth,
-      canvasHeight,
-      personUnitSize
+      DEFAULT_CANVAS_DIMS
     );
 
     return {

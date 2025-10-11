@@ -2,6 +2,12 @@ import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 
 // --- General Utility Functions (Relevant to both body and labels, or core calculations) ---
 
+export const DEFAULT_CANVAS_DIMS: CanvasDims = {
+    width: 600,
+    height: 600,
+    unitSize: 60
+}
+
 type CanvasDims = {
     width: number
     height: number
@@ -469,14 +475,13 @@ export type AnimationData = {
     }[];
 };
 
-export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, canvasHeight: number, unitSize: number): { animationData: AnimationData[], labelsData: any[] } {
+export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims): { animationData: AnimationData[], labelsData: any[] } {
     const baseAnimationDuration = 1000;
     const fadeDuration = 200;
     const labelsData: { id: string; text: string; y: number; }[] = [];
     const animationDataList: AnimationData[] = [];
     let currentTimelineCursor = 0;
 
-    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unitSize }
 
     if (cfg.steps.length > 1) {
         // Parse first step to get initial configuration
