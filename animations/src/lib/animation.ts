@@ -214,15 +214,12 @@ function convertDefaultStepToAnimationData(
     lastConfig: any,
     baseAnimationDuration: number,
     fadeDuration: number,
-    canvasWidth: number,
-    canvasHeight: number,
-    unitSize: number,
+    canvasDims: CanvasDims,
     labelsData: { id: string; text: string; y: number; }[]
 ): { animationData: AnimationData[], newConfig: any } {
     const stepAnimationDuration = baseAnimationDuration * step.duration;
 
 
-    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unitSize }
     const fromCoords = calculateShapeTransforms(lastConfig, canvasDims);
 
     // Create next config from stance
@@ -234,13 +231,13 @@ function convertDefaultStepToAnimationData(
         offsetY: lastConfig.offsetY
     };
 
-    nextConfig = applyPivotLogic(nextConfig, lastConfig, step.stance.pivot, fromCoords, canvasWidth, canvasHeight, unitSize);
+    nextConfig = applyPivotLogic(nextConfig, lastConfig, step.stance.pivot, fromCoords, canvasDims);
     const toCoords = calculateShapeTransforms(nextConfig, canvasDims);
 
     let stepAnims = [];
     stepAnims = stepAnims.concat(createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration));
 
-    const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
+    const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasDims.height);
     stepAnims = stepAnims.concat(createLabelAnimations({ labels: step.labels }, stepIndex, labelY, stepAnimationDuration, fadeDuration, labelsData));
 
     const result: AnimationData[] = [];
@@ -307,7 +304,7 @@ function convertMultiStanceStepToAnimationData(
             offsetX: lastConfig.offsetX,
             offsetY: lastConfig.offsetY
         };
-        firstConfig = applyPivotLogic(firstConfig, lastConfig, firstStance.pivot, fromCoords, canvasWidth, canvasHeight, unitSize);
+        firstConfig = applyPivotLogic(firstConfig, lastConfig, firstStance.pivot, fromCoords, canvasDims);
         const toCoords = calculateShapeTransforms(firstConfig, canvasDims);
 
         const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
@@ -342,7 +339,7 @@ function convertMultiStanceStepToAnimationData(
 
         const { animationData, newConfig } = convertDefaultStepToAnimationData(
             subStep, stepIndex + i, currentConfig, baseAnimationDuration, fadeDuration,
-            canvasWidth, canvasHeight, unitSize, labelsData
+            canvasDims, labelsData
         );
 
         // Filter out any label animations from sub-steps (shouldn't have any anyway)
@@ -413,7 +410,7 @@ function parseStepFromYaml(rawStep: any): LabelOnlyStep | DefaultStep | MultiSta
 
 // --- Functions relevant to both (Or orchestrators) ---
 
-function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCoords: any, canvasWidth: number, canvasHeight: number, unitSize: number) {
+function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCoords: any, canvasDims: CanvasDims) {
     nextConfig.offsetX = lastConfig.offsetX;
     nextConfig.offsetY = lastConfig.offsetY;
 
@@ -428,12 +425,11 @@ function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCo
             toPivotMath = rotatePoint(toPivotMath, rotationDegrees);
         }
 
-        const centerX = canvasWidth / 2;
-        const centerY = canvasHeight / 2;
-        const unit = unitSize;
+        const centerX = canvasDims.width / 2;
+        const centerY = canvasDims.height / 2;
 
-        const toOffsetX = (fromPivotCoords.cx - centerX) / unit - toPivotMath.x;
-        const toOffsetY = (centerY - fromPivotCoords.cy) / unit - toPivotMath.y;
+        const toOffsetX = (fromPivotCoords.cx - centerX) / canvasDims.unitSize - toPivotMath.x;
+        const toOffsetY = (centerY - fromPivotCoords.cy) / canvasDims.unitSize - toPivotMath.y;
 
         nextConfig.offsetX = toOffsetX;
         nextConfig.offsetY = toOffsetY;
@@ -485,6 +481,8 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
     const labelsData: { id: string; text: string; y: number; }[] = [];
     const animationDataList: AnimationData[] = [];
     let currentTimelineCursor = 0;
+
+    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unitSize }
 
     if (cfg.steps.length > 1) {
         // Parse first step to get initial configuration
@@ -551,7 +549,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
                 // Default step with stance
                 const result = convertDefaultStepToAnimationData(
                     parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasWidth, canvasHeight, unitSize, labelsData
+                    canvasDims, labelsData
                 );
                 stepAnimationData = result.animationData;
                 lastConfig = result.newConfig;
