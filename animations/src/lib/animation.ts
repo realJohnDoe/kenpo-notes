@@ -279,9 +279,7 @@ function convertMultiStanceStepToAnimationData(
     lastConfig: any,
     baseAnimationDuration: number,
     fadeDuration: number,
-    canvasWidth: number,
-    canvasHeight: number,
-    unitSize: number,
+    canvasDims: CanvasDims,
     labelsData: { id: string; text: string; y: number; }[]
 ): { animationData: AnimationData[], newConfig: any } {
     const stepAnimationDuration = baseAnimationDuration * step.duration;
@@ -290,7 +288,6 @@ function convertMultiStanceStepToAnimationData(
     const result: AnimationData[] = [];
     let currentConfig = lastConfig;
 
-    const canvasDims = { width: canvasWidth, height: canvasHeight, unitSize: unitSize }
     // Create a label animation that spans the full duration if there are labels
     const labels = step.labels || (step.label ? [step.label] : []);
     if (labels.length > 0) {
@@ -307,7 +304,7 @@ function convertMultiStanceStepToAnimationData(
         firstConfig = applyPivotLogic(firstConfig, lastConfig, firstStance.pivot, fromCoords, canvasDims);
         const toCoords = calculateShapeTransforms(firstConfig, canvasDims);
 
-        const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasHeight);
+        const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasDims.height);
         const labelStepAnims = createLabelAnimations({ labels }, stepIndex, labelY, stepAnimationDuration, fadeDuration, labelsData);
 
         // Convert label animations to AnimationData
@@ -507,7 +504,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
                 // Multi-stance step
                 const result = convertMultiStanceStepToAnimationData(
                     parsedStep, i - 1, lastConfig, baseAnimationDuration, fadeDuration,
-                    canvasWidth, canvasHeight, unitSize, labelsData
+                    canvasDims, labelsData
                 );
                 stepAnimationData = result.animationData;
                 lastConfig = result.newConfig;
