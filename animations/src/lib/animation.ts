@@ -115,8 +115,8 @@ export function createBodyPartMovementAnim(targetId: string, fromPos: { x: numbe
 
 // --- Body Animation Specific Functions ---
 
-function createBodyPartAnimations(fromCoords: any, toCoords: any, stepAnimationDuration: number) {
-    const stepAnims = [];
+function createBodyPartAnimations(fromCoords: any, toCoords: any, stepAnimationDuration: number): BodyPartMovementAnimation[] {
+    const stepAnims: BodyPartMovementAnimation[] = [];
     stepAnims.push(createBodyPartMovementAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
     stepAnims.push(createBodyPartMovementAnim('#rightFootGroup', fromCoords.rightFootGroup, toCoords.rightFootGroup, stepAnimationDuration));
     stepAnims.push(createBodyPartMovementAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
@@ -132,8 +132,8 @@ function calculateLabelYPosition(cogY: number, canvasHeight: number): number {
     return cogY > canvasCenterY ? topY : bottomY;
 }
 
-function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: { id: string; text: string; y: number; }[]) {
-    const stepAnims = [];
+function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: { id: string; text: string; y: number; }[]): LabelAnimation[] {
+    const stepAnims: LabelAnimation[] = [];
     if (toStep.labels && Array.isArray(toStep.labels) && toStep.labels.length > 0) {
         const durationPerLabel = stepAnimationDuration / toStep.labels.length;
 
@@ -156,7 +156,7 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
                     delay: labelDelay,
                     opacity: [
                         { to: 1, duration: fadeDuration, ease: 'linear' },
-                        { to: 1, duration: durationPerLabel - fadeDuration + 1 },
+                        { to: 1, duration: durationPerLabel - fadeDuration + 1, ease: 'linear' },
                         { to: 0, duration: 1, ease: 'linear' }
                     ]
                 }
@@ -190,12 +190,11 @@ function convertLabelOnlyStepToAnimationData(
 
     // Convert label animations to AnimationData
     const result: AnimationData[] = [];
-    const labelAnims = stepAnims.filter((anim: any) => anim.targets.includes('label'));
 
-    if (labelAnims.length > 0) {
-        const durationPerLabel = stepAnimationDuration / labelAnims.length;
-        for (const labelAnim of labelAnims) {
-            const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+    if (stepAnims.length > 0) {
+        const durationPerLabel = stepAnimationDuration / stepAnims.length;
+        for (const labelAnim of stepAnims) {
+            const labelTotalDuration = labelAnim.options.opacity.reduce((sum, p) => sum + p.duration, 0);
             const delay = labelAnim.options.delay;
             labelAnim.options.delay = 0;
             result.push({
@@ -236,15 +235,15 @@ function convertDefaultStepToAnimationData(
     nextConfig = applyPivotLogic(nextConfig, lastConfig, step.stance.pivot, fromCoords, canvasDims);
     const toCoords = calculateShapeTransforms(nextConfig, canvasDims);
 
-    let stepAnims = [];
+    let stepAnims: StepAnimation[] = [];
     stepAnims = stepAnims.concat(createBodyPartAnimations(fromCoords, toCoords, stepAnimationDuration));
 
     const labelY = calculateLabelYPosition(toCoords.cog.cy, canvasDims.height);
     stepAnims = stepAnims.concat(createLabelAnimations({ labels: step.labels }, stepIndex, labelY, stepAnimationDuration, fadeDuration, labelsData));
 
     const result: AnimationData[] = [];
-    const bodyPartAnims = stepAnims.filter((anim: any) => anim.targets.startsWith('#') && !anim.targets.includes('label'));
-    const labelAnims = stepAnims.filter((anim: any) => anim.targets.includes('label'));
+    const bodyPartAnims = stepAnims.filter(isBodyPartAnim);
+    const labelAnims = stepAnims.filter(isLabelAnim);
 
     let currentStepDuration = stepAnimationDuration;
     if (bodyPartAnims.length > 0) {
@@ -253,14 +252,14 @@ function convertDefaultStepToAnimationData(
             startFrame: 0, // Will be adjusted by caller
             durationToEndFrame: currentStepDuration,
             durationAfterEndFrame: 0,
-            targets: bodyPartAnims.map((anim: any) => ({ target: anim.targets, cfg: anim.options }))
+            targets: bodyPartAnims.map((anim) => ({ target: anim.targets, cfg: anim.options }))
         });
     }
 
     if (labelAnims.length > 0) {
         const durationPerLabel = currentStepDuration / labelAnims.length;
         for (const labelAnim of labelAnims) {
-            const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+            const labelTotalDuration = labelAnim.options.opacity.reduce((sum, p) => sum + p.duration, 0);
             const delay = labelAnim.options.delay;
             labelAnim.options.delay = 0;
             result.push({
@@ -310,11 +309,10 @@ function convertMultiStanceStepToAnimationData(
         const labelStepAnims = createLabelAnimations({ labels }, stepIndex, labelY, stepAnimationDuration, fadeDuration, labelsData);
 
         // Convert label animations to AnimationData
-        const labelAnims = labelStepAnims.filter((anim: any) => anim.targets.includes('label'));
-        if (labelAnims.length > 0) {
-            const durationPerLabel = stepAnimationDuration / labelAnims.length;
-            for (const labelAnim of labelAnims) {
-                const labelTotalDuration = labelAnim.options.opacity.reduce((sum: number, p: any) => sum + p.duration, 0);
+        if (labelStepAnims.length > 0) {
+            const durationPerLabel = stepAnimationDuration / labelStepAnims.length;
+            for (const labelAnim of labelStepAnims) {
+                const labelTotalDuration = labelAnim.options.opacity.reduce((sum, p) => sum + p.duration, 0);
                 const delay = labelAnim.options.delay;
                 labelAnim.options.delay = 0;
                 result.push({
@@ -434,6 +432,41 @@ function applyPivotLogic(nextConfig: any, lastConfig: any, pivot: string, fromCo
         nextConfig.offsetY = toOffsetY;
     }
     return nextConfig;
+}
+
+// --- Animation Step Type Definitions ---
+
+type BodyPartMovementAnimation = {
+    targets: string;
+    options: {
+        translateX: number[];
+        translateY: number[];
+        rotate: string;
+        duration: number;
+        ease: string;
+    };
+};
+
+type LabelAnimation = {
+    targets: string;
+    options: {
+        delay: number;
+        opacity: {
+            to: number;
+            duration: number;
+            ease: 'linear';
+        }[];
+    };
+};
+
+type StepAnimation = BodyPartMovementAnimation | LabelAnimation;
+
+function isBodyPartAnim(anim: StepAnimation): anim is BodyPartMovementAnimation {
+    return 'duration' in anim.options;
+}
+
+function isLabelAnim(anim: StepAnimation): anim is LabelAnimation {
+    return 'opacity' in anim.options;
 }
 
 // --- Type Definitions ---
