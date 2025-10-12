@@ -1,5 +1,4 @@
 import type {
-    ShapeTransforms,
     AnimationData,
     LabelData,
     CanvasDims
@@ -61,7 +60,7 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
 export function processLabelAnimationsToAnimationData(
     labels: string[] | undefined,
     stepIndex: number,
-    coords: ShapeTransforms,
+    cogY: number,
     stepAnimationDuration: number,
     fadeDuration: number,
     canvasDims: CanvasDims,
@@ -70,7 +69,7 @@ export function processLabelAnimationsToAnimationData(
 ): AnimationData[] {
     if (!labels || labels.length === 0) return [];
 
-    const labelY = calculateLabelYPosition(coords.cog.cy, canvasDims.height);
+    const labelY = calculateLabelYPosition(cogY, canvasDims.height);
     const labelAnims = createLabelAnimations({ labels }, stepIndex, labelY, stepAnimationDuration, fadeDuration, labelsData);
 
     const result: AnimationData[] = [];

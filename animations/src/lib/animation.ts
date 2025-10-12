@@ -93,7 +93,7 @@ function convertLabelOnlyStepToAnimationData(
     const labels = step.labels || (step.label ? [step.label] : []);
 
     return processLabelAnimationsToAnimationData(
-        labels, stepIndex, coords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
+        labels, stepIndex, coords.cog.cy, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
     );
 }
 
@@ -112,7 +112,7 @@ function convertDefaultStepToAnimationData(
     const bodyDuration = bodyAnimationData.length > 0 ? bodyAnimationData[0].durationToEndFrame : stepAnimationDuration;
 
     const labelAnimationData = processLabelAnimationsToAnimationData(
-        step.labels, stepIndex, toCoords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, bodyDuration
+        step.labels, stepIndex, toCoords.cog.cy, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, bodyDuration
     );
 
     const animationData = [...bodyAnimationData, ...labelAnimationData];
@@ -146,7 +146,7 @@ function convertMultiStanceStepToAnimationData(
         const toCoords = calculateShapeTransforms(firstConfig, context.canvasDims);
 
         const labelAnimationData = processLabelAnimationsToAnimationData(
-            labels, stepIndex, toCoords, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
+            labels, stepIndex, toCoords.cog.cy, stepAnimationDuration, context.fadeDuration, context.canvasDims, context.labelsData, stepAnimationDuration
         );
         result.push(...labelAnimationData);
     }
