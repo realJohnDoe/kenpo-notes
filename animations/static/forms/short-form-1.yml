@@ -7,56 +7,70 @@ steps:
       type: 'horse'
       direction: 1200
       pivot: right
+      duration: 0.5
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
   - stance:
       type: right_neutral
       direction: 1200
       pivot: right
     labels: ['Right Inward Block']
-  - stance:
-      type: left_neutral
-      direction: 1200
-      pivot: left
-    labels: ['Left Inward Block']
-    duration: 1.5
+  - label: ['Left Inward Block']
+    duration: 2
+    stances:
+      - type: left_neutral
+        direction: 1200
+        pivot: left
+      - type: left_neutral
+        direction: 1200
+        pivot: left
   - stance:
       type: left_neutral
       direction: 900
       pivot: left
     labels: ['Left Outward Block']
-  - stance:
-      type: right_neutral
-      direction: 900
-      pivot: right
-    labels: ['Right Outward Block']
-    duration: 1.5
-  - stance:
-      type: right_cat
-      direction: 600
-      pivot: left
-    duration: 0.5
-  - stance:
-      type: left_neutral
-      direction: 300
-      pivot: left
-    duration: 0.5
-    labels: ['Left Upward Block']
-  - stance:
-      type: right_neutral
-      direction: 300
-      pivot: right
-    labels: ['Right Upward Block']
-    duration: 1.5
+  - label: 'Right Outward Block'
+    duration: 2
+    stances:
+      - type: right_neutral
+        direction: 900
+        pivot: right
+      - type: right_neutral
+        direction: 900
+        pivot: right
+  - label: 'Left Upward Block'
+    stances:
+      - type: right_cat
+        direction: 600
+        pivot: left
+      - type: left_neutral
+        direction: 300
+        pivot: left
+  - label: 'Right Upward Block'
+    duration: 2
+    stances:
+      - type: right_neutral
+        direction: 300
+        pivot: right
+      - type: right_neutral
+        direction: 300
+        pivot: right
   - stance:
       type: right_neutral
       direction: 600
       pivot: right
     labels: ['Right Downward Block']
-  - stance:
-      type: left_neutral
-      direction: 600
-      pivot: left
-    labels: ['Left Downward Block']
-    duration: 1.5
+  - label: 'Left Downward Block'
+    duration: 2
+    stances:
+      - type: left_neutral
+        direction: 600
+        pivot: left
+      - type: left_neutral
+        direction: 600
+        pivot: left
   - stance:
       type: left_cat
       direction: 900
