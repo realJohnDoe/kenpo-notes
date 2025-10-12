@@ -34,3 +34,7 @@ To [[600 ⬇️]]:
     - [[Left ⬅️]] [[Outward 🔼]] [[Downward ⬇️]] [[Block 🛡️]]
 To [[1200 ⬆️]]:
 9.  - [[Horse Stance 🏇🧍‍♂️]]
+
+## Animation ✨
+
+<iframe src="https://realjohndoe.github.io/kenpo-notes/animation/short-form-1" width="100%" height="400"></iframe>
