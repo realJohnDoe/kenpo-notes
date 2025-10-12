@@ -1,14 +1,16 @@
 import { describe, it, expect } from 'vitest';
 import * as fs from 'fs';
 import * as yaml from 'yaml';
-import { generateAndComputeAnimationData } from './animation';
+import { generateAndComputeAnimationData, DEFAULT_CANVAS_DIMS } from './animation';
+
+
 
 describe('computeAnimationData', () => {
   it('should compute animation data for delayed-sword', () => {
     const file = fs.readFileSync('static/forms/delayed-sword.yml', 'utf8');
     const cfg = yaml.parse(file);
 
-    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, 600, 600, 1);
+    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, DEFAULT_CANVAS_DIMS);
 
     console.log(JSON.stringify(animationData, null, 2));
 
@@ -55,7 +57,7 @@ describe('computeAnimationData', () => {
     const file = fs.readFileSync('static/forms/long-form-2.yml', 'utf8');
     const cfg = yaml.parse(file);
 
-    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, 600, 600, 60); // Use personUnitSize = 60
+    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, DEFAULT_CANVAS_DIMS); // Use personUnitSize = 60
 
     expect(animationData).toHaveLength(63);
 
@@ -79,7 +81,7 @@ describe('computeAnimationData', () => {
     const file = fs.readFileSync('static/forms/test-new-format.yml', 'utf8');
     const cfg = yaml.parse(file);
 
-    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, 600, 600, 60);
+    const { animationData, labelsData } = generateAndComputeAnimationData(cfg, DEFAULT_CANVAS_DIMS);
 
     // Should have:
     // 1. Body animation from attention to right_neutral (step 1)
