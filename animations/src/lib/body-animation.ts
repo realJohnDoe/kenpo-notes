@@ -6,10 +6,6 @@ import type {
     Stance
 } from './animation-types';
 
-export type Point = {
-    cx: number;
-    cy: number;
-};
 
 export type BodyPartPosition = {
     x: number;
@@ -20,7 +16,6 @@ export type BodyPartPosition = {
 export type ShapeTransforms = {
     leftFootGroup: BodyPartPosition;
     rightFootGroup: BodyPartPosition;
-    cog: Point;
     cogPointer: BodyPartPosition;
 };
 
@@ -63,7 +58,6 @@ export function calculateShapeTransforms(personConfig: PersonConfig, canvasDims:
     return {
         leftFootGroup: { x: leftFootSvgX, y: leftFootSvgY, rotate: leftFootTotalRotation },
         rightFootGroup: { x: rightFootSvgX, y: rightFootSvgY, rotate: rightFootTotalRotation },
-        cog: { cx: cogSvgX, cy: cogSvgY },
         cogPointer: { x: cogSvgX, y: cogSvgY, rotate: rotationDegrees }
     };
 }
@@ -120,7 +114,7 @@ export function generatePersonShapes(personConfig: PersonConfig, canvasDims: Can
 
     const headScaleFactor = 0.6;
 
-    shapesSvg += `<g id="cog" transform="translate(${transforms.cog.cx}, ${transforms.cog.cy}) rotate(${transforms.cogPointer.rotate})">
+    shapesSvg += `<g id="cog" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})">
         <g transform="scale(${headScaleFactor}, ${headScaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
             ${headSvgContent}
         </g>
