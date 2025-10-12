@@ -6,7 +6,7 @@ import { dirname, join } from 'path';
 
 const getYamlSlugs = () => {
   const currentDir = dirname(fileURLToPath(import.meta.url));
-  const srcFormsDir = join(currentDir, 'src', 'forms');
+  const srcFormsDir = join(currentDir, 'static', 'forms');
   const ymlFiles = readdirSync(srcFormsDir).filter((file) => file.endsWith('.yml'));
   return ymlFiles.map((file) => `/animation/${file.replace('.yml', '')}`);
 };

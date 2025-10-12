@@ -226,7 +226,7 @@
   /* Label styles moved from +page.svelte */
   .label {
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(63, 63, 63, 1);
     padding: 5px 10px;
     border-radius: 5px;
     font-family: sans-serif;

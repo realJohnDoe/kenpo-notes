@@ -2,6 +2,7 @@ export const prerender = true;
 
 import { error } from '@sveltejs/kit';
 import {
+  DEFAULT_CANVAS_DIMS,
   generateAndComputeAnimationData,
   generatePersonShapes
 } from '$lib/animation';
@@ -44,13 +45,18 @@ export function load({ params }: { params: { slug: string } }) {
     const canvasWidth = 600;
     const canvasHeight = 600;
     const gridUnitSize = 30;
-    const personUnitSize = 60;
+
+    const firstStep = data.steps[0];
+    const personConfig = {
+      stance: firstStep.stance?.type || firstStep.stance || 'attention',
+      direction: firstStep.stance?.direction || firstStep.direction || 1200,
+      offsetX: firstStep.offsetX || 0,
+      offsetY: firstStep.offsetY || 0
+    };
 
     const personShapes = generatePersonShapes(
-      data.steps[0],
-      canvasWidth,
-      canvasHeight,
-      personUnitSize,
+      personConfig,
+      DEFAULT_CANVAS_DIMS,
       rightFootSvg,
       headSvg
     );
@@ -78,9 +84,7 @@ export function load({ params }: { params: { slug: string } }) {
 
     const { animationData, labelsData } = generateAndComputeAnimationData(
       data,
-      canvasWidth,
-      canvasHeight,
-      personUnitSize
+      DEFAULT_CANVAS_DIMS
     );
 
     return {
