@@ -24,18 +24,6 @@ export type BodyPartPosition = {
     rotate: number;
 };
 
-export type Point = {
-    cx: number;
-    cy: number;
-};
-
-export type ShapeTransforms = {
-    leftFootGroup: BodyPartPosition;
-    rightFootGroup: BodyPartPosition;
-    cog: Point;
-    cogPointer: BodyPartPosition;
-};
-
 export type LabelData = {
     id: string;
     text: string;

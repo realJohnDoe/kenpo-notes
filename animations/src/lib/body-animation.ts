@@ -2,11 +2,22 @@ import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 import type {
     PersonConfig,
     CanvasDims,
-    ShapeTransforms,
     BodyPartPosition,
     AnimationData,
     Stance
 } from './animation-types';
+
+export type Point = {
+    cx: number;
+    cy: number;
+};
+
+export type ShapeTransforms = {
+    leftFootGroup: BodyPartPosition;
+    rightFootGroup: BodyPartPosition;
+    cog: Point;
+    cogPointer: BodyPartPosition;
+};
 
 export function calculateShapeTransforms(personConfig: PersonConfig, canvasDims: CanvasDims): ShapeTransforms {
     const { stance, direction, offsetX = 0, offsetY = 0 } = personConfig;
