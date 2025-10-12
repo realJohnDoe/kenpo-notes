@@ -3,9 +3,6 @@ import type {
     PersonConfig,
     LabelData,
     AnimationData,
-    LabelOnlyStep,
-    DefaultStep,
-    MultiStanceStep,
     Stance
 } from './animation-types';
 import {
@@ -17,6 +14,25 @@ import { processLabelAnimationsToAnimationData } from './label-animation';
 
 export * from './animation-types';
 export { createBodyPartMovementAnim, generatePersonShapes } from './body-animation';
+
+export type DefaultStep = {
+    stance: Stance;
+    duration: number;
+    labels?: string[];
+};
+
+export type LabelOnlyStep = {
+    label?: string;
+    labels?: string[];
+    duration: number;
+};
+
+export type MultiStanceStep = {
+    stances: Stance[];
+    duration: number;
+    label?: string;
+    labels?: string[];
+};
 
 function parseStepFromYaml(rawStep: any): LabelOnlyStep | DefaultStep | MultiStanceStep {
     if (rawStep.stances && Array.isArray(rawStep.stances)) {

@@ -5,7 +5,6 @@ import type {
     ShapeTransforms,
     BodyPartPosition,
     AnimationData,
-    DefaultStep,
     Stance
 } from './animation-types';
 

@@ -58,21 +58,3 @@ export type Stance = {
     pivot?: 'right' | 'left';
 };
 
-export type LabelOnlyStep = {
-    label?: string;
-    labels?: string[];
-    duration: number;
-};
-
-export type DefaultStep = {
-    stance: Stance;
-    duration: number;
-    labels?: string[];
-};
-
-export type MultiStanceStep = {
-    stances: Stance[];
-    duration: number;
-    label?: string;
-    labels?: string[];
-};
