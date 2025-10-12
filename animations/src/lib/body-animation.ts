@@ -2,7 +2,6 @@ import { stances, rotatePoint, directionToDegrees } from './kenpo-geometry';
 import type {
     PersonConfig,
     CanvasDims,
-    BodyPartPosition,
     AnimationData,
     Stance
 } from './animation-types';
@@ -10,6 +9,12 @@ import type {
 export type Point = {
     cx: number;
     cy: number;
+};
+
+export type BodyPartPosition = {
+    x: number;
+    y: number;
+    rotate: number;
 };
 
 export type ShapeTransforms = {

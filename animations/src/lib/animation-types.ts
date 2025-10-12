@@ -18,12 +18,6 @@ export type PersonConfig = {
     pivot?: 'right' | 'left';
 };
 
-export type BodyPartPosition = {
-    x: number;
-    y: number;
-    rotate: number;
-};
-
 export type LabelData = {
     id: string;
     text: string;
