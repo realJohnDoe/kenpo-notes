@@ -138,7 +138,7 @@ function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, s
 
             const labelDelay = labelIndex * durationPerLabel;
 
-            stepAnims.push({ 
+            stepAnims.push({
                 targets: `#${labelId}`,
                 options: {
                     delay: labelDelay,
@@ -167,7 +167,7 @@ export function normalizeStep(step: any): any {
         }
         return normalizedStep;
     }
-    
+
     // Handle label-only steps (no stance, stances, or body movement)
     if (!step.stance && !step.stances && (step.labels || step.label)) {
         // Convert single label to labels array
@@ -206,10 +206,10 @@ function expandMultiStanceStep(step: any, stepDuration: number): any[] {
     if (!step.isMultiStance || !step.stances) {
         return [step];
     }
-    
+
     const subSteps = [];
     const durationPerStance = stepDuration / step.stances.length;
-    
+
     step.stances.forEach((stance: any, index: number) => {
         const subStep = {
             stance: stance.type,
@@ -223,7 +223,7 @@ function expandMultiStanceStep(step: any, stepDuration: number): any[] {
         };
         subSteps.push(subStep);
     });
-    
+
     return subSteps;
 }
 
@@ -262,7 +262,7 @@ export type AnimationData = {
     startFrame: number;
     durationToEndFrame: number;
     durationAfterEndFrame: number;
-    targets: { 
+    targets: {
         target: string;
         cfg: any;
     }[];
@@ -277,7 +277,7 @@ export function generateAndComputeAnimationData(cfg: any, canvasWidth: number, c
 
     // First, normalize all steps to handle new YAML format
     const normalizedSteps = cfg.steps.map(normalizeStep);
-    
+
     // Expand multi-stance steps into multiple sub-steps
     const expandedSteps = [];
     for (let i = 0; i < normalizedSteps.length; i++) {
