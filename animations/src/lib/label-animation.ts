@@ -6,8 +6,8 @@ import type {
 
 function calculateLabelYPosition(cogY: number, canvasHeight: number): number {
     const canvasCenterY = canvasHeight / 2;
-    const topY = canvasHeight / 4;
-    const bottomY = canvasHeight * 3 / 4;
+    const topY = canvasHeight * 1 / 3;
+    const bottomY = canvasHeight * 2 / 3;
     return cogY > canvasCenterY ? topY : bottomY;
 }
 

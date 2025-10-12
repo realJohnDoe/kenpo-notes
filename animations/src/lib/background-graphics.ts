@@ -48,11 +48,31 @@ export function generateLabels(
 ): string {
   const centerX = canvasWidth / 2;
   const centerY = canvasHeight / 2;
+  const padding = 20;
+  const radiusX = centerX - padding;
+  const radiusY = centerY - padding;
+
+  const labels = [
+    { text: '1200 ⬆️', angle: 270, anchor: 'middle', baseline: 'hanging' },
+    { text: '300 ➡️', angle: 0, anchor: 'end', baseline: 'middle' },
+    { text: '600 ⬇️', angle: 90, anchor: 'middle', baseline: 'auto' },
+    { text: '⬅️ 900', angle: 180, anchor: 'start', baseline: 'middle' },
+    { text: '130 ↗️', angle: 315, anchor: 'end', baseline: 'hanging' },
+    { text: '430 ↘️', angle: 45, anchor: 'end', baseline: 'auto' },
+    { text: '↙️ 730', angle: 135, anchor: 'start', baseline: 'auto' },
+    { text: '↖️ 1030', angle: 225, anchor: 'start', baseline: 'hanging' }
+  ];
+
   let labelElems = '';
-  labelElems += `<text x="${centerX}" y="20" text-anchor="middle" class="txt">1200 ⬆️</text>`;
-  labelElems += `<text x="${canvasWidth - 20}" y="${centerY}" text-anchor="end" dominant-baseline="middle" class="txt">300 ➡️</text>`;
-  labelElems += `<text x="20" y="${centerY}" text-anchor="start" dominant-baseline="middle" class="txt">⬅️ 900</text>`;
-  labelElems += `<text x="${centerX}" y="${canvasHeight - 20}" text-anchor="middle" dominant-baseline="hanging" class="txt">600 ⬇️</text>`;
+
+  labels.forEach(label => {
+    let x, y;
+    const angleRad = label.angle * Math.PI / 180;
+    x = centerX + radiusX * Math.cos(angleRad);
+    y = centerY + radiusY * Math.sin(angleRad);
+    labelElems += `<text x="${x}" y="${y}" text-anchor="${label.anchor}" dominant-baseline="${label.baseline}" class="txt">${label.text}</text>`;
+  });
+
   return labelElems;
 }
 
