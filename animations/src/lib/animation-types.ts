@@ -52,57 +52,6 @@ export type AnimationData = {
     }[];
 };
 
-export type BodyAnimationResult = {
-    animationData: AnimationData[];
-    newConfig: PersonConfig;
-    toCoords: ShapeTransforms;
-};
-
-export type ComputedAnimation = {
-    animationData: AnimationData[];
-    labelsData: LabelData[];
-};
-
-export type AnimationContext = {
-    baseAnimationDuration: number;
-    fadeDuration: number;
-    canvasDims: CanvasDims;
-    labelsData: LabelData[];
-};
-
-export type BodyPartMovementAnimation = {
-    targets: string;
-    options: {
-        translateX: number[];
-        translateY: number[];
-        rotate: string;
-        duration: number;
-        ease: string;
-    };
-};
-
-export type LabelAnimation = {
-    targets: string;
-    options: {
-        delay: number;
-        opacity: {
-            to: number;
-            duration: number;
-            ease: 'linear';
-        }[];
-    };
-};
-
-export type StepAnimation = BodyPartMovementAnimation | LabelAnimation;
-
-export function isBodyPartAnim(anim: StepAnimation): anim is BodyPartMovementAnimation {
-    return 'duration' in anim.options;
-}
-
-export function isLabelAnim(anim: StepAnimation): anim is LabelAnimation {
-    return 'opacity' in anim.options;
-}
-
 export type Stance = {
     type: string;
     direction: number;

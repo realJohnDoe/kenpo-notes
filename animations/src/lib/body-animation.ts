@@ -4,9 +4,7 @@ import type {
     CanvasDims,
     ShapeTransforms,
     BodyPartPosition,
-    BodyAnimationResult,
     AnimationData,
-    BodyPartMovementAnimation,
     DefaultStep
 } from './animation-types';
 
@@ -132,6 +130,17 @@ export function createBodyPartMovementAnim(targetId: string, fromPos: BodyPartPo
     };
 }
 
+export type BodyPartMovementAnimation = {
+    targets: string;
+    options: {
+        translateX: number[];
+        translateY: number[];
+        rotate: string;
+        duration: number;
+        ease: string;
+    };
+};
+
 function createBodyPartAnimations(fromCoords: ShapeTransforms, toCoords: ShapeTransforms, stepAnimationDuration: number): BodyPartMovementAnimation[] {
     const stepAnims: BodyPartMovementAnimation[] = [];
     stepAnims.push(createBodyPartMovementAnim('#leftFootGroup', fromCoords.leftFootGroup, toCoords.leftFootGroup, stepAnimationDuration));
@@ -139,6 +148,13 @@ function createBodyPartAnimations(fromCoords: ShapeTransforms, toCoords: ShapeTr
     stepAnims.push(createBodyPartMovementAnim('#cog', fromCoords.cogPointer, toCoords.cogPointer, stepAnimationDuration));
     return stepAnims;
 }
+
+export type BodyAnimationResult = {
+    animationData: AnimationData[];
+    newConfig: PersonConfig;
+    toCoords: ShapeTransforms;
+};
+
 
 export function processBodyAnimationsToAnimationData(
     step: DefaultStep,

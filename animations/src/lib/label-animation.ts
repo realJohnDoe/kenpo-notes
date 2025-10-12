@@ -2,7 +2,6 @@ import type {
     ShapeTransforms,
     AnimationData,
     LabelData,
-    LabelAnimation,
     CanvasDims
 } from './animation-types';
 
@@ -12,6 +11,18 @@ function calculateLabelYPosition(cogY: number, canvasHeight: number): number {
     const bottomY = canvasHeight * 3 / 4;
     return cogY > canvasCenterY ? topY : bottomY;
 }
+
+export type LabelAnimation = {
+    targets: string;
+    options: {
+        delay: number;
+        opacity: {
+            to: number;
+            duration: number;
+            ease: 'linear';
+        }[];
+    };
+};
 
 function createLabelAnimations(toStep: any, stepIndex: number, labelY: number, stepAnimationDuration: number, fadeDuration: number, labelsData: LabelData[]): LabelAnimation[] {
     const stepAnims: LabelAnimation[] = [];

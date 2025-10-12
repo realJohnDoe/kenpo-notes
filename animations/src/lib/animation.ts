@@ -1,10 +1,8 @@
 import type {
     CanvasDims,
     PersonConfig,
-    ComputedAnimation,
     LabelData,
     AnimationData,
-    AnimationContext,
     LabelOnlyStep,
     DefaultStep,
     MultiStanceStep,
@@ -156,6 +154,18 @@ function convertMultiStanceStepToAnimationData(
 
     return { animationData: result, newConfig: currentConfig };
 }
+
+export type ComputedAnimation = {
+    animationData: AnimationData[];
+    labelsData: LabelData[];
+};
+
+export type AnimationContext = {
+    baseAnimationDuration: number;
+    fadeDuration: number;
+    canvasDims: CanvasDims;
+    labelsData: LabelData[];
+};
 
 export function generateAndComputeAnimationData(cfg: any, canvasDims: CanvasDims): ComputedAnimation {
     const baseAnimationDuration = 1000;
