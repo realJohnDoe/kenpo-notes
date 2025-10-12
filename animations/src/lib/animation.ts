@@ -90,7 +90,7 @@ function convertDefaultStepToAnimationData(
     const stepAnimationDuration = context.baseAnimationDuration * step.duration;
 
     const { animationData: bodyAnimationData, newConfig, toCoords } = processBodyAnimationsToAnimationData(
-        step, lastConfig, stepAnimationDuration, context.canvasDims
+        step.stance, lastConfig, stepAnimationDuration, context.canvasDims
     );
 
     const bodyDuration = bodyAnimationData.length > 0 ? bodyAnimationData[0].durationToEndFrame : stepAnimationDuration;
@@ -138,14 +138,9 @@ function convertMultiStanceStepToAnimationData(
     const durationPerStance = stepAnimationDuration / step.stances.length;
     for (let i = 0; i < step.stances.length; i++) {
         const stance = step.stances[i];
-        const subStep: DefaultStep = {
-            stance: stance,
-            duration: durationPerStance / context.baseAnimationDuration,
-            labels: []
-        };
 
         const { animationData: bodyAnimationData, newConfig } = processBodyAnimationsToAnimationData(
-            subStep, currentConfig, durationPerStance, context.canvasDims
+            stance, currentConfig, durationPerStance, context.canvasDims
         );
 
         result.push(...bodyAnimationData);

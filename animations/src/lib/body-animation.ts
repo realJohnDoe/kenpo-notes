@@ -5,7 +5,8 @@ import type {
     ShapeTransforms,
     BodyPartPosition,
     AnimationData,
-    DefaultStep
+    DefaultStep,
+    Stance
 } from './animation-types';
 
 export function calculateShapeTransforms(personConfig: PersonConfig, canvasDims: CanvasDims): ShapeTransforms {
@@ -157,7 +158,7 @@ export type BodyAnimationResult = {
 
 
 export function processBodyAnimationsToAnimationData(
-    step: DefaultStep,
+    stance: Stance,
     lastConfig: PersonConfig,
     stepAnimationDuration: number,
     canvasDims: CanvasDims
@@ -165,13 +166,13 @@ export function processBodyAnimationsToAnimationData(
     const fromCoords = calculateShapeTransforms(lastConfig, canvasDims);
 
     let nextConfig: PersonConfig = {
-        stance: step.stance.type,
-        direction: step.stance.direction,
-        pivot: step.stance.pivot,
+        stance: stance.type,
+        direction: stance.direction,
+        pivot: stance.pivot,
         offsetX: lastConfig.offsetX,
         offsetY: lastConfig.offsetY
     };
-    nextConfig = applyPivotLogic(nextConfig, lastConfig, step.stance.pivot, fromCoords, canvasDims);
+    nextConfig = applyPivotLogic(nextConfig, lastConfig, stance.pivot, fromCoords, canvasDims);
 
     const toCoords = calculateShapeTransforms(nextConfig, canvasDims);
 
