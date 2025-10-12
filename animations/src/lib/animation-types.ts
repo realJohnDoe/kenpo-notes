@@ -13,8 +13,8 @@ export const DEFAULT_CANVAS_DIMS: CanvasDims = {
 export type PersonConfig = {
     stance: string;
     direction: number;
-    offsetX?: number;
-    offsetY?: number;
+    offsetX: number;
+    offsetY: number;
     pivot?: 'right' | 'left';
 };
 
@@ -37,6 +37,6 @@ export type AnimationData = {
 export type Stance = {
     type: string;
     direction: number;
-    pivot?: 'right' | 'left';
+    pivot: 'right' | 'left';
 };
 
