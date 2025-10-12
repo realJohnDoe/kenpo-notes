@@ -7,11 +7,12 @@ steps:
       type: 'horse'
       direction: 1200
       pivot: right
-      duration: 0.5
+    duration: 0.5
   - stance:
       type: 'horse'
       direction: 1200
       pivot: right
+    duration: 0.5
   - stance:
       type: right_neutral
       direction: 1200
