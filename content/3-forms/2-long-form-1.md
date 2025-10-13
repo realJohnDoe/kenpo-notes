@@ -67,6 +67,10 @@ title: Long Form 1
 	4. [[Uppercut Punch 🔝✊💥]], starting right
 5. [[Horse Stance 🏇🧍‍♂️]] & Greeting
 
-## Alternative Video
+## Alternative Video 🎥
 
 <iframe src="https://www.youtube.com/embed/ZtmvWpdK84E" width="100%" height="400"></iframe>
+
+## Animation ✨
+
+<iframe src="https://realjohndoe.github.io/kenpo-notes/animation/long-form-1" width="100%" height="400"></iframe>

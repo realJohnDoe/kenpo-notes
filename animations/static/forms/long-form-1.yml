@@ -7,7 +7,7 @@ steps:
       type: 'horse'
       direction: 1200
       pivot: right
-    labels: ['Salutation Gesture']
+    labels: ['Salutation Gesture 🫸🤛']
   - stance:
       type: 'horse'
       direction: 1200
@@ -18,12 +18,12 @@ steps:
       type: right_neutral
       direction: 1200
       pivot: right
-    labels: ['Right Inward Block']
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
   - stance:
       type: right_forward
       direction: 1200
-    labels: ['Left Straight Punch']
-  - label: ['Right Inward Block']
+    labels: ["Left ⬅️\nStraight ↕️ Punch 👊💥"]
+  - label: ["Right ➡️\nInward 🔽 Block 🛡️"]
     duration: 2
     stances:
       - type: right_cat
@@ -35,8 +35,8 @@ steps:
       type: left_neutral
       direction: 1200
       pivot: left
-    labels: ['Left Inward Block']
-  - label: ['Right Straight Punch']
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
     duration: 2
     stances:
       - type: left_forward
@@ -48,8 +48,8 @@ steps:
       type: left_neutral
       direction: 900
       pivot: left
-    labels: ['Left Outward Block']
-  - label: ['Right Straight Punch']
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
     duration: 2
     stances:
       - type: left_forward
@@ -60,8 +60,8 @@ steps:
       type: right_neutral
       direction: 900
       pivot: right
-    labels: ['Right Outward Block']
-  - label: 'Left Straight Punch'
+    labels: ["Right ➡️\nOutward 🔼 Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
     duration: 2
     stances:
       - type: right_forward
@@ -74,8 +74,8 @@ steps:
       direction: 300
       pivot: left
     duration: 2
-    labels: ['Left Outward Elbow', 'Left Upward Block']
-  - label: 'Right Straight Punch'
+    labels: ["Left ⬅️\nOutward 🔼 Elbow 💪💥", "Left ⬅️\nUpward ⬆️ Block 🛡️"]
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
     duration: 2
     stances:
       - type: left_forward
@@ -86,8 +86,8 @@ steps:
       type: right_neutral
       direction: 300
       pivot: right
-    labels: ['Right Upward Block']
-  - label: 'Left Straight Punch'
+    labels: ["Right ➡️\nUpward ⬆️ Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
     duration: 2
     stances:
       - type: right_forward
@@ -99,8 +99,8 @@ steps:
       type: right_neutral
       direction: 600
       pivot: left
-    labels: ['Right Downward Block']
-  - label: 'Left Straight Punch'
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
     duration: 2
     stances:
       - type: right_forward
@@ -111,8 +111,8 @@ steps:
       type: left_neutral
       direction: 600
       pivot: left
-    labels: ['Left Downward Block']
-  - label: 'Right Straight Punch'
+    labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
     duration: 2
     stances:
       - type: left_forward
@@ -123,37 +123,37 @@ steps:
   - stance:
       type: left_neutral
       direction: 600
-    labels: ['Left Inward Block']
-  - label: 'Right Inward Block'
-  - label: 'Left Inward Block'
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: "Right ➡️\nInward 🔽 Block 🛡️"
+  - label: "Left ⬅️\nInward 🔽 Block 🛡️"
     duration: 1.5
   - stance:
       type: right_neutral
       direction: 600
       pivot: right
-    labels: ['Right Inward Block']
-  - label: 'Left Inward Block'
-  - label: 'Right Inward Block'
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: "Left ⬅️\nInward 🔽 Block 🛡️"
+  - label: "Right ➡️\nInward 🔽 Block 🛡️"
     duration: 1.5
   # 3x Outward 900
   - stance:
       type: right_neutral
       direction: 900
       pivot: right
-    labels: ['Right Outward Block']
-  - label: 'Left Outward Block'
-  - label: 'Right Outward Block'
+    labels: ["Right ➡️\nOutward 🔼 Block 🛡️"]
+  - label: "Left ⬅️\nOutward 🔼 Block 🛡️"
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
     duration: 1.5
   - stance:
       type: left_neutral
       direction: 900
       pivot: left
-    labels: ['Left Outward Block']
-  - label: 'Right Outward Block'
-  - label: 'Left Outward Block'
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
+  - label: "Left ⬅️\nOutward 🔼 Block 🛡️"
     duration: 1.5
   # 3x Upward 300
-  - label: 'Right Upward Block'
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
     stances:
       - type: attention
         direction: 1200
@@ -161,65 +161,65 @@ steps:
       - type: right_neutral
         direction: 300
         pivot: right
-  - label: 'Left Upward Block'
-  - label: 'Right Upward Block'
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
     duration: 1.5
   - stance:
       type: left_neutral
       direction: 300
       pivot: left
-    labels: ['Left Upward Block']
-  - label: 'Right Upward Block'
-  - label: 'Left Upward Block'
+    labels: ["Left ⬅️\nUpward ⬆️ Block 🛡️"]
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
     duration: 1.5
   # 3x Downward 1200
   - stance:
       type: left_neutral
       direction: 1200
       pivot: left
-    labels: ['Left Downward Block']
-  - label: 'Right Downward Block'
-  - label: 'Left Downward Block'
+    labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
+  - label: "Right ➡️\nDownward ⬇️ Block 🛡️"
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
     duration: 1.5
   - stance:
       type: right_neutral
       direction: 1200
       pivot: right
-    labels: ['Right Downward Block']
-  - label: 'Left Downward Block'
-  - label: 'Right Downward Block'
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
+  - label: "Right ➡️\nDownward ⬇️ Block 🛡️"
     duration: 1.5
   # 3x in horse
   - stance:
       type: horse
       direction: 1200
       pivot: right
-    labels: ['Left Inward Downward Thumb Side Block']
-  - label: 'Right Inward Downward Thumb Side Block'
-  - label: 'Left Inward Downward Thumb Side Block'
+    labels: ["Left ⬅️\nInward 🔽 Downward ⬇️\nBlock 🛡️"]
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Left ⬅️\nInward 🔽Downward ⬇️\nBlock 🛡️"
     duration: 1.5
-  - label: Right Inward Downward Pinky Side Block
-  - label: Left Inward Downward Pinky Side Block
-  - label: Right Inward Downward Pinky Side Block
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Left ⬅️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
     duration: 1.5
-  - label: Left Pushdown Block
-  - label: Right Pushdown Block
-  - label: Left Pushdown Block
+  - label: "Left ⬅️\nPushdown Block ⬇️🛡️"
+  - label: "Right ➡️\nPushdown Block ⬇️🛡️"
+  - label: "Left ⬅️\nPushdown Block ⬇️🛡️"
     duration: 1.5
   # Double Punches
-  - label: 'Right Straight Punch'
-  - label: 'Left Straight Punch'
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
     duration: 1.5
-  - label: 'Right Diagonal Punch'
-  - label: 'Left Diagonal Punch'
+  - label: "Right ➡️\nDiagonal Punch 👊💥"
+  - label: "Left ⬅️\nDiagonal Punch 👊💥"
     duration: 1.5
-  - label: 'Right Roundhouse Punch'
-  - label: 'Left Roundhouse Punch'
+  - label: "Right ➡️\nRoundhouse 🔄 Punch 👊💥"
+  - label: "Left ⬅️\nRoundhouse 🔄 Punch 👊💥"
     duration: 1.5
-  - label: 'Right Uppercut'
-  - label: 'Left Uppercut'
+  - label: "Right ➡️\nUppercut 🔝✊💥"
+  - label: "Left ⬅️\nUppercut 🔝✊💥"
     duration: 1.5
-  - label: 'Salutation Gesture'
+  - label: 'Salutation Gesture 🫸🤛'
   - stance:
       type: attention
       direction: 1200

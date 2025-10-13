@@ -233,6 +233,7 @@
     font-size: min(4vw, 4vh); /* Scales with viewport width */
     text-align: center;
     max-width: 80%;
+    white-space: pre-wrap;
   }
   .labels-container {
     position: absolute;
