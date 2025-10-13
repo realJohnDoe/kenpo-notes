@@ -232,15 +232,16 @@
     font-family: sans-serif;
     font-size: min(4vw, 4vh); /* Scales with viewport width */
     text-align: center;
-    max-width: 80%;
+    max-width: 100%;
     white-space: pre-wrap;
   }
   .labels-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(100vw, 100vh);
+    height: min(100vw, 100vh);
     pointer-events: none;
     z-index: 1;
     /* background-color: rgba(0, 255, 0, 0.2); */
