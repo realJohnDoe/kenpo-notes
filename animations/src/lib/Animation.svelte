@@ -256,8 +256,10 @@
   {#if labelsData && labelsData.length > 0}
     <div class="labels-container">
       {#each labelsData as label}
-        <div id={label.id} class="label" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight) + verticalOffset}px; left: 50%; transform: translateX(-50%) translateY(-50%); opacity: 0;">
-          {label.text}
+        <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight) + verticalOffset}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
+          <div id={label.id} class="label" style="opacity: 0;">
+            {label.text}
+          </div>
         </div>
       {/each}
     </div>
