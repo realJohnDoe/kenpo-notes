@@ -24,8 +24,8 @@ steps:
       type: left_neutral
       direction: 1200
       pivot: right
-    labels: ["Left ➡️\nInward 🔽 Block 🛡️"]
-  - label: "Left ➡️\nOutward 🔼 Handsword ✋⚔️💥"
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: "Left ⬅️\nOutward 🔼 Handsword ✋⚔️💥"
     duration: 1.5
   # Sideways
   - stance:
@@ -38,7 +38,7 @@ steps:
         pivot: right
       - type: horse
         direction: 1200
-    label: "Left Extended Outward Block +\n Right Roundhouse Punch"
+    label: "Left ⬅️ Extended 📏 Outward 🔼 Block 🛡️\n+ Right ➡️ Roundhouse 🔄 Punch 👊💥"
   - stance:
       type: right_cat
       direction: 1200
@@ -49,14 +49,14 @@ steps:
         pivot: left
       - type: horse
         direction: 1200
-    label: "Right Extended Outward Block +\n Left Roundhouse Punch"
+    label: "Right ➡️ Extended 📏 Outward 🔼 Block 🛡️\n+ Left ⬅️ Roundhouse 🔄 Punch 👊💥"
     duration: 1.5
   # Backwards
   - stance:
       type: left_cat
       direction: 1200
       pivot: right
-  - label: "Right Vertical Punch +\nLeft Upward Block"
+  - label: "Right ➡️ Vertical Punch 👊💥\n+ Left ⬅️ Upward ⬆️ Block 🛡️"
     stances:
       - type: attention
         direction: 900
@@ -77,11 +77,11 @@ steps:
       - type: right_forward
         direction: 1200
         pivot: left
-    label: "Left Vertical Punch +\nRight Upward Block"
+    label: "Left ⬅️ Vertical Punch 👊💥\n+ Right ➡️ Upward ⬆️ Block 🛡️"
     duration: 1.5
   - label: 'Go down into a Wide Kneel'
   # Diagonal Backward
-  - label: 'Left Downward Block'
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
     stances:
       - type: attention
         direction: 900
@@ -98,7 +98,7 @@ steps:
         pivot: left
       - type: right_neutral
         direction: 430
-    label: 'Right Heel Palm'
+    label: "Right ➡️\nHeel Palm ✋🌴💥"
     duration: 1.5
   - stances:
       - type: right_neutral
@@ -106,7 +106,7 @@ steps:
         pivot: left
       - type: right_neutral
         direction: 730
-    labels: ['Right Downward Block']
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
     duration: 1.5
   - stances:
       - type: left_neutral
@@ -114,7 +114,7 @@ steps:
         pivot: right
       - type: left_neutral
         direction: 730
-    labels: ['Left Heel Palm']
+    labels: ["Left ⬅️\nHeel Palm ✋🌴💥"]
     duration: 1.5
   # Diagonal Forward
   - stances:
@@ -123,13 +123,13 @@ steps:
         pivot: left
       - type: right_cat
         direction: 130
-    label: 'Left Inward Block'
+    label: "Left ⬅️\nInward 🔽 Block 🛡️"
   - stance:
       type: right_neutral
       direction: 130
       pivot: left
-    label: 'Right Extended Outward Block'
-  - label: 'Left Half-Fist Punch'
+    label: "Right ➡️\nExtended 📏 Outward 🔼 Block 🛡️"
+  - label: "Left ⬅️\nHalf-Fist Punch 👊💥"
     duration: 1.5
   - stances:
       - type: left_cat
@@ -137,13 +137,13 @@ steps:
         pivot: right
       - type: left_cat
         direction: 1030
-    label: 'Right Inward Block'
+    label: "Right ➡️\nInward 🔽 Block 🛡️"
   - stance:
       type: left_neutral
       direction: 1030
       pivot: right
-    label: 'Left Extended Outward Block'
-  - label: 'Right Half-Fist Punch'
+    label: "Left ⬅️\nExtended 📏 Outward 🔼 Block 🛡️"
+  - label: "Right ➡️\nHalf-Fist Punch 👊💥"
     duration: 1.5
   # Conclusion
   - stance:
