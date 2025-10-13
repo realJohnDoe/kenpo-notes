@@ -7,7 +7,7 @@ steps:
       type: 'horse'
       direction: 1200
       pivot: right
-    duration: 0.5
+    labels: ['Salutation Gesture 🫸🤛']
   - stance:
       type: 'horse'
       direction: 1200
@@ -17,8 +17,8 @@ steps:
       type: right_neutral
       direction: 1200
       pivot: right
-    labels: ['Right Inward Block']
-  - label: ['Left Inward Block']
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: ["Left ⬅️\nInward 🔽 Block 🛡️"]
     duration: 2
     stances:
       - type: left_neutral
@@ -31,8 +31,8 @@ steps:
       type: left_neutral
       direction: 900
       pivot: left
-    labels: ['Left Outward Block']
-  - label: 'Right Outward Block'
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
     duration: 2
     stances:
       - type: right_neutral
@@ -41,15 +41,15 @@ steps:
       - type: right_neutral
         direction: 900
         pivot: right
-  - label: 'Left Upward Block'
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
     stances:
-      - type: right_cat
+      - type: attention
         direction: 600
         pivot: left
       - type: left_neutral
         direction: 300
         pivot: left
-  - label: 'Right Upward Block'
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
     duration: 2
     stances:
       - type: right_neutral
@@ -62,8 +62,8 @@ steps:
       type: right_neutral
       direction: 600
       pivot: right
-    labels: ['Right Downward Block']
-  - label: 'Left Downward Block'
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
     duration: 2
     stances:
       - type: left_neutral
@@ -81,9 +81,8 @@ steps:
       type: horse
       direction: 1200
       pivot: right
-    duration: 0.5
+    labels: ['Salutation Gesture 🫸🤛']
   - stance:
       type: attention
       direction: 1200
       pivot: right
-    duration: 0.5
