@@ -1,0 +1,227 @@
+title: 'Long Form 1'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    labels: ['Salutation Gesture']
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    duration: 0.5
+  # Inward Blocks 1200
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
+    labels: ['Right Inward Block']
+  - stance:
+      type: right_forward
+      direction: 1200
+    labels: ['Left Straight Punch']
+  - label: ['Right Inward Block']
+    duration: 2
+    stances:
+      - type: right_cat
+        direction: 1200
+        pivot: left
+      - type: right_cat
+        direction: 1200
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: left
+    labels: ['Left Inward Block']
+  - label: ['Right Straight Punch']
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 1200
+      - type: left_forward
+        direction: 1200
+  # Outward Blocks 900
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
+    labels: ['Left Outward Block']
+  - label: ['Right Straight Punch']
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 900
+      - type: left_forward
+        direction: 900
+  - stance:
+      type: right_neutral
+      direction: 900
+      pivot: right
+    labels: ['Right Outward Block']
+  - label: 'Left Straight Punch'
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 900
+      - type: right_forward
+        direction: 900
+  # Upward Blocks 300
+  - stance:
+      type: left_neutral
+      direction: 300
+      pivot: left
+    duration: 2
+    labels: ['Left Outward Elbow', 'Left Upward Block']
+  - label: 'Right Straight Punch'
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 300
+      - type: left_forward
+        direction: 300
+  - stance:
+      type: right_neutral
+      direction: 300
+      pivot: right
+    labels: ['Right Upward Block']
+  - label: 'Left Straight Punch'
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 300
+      - type: right_forward
+        direction: 300
+  # Downward Blocks 600
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: left
+    labels: ['Right Downward Block']
+  - label: 'Left Straight Punch'
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 600
+      - type: right_forward
+        direction: 600
+  - stance:
+      type: left_neutral
+      direction: 600
+      pivot: left
+    labels: ['Left Downward Block']
+  - label: 'Right Straight Punch'
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 600
+      - type: left_forward
+        direction: 600
+  # 3x Inward 600
+  - stance:
+      type: left_neutral
+      direction: 600
+    labels: ['Left Inward Block']
+  - label: 'Right Inward Block'
+  - label: 'Left Inward Block'
+    duration: 1.5
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: right
+    labels: ['Right Inward Block']
+  - label: 'Left Inward Block'
+  - label: 'Right Inward Block'
+    duration: 1.5
+  # 3x Outward 900
+  - stance:
+      type: right_neutral
+      direction: 900
+      pivot: right
+    labels: ['Right Outward Block']
+  - label: 'Left Outward Block'
+  - label: 'Right Outward Block'
+    duration: 1.5
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
+    labels: ['Left Outward Block']
+  - label: 'Right Outward Block'
+  - label: 'Left Outward Block'
+    duration: 1.5
+  # 3x Upward 300
+  - label: 'Right Upward Block'
+    stances:
+      - type: attention
+        direction: 1200
+        pivot: right
+      - type: right_neutral
+        direction: 300
+        pivot: right
+  - label: 'Left Upward Block'
+  - label: 'Right Upward Block'
+    duration: 1.5
+  - stance:
+      type: left_neutral
+      direction: 300
+      pivot: left
+    labels: ['Left Upward Block']
+  - label: 'Right Upward Block'
+  - label: 'Left Upward Block'
+    duration: 1.5
+  # 3x Downward 1200
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: left
+    labels: ['Left Downward Block']
+  - label: 'Right Downward Block'
+  - label: 'Left Downward Block'
+    duration: 1.5
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
+    labels: ['Right Downward Block']
+  - label: 'Left Downward Block'
+  - label: 'Right Downward Block'
+    duration: 1.5
+  # 3x in horse
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: right
+    labels: ['Left Inward Downward Thumb Side Block']
+  - label: 'Right Inward Downward Thumb Side Block'
+  - label: 'Left Inward Downward Thumb Side Block'
+    duration: 1.5
+  - label: Right Inward Downward Pinky Side Block
+  - label: Left Inward Downward Pinky Side Block
+  - label: Right Inward Downward Pinky Side Block
+    duration: 1.5
+  - label: Left Pushdown Block
+  - label: Right Pushdown Block
+  - label: Left Pushdown Block
+    duration: 1.5
+  # Double Punches
+  - label: 'Right Straight Punch'
+  - label: 'Left Straight Punch'
+    duration: 1.5
+  - label: 'Right Diagonal Punch'
+  - label: 'Left Diagonal Punch'
+    duration: 1.5
+  - label: 'Right Roundhouse Punch'
+  - label: 'Left Roundhouse Punch'
+    duration: 1.5
+  - label: 'Right Uppercut'
+  - label: 'Left Uppercut'
+    duration: 1.5
+  - label: 'Salutation Gesture'
+  - stance:
+      type: attention
+      direction: 1200
+      pivot: right
+    duration: 0.5
