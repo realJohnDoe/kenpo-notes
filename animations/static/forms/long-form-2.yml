@@ -162,10 +162,12 @@ steps:
       - type: left_front_cross
         direction: 1200
         pivot: right
+    duration: 1.5
   - stance: right_neutral
     direction: 1200
     pivot: left
     labels: ["Right ➡️\nForearm Strike 💪💥"]
+    duration: 1.5
   - label: "Left ⬅️\nPoke to Their Eye 👀"
     duration: 0.5
   - label: "Right ➡️\nPoke to Their Eye 👀"
@@ -177,10 +179,12 @@ steps:
       - type: right_front_cross
         direction: 1200
         pivot: left
+    duration: 1.5
   - stance: left_neutral
     direction: 1200
     pivot: right
     labels: ["Left ⬅️\nForearm Strike 💪💥"]
+    duration: 1.5
   - label: "Right ➡️\nPoke to Their Eye 👀"
     duration: 0.5
   - label: "Left ⬅️\nPoke to Their Eye 👀"
@@ -196,6 +200,7 @@ steps:
     direction: 900
     pivot: right
     labels: ["Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"]
+    duration: 1.5
   - stance: left_front_cross
     direction: 900
     pivot: left
@@ -204,6 +209,7 @@ steps:
     direction: 1200
     pivot: left
     labels: ["Left ⬅️\nOutward 🔼 Back Knuckle 🔙✊💥"]
+    duration: 1.5
   # Downward blocks circling into Back Knuckles
   - stances:
       - type: left_neutral
