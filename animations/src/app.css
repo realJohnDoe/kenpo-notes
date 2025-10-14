@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Global styles */
 body {
@@ -9,102 +7,14 @@ body {
   background: #fafafa;
 }
 
-.txt {
+/* .txt {
   font-family: sans-serif;
   font-size: 1rem;
   fill: black;
-}
+} */
 
 #stepLabel {
   font-family: sans-serif;
   font-size: 1.5rem;
   fill: black;
-}
-
-/* Controls */
-#controls {
-  display: flex;
-  gap: 12px;
-}
-
-#speed-controls {
-  display: flex;
-  gap: 12px;
-}
-
-.control-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  background-color: white;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease;
-}
-
-.speed-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  background-color: white;
-  color: #333;
-  font-size: 0.85rem;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease;
-}
-
-.speed-btn.active {
-  background-color: rgb(63, 63, 63);
-  color: white;
-  border-color: rgb(63, 63, 63);
-}
-
-.control-btn:hover {
-  background-color: #f5f5f5;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-
-.speed-btn:hover {
-  background-color: #f5f5f5;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-
-.speed-btn.active:hover {
-  background-color: rgb(63, 63, 63);
-  transform: translateY(-1px);
-}
-
-.control-btn:active {
-  background-color: #eee;
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.speed-btn:active {
-  background-color: #eee;
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.speed-btn.active:active {
-  background-color: #001a66;
-  transform: translateY(0);
-}
-
-.control-btn svg {
-  width: 24px;
-  height: 24px;
 }
