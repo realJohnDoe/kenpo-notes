@@ -66,14 +66,18 @@ steps:
   - label: "Right ➡️ Jab 👊💥\n+ Right ➡️ Side Kick 🦶💥"
     duration: 1.5
     # Backwards
+  - stance:
+      type: left_cat
+      direction: 900
+      pivot: right
+    duration: 0.5
   - label: "Left ⬅️\nUniversal Block 🛡️"
     stances:
-      - type: left_cat
-        direction: 900
-        pivot: right
       - type: left_neutral
         direction: 600
         pivot: right
+      - type: left_neutral
+        direction: 600
   - stance: left_neutral
     direction: 600
     labels: ["Right ➡️ Downward ⬇️ Block 🛡️\n+ Left ⬅️ Upward ⬆️ Block 🛡️"]
@@ -85,14 +89,18 @@ steps:
   - label: "Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 1.5
   # Forwards
+  - stance:
+      type: right_cat
+      direction: 900
+      pivot: left
+    duration: 0.5
   - label: "Right ➡️\nUniversal Block 🛡️"
     stances:
-      - type: right_cat
-        direction: 900
-        pivot: left
       - type: right_neutral
         direction: 1200
         pivot: left
+      - type: right_neutral
+        direction: 1200
   - stance: right_neutral
     direction: 1200
     labels: ["Left ⬅️ Downward ⬇️ Block 🛡️\n+ Right ➡️ Upward ⬆️ Block 🛡️"]
