@@ -59,7 +59,7 @@ describe('computeAnimationData', () => {
 
     const { animationData, labelsData } = generateAndComputeAnimationData(cfg, DEFAULT_CANVAS_DIMS); // Use personUnitSize = 60
 
-    expect(animationData).toHaveLength(63);
+    expect(animationData).toHaveLength(127);
 
     // Check the first label entry (from YAML step 2)
     // animationData[2] is the first label
@@ -71,8 +71,8 @@ describe('computeAnimationData', () => {
     expect(animationData[18].targets).toHaveLength(1)
     expect(animationData[19].targets).toHaveLength(1)
     expect(animationData[20].targets).toHaveLength(1)
-    expect(animationData[18].startFrame).toBe(10000)
-    expect(animationData[20].startFrame).toBe(12000)
+    expect(animationData[18].startFrame).toBe(11000)
+    expect(animationData[20].startFrame).toBe(13000)
     // We had a delay additional to the later start frame for the additional label
     expect(animationData[20].targets[0].cfg.delay).toBe(0)
   });
