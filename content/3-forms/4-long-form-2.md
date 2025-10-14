@@ -59,7 +59,7 @@ title: Long Form 2
 	7. Towards [[130 ↗️]]
 		1. - [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
 	        - [[Left ⬅️]] Pushdown [[Block 🛡️]]
-		2. - [[Right ➡️]] [[Foot 🦶]] forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[130 ↗️]]
+		2. - [[Right ➡️]] [[Foot 🦶]] forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[130 ↗️]]
 	        - [[Left ⬅️]] [[Hand ✋]] circles [[counter-clockwise 🔄]] into a [[Heel Palm ✋🌴💥]] [[Claw 🐯]]
 	8. Same with [[Left ⬅️]] towards [[130 ↗️]]
 	9. Same with [[Right ➡️]] towards [[130 ↗️]]

@@ -224,4 +224,3 @@ steps:
       type: attention
       direction: 1200
       pivot: right
-    duration: 0.5

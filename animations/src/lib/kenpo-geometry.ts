@@ -102,6 +102,13 @@ const explicitStances: {
     cog: { x: 0, y: 0 },
     leftFootRotation: 1200,
     rightFootRotation: 1200
+  },
+  right_front_cross: {
+    leftFoot: { x: 0.5, y: 0 },
+    rightFoot: { x: -0.5, y: 1 },
+    cog: { x: 0, y: 0.5 },
+    leftFootRotation: 1200,
+    rightFootRotation: 1200
   }
 };
 
