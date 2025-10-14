@@ -11,32 +11,32 @@ steps:
       type: right_neutral
       direction: 1200
       pivot: left
-    labels: ['Right Inward Block ➡️🔽🛡️']
-  - label: 'Right Outward Handsword ➡️🔼✋⚔️💥'
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Handsword ✋⚔️💥"
   - stance:
       type: right_forward
       direction: 1200
-    labels: ['Left Finger Thrust']
+    labels: ["Left ⬅️\nFinger Thrust 👉💥"]
   - stance:
       type: right_neutral
       direction: 1200
-    labels: ['Right Open-Handed Uppercut']
+    labels: ["Right ➡️\nOpen-Handed Uppercut ✋🔝💥"]
     duration: 1.5
   # The left hand side
   - stance:
       type: left_neutral
       direction: 1200
       pivot: right
-    labels: ['Left Inward Block ⬅️🔽🛡️']
-  - label: 'Left Outward Handsword ⬅️🔼✋⚔️💥'
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: "Left ⬅️\nOutward 🔼 Handsword ✋⚔️💥"
   - stance:
       type: left_forward
       direction: 1200
-    labels: ['Right Finger Thrust']
+    labels: ["Right ➡️\nFinger Thrust 👉💥"]
   - stance:
       type: left_neutral
       direction: 1200
-    labels: ['Left Open-Handed Uppercut']
+    labels: ["Left ⬅️\nOpen-Handed Uppercut ✋🔝💥"]
     duration: 1.5
   # Sideways
   - stances:
@@ -46,10 +46,10 @@ steps:
       - type: horse
         direction: 1200
         pivot: right
-    label: 'Left Outward Block + Right Sideways Punch'
-  - label: 'Left Jab'
-  - label: 'Right Cross'
-  - label: 'Left Jab + Left Side Kick'
+    label: "Left ⬅️ Outward 🔼 Block 🛡️\n+ Right ➡️ Sideways Punch 👊💥"
+  - label: 'Left ⬅️ Jab 👊'
+  - label: 'Right ➡️ Cross 👊💥'
+  - label: "Left ⬅️ Jab 👊\n+ Left ⬅️ Side Kick 🦶💥"
     duration: 1.5
   # The right side
   # Sideways
@@ -60,13 +60,13 @@ steps:
       - type: horse
         direction: 1200
         pivot: left
-    label: 'Right Outward Block + Left Sideways Punch'
-  - label: 'Right Jab'
-  - label: 'Left Cross'
-  - label: 'Right Jab + Right Side Kick'
+    label: "Right ➡️ Outward 🔼 Block 🛡️\n+ Left ⬅️ Sideways Punch 👊💥"
+  - label: 'Right ➡️ Jab 👊'
+  - label: 'Left ⬅️ Cross 👊💥'
+  - label: "Right ➡️ Jab 👊\n+ Right ➡️ Side Kick 🦶💥"
     duration: 1.5
     # Backwards
-  - label: 'Left Universal Block'
+  - label: "Left ⬅️\nUniversal Block 🛡️"
     stances:
       - type: left_cat
         direction: 900
@@ -76,16 +76,16 @@ steps:
         pivot: right
   - stance: left_neutral
     direction: 600
-    labels: ['Right Downward Block + Left Upward Block']
-  - label: 'Left Claw'
-  - label: 'Right Outward Back Knuckle'
+    labels: ["Right ➡️ Downward ⬇️ Block 🛡️\n+ Left ⬅️ Upward ⬆️ Block 🛡️"]
+  - label: 'Left ⬅️ Claw 🤏'
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 0.5
-  - label: 'Left Outward Back Knuckle'
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 0.5
-  - label: 'Right Outward Back Knuckle'
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 1.5
   # Forwards
-  - label: 'Right Universal Block'
+  - label: "Right ➡️\nUniversal Block 🛡️"
     stances:
       - type: right_cat
         direction: 900
@@ -95,56 +95,56 @@ steps:
         pivot: left
   - stance: right_neutral
     direction: 1200
-    labels: ['Left Downward Block + Right Upward Block']
-  - label: 'Right Claw'
-  - label: 'Left Outward Back Knuckle'
+    labels: ["Left ⬅️ Downward ⬇️ Block 🛡️\n+ Right ➡️ Upward ⬆️ Block 🛡️"]
+  - label: 'Right ➡️ Claw 🤏'
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 0.5
-  - label: 'Right Outward Back Knuckle'
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 0.5
-  - label: 'Left Outward Back Knuckle'
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
     duration: 1.5
   # Diagonal Backwards
   - stance:
       type: left_neutral
       direction: 430
       pivot: left
-    labels: ['Left Downward Block']
-  - label: 'Left Overhead Back Knuckle'
+    labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nOverhead 🙆 Back Knuckle ✊💥"
   - stance:
       type: left_forward
       direction: 430
-    labels: ['Right Straight Punch']
+    labels: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
   - stance: right_forward
     direction: 430
     pivot: left
-    labels: ['Left Straight Punch + Right Front Kick']
+    labels: ["Left ⬅️ Straight ↕️ Punch 👊💥\n+ Right ➡️ Front Kick 🦶💥"]
   - stance:
       type: right_neutral
       direction: 430
-    labels: ['Right Uppercut']
+    labels: ["Right ➡️\nUppercut 🔝✊💥"]
     duration: 1.5
   # Towards 730
   - stance:
       type: right_neutral
       direction: 730
       pivot: left
-    labels: ['Right Downward Block']
-  - label: 'Right Overhead Back Knuckle'
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Right ➡️\nOverhead 🙆 Back Knuckle ✊💥"
   - stance:
       type: right_forward
       direction: 730
-    labels: ['Left Straight Punch']
+    labels: ["Left ⬅️\nStraight ↕️ Punch 👊💥"]
   - stance: left_forward
     direction: 730
     pivot: right
-    labels: ['Right Straight Punch + Left Front Kick']
+    labels: ["Right ➡️ Straight ↕️ Punch 👊💥\n+ Left ⬅️ Front Kick 🦶💥"]
   - stance:
       type: left_neutral
       direction: 730
-    labels: ['Left Uppercut']
+    labels: ["Left ⬅️\nUppercut 🔝✊💥"]
     duration: 1.5
   # Diagonal Forward
-  - label: 'Fist knocks on their nose'
+  - label: 'Fist 👊 knocks on their nose 👃'
     stances:
       - type: left_cat
         direction: 1030
@@ -155,12 +155,12 @@ steps:
   - stance: right_neutral
     direction: 1200
     pivot: left
-    labels: ['Right Forearm Strike 💪💥']
-  - label: 'Left Poke to Their Eye'
-  - label: 'Right Poke to Their Eye'
-  - label: 'Left Poke to Their Eye'
+    labels: ["Right ➡️\nForearm Strike 💪💥"]
+  - label: "Left ⬅️\nPoke to Their Eye 👀"
+  - label: "Right ➡️\nPoke to Their Eye 👀"
+  - label: "Left ⬅️\nPoke to Their Eye 👀"
     duration: 1.5
-  - label: 'Fist knocks on their nose'
+  - label: 'Fist 👊 knocks on their nose 👃'
     stances:
       - type: right_front_cross
         direction: 1200
@@ -168,28 +168,28 @@ steps:
   - stance: left_neutral
     direction: 1200
     pivot: right
-    labels: ['Left Forearm Strike 💪💥']
-  - label: 'Right Poke to Their Eye'
-  - label: 'Left Poke to Their Eye'
-  - label: 'Right Poke to Their Eye'
+    labels: ["Left ⬅️\nForearm Strike 💪💥"]
+  - label: "Right ➡️\nPoke to Their Eye 👀"
+  - label: "Left ⬅️\nPoke to Their Eye 👀"
+  - label: "Right ➡️\nPoke to Their Eye 👀"
     duration: 1.5
   # Diagonal Backwards Twist Unwinds
   - stance: right_front_cross
     direction: 1200
     pivot: right
-    labels: ['Left Inward Downward Pinky Side Block']
+    labels: ["Left ⬅️ Inward 🔽 Downward ⬇️\nPinky Side Block 🛡️"]
   - stance: right_neutral
     direction: 900
     pivot: right
-    labels: ['Right Outward Back Knuckle']
+    labels: ["Right ➡️\nOutward 🔼 Back Knuckle ✊💥"]
   - stance: left_front_cross
     direction: 900
     pivot: left
-    labels: ['Right Inward Downward Pinky Side Block']
+    labels: ["Right ➡️ Inward 🔽 Downward ⬇️\nPinky Side Block 🛡️"]
   - stance: left_neutral
     direction: 1200
     pivot: left
-    labels: ['Left Outward Back Knuckle']
+    labels: ["Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"]
   # Downward blocks circling into Back Knuckles
   - stances:
       - type: left_neutral
@@ -197,8 +197,7 @@ steps:
         pivot: left
       - type: left_neutral
         direction: 300
-    label: "Left Downward Thumb Side Block circling into \n
-      Left Rolling Back Knuckle"
+    label: "Left ⬅️ Downward ⬇️ Thumb Side Block\ncircling into Left ⬅️ Rolling Back Knuckle 🔄✊💥"
     duration: 1.5
   - stances:
       - type: left_cat
@@ -212,57 +211,56 @@ steps:
         pivot: right
       - type: right_neutral
         direction: 1200
-    label: "Right Downward Thumb Side Block circling into \n
-      Right Rolling Back Knuckle"
+    label: "Right ➡️ Downward ⬇️ Thumb Side Block\ncircling into Right ➡️ Rolling Back Knuckle 🔄✊💥"
     duration: 1.5
   # Claws towards 130
   - stance:
       type: right_forward
       direction: 130
       pivot: right
-    labels: ['Left Pushdown Block']
+    labels: ["Left ⬅️\nPushdown Block ⬇️🛡️"]
   - stances:
       - type: left_neutral
         direction: 130
         pivot: right
       - type: left_neutral
         direction: 130
-    label: 'Left Heel Palm Claw'
+    label: "Left ⬅️\nHeel Palm Claw ✋🌴🤏"
     duration: 1.5
   - stance:
       type: left_forward
       direction: 130
-    labels: ['Right Pushdown Block']
+    labels: ["Right ➡️\nPushdown Block ⬇️🛡️"]
   - stances:
       - type: right_neutral
         direction: 130
         pivot: left
       - type: right_neutral
         direction: 130
-    label: 'Right Heel Palm Claw'
+    label: "Right ➡️\nHeel Palm Claw ✋🌴🤏"
     duration: 1.5
   - stance:
       type: right_forward
       direction: 130
       pivot: right
-    labels: ['Left Pushdown Block']
+    labels: ["Left ⬅️\nPushdown Block ⬇️🛡️"]
   - stances:
       - type: left_neutral
         direction: 130
         pivot: right
       - type: left_neutral
         direction: 130
-    label: 'Left Heel Palm Claw'
+    label: "Left ⬅️\nHeel Palm Claw ✋🌴🤏"
     duration: 1.5
   # Downward elbows
   - stance:
       type: left_forward
       direction: 130
-    labels: ['Right Straight Punch']
+    labels: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
   - stance:
       type: left_neutral
       direction: 130
-    labels: ['Left Inward Block']
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
     duration: 1.5
   - stances:
       - type: right_neutral
@@ -270,21 +268,21 @@ steps:
         pivot: right
       - type: right_neutral
         direction: 130
-    label: 'Right Downward Elbow'
+    label: "Right ➡️\nDownward ⬇️ Elbow 💪💥"
   - stances:
       - type: left_neutral
         direction: 130
         pivot: left
       - type: left_neutral
         direction: 130
-    label: 'Left Downward Elbow'
+    label: "Left ⬅️\nDownward ⬇️ Elbow 💪💥"
   - stance:
       type: horse
       direction: 1200
       pivot: right
-    labels: ['Right Sandwich 🥪 Elbow 💪💥']
-  - label: 'Twin Outward Backward Elbow'
-  - label: "Right Downward Backward Elbow +\nLeft Upward Backward Punch"
+    labels: ["Right ➡️\nSandwich 🥪 Elbow 💪💥"]
+  - label: "Twin 👯\nOutward 🔼 Backward 🔙 Elbow 💪💥"
+  - label: "Right ➡️ Downward ⬇️ Backward 🔙 Elbow 💪💥\n+ Left ⬅️ Upward ⬆️ Backward 🔙 Punch 👊💥"
   - label: 'Salutation Gesture 🫸🤛'
   - stance:
       type: attention
