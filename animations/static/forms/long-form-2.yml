@@ -78,11 +78,11 @@ steps:
     direction: 600
     labels: ["Right ➡️ Downward ⬇️ Block 🛡️\n+ Left ⬅️ Upward ⬆️ Block 🛡️"]
   - label: 'Left ⬅️ Claw 🤏'
-  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 0.5
-  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 0.5
-  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 1.5
   # Forwards
   - label: "Right ➡️\nUniversal Block 🛡️"
@@ -97,11 +97,11 @@ steps:
     direction: 1200
     labels: ["Left ⬅️ Downward ⬇️ Block 🛡️\n+ Right ➡️ Upward ⬆️ Block 🛡️"]
   - label: 'Right ➡️ Claw 🤏'
-  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 0.5
-  - label: "Right ➡️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 0.5
-  - label: "Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"
+  - label: "Left ⬅️\nOutward 🔼 Back Knuckle 🔙✊💥"
     duration: 1.5
   # Diagonal Backwards
   - stance:
@@ -109,7 +109,7 @@ steps:
       direction: 430
       pivot: left
     labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
-  - label: "Left ⬅️\nOverhead 🙆 Back Knuckle ✊💥"
+  - label: "Left ⬅️\nOverhead 🙆 Back Knuckle 🔙✊💥"
   - stance:
       type: left_forward
       direction: 430
@@ -129,7 +129,7 @@ steps:
       direction: 730
       pivot: left
     labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
-  - label: "Right ➡️\nOverhead 🙆 Back Knuckle ✊💥"
+  - label: "Right ➡️\nOverhead 🙆 Back Knuckle 🔙✊💥"
   - stance:
       type: right_forward
       direction: 730
@@ -181,7 +181,7 @@ steps:
   - stance: right_neutral
     direction: 900
     pivot: right
-    labels: ["Right ➡️\nOutward 🔼 Back Knuckle ✊💥"]
+    labels: ["Right ➡️\nOutward 🔼 Back Knuckle 🔙✊💥"]
   - stance: left_front_cross
     direction: 900
     pivot: left
@@ -189,7 +189,7 @@ steps:
   - stance: left_neutral
     direction: 1200
     pivot: left
-    labels: ["Left ⬅️\nOutward 🔼 Back Knuckle ✊💥"]
+    labels: ["Left ⬅️\nOutward 🔼 Back Knuckle 🔙✊💥"]
   # Downward blocks circling into Back Knuckles
   - stances:
       - type: left_neutral
@@ -197,7 +197,7 @@ steps:
         pivot: left
       - type: left_neutral
         direction: 300
-    label: "Left ⬅️ Downward ⬇️ Thumb Side Block\ncircling into Left ⬅️ Rolling Back Knuckle 🔄✊💥"
+    label: "Left ⬅️ Downward ⬇️ Thumb Side Block\ncircling into Left ⬅️ Rolling Back Knuckle 🔄🔙✊💥"
     duration: 1.5
   - stances:
       - type: left_cat
@@ -211,7 +211,7 @@ steps:
         pivot: right
       - type: right_neutral
         direction: 1200
-    label: "Right ➡️ Downward ⬇️ Thumb Side Block\ncircling into Right ➡️ Rolling Back Knuckle 🔄✊💥"
+    label: "Right ➡️ Downward ⬇️ Thumb Side Block\ncircling into Right ➡️ Rolling Back Knuckle 🔄🔙✊💥"
     duration: 1.5
   # Claws towards 130
   - stance:
@@ -281,8 +281,8 @@ steps:
       direction: 1200
       pivot: right
     labels: ["Right ➡️\nSandwich 🥪 Elbow 💪💥"]
-  - label: "Twin 👯\nOutward 🔼 Backward 🔙 Elbow 💪💥"
-  - label: "Right ➡️ Downward ⬇️ Backward 🔙 Elbow 💪💥\n+ Left ⬅️ Upward ⬆️ Backward 🔙 Punch 👊💥"
+  - label: "Twin 👯\nOutward 🔼 Backward 🔽 Elbow 💪💥"
+  - label: "Right ➡️ Downward ⬇️ Backward 🔽 Elbow 💪💥\n+ Left ⬅️ Upward ⬆️ Backward 🔽 Punch 👊💥"
   - label: 'Salutation Gesture 🫸🤛'
   - stance:
       type: attention
