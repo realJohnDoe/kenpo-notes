@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: oklch(0.4 0.1 79);
+  --color-primary-muted: oklch(0.6 0.1 79);
+  --color-bg-dark: oklch(0.92 0.025 79);
+  --color-bg: oklch(0.96 0.025 79);
+  --color-bg-light: oklch(1 0.025 79);
+  --color-text: oklch(0.15 0.05 79);
+  --color-text-muted: oklch(0.4 0.05 79);
+  --color-border: oklch(0.6 0.05 79);
+  --color-border-muted: oklch(0.7 0.05 79);
+  --color-orange-leaves-800: oklch(0.42 0.12 55);
+  --color-green-trees-800: oklch(0.40 0.13 133);
+}
+
 /* Global styles */
 body {
   margin: 0;

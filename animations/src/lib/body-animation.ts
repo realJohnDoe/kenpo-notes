@@ -100,13 +100,13 @@ export function generatePersonShapes(personConfig: PersonConfig, canvasDims: Can
     const svgOffsetX = - svgSizeInPixels / 2;
     const svgOffsetY = -svgSizeInPixels / 2;
 
-    shapesSvg += `<g id="leftFootGroup" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
+    shapesSvg += `<g id="leftFootGroup" class="fill-green-trees-800" transform="translate(${transforms.leftFootGroup.x}, ${transforms.leftFootGroup.y}) rotate(${transforms.leftFootGroup.rotate})">
         <g transform="scale(${scaleFactor}, ${scaleFactor}) scale(-1, 1) translate(${svgOffsetX}, ${svgOffsetY})">
             ${rightFootSvgContent}
         </g>
     </g>`;
 
-    shapesSvg += `<g id="rightFootGroup" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
+    shapesSvg += `<g id="rightFootGroup" class="fill-green-trees-800" transform="translate(${transforms.rightFootGroup.x}, ${transforms.rightFootGroup.y}) rotate(${transforms.rightFootGroup.rotate})">
         <g transform="scale(${scaleFactor}, ${scaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
             ${rightFootSvgContent}
         </g>
@@ -114,7 +114,7 @@ export function generatePersonShapes(personConfig: PersonConfig, canvasDims: Can
 
     const headScaleFactor = 0.6;
 
-    shapesSvg += `<g id="cog" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})">
+    shapesSvg += `<g id="cog" class="fill-orange-leaves-800" transform="translate(${transforms.cogPointer.x}, ${transforms.cogPointer.y}) rotate(${transforms.cogPointer.rotate})">
         <g transform="scale(${headScaleFactor}, ${headScaleFactor}) translate(${svgOffsetX}, ${svgOffsetY})">
             ${headSvgContent}
         </g>
