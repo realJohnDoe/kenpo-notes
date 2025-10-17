@@ -3,7 +3,6 @@ export function generateGrid(
   canvasHeight: number,
   gridSize: number
 ): string {
-  const gridColor = 'var(--color-bg-dark)';
   const centerX = canvasWidth / 2;
   const centerY = canvasHeight / 2;
   let gridElems = '';
@@ -13,13 +12,13 @@ export function generateGrid(
     // Positive side from center
     let xPos = centerX + i * gridSize;
     if (xPos < canvasWidth) {
-      gridElems += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+      gridElems += `<line x1="${xPos}" y1="0" x2="${xPos}" y2="${canvasHeight}" stroke-width="1" />`;
     }
     // Negative side from center (don't redraw center line)
     if (i > 0) {
       let xNeg = centerX - i * gridSize;
       if (xNeg > 0) {
-        gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${canvasHeight}" stroke="${gridColor}" stroke-width="1" />`;
+        gridElems += `<line x1="${xNeg}" y1="0" x2="${xNeg}" y2="${canvasHeight}"  stroke-width="1" />`;
       }
     }
   }
@@ -27,16 +26,16 @@ export function generateGrid(
   // Horizontal lines
   for (let i = 0; i <= Math.ceil(centerY / gridSize); i++) {
     if (i === 0) {
-      gridElems += `<line x1="0" y1="${centerY}" x2="${canvasWidth}" y2="${centerY}" stroke="${gridColor}" stroke-width="1" />`;
+      gridElems += `<line x1="0" y1="${centerY}" x2="${canvasWidth}" y2="${centerY}"  stroke-width="1" />`;
       continue;
     }
     let yPos = centerY - i * gridSize;
     if (yPos > 0) {
-      gridElems += `<line x1="0" y1="${yPos}" x2="${canvasWidth}" y2="${yPos}" stroke="${gridColor}" stroke-width="1" />`;
+      gridElems += `<line x1="0" y1="${yPos}" x2="${canvasWidth}" y2="${yPos}"  stroke-width="1" />`;
     }
     let yNeg = centerY + i * gridSize;
     if (yNeg < canvasHeight) {
-      gridElems += `<line x1="0" y1="${yNeg}" x2="${canvasWidth}" y2="${yNeg}" stroke="${gridColor}" stroke-width="1" />`;
+      gridElems += `<line x1="0" y1="${yNeg}" x2="${canvasWidth}" y2="${yNeg}" stroke-width="1" />`;
     }
   }
   return gridElems;

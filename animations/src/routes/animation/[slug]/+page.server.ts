@@ -67,7 +67,7 @@ export function load({ params }: { params: { slug: string } }) {
 
     const svgContent = `
 <svg width="100%" height="100%" viewBox="0 0 ${canvasWidth} ${canvasHeight}" style="background-color: var(--color-bg-light);">
-    <g id="grid">
+    <g id="grid" class="stroke-bg-dark">
         ${grid}
     </g>
     <g id="center-marker">
