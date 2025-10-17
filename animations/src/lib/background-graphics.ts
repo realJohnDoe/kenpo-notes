@@ -3,7 +3,7 @@ export function generateGrid(
   canvasHeight: number,
   gridSize: number
 ): string {
-  const gridColor = '#e0e0e0';
+  const gridColor = 'var(--color-bg-dark)';
   const centerX = canvasWidth / 2;
   const centerY = canvasHeight / 2;
   let gridElems = '';
@@ -92,8 +92,8 @@ export function generateVignette(
   return `
         <defs>
             <radialGradient id="vignetteGradient" cx="50%" cy="50%" r="50%">
-                <stop offset="30%" stop-color="white" stop-opacity="0" />
-                <stop offset="100%" stop-color="white" stop-opacity="1" />
+<stop offset="0%" stop-color="var(--color-bg-light)" stop-opacity="0" />
+            <stop offset="100%" stop-color="var(--color-bg-light)" stop-opacity="1" />
             </radialGradient>
         </defs>
         <rect x="0" y="0" width="${canvasWidth}" height="${canvasHeight}" fill="url(#vignetteGradient)" />

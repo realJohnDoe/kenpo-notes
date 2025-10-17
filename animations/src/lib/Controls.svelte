@@ -15,7 +15,7 @@
   const baseBtnClasses = 'w-12 h-12 rounded-lg flex justify-center items-center cursor-pointer shadow-md transition-all duration-200 ease-in-out hover:-translate-y-px hover:shadow-lg active:translate-y-0';
   const speedBtnClasses = 'text-sm font-medium';
   const activeSpeedBtnClasses = 'bg-primary text-bg-light hover:bg-primary-muted active:bg-gray-600';
-  const inactiveBtnClasses = 'text-text bg-bg hover:bg-bg-light active:bg-gray-200';
+  const inactiveBtnClasses = 'text-text bg-bg-light hover:bg-bg active:bg-gray-200';
 </script>
 
 <!-- Speed Controls - Bottom Left -->
