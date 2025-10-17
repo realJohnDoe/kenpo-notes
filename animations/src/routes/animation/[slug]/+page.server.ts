@@ -66,7 +66,7 @@ export function load({ params }: { params: { slug: string } }) {
     const vignette = generateVignette(canvasWidth, canvasHeight);
 
     const svgContent = `
-<svg width="100%" height="100%" viewBox="0 0 ${canvasWidth} ${canvasHeight}" style="background-color: var(--color-bg-light);">
+<svg width="100%" height="100%" viewBox="0 0 ${canvasWidth} ${canvasHeight}" class="bg-bg-light">
     <g id="grid" class="stroke-bg-dark">
         ${grid}
     </g>
