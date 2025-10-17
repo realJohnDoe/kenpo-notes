@@ -16,7 +16,7 @@
   const speedBtnClasses = 'text-xs md:text-sm font-medium';
   const activeSpeedBtnClasses = 'bg-primary text-bg-light hover:bg-primary-muted active:bg-gray-600';
 
-  const inactiveSpeedBtnClasses = 'text-text bg-bg-light hover:bg-bg active:bg-gray-200';
+  const inactiveBtnClasses = 'text-text bg-bg-light hover:bg-bg-dark';
 </script>
 
 <div class="fixed inset-0 flex justify-center items-center pointer-events-none">
@@ -24,19 +24,19 @@
     <!-- Speed Controls - Bottom Left -->
     <div class="absolute bottom-5 left-5 flex gap-3">
       <button
-        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 0.5 ? activeSpeedBtnClasses : inactiveSpeedBtnClasses}"
+        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 0.5 ? activeSpeedBtnClasses : inactiveBtnClasses}"
         on:click={() => handleSpeedChange(0.5)}
       >
         0.5x
       </button>
       <button
-        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 1 ? activeSpeedBtnClasses : inactiveSpeedBtnClasses}"
+        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 1 ? activeSpeedBtnClasses : inactiveBtnClasses}"
         on:click={() => handleSpeedChange(1)}
       >
         1x
       </button>
       <button
-        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 2 ? activeSpeedBtnClasses : inactiveSpeedBtnClasses}"
+        class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 2 ? activeSpeedBtnClasses : inactiveBtnClasses}"
         on:click={() => handleSpeedChange(2)}
       >
         2x
@@ -45,10 +45,10 @@
 
     <!-- Playback Controls - Bottom Right -->
     <div class="absolute bottom-5 right-5 flex gap-3">
-      <button class="{baseBtnClasses}" on:click={handlePrev}>
+      <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handlePrev}>
         <SkipBack class="w-4 md:w-6 md:h-6" />
       </button>
-      <button class="{baseBtnClasses}" on:click={handleToggle}>
+      <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handleToggle}>
         {#if playerState === 'finished'}
           <RotateCcw class="w-4 h-4 md:w-12 md:h-12" />
         {:else if playerState === 'paused'}
@@ -57,7 +57,7 @@
           <Pause class="w-4 md:w-6" />
         {/if}
       </button>
-      <button class="{baseBtnClasses}" on:click={handleNext}>
+      <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handleNext}>
         <SkipForward class="w-4 md:w-6" />
       </button>
     </div>
