@@ -246,8 +246,8 @@
   {#if labelsData && labelsData.length > 0}
     <div class="labels-container">
       {#each labelsData as label}
-        <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight) + verticalOffset}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
-          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-4xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
+        <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight)}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
+          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl md:text-4xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
             {label.text}
           </div>
         </div>
