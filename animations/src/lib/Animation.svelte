@@ -224,17 +224,7 @@
   }
 
   /* Label styles moved from +page.svelte */
-  .label {
-    color: white;
-    background-color: rgba(63, 63, 63, 1);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: sans-serif;
-    font-size: min(4vw, 4vh); /* Scales with viewport width */
-    text-align: center;
-    max-width: 100%;
-    white-space: pre-wrap;
-  }
+
   .labels-container {
     position: absolute;
     top: 50%;
@@ -257,7 +247,7 @@
     <div class="labels-container">
       {#each labelsData as label}
         <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight) + verticalOffset}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
-          <div id={label.id} class="label" style="opacity: 0;">
+          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-4xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
             {label.text}
           </div>
         </div>
