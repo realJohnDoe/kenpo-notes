@@ -60,25 +60,25 @@
         class="{baseBtnClasses} {inactiveBtnClasses}"
         on:click={handlePrev}
       >
-        <SkipBack class="w-4 md:w-6" />
+        <SkipBack class="w-4 lg:w-6" />
       </button>
       <button
         class="{baseBtnClasses} {inactiveBtnClasses}"
         on:click={handleToggle}
       >
         {#if playerState === 'finished'}
-          <RotateCcw class="w-4 md:w-6" />
+          <RotateCcw class="w-4 lg:w-6" />
         {:else if playerState === 'paused'}
-          <Play class="w-4 md:w-6" />
+          <Play class="w-4 lg:w-6" />
         {:else}
-          <Pause class="w-4 md:w-6" />
+          <Pause class="w-4 lg:w-6" />
         {/if}
       </button>
       <button
         class="{baseBtnClasses} {inactiveBtnClasses}"
         on:click={handleNext}
       >
-        <SkipForward class="w-4 md:w-6" />
+        <SkipForward class="w-4 lg:w-6" />
       </button>
     </div>
   </div>
