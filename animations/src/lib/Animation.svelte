@@ -229,14 +229,14 @@
   };
 </script>
 
-<div class="relative w-screen h-screen overflow-hidden">
-  <div class="w-full h-full">
+<div class="relative h-screen w-screen overflow-hidden">
+  <div class="h-full w-full">
     {@html svgContent}
   </div>
 
   {#if labelsData && labelsData.length > 0}
     <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(100vw,100vh)] h-[min(100vw,100vh)] pointer-events-none z-10"
+      class="pointer-events-none absolute top-1/2 left-1/2 z-10 h-[min(100vw,100vh)] w-[min(100vw,100vh)] -translate-x-1/2 -translate-y-1/2"
     >
       {#each labelsData as label}
         <div
@@ -247,7 +247,7 @@
         >
           <div
             id={label.id}
-            class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl lg:text-3xl max-w-full text-center whitespace-pre-wrap leading-normal"
+            class="bg-text-muted text-bg-light max-w-full rounded-md px-4 pt-1 pb-2 text-center text-2xl leading-normal whitespace-pre-wrap lg:text-3xl"
             style="opacity: 0;"
           >
             {label.text}

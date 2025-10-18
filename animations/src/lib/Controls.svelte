@@ -21,9 +21,9 @@
   const inactiveBtnClasses = 'text-text bg-bg-light hover:bg-bg-dark';
 </script>
 
-<div class="fixed inset-0 flex justify-center items-center pointer-events-none">
+<div class="pointer-events-none fixed inset-0 flex items-center justify-center">
   <div
-    class="relative pointer-events-auto"
+    class="pointer-events-auto relative"
     style="width: min(100vh, 100vw); height: min(100vh, 100vw);"
   >
     <!-- Speed Controls - Bottom Left -->
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Playback Controls - Bottom Right -->
-    <div class="absolute bottom-2 right-2 flex gap-3">
+    <div class="absolute right-2 bottom-2 flex gap-3">
       <button
         class="{baseBtnClasses} {inactiveBtnClasses}"
         on:click={handlePrev}
