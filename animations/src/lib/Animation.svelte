@@ -211,43 +211,19 @@
 </script>
 
 <style>
-  .animation-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    /* background-color: rgba(255, 0, 0, 0.2); */
-  }
-  .scaled-svg-wrapper {
-    width: 100%;
-    height: 100%;
-  }
-
   /* Label styles moved from +page.svelte */
-
-  .labels-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(100vw, 100vh);
-    height: min(100vw, 100vh);
-    pointer-events: none;
-    z-index: 1;
-    /* background-color: rgba(0, 255, 0, 0.2); */
-  }
 </style>
 
-<div class="animation-container">
-  <div class="scaled-svg-wrapper">
+<div class="relative w-screen h-screen overflow-hidden">
+  <div class="w-full h-full">
     {@html svgContent}
   </div>
 
   {#if labelsData && labelsData.length > 0}
-    <div class="labels-container">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(100vw,100vh)] h-[min(100vw,100vh)] pointer-events-none z-10">
       {#each labelsData as label}
         <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight)}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
-          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl md:text-4xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
+          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl lg:text-3xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
             {label.text}
           </div>
         </div>
