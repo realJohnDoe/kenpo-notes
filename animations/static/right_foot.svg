@@ -39,7 +39,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#00259f;fill-opacity:1;stroke:none;stroke-width:0.956;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       style="fill-opacity:1;stroke:none;stroke-width:0.956;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 10.379675,4.2067143 c 1.556148,-0.4901488 5.118957,0.659586 6.406025,2.007326 1.287068,1.34774 -0.823185,5.6327777 -1.403346,8.5216987 -0.580161,2.888922 -0.274504,7.616669 -2.992632,7.631086 -2.7326578,0.0145 -2.185574,-5.026751 -1.960957,-8.397226 C 10.541074,12.284358 9.8726682,9.6567919 9.5628702,8.6287819 9.2530717,7.6007721 8.8235271,4.6968634 10.379675,4.2067143 Z"
        id="path1"
        sodipodi:nodetypes="zzzsszz" />

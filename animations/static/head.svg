@@ -39,14 +39,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="opacity:0.999;fill:#117238;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       style="opacity:0.999;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
        id="path1"
        cx="13.229167"
        cy="13.229167"
        rx="4.0886998"
        ry="5.1380997" />
     <ellipse
-       style="opacity:0.999;fill:#117238;stroke-width:0.987709;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       style="opacity:0.999;stroke-width:0.987709;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
        id="path1-8"
        cx="13.229167"
        cy="13.229167"
@@ -54,7 +54,7 @@
        ry="5.4845996" />
     <path
        sodipodi:type="star"
-       style="opacity:0.999;fill:#117238;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       style="opacity:0.999;stroke-width:0.956;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
        id="path2"
        inkscape:flatsided="true"
        sodipodi:sides="3"

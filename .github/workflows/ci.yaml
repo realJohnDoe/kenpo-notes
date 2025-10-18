@@ -59,7 +59,7 @@ jobs:
             echo "Renaming: $file -> $newname"
             mv "$file" "$newname"
           done
-          
+
           # Also handle other invalid characters: ", <, >, |, *, ?
           find ./public -type f | while read -r file; do
             dir=$(dirname "$file")
@@ -117,6 +117,7 @@ jobs:
           if-no-files-found: error
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: [quartz-build, animations-build]
     environment:
       name: github-pages
@@ -140,7 +141,7 @@ jobs:
           # Verify artifacts exist
           ls -la ./public/
           ls -la ./animations-build/ || echo "No animations build found"
-          
+
           # Copy animations build to the appropriate path in the main build
           # We need to be selective to avoid overwriting the Quartz root page
           if [ -d "./animations-build" ] && [ "$(ls -A ./animations-build)" ]; then
@@ -171,7 +172,7 @@ jobs:
           else
             echo "No animations build to merge"
           fi
-          
+
           # Show final structure
           echo "Final build structure:"
           find ./public -type f | head -20

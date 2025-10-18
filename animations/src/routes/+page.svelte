@@ -37,6 +37,8 @@
   });
 </script>
 
+<h1 class="text-2xl font-bold underline text-red-500 p-8">Hello world!</h1>
+
 <div class="card"></div>
 
 <style>
