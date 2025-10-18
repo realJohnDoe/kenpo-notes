@@ -46,11 +46,11 @@
     <!-- Playback Controls - Bottom Right -->
     <div class="absolute bottom-5 right-5 flex gap-3">
       <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handlePrev}>
-        <SkipBack class="w-4 md:w-6 md:h-6" />
+        <SkipBack class="w-4 md:w-6" />
       </button>
       <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handleToggle}>
         {#if playerState === 'finished'}
-          <RotateCcw class="w-4 h-4 md:w-6 md:h-12" />
+          <RotateCcw class="w-4 h-4 md:w-6" />
         {:else if playerState === 'paused'}
           <Play class="w-4 md:w-6" />
         {:else}
