@@ -117,7 +117,7 @@ jobs:
           if-no-files-found: error
 
   deploy:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     needs: [quartz-build, animations-build]
     environment:
       name: github-pages
