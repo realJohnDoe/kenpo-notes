@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-primary: oklch(0.4 0.1 79); /* would be yellow-vineyard-800 */
   --color-primary-muted: oklch(0.5 0.1 79);
   --color-bg-dark: oklch(0.92 0.025 79);
   --color-bg: oklch(0.95 0.025 79);
-  --color-bg-light: oklch(0.98 .025 79);
+  --color-bg-light: oklch(0.98 0.025 79);
   --color-text: oklch(0.15 0.05 79);
   --color-text-muted: oklch(0.4 0.05 79);
   --color-border: oklch(0.6 0.05 79);
@@ -13,7 +13,7 @@
   --color-orange-leaves-700: oklch(0.53 0.15 55);
   --color-orange-leaves-800: oklch(0.42 0.12 55);
   --color-green-trees-700: oklch(0.51 0.17 133);
-  --color-green-trees-800: oklch(0.40 0.13 133);
+  --color-green-trees-800: oklch(0.4 0.13 133);
 }
 
 /* Global styles */

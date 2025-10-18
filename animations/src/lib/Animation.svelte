@@ -38,8 +38,8 @@
       screenHeight = window.innerHeight;
     });
 
-    mainTl = createTimeline({ 
-      autoplay: false, 
+    mainTl = createTimeline({
+      autoplay: false,
       loop: false,
       onComplete: () => {
         console.log('Timeline complete: setting playerState to finished');
@@ -59,13 +59,13 @@
     const allNavigablePoints = new Set<number>();
 
     // Add all startFrames
-    animationData.forEach(ad => allNavigablePoints.add(ad.startFrame));
+    animationData.forEach((ad) => allNavigablePoints.add(ad.startFrame));
 
     // Add end of last animation
     if (animationData.length > 0) {
-        const lastAnim = animationData[animationData.length - 1];
-        const endOfLastAnim = lastAnim.startFrame + lastAnim.durationToEndFrame;
-        allNavigablePoints.add(endOfLastAnim);
+      const lastAnim = animationData[animationData.length - 1];
+      const endOfLastAnim = lastAnim.startFrame + lastAnim.durationToEndFrame;
+      allNavigablePoints.add(endOfLastAnim);
     }
 
     // Add mainTl.duration
@@ -73,7 +73,7 @@
 
     stepStartTimes = [...allNavigablePoints].sort((a, b) => a - b);
     console.log('stepStartTimes', stepStartTimes);
-    
+
     goToStep(0);
   });
 
@@ -91,7 +91,10 @@
     }
 
     for (let i = 0; i < stepStartTimes.length; i++) {
-      if (time >= stepStartTimes[i] && (i === stepStartTimes.length - 1 || time < stepStartTimes[i+1])) {
+      if (
+        time >= stepStartTimes[i] &&
+        (i === stepStartTimes.length - 1 || time < stepStartTimes[i + 1])
+      ) {
         return i;
       }
     }
@@ -112,45 +115,53 @@
     console.log(`goToStep targetTime: ${targetTime}`);
 
     if (playerState === 'playing') {
-        mainTl.pause();
+      mainTl.pause();
     }
-    
 
     const proxy = { currentTime: mainTl.currentTime };
     animate(proxy, {
-        currentTime: targetTime,
-        duration: 300, // 300ms for a smooth transition
-        ease: 'easeInOutSine',
-        onUpdate: () => {
-            mainTl.seek(proxy.currentTime);
-            // Explicitly reset completed status after seeking
-            if (mainTl.completed) {
-                console.log(`goToStep update: mainTl.completed was true, setting to false.`);
-                mainTl.completed = false;
-            }
-        },
-        onComplete: () => {
-            const oldState = playerState;
-            if (targetTime >= mainTl.duration) {
-                playerState = 'finished';
-            } else {
-                playerState = 'paused';
-            }
-            console.log(`goToStep complete. playerState changed from '${oldState}' to '${playerState}'`);
+      currentTime: targetTime,
+      duration: 300, // 300ms for a smooth transition
+      ease: 'easeInOutSine',
+      onUpdate: () => {
+        mainTl.seek(proxy.currentTime);
+        // Explicitly reset completed status after seeking
+        if (mainTl.completed) {
+          console.log(
+            `goToStep update: mainTl.completed was true, setting to false.`
+          );
+          mainTl.completed = false;
         }
+      },
+      onComplete: () => {
+        const oldState = playerState;
+        if (targetTime >= mainTl.duration) {
+          playerState = 'finished';
+        } else {
+          playerState = 'paused';
+        }
+        console.log(
+          `goToStep complete. playerState changed from '${oldState}' to '${playerState}'`
+        );
+      }
     });
   };
 
   export const togglePlayPause = () => {
-    console.log(`togglePlayPause called. Current state: ${playerState}, timeline completed: ${mainTl.completed}`);
+    console.log(
+      `togglePlayPause called. Current state: ${playerState}, timeline completed: ${mainTl.completed}`
+    );
     if (playerState === 'playing') {
       mainTl.pause();
       playerState = 'paused';
-    } else { // paused or finished
-      if (playerState === 'finished') { // If finished, always restart
+    } else {
+      // paused or finished
+      if (playerState === 'finished') {
+        // If finished, always restart
         console.log('Player state is finished, restarting.');
         mainTl.restart();
-      } else { // paused
+      } else {
+        // paused
         mainTl.play();
       }
       playerState = 'playing';
@@ -160,20 +171,26 @@
   };
 
   export const goToPrevStep = () => {
-    console.log(`goToPrevStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`);
+    console.log(
+      `goToPrevStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`
+    );
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx - 1;
-    
+
     // Ensure targetStepIdx is not less than 0
     if (targetStepIdx < 0) {
       targetStepIdx = 0;
     }
-    console.log(`goToPrevStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`);
+    console.log(
+      `goToPrevStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`
+    );
     goToStep(targetStepIdx);
   };
 
   export const goToNextStep = () => {
-    console.log(`goToNextStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`);
+    console.log(
+      `goToNextStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`
+    );
     if (playerState === 'finished') {
       console.log('goToNextStep: player is finished, doing nothing.');
       return;
@@ -183,15 +200,17 @@
 
     // If targetStepIdx exceeds the last keyframe, go to the finished state
     if (targetStepIdx > stepStartTimes.length) {
-        targetStepIdx = stepStartTimes.length; // Index of the finished state
+      targetStepIdx = stepStartTimes.length; // Index of the finished state
     }
-    
+
     // ...
     goToStep(targetStepIdx);
     // NEW: If playerState is finished, reset mainTl.completed before seeking
     if (targetStepIdx == stepStartTimes.length - 1) {
-        console.log('goToStep: Resetting mainTl.completed to false before seeking from finished state.');
-        mainTl.completed = false;
+      console.log(
+        'goToStep: Resetting mainTl.completed to false before seeking from finished state.'
+      );
+      mainTl.completed = false;
     }
   };
 
@@ -201,18 +220,14 @@
     if (mainTl) {
       // Store current progress as ratio
       const currentProgress = mainTl.currentTime / mainTl.duration;
-      
+
       // Update the timeline's speed
       mainTl.speed = speed;
-      
+
       console.log(`Playback speed changed to ${speed}x`);
     }
   };
 </script>
-
-<style>
-  /* Label styles moved from +page.svelte */
-</style>
 
 <div class="relative w-screen h-screen overflow-hidden">
   <div class="w-full h-full">
@@ -220,10 +235,21 @@
   </div>
 
   {#if labelsData && labelsData.length > 0}
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(100vw,100vh)] h-[min(100vw,100vh)] pointer-events-none z-10">
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(100vw,100vh)] h-[min(100vw,100vh)] pointer-events-none z-10"
+    >
       {#each labelsData as label}
-        <div class="label-wrapper" style="position: absolute; top: {label.y * (svgRenderedSize / canvasHeight)}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;">
-          <div id={label.id} class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl lg:text-3xl max-w-full text-center whitespace-pre-wrap leading-normal" style="opacity: 0;">
+        <div
+          class="label-wrapper"
+          style="position: absolute; top: {label.y *
+            (svgRenderedSize /
+              canvasHeight)}px; left: 0; right: 0; display: flex; justify-content: center; transform: translateY(-50%); pointer-events: none;"
+        >
+          <div
+            id={label.id}
+            class="bg-text-muted text-bg-light pt-1 pb-2 px-4 rounded-md text-2xl lg:text-3xl max-w-full text-center whitespace-pre-wrap leading-normal"
+            style="opacity: 0;"
+          >
             {label.text}
           </div>
         </div>
@@ -231,3 +257,7 @@
     </div>
   {/if}
 </div>
+
+<style>
+  /* Label styles moved from +page.svelte */
+</style>

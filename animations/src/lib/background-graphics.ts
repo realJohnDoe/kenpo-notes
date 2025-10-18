@@ -64,9 +64,9 @@ export function generateLabels(
 
   let labelElems = '';
 
-  labels.forEach(label => {
+  labels.forEach((label) => {
     let x, y;
-    const angleRad = label.angle * Math.PI / 180;
+    const angleRad = (label.angle * Math.PI) / 180;
     x = centerX + radiusX * Math.cos(angleRad);
     y = centerY + radiusY * Math.sin(angleRad);
     labelElems += `<text x="${x}" y="${y}" text-anchor="${label.anchor}" dominant-baseline="${label.baseline}" class="txt">${label.text}</text>`;
