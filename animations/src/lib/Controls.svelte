@@ -63,7 +63,7 @@
         <SkipBack class="w-4 lg:w-6" />
       </button>
       <button
-        class="{baseBtnClasses} {inactiveBtnClasses}"
+        class="{baseBtnClasses} {playerState === 'playing' ? activeSpeedBtnClasses : inactiveBtnClasses}"
         on:click={handleToggle}
       >
         {#if playerState === 'finished'}
