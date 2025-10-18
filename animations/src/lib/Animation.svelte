@@ -247,7 +247,7 @@
         >
           <div
             id={label.id}
-            class="bg-text-muted text-bg-light max-w-full rounded-md px-2 lg:px-4 py-1 text-center text-lg leading-normal whitespace-pre-wrap lg:text-3xl"
+            class="bg-text-muted text-bg-light max-w-full rounded-md px-2 lg:px-4 py-1 text-center text-base leading-normal whitespace-pre-wrap lg:text-3xl"
             style="opacity: 0;"
           >
             {label.text}
