@@ -22,7 +22,7 @@
 <div class="fixed inset-0 flex justify-center items-center pointer-events-none">
   <div class="relative pointer-events-auto" style="width: min(100vh, 100vw); height: min(100vh, 100vw);">
     <!-- Speed Controls - Bottom Left -->
-    <div class="absolute bottom-5 left-5 flex gap-3">
+    <div class="absolute bottom-2 left-2 flex gap-3">
       <button
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 0.5 ? activeSpeedBtnClasses : inactiveBtnClasses}"
         on:click={() => handleSpeedChange(0.5)}
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Playback Controls - Bottom Right -->
-    <div class="absolute bottom-5 right-5 flex gap-3">
+    <div class="absolute bottom-2 right-2 flex gap-3">
       <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handlePrev}>
         <SkipBack class="w-4 md:w-6" />
       </button>
