@@ -50,7 +50,7 @@
       </button>
       <button class="{baseBtnClasses} {inactiveBtnClasses}" on:click={handleToggle}>
         {#if playerState === 'finished'}
-          <RotateCcw class="w-4 h-4 md:w-6" />
+          <RotateCcw class="w-4 md:w-6" />
         {:else if playerState === 'paused'}
           <Play class="w-4 md:w-6" />
         {:else}
