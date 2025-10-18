@@ -13,8 +13,8 @@
   const handleSpeedChange = (speed: number) => dispatch('speedChange', speed);
 
   const baseBtnClasses =
-    'w-8 h-8 md:w-12 md:h-12 rounded-lg flex justify-center items-center cursor-pointer shadow-md transition-all duration-200 ease-in-out hover:-translate-y-px hover:shadow-lg active:translate-y-0';
-  const speedBtnClasses = 'text-xs md:text-sm font-medium';
+    'w-8 h-8 lg:w-12 lg:h-12 rounded-lg flex justify-center items-center cursor-pointer shadow-md transition-all duration-200 ease-in-out hover:-translate-y-px hover:shadow-lg active:translate-y-0';
+  const speedBtnClasses = 'text-xs lg:text-lg font-medium';
   const activeSpeedBtnClasses =
     'bg-primary text-bg-light hover:bg-primary-muted active:bg-gray-600';
 
