@@ -29,26 +29,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "oklch(0.98 0.025 79)", //Background color of the page
+          lightgray: "#af9b7c", // used for lines around search bar and next to side bar and in graph view
+          gray: "#564527", // used in the search bar and for lines in graph view
+          darkgray: "oklch(0.15 0.05 79)", // used for normal text
+          dark: "#160700", // used for unselected links in side bar and for unselected nodes in graph view
+          secondary: "#ab4e00", // orange-leaves-700, used for center of graph and for wikilink texts
+          tertiary: "#3b7800", // green-trees-700, used for clicked nodes in the graph and the selected item in the side bar
+          highlight: "oklch(0.95 0.025 79)", // Used as background for wikilinks
+          textHighlight: "#0000ff",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "oklch(0.1 0.025 79)", // bg-dark from ui-colors
+          lightgray: "#3b2b0d", // border-muted from ui-colors
+          gray: "#c2ae8e", //text-muted from ui-colors
+          darkgray: "oklch(0.96 0.05 79)", //text from ui-colors
+          dark: "#ffefcd", // also text from ui-colors
+          secondary: "#ecaf3c", // yellow-vineyard-400
+          tertiary: "#9dc900", // yellow-vineyard-500
+          highlight: "oklch(0.2 0.025 79)",
+          textHighlight: "#0000ff",
         },
       },
     },
@@ -89,7 +89,7 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // Plugin.CustomOgImages(),
     ],
   },
 }
