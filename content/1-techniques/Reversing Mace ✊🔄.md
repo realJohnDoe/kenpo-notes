@@ -12,7 +12,7 @@
     - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 2. - [[Left ⬅️]] [[Outward 🔼]] [[Parry 🤺]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 3. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
-4. - [[Right ➡️]] [[Downward ⬇️]] looping [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
+4. - [[Right ➡️]] Looping [[Downward ⬇️]] [[Kick 🦶💥]] [[To 🎯]] the back of [[Their Left ➡️]] [[Knee 🦵]]
 5. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

@@ -18,5 +18,5 @@ Rear Double [[Arm 💪]] Bar ([[6-locks-and-chokes|Web of Knowledge: Locks & Cho
 5. - [[Right ➡️]] [[Uppercut Punch 🔝✊💥]] [[To 🎯]] the back of their [[Pin 📌|Pinned 📌]] [[Left ⬅️]] [[Elbow 💪]]
 6. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] their belly
 7. - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their [[Left ⬅️]] [[Elbow 💪]]
-8. - [[Right ➡️]] [[Downward ⬇️]] [[Roundhouse 🔄]] [[Kick 🦶💥]] [[To 🎯]] the back of their [[Left ⬅️]] [[Knee 🦵]]
+8. - [[Right ➡️]] Looping [[Downward ⬇️]] [[Kick 🦶💥]] [[To 🎯]] the back of their [[Left ⬅️]] [[Knee 🦵]]
 9. - [[Cover Right before Left 🦶🔄]] toward s [[900 ⬅️]]

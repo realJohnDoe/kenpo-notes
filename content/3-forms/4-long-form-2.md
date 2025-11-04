@@ -79,6 +79,6 @@ title: Long Form 2
 	    - [[Left ⬅️]] [[Upward ⬆️]] Backward [[Punch 👊💥]]
 	8. - Greeting
 
-## Animation ✨
+## Animation ✨ CC
 
-<iframe src="https://realjohndoe.github.io/kenpo-notes/animation/long-form-2" width="100%" height="400"></iframe>
+<iframe src="https://realjohndoe.github.io/kenpo-notes/animation/long-form-2" width="100%"></iframe>
