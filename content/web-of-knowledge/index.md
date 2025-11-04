@@ -16,7 +16,7 @@ title: Web of Knowledge
 	- [[5-holds-and-hugs|Holds and Hugs 🫂]]
 		- [[Captured Twigs 🕸️🌿]] ([[5]])
 	- [[6-locks-and-chokes|Locks & Chokes 🔒]]
-		- [[Grasp of Death 🔒💀]] ([[9]])
+		- [[Grasp of Death 🔒💀]] ([[6]])
 	- [[7-weapons|Weapons 🗡️]]
 		- [[Checking the Storm ✔️⛈️]] ([[7]])
 - [[2. Orange Belt 🟠|Orange Belt 🟠]]
