@@ -51,4 +51,4 @@ title: Web of Knowledge
 		- [[Locked Wing 🔒🪽]] ([[17]])
 		- [[Twisted Twig 🔀🌿]] ([[21]])
 
-[[Inspired by](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]
+[[Inspired by this Table](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]
