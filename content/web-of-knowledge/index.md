@@ -19,10 +19,36 @@ title: Web of Knowledge
 		- [[Grasp of Death 🔒💀]] ([[9]])
 	- [[7-weapons|Weapons 🗡️]]
 		- [[Checking the Storm ✔️⛈️]] ([[7]])
-
-|                                           | [[1-grabs-and-tackles\|Grabs and Tackles 🤝]]                                                                                                                                          | [[2-pushes\|Pushes ✋]]                                                                                         | [[3-punches\|Punches 👊]]                                                                                                                                                               | [[4-kicks\|Kicks 🦶]]                                                       | [[5-holds-and-hugs\|Holds and Hugs 🫂]]                                                                                                                                                                   | [[6-locks-and-chokes\|Locks & Chokes 🔒]]                                                                                                    | [[7-weapons\|Weapons 🗡️]]          |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **[[1. Yellow Belt 🟡\|Yellow Belt 🟡]]** | - [[Delayed Sword ⏰⚔️]] ([[1]])<br>- [[Mace of Aggression ✊↔️]] ([[8]])<br>- [[Sword and Hammer ⚔️🔨]] ([[10]])                                                                        | [[Alternating Maces 🔄✊]] ([[2]])                                                                              | - [[Sword of Destruction ⚔️💥]] ([[3]])<br>-  [[Attacking Mace 💥✊]] ([[9]])                                                                                                            | [[Deflecting Hammer 🤺🔨]] ([[4]])                                          | [[Captured Twigs 🕸️🌿]] ([[5]])                                                                                                                                                                          | [[Grasp of Death 🔒💀]] ([[6]])                                                                                                              | [[Checking the Storm ✔️⛈️]] ([[7]]) |
-| **[[2. Orange Belt 🟠\|Orange Belt 🟠]]** | - [[Clutching Feathers 👐🪶]] ([[1]])<br>- [[Lone Kimono 1️⃣👘]] ([[7]])<br>- [[Crossing Talon ❌🦅]] ([[13]])<br>- [[Obscure Wing 🌑🪽]] ([[18]])<br>- [[Obscure Sword 🌑⚔️]] ([[22]]) | - [[Triggered Salute 🔫🫡]] ([[2]])<br>- [[Glancing Salute 👀🫡]] ([[8]])<br>- [[Repeating Mace ↔️✊]] ([[14]]) | - [[Dance of Death 💃💀]] ([[3]])<br>- [[Five Swords 5️⃣⚔️]] ([[9]])<br>- [[Shielding Hammer 🛡️🔨]] ([[15]])<br>- [[Reversing Mace ✊🔄]] ([[19]])<br>- [[Raining Claw 🌧️🐯]] ([[23]]) | - [[Thrusting Salute 🗡️🫡]] ([[4]])<br>- [[Buckling Branch ⤴️🌳]] ([[10]]) | - [[Gift of Destruction 🎁💥]] ([[5]])<br>- [[Scraping Hoof ⬇️🐎]] ([[11]])<br>- [[Striking Serpent's Head 🎳🐍]] ([[16]])<br>- [[Thrusting Prongs 🗡️🍴]] ([[20]])<br>- [[Crashing Wings 💥🪽]] ([[24]]) | - [[Locking Horns 🔒🦌]] ([[6]])<br>- [[Grip of Death 🧤💀]] ([[12]])<br>- [[Locked Wing 🔒🪽]] ([[17]])<br>- [[Twisted Twig 🔀🌿]] ([[21]]) |                                     |
+- [[2. Orange Belt 🟠|Orange Belt 🟠]]
+	- [[1-grabs-and-tackles|Grabs and Tackles 🤝]]
+		- [[Clutching Feathers 👐🪶]] ([[1]])
+		- [[Lone Kimono 1️⃣👘]] ([[7]])
+		- [[Crossing Talon ❌🦅]] ([[13]])
+		- [[Obscure Wing 🌑🪽]] ([[18]])
+		- [[Obscure Sword 🌑⚔️]] ([[22]])
+	- [[2-pushes|Pushes ✋]]
+		- [[Triggered Salute 🔫🫡]] ([[2]])
+		- [[Glancing Salute 👀🫡]] ([[8]])
+		- [[Repeating Mace ↔️✊]] ([[14]])
+	- [[3-punches|Punches 👊]]
+		- [[Dance of Death 💃💀]] ([[3]])
+		- [[Five Swords 5️⃣⚔️]] ([[9]])
+		- [[Shielding Hammer 🛡️🔨]] ([[15]])
+		- [[Reversing Mace ✊🔄]] ([[19]])
+		- [[Raining Claw 🌧️🐯]] ([[23]])
+	- [[4-kicks|Kicks 🦶]]
+		- [[Thrusting Salute 🗡️🫡]] ([[4]])
+		- [[Buckling Branch ⤴️🌳]] ([[10]])
+	- [[5-holds-and-hugs|Holds and Hugs 🫂]]
+		- [[Gift of Destruction 🎁💥]] ([[5]])
+		- [[Scraping Hoof ⬇️🐎]] ([[11]])
+		- [[Striking Serpent's Head 🎳🐍]] ([[16]])
+		- [[Thrusting Prongs 🗡️🍴]] ([[20]])
+		- [[Crashing Wings 💥🪽]] ([[24]])
+	- [[6-locks-and-chokes|Locks & Chokes 🔒]]
+		- [[Locking Horns 🔒🦌]] ([[6]])
+		- [[Grip of Death 🧤💀]] ([[12]])
+		- [[Locked Wing 🔒🪽]] ([[17]])
+		- [[Twisted Twig 🔀🌿]] ([[21]])
 
 [[Inspired by](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]
