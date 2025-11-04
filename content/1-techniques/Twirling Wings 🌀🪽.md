@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Two Hand Choke from the Back]] ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[1]])
+[[Two Hand Choke from the Back]] ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles 🤝]], [[1]])
 
 ## Steps 👣
 
