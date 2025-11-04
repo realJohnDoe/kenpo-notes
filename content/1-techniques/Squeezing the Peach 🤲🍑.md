@@ -13,7 +13,7 @@
     - Grab [[To 🎯|🎯]] opponent's groin protection
 2. - Step forward with [[Left ⬅️]] [[Foot 🦶]] into [[Left ⬅️]] half [[Neutral Bow 0️⃣🧍‍♂️]]
     - Pull [[To 🎯|🎯]] groin protection with us
-    - [[Right ➡️]] heel [[Scoop Kick 🥄🦶💥]]
+    - [[Right ➡️]] rear heel [[Scoop Kick 🥄🦶💥]]
 3. - Put [[Right ➡️]] [[Foot 🦶]] down at [[600 ⬇️]]
     - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
 4. - [[Cover Right before Left 🦶🔄]] towards [[1200 ⬆️]]
