@@ -18,6 +18,6 @@ Front [[Arm 💪]] Lock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes �
 6. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
 7. - [[Left ⬅️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
 8. - [[Right ➡️]] [[Foot 🦶]] back again into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - Turn [[🎯]] their [[Arm 💪]] so the [[Elbow 💪]] faces downward
+    - Turn [[To 🎯|🎯]] their [[Arm 💪]] so the [[Elbow 💪]] faces downward
 9. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] their [[Elbow 💪]]
 10. - [[Cover Right before Left 🦶🔄]] towards [[600 ⬇️]]

@@ -1,3 +1,4 @@
-- [[Mace of Aggression ✊↔️]]
-- [[Twisted Twig 🔀🌿]]
-- [[Triggered Salute 🔫🫡]]
+- [[1. Yellow Belt 🟡|Yellow Belt 🟡]]: [[Mace of Aggression ✊↔️]]
+- [[2. Orange Belt 🟠|Orange Belt 🟠]], [[2]]: [[Triggered Salute 🔫🫡]]
+- [[2. Orange Belt 🟠|Orange Belt 🟠]], [[21]]: [[Twisted Twig 🔀🌿]]
+- [[4. Blue Belt 🔵|Blue Belt 🔵]]: [[Gripping Talon 🧤🦅]]

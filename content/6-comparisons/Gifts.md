@@ -1,0 +1,3 @@
+- [[2. Orange Belt 🟠|Orange Belt 🟠]]: [[Gift of Destruction 🎁💥]]
+- [[3. Purple Belt 🟣|Purple Belt 🟣]]: [[Gift in Return 🎁🔄]]
+- [[4. Blue Belt 🔵|Blue Belt 🔵]]: [[Gift of Destiny 🎁🔮]]

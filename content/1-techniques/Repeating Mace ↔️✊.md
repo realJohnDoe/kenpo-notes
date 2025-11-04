@@ -12,7 +12,7 @@ Push with the [[Their Left ➡️]] [[Hand ✋]] ([[2-pushes|Web of Knowledge: P
     - [[Left ⬅️]] [[Waiter Check 🧑‍🍳]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] strike [[To 🎯]] [[Their Left ➡️]] kidney
 2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] [[Their Left ➡️]] rib cage
-3. - [[Right ➡️]] [[Inward 🔽]] diagonal [[Roundhouse Kick 🔄🦶💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
+3. - [[Right ➡️]] Looping [[Downward ⬇️]] [[Kick 🦶💥]] [[To 🎯]] the back of [[Their Left ➡️]] [[Knee 🦵]]
 4. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
 
 ## Alternative Video

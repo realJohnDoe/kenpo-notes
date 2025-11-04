@@ -15,5 +15,5 @@
     - [[Left ⬅️]] [[Hand ✋]] checks their [[Right ➡️]] [[Arm 💪]]
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪💥]]
 4. - [[Right ➡️]] [[Wide Kneel ↔️🧎]]
-    - [[Right ➡️]] [[Downward ⬇️]] [[Handsword ✋⚔️💥]] [[To 🎯]] their right [[Knee 🦵]]
+    - [[Right ➡️]] [[Downward ⬇️]] [[Handsword ✋⚔️💥]] [[To 🎯]] [[Their Right ⬅️]] [[Knee 🦵]]
 5. - [[Right ➡️]] [[Inward 🔽]] [[Handsword ✋⚔️💥]] [[To 🎯]] their [[Groin 🩲]]

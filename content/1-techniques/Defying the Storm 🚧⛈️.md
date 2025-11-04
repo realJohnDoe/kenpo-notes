@@ -17,7 +17,7 @@
     - Turn your [[Left ⬅️]] [[Hand ✋]] from the block position into grabbing [[To 🎯|🎯]] [[Their Right ⬅️]] lower [[Arm 💪]]
 4. - [[Right ➡️]] [[Foot 🦶]] back towards [[430 ↘️]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Hand ✋]] pulls down [[To 🎯|🎯]] their shoulder to bend them forward
-    - [[Left ⬅️]] [[Hand ✋]] pushes up [[🎯]] their [[Arm 💪]] into a shoulder lock
+    - [[Left ⬅️]] [[Hand ✋]] pushes up [[To 🎯|🎯]] their [[Arm 💪]] into a shoulder lock
 5. - [[Left ⬅️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
     - [[Right ➡️]] [[Hand ✋]] circles downwards [[counter-clockwise 🔄]]
 6. - [[Right ➡️]] [[Downward ⬇️]] [[Elbow 💪💥]] [[To 🎯]] their spine
