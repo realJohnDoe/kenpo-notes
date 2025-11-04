@@ -17,4 +17,4 @@
 5. - [[Right ➡️]] rear heel [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Groin 🩲]]
 6. - Buckle back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] backward [[Elbow 💪💥]]
-7. [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
+7. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
