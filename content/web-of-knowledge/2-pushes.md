@@ -1,3 +1,5 @@
 ---
-alias: "Web of Knowledge: Pushes ✋"
+aliases:
+  - "Web of Knowledge: Pushes ✋"
+  - Pushes ✋
 ---

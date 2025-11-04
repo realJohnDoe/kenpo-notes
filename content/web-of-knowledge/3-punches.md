@@ -1,3 +1,5 @@
 ---
-alias: "Web of Knowledge: Punches 👊"
+aliases:
+  - "Web of Knowledge: Punches 👊"
+  - Punches 👊
 ---
