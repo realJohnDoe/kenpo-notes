@@ -7,4 +7,4 @@ title: Web of Knowledge
 | <th>[[1. Yellow Belt 🟡\|Yellow Belt 🟡]]</th> | - [[Delayed Sword ⏰⚔️]]<br>- [[Mace of Aggression ✊↔️]]<br>- [[Sword and Hammer ⚔️🔨]] | [[Alternating Maces 🔄✊]] | - [[Sword of Destruction ⚔️💥]]<br>-  [[Attacking Mace 💥✊]] | [[Deflecting Hammer 🤺🔨]] | [[Captured Twigs 🕸️🌿]]                | [[Grasp of Death 🔒💀]]                   | [[Checking the Storm ✔️⛈️]] |     |
 | <th>[[2. Orange Belt 🟠\|Orange Belt 🟠]]</th> |                                                                                        |                           |                                                              |                            |                                         |                                           |                             |     |
 
-^[[Source](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]
+[[Source](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]
