@@ -1,4 +1,3 @@
-- [[Attacking Mace 💥✊]]
 - [[Checking the Storm ✔️⛈️]]
 - [[Alternating Maces 🔄✊]]
 - [[Raining Claw 🌧️🐯]]

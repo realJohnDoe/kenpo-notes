@@ -8,7 +8,7 @@ Rear Double [[Arm 💪]] Bar ([[6-locks-and-chokes|Web of Knowledge: Locks & Cho
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] [[Hand ✋]] grabs [[To 🎯|🎯]] their [[Left ⬅️]] thigh
+1. - [[Left ⬅️]] [[Hand ✋]] squeezes [[To 🎯|🎯]] their [[Left ⬅️]] thigh
     - [[Left ⬅️]] [[Foot 🦶]] stomps on [[To 🎯|🎯]]  their [[Left ⬅️]] [[Foot 🦶]]
 2. - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] [[To 🎯]] their chin
     - [[Right ➡️]] [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Groin 🩲]]

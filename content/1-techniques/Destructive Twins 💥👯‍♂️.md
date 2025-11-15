@@ -15,7 +15,7 @@ Two-handed choke ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], 
     - [[Right ➡️]] [[Hand ✋]] checks [[Their Left ➡️]] [[Arm 💪]]
     - [[Left ⬅️]] Fist [[Downward ⬇️]] in between their [[Arm 💪]]s
 3. - [[Left ⬅️]] [[Outward 🔼]] [[Block 🛡️]]
-4. - [[Left ⬅️]] hand pokes to their eyes
+4. - [[Left ⬅️]] [[Hand ✋]] pokes to their eyes
 5. - Turn into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊💥]]
 6. [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]

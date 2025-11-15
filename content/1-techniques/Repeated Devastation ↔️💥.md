@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Full Nelson 🤼‍♂️🗜️]] ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[5]])
+[[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Holds and Hugs 🫂]], [[5]])
 
 ## Steps 👣
 

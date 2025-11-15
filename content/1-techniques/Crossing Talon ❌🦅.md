@@ -8,11 +8,12 @@
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] Foot forward
+1. - Turn your [[Right ➡️]] hand [[clockwise 🔃]] and grab [[To 🎯|🎯]] their Wrist
+    - [[Left ⬅️]] [[Foot 🦶]] forward
     - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]] into [[Arm 💪]] lock
 2. - [[Left ⬅️]] [[Elbow 💪💥]] [[To 🎯]] opponent's [[Face 😐]]
 3. - Tilt [[🎯]] their head
-4. - Ram [[Left ⬅️]] [[Elbow 💪💥]] down [[To 🎯|🎯]] the spine
+4. - Ram [[Left ⬅️]] [[Elbow 💪💥]] down [[To 🎯|🎯]] the Spine
 5. - [[Left ⬅️]] [[Downward ⬇️]] [[Elbow 💪💥]] strike
 6. - [[Right ➡️]] [[Knee 🦵💥]] [[To 🎯]] their [[Face 😐]]
 
