@@ -17,4 +17,4 @@ Two-Handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
     - Pull [[Their Right ⬅️]] hand either to our front or our back to break their balance
 5. - [[Left ⬅️]] Back [[Kick 🦶💥]]
 6. - [[Right ➡️]] Back [[Kick 🦶💥]]
-7. - [[Cover Right before Left 🦶🔄]] towards [[430]]
+7. - [[Cover Right before Left 🦶🔄]] towards [[430 ↘️]]
