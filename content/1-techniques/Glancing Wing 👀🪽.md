@@ -19,3 +19,4 @@
 6. - Turn into [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Face 😐]]
 7. - Compound Strike: Follow up directly with [[Right ➡️]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
+8. - [[Cover Right before Left 🦶🔄]] towards [[600 ⬇️]]
