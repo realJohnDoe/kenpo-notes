@@ -11,5 +11,5 @@
 1. Check
 2. [[Left ⬅️]] [[Foot 🦶]] forward towards [[1200 ⬆️]]
 3. [[Right ➡️]] [[Handsword ✋⚔️💥]] [[To 🎯]] their neck
-4. [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
-5. Pull [[Left ⬅️]] [[Foot 🦶]] back, drag [[Right ➡️]] [[Foot 🦶]]
+4. [[Left ⬅️]] [[Front Kick 🔼🦶💥]]
+5. Pull [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]], drag [[Right ➡️]] [[Foot 🦶]]

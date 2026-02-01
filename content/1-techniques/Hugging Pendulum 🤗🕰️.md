@@ -4,11 +4,11 @@
 
 ## Defense Against 🤺
 
-[[Their Right ⬅️]] [[Side Kick ➡️🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Their Right ⬅️]] [[Side Kick ➡️🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]]) while we are in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 
 ## Steps 👣
 
-1. - Shuffle back in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - Shuffle [[Backward 🔽|Back 🔽]] in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Block 🛡️]]
 2. - [[Left ⬅️]] [[Foot 🦶]] crosses into Twist Stance
     - [[Right ➡️]] [[Hand ✋]] towards [[Left ⬅️]] hip to load , hugging ourselves, thus the name

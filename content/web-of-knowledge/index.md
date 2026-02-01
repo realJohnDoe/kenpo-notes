@@ -34,7 +34,7 @@ title: Web of Knowledge
 		- [[Dance of Death 💃💀]] ([[3]])
 		- [[Five Swords 5️⃣⚔️]] ([[9]])
 		- [[Shielding Hammer 🛡️🔨]] ([[15]])
-		- [[Reversing Mace ✊🔄]] ([[19]])
+		- [[Reversing Mace 🔄✊]] ([[19]])
 		- [[Raining Claw 🌧️🐯]] ([[23]])
 	- [[4-kicks|Kicks 🦶]]
 		- [[Thrusting Salute 🗡️🫡]] ([[4]])

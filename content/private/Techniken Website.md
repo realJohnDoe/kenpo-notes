@@ -47,7 +47,7 @@ cf. [Fresno Kenpo Karate](https://fresnokenpokarate.com/training-video/)
 42. bl8: [[Raking Mace 🧹✊]] (again)
 43. o23: [[Raining Claw 🌧️🐯]]
 44. o14: [[Repeating Mace ↔️✊]]
-45. o19: [[Reversing Mace ✊🔄]]
+45. o19: [[Reversing Mace 🔄✊]]
 46. o11: [[Scraping Hoof ⬇️🐎]]
 47. bl10: [[Shield and Mace 🛡️✊]]
 48. l16: [[Shield and Sword 🛡️⚔️]]

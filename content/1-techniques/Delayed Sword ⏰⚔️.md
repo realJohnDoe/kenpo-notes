@@ -8,10 +8,10 @@
 
 ## Steps 👣
 
-1.  - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1.  - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
-3.  - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+3.  - [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 4.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Outward 🔼]] [[Handsword ✋⚔️💥]]
 5.  - [[Cover Right before Left 🦶🔄]]

@@ -8,9 +8,9 @@
 
 ## Steps 👣
 
-1.  - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
+1.  - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
-2.  - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+2.  - [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 3.  - [[Right ➡️]] [[Inward 🔽]] [[Handsword ✋⚔️💥]]
 4.  - [[Cover Right before Left 🦶🔄]]
 

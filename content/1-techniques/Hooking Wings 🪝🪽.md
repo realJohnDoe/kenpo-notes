@@ -8,9 +8,9 @@ Low Two-handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[15]])
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Both [[Hand ✋]]s defend [[Downward ⬇️]] in a hook shape
-2. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+2. - [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 3. - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]]
 4. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]]
 5. - Shuffle forward

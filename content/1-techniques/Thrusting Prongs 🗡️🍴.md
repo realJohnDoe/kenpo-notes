@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. - [[Right ➡️]] [[Foot 🦶]] back into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
+1. - [[Right ➡️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Push Thumbs [[To 🎯|Into 🎯]] opponent's lower zone
 2. - [[Left ⬅️]] [[Hand ✋]] twists around [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]]
 3. - [[Right ➡️]] [[Knee 🦵💥]]

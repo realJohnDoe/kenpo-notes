@@ -9,7 +9,7 @@
 
 1. - [[Left ⬅️]] [[Foot 🦶]] forward into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
-2. - Turn into Reverse Bow
+2. - Turn into [[Reverse Bow 🔄🧍‍♂️]]
     - [[Right ➡️]] snaps up to break [[To 🎯|🎯]]their [[Elbow 💪]]
 3. - Turn back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their face

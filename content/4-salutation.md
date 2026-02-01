@@ -11,8 +11,7 @@ alias: Salutation
 
 > The scholar and the warrior united go forward...
 
-- [[Right ➡️]]
-  foot forward
+- [[Right ➡️]] foot forward
 - Left hand wraps around right fist above right shoulder
 
 > ...into battle...
@@ -22,13 +21,12 @@ alias: Salutation
 
 > ...back to back...
 
-- Left foot goes back
-- Pull hands back with the palms facing [[Outward 🔼]]
+- Left foot goes [[Backward 🔽|Back 🔽]]
+- Pull hands [[Backward 🔽|Back 🔽]] with the palms facing [[Outward 🔼]]
 
 > ...to pull their countries together.
 
-- [[Right ➡️]]
-  foot back as well
+- [[Right ➡️]] foot [[Backward 🔽|Back 🔽]] as well
 - "Roll" hands to the hips
 
   > They present no arms or weapons...

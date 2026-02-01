@@ -8,11 +8,11 @@ Two-Handed Push ([[2-pushes|Web of Knowledge: Pushes ✋]], [[9]])
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Inward 🔽]] [[Parry 🤺]]
 2. - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Parry 🤺]]
-3. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+3. - [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 4. - Land in [[Right ➡️]] Front Crossover
     - Pull [[Their Right ⬅️]] hand either to our front or our back to break their balance
 5. - [[Left ⬅️]] Back [[Kick 🦶💥]]

@@ -7,13 +7,13 @@ The salutes all involve a [[Right ➡️]] [[Heel Palm ✋🌴💥]] strike
 ## [[Glancing Salute 👀🫡]]
 
 - Against push with right hand to [[To 🎯|🎯]] right shoulder
-- Heel palm strike comes after blocking in reverse bow
+- Heel palm strike comes after blocking in [[Reverse Bow 🔄🧍‍♂️]]
 ## [[Triggered Salute 🔫🫡]]
 
 - Against push with right hand to [[🎯]] left shoulder
 - Only arm techniques starting with [[Right ➡️]] [[Heel Palm ✋🌴💥]] strike
 ## [[Thrusting Salute 🗡️🫡]]
 
-- Against [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+- Against [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 - Involves a kick after a [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]]
 - [[Heel Palm ✋🌴💥]] at the end

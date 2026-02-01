@@ -9,13 +9,13 @@ Hammerlock ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], [[24]]
 ## Steps 👣
 
 1. - Grab [[🎯]] opponent's [[Hand ✋]] behind your back with your [[Right ➡️]] [[Hand ✋]]
-    - [[Left ⬅️]] [[Foot 🦶]] back into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+    - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into half [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Try [[Left ⬅️]] [[Outward 🔼]] [[Elbow 💪💥]], but it gets checked
 2. - [[Left ⬅️]] [[Foot 🦶]] forward towards [[1200 ⬆️]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
-3. - [[Right ➡️]] back [[Kick 🦶💥]]
+3. - [[Right ➡️]] [[Back Kick 🔽🦶💥]]
 4. - Land with [[Right ➡️]] [[Foot 🦶]] at [[730 ↙️]] in a [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 	- Hit [[To 🎯|🎯]] their [[Elbow 💪]] with a [[Left ⬅️]] [[Heel Palm ✋🌴💥]]
-5. - [[Left ⬅️]] [[Front Kick ⬆️🦶💥]]
-6. - Land with [[Left ⬅️]] [[Foot 🦶]] at [[1030 ↖️]] in [[Twist Stance 🔄🧍‍♂️]] left before right
+5. - [[Left ⬅️]] [[Front Kick 🔼🦶💥]]
+6. - Land with [[Left ⬅️]] [[Foot 🦶]] at [[1030 ↖️]] in [[Twist Stance 🌀🧍‍♂️]] left before right
 7. - Push [[Left ⬅️]] fist [[To 🎯|Into 🎯]] their [[Elbow 💪]] to bring them down
 8. - [[Cover Left before Right 🦶🔃]]

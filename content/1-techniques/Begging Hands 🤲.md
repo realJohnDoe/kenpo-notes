@@ -8,10 +8,10 @@ Both our [[Hand ✋]]s are grabbed at their wrists ([[1-grabs-and-tackles|Web of
 
 ## Steps 👣
 
-1. - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Turn [[Hand ✋]]s with their palms [[Upward ⬆️]]s into a begging position
 2. - [[Right ➡️]] [[Cat Stance🐈🧍‍♂️]]
-3. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]] [[To 🎯]] their [[Groin 🩲]]
+3. - [[Right ➡️]] [[Front Kick 🔼🦶💥]] [[To 🎯]] their [[Groin 🩲]]
 4. - [[Left ⬅️]] [[Chicken Kick 🐔🦶💥]] [[To 🎯]] their upper zone
 5. - Land in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - Twin [[Heel Palm ✋🌴💥]] [[To 🎯]] their ribs

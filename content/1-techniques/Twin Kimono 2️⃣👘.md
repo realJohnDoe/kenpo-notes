@@ -9,7 +9,7 @@ Two-Hand Lapel Grab ([[1-grabs-and-tackles|Web of Knowledge: Grabs and Tackles �
 ## Steps 👣
 
 1. - Pin [[To 🎯|🎯]] opponents [[Hand ✋]]s 
-    - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
+    - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]]
 2. - [[Left ⬅️]] [[Foot 🦶]] [[counter-clockwise 🔄]] towards [[430 ↘️]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] [[Outward 🔼]] horizontal [[Back Knuckle 🔙✊💥]]

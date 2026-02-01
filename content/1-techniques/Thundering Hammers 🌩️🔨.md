@@ -18,7 +18,7 @@
     - [[Left ⬅️]] [[Downward ⬇️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Left ⬅️]] kidney
 4. - Check [[To 🎯|🎯]] their [[Right ➡️]] shoulder with [[Left ⬅️]] [[Hand ✋]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their neck
-5. - [[Left ⬅️]] [[Foot 🦶]] back towards [[600 ⬇️]]
+5. - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] towards [[600 ⬇️]]
     - Turn [[To 🎯|🎯]] their head towards us
 6. - [[Downward ⬇️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their head
 7. - [[Upward ⬆️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] their face

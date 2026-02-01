@@ -13,10 +13,10 @@
     - [[Right ➡️]] [[Inward 🔽]] [[Elbow 💪]]
 3. - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪]] [[To 🎯]] their chin
 4. - Grab [[Their Right ⬅️]] [[Hand ✋]] like a bike grip
-5. - [[Right ➡️]] foot back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+5. - [[Right ➡️]] foot [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 6. - Turn [[Left ⬅️]] [[Hand ✋]] in place and grab [[Their Right ⬅️]] wrist from the bottom
 7. - Turn [[Right ➡️]] hand in place so fingers face upwards
 8. - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] to break their wrist
-9. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+9. - [[Right ➡️]] [[Front Kick 🔼🦶💥]]
 10. - Land back in [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]

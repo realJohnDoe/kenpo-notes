@@ -33,14 +33,14 @@ title: Long Form 2
 	7. Move [[Left ⬅️]] [[Foot 🦶]] [[counter-clockwise 🔄]] to face [[430 ↘️]]
 		1. [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]] into left overhead [[Back Knuckle 🔙✊💥]]
 		2. [[Right ➡️]] [[Straight Punch ↕️👊💥]]
-		3. [[Left ⬅️]] [[Straight Punch ↕️👊💥]] and [[Right ➡️]] [[Front Kick ⬆️🦶💥]] at the same time
+		3. [[Left ⬅️]] [[Straight Punch ↕️👊💥]] and [[Right ➡️]] [[Front Kick 🔼🦶💥]] at the same time
 		4. Land with [[Right ➡️]] [[Uppercut Punch 🔝✊💥]]
 	8. Same with right toward [[730 ↙️]]
 2. Part II
 	1. Towards [[130 ↗️]]
 		1. - [[Left ⬅️]] [[Foot 🦶]] crosses in front into [[Left ⬅️]] Twist Stance
 	        - [[Right ➡️]] Fist knocks on [[To 🎯|🎯]] their nose
-		2. Unwind the [[Twist Stance 🔄🧍‍♂️]] by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
+		2. Unwind the [[Twist Stance 🌀🧍‍♂️]] by stepping with [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
 	        - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]] [[To 🎯]] their chin
 		3. - [[Left ⬅️]] poke [[To 🎯]] their eye
 		4. - [[Right ➡️]] poke [[To 🎯]] their eye
@@ -53,7 +53,7 @@ title: Long Form 2
 	        - [[Right ➡️]] [[Outward 🔼]] vertical [[Back Knuckle 🔙✊💥]]
 	4. Same towards [[430 ↘️]] starting with [[Right ➡️]] [[Foot 🦶]]
 	5. [[Right ➡️]] towards [[730 ↙️]]
-		-  [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[130 ↗️]]
+		-  [[Right ➡️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[130 ↗️]]
 		- [[Left ⬅️]] [[Downward ⬇️]] [[Block 🛡️]] but circle on [[counter-clockwise 🔄]] into a [[Back Knuckle 🔙✊💥]]
 	6. Same with [[Left ⬅️]] towards [[730 ↙️]]
 	7. Towards [[130 ↗️]]
@@ -69,14 +69,14 @@ title: Long Form 2
 	2. - [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 	    - [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 	3. Towards [[730 ↙️]]
-		- [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+		- [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
 		- [[Right ➡️]] [[Arm 💪]] circles [[counter-clockwise 🔄]] into [[Downward ⬇️]] [[Elbow 💪]]
 	4. Same with [[Right ➡️]] towards [[730 ↙️]]
 	5. - [[Left ⬅️]] [[Foot 🦶]] left into [[Horse Stance 🏇🧍‍♂️]] facing [[1200 ⬆️]]
 	    - [[Right ➡️]] [[Sandwich 🥪 Elbow 💪💥]]
-	6. - Twin [[Outward 🔼]] Backward [[Elbow 💪]]s
-	7. - [[Right ➡️]] [[Downward ⬇️]] Backward [[Elbow 💪]]
-	    - [[Left ⬅️]] [[Upward ⬆️]] Backward [[Punch 👊💥]]
+	6. - Twin [[Outward 🔼]] [[Backward 🔽]] [[Elbow 💪]]s
+	7. - [[Right ➡️]] [[Downward ⬇️]] [[Backward 🔽]] [[Elbow 💪]]
+	    - [[Left ⬅️]] [[Upward ⬆️]] [[Backward 🔽]] [[Punch 👊💥]]
 	8. - Greeting
 
 ## Animation ✨

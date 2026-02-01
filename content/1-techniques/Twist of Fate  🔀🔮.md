@@ -8,7 +8,7 @@ Two-Hand Push from the front ([[2-pushes|Pushes ✋]], [[16]])
 
 ## Steps 👣
 
-1. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+1. - [[Right ➡️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - Twist both [[Hand ✋]]s up and grab [[To 🎯|🎯]] opponent's [[Hand ✋]]s
 2. - [[Right ➡️]] slicing knife-edge [[Kick 🦶💥]] [[To 🎯]] their liver
     - Stretch [[Their Right ⬅️]] [[Arm 💪]] and lock it with [[Their Left ➡️]] [[Arm 💪]] underneath

@@ -10,7 +10,7 @@
 
 1. - Pin 🎯opponent's attacking hand with [[Left ⬅️]] [[Hand ✋]]
     - [[Right ➡️]] foot steps forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
-2. - [[Left ⬅️]] backward [[Elbow 💪💥]]
+2. - [[Left ⬅️]] [[Backward 🔽]] [[Elbow 💪💥]]
 3. - Take [[🎯]] [[Arm 💪]] with [[Left ⬅️]] [[Hand ✋]] over [[Right ➡️]] shoulder
-    - [[Right ➡️]] backward [[Elbow 💪💥]]
+    - [[Right ➡️]] [[Backward 🔽]] [[Elbow 💪💥]]
 4. - [[Cover Right before Left 🦶🔄]]

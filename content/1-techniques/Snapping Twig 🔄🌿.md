@@ -9,7 +9,7 @@
 ## Steps 👣
 
 1. - Pin [[To 🎯|🎯]] [[Their Left ➡️]] [[Hand ✋]] to chest
-    - [[Left ⬅️]] [[Foot 🦶]] back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
+    - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Inward 🔽]] [[Heel Palm ✋🌴💥]] [[To 🎯]] [[Their Left ➡️]] [[Elbow 💪]]
 2. - Hook over [[To 🎯|🎯]] [[Their Left ➡️]] arm
     - Shuffle forward

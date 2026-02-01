@@ -15,5 +15,5 @@
 3. - [[Downward ⬇️]] check with [[Left ⬅️]] [[Arm 💪]]
 4. - Shuffle forward
     - [[Right ➡️]] [[Upward ⬆️]] [[Elbow 💪💥]]
-5. - Reverse Bow
+5. - [[Reverse Bow 🔄🧍‍♂️]]
     - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] their [[Groin 🩲]]

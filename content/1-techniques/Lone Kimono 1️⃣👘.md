@@ -9,7 +9,7 @@
 ## Steps 👣
 
 1. - Pin [[Their Left ➡️]] [[Hand ✋]] 
-    - Step back into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
+    - [[Left ⬅️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Upward ⬆️]] [[Forearm Strike 💪💥]]
 2. - [[Right ➡️]] [[Inward 🔽]] Diagonal [[Forearm Strike 💪💥]]
 3. - [[Upward ⬆️]] [[Outward 🔼]] diagonal [[Snapping 💨]] [[Right ➡️]] [[Handsword ✋⚔️💥]]

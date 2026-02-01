@@ -10,7 +10,7 @@ title: Short Form 1
 
 ## Steps 👣
 
-Always moving backward
+Always moving [[Backward 🔽]]
 
 To [[1200 ⬆️]]:
 1.  - [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 

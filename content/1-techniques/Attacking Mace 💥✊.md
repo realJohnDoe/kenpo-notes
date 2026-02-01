@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1.  - Step back with [[Right ➡️]] [[Foot 🦶]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]]
+1.  - Step [[Backward 🔽|Back 🔽]] with [[Right ➡️]] [[Foot 🦶]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]]
 	- [[Left ⬅️]] [[Inward 🔽]] [[Block 🛡️]]
 2.  - [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊💥]]

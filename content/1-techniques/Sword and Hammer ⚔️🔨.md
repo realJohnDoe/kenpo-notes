@@ -9,7 +9,7 @@
 ## Steps 👣
 
 1. - Check
-2. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
+2. - [[Right ➡️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Handsword ✋⚔️💥]]
 3. - [[Right ➡️]] [[Hammerfist 🔨✊💥]]
 4. - [[Cover Right before Left 🦶🔄]] towards [[1030 ↖️]]

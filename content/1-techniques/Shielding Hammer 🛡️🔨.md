@@ -8,7 +8,7 @@
 
 ## Steps 👣
 
-1. - Step back with [[Left ⬅️]] [[Foot 🦶]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
+1. - Step [[Backward 🔽|Back 🔽]] with [[Left ⬅️]] [[Foot 🦶]] into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] facing [[1200 ⬆️]] 
     - [[Right ➡️]] [[Extended 📏]] [[Outward 🔼]] [[Block 🛡️]]
 2. - [[Right ➡️]] [[Inward 🔽]] [[Downward ⬇️]] [[Back Knuckle 🔙✊💥]]
 3. - Shuffle forward

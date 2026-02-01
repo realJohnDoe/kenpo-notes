@@ -8,13 +8,13 @@
 
 ## Steps 👣
 
-1. - Step back with [[Right ➡️]] [[Foot 🦶]] into [[Left ⬅️]] [[Twist Stance 🔄🧍‍♂️]]
+1. - Step [[Backward 🔽|Back 🔽]] with [[Right ➡️]] [[Foot 🦶]] into [[Left ⬅️]] [[Twist Stance 🌀🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Block 🛡️]]
 2. - [[Right ➡️]] [[Side Kick ➡️🦶💥]] [[To 🎯]] their [[Left ⬅️]] [[Knee 🦵]]
     - [[Right ➡️]] [[Hand ✋]] continues a circular motion [[counter-clockwise 🔄]]
 3. - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]]
 4. - Pull [[Left ⬅️]] [[Foot 🦶]] towards [[Right ➡️]] [[Foot 🦶]]
 5. - [[Right ➡️]] rear heel [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Groin 🩲]]
-6. - Buckle back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
-    - [[Right ➡️]] backward [[Elbow 💪💥]]
+6. - Buckle [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
+    - [[Right ➡️]] [[Backward 🔽]] [[Elbow 💪💥]]
 7. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]

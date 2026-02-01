@@ -12,7 +12,7 @@
     - Both [[Hand ✋]]s hit behind your head
 2. - [[Left ⬅️]] [[Foot 🦶]] back to normal stance
     - Pin [[To 🎯|🎯]] opponent's [[Arm 💪]]s with ours
-    - Head hits back
+    - Head hits [[Backward 🔽|Back 🔽]]
 3. - [[Left ⬅️]] [[Foot 🦶]] towards [[130 ↗️]] while keeping [[To 🎯|🎯]] their [[Arm 💪]]s [[Pin 📌|Pinned 📌]]
     - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]] [[To 🎯]] their [[Face 😐]]
 4. - Back to starting positions with [[To 🎯|🎯]] both [[Arm 💪]]s [[Pin 📌|Pinned 📌]]

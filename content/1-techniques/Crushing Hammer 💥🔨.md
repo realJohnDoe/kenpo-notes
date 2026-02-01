@@ -9,9 +9,9 @@
 ## Steps 👣
 
 1. - [[Left ⬅️]] [[Foot 🦶]] [[Left ⬅️]] into [[Horse Stance 🏇🧍‍♂️]]
-    - [[Right ➡️]] backward [[Elbow 💪💥]]
+    - [[Right ➡️]] [[Backward 🔽]] [[Elbow 💪💥]]
 2. - [[Right ➡️]] [[Hammerfist 🔨✊💥]] [[To 🎯]] the opponent's [[Groin 🩲]]
-3. - [[Right ➡️]] [[Foot 🦶]] back into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
+3. - [[Right ➡️]] [[Foot 🦶]] [[Backward 🔽|Back 🔽]] into [[Left ⬅️]] [[Forward Bow ⬆️🧍‍♂️]]
     - [[Right ➡️]] [[Heel Palm ✋🌴💥]] [[To 🎯]] the [[Groin 🩲]]
 4. - [[Right ➡️]] [[Elbow 💪💥]] [[To 🎯]] their chin
 5. - Turn [[clockwise 🔃]] into [[Right ➡️]] [[Forward Bow ⬆️🧍‍♂️]] facing [[430 ↘️]]
