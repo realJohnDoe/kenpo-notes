@@ -16,7 +16,8 @@
 4. - [[Left ⬅️]] [[Foot 🦶]] towards [[300 ➡️]] while turning 180° [[clockwise 🔃]]
 5. - Lock [[To 🎯|🎯]] their [[Hand ✋]]
     - Turn further [[clockwise 🔃]] and put [[Right ➡️]] [[Foot 🦶]] towards [[130 ↗️]]
-6. - Check [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]] with your [[Left ⬅️]] [[Hand ✋]]
-7. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+
+6. - [[Right ➡️]] [[Front Kick ⬆️🦶💥]]
+7. - Check [[To 🎯|🎯]] [[Their Right ⬅️]] [[Arm 💪]] with your [[Left ⬅️]] [[Hand ✋]]
 8. - [[Right ➡️]] lifting [[Back Knuckle 🔙✊💥]] [[To 🎯]] their [[Face 😐]]
 9. - [[Cover Right before Left 🦶🔄]] towards [[300 ➡️]]

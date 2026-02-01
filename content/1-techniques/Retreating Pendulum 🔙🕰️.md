@@ -11,7 +11,7 @@
 1. - Step back with [[Right ➡️]] [[Foot 🦶]] into [[Left ⬅️]] [[Twist Stance 🔄🧍‍♂️]]
     - [[Right ➡️]] [[Downward ⬇️]] [[Block 🛡️]]
 2. - [[Right ➡️]] [[Side Kick ➡️🦶💥]] [[To 🎯]] their [[Left ⬅️]] [[Knee 🦵]]
-    - [[Right ➡️]] [[Hand ✋]] continuous a circular motion [[counter-clockwise 🔄]]
+    - [[Right ➡️]] [[Hand ✋]] continues a circular motion [[counter-clockwise 🔄]]
 3. - [[Right ➡️]] [[Downward ⬇️]] [[Hammerfist 🔨✊💥]]
 4. - Pull [[Left ⬅️]] [[Foot 🦶]] towards [[Right ➡️]] [[Foot 🦶]]
 5. - [[Right ➡️]] rear heel [[Scoop Kick 🥄🦶💥]] [[To 🎯]] their [[Groin 🩲]]

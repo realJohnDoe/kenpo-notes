@@ -5,14 +5,14 @@ cf. [Fresno Kenpo Karate](https://fresnokenpokarate.com/training-video/)
 
 1. g9: [[Attacking Mace 💥✊]]
 2. g2: [[Alternating Maces 🔄✊]]
-3. gr24
+3. gr24: The Back Breaker
 4. 3br21
 5. 2br10
 6. o10: [[Buckling Branch ⤴️🌳]]
 7. gr10: [[Circles of Protection ⭕🛡️]]
 8. l12: [[Circling Wing ⭕🪽]]
 9. l8: [[Charging Ram ⚡🐏]]
-10. gr15
+10. gr15: Conquering Shield
 11. bl15: [[Crossed Twigs ❌🌿]]
 12. o13: [[Crossing Talon ❌🦅]]
 13. l23: [[Cross of Destruction ❌💥]]

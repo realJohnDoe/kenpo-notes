@@ -11,7 +11,7 @@ Front Wrist Lock Pinned Against the Chest ([[6-locks-and-chokes|Web of Knowledge
 1. - Pin [[🎯]] opponent's [[Hand ✋]]s with [[Left ⬅️]] [[Hand ✋]] 
     - [[Right ➡️]] foot forward into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] 
     - [[Right ➡️]] Vertical [[Elbow 💪💥]] Strike
-2. - Pull [[Right ➡️]] [[Hand ✋]] out of the lock
+2. - Pull [[Right ➡️]] [[Hand ✋]] [[Downward ⬇️]] out of the lock
 3. - [[Right ➡️]] inside [[Handsword ✋⚔️💥]] [[To 🎯]] opponent's [[Groin 🩲]]
 4. - [[Right ➡️]] [[Outward 🔼]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] [[Their Left ➡️]] [[Knee 🦵]]
 5. - [[Right ➡️]] Hooking [[Punch 👊💥]] [[To 🎯]] [[Their Right ⬅️]] [[Knee 🦵]]
