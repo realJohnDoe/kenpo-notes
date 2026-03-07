@@ -1,6 +1,6 @@
 ---
 title: Salutation
-alias: Salutation
+aliases: Salutation
 ---
 
 ## Video 🎥

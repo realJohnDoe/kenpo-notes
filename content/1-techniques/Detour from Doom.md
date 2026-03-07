@@ -1,6 +1,3 @@
----
-draft: true
----
 ## Video 🎥
 
 <iframe src="https://www.youtube.com/embed/Ydz8xVZSFH8?start=833" width="100%" height="400"></iframe>

@@ -117,12 +117,16 @@ title: Web of Knowledge
 - [[5. Green Belt 🟢|Green Belt 🟢]]
     - [[1-grabs-and-tackles|Grabs and Tackles 🤝]]
         - [[Obscure Claws 🌑🐯]] ([[1]])
+		- [[Menacing Twirl 😈🌀]] ([[8]])
+		- [[Conquering Shield 🏆🛡️]] ([[15]])
 	- [[2-pushes|Pushes ✋]]
 		- [[Encounter with Danger ⚠️🦵🦵🦵]] ([[2]])
     - [[3-punches|Punches 👊]]
         - [[Glancing Wing 👀🪽]] ([[23]])
     - [[4-kicks|Kicks 🦶]]
         - [[Detour from Doom]] ([[4]])
+	- [[7-weapons|Weapons 🗡️]]
+		- [[Brushing the Storm 🖌️⛈️]] ([[7]])
 	
 
 [[Inspired by this Table](https://de.scribd.com/doc/116565982/Ed-Parker-s-American-Kenpo-Master-Key)]

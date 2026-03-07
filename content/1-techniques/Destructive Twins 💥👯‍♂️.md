@@ -18,4 +18,4 @@ Two-handed choke ([[6-locks-and-chokes|Web of Knowledge: Locks & Chokes 🔒]], 
 4. - [[Left ⬅️]] [[Hand ✋]] pokes to their eyes
 5. - Turn into [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]]
     - [[Right ➡️]] [[Straight Punch ↕️👊💥]]
-6. [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
+6. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]
