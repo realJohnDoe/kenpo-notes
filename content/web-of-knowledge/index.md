@@ -122,9 +122,12 @@ title: Web of Knowledge
 	- [[2-pushes|Pushes ✋]]
 		- [[Encounter with Danger ⚠️🦵🦵🦵]] ([[2]])
     - [[3-punches|Punches 👊]]
+	    - [[Circling Destruction ⭕💥]] ([[3]])
+		- [[Circles of Protection ⭕🛡️]] ([[10]])
         - [[Glancing Wing 👀🪽]] ([[23]])
     - [[4-kicks|Kicks 🦶]]
-        - [[Detour from Doom]] ([[4]])
+        - [[Detour from Doom 🚧🌑]] ([[4]])
+		- [[Circle of Doom ⭕🌑]]
 	- [[7-weapons|Weapons 🗡️]]
 		- [[Brushing the Storm 🖌️⛈️]] ([[7]])
 	

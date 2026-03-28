@@ -14,3 +14,4 @@
 2. - Check [[To 🎯|🎯]] [[Their Right ⬅️]] shoulder
 3. - [[Left ⬅️]] [[Straight Punch ↕️👊💥]] [[To 🎯]] the mid zone
 4. - [[Right ➡️]] [[Back Knuckle 🔙✊💥]]
+5. - [[Cover Right before Left 🦶🔄]] towards [[730 ↙️]]

@@ -13,7 +13,7 @@ Push with the [[Their Left ➡️]] [[Hand ✋]] ([[2-pushes|Web of Knowledge: P
     - [[Right ➡️]] [[Inward 🔽]] [[Hammerfist 🔨✊💥]] strike [[To 🎯]] [[Their Left ➡️]] kidney
 2. - [[Outward 🔼]] [[Right ➡️]] [[Back Knuckle 🔙✊💥]] [[To 🎯]] [[Their Left ➡️]] rib cage
 3. - [[Right ➡️]] Looping [[Downward ⬇️]] [[Kick 🦶💥]] [[To 🎯]] the back of [[Their Left ➡️]] [[Knee 🦵]]
-4. - [[Cover Right before Left 🦶🔄]] facing [[1030 ↖️]]
+4. - [[Cover Right before Left 🦶🔄]] towards [[430 ↘️]]
 
 ## Alternative Video
 
