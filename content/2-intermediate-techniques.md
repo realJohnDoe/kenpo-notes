@@ -34,7 +34,7 @@ aliases:
 
 ## [[5. Green Belt 🟢|Green Belt 🟢]]
 
-- Conquering Shield
+- [[Conquering Shield 🏆🛡️]]
 
 ## [[6. 3rd Brown Belt 🟤3️⃣|3rd Brown Belt 🟤3️⃣]]
 
