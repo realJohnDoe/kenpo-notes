@@ -17,5 +17,5 @@ title: Short Form 3
 10. [[Locked Wing 🔒🪽]]
 11. [[Crossed Twigs ❌🌿]]
 12. [[Wings of Silk 🪽🧵]]
-13. Conquering Shield
+13. [[Conquering Shield 🏆🛡️]]
 14. [[Striking Serpent's Head 🎳🐍]]
