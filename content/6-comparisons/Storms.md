@@ -1,5 +1,5 @@
 - [[2. Orange Belt 🟠|Orange Belt 🟠]]: [[Obstructing the Storm 🙅‍♂️⛈️]]
-- [[3. Purple Belt 🟣|Purple Belt 🟣]], [[7]]:  [[Evading the Storm 🏃‍♀️⛈️]]
+- [[3. Purple Belt 🟣|Purple Belt 🟣]], [[7]]:  [[Evading the Storm 🏃⛈️]]
 - [[3. Purple Belt 🟣|Purple Belt 🟣]], [[13]]: [[Calming the Storm 🧘‍♀️⛈️]]
 - [[4. Blue Belt 🔵|Blue Belt 🔵]], [[7]]: [[Defying the Storm 🚧⛈️]]
 - [[4. Blue Belt 🔵|Blue Belt 🔵]], [[14]]: [[Returning Storm ↩️⛈️]]

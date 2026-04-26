@@ -79,7 +79,7 @@ title: Web of Knowledge
 		- [[Cross of Destruction ❌💥]] ([[23]])
 		- [[Flight to Freedom 🛫🌈]] ([[24]])
 	- [[7-weapons|Weapons 🗡️]]
-		- [[Evading the Storm 🏃‍♀️⛈️]] ([[7]])
+		- [[Evading the Storm 🏃⛈️]] ([[7]])
 		- [[Calming the Storm 🧘‍♀️⛈️]] ([[13]])
 		- [[Obstructing the Storm 🙅‍♂️⛈️]] ([[19]])
 - [[4. Blue Belt 🔵|Blue Belt 🔵]]
@@ -127,7 +127,11 @@ title: Web of Knowledge
         - [[Glancing Wing 👀🪽]] ([[23]])
     - [[4-kicks|Kicks 🦶]]
         - [[Detour from Doom 🚧🌑]] ([[4]])
-		- [[Circle of Doom ⭕🌑]]
+		- [[Circle of Doom ⭕🌑]] ([[11]])
+	- [[5-holds-and-hugs|Holds and Hugs 🫂]]
+		- [[Squatting Sacrifice 🐸✝️]] ([[5]])
+	- [[6-locks-and-chokes|Locks & Chokes 🔒]]
+		- [[Escape from Death 🏃💀]] ([[6]])
 	- [[7-weapons|Weapons 🗡️]]
 		- [[Brushing the Storm 🖌️⛈️]] ([[7]])
 	

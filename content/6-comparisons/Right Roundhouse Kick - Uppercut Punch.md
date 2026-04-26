@@ -1,2 +1,2 @@
 - [[Attacking Mace 💥✊]]
-- [[Evading the Storm 🏃‍♀️⛈️]]
+- [[Evading the Storm 🏃⛈️]]
