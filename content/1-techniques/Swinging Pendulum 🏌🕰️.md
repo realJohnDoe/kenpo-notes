@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Right ➡️]] [[Roundhouse Kick 🔄🦶💥]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
+[[Right ➡️]] [[Roundhouse Kick 🔄🦶💥]], you are in [[Right ➡️]] [[Neutral Bow 0️⃣🧍‍♂️]] ([[4-kicks|Web of Knowledge: Kicks 🦶]], [[4]])
 
 ## Steps 👣
 

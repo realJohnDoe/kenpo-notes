@@ -133,8 +133,9 @@ title: Web of Knowledge
         - [[Detour from Doom 🚧🌑]] ([[4]])
 		- [[Circle of Doom ⭕🌑]] ([[11]])
 	- [[5-holds-and-hugs|Holds and Hugs 🫂]]
-		- [[Squatting Sacrifice 🐸✝️]] ([[5]])
+		- [[Squatting Sacrifice 🐸🩸]] ([[5]])
 		- [[Broken Gift 💔🎁]] ([[12]])
+		- [[Twirling Sacrifice 🌀🩸]] ([[17]])
 	- [[6-locks-and-chokes|Locks & Chokes 🔒]]
 		- [[Escape from Death 🏃💀]] ([[6]])
 		- [[Heavenly Ascent 🪽⬆️]] ([[13]])

@@ -4,7 +4,7 @@
 
 ## Defense Against 🤺
 
-[[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Holds and Hugs 🫂]])
+[[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Holds and Hugs 🫂]], [[5]])
 ## Steps 👣
 
 1. - [[Right ➡️]] [[Foot 🦶]] [[Right ➡️]] into [[Horse Stance 🏇🧍‍♂️]]
