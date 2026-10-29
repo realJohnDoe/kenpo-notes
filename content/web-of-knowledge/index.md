@@ -126,6 +126,7 @@ title: Web of Knowledge
     - [[3-punches|Punches 👊]]
 	    - [[Circling Destruction ⭕💥]] ([[3]])
 		- [[Circles of Protection ⭕🛡️]] ([[10]])
+		- [[Taming the Mace 🫴✊]] ([[16]])
 		- [[Kneel of Compulsion 🧎🔗]] ([[21]])
         - [[Glancing Wing 👀🪽]] ([[23]])
 		- [[The Back Breaker 🪵💥]] ([[24]])
