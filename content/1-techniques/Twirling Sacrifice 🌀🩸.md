@@ -7,7 +7,7 @@
 [[Full Nelson 🤼‍♂️🗜️]] ([[5-holds-and-hugs|Web of Knowledge: Holds and Hugs 🫂]], [[17]])
 ## Steps 👣
 
-### Alternative Video 🎥
+## Alternative Video 🎥
 
 <iframe src="https://www.youtube.com/embed/7OpjiABB6UY?start=150" width="100%" height="400"></iframe>
 

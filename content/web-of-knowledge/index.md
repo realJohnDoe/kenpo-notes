@@ -142,6 +142,7 @@ title: Web of Knowledge
 		- [[Cross of Death ❌💀]] ([[18]])
 	- [[7-weapons|Weapons 🗡️]]
 		- [[Brushing the Storm 🖌️⛈️]] ([[7]])
+		- [[Capturing the Storm 🪤⛈️]] ([[14]])
 		- [[Securing the Storm 🛡️⛈️]] ([[19]])
 		- [[Clipping the Storm ✂️⛈️]] ([[22]])
 	

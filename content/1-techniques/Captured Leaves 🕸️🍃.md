@@ -12,5 +12,5 @@
     - [[Right ➡️]] foot steps forward into [[Horse Stance 🏇🧍‍♂️]] facing [[900 ⬅️]]
 2. - [[Left ⬅️]] [[Backward 🔽]] [[Elbow 💪💥]]
 3. - Take [[🎯]] [[Arm 💪]] with [[Left ⬅️]] [[Hand ✋]] over [[Right ➡️]] shoulder
-    - [[Right ➡️]] [[Backward 🔽]] [[Elbow 💪💥]]
+    - [[Right ➡️]] [[Outward 🔼]] [[Elbow 💪💥]]
 4. - [[Cover Right before Left 🦶🔄]]
