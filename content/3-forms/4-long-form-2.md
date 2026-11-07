@@ -82,3 +82,7 @@ title: Long Form 2
 ## Animation ✨
 
 <iframe src="https://realjohndoe.github.io/kenpo-notes/animation/long-form-2" width="100%" height="400"></iframe>
+
+## Alternative Video 🎥
+
+<iframe src="https://www.youtube.com/embed/J1jc9W37IHU" width="100%" height="400"></iframe>
