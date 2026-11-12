@@ -16,11 +16,33 @@ updates:
     # Wait 24 h after a release before proposing it.
     cooldown:
       default-days: 1
+    # @sveltejs/kit 3 accepts only TypeScript 6 as a peer. Lift this once
+    # Kit's peer range includes 7.
+    ignore:
+      - dependency-name: typescript
+        versions: [">=7"]
+    # Majors come in small sets that can be reviewed together: the build
+    # toolchain, the lint toolchain, and every other major in a PR of its own.
     groups:
       npm-minor-patch:
         update-types: [minor, patch]
-      npm-major:
+      npm-major-svelte:
         update-types: [major]
+        patterns:
+          - "@sveltejs/*"
+          - svelte
+          - svelte-check
+          - vite
+          - vitest
+      npm-major-lint:
+        update-types: [major]
+        patterns:
+          - eslint
+          - "eslint-*"
+          - "@typescript-eslint/*"
+          - "@types/eslint"
+          - prettier
+          - "prettier-plugin-*"
   - package-ecosystem: github-actions
     directory: /
     schedule:

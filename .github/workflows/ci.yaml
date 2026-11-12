@@ -104,6 +104,11 @@ jobs:
           cd animations
           npm ci
 
+      - name: Type-check animations
+        run: |
+          cd animations
+          npm run check
+
       - name: Build animations
         run: |
           cd animations
