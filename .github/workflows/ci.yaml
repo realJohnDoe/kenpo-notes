@@ -38,6 +38,10 @@ jobs:
 
       - run: npm ci
 
+      # Generates .quartz/plugins, which quartz.ts imports for its TS overrides
+      - name: Install Quartz plugins
+        run: npm run install-plugins
+
       - name: Test
         run: npm test
 
