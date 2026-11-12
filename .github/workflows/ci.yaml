@@ -25,17 +25,17 @@ jobs:
   quartz-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v7
         with:
           node-version: 22
 
       - name: Cache dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: node_modules
           key: node-quartz-${{ hashFiles('**/package-lock.json') }}
@@ -73,7 +73,7 @@ jobs:
           done
 
       - name: Upload Quartz artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: quartz-build
           path: ./public
@@ -82,17 +82,17 @@ jobs:
   animations-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v7
         with:
           node-version: 22
 
       - name: Cache animations dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: animations/node_modules
           key: node-animations-${{ hashFiles('animations/package-lock.json') }}
@@ -110,7 +110,7 @@ jobs:
           npm run build
 
       - name: Upload animations artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: animations-build
           path: ./animations/build
@@ -125,13 +125,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Quartz artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: quartz-build
           path: ./public
 
       - name: Download animations artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: animations-build
           path: ./animations-build
@@ -178,16 +178,16 @@ jobs:
           find ./public -type f | head -20
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload combined artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   publish-tag:
     if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
@@ -195,11 +195,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Setup Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: Get package version
