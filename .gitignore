@@ -6,6 +6,9 @@ prof
 tsconfig.tsbuildinfo
 .obsidian
 .quartz-cache
+.quartz/
+quartz/cli/tui/dist/
+.turbo/
 .replit
 replit.nix
 dist
