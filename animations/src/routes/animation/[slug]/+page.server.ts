@@ -5,13 +5,13 @@ import {
   DEFAULT_CANVAS_DIMS,
   generateAndComputeAnimationData,
   generatePersonShapes
-} from '$lib/animation';
+} from '#lib/animation.ts';
 import {
   generateGrid,
   generateLabels,
   generateCenterMarker,
   generateVignette
-} from '$lib/background-graphics';
+} from '#lib/background-graphics.ts';
 import { readFileSync } from 'fs';
 import { parse } from 'yaml';
 import { join } from 'path';

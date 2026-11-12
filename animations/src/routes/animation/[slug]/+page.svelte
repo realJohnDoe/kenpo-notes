@@ -1,5 +1,5 @@
 <script lang="ts">
-  import AnimationViewer from '$lib/AnimationViewer.svelte';
+  import AnimationViewer from '#lib/AnimationViewer.svelte';
 
   // This `data` prop is automatically passed from your +page.server.js
   export let data;
