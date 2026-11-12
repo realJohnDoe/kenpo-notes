@@ -120,7 +120,8 @@ jobs:
           if-no-files-found: error
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # Deploys main, or any branch started by hand (Actions > Run workflow) for a live preview
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     needs: [quartz-build, animations-build]
     # Allow only one concurrent deployment, skipping deploys queued between the
     # one in progress and the latest. Do NOT cancel in-progress deploys, so

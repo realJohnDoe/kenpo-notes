@@ -85,8 +85,9 @@ plugins:
   - source: "@quartz-community/description"
     enabled: true
     order: 70
+  # No math in the notes
   - source: "@quartz-community/latex"
-    enabled: true
+    enabled: false
     options:
       renderEngine: katex
     order: 80
@@ -134,8 +135,9 @@ plugins:
     layout:
       position: left
       priority: 50
+  # Not needed; it also loads d3 and pixi.js from a CDN
   - source: "@quartz-community/graph"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
