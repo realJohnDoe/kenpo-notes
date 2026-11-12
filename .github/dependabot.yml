@@ -1,0 +1,34 @@
+version: 2
+updates:
+  # Quartz's own dependencies follow upstream through `npx quartz update`;
+  # bumping them here would conflict with every update merge. The limit of 0
+  # turns off version updates but keeps Dependabot security updates.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0
+  # The animations app is ours alone.
+  - package-ecosystem: npm
+    directory: /animations
+    schedule:
+      interval: weekly
+    # Wait 24 h after a release before proposing it.
+    cooldown:
+      default-days: 1
+    groups:
+      npm-minor-patch:
+        update-types: [minor, patch]
+      npm-major:
+        update-types: [major]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 1
+    groups:
+      actions-minor-patch:
+        update-types: [minor, patch]
+      actions-major:
+        update-types: [major]
