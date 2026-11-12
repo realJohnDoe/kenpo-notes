@@ -15,12 +15,6 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   quartz-build:
     runs-on: ubuntu-latest
@@ -124,6 +118,13 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: [quartz-build, animations-build]
+    # Allow only one concurrent deployment, skipping deploys queued between the
+    # one in progress and the latest. Do NOT cancel in-progress deploys, so
+    # production deployments complete. Scoped to this job so builds (including
+    # PR builds) never wait on or cancel each other.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
