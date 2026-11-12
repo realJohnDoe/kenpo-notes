@@ -17,8 +17,10 @@ permissions:
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Pull requests get their own group so that a burst of PRs (e.g. Dependabot)
+# doesn't replace each other's pending runs; pushes to main still serialize.
 concurrency:
-  group: "pages"
+  group: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || 'pages' }}
   cancel-in-progress: false
 
 jobs:

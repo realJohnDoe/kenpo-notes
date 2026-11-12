@@ -3,6 +3,9 @@ updates:
   # Quartz's own dependencies follow upstream through `npx quartz update`;
   # bumping them here would conflict with every update merge. The limit of 0
   # turns off version updates but keeps Dependabot security updates.
+  # Merge a root security PR when it appears. If a later `npx quartz update`
+  # conflicts in package.json, take upstream's version, run `npm install`
+  # and check `npm audit`.
   - package-ecosystem: npm
     directory: /
     schedule:
