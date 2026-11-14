@@ -22,7 +22,7 @@ updates:
       - dependency-name: typescript
         versions: [">=7"]
     # Majors come in small sets that can be reviewed together: the build
-    # toolchain, the lint toolchain, and every other major in a PR of its own.
+    # toolchain, the formatter, and every other major in a PR of its own.
     groups:
       npm-minor-patch:
         update-types: [minor, patch]
@@ -37,10 +37,6 @@ updates:
       npm-major-lint:
         update-types: [major]
         patterns:
-          - eslint
-          - "eslint-*"
-          - "@typescript-eslint/*"
-          - "@types/eslint"
           - prettier
           - "prettier-plugin-*"
   - package-ecosystem: github-actions
