@@ -1,8 +1,8 @@
 # Instructions for Claude
 
-- Use npm (kept to stay close to upstream Quartz).
+- Use npm (Quartz and `animations/` both use it).
 - Before pushing, run the checks CI runs:
-  - root: `npm ci && npm run install-plugins && npm test && npx quartz build`
+  - root: `./quartz.sh` (builds the site with Quartz checked out at its pinned tag)
   - `animations/`: `npm ci && npm run check && npm run build`
 
 ## Workshop

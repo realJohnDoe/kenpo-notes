@@ -2,13 +2,8 @@
 .gitignore
 node_modules
 public
-prof
-tsconfig.tsbuildinfo
 .obsidian
-.quartz-cache
-.quartz/
-quartz/cli/tui/dist/
-.turbo/
+/.quartz-checkout*
 .replit
 replit.nix
 dist
