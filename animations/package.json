@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "animejs": "^4.5.0",
-    "lucide-svelte": "^0.544.0",
+    "lucide-svelte": "^1.0.1",
     "yaml": "^2.9.1"
   }
 }
