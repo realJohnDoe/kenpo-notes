@@ -1,3 +1,6 @@
 public
 node_modules
 .quartz-cache
+animations
+# Vault notes are written in Obsidian; reformatting them would churn content, so Prettier skips them
+content
