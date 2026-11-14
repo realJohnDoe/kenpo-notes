@@ -1,42 +1,13 @@
 name: Dependabot automerge label
 
+# Labels non-major Dependabot PRs `automerge` for the workshop to merge. The
+# rules live in the shared workflow; see the dispatcher skill in agent-skills.
 on: pull_request
 
 permissions:
-  contents: read
   pull-requests: write
   issues: write
 
 jobs:
-  # The workshop's daily run merges green PRs labelled `automerge`. It merges
-  # instead of GitHub's native auto-merge because a merge made with this
-  # workflow's token starts no `push` workflow, so nothing would deploy.
   automerge:
-    if: github.actor == 'dependabot[bot]'
-    runs-on: ubuntu-latest
-    steps:
-      - id: meta
-        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
-      # Majors are left unlabelled, for a human.
-      - if: steps.meta.outputs.update-type != 'version-update:semver-major'
-        run: |
-          gh label create automerge --repo "$REPO" --color 0e8a16 2>/dev/null || true
-          gh pr edit "$PR_URL" --add-label automerge
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # A push by anyone but Dependabot is code nobody reviewed: drop the label.
-  hold-for-review:
-    if: >-
-      github.event.action == 'synchronize' &&
-      github.event.pull_request.user.login == 'dependabot[bot]' &&
-      github.actor != 'dependabot[bot]' &&
-      contains(github.event.pull_request.labels.*.name, 'automerge')
-    runs-on: ubuntu-latest
-    steps:
-      - run: gh pr edit "$PR_URL" --remove-label automerge
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: realJohnDoe/agent-skills/.github/workflows/dependabot-automerge.yml@main

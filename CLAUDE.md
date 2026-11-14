@@ -2,9 +2,7 @@
 
 - If a task results in pushed commits and there is no open pull request for
   that branch yet, open one, even if not explicitly asked to.
-- Use npm (kept to stay close to upstream Quartz). Dependabot proposes
-  updates; non-major ones are labelled `automerge`, and the workshop merges
-  them once CI passes.
+- Use npm (kept to stay close to upstream Quartz).
 - Before pushing, run the checks CI runs:
   - root: `npm ci && npm run install-plugins && npm test && npx quartz build`
   - `animations/`: `npm ci && npm run check && npm run build`
