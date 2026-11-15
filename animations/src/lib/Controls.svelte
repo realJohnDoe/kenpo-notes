@@ -1,6 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
-  import { Play, Pause, SkipBack, SkipForward, RotateCcw } from 'lucide-svelte';
+  import { Play, Pause, SkipBack, SkipForward, RotateCcw } from '@lucide/svelte';
 
   export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
   export let playbackSpeed: number = 1;
