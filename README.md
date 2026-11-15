@@ -2,22 +2,31 @@
 
 # Johannes' Kenpo Notes
 
-You can find my notes deployed [here][docs].
-Kudos go to [Quartz] and [Obsidian].
+My study notes from Kenpo training, published as a website:
+
+**[Read the notes →][docs]**
+
+## What's inside
+
+- **Techniques**: each self-defense technique with its steps, the attack it
+  defends against and a video where there is one.
+- **Belts**: the forms and techniques for each belt, from yellow to 2nd brown.
+- **Forms**: the forms step by step, with animations of the footwork.
+- **Sets** and **Drills**.
+- **Comparisons**: patterns that several techniques share, such as the same
+  ending or kick combination.
+- **Web of knowledge**: techniques grouped by attack, such as grabs, pushes,
+  punches, kicks, holds, locks and weapons.
+
+## Credits
+
+The notes are written in [Obsidian] and published with [Quartz].
+
+## Contributing
+
+To build the site, preview it locally or change the animations, see
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 [docs]: https://realjohndoe.github.io/kenpo-notes/
 [Quartz]: https://github.com/jackyzha0/quartz
 [Obsidian]: https://obsidian.md/
-
-## Building
-
-Quartz isn't committed here. `quartz.sh` checks out [Quartz] at a pinned tag
-into `.quartz-checkout/`, copies `quartz.config.yaml` and `quartz.ts` into it
-and builds `content/` into `public/`. CI deploys the same build.
-
-- **Preview locally:** `./quartz.sh --serve`, then open http://localhost:8080.
-  Needs git and Node 22. Changes to `content/` reload; changes to
-  `quartz.config.yaml` or `quartz.ts` need a restart.
-- **Upgrade Quartz:** bump `QUARTZ_TAG` in `quartz.sh` after reading the
-  [Quartz releases](https://github.com/jackyzha0/quartz/releases). The next
-  run checks out the new tag. Nothing proposes upgrades automatically.
