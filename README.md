@@ -1,3 +1,5 @@
+![Kenpo dojo banner](assets/banner.jpg)
+
 # Johannes' Kenpo Notes
 
 You can find my notes deployed [here][docs].
