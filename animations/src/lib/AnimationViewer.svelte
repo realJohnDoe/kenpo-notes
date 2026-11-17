@@ -2,44 +2,21 @@
   import Animation from './Animation.svelte';
   import Controls from './Controls.svelte';
   import type { AnimationData } from './animation';
+  import type { LabelData } from './animation-types';
 
-  export let animationData: AnimationData[];
-  export let svgContent: string;
-  export let labelsData: any[]; // Add labelsData prop
+  let {
+    animationData,
+    svgContent,
+    labelsData
+  }: {
+    animationData: AnimationData[];
+    svgContent: string;
+    labelsData: LabelData[];
+  } = $props();
 
-  let animation: Animation;
-  let playerState: 'playing' | 'paused' | 'finished' = 'paused';
-  let playbackSpeed: number = 1;
-
-  function handleTogglePlayPause() {
-    if (animation) {
-      animation.togglePlayPause();
-    }
-  }
-
-  function handlePrev() {
-    if (animation) {
-      animation.goToPrevStep();
-    }
-  }
-
-  function handleNext() {
-    if (animation) {
-      animation.goToNextStep();
-    }
-  }
-
-  function handleSpeedChange(event: CustomEvent<number>) {
-    const speed = event.detail;
-    playbackSpeed = speed;
-    if (animation) {
-      animation.setPlaybackSpeed(speed);
-    }
-  }
-
-  function handleComplete() {
-    // playerState is updated via bind:playerState in Animation component
-  }
+  let animation: Animation | undefined = $state();
+  let playerState: 'playing' | 'paused' | 'finished' = $state('paused');
+  let playbackSpeed = $state(1);
 </script>
 
 <Animation
@@ -49,13 +26,12 @@
   {animationData}
   {svgContent}
   {labelsData}
-  onComplete={handleComplete}
 />
 <Controls
   {playerState}
   {playbackSpeed}
-  on:togglePlayPause={handleTogglePlayPause}
-  on:prev={handlePrev}
-  on:next={handleNext}
-  on:speedChange={handleSpeedChange}
+  onTogglePlayPause={() => animation?.togglePlayPause()}
+  onPrev={() => animation?.goToPrevStep()}
+  onNext={() => animation?.goToNextStep()}
+  onSpeedChange={(speed) => animation?.setPlaybackSpeed(speed)}
 />

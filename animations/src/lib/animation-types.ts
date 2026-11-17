@@ -1,3 +1,5 @@
+import type { AnimationParams } from 'animejs';
+
 export type CanvasDims = {
   width: number;
   height: number;
@@ -30,7 +32,7 @@ export type AnimationData = {
   durationAfterEndFrame: number;
   targets: {
     target: string;
-    cfg: any;
+    cfg: AnimationParams;
   }[];
 };
 

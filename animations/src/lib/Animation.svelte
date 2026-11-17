@@ -1,50 +1,41 @@
 <script lang="ts">
-  import { animate, createTimeline } from 'animejs';
+  import { animate, createTimeline, type Timeline } from 'animejs';
   import { onMount, onDestroy } from 'svelte';
   import type { AnimationData } from './animation';
+  import type { LabelData } from './animation-types';
 
-  // Props
-  export let animationData: AnimationData[] = [];
-  if (!animationData) {
-    animationData = [];
-  }
-  export let svgContent: string;
-  export let onComplete: () => void = () => {};
-  export let labelsData: any[] = []; // Accept labelsData prop
+  type PlayerState = 'playing' | 'paused' | 'finished';
 
-  // State
-  let mainTl: any; // anime.timeline instance
-  let stepStartTimes: number[] = [];
-  export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
-  export let playbackSpeed: number = 1; // Default speed is 1x
+  let {
+    animationData = [],
+    svgContent,
+    labelsData = [],
+    playerState = $bindable('paused'),
+    playbackSpeed = $bindable(1)
+  }: {
+    animationData?: AnimationData[];
+    svgContent: string;
+    labelsData?: LabelData[];
+    playerState?: PlayerState;
+    playbackSpeed?: number;
+  } = $props();
 
-  // We need 2 steps more: One for because there is one more still frames than animation steps and
-  // one more because we add a step in the end as the finished state.
-  $: totalSteps = stepStartTimes.length + 1;
+  let mainTl: Timeline;
+  let stepStartTimes = $state<number[]>([]);
 
   const canvasHeight = 600; // Hardcoded, but used for calculations
 
-  let screenWidth: number;
-  let screenHeight: number;
+  let screenWidth = $state(0);
+  let screenHeight = $state(0);
 
-  $: svgRenderedSize = Math.min(screenWidth, screenHeight);
-  $: verticalOffset = (screenHeight - svgRenderedSize) / 2;
+  const svgRenderedSize = $derived(Math.min(screenWidth, screenHeight));
 
   onMount(() => {
-    screenWidth = window.innerWidth;
-    screenHeight = window.innerHeight;
-    window.addEventListener('resize', () => {
-      screenWidth = window.innerWidth;
-      screenHeight = window.innerHeight;
-    });
-
     mainTl = createTimeline({
       autoplay: false,
       loop: false,
       onComplete: () => {
-        console.log('Timeline complete: setting playerState to finished');
         playerState = 'finished';
-        onComplete();
       }
     });
 
@@ -54,7 +45,6 @@
         mainTl.add(targetAnim.target, targetAnim.cfg, animData.startFrame);
       });
     });
-    console.log(`Timeline duration: ${mainTl.duration}`);
 
     const allNavigablePoints = new Set<number>();
 
@@ -72,7 +62,6 @@
     allNavigablePoints.add(mainTl.duration);
 
     stepStartTimes = [...allNavigablePoints].sort((a, b) => a - b);
-    console.log('stepStartTimes', stepStartTimes);
 
     goToStep(0);
   });
@@ -102,17 +91,14 @@
   };
 
   export const goToStep = (index: number) => {
-    console.log(`goToStep called with index: ${index}`);
     let targetTime: number;
     if (index >= 0 && index < stepStartTimes.length) {
       targetTime = stepStartTimes[index];
     } else if (index === stepStartTimes.length) {
       targetTime = mainTl.duration;
     } else {
-      console.log('goToStep returned early: invalid index');
       return;
     }
-    console.log(`goToStep targetTime: ${targetTime}`);
 
     if (playerState === 'playing') {
       mainTl.pause();
@@ -127,30 +113,20 @@
         mainTl.seek(proxy.currentTime);
         // Explicitly reset completed status after seeking
         if (mainTl.completed) {
-          console.log(
-            `goToStep update: mainTl.completed was true, setting to false.`
-          );
           mainTl.completed = false;
         }
       },
       onComplete: () => {
-        const oldState = playerState;
         if (targetTime >= mainTl.duration) {
           playerState = 'finished';
         } else {
           playerState = 'paused';
         }
-        console.log(
-          `goToStep complete. playerState changed from '${oldState}' to '${playerState}'`
-        );
       }
     });
   };
 
   export const togglePlayPause = () => {
-    console.log(
-      `togglePlayPause called. Current state: ${playerState}, timeline completed: ${mainTl.completed}`
-    );
     if (playerState === 'playing') {
       mainTl.pause();
       playerState = 'paused';
@@ -158,7 +134,6 @@
       // paused or finished
       if (playerState === 'finished') {
         // If finished, always restart
-        console.log('Player state is finished, restarting.');
         mainTl.restart();
       } else {
         // paused
@@ -166,14 +141,10 @@
       }
       playerState = 'playing';
     }
-    console.log(`togglePlayPause finished. New state: ${playerState}`);
     return playerState;
   };
 
   export const goToPrevStep = () => {
-    console.log(
-      `goToPrevStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`
-    );
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
     let targetStepIdx = currentIdx - 1;
 
@@ -181,18 +152,11 @@
     if (targetStepIdx < 0) {
       targetStepIdx = 0;
     }
-    console.log(
-      `goToPrevStep currentIdx: ${currentIdx}, targetStepIdx: ${targetStepIdx}`
-    );
     goToStep(targetStepIdx);
   };
 
   export const goToNextStep = () => {
-    console.log(
-      `goToNextStep called. Current state: ${playerState}, currentTime: ${mainTl.currentTime}`
-    );
     if (playerState === 'finished') {
-      console.log('goToNextStep: player is finished, doing nothing.');
       return;
     }
     const currentIdx = getStepIndexFromTime(mainTl.currentTime);
@@ -207,27 +171,19 @@
     goToStep(targetStepIdx);
     // NEW: If playerState is finished, reset mainTl.completed before seeking
     if (targetStepIdx == stepStartTimes.length - 1) {
-      console.log(
-        'goToStep: Resetting mainTl.completed to false before seeking from finished state.'
-      );
       mainTl.completed = false;
     }
   };
 
   export const setPlaybackSpeed = (speed: number) => {
-    console.log(`setPlaybackSpeed called with speed: ${speed}`);
     playbackSpeed = speed;
     if (mainTl) {
-      // Store current progress as ratio
-      const currentProgress = mainTl.currentTime / mainTl.duration;
-
-      // Update the timeline's speed
       mainTl.speed = speed;
-
-      console.log(`Playback speed changed to ${speed}x`);
     }
   };
 </script>
+
+<svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
 
 <div class="relative h-screen w-screen overflow-hidden">
   <div class="h-full w-full">
@@ -257,7 +213,3 @@
     </div>
   {/if}
 </div>
-
-<style>
-  /* Label styles moved from +page.svelte */
-</style>
