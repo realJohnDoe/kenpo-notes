@@ -4,6 +4,7 @@ import { error } from '@sveltejs/kit';
 import {
   DEFAULT_CANVAS_DIMS,
   generateAndComputeAnimationData,
+  parseForm,
   generatePersonShapes
 } from '#lib/animation.ts';
 import {
@@ -12,7 +13,7 @@ import {
   generateCenterMarker,
   generateVignette
 } from '#lib/background-graphics.ts';
-import { readFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { parse } from 'yaml';
 import { join } from 'path';
 
@@ -46,13 +47,7 @@ export function load({ params }: { params: { slug: string } }) {
     const canvasHeight = 600;
     const gridUnitSize = 30;
 
-    const firstStep = data.steps[0];
-    const personConfig = {
-      stance: firstStep.stance?.type || firstStep.stance || 'attention',
-      direction: firstStep.stance?.direction || firstStep.direction || 1200,
-      offsetX: firstStep.offsetX || 0,
-      offsetY: firstStep.offsetY || 0
-    };
+    const { initialConfig: personConfig } = parseForm(data);
 
     const personShapes = generatePersonShapes(
       personConfig,
@@ -94,7 +89,9 @@ export function load({ params }: { params: { slug: string } }) {
       labelsData
     };
   } catch (e) {
-    console.error(e);
-    throw error(404, `Could not find animation for ${slug}`);
+    if (!existsSync(filePath)) {
+      throw error(404, `Could not find animation for ${slug}`);
+    }
+    throw new Error(`Invalid form ${slug}.yml: ${(e as Error).message}`);
   }
 }

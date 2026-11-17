@@ -85,7 +85,10 @@ describe('computeAnimationData', () => {
   });
 
   it('should compute animation data for new format', () => {
-    const file = fs.readFileSync('src/lib/fixtures/test-new-format.yml', 'utf8');
+    const file = fs.readFileSync(
+      'src/lib/fixtures/test-new-format.yml',
+      'utf8'
+    );
     const cfg = yaml.parse(file);
 
     const { animationData, labelsData } = generateAndComputeAnimationData(
@@ -113,5 +116,34 @@ describe('computeAnimationData', () => {
     expect(animationData[5].targets).toHaveLength(3);
     expect(animationData[5].startFrame).toBe(1750);
     expect(animationData[5].durationToEndFrame).toBe(250);
+  });
+});
+
+describe('form YAML validation', () => {
+  const dir = 'static/forms';
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.yml'));
+
+  it.each(files)('renders every authored label of %s', (file) => {
+    const cfg = yaml.parse(fs.readFileSync(`${dir}/${file}`, 'utf8'));
+    const { labelsData } = generateAndComputeAnimationData(
+      cfg,
+      DEFAULT_CANVAS_DIMS
+    );
+    const authored = cfg.steps
+      .slice(1)
+      .flatMap((s: any) => s.labels ?? (s.label ? [s.label] : []));
+    const rendered = labelsData.map((l) => l.text);
+    expect(rendered).toHaveLength(authored.length);
+    for (const label of authored) expect(rendered).toContain(label);
+  });
+
+  it('rejects an unknown stance and an unknown key', () => {
+    const gen = (step: object) =>
+      generateAndComputeAnimationData(
+        { steps: [{ stance: 'attention' }, step] },
+        DEFAULT_CANVAS_DIMS
+      );
+    expect(() => gen({ stance: 'horsee' })).toThrow(/step 1: unknown stance/);
+    expect(() => gen({ lable: 'x' })).toThrow(/step 1: unknown key "lable"/);
   });
 });
