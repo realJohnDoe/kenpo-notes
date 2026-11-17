@@ -10,6 +10,7 @@ import {
   applyPivotLogic,
   processBodyAnimationsToAnimationData
 } from './body-animation';
+import { stances } from './kenpo-geometry';
 import { processLabelAnimationsToAnimationData } from './label-animation';
 
 export * from './animation-types';
@@ -25,7 +26,6 @@ export type DefaultStep = {
 };
 
 export type LabelOnlyStep = {
-  label?: string;
   labels?: string[];
   duration: number;
 };
@@ -33,56 +33,88 @@ export type LabelOnlyStep = {
 export type MultiStanceStep = {
   stances: Stance[];
   duration: number;
-  label?: string;
   labels?: string[];
 };
 
-function parseStepFromYaml(
-  rawStep: any
-): LabelOnlyStep | DefaultStep | MultiStanceStep {
-  if (rawStep.stances && Array.isArray(rawStep.stances)) {
-    const stances: Stance[] = rawStep.stances.map((s: any) => ({
-      type: s.type,
-      direction: s.direction,
-      pivot: s.pivot
-    }));
+const STEP_KEYS = new Set([
+  'stance',
+  'stances',
+  'direction',
+  'pivot',
+  'duration',
+  'label',
+  'labels',
+  'offsetX',
+  'offsetY'
+]);
 
+function checkStance(type: unknown, where: string): string {
+  if (typeof type !== 'string' || !(type in stances)) {
+    throw new Error(`${where}: unknown stance ${JSON.stringify(type)}`);
+  }
+  return type;
+}
+
+function parseStanceFromYaml(raw: any, where: string): Stance {
+  const obj = typeof raw === 'object' ? raw : { type: raw };
+  return {
+    type: checkStance(obj.type, where),
+    direction: obj.direction,
+    pivot: obj.pivot
+  };
+}
+
+function parseStepFromYaml(
+  rawStep: any,
+  index: number
+): LabelOnlyStep | DefaultStep | MultiStanceStep {
+  const where = `step ${index}`;
+  for (const key of Object.keys(rawStep ?? {})) {
+    if (!STEP_KEYS.has(key)) throw new Error(`${where}: unknown key "${key}"`);
+  }
+  const duration = rawStep.duration !== undefined ? rawStep.duration : 1;
+  const labels: string[] | undefined =
+    rawStep.labels ?? (rawStep.label ? [rawStep.label] : undefined);
+
+  if (Array.isArray(rawStep.stances)) {
     return {
-      stances,
-      duration: rawStep.duration !== undefined ? rawStep.duration : 1,
-      label: rawStep.label,
-      labels: rawStep.labels
+      stances: rawStep.stances.map((s: any) => parseStanceFromYaml(s, where)),
+      duration,
+      labels
     };
   }
 
   if (rawStep.stance) {
-    let stance: Stance;
-
-    if (typeof rawStep.stance === 'object') {
-      stance = {
-        type: rawStep.stance.type,
-        direction: rawStep.stance.direction,
-        pivot: rawStep.stance.pivot
-      };
-    } else {
-      stance = {
-        type: rawStep.stance,
-        direction: rawStep.direction || 1200,
-        pivot: rawStep.pivot
-      };
+    const stance = parseStanceFromYaml(rawStep.stance, where);
+    if (typeof rawStep.stance !== 'object') {
+      stance.direction = rawStep.direction || 1200;
+      stance.pivot = rawStep.pivot;
     }
-
-    return {
-      stance,
-      duration: rawStep.duration !== undefined ? rawStep.duration : 1,
-      labels: rawStep.labels
-    };
+    return { stance, duration, labels };
   }
 
+  return { labels, duration };
+}
+
+/** Validates a form file; the single source of its initial person config. */
+export function parseForm(cfg: any): {
+  initialConfig: PersonConfig;
+  steps: (LabelOnlyStep | DefaultStep | MultiStanceStep)[];
+} {
+  const rawSteps: any[] = cfg?.steps;
+  if (!Array.isArray(rawSteps) || rawSteps.length === 0) {
+    throw new Error('form has no steps');
+  }
+  const steps = rawSteps.map((raw, i) => parseStepFromYaml(raw, i));
+  const first = rawSteps[0];
   return {
-    label: rawStep.label,
-    labels: rawStep.labels,
-    duration: rawStep.duration !== undefined ? rawStep.duration : 1
+    initialConfig: {
+      stance: first.stance?.type || first.stance || 'attention',
+      direction: first.stance?.direction || first.direction || 1200,
+      offsetX: first.offsetX || 0,
+      offsetY: first.offsetY || 0
+    },
+    steps
   };
 }
 
@@ -95,7 +127,7 @@ function convertLabelOnlyStepToAnimationData(
   const stepAnimationDuration = context.baseAnimationDuration * step.duration;
 
   const coords = calculateShapeTransforms(lastConfig, context.canvasDims);
-  const labels = step.labels || (step.label ? [step.label] : []);
+  const labels = step.labels || [];
 
   return processLabelAnimationsToAnimationData(
     labels,
@@ -160,7 +192,7 @@ function convertMultiStanceStepToAnimationData(
   const result: AnimationData[] = [];
   let currentConfig: PersonConfig = lastConfig;
 
-  const labels = step.labels || (step.label ? [step.label] : []);
+  const labels = step.labels || [];
   if (labels.length > 0) {
     const fromCoords = calculateShapeTransforms(lastConfig, context.canvasDims);
     const firstStance = step.stances[0];
@@ -234,15 +266,10 @@ export function generateAndComputeAnimationData(
   const animationDataList: AnimationData[] = [];
   let currentTimelineCursor = 0;
 
-  if (cfg.steps.length > 1) {
-    const firstStepRaw = cfg.steps[0];
-    let lastConfig: PersonConfig = {
-      stance: firstStepRaw.stance?.type || firstStepRaw.stance || 'attention',
-      direction:
-        firstStepRaw.stance?.direction || firstStepRaw.direction || 1200,
-      offsetX: firstStepRaw.offsetX || 0,
-      offsetY: firstStepRaw.offsetY || 0
-    };
+  const { initialConfig, steps } = parseForm(cfg);
+
+  if (steps.length > 1) {
+    let lastConfig: PersonConfig = initialConfig;
 
     const context: AnimationContext = {
       baseAnimationDuration,
@@ -251,9 +278,8 @@ export function generateAndComputeAnimationData(
       labelsData
     };
 
-    for (let i = 1; i < cfg.steps.length; i++) {
-      const rawStep = cfg.steps[i];
-      const parsedStep = parseStepFromYaml(rawStep);
+    for (let i = 1; i < steps.length; i++) {
+      const parsedStep = steps[i];
 
       let stepAnimationData: AnimationData[] = [];
       let stepDuration = context.baseAnimationDuration * parsedStep.duration;
