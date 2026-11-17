@@ -91,6 +91,16 @@ jobs:
           cd animations
           npm run check
 
+      - name: Format-check animations
+        run: |
+          cd animations
+          npm run lint
+
+      - name: Unit-test animations
+        run: |
+          cd animations
+          npm test
+
       - name: Build animations
         run: |
           cd animations

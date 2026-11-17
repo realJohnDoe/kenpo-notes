@@ -85,7 +85,10 @@ describe('computeAnimationData', () => {
   });
 
   it('should compute animation data for new format', () => {
-    const file = fs.readFileSync('src/lib/fixtures/test-new-format.yml', 'utf8');
+    const file = fs.readFileSync(
+      'src/lib/fixtures/test-new-format.yml',
+      'utf8'
+    );
     const cfg = yaml.parse(file);
 
     const { animationData, labelsData } = generateAndComputeAnimationData(
