@@ -51,7 +51,9 @@ step) and becomes a page at `/kenpo-notes/animation/<file name>`. Form notes in
 cd animations
 npm ci
 npm run dev      # local preview
-npm test         # unit tests (Vitest)
+npm test         # unit tests (Vitest, one run)
+npm run test:watch  # unit tests in watch mode
+npm run lint     # format check (Prettier)
 npm run check    # type-check
 npm run build    # static build into animations/build/
 ```
@@ -62,7 +64,8 @@ CI (`.github/workflows/ci.yaml`) runs on pushes to `main` and on pull requests
 into it:
 
 - `./quartz.sh` builds the site.
-- `npm ci && npm run check && npm run build` in `animations/`.
+- `npm ci && npm run check && npm run lint && npm test && npm run build` in
+  `animations/`.
 
 Run both before pushing. Pushes to `main` deploy to GitHub Pages: the deploy
 job copies the animations build into the Quartz output, without replacing
