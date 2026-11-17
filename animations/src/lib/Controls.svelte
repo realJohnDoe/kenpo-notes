@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
   import {
     Play,
     Pause,
@@ -8,15 +7,23 @@
     RotateCcw
   } from '@lucide/svelte';
 
-  export let playerState: 'playing' | 'paused' | 'finished' = 'paused';
-  export let playbackSpeed: number = 1;
+  type PlayerState = 'playing' | 'paused' | 'finished';
 
-  const dispatch = createEventDispatcher();
-
-  const handlePrev = () => dispatch('prev');
-  const handleToggle = () => dispatch('togglePlayPause');
-  const handleNext = () => dispatch('next');
-  const handleSpeedChange = (speed: number) => dispatch('speedChange', speed);
+  let {
+    playerState,
+    playbackSpeed,
+    onPrev,
+    onTogglePlayPause,
+    onNext,
+    onSpeedChange
+  }: {
+    playerState: PlayerState;
+    playbackSpeed: number;
+    onPrev: () => void;
+    onTogglePlayPause: () => void;
+    onNext: () => void;
+    onSpeedChange: (speed: number) => void;
+  } = $props();
 
   const baseBtnClasses =
     'w-8 h-8 lg:w-12 lg:h-12 rounded-lg flex justify-center items-center cursor-pointer shadow-md transition-all duration-200 ease-in-out hover:-translate-y-px hover:shadow-lg active:translate-y-0';
@@ -38,7 +45,7 @@
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 0.5
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
-        on:click={() => handleSpeedChange(0.5)}
+        onclick={() => onSpeedChange(0.5)}
       >
         0.5x
       </button>
@@ -46,7 +53,7 @@
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 1
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
-        on:click={() => handleSpeedChange(1)}
+        onclick={() => onSpeedChange(1)}
       >
         1x
       </button>
@@ -54,7 +61,7 @@
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 2
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
-        on:click={() => handleSpeedChange(2)}
+        onclick={() => onSpeedChange(2)}
       >
         2x
       </button>
@@ -62,17 +69,14 @@
 
     <!-- Playback Controls - Bottom Right -->
     <div class="absolute right-2 bottom-2 flex gap-3">
-      <button
-        class="{baseBtnClasses} {inactiveBtnClasses}"
-        on:click={handlePrev}
-      >
+      <button class="{baseBtnClasses} {inactiveBtnClasses}" onclick={onPrev}>
         <SkipBack class="w-4 lg:w-6" />
       </button>
       <button
         class="{baseBtnClasses} {playerState === 'playing'
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
-        on:click={handleToggle}
+        onclick={onTogglePlayPause}
       >
         {#if playerState === 'finished'}
           <RotateCcw class="w-4 lg:w-6" />
@@ -82,10 +86,7 @@
           <Pause class="w-4 lg:w-6" />
         {/if}
       </button>
-      <button
-        class="{baseBtnClasses} {inactiveBtnClasses}"
-        on:click={handleNext}
-      >
+      <button class="{baseBtnClasses} {inactiveBtnClasses}" onclick={onNext}>
         <SkipForward class="w-4 lg:w-6" />
       </button>
     </div>
