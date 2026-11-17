@@ -25,7 +25,7 @@ export default defineConfig({
       preprocess: vitePreprocess(),
       adapter: adapter(),
       prerender: {
-        entries: ['/', ...getYamlSlugs()]
+        entries: getYamlSlugs()
       },
       paths: {
         base: '/kenpo-notes'
