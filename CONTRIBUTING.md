@@ -67,10 +67,24 @@ into it:
 - `npm ci && npm run check && npm run lint && npm test && npm run build` in
   `animations/`.
 
-Run both before pushing. Pushes to `main` deploy to GitHub Pages: the deploy
-job copies the animations build into the Quartz output, without replacing
-Quartz's home page. To deploy a live preview from another branch, run the
-workflow by hand from the [Actions tab](https://github.com/realJohnDoe/kenpo-notes/actions/workflows/ci.yaml).
+Run both before pushing. The `site` job copies the animations build into the
+Quartz output, without replacing Quartz's home page. Pushes to `main` publish
+that to the root of the `gh-pages` branch, which GitHub Pages serves. No other
+branch deploys there; running the workflow by hand on `main` redeploys it.
+
+**PR previews:** label a PR `preview` and CI publishes it to
+`https://realjohndoe.github.io/kenpo-notes/pr-preview/pr-<number>/`, comments
+the link on the PR and updates it on every push. The preview is removed when
+the PR closes or loses the label. Previews are public, and PRs from forks
+don't get one.
+
+Builds read `BASE_PATH` for the path they're served under (default
+`/kenpo-notes`). PR builds always use their preview path, so CI checks every
+PR away from the usual base path, labelled or not. To build one locally:
+`BASE_PATH=/kenpo-notes/pr-preview/pr-1 ./quartz.sh` (and the same variable
+for `npm run build` in `animations/`). The form notes embed their animations
+from the live site, so a preview shows `main`'s animations inside the notes;
+open `pr-preview/pr-<number>/animation/<form>` to see the PR's.
 
 Dependabot proposes dependency updates. A workflow labels non-major bumps
 `automerge`, and the workshop dispatcher merges them once CI is green.

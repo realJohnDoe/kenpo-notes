@@ -28,7 +28,9 @@ export default defineConfig({
         entries: getYamlSlugs()
       },
       paths: {
-        base: '/kenpo-notes'
+        // CI sets BASE_PATH for PR previews, which are served under
+        // /kenpo-notes/pr-preview/pr-<n>.
+        base: (process.env.BASE_PATH ?? '/kenpo-notes') as `/${string}`
       }
     })
   ]
