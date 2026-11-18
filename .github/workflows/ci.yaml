@@ -4,19 +4,30 @@ on:
   pull_request:
     branches:
       - main
+    # labeled/unlabeled/closed drive PR previews (see the preview jobs below)
+    types: [opened, reopened, synchronize, labeled, unlabeled, closed]
   push:
     branches:
       - main
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
+
+env:
+  # Where the build is served. PR builds always use their preview path, so
+  # every PR checks that the site works away from /kenpo-notes, whether or
+  # not it is deployed.
+  BASE_PATH: ${{ github.event_name == 'pull_request' && format('/kenpo-notes/pr-preview/pr-{0}', github.event.number) || '/kenpo-notes' }}
 
 jobs:
   quartz-build:
+    # Skip PR events that change nothing to build: closing, and labels other
+    # than `preview`.
+    if: >-
+      github.event.action != 'closed' &&
+      github.event.action != 'unlabeled' &&
+      (github.event.action != 'labeled' || github.event.label.name == 'preview')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -62,6 +73,12 @@ jobs:
           if-no-files-found: error
 
   animations-build:
+    # Skip PR events that change nothing to build: closing, and labels other
+    # than `preview`.
+    if: >-
+      github.event.action != 'closed' &&
+      github.event.action != 'unlabeled' &&
+      (github.event.action != 'labeled' || github.event.label.name == 'preview')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -113,20 +130,9 @@ jobs:
           path: ./animations/build
           if-no-files-found: error
 
-  deploy:
-    # Deploys main, or any branch started by hand (Actions > Run workflow) for a live preview
-    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+  # Combines both builds into the site that GitHub Pages serves.
+  site:
     needs: [quartz-build, animations-build]
-    # Allow only one concurrent deployment, skipping deploys queued between the
-    # one in progress and the latest. Do NOT cancel in-progress deploys, so
-    # production deployments complete. Scoped to this job so builds (including
-    # PR builds) never wait on or cancel each other.
-    concurrency:
-      group: "pages"
-      cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Download Quartz artifact
@@ -141,17 +147,108 @@ jobs:
           name: animations-build
           path: ./animations-build
 
+      # Copies the animations into the Quartz output without replacing
+      # Quartz's home page. .nojekyll stops Pages running Jekyll, which would
+      # drop SvelteKit's _app/ directory.
       - name: Combine builds
-        run: mkdir -p public && cp -r animations-build/. public/
+        run: |
+          cp -r animations-build/. public/
+          touch public/.nojekyll
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload combined artifact
-        uses: actions/upload-pages-artifact@v5
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v7
         with:
+          name: site
+          path: ./public
+          include-hidden-files: true
+          if-no-files-found: error
+
+  # Publishes main to the root of the gh-pages branch, which Pages serves.
+  # Only main deploys there; other branches get a PR preview instead.
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: site
+    concurrency:
+      group: pages-main
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      # The deploy actions push from a git checkout.
+      - uses: actions/checkout@v7
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: site
           path: ./public
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./public
+          branch: gh-pages
+          # Keep the PR previews, and rebase instead of force-pushing so a
+          # preview pushed meanwhile isn't lost.
+          clean-exclude: pr-preview/
+          force: false
+
+  # Publishes a PR labelled `preview` to
+  # https://realjohndoe.github.io/kenpo-notes/pr-preview/pr-<n>/ and links it
+  # in a PR comment. PRs from forks can't push, so they get none.
+  preview:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      contains(github.event.pull_request.labels.*.name, 'preview')
+    needs: site
+    concurrency:
+      group: preview-${{ github.event.number }}
+      cancel-in-progress: true
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # The deploy actions push from a git checkout.
+      - uses: actions/checkout@v7
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: ./public
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          action: deploy
+          source-dir: ./public
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+
+  # Removes a PR's preview when the PR closes or loses the `preview` label.
+  preview-remove:
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      ((github.event.action == 'closed' && contains(github.event.pull_request.labels.*.name, 'preview')) ||
+       (github.event.action == 'unlabeled' && github.event.label.name == 'preview'))
+    concurrency:
+      group: preview-${{ github.event.number }}
+      cancel-in-progress: true
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # The deploy actions push from a git checkout.
+      - uses: actions/checkout@v7
+
+      - name: Remove preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          action: remove
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
