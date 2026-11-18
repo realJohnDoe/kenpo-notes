@@ -42,25 +42,31 @@
     <!-- Speed Controls - Bottom Left -->
     <div class="absolute bottom-2 left-2 flex gap-3">
       <button
+        type="button"
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 0.5
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
+        aria-pressed={playbackSpeed === 0.5}
         onclick={() => onSpeedChange(0.5)}
       >
         0.5x
       </button>
       <button
+        type="button"
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 1
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
+        aria-pressed={playbackSpeed === 1}
         onclick={() => onSpeedChange(1)}
       >
         1x
       </button>
       <button
+        type="button"
         class="{baseBtnClasses} {speedBtnClasses} {playbackSpeed === 2
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
+        aria-pressed={playbackSpeed === 2}
         onclick={() => onSpeedChange(2)}
       >
         2x
@@ -69,13 +75,24 @@
 
     <!-- Playback Controls - Bottom Right -->
     <div class="absolute right-2 bottom-2 flex gap-3">
-      <button class="{baseBtnClasses} {inactiveBtnClasses}" onclick={onPrev}>
+      <button
+        type="button"
+        class="{baseBtnClasses} {inactiveBtnClasses}"
+        aria-label="Previous step"
+        onclick={onPrev}
+      >
         <SkipBack class="w-4 lg:w-6" />
       </button>
       <button
+        type="button"
         class="{baseBtnClasses} {playerState === 'playing'
           ? activeSpeedBtnClasses
           : inactiveBtnClasses}"
+        aria-label={playerState === 'finished'
+          ? 'Restart'
+          : playerState === 'paused'
+            ? 'Play'
+            : 'Pause'}
         onclick={onTogglePlayPause}
       >
         {#if playerState === 'finished'}
@@ -86,7 +103,12 @@
           <Pause class="w-4 lg:w-6" />
         {/if}
       </button>
-      <button class="{baseBtnClasses} {inactiveBtnClasses}" onclick={onNext}>
+      <button
+        type="button"
+        class="{baseBtnClasses} {inactiveBtnClasses}"
+        aria-label="Next step"
+        onclick={onNext}
+      >
         <SkipForward class="w-4 lg:w-6" />
       </button>
     </div>
