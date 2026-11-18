@@ -1,0 +1,157 @@
+title: 'Short Form 2'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    labels: ['Salutation Gesture 🫸🤛']
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    duration: 0.5
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: left
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Handsword ✋⚔️💥"
+    duration: 1.5
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: right
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: "Left ⬅️\nOutward 🔼 Handsword ✋⚔️💥"
+    duration: 1.5
+  # Sideways
+  - stance:
+      type: left_cat
+      direction: 1200
+      pivot: right
+  - stances:
+      - type: horse
+        direction: 1200
+        pivot: right
+      - type: horse
+        direction: 1200
+    label: "Left ⬅️ Extended 📏 Outward 🔼 Block 🛡️\n+ Right ➡️ Roundhouse 🔄 Punch 👊💥"
+  - stance:
+      type: right_cat
+      direction: 1200
+      pivot: left
+  - stances:
+      - type: horse
+        direction: 1200
+        pivot: left
+      - type: horse
+        direction: 1200
+    label: "Right ➡️ Extended 📏 Outward 🔼 Block 🛡️\n+ Left ⬅️ Roundhouse 🔄 Punch 👊💥"
+    duration: 1.5
+  # Backwards
+  - stance:
+      type: left_cat
+      direction: 1200
+      pivot: right
+  - label: "Right ➡️ Vertical Punch 👊💥\n+ Left ⬅️ Upward ⬆️ Block 🛡️"
+    stances:
+      - type: attention
+        direction: 900
+        pivot: right
+      - type: left_forward
+        direction: 600
+        pivot: right
+    duration: 1.5
+  - label: 'Go down into a Wide Kneel'
+  - stance:
+      type: right_cat
+      direction: 900
+      pivot: left
+  - stances:
+      - type: right_forward
+        direction: 1200
+        pivot: left
+      - type: right_forward
+        direction: 1200
+        pivot: left
+    label: "Left ⬅️ Vertical Punch 👊💥\n+ Right ➡️ Upward ⬆️ Block 🛡️"
+    duration: 1.5
+  - label: 'Go down into a Wide Kneel'
+  # Diagonal Backward
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
+    stances:
+      - type: attention
+        direction: 900
+        pivot: right
+      - type: left_neutral
+        direction: 430
+        pivot: right
+      - type: left_neutral
+        direction: 430
+    duration: 1.5
+  - stances:
+      - type: right_neutral
+        direction: 430
+        pivot: left
+      - type: right_neutral
+        direction: 430
+    label: "Right ➡️\nHeel Palm ✋🌴💥"
+    duration: 1.5
+  - stances:
+      - type: right_neutral
+        direction: 730
+        pivot: left
+      - type: right_neutral
+        direction: 730
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+    duration: 1.5
+  - stances:
+      - type: left_neutral
+        direction: 730
+        pivot: right
+      - type: left_neutral
+        direction: 730
+    labels: ["Left ⬅️\nHeel Palm ✋🌴💥"]
+    duration: 1.5
+  # Diagonal Forward
+  - stances:
+      - type: right_cat
+        direction: 130
+        pivot: left
+      - type: right_cat
+        direction: 130
+    label: "Left ⬅️\nInward 🔽 Block 🛡️"
+  - stance:
+      type: right_neutral
+      direction: 130
+      pivot: left
+    label: "Right ➡️\nExtended 📏 Outward 🔼 Block 🛡️"
+  - label: "Left ⬅️\nHalf-Fist Punch 👊💥"
+    duration: 1.5
+  - stances:
+      - type: left_cat
+        direction: 1030
+        pivot: right
+      - type: left_cat
+        direction: 1030
+    label: "Right ➡️\nInward 🔽 Block 🛡️"
+  - stance:
+      type: left_neutral
+      direction: 1030
+      pivot: right
+    label: "Left ⬅️\nExtended 📏 Outward 🔼 Block 🛡️"
+  - label: "Right ➡️\nHalf-Fist Punch 👊💥"
+    duration: 1.5
+  # Conclusion
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: left
+    labels: ['Salutation Gesture 🫸🤛']
+  - stance:
+      type: attention
+      direction: 1200
+      pivot: right

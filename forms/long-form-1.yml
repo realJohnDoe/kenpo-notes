@@ -1,0 +1,226 @@
+title: 'Long Form 1'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    labels: ['Salutation Gesture 🫸🤛']
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    duration: 0.5
+  # Inward Blocks 1200
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - stance:
+      type: right_forward
+      direction: 1200
+    labels: ["Left ⬅️\nStraight ↕️ Punch 👊💥"]
+  - label: ["Right ➡️\nInward 🔽 Block 🛡️"]
+    duration: 2
+    stances:
+      - type: right_cat
+        direction: 1200
+        pivot: left
+      - type: right_cat
+        direction: 1200
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: left
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 1200
+      - type: left_forward
+        direction: 1200
+  # Outward Blocks 900
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: ["Right ➡️\nStraight ↕️ Punch 👊💥"]
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 900
+      - type: left_forward
+        direction: 900
+  - stance:
+      type: right_neutral
+      direction: 900
+      pivot: right
+    labels: ["Right ➡️\nOutward 🔼 Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 900
+      - type: right_forward
+        direction: 900
+  # Upward Blocks 300
+  - stance:
+      type: left_neutral
+      direction: 300
+      pivot: left
+    duration: 2
+    labels: ["Left ⬅️\nOutward 🔼 Elbow 💪💥", "Left ⬅️\nUpward ⬆️ Block 🛡️"]
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 300
+      - type: left_forward
+        direction: 300
+  - stance:
+      type: right_neutral
+      direction: 300
+      pivot: right
+    labels: ["Right ➡️\nUpward ⬆️ Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 300
+      - type: right_forward
+        direction: 300
+  # Downward Blocks 600
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: left
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
+    duration: 2
+    stances:
+      - type: right_forward
+        direction: 600
+      - type: right_forward
+        direction: 600
+  - stance:
+      type: left_neutral
+      direction: 600
+      pivot: left
+    labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
+    duration: 2
+    stances:
+      - type: left_forward
+        direction: 600
+      - type: left_forward
+        direction: 600
+  # 3x Inward 600
+  - stance:
+      type: left_neutral
+      direction: 600
+    labels: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+  - label: "Right ➡️\nInward 🔽 Block 🛡️"
+  - label: "Left ⬅️\nInward 🔽 Block 🛡️"
+    duration: 1.5
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: right
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: "Left ⬅️\nInward 🔽 Block 🛡️"
+  - label: "Right ➡️\nInward 🔽 Block 🛡️"
+    duration: 1.5
+  # 3x Outward 900
+  - stance:
+      type: right_neutral
+      direction: 900
+      pivot: right
+    labels: ["Right ➡️\nOutward 🔼 Block 🛡️"]
+  - label: "Left ⬅️\nOutward 🔼 Block 🛡️"
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
+    duration: 1.5
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
+  - label: "Left ⬅️\nOutward 🔼 Block 🛡️"
+    duration: 1.5
+  # 3x Upward 300
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
+    stances:
+      - type: attention
+        direction: 1200
+        pivot: right
+      - type: right_neutral
+        direction: 300
+        pivot: right
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
+    duration: 1.5
+  - stance:
+      type: left_neutral
+      direction: 300
+      pivot: left
+    labels: ["Left ⬅️\nUpward ⬆️ Block 🛡️"]
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
+    duration: 1.5
+  # 3x Downward 1200
+  - stance:
+      type: left_neutral
+      direction: 1200
+      pivot: left
+    labels: ["Left ⬅️\nDownward ⬇️ Block 🛡️"]
+  - label: "Right ➡️\nDownward ⬇️ Block 🛡️"
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
+    duration: 1.5
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
+  - label: "Right ➡️\nDownward ⬇️ Block 🛡️"
+    duration: 1.5
+  # 3x in horse
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: right
+    labels: ["Left ⬅️\nInward 🔽 Downward ⬇️\nBlock 🛡️"]
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Left ⬅️\nInward 🔽Downward ⬇️\nBlock 🛡️"
+    duration: 1.5
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Left ⬅️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+  - label: "Right ➡️\nInward 🔽 Downward ⬇️\nBlock 🛡️"
+    duration: 1.5
+  - label: "Left ⬅️\nPushdown Block ⬇️🛡️"
+  - label: "Right ➡️\nPushdown Block ⬇️🛡️"
+  - label: "Left ⬅️\nPushdown Block ⬇️🛡️"
+    duration: 1.5
+  # Double Punches
+  - label: "Right ➡️\nStraight ↕️ Punch 👊💥"
+  - label: "Left ⬅️\nStraight ↕️ Punch 👊💥"
+    duration: 1.5
+  - label: "Right ➡️\nDiagonal Punch 👊💥"
+  - label: "Left ⬅️\nDiagonal Punch 👊💥"
+    duration: 1.5
+  - label: "Right ➡️\nRoundhouse 🔄 Punch 👊💥"
+  - label: "Left ⬅️\nRoundhouse 🔄 Punch 👊💥"
+    duration: 1.5
+  - label: "Right ➡️\nUppercut 🔝✊💥"
+  - label: "Left ⬅️\nUppercut 🔝✊💥"
+    duration: 1.5
+  - label: 'Salutation Gesture 🫸🤛'
+  - stance:
+      type: attention
+      direction: 1200
+      pivot: right

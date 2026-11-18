@@ -1,0 +1,88 @@
+title: 'Short Form 1'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    labels: ['Salutation Gesture 🫸🤛']
+  - stance:
+      type: 'horse'
+      direction: 1200
+      pivot: right
+    duration: 0.5
+  - stance:
+      type: right_neutral
+      direction: 1200
+      pivot: right
+    labels: ["Right ➡️\nInward 🔽 Block 🛡️"]
+  - label: ["Left ⬅️\nInward 🔽 Block 🛡️"]
+    duration: 2
+    stances:
+      - type: left_neutral
+        direction: 1200
+        pivot: left
+      - type: left_neutral
+        direction: 1200
+        pivot: left
+  - stance:
+      type: left_neutral
+      direction: 900
+      pivot: left
+    labels: ["Left ⬅️\nOutward 🔼 Block 🛡️"]
+  - label: "Right ➡️\nOutward 🔼 Block 🛡️"
+    duration: 2
+    stances:
+      - type: right_neutral
+        direction: 900
+        pivot: right
+      - type: right_neutral
+        direction: 900
+        pivot: right
+  - label: "Left ⬅️\nUpward ⬆️ Block 🛡️"
+    stances:
+      - type: attention
+        direction: 600
+        pivot: left
+      - type: left_neutral
+        direction: 300
+        pivot: left
+  - label: "Right ➡️\nUpward ⬆️ Block 🛡️"
+    duration: 2
+    stances:
+      - type: right_neutral
+        direction: 300
+        pivot: right
+      - type: right_neutral
+        direction: 300
+        pivot: right
+  - stance:
+      type: right_neutral
+      direction: 600
+      pivot: right
+    labels: ["Right ➡️\nDownward ⬇️ Block 🛡️"]
+  - label: "Left ⬅️\nDownward ⬇️ Block 🛡️"
+    duration: 2
+    stances:
+      - type: left_neutral
+        direction: 600
+        pivot: left
+      - type: left_neutral
+        direction: 600
+        pivot: left
+  - stance:
+      type: left_cat
+      direction: 900
+      pivot: right
+    duration: 0.5
+  - stance:
+      type: horse
+      direction: 1200
+      pivot: right
+    labels: ['Salutation Gesture 🫸🤛']
+  - stance:
+      type: attention
+      direction: 1200
+      pivot: right

@@ -1,0 +1,38 @@
+title: 'Five Swords'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'right_neutral'
+      direction: 1200
+      pivot: 'left'
+    duration: 0.5
+    labels: ['Right Inward Block ➡️🔽🛡️']
+  - stance:
+      type: 'right_neutral'
+      direction: 1200
+    duration: 0.5
+    labels: ['Right Outward Handsword ➡️🔼✋⚔️💥']
+  - stance:
+      type: right_forward
+      direction: 1200
+    labels: ['Left Heel Palm ⬅️✋🌴💥']
+  - stance:
+      type: 'right_neutral'
+      direction: 1200
+      pivot: right
+    duration: 0.5
+    labels: ['Right Uppercut ➡️🔝✊💥']
+  - stance:
+      type: 'right_forward'
+      direction: 900
+      pivot: right
+    duration: 0.5
+    labels: ['Left Outward Handsword ⬅️🔼✋⚔️💥']
+  - stance:
+      type: horse
+      direction: 730
+      pivot: right
+    duration: 0.5
+    labels: ['Right Inward Downward Handsword ➡️🔽✋⚔️💥']

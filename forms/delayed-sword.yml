@@ -1,0 +1,21 @@
+title: 'Delayed Sword'
+steps:
+  - stance:
+      type: 'attention'
+      direction: 1200
+  - stance:
+      type: 'right_neutral'
+      direction: 1200
+      pivot: 'right'
+    labels: ['Right Inward Block ➡️🔽🛡️']
+  - stance:
+      type: 'right_cat'
+      direction: 1200
+      pivot: 'left'
+    duration: 0.5
+  - stance:
+      type: 'right_neutral'
+      direction: 1200
+      pivot: 'left'
+    labels: ['Right Front Kick ➡️⬆️🦶💥', 'Right Outward Handsword ➡️🔼✋⚔️💥']
+    duration: 1.5
