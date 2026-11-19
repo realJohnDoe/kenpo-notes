@@ -165,9 +165,10 @@ jobs:
 
   # Opens the combined site in a browser under the base path it is built for
   # (/kenpo-notes, or the PR's preview path), which no unit test can do.
+  # Pinned: Playwright cannot install Chromium deps on ubuntu-latest (26.04).
   e2e:
     needs: site
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
 
