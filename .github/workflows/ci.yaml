@@ -163,6 +163,48 @@ jobs:
           include-hidden-files: true
           if-no-files-found: error
 
+  # Opens the combined site in a browser under the base path it is built for
+  # (/kenpo-notes, or the PR's preview path), which no unit test can do.
+  e2e:
+    needs: site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Cache animations dependencies
+        uses: actions/cache@v6
+        with:
+          path: animations/node_modules
+          key: node-animations-${{ hashFiles('animations/package-lock.json') }}
+          restore-keys: |
+            node-animations-
+
+      - name: Install animations dependencies
+        run: |
+          cd animations
+          npm ci
+
+      - name: Install Chromium
+        run: |
+          cd animations
+          npx playwright-core install --with-deps chromium
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: ./public
+
+      - name: Browser-test the site
+        run: |
+          cd animations
+          SITE_DIR=../public npm run test:e2e
+
   # Publishes main to the root of the gh-pages branch, which Pages serves.
   # Only main deploys there; other branches get a PR preview instead.
   deploy:
