@@ -2,8 +2,8 @@
 
 - Use npm (Quartz and `animations/` both use it).
 - Before pushing, run the checks CI runs:
-  - root: `./quartz.sh` (builds the site with Quartz checked out at its pinned tag)
-  - `animations/`: `npm ci && npm run check && npm run lint && npm test && npm run build`
+  - root, when `content/`, `quartz.*` or `.github/workflows/` changed: `./quartz.sh`
+  - `animations/`, when `animations/` or `.github/workflows/` changed: `npm ci && npm run check && npm run lint && npm test && npm run build`
 
 ## Workshop
 
