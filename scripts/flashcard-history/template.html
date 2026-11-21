@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flashcard History</title>
+<style>
+:root{color-scheme:light;--bg:#fcfcfb;--text:#0b0b0b;--text2:#52514e;--muted:#8a8984;--grid:#e8e7e3;--axis:#c9c8c2;
+--y:#d4b100;--o:#e0522a;--p:#b03aa8;--b:#2a78d6;--g:#008300;
+--i0:#104281;--i1:#1c5cab;--i2:#2a78d6;--i3:#5598e7;--i4:#86b6ef;--inew:#b5b4ae;--tip:#ffffff;--tipb:#dddcd7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1a1a19;--text:#f0efec;--text2:#c3c2b7;--muted:#8f8e88;--grid:#2c2c2a;--axis:#4a4a46;
+--y:#ab9300;--o:#c83c28;--p:#c55bc0;--b:#3987e5;--g:#0ca30c;
+--i0:#cde2fb;--i1:#9ec5f4;--i2:#6da7ec;--i3:#3987e5;--i4:#256abf;--inew:#5e5d59;--tip:#262625;--tipb:#3a3a37}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1a1a19;--text:#f0efec;--text2:#c3c2b7;--muted:#8f8e88;--grid:#2c2c2a;--axis:#4a4a46;
+--y:#ab9300;--o:#c83c28;--p:#c55bc0;--b:#3987e5;--g:#0ca30c;
+--i0:#cde2fb;--i1:#9ec5f4;--i2:#6da7ec;--i3:#3987e5;--i4:#256abf;--inew:#5e5d59;--tip:#262625;--tipb:#3a3a37}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:920px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:24px;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:17px;margin:0 0 2px}
+.sub{color:var(--text2);margin:0 0 24px}
+.kpis{display:flex;gap:32px;flex-wrap:wrap;margin:0 0 32px}
+.kpi b{display:block;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi span{color:var(--text2);font-size:13px}
+section{margin:0 0 40px}
+.note{color:var(--text2);font-size:13px;margin:0 0 12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text2);margin:0 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.chart{position:relative}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{fill:var(--text2);font-size:11px;font-variant-numeric:tabular-nums}
+.tip{position:absolute;max-width:220px;pointer-events:none;background:var(--tip);border:1px solid var(--tipb);border-radius:6px;padding:8px 10px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.12);min-width:150px;opacity:0;z-index:2}
+.tip .h{font-weight:600;margin-bottom:4px;color:var(--text)}
+.tip .r{display:flex;justify-content:space-between;gap:12px;color:var(--text2)}
+.tip .r i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px}
+.tip .t{border-top:1px solid var(--tipb);margin-top:4px;padding-top:4px;color:var(--text);font-weight:600}
+details{margin-top:8px;font-size:13px}
+summary{cursor:pointer;color:var(--text2)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;margin-top:8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+th,td{padding:3px 10px;text-align:right;border-bottom:1px solid var(--grid)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--text2);font-weight:500}
+.ctl{display:flex;align-items:center;gap:12px;margin:4px 0 8px;flex-wrap:wrap}
+.ctl input[type=range]{flex:1;min-width:160px;accent-color:var(--b)}
+.ctl button{font:inherit;font-size:13px;padding:4px 12px;border-radius:6px;border:1px solid var(--axis);background:transparent;color:var(--text);cursor:pointer}
+.ctl .date{font-variant-numeric:tabular-nums;font-weight:600;min-width:96px}
+.ctl .cnt{color:var(--text2);font-size:13px}
+.dot{transition:transform .35s ease,opacity .35s ease;stroke:var(--bg);stroke-width:1.5}
+.dot:hover{stroke:var(--text)}
+footer{color:var(--muted);font-size:12px}
+</style></head><body><main>
+<h1>Flashcard history</h1>
+<p class="sub">How many flashcards there were at the end of each month, rebuilt from the git history of <code>content/private/*Flashcards.md</code>.</p>
+<div class="kpis" id="kpis"></div>
+<section><h2>By review interval</h2>
+<p class="note">Spaced-repetition interval from each card's <code>&lt;!--SR:…--&gt;</code> marker. "New" means the card had not been reviewed yet.</p>
+<div class="legend" id="lg-i"></div><div class="chart" id="c-i"></div>
+<details><summary>Show as table</summary><div class="tw" id="t-i"></div></details></section>
+<section><h2>By belt</h2>
+<p class="note">The belt comes from the flashcard file. Cards from the early single <code>Flashcards.md</code> are matched to a belt by technique name.</p>
+<div class="legend" id="lg-b"></div><div class="chart" id="c-b"></div>
+<details><summary>Show as table</summary><div class="tw" id="t-b"></div></details></section>
+<section><h2>Every card, by belt and interval</h2>
+<p class="note">Each dot is one flashcard. Higher means a longer review interval (log scale). Drag the slider to move through the commit history; hover a dot for the technique.</p>
+<div class="ctl"><button id="play" type="button">▶ Play</button><input id="sl" type="range" min="0" step="1" aria-label="Snapshot date"><span class="date" id="sd"></span><span class="cnt" id="sc"></span></div>
+<div class="chart" id="c-s"></div></section>
+<footer id="foot"></footer>
+</main>
+<script>
+const DATA=__DATA__;
+const IV=[[">1 yr","--i0"],["3–12 mo","--i1"],["1–3 mo","--i2"],["1 wk–1 mo","--i3"],["≤1 wk","--i4"],["New","--inew"]];
+const BT=[["Yellow","--y"],["Orange","--o"],["Purple","--p"],["Blue","--b"],["Green","--g"]];
+const MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const lab=m=>MN[+m.slice(5)-1]+" "+m.slice(0,4);
+const last=DATA[DATA.length-1];
+document.getElementById('kpis').innerHTML=
+ `<div class="kpi"><b>${last.total}</b><span>cards now</span></div>`+
+ `<div class="kpi"><b>${(last.interval[">1 yr"]||0)+(last.interval["3–12 mo"]||0)}</b><span>with an interval over 3 months</span></div>`+
+ `<div class="kpi"><b>${DATA[0].total} → ${last.total}</b><span>${lab(DATA[0].m)} to ${lab(last.m)}</span></div>`;
+document.getElementById('foot').textContent=`Last snapshot ${last.asof}. Each bar shows the last commit in that month (or the latest one before it).`;
+function chart(id,key,series){
+  const el=document.getElementById(id), W=880,H=300,ml=34,mr=86,mt=8,mb=26;
+  const pw=W-ml-mr, ph=H-mt-mb, n=DATA.length, bw=pw/n, gap=Math.max(2,bw*0.22);
+  const max=Math.ceil(Math.max(...DATA.map(d=>d.total))/20)*20;
+  const y=v=>mt+ph-v/max*ph;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stacked bar chart of flashcards per month by ${key}">`;
+  for(let v=0;v<=max;v+=20){s+=`<line x1="${ml}" x2="${W-mr}" y1="${y(v)}" y2="${y(v)}" stroke="var(${v?'--grid':'--axis'})"/>`+`<text x="${ml-6}" y="${y(v)+4}" text-anchor="end">${v}</text>`}
+  DATA.forEach((d,i)=>{
+    const x=ml+i*bw+gap/2, w=bw-gap; let acc=0;
+    const segs=series.filter(([k])=>d[key][k]);
+    segs.forEach(([k,c],j)=>{const v=d[key][k], top=j===segs.length-1;
+      const y0=y(acc), y1=y(acc+v); acc+=v; const h=y0-y1-(j? 2:0)/1; const yy=y1;
+      const hh=Math.max(0,y0-y1-(j?2:0));
+      if(top){const r=Math.min(3,hh,w/2);s+=`<path d="M${x},${yy+hh}V${yy+r}Q${x},${yy} ${x+r},${yy}H${x+w-r}Q${x+w},${yy} ${x+w},${yy+r}V${yy+hh}Z" fill="var(${c})"/>`}
+      else s+=`<rect x="${x}" y="${yy}" width="${w}" height="${hh}" fill="var(${c})"/>`;});
+    if(d.m.endsWith('-01')||i===0) s+=`<text x="${x+w/2}" y="${H-8}" text-anchor="${i===0?'start':'middle'}">${i===0?lab(d.m):d.m.slice(0,4)}</text>`;
+    s+=`<rect class="hit" data-i="${i}" x="${ml+i*bw}" y="${mt}" width="${bw}" height="${ph}" fill="transparent"/>`;
+  });
+  // direct labels at the last bar
+  let acc=0, ly=[]; series.forEach(([k])=>{const v=last[key][k]||0; if(v){ly.push([k,y(acc+v/2)]);} acc+=v;});
+  for(let i=1;i<ly.length;i++) if(ly[i-1][1]-ly[i][1]<13) ly[i][1]=ly[i-1][1]-13;
+  ly.forEach(([k,yy])=>s+=`<text x="${W-mr+6}" y="${yy+4}">${k} · ${last[key][k]}</text>`);
+  s+=`</svg><div class="tip"></div>`;
+  el.innerHTML=s;
+  const tip=el.querySelector('.tip');
+  el.querySelectorAll('.hit').forEach(r=>{
+    r.addEventListener('mouseenter',()=>{const d=DATA[+r.dataset.i];
+      tip.innerHTML=`<div class="h">${lab(d.m)}</div>`+[...series].reverse().filter(([k])=>d[key][k]).map(([k,c])=>`<div class="r"><span><i style="background:var(${c})"></i>${k}</span><span>${d[key][k]}</span></div>`).join('')+`<div class="r t"><span>Total</span><span>${d.total}</span></div>`;
+      const bx=r.getBBox(), sc=el.clientWidth/W, left=(bx.x+bx.width)*sc+8;
+      tip.style.left=(left+170>el.clientWidth? bx.x*sc-170-8:left)+'px'; tip.style.top='8px'; tip.style.opacity=1; r.setAttribute('fill','rgba(127,127,127,.08)');});
+    r.addEventListener('mouseleave',()=>{tip.style.opacity=0;r.setAttribute('fill','transparent')});
+  });
+  document.getElementById('lg-'+id.slice(2)).innerHTML=[...series].reverse().map(([k,c])=>`<span><i style="background:var(${c})"></i>${k}</span>`).join('');
+  document.getElementById('t-'+id.slice(2)).innerHTML='<table><tr><th>Month</th>'+series.map(([k])=>`<th>${k}</th>`).join('')+'<th>Total</th></tr>'+DATA.map(d=>`<tr><td>${lab(d.m)}</td>`+series.map(([k])=>`<td>${d[key][k]||0}</td>`).join('')+`<td>${d.total}</td></tr>`).join('')+'</table>';
+}
+chart('c-i','interval',IV); chart('c-b','belt',BT);
+
+const SC=__SCATTER__;
+(function(){
+  const el=document.getElementById('c-s'),W=880,H=420,ml=58,mr=16,mt=12,mb=30,pw=W-ml-mr,ph=H-mt-mb;
+  const BI=Object.fromEntries(BT.map(([k],i)=>[k,i])),cw=pw/BT.length;
+  const newH=34, top=2500, ly=v=>mt+(ph-newH-14)*(1-Math.log(v)/Math.log(top));
+  const yOf=v=>v<0? mt+ph-newH/2 : ly(Math.max(1,v));
+  const hash=s=>{let h=2166136261;for(const ch of s){h^=ch.codePointAt(0);h=Math.imul(h,16777619)}return (h>>>0)/4294967296};
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Scatter plot of flashcards by belt and review interval">`;
+  [[1,'1 day'],[7,'1 wk'],[30,'1 mo'],[90,'3 mo'],[365,'1 yr'],[730,'2 yr'],[1460,'4 yr']].forEach(([v,l])=>{s+=`<line x1="${ml}" x2="${W-mr}" y1="${ly(v)}" y2="${ly(v)}" stroke="var(--grid)"/><text x="${ml-8}" y="${ly(v)+4}" text-anchor="end">${l}</text>`});
+  s+=`<line x1="${ml}" x2="${W-mr}" y1="${mt+ph-newH}" y2="${mt+ph-newH}" stroke="var(--axis)" stroke-dasharray="3 3"/><text x="${ml-8}" y="${mt+ph-newH/2+4}" text-anchor="end">New</text>`;
+  s+=`<line x1="${ml}" x2="${W-mr}" y1="${mt+ph}" y2="${mt+ph}" stroke="var(--axis)"/>`;
+  BT.forEach(([k],i)=>{s+=`<text x="${ml+cw*(i+.5)}" y="${H-10}" text-anchor="middle">${k}</text>`; if(i) s+=`<line x1="${ml+cw*i}" x2="${ml+cw*i}" y1="${mt}" y2="${mt+ph}" stroke="var(--grid)"/>`});
+  SC.titles.forEach((t,i)=>{const b=SC.belts[i];const x=ml+cw*(BI[b]+.5)+(hash(t)-.5)*cw*.7;
+    s+=`<circle class="dot" data-i="${i}" cx="0" cy="0" r="5" fill="var(${BT[BI[b]][1]})" style="opacity:0;transform:translate(${x}px,${mt+ph-newH/2}px)" data-x="${x}"/>`});
+  s+=`</svg><div class="tip"></div>`; el.innerHTML=s;
+  const dots=[...el.querySelectorAll('.dot')],tip=el.querySelector('.tip'),sl=document.getElementById('sl');
+  sl.max=SC.snaps.length-1; sl.value=sl.max;
+  const fmt=v=>v<0?'not reviewed yet':v<14?v+' days':v<60?Math.round(v/7)+' weeks':v<730?Math.round(v/30.4)+' months':(v/365).toFixed(1)+' years';
+  function draw(k){const sn=SC.snaps[k];let n=0;
+    dots.forEach((d,i)=>{const v=sn.v[i];if(v===null){d.style.opacity=0;d.style.pointerEvents='none';return}n++;
+      d.style.opacity=1;d.style.pointerEvents='';d.style.transform=`translate(${d.dataset.x}px,${yOf(v)}px)`});
+    document.getElementById('sd').textContent=sn.d;document.getElementById('sc').textContent=n+' cards';}
+  sl.addEventListener('input',()=>draw(+sl.value));
+  let timer=null;const pb=document.getElementById('play');
+  pb.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=null;pb.textContent='▶ Play';return}
+    if(+sl.value>=+sl.max) sl.value=0; pb.textContent='❚❚ Pause'; draw(+sl.value);
+    timer=setInterval(()=>{if(+sl.value>=+sl.max){clearInterval(timer);timer=null;pb.textContent='▶ Play';return}sl.value=+sl.value+1;draw(+sl.value)},450)});
+  dots.forEach(d=>{d.addEventListener('mouseenter',()=>{const i=+d.dataset.i,v=SC.snaps[+sl.value].v[i];
+      tip.innerHTML=`<div class="h">${SC.titles[i]}</div><div class="r"><span>${SC.belts[i]} belt</span></div><div class="r"><span>Interval</span><span>${fmt(v)}</span></div>`;
+      const r=d.getBoundingClientRect(),c=el.getBoundingClientRect();let L=r.right-c.left+8;if(L+220>c.width)L=r.left-c.left-228;
+      tip.style.left=L+'px';tip.style.top=Math.max(0,r.top-c.top-20)+'px';tip.style.opacity=1});
+    d.addEventListener('mouseleave',()=>tip.style.opacity=0)});
+  draw(+sl.max);
+})();
+</script></body></html>

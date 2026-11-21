@@ -9,3 +9,4 @@ replit.nix
 dist
 .svelte-kit
 build
+flashcard-history.html
