@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-    # labeled/unlabeled/closed drive PR previews (see the preview jobs below)
+    # labeled/unlabeled/closed drive PR previews (see the `pages` job below)
     types: [opened, reopened, synchronize, labeled, unlabeled, closed]
   push:
     branches:
@@ -206,92 +206,19 @@ jobs:
           cd animations
           SITE_DIR=../public npm run test:e2e
 
-  # Publishes main to the root of the gh-pages branch, which Pages serves.
-  # Only main deploys there; other branches get a PR preview instead.
-  deploy:
-    if: github.ref == 'refs/heads/main'
-    needs: site
-    concurrency:
-      group: pages-main
-      cancel-in-progress: false
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      # The deploy actions push from a git checkout.
-      - uses: actions/checkout@v7
-
-      - name: Download site artifact
-        uses: actions/download-artifact@v8
-        with:
-          name: site
-          path: ./public
-
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ./public
-          branch: gh-pages
-          # Keep the PR previews, and rebase instead of force-pushing so a
-          # preview pushed meanwhile isn't lost.
-          clean-exclude: pr-preview/
-          force: false
-
-  # Publishes a PR labelled `preview` to
-  # https://realjohndoe.github.io/kenpo-notes/pr-preview/pr-<n>/ and links it
-  # in a PR comment. PRs from forks can't push, so they get none.
-  preview:
+  # Deploys the site artifact via the shared workshop workflow: production on
+  # main, a preview under pr-preview/pr-<n>/ for same-repo PRs labelled
+  # `preview`, and its removal when the PR closes or loses the label. The
+  # build jobs are skipped on those last two events, hence `skipped`.
+  pages:
+    needs: [site, e2e]
     if: >-
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.head.repo.full_name == github.repository &&
-      contains(github.event.pull_request.labels.*.name, 'preview')
-    needs: site
-    concurrency:
-      group: preview-${{ github.event.number }}
-      cancel-in-progress: true
+      ${{ !cancelled() &&
+      contains(fromJSON('["success", "skipped"]'), needs.site.result) &&
+      contains(fromJSON('["success", "skipped"]'), needs.e2e.result) }}
+    uses: realJohnDoe/agent-skills/.github/workflows/pages.yml@main
+    with:
+      artifact: site
     permissions:
       contents: write
       pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      # The deploy actions push from a git checkout.
-      - uses: actions/checkout@v7
-
-      - name: Download site artifact
-        uses: actions/download-artifact@v8
-        with:
-          name: site
-          path: ./public
-
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          action: deploy
-          source-dir: ./public
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
-
-  # Removes a PR's preview when the PR closes or loses the `preview` label.
-  preview-remove:
-    if: >-
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.head.repo.full_name == github.repository &&
-      ((github.event.action == 'closed' && contains(github.event.pull_request.labels.*.name, 'preview')) ||
-       (github.event.action == 'unlabeled' && github.event.label.name == 'preview'))
-    concurrency:
-      group: preview-${{ github.event.number }}
-      cancel-in-progress: true
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      # The deploy actions push from a git checkout.
-      - uses: actions/checkout@v7
-
-      - name: Remove preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          action: remove
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
