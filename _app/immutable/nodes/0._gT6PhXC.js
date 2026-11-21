@@ -1,1 +1,0 @@
-import{T as e,w as t,y as n,z as r}from"../chunks/E_VLxHWx.js";function i(i,a){var o=e(),s=r(o);n(s,()=>a.children),t(i,o)}export{i as component};
