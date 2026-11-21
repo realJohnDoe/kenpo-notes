@@ -37,7 +37,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 26
 
       # Checks out Quartz at the tag pinned in quartz.sh and builds content/ into public/
       - name: Build Quartz
@@ -88,7 +88,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 26
 
       - name: Cache animations dependencies
         uses: actions/cache@v6
@@ -175,7 +175,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 26
 
       - name: Cache animations dependencies
         uses: actions/cache@v6

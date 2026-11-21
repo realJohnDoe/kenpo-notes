@@ -32,7 +32,7 @@ Quartz isn't committed here. `quartz.sh` checks out [Quartz] at a pinned tag
 into `.quartz-checkout/`, copies `quartz.config.yaml` and `quartz.ts` into it
 and builds `content/` into `public/`. CI deploys the same build.
 
-- **Build:** `./quartz.sh`. Needs git and Node 22.
+- **Build:** `./quartz.sh`. Needs git and Node 22 or newer (CI uses 26).
 - **Preview locally:** `./quartz.sh --serve`, then open http://localhost:8080.
   Changes to `content/` reload; changes to `quartz.config.yaml` or `quartz.ts`
   need a restart.
