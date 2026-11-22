@@ -216,7 +216,7 @@ jobs:
       ${{ !cancelled() &&
       contains(fromJSON('["success", "skipped"]'), needs.site.result) &&
       contains(fromJSON('["success", "skipped"]'), needs.e2e.result) }}
-    uses: realJohnDoe/agent-skills/.github/workflows/pages.yml@main
+    uses: realJohnDoe/joes-workshop/.github/workflows/pages.yml@main
     with:
       artifact: site
     permissions:
