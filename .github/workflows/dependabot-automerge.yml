@@ -1,7 +1,7 @@
 name: Dependabot automerge label
 
 # Labels non-major Dependabot PRs `automerge` for the workshop to merge. The
-# rules live in the shared workflow; see the dispatcher skill in agent-skills.
+# rules live in the shared workflow; see the dispatcher skill in joes-workshop.
 on: pull_request
 
 permissions:
@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   automerge:
-    uses: realJohnDoe/agent-skills/.github/workflows/dependabot-automerge.yml@main
+    uses: realJohnDoe/joes-workshop/.github/workflows/dependabot-automerge.yml@main
